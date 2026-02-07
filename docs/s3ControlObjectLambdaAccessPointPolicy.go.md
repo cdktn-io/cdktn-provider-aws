@@ -4,12 +4,12 @@
 
 ### S3ControlObjectLambdaAccessPointPolicy <a name="S3ControlObjectLambdaAccessPointPolicy" id="@cdktn/provider-aws.s3ControlObjectLambdaAccessPointPolicy.S3ControlObjectLambdaAccessPointPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3control_object_lambda_access_point_policy aws_s3control_object_lambda_access_point_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3control_object_lambda_access_point_policy aws_s3control_object_lambda_access_point_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3ControlObjectLambdaAccessPointPolicy.S3ControlObjectLambdaAccessPointPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3controlobjectlambdaaccesspointpolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/s3controlobjectlambdaaccesspointpolicy"
 
 s3controlobjectlambdaaccesspointpolicy.NewS3ControlObjectLambdaAccessPointPolicy(scope Construct, id *string, config S3ControlObjectLambdaAccessPointPolicyConfig) S3ControlObjectLambdaAccessPointPolicy
 ```
@@ -399,7 +399,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.s3ControlObjectLambdaAccessPointPolicy.S3ControlObjectLambdaAccessPointPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3controlobjectlambdaaccesspointpolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/s3controlobjectlambdaaccesspointpolicy"
 
 s3controlobjectlambdaaccesspointpolicy.S3ControlObjectLambdaAccessPointPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.s3ControlObjectLambdaAccessPointPolicy.S3ControlObjectLambdaAccessPointPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3controlobjectlambdaaccesspointpolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/s3controlobjectlambdaaccesspointpolicy"
 
 s3controlobjectlambdaaccesspointpolicy.S3ControlObjectLambdaAccessPointPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ s3controlobjectlambdaaccesspointpolicy.S3ControlObjectLambdaAccessPointPolicy_Is
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.s3ControlObjectLambdaAccessPointPolicy.S3ControlObjectLambdaAccessPointPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3controlobjectlambdaaccesspointpolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/s3controlobjectlambdaaccesspointpolicy"
 
 s3controlobjectlambdaaccesspointpolicy.S3ControlObjectLambdaAccessPointPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ s3controlobjectlambdaaccesspointpolicy.S3ControlObjectLambdaAccessPointPolicy_Is
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.s3ControlObjectLambdaAccessPointPolicy.S3ControlObjectLambdaAccessPointPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3controlobjectlambdaaccesspointpolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/s3controlobjectlambdaaccesspointpolicy"
 
 s3controlobjectlambdaaccesspointpolicy.S3ControlObjectLambdaAccessPointPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -488,7 +488,7 @@ The construct id used in the generated config for the S3ControlObjectLambdaAcces
 
 The id of the existing S3ControlObjectLambdaAccessPointPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3control_object_lambda_access_point_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3control_object_lambda_access_point_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -809,7 +809,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3ControlObjectLambdaAccessPointPolicy.S3ControlObjectLambdaAccessPointPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3controlobjectlambdaaccesspointpolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/s3controlobjectlambdaaccesspointpolicy"
 
 &s3controlobjectlambdaaccesspointpolicy.S3ControlObjectLambdaAccessPointPolicyConfig {
 	Connection: interface{},
@@ -838,10 +838,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3controlobjectlambdaa
 | <code><a href="#@cdktn/provider-aws.s3ControlObjectLambdaAccessPointPolicy.S3ControlObjectLambdaAccessPointPolicyConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.s3ControlObjectLambdaAccessPointPolicy.S3ControlObjectLambdaAccessPointPolicyConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.s3ControlObjectLambdaAccessPointPolicy.S3ControlObjectLambdaAccessPointPolicyConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.s3ControlObjectLambdaAccessPointPolicy.S3ControlObjectLambdaAccessPointPolicyConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3control_object_lambda_access_point_policy#name S3ControlObjectLambdaAccessPointPolicy#name}. |
-| <code><a href="#@cdktn/provider-aws.s3ControlObjectLambdaAccessPointPolicy.S3ControlObjectLambdaAccessPointPolicyConfig.property.policy">Policy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3control_object_lambda_access_point_policy#policy S3ControlObjectLambdaAccessPointPolicy#policy}. |
-| <code><a href="#@cdktn/provider-aws.s3ControlObjectLambdaAccessPointPolicy.S3ControlObjectLambdaAccessPointPolicyConfig.property.accountId">AccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3control_object_lambda_access_point_policy#account_id S3ControlObjectLambdaAccessPointPolicy#account_id}. |
-| <code><a href="#@cdktn/provider-aws.s3ControlObjectLambdaAccessPointPolicy.S3ControlObjectLambdaAccessPointPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3control_object_lambda_access_point_policy#id S3ControlObjectLambdaAccessPointPolicy#id}. |
+| <code><a href="#@cdktn/provider-aws.s3ControlObjectLambdaAccessPointPolicy.S3ControlObjectLambdaAccessPointPolicyConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3control_object_lambda_access_point_policy#name S3ControlObjectLambdaAccessPointPolicy#name}. |
+| <code><a href="#@cdktn/provider-aws.s3ControlObjectLambdaAccessPointPolicy.S3ControlObjectLambdaAccessPointPolicyConfig.property.policy">Policy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3control_object_lambda_access_point_policy#policy S3ControlObjectLambdaAccessPointPolicy#policy}. |
+| <code><a href="#@cdktn/provider-aws.s3ControlObjectLambdaAccessPointPolicy.S3ControlObjectLambdaAccessPointPolicyConfig.property.accountId">AccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3control_object_lambda_access_point_policy#account_id S3ControlObjectLambdaAccessPointPolicy#account_id}. |
+| <code><a href="#@cdktn/provider-aws.s3ControlObjectLambdaAccessPointPolicy.S3ControlObjectLambdaAccessPointPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3control_object_lambda_access_point_policy#id S3ControlObjectLambdaAccessPointPolicy#id}. |
 | <code><a href="#@cdktn/provider-aws.s3ControlObjectLambdaAccessPointPolicy.S3ControlObjectLambdaAccessPointPolicyConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -924,7 +924,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3control_object_lambda_access_point_policy#name S3ControlObjectLambdaAccessPointPolicy#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3control_object_lambda_access_point_policy#name S3ControlObjectLambdaAccessPointPolicy#name}.
 
 ---
 
@@ -936,7 +936,7 @@ Policy *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3control_object_lambda_access_point_policy#policy S3ControlObjectLambdaAccessPointPolicy#policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3control_object_lambda_access_point_policy#policy S3ControlObjectLambdaAccessPointPolicy#policy}.
 
 ---
 
@@ -948,7 +948,7 @@ AccountId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3control_object_lambda_access_point_policy#account_id S3ControlObjectLambdaAccessPointPolicy#account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3control_object_lambda_access_point_policy#account_id S3ControlObjectLambdaAccessPointPolicy#account_id}.
 
 ---
 
@@ -960,7 +960,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3control_object_lambda_access_point_policy#id S3ControlObjectLambdaAccessPointPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3control_object_lambda_access_point_policy#id S3ControlObjectLambdaAccessPointPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -977,7 +977,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3control_object_lambda_access_point_policy#region S3ControlObjectLambdaAccessPointPolicy#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3control_object_lambda_access_point_policy#region S3ControlObjectLambdaAccessPointPolicy#region}
 
 ---
 

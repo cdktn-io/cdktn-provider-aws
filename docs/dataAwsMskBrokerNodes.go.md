@@ -4,12 +4,12 @@
 
 ### DataAwsMskBrokerNodes <a name="DataAwsMskBrokerNodes" id="@cdktn/provider-aws.dataAwsMskBrokerNodes.DataAwsMskBrokerNodes"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/msk_broker_nodes aws_msk_broker_nodes}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/msk_broker_nodes aws_msk_broker_nodes}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsMskBrokerNodes.DataAwsMskBrokerNodes.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsmskbrokernodes"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsmskbrokernodes"
 
 dataawsmskbrokernodes.NewDataAwsMskBrokerNodes(scope Construct, id *string, config DataAwsMskBrokerNodesConfig) DataAwsMskBrokerNodes
 ```
@@ -290,7 +290,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsMskBrokerNodes.DataAwsMskBrokerNodes.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsmskbrokernodes"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsmskbrokernodes"
 
 dataawsmskbrokernodes.DataAwsMskBrokerNodes_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsMskBrokerNodes.DataAwsMskBrokerNodes.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsmskbrokernodes"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsmskbrokernodes"
 
 dataawsmskbrokernodes.DataAwsMskBrokerNodes_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ dataawsmskbrokernodes.DataAwsMskBrokerNodes_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsMskBrokerNodes.DataAwsMskBrokerNodes.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsmskbrokernodes"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsmskbrokernodes"
 
 dataawsmskbrokernodes.DataAwsMskBrokerNodes_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ dataawsmskbrokernodes.DataAwsMskBrokerNodes_IsTerraformDataSource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsMskBrokerNodes.DataAwsMskBrokerNodes.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsmskbrokernodes"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsmskbrokernodes"
 
 dataawsmskbrokernodes.DataAwsMskBrokerNodes_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -379,7 +379,7 @@ The construct id used in the generated config for the DataAwsMskBrokerNodes to i
 
 The id of the existing DataAwsMskBrokerNodes that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/msk_broker_nodes#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/msk_broker_nodes#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -634,7 +634,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsMskBrokerNodes.DataAwsMskBrokerNodesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsmskbrokernodes"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsmskbrokernodes"
 
 &dataawsmskbrokernodes.DataAwsMskBrokerNodesConfig {
 	Connection: interface{},
@@ -661,8 +661,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsmskbrokernodes"
 | <code><a href="#@cdktn/provider-aws.dataAwsMskBrokerNodes.DataAwsMskBrokerNodesConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsMskBrokerNodes.DataAwsMskBrokerNodesConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsMskBrokerNodes.DataAwsMskBrokerNodesConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsMskBrokerNodes.DataAwsMskBrokerNodesConfig.property.clusterArn">ClusterArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/msk_broker_nodes#cluster_arn DataAwsMskBrokerNodes#cluster_arn}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsMskBrokerNodes.DataAwsMskBrokerNodesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/msk_broker_nodes#id DataAwsMskBrokerNodes#id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsMskBrokerNodes.DataAwsMskBrokerNodesConfig.property.clusterArn">ClusterArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/msk_broker_nodes#cluster_arn DataAwsMskBrokerNodes#cluster_arn}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsMskBrokerNodes.DataAwsMskBrokerNodesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/msk_broker_nodes#id DataAwsMskBrokerNodes#id}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsMskBrokerNodes.DataAwsMskBrokerNodesConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -745,7 +745,7 @@ ClusterArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/msk_broker_nodes#cluster_arn DataAwsMskBrokerNodes#cluster_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/msk_broker_nodes#cluster_arn DataAwsMskBrokerNodes#cluster_arn}.
 
 ---
 
@@ -757,7 +757,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/msk_broker_nodes#id DataAwsMskBrokerNodes#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/msk_broker_nodes#id DataAwsMskBrokerNodes#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -774,7 +774,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/msk_broker_nodes#region DataAwsMskBrokerNodes#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/msk_broker_nodes#region DataAwsMskBrokerNodes#region}
 
 ---
 
@@ -783,7 +783,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsMskBrokerNodes.DataAwsMskBrokerNodesNodeInfoListStruct.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsmskbrokernodes"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsmskbrokernodes"
 
 &dataawsmskbrokernodes.DataAwsMskBrokerNodesNodeInfoListStruct {
 
@@ -798,7 +798,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsmskbrokernodes"
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsMskBrokerNodes.DataAwsMskBrokerNodesNodeInfoListStructList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsmskbrokernodes"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsmskbrokernodes"
 
 dataawsmskbrokernodes.NewDataAwsMskBrokerNodesNodeInfoListStructList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsMskBrokerNodesNodeInfoListStructList
 ```
@@ -947,7 +947,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsMskBrokerNodes.DataAwsMskBrokerNodesNodeInfoListStructOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsmskbrokernodes"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsmskbrokernodes"
 
 dataawsmskbrokernodes.NewDataAwsMskBrokerNodesNodeInfoListStructOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsMskBrokerNodesNodeInfoListStructOutputReference
 ```

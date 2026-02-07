@@ -4,12 +4,12 @@
 
 ### DataAwsOdbNetworks <a name="DataAwsOdbNetworks" id="@cdktn/provider-aws.dataAwsOdbNetworks.DataAwsOdbNetworks"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/odb_networks aws_odb_networks}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/odb_networks aws_odb_networks}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsOdbNetworks.DataAwsOdbNetworks.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsodbnetworks"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsodbnetworks"
 
 dataawsodbnetworks.NewDataAwsOdbNetworks(scope Construct, id *string, config DataAwsOdbNetworksConfig) DataAwsOdbNetworks
 ```
@@ -283,7 +283,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsOdbNetworks.DataAwsOdbNetworks.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsodbnetworks"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsodbnetworks"
 
 dataawsodbnetworks.DataAwsOdbNetworks_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsOdbNetworks.DataAwsOdbNetworks.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsodbnetworks"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsodbnetworks"
 
 dataawsodbnetworks.DataAwsOdbNetworks_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ dataawsodbnetworks.DataAwsOdbNetworks_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsOdbNetworks.DataAwsOdbNetworks.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsodbnetworks"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsodbnetworks"
 
 dataawsodbnetworks.DataAwsOdbNetworks_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ dataawsodbnetworks.DataAwsOdbNetworks_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsOdbNetworks.DataAwsOdbNetworks.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsodbnetworks"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsodbnetworks"
 
 dataawsodbnetworks.DataAwsOdbNetworks_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -372,7 +372,7 @@ The construct id used in the generated config for the DataAwsOdbNetworks to impo
 
 The id of the existing DataAwsOdbNetworks that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/odb_networks#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/odb_networks#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -583,7 +583,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsOdbNetworks.DataAwsOdbNetworksConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsodbnetworks"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsodbnetworks"
 
 &dataawsodbnetworks.DataAwsOdbNetworksConfig {
 	Connection: interface{},
@@ -692,7 +692,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/odb_networks#region DataAwsOdbNetworks#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/odb_networks#region DataAwsOdbNetworks#region}
 
 ---
 
@@ -701,7 +701,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsOdbNetworks.DataAwsOdbNetworksOdbNetworks.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsodbnetworks"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsodbnetworks"
 
 &dataawsodbnetworks.DataAwsOdbNetworksOdbNetworks {
 
@@ -716,7 +716,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsodbnetworks"
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsOdbNetworks.DataAwsOdbNetworksOdbNetworksList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsodbnetworks"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsodbnetworks"
 
 dataawsodbnetworks.NewDataAwsOdbNetworksOdbNetworksList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsOdbNetworksOdbNetworksList
 ```
@@ -865,7 +865,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsOdbNetworks.DataAwsOdbNetworksOdbNetworksOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsodbnetworks"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsodbnetworks"
 
 dataawsodbnetworks.NewDataAwsOdbNetworksOdbNetworksOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsOdbNetworksOdbNetworksOutputReference
 ```

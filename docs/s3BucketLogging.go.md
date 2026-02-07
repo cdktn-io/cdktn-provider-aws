@@ -4,12 +4,12 @@
 
 ### S3BucketLoggingA <a name="S3BucketLoggingA" id="@cdktn/provider-aws.s3BucketLogging.S3BucketLoggingA"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_bucket_logging aws_s3_bucket_logging}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3_bucket_logging aws_s3_bucket_logging}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3BucketLogging.S3BucketLoggingA.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3bucketlogging"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/s3bucketlogging"
 
 s3bucketlogging.NewS3BucketLoggingA(scope Construct, id *string, config S3BucketLoggingAConfig) S3BucketLoggingA
 ```
@@ -439,7 +439,7 @@ func ResetTargetObjectKeyFormat()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.s3BucketLogging.S3BucketLoggingA.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3bucketlogging"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/s3bucketlogging"
 
 s3bucketlogging.S3BucketLoggingA_IsConstruct(x interface{}) *bool
 ```
@@ -471,7 +471,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.s3BucketLogging.S3BucketLoggingA.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3bucketlogging"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/s3bucketlogging"
 
 s3bucketlogging.S3BucketLoggingA_IsTerraformElement(x interface{}) *bool
 ```
@@ -485,7 +485,7 @@ s3bucketlogging.S3BucketLoggingA_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.s3BucketLogging.S3BucketLoggingA.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3bucketlogging"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/s3bucketlogging"
 
 s3bucketlogging.S3BucketLoggingA_IsTerraformResource(x interface{}) *bool
 ```
@@ -499,7 +499,7 @@ s3bucketlogging.S3BucketLoggingA_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.s3BucketLogging.S3BucketLoggingA.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3bucketlogging"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/s3bucketlogging"
 
 s3bucketlogging.S3BucketLoggingA_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -528,7 +528,7 @@ The construct id used in the generated config for the S3BucketLoggingA to import
 
 The id of the existing S3BucketLoggingA that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_bucket_logging#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3_bucket_logging#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -904,7 +904,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3BucketLogging.S3BucketLoggingAConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3bucketlogging"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/s3bucketlogging"
 
 &s3bucketlogging.S3BucketLoggingAConfig {
 	Connection: interface{},
@@ -921,7 +921,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3bucketlogging"
 	Id: *string,
 	Region: *string,
 	TargetGrant: interface{},
-	TargetObjectKeyFormat: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.s3BucketLogging.S3BucketLoggingTargetObjectKeyFormat,
+	TargetObjectKeyFormat: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.s3BucketLogging.S3BucketLoggingTargetObjectKeyFormat,
 }
 ```
 
@@ -936,11 +936,11 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3bucketlogging"
 | <code><a href="#@cdktn/provider-aws.s3BucketLogging.S3BucketLoggingAConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.s3BucketLogging.S3BucketLoggingAConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.s3BucketLogging.S3BucketLoggingAConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.s3BucketLogging.S3BucketLoggingAConfig.property.bucket">Bucket</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_bucket_logging#bucket S3BucketLoggingA#bucket}. |
-| <code><a href="#@cdktn/provider-aws.s3BucketLogging.S3BucketLoggingAConfig.property.targetBucket">TargetBucket</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_bucket_logging#target_bucket S3BucketLoggingA#target_bucket}. |
-| <code><a href="#@cdktn/provider-aws.s3BucketLogging.S3BucketLoggingAConfig.property.targetPrefix">TargetPrefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_bucket_logging#target_prefix S3BucketLoggingA#target_prefix}. |
-| <code><a href="#@cdktn/provider-aws.s3BucketLogging.S3BucketLoggingAConfig.property.expectedBucketOwner">ExpectedBucketOwner</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_bucket_logging#expected_bucket_owner S3BucketLoggingA#expected_bucket_owner}. |
-| <code><a href="#@cdktn/provider-aws.s3BucketLogging.S3BucketLoggingAConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_bucket_logging#id S3BucketLoggingA#id}. |
+| <code><a href="#@cdktn/provider-aws.s3BucketLogging.S3BucketLoggingAConfig.property.bucket">Bucket</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3_bucket_logging#bucket S3BucketLoggingA#bucket}. |
+| <code><a href="#@cdktn/provider-aws.s3BucketLogging.S3BucketLoggingAConfig.property.targetBucket">TargetBucket</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3_bucket_logging#target_bucket S3BucketLoggingA#target_bucket}. |
+| <code><a href="#@cdktn/provider-aws.s3BucketLogging.S3BucketLoggingAConfig.property.targetPrefix">TargetPrefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3_bucket_logging#target_prefix S3BucketLoggingA#target_prefix}. |
+| <code><a href="#@cdktn/provider-aws.s3BucketLogging.S3BucketLoggingAConfig.property.expectedBucketOwner">ExpectedBucketOwner</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3_bucket_logging#expected_bucket_owner S3BucketLoggingA#expected_bucket_owner}. |
+| <code><a href="#@cdktn/provider-aws.s3BucketLogging.S3BucketLoggingAConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3_bucket_logging#id S3BucketLoggingA#id}. |
 | <code><a href="#@cdktn/provider-aws.s3BucketLogging.S3BucketLoggingAConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktn/provider-aws.s3BucketLogging.S3BucketLoggingAConfig.property.targetGrant">TargetGrant</a></code> | <code>interface{}</code> | target_grant block. |
 | <code><a href="#@cdktn/provider-aws.s3BucketLogging.S3BucketLoggingAConfig.property.targetObjectKeyFormat">TargetObjectKeyFormat</a></code> | <code><a href="#@cdktn/provider-aws.s3BucketLogging.S3BucketLoggingTargetObjectKeyFormat">S3BucketLoggingTargetObjectKeyFormat</a></code> | target_object_key_format block. |
@@ -1025,7 +1025,7 @@ Bucket *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_bucket_logging#bucket S3BucketLoggingA#bucket}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3_bucket_logging#bucket S3BucketLoggingA#bucket}.
 
 ---
 
@@ -1037,7 +1037,7 @@ TargetBucket *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_bucket_logging#target_bucket S3BucketLoggingA#target_bucket}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3_bucket_logging#target_bucket S3BucketLoggingA#target_bucket}.
 
 ---
 
@@ -1049,7 +1049,7 @@ TargetPrefix *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_bucket_logging#target_prefix S3BucketLoggingA#target_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3_bucket_logging#target_prefix S3BucketLoggingA#target_prefix}.
 
 ---
 
@@ -1061,7 +1061,7 @@ ExpectedBucketOwner *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_bucket_logging#expected_bucket_owner S3BucketLoggingA#expected_bucket_owner}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3_bucket_logging#expected_bucket_owner S3BucketLoggingA#expected_bucket_owner}.
 
 ---
 
@@ -1073,7 +1073,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_bucket_logging#id S3BucketLoggingA#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3_bucket_logging#id S3BucketLoggingA#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1090,7 +1090,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_bucket_logging#region S3BucketLoggingA#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3_bucket_logging#region S3BucketLoggingA#region}
 
 ---
 
@@ -1104,7 +1104,7 @@ TargetGrant interface{}
 
 target_grant block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_bucket_logging#target_grant S3BucketLoggingA#target_grant}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3_bucket_logging#target_grant S3BucketLoggingA#target_grant}
 
 ---
 
@@ -1118,7 +1118,7 @@ TargetObjectKeyFormat S3BucketLoggingTargetObjectKeyFormat
 
 target_object_key_format block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_bucket_logging#target_object_key_format S3BucketLoggingA#target_object_key_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3_bucket_logging#target_object_key_format S3BucketLoggingA#target_object_key_format}
 
 ---
 
@@ -1127,10 +1127,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3BucketLogging.S3BucketLoggingTargetGrant.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3bucketlogging"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/s3bucketlogging"
 
 &s3bucketlogging.S3BucketLoggingTargetGrant {
-	Grantee: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.s3BucketLogging.S3BucketLoggingTargetGrantGrantee,
+	Grantee: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.s3BucketLogging.S3BucketLoggingTargetGrantGrantee,
 	Permission: *string,
 }
 ```
@@ -1140,7 +1140,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3bucketlogging"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.s3BucketLogging.S3BucketLoggingTargetGrant.property.grantee">Grantee</a></code> | <code><a href="#@cdktn/provider-aws.s3BucketLogging.S3BucketLoggingTargetGrantGrantee">S3BucketLoggingTargetGrantGrantee</a></code> | grantee block. |
-| <code><a href="#@cdktn/provider-aws.s3BucketLogging.S3BucketLoggingTargetGrant.property.permission">Permission</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_bucket_logging#permission S3BucketLoggingA#permission}. |
+| <code><a href="#@cdktn/provider-aws.s3BucketLogging.S3BucketLoggingTargetGrant.property.permission">Permission</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3_bucket_logging#permission S3BucketLoggingA#permission}. |
 
 ---
 
@@ -1154,7 +1154,7 @@ Grantee S3BucketLoggingTargetGrantGrantee
 
 grantee block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_bucket_logging#grantee S3BucketLoggingA#grantee}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3_bucket_logging#grantee S3BucketLoggingA#grantee}
 
 ---
 
@@ -1166,7 +1166,7 @@ Permission *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_bucket_logging#permission S3BucketLoggingA#permission}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3_bucket_logging#permission S3BucketLoggingA#permission}.
 
 ---
 
@@ -1175,7 +1175,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3BucketLogging.S3BucketLoggingTargetGrantGrantee.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3bucketlogging"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/s3bucketlogging"
 
 &s3bucketlogging.S3BucketLoggingTargetGrantGrantee {
 	Type: *string,
@@ -1189,10 +1189,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3bucketlogging"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.s3BucketLogging.S3BucketLoggingTargetGrantGrantee.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_bucket_logging#type S3BucketLoggingA#type}. |
-| <code><a href="#@cdktn/provider-aws.s3BucketLogging.S3BucketLoggingTargetGrantGrantee.property.emailAddress">EmailAddress</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_bucket_logging#email_address S3BucketLoggingA#email_address}. |
-| <code><a href="#@cdktn/provider-aws.s3BucketLogging.S3BucketLoggingTargetGrantGrantee.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_bucket_logging#id S3BucketLoggingA#id}. |
-| <code><a href="#@cdktn/provider-aws.s3BucketLogging.S3BucketLoggingTargetGrantGrantee.property.uri">Uri</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_bucket_logging#uri S3BucketLoggingA#uri}. |
+| <code><a href="#@cdktn/provider-aws.s3BucketLogging.S3BucketLoggingTargetGrantGrantee.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3_bucket_logging#type S3BucketLoggingA#type}. |
+| <code><a href="#@cdktn/provider-aws.s3BucketLogging.S3BucketLoggingTargetGrantGrantee.property.emailAddress">EmailAddress</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3_bucket_logging#email_address S3BucketLoggingA#email_address}. |
+| <code><a href="#@cdktn/provider-aws.s3BucketLogging.S3BucketLoggingTargetGrantGrantee.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3_bucket_logging#id S3BucketLoggingA#id}. |
+| <code><a href="#@cdktn/provider-aws.s3BucketLogging.S3BucketLoggingTargetGrantGrantee.property.uri">Uri</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3_bucket_logging#uri S3BucketLoggingA#uri}. |
 
 ---
 
@@ -1204,7 +1204,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_bucket_logging#type S3BucketLoggingA#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3_bucket_logging#type S3BucketLoggingA#type}.
 
 ---
 
@@ -1216,7 +1216,7 @@ EmailAddress *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_bucket_logging#email_address S3BucketLoggingA#email_address}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3_bucket_logging#email_address S3BucketLoggingA#email_address}.
 
 ---
 
@@ -1228,7 +1228,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_bucket_logging#id S3BucketLoggingA#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3_bucket_logging#id S3BucketLoggingA#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1243,7 +1243,7 @@ Uri *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_bucket_logging#uri S3BucketLoggingA#uri}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3_bucket_logging#uri S3BucketLoggingA#uri}.
 
 ---
 
@@ -1252,11 +1252,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3BucketLogging.S3BucketLoggingTargetObjectKeyFormat.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3bucketlogging"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/s3bucketlogging"
 
 &s3bucketlogging.S3BucketLoggingTargetObjectKeyFormat {
-	PartitionedPrefix: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.s3BucketLogging.S3BucketLoggingTargetObjectKeyFormatPartitionedPrefix,
-	SimplePrefix: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.s3BucketLogging.S3BucketLoggingTargetObjectKeyFormatSimplePrefix,
+	PartitionedPrefix: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.s3BucketLogging.S3BucketLoggingTargetObjectKeyFormatPartitionedPrefix,
+	SimplePrefix: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.s3BucketLogging.S3BucketLoggingTargetObjectKeyFormatSimplePrefix,
 }
 ```
 
@@ -1279,7 +1279,7 @@ PartitionedPrefix S3BucketLoggingTargetObjectKeyFormatPartitionedPrefix
 
 partitioned_prefix block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_bucket_logging#partitioned_prefix S3BucketLoggingA#partitioned_prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3_bucket_logging#partitioned_prefix S3BucketLoggingA#partitioned_prefix}
 
 ---
 
@@ -1293,7 +1293,7 @@ SimplePrefix S3BucketLoggingTargetObjectKeyFormatSimplePrefix
 
 simple_prefix block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_bucket_logging#simple_prefix S3BucketLoggingA#simple_prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3_bucket_logging#simple_prefix S3BucketLoggingA#simple_prefix}
 
 ---
 
@@ -1302,7 +1302,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3BucketLogging.S3BucketLoggingTargetObjectKeyFormatPartitionedPrefix.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3bucketlogging"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/s3bucketlogging"
 
 &s3bucketlogging.S3BucketLoggingTargetObjectKeyFormatPartitionedPrefix {
 	PartitionDateSource: *string,
@@ -1313,7 +1313,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3bucketlogging"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.s3BucketLogging.S3BucketLoggingTargetObjectKeyFormatPartitionedPrefix.property.partitionDateSource">PartitionDateSource</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_bucket_logging#partition_date_source S3BucketLoggingA#partition_date_source}. |
+| <code><a href="#@cdktn/provider-aws.s3BucketLogging.S3BucketLoggingTargetObjectKeyFormatPartitionedPrefix.property.partitionDateSource">PartitionDateSource</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3_bucket_logging#partition_date_source S3BucketLoggingA#partition_date_source}. |
 
 ---
 
@@ -1325,7 +1325,7 @@ PartitionDateSource *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_bucket_logging#partition_date_source S3BucketLoggingA#partition_date_source}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3_bucket_logging#partition_date_source S3BucketLoggingA#partition_date_source}.
 
 ---
 
@@ -1334,7 +1334,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3BucketLogging.S3BucketLoggingTargetObjectKeyFormatSimplePrefix.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3bucketlogging"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/s3bucketlogging"
 
 &s3bucketlogging.S3BucketLoggingTargetObjectKeyFormatSimplePrefix {
 
@@ -1349,7 +1349,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3bucketlogging"
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3BucketLogging.S3BucketLoggingTargetGrantGranteeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3bucketlogging"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/s3bucketlogging"
 
 s3bucketlogging.NewS3BucketLoggingTargetGrantGranteeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3BucketLoggingTargetGrantGranteeOutputReference
 ```
@@ -1718,7 +1718,7 @@ func InternalValue() S3BucketLoggingTargetGrantGrantee
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3BucketLogging.S3BucketLoggingTargetGrantList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3bucketlogging"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/s3bucketlogging"
 
 s3bucketlogging.NewS3BucketLoggingTargetGrantList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) S3BucketLoggingTargetGrantList
 ```
@@ -1878,7 +1878,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3BucketLogging.S3BucketLoggingTargetGrantOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3bucketlogging"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/s3bucketlogging"
 
 s3bucketlogging.NewS3BucketLoggingTargetGrantOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) S3BucketLoggingTargetGrantOutputReference
 ```
@@ -2202,7 +2202,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3BucketLogging.S3BucketLoggingTargetObjectKeyFormatOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3bucketlogging"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/s3bucketlogging"
 
 s3bucketlogging.NewS3BucketLoggingTargetObjectKeyFormatOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3BucketLoggingTargetObjectKeyFormatOutputReference
 ```
@@ -2535,7 +2535,7 @@ func InternalValue() S3BucketLoggingTargetObjectKeyFormat
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3BucketLogging.S3BucketLoggingTargetObjectKeyFormatPartitionedPrefixOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3bucketlogging"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/s3bucketlogging"
 
 s3bucketlogging.NewS3BucketLoggingTargetObjectKeyFormatPartitionedPrefixOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3BucketLoggingTargetObjectKeyFormatPartitionedPrefixOutputReference
 ```
@@ -2806,7 +2806,7 @@ func InternalValue() S3BucketLoggingTargetObjectKeyFormatPartitionedPrefix
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3BucketLogging.S3BucketLoggingTargetObjectKeyFormatSimplePrefixOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3bucketlogging"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/s3bucketlogging"
 
 s3bucketlogging.NewS3BucketLoggingTargetObjectKeyFormatSimplePrefixOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3BucketLoggingTargetObjectKeyFormatSimplePrefixOutputReference
 ```

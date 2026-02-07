@@ -4,12 +4,12 @@
 
 ### DataAwsBatchComputeEnvironment <a name="DataAwsBatchComputeEnvironment" id="@cdktn/provider-aws.dataAwsBatchComputeEnvironment.DataAwsBatchComputeEnvironment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/batch_compute_environment aws_batch_compute_environment}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/batch_compute_environment aws_batch_compute_environment}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsBatchComputeEnvironment.DataAwsBatchComputeEnvironment.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsbatchcomputeenvironment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsbatchcomputeenvironment"
 
 dataawsbatchcomputeenvironment.NewDataAwsBatchComputeEnvironment(scope Construct, id *string, config DataAwsBatchComputeEnvironmentConfig) DataAwsBatchComputeEnvironment
 ```
@@ -297,7 +297,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsBatchComputeEnvironment.DataAwsBatchComputeEnvironment.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsbatchcomputeenvironment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsbatchcomputeenvironment"
 
 dataawsbatchcomputeenvironment.DataAwsBatchComputeEnvironment_IsConstruct(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsBatchComputeEnvironment.DataAwsBatchComputeEnvironment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsbatchcomputeenvironment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsbatchcomputeenvironment"
 
 dataawsbatchcomputeenvironment.DataAwsBatchComputeEnvironment_IsTerraformElement(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ dataawsbatchcomputeenvironment.DataAwsBatchComputeEnvironment_IsTerraformElement
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsBatchComputeEnvironment.DataAwsBatchComputeEnvironment.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsbatchcomputeenvironment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsbatchcomputeenvironment"
 
 dataawsbatchcomputeenvironment.DataAwsBatchComputeEnvironment_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ dataawsbatchcomputeenvironment.DataAwsBatchComputeEnvironment_IsTerraformDataSou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsBatchComputeEnvironment.DataAwsBatchComputeEnvironment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsbatchcomputeenvironment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsbatchcomputeenvironment"
 
 dataawsbatchcomputeenvironment.DataAwsBatchComputeEnvironment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -386,7 +386,7 @@ The construct id used in the generated config for the DataAwsBatchComputeEnviron
 
 The id of the existing DataAwsBatchComputeEnvironment that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/batch_compute_environment#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/batch_compute_environment#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -740,7 +740,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsBatchComputeEnvironment.DataAwsBatchComputeEnvironmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsbatchcomputeenvironment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsbatchcomputeenvironment"
 
 &dataawsbatchcomputeenvironment.DataAwsBatchComputeEnvironmentConfig {
 	Connection: interface{},
@@ -768,10 +768,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsbatchcomputeenv
 | <code><a href="#@cdktn/provider-aws.dataAwsBatchComputeEnvironment.DataAwsBatchComputeEnvironmentConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsBatchComputeEnvironment.DataAwsBatchComputeEnvironmentConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsBatchComputeEnvironment.DataAwsBatchComputeEnvironmentConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsBatchComputeEnvironment.DataAwsBatchComputeEnvironmentConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/batch_compute_environment#name DataAwsBatchComputeEnvironment#name}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsBatchComputeEnvironment.DataAwsBatchComputeEnvironmentConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/batch_compute_environment#id DataAwsBatchComputeEnvironment#id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsBatchComputeEnvironment.DataAwsBatchComputeEnvironmentConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/batch_compute_environment#name DataAwsBatchComputeEnvironment#name}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsBatchComputeEnvironment.DataAwsBatchComputeEnvironmentConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/batch_compute_environment#id DataAwsBatchComputeEnvironment#id}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsBatchComputeEnvironment.DataAwsBatchComputeEnvironmentConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.dataAwsBatchComputeEnvironment.DataAwsBatchComputeEnvironmentConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/batch_compute_environment#tags DataAwsBatchComputeEnvironment#tags}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsBatchComputeEnvironment.DataAwsBatchComputeEnvironmentConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/batch_compute_environment#tags DataAwsBatchComputeEnvironment#tags}. |
 
 ---
 
@@ -853,7 +853,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/batch_compute_environment#name DataAwsBatchComputeEnvironment#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/batch_compute_environment#name DataAwsBatchComputeEnvironment#name}.
 
 ---
 
@@ -865,7 +865,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/batch_compute_environment#id DataAwsBatchComputeEnvironment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/batch_compute_environment#id DataAwsBatchComputeEnvironment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -882,7 +882,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/batch_compute_environment#region DataAwsBatchComputeEnvironment#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/batch_compute_environment#region DataAwsBatchComputeEnvironment#region}
 
 ---
 
@@ -894,7 +894,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/batch_compute_environment#tags DataAwsBatchComputeEnvironment#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/batch_compute_environment#tags DataAwsBatchComputeEnvironment#tags}.
 
 ---
 
@@ -903,7 +903,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsBatchComputeEnvironment.DataAwsBatchComputeEnvironmentUpdatePolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsbatchcomputeenvironment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsbatchcomputeenvironment"
 
 &dataawsbatchcomputeenvironment.DataAwsBatchComputeEnvironmentUpdatePolicy {
 
@@ -918,7 +918,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsbatchcomputeenv
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsBatchComputeEnvironment.DataAwsBatchComputeEnvironmentUpdatePolicyList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsbatchcomputeenvironment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsbatchcomputeenvironment"
 
 dataawsbatchcomputeenvironment.NewDataAwsBatchComputeEnvironmentUpdatePolicyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsBatchComputeEnvironmentUpdatePolicyList
 ```
@@ -1067,7 +1067,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsBatchComputeEnvironment.DataAwsBatchComputeEnvironmentUpdatePolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsbatchcomputeenvironment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsbatchcomputeenvironment"
 
 dataawsbatchcomputeenvironment.NewDataAwsBatchComputeEnvironmentUpdatePolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsBatchComputeEnvironmentUpdatePolicyOutputReference
 ```

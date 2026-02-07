@@ -4,12 +4,12 @@
 
 ### DataAwsSnsTopic <a name="DataAwsSnsTopic" id="@cdktn/provider-aws.dataAwsSnsTopic.DataAwsSnsTopic"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/sns_topic aws_sns_topic}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/sns_topic aws_sns_topic}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsSnsTopic.DataAwsSnsTopic.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawssnstopic"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawssnstopic"
 
 dataawssnstopic.NewDataAwsSnsTopic(scope Construct, id *string, config DataAwsSnsTopicConfig) DataAwsSnsTopic
 ```
@@ -297,7 +297,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsSnsTopic.DataAwsSnsTopic.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawssnstopic"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawssnstopic"
 
 dataawssnstopic.DataAwsSnsTopic_IsConstruct(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsSnsTopic.DataAwsSnsTopic.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawssnstopic"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawssnstopic"
 
 dataawssnstopic.DataAwsSnsTopic_IsTerraformElement(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ dataawssnstopic.DataAwsSnsTopic_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsSnsTopic.DataAwsSnsTopic.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawssnstopic"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawssnstopic"
 
 dataawssnstopic.DataAwsSnsTopic_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ dataawssnstopic.DataAwsSnsTopic_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsSnsTopic.DataAwsSnsTopic.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawssnstopic"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawssnstopic"
 
 dataawssnstopic.DataAwsSnsTopic_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -386,7 +386,7 @@ The construct id used in the generated config for the DataAwsSnsTopic to import.
 
 The id of the existing DataAwsSnsTopic that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/sns_topic#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/sns_topic#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -663,7 +663,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsSnsTopic.DataAwsSnsTopicConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawssnstopic"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawssnstopic"
 
 &dataawssnstopic.DataAwsSnsTopicConfig {
 	Connection: interface{},
@@ -691,10 +691,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawssnstopic"
 | <code><a href="#@cdktn/provider-aws.dataAwsSnsTopic.DataAwsSnsTopicConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsSnsTopic.DataAwsSnsTopicConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsSnsTopic.DataAwsSnsTopicConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsSnsTopic.DataAwsSnsTopicConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/sns_topic#name DataAwsSnsTopic#name}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsSnsTopic.DataAwsSnsTopicConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/sns_topic#id DataAwsSnsTopic#id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsSnsTopic.DataAwsSnsTopicConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/sns_topic#name DataAwsSnsTopic#name}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsSnsTopic.DataAwsSnsTopicConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/sns_topic#id DataAwsSnsTopic#id}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsSnsTopic.DataAwsSnsTopicConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.dataAwsSnsTopic.DataAwsSnsTopicConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/sns_topic#tags DataAwsSnsTopic#tags}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsSnsTopic.DataAwsSnsTopicConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/sns_topic#tags DataAwsSnsTopic#tags}. |
 
 ---
 
@@ -776,7 +776,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/sns_topic#name DataAwsSnsTopic#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/sns_topic#name DataAwsSnsTopic#name}.
 
 ---
 
@@ -788,7 +788,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/sns_topic#id DataAwsSnsTopic#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/sns_topic#id DataAwsSnsTopic#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -805,7 +805,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/sns_topic#region DataAwsSnsTopic#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/sns_topic#region DataAwsSnsTopic#region}
 
 ---
 
@@ -817,7 +817,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/sns_topic#tags DataAwsSnsTopic#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/sns_topic#tags DataAwsSnsTopic#tags}.
 
 ---
 

@@ -4,12 +4,12 @@
 
 ### WorkspaceswebBrowserSettings <a name="WorkspaceswebBrowserSettings" id="@cdktn/provider-aws.workspaceswebBrowserSettings.WorkspaceswebBrowserSettings"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/workspacesweb_browser_settings aws_workspacesweb_browser_settings}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/workspacesweb_browser_settings aws_workspacesweb_browser_settings}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.workspaceswebBrowserSettings.WorkspaceswebBrowserSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/workspaceswebbrowsersettings"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/workspaceswebbrowsersettings"
 
 workspaceswebbrowsersettings.NewWorkspaceswebBrowserSettings(scope Construct, id *string, config WorkspaceswebBrowserSettingsConfig) WorkspaceswebBrowserSettings
 ```
@@ -406,7 +406,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.workspaceswebBrowserSettings.WorkspaceswebBrowserSettings.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/workspaceswebbrowsersettings"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/workspaceswebbrowsersettings"
 
 workspaceswebbrowsersettings.WorkspaceswebBrowserSettings_IsConstruct(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.workspaceswebBrowserSettings.WorkspaceswebBrowserSettings.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/workspaceswebbrowsersettings"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/workspaceswebbrowsersettings"
 
 workspaceswebbrowsersettings.WorkspaceswebBrowserSettings_IsTerraformElement(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ workspaceswebbrowsersettings.WorkspaceswebBrowserSettings_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.workspaceswebBrowserSettings.WorkspaceswebBrowserSettings.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/workspaceswebbrowsersettings"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/workspaceswebbrowsersettings"
 
 workspaceswebbrowsersettings.WorkspaceswebBrowserSettings_IsTerraformResource(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ workspaceswebbrowsersettings.WorkspaceswebBrowserSettings_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.workspaceswebBrowserSettings.WorkspaceswebBrowserSettings.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/workspaceswebbrowsersettings"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/workspaceswebbrowsersettings"
 
 workspaceswebbrowsersettings.WorkspaceswebBrowserSettings_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -495,7 +495,7 @@ The construct id used in the generated config for the WorkspaceswebBrowserSettin
 
 The id of the existing WorkspaceswebBrowserSettings that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/workspacesweb_browser_settings#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/workspacesweb_browser_settings#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -838,7 +838,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.workspaceswebBrowserSettings.WorkspaceswebBrowserSettingsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/workspaceswebbrowsersettings"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/workspaceswebbrowsersettings"
 
 &workspaceswebbrowsersettings.WorkspaceswebBrowserSettingsConfig {
 	Connection: interface{},
@@ -867,11 +867,11 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/workspaceswebbrowserse
 | <code><a href="#@cdktn/provider-aws.workspaceswebBrowserSettings.WorkspaceswebBrowserSettingsConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.workspaceswebBrowserSettings.WorkspaceswebBrowserSettingsConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.workspaceswebBrowserSettings.WorkspaceswebBrowserSettingsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.workspaceswebBrowserSettings.WorkspaceswebBrowserSettingsConfig.property.browserPolicy">BrowserPolicy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/workspacesweb_browser_settings#browser_policy WorkspaceswebBrowserSettings#browser_policy}. |
-| <code><a href="#@cdktn/provider-aws.workspaceswebBrowserSettings.WorkspaceswebBrowserSettingsConfig.property.additionalEncryptionContext">AdditionalEncryptionContext</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/workspacesweb_browser_settings#additional_encryption_context WorkspaceswebBrowserSettings#additional_encryption_context}. |
-| <code><a href="#@cdktn/provider-aws.workspaceswebBrowserSettings.WorkspaceswebBrowserSettingsConfig.property.customerManagedKey">CustomerManagedKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/workspacesweb_browser_settings#customer_managed_key WorkspaceswebBrowserSettings#customer_managed_key}. |
+| <code><a href="#@cdktn/provider-aws.workspaceswebBrowserSettings.WorkspaceswebBrowserSettingsConfig.property.browserPolicy">BrowserPolicy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/workspacesweb_browser_settings#browser_policy WorkspaceswebBrowserSettings#browser_policy}. |
+| <code><a href="#@cdktn/provider-aws.workspaceswebBrowserSettings.WorkspaceswebBrowserSettingsConfig.property.additionalEncryptionContext">AdditionalEncryptionContext</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/workspacesweb_browser_settings#additional_encryption_context WorkspaceswebBrowserSettings#additional_encryption_context}. |
+| <code><a href="#@cdktn/provider-aws.workspaceswebBrowserSettings.WorkspaceswebBrowserSettingsConfig.property.customerManagedKey">CustomerManagedKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/workspacesweb_browser_settings#customer_managed_key WorkspaceswebBrowserSettings#customer_managed_key}. |
 | <code><a href="#@cdktn/provider-aws.workspaceswebBrowserSettings.WorkspaceswebBrowserSettingsConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.workspaceswebBrowserSettings.WorkspaceswebBrowserSettingsConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/workspacesweb_browser_settings#tags WorkspaceswebBrowserSettings#tags}. |
+| <code><a href="#@cdktn/provider-aws.workspaceswebBrowserSettings.WorkspaceswebBrowserSettingsConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/workspacesweb_browser_settings#tags WorkspaceswebBrowserSettings#tags}. |
 
 ---
 
@@ -953,7 +953,7 @@ BrowserPolicy *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/workspacesweb_browser_settings#browser_policy WorkspaceswebBrowserSettings#browser_policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/workspacesweb_browser_settings#browser_policy WorkspaceswebBrowserSettings#browser_policy}.
 
 ---
 
@@ -965,7 +965,7 @@ AdditionalEncryptionContext *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/workspacesweb_browser_settings#additional_encryption_context WorkspaceswebBrowserSettings#additional_encryption_context}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/workspacesweb_browser_settings#additional_encryption_context WorkspaceswebBrowserSettings#additional_encryption_context}.
 
 ---
 
@@ -977,7 +977,7 @@ CustomerManagedKey *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/workspacesweb_browser_settings#customer_managed_key WorkspaceswebBrowserSettings#customer_managed_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/workspacesweb_browser_settings#customer_managed_key WorkspaceswebBrowserSettings#customer_managed_key}.
 
 ---
 
@@ -991,7 +991,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/workspacesweb_browser_settings#region WorkspaceswebBrowserSettings#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/workspacesweb_browser_settings#region WorkspaceswebBrowserSettings#region}
 
 ---
 
@@ -1003,7 +1003,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/workspacesweb_browser_settings#tags WorkspaceswebBrowserSettings#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/workspacesweb_browser_settings#tags WorkspaceswebBrowserSettings#tags}.
 
 ---
 

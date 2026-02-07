@@ -4,12 +4,12 @@
 
 ### BedrockagentcoreWorkloadIdentity <a name="BedrockagentcoreWorkloadIdentity" id="@cdktn/provider-aws.bedrockagentcoreWorkloadIdentity.BedrockagentcoreWorkloadIdentity"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/bedrockagentcore_workload_identity aws_bedrockagentcore_workload_identity}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/bedrockagentcore_workload_identity aws_bedrockagentcore_workload_identity}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreWorkloadIdentity.BedrockagentcoreWorkloadIdentity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcoreworkloadidentity"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/bedrockagentcoreworkloadidentity"
 
 bedrockagentcoreworkloadidentity.NewBedrockagentcoreWorkloadIdentity(scope Construct, id *string, config BedrockagentcoreWorkloadIdentityConfig) BedrockagentcoreWorkloadIdentity
 ```
@@ -392,7 +392,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.bedrockagentcoreWorkloadIdentity.BedrockagentcoreWorkloadIdentity.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcoreworkloadidentity"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/bedrockagentcoreworkloadidentity"
 
 bedrockagentcoreworkloadidentity.BedrockagentcoreWorkloadIdentity_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.bedrockagentcoreWorkloadIdentity.BedrockagentcoreWorkloadIdentity.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcoreworkloadidentity"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/bedrockagentcoreworkloadidentity"
 
 bedrockagentcoreworkloadidentity.BedrockagentcoreWorkloadIdentity_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ bedrockagentcoreworkloadidentity.BedrockagentcoreWorkloadIdentity_IsTerraformEle
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.bedrockagentcoreWorkloadIdentity.BedrockagentcoreWorkloadIdentity.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcoreworkloadidentity"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/bedrockagentcoreworkloadidentity"
 
 bedrockagentcoreworkloadidentity.BedrockagentcoreWorkloadIdentity_IsTerraformResource(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ bedrockagentcoreworkloadidentity.BedrockagentcoreWorkloadIdentity_IsTerraformRes
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.bedrockagentcoreWorkloadIdentity.BedrockagentcoreWorkloadIdentity.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcoreworkloadidentity"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/bedrockagentcoreworkloadidentity"
 
 bedrockagentcoreworkloadidentity.BedrockagentcoreWorkloadIdentity_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -481,7 +481,7 @@ The construct id used in the generated config for the BedrockagentcoreWorkloadId
 
 The id of the existing BedrockagentcoreWorkloadIdentity that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/bedrockagentcore_workload_identity#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/bedrockagentcore_workload_identity#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -758,7 +758,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreWorkloadIdentity.BedrockagentcoreWorkloadIdentityConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcoreworkloadidentity"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/bedrockagentcoreworkloadidentity"
 
 &bedrockagentcoreworkloadidentity.BedrockagentcoreWorkloadIdentityConfig {
 	Connection: interface{},
@@ -785,8 +785,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcoreworklo
 | <code><a href="#@cdktn/provider-aws.bedrockagentcoreWorkloadIdentity.BedrockagentcoreWorkloadIdentityConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.bedrockagentcoreWorkloadIdentity.BedrockagentcoreWorkloadIdentityConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.bedrockagentcoreWorkloadIdentity.BedrockagentcoreWorkloadIdentityConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.bedrockagentcoreWorkloadIdentity.BedrockagentcoreWorkloadIdentityConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/bedrockagentcore_workload_identity#name BedrockagentcoreWorkloadIdentity#name}. |
-| <code><a href="#@cdktn/provider-aws.bedrockagentcoreWorkloadIdentity.BedrockagentcoreWorkloadIdentityConfig.property.allowedResourceOauth2ReturnUrls">AllowedResourceOauth2ReturnUrls</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/bedrockagentcore_workload_identity#allowed_resource_oauth2_return_urls BedrockagentcoreWorkloadIdentity#allowed_resource_oauth2_return_urls}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreWorkloadIdentity.BedrockagentcoreWorkloadIdentityConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/bedrockagentcore_workload_identity#name BedrockagentcoreWorkloadIdentity#name}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreWorkloadIdentity.BedrockagentcoreWorkloadIdentityConfig.property.allowedResourceOauth2ReturnUrls">AllowedResourceOauth2ReturnUrls</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/bedrockagentcore_workload_identity#allowed_resource_oauth2_return_urls BedrockagentcoreWorkloadIdentity#allowed_resource_oauth2_return_urls}. |
 | <code><a href="#@cdktn/provider-aws.bedrockagentcoreWorkloadIdentity.BedrockagentcoreWorkloadIdentityConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -869,7 +869,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/bedrockagentcore_workload_identity#name BedrockagentcoreWorkloadIdentity#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/bedrockagentcore_workload_identity#name BedrockagentcoreWorkloadIdentity#name}.
 
 ---
 
@@ -881,7 +881,7 @@ AllowedResourceOauth2ReturnUrls *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/bedrockagentcore_workload_identity#allowed_resource_oauth2_return_urls BedrockagentcoreWorkloadIdentity#allowed_resource_oauth2_return_urls}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/bedrockagentcore_workload_identity#allowed_resource_oauth2_return_urls BedrockagentcoreWorkloadIdentity#allowed_resource_oauth2_return_urls}.
 
 ---
 
@@ -895,7 +895,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/bedrockagentcore_workload_identity#region BedrockagentcoreWorkloadIdentity#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/bedrockagentcore_workload_identity#region BedrockagentcoreWorkloadIdentity#region}
 
 ---
 

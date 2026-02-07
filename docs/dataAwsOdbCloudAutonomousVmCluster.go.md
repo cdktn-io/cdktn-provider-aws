@@ -4,12 +4,12 @@
 
 ### DataAwsOdbCloudAutonomousVmCluster <a name="DataAwsOdbCloudAutonomousVmCluster" id="@cdktn/provider-aws.dataAwsOdbCloudAutonomousVmCluster.DataAwsOdbCloudAutonomousVmCluster"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/odb_cloud_autonomous_vm_cluster aws_odb_cloud_autonomous_vm_cluster}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/odb_cloud_autonomous_vm_cluster aws_odb_cloud_autonomous_vm_cluster}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsOdbCloudAutonomousVmCluster.DataAwsOdbCloudAutonomousVmCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsodbcloudautonomousvmcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsodbcloudautonomousvmcluster"
 
 dataawsodbcloudautonomousvmcluster.NewDataAwsOdbCloudAutonomousVmCluster(scope Construct, id *string, config DataAwsOdbCloudAutonomousVmClusterConfig) DataAwsOdbCloudAutonomousVmCluster
 ```
@@ -283,7 +283,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsOdbCloudAutonomousVmCluster.DataAwsOdbCloudAutonomousVmCluster.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsodbcloudautonomousvmcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsodbcloudautonomousvmcluster"
 
 dataawsodbcloudautonomousvmcluster.DataAwsOdbCloudAutonomousVmCluster_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsOdbCloudAutonomousVmCluster.DataAwsOdbCloudAutonomousVmCluster.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsodbcloudautonomousvmcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsodbcloudautonomousvmcluster"
 
 dataawsodbcloudautonomousvmcluster.DataAwsOdbCloudAutonomousVmCluster_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ dataawsodbcloudautonomousvmcluster.DataAwsOdbCloudAutonomousVmCluster_IsTerrafor
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsOdbCloudAutonomousVmCluster.DataAwsOdbCloudAutonomousVmCluster.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsodbcloudautonomousvmcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsodbcloudautonomousvmcluster"
 
 dataawsodbcloudautonomousvmcluster.DataAwsOdbCloudAutonomousVmCluster_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ dataawsodbcloudautonomousvmcluster.DataAwsOdbCloudAutonomousVmCluster_IsTerrafor
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsOdbCloudAutonomousVmCluster.DataAwsOdbCloudAutonomousVmCluster.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsodbcloudautonomousvmcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsodbcloudautonomousvmcluster"
 
 dataawsodbcloudautonomousvmcluster.DataAwsOdbCloudAutonomousVmCluster_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -372,7 +372,7 @@ The construct id used in the generated config for the DataAwsOdbCloudAutonomousV
 
 The id of the existing DataAwsOdbCloudAutonomousVmCluster that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/odb_cloud_autonomous_vm_cluster#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/odb_cloud_autonomous_vm_cluster#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -406,6 +406,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 | <code><a href="#@cdktn/provider-aws.dataAwsOdbCloudAutonomousVmCluster.DataAwsOdbCloudAutonomousVmCluster.property.availableAutonomousDataStorageSizeInTbs">AvailableAutonomousDataStorageSizeInTbs</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsOdbCloudAutonomousVmCluster.DataAwsOdbCloudAutonomousVmCluster.property.availableContainerDatabases">AvailableContainerDatabases</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsOdbCloudAutonomousVmCluster.DataAwsOdbCloudAutonomousVmCluster.property.availableCpus">AvailableCpus</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsOdbCloudAutonomousVmCluster.DataAwsOdbCloudAutonomousVmCluster.property.cloudExadataInfrastructureArn">CloudExadataInfrastructureArn</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsOdbCloudAutonomousVmCluster.DataAwsOdbCloudAutonomousVmCluster.property.cloudExadataInfrastructureId">CloudExadataInfrastructureId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsOdbCloudAutonomousVmCluster.DataAwsOdbCloudAutonomousVmCluster.property.computeModel">ComputeModel</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsOdbCloudAutonomousVmCluster.DataAwsOdbCloudAutonomousVmCluster.property.cpuCoreCount">CpuCoreCount</a></code> | <code>*f64</code> | *No description.* |
@@ -431,6 +432,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 | <code><a href="#@cdktn/provider-aws.dataAwsOdbCloudAutonomousVmCluster.DataAwsOdbCloudAutonomousVmCluster.property.ocid">Ocid</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsOdbCloudAutonomousVmCluster.DataAwsOdbCloudAutonomousVmCluster.property.ociResourceAnchorName">OciResourceAnchorName</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsOdbCloudAutonomousVmCluster.DataAwsOdbCloudAutonomousVmCluster.property.ociUrl">OciUrl</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsOdbCloudAutonomousVmCluster.DataAwsOdbCloudAutonomousVmCluster.property.odbNetworkArn">OdbNetworkArn</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsOdbCloudAutonomousVmCluster.DataAwsOdbCloudAutonomousVmCluster.property.odbNetworkId">OdbNetworkId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsOdbCloudAutonomousVmCluster.DataAwsOdbCloudAutonomousVmCluster.property.odbNodeStorageSizeInGbs">OdbNodeStorageSizeInGbs</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsOdbCloudAutonomousVmCluster.DataAwsOdbCloudAutonomousVmCluster.property.percentProgress">PercentProgress</a></code> | <code>*f64</code> | *No description.* |
@@ -635,6 +637,16 @@ func AvailableCpus() *f64
 ```
 
 - *Type:* *f64
+
+---
+
+##### `CloudExadataInfrastructureArn`<sup>Required</sup> <a name="CloudExadataInfrastructureArn" id="@cdktn/provider-aws.dataAwsOdbCloudAutonomousVmCluster.DataAwsOdbCloudAutonomousVmCluster.property.cloudExadataInfrastructureArn"></a>
+
+```go
+func CloudExadataInfrastructureArn() *string
+```
+
+- *Type:* *string
 
 ---
 
@@ -888,6 +900,16 @@ func OciUrl() *string
 
 ---
 
+##### `OdbNetworkArn`<sup>Required</sup> <a name="OdbNetworkArn" id="@cdktn/provider-aws.dataAwsOdbCloudAutonomousVmCluster.DataAwsOdbCloudAutonomousVmCluster.property.odbNetworkArn"></a>
+
+```go
+func OdbNetworkArn() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `OdbNetworkId`<sup>Required</sup> <a name="OdbNetworkId" id="@cdktn/provider-aws.dataAwsOdbCloudAutonomousVmCluster.DataAwsOdbCloudAutonomousVmCluster.property.odbNetworkId"></a>
 
 ```go
@@ -1133,7 +1155,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsOdbCloudAutonomousVmCluster.DataAwsOdbCloudAutonomousVmClusterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsodbcloudautonomousvmcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsodbcloudautonomousvmcluster"
 
 &dataawsodbcloudautonomousvmcluster.DataAwsOdbCloudAutonomousVmClusterConfig {
 	Connection: interface{},
@@ -1244,7 +1266,7 @@ Id *string
 
 Unique ID of the Autonomous VM cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/odb_cloud_autonomous_vm_cluster#id DataAwsOdbCloudAutonomousVmCluster#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/odb_cloud_autonomous_vm_cluster#id DataAwsOdbCloudAutonomousVmCluster#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1261,7 +1283,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/odb_cloud_autonomous_vm_cluster#region DataAwsOdbCloudAutonomousVmCluster#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/odb_cloud_autonomous_vm_cluster#region DataAwsOdbCloudAutonomousVmCluster#region}
 
 ---
 
@@ -1270,7 +1292,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsOdbCloudAutonomousVmCluster.DataAwsOdbCloudAutonomousVmClusterMaintenanceWindow.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsodbcloudautonomousvmcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsodbcloudautonomousvmcluster"
 
 &dataawsodbcloudautonomousvmcluster.DataAwsOdbCloudAutonomousVmClusterMaintenanceWindow {
 
@@ -1283,7 +1305,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsodbcloudautonom
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsOdbCloudAutonomousVmCluster.DataAwsOdbCloudAutonomousVmClusterMaintenanceWindowDaysOfWeek.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsodbcloudautonomousvmcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsodbcloudautonomousvmcluster"
 
 &dataawsodbcloudautonomousvmcluster.DataAwsOdbCloudAutonomousVmClusterMaintenanceWindowDaysOfWeek {
 
@@ -1296,7 +1318,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsodbcloudautonom
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsOdbCloudAutonomousVmCluster.DataAwsOdbCloudAutonomousVmClusterMaintenanceWindowMonths.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsodbcloudautonomousvmcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsodbcloudautonomousvmcluster"
 
 &dataawsodbcloudautonomousvmcluster.DataAwsOdbCloudAutonomousVmClusterMaintenanceWindowMonths {
 
@@ -1311,7 +1333,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsodbcloudautonom
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsOdbCloudAutonomousVmCluster.DataAwsOdbCloudAutonomousVmClusterMaintenanceWindowDaysOfWeekList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsodbcloudautonomousvmcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsodbcloudautonomousvmcluster"
 
 dataawsodbcloudautonomousvmcluster.NewDataAwsOdbCloudAutonomousVmClusterMaintenanceWindowDaysOfWeekList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsOdbCloudAutonomousVmClusterMaintenanceWindowDaysOfWeekList
 ```
@@ -1460,7 +1482,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsOdbCloudAutonomousVmCluster.DataAwsOdbCloudAutonomousVmClusterMaintenanceWindowDaysOfWeekOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsodbcloudautonomousvmcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsodbcloudautonomousvmcluster"
 
 dataawsodbcloudautonomousvmcluster.NewDataAwsOdbCloudAutonomousVmClusterMaintenanceWindowDaysOfWeekOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsOdbCloudAutonomousVmClusterMaintenanceWindowDaysOfWeekOutputReference
 ```
@@ -1738,7 +1760,7 @@ func InternalValue() DataAwsOdbCloudAutonomousVmClusterMaintenanceWindowDaysOfWe
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsOdbCloudAutonomousVmCluster.DataAwsOdbCloudAutonomousVmClusterMaintenanceWindowList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsodbcloudautonomousvmcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsodbcloudautonomousvmcluster"
 
 dataawsodbcloudautonomousvmcluster.NewDataAwsOdbCloudAutonomousVmClusterMaintenanceWindowList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsOdbCloudAutonomousVmClusterMaintenanceWindowList
 ```
@@ -1887,7 +1909,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsOdbCloudAutonomousVmCluster.DataAwsOdbCloudAutonomousVmClusterMaintenanceWindowMonthsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsodbcloudautonomousvmcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsodbcloudautonomousvmcluster"
 
 dataawsodbcloudautonomousvmcluster.NewDataAwsOdbCloudAutonomousVmClusterMaintenanceWindowMonthsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsOdbCloudAutonomousVmClusterMaintenanceWindowMonthsList
 ```
@@ -2036,7 +2058,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsOdbCloudAutonomousVmCluster.DataAwsOdbCloudAutonomousVmClusterMaintenanceWindowMonthsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsodbcloudautonomousvmcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsodbcloudautonomousvmcluster"
 
 dataawsodbcloudautonomousvmcluster.NewDataAwsOdbCloudAutonomousVmClusterMaintenanceWindowMonthsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsOdbCloudAutonomousVmClusterMaintenanceWindowMonthsOutputReference
 ```
@@ -2314,7 +2336,7 @@ func InternalValue() DataAwsOdbCloudAutonomousVmClusterMaintenanceWindowMonths
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsOdbCloudAutonomousVmCluster.DataAwsOdbCloudAutonomousVmClusterMaintenanceWindowOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsodbcloudautonomousvmcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsodbcloudautonomousvmcluster"
 
 dataawsodbcloudautonomousvmcluster.NewDataAwsOdbCloudAutonomousVmClusterMaintenanceWindowOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsOdbCloudAutonomousVmClusterMaintenanceWindowOutputReference
 ```

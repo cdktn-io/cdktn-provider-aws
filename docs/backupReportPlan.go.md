@@ -4,12 +4,12 @@
 
 ### BackupReportPlan <a name="BackupReportPlan" id="@cdktn/provider-aws.backupReportPlan.BackupReportPlan"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/backup_report_plan aws_backup_report_plan}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/backup_report_plan aws_backup_report_plan}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.backupReportPlan.BackupReportPlan.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/backupreportplan"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/backupreportplan"
 
 backupreportplan.NewBackupReportPlan(scope Construct, id *string, config BackupReportPlanConfig) BackupReportPlan
 ```
@@ -439,7 +439,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.backupReportPlan.BackupReportPlan.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/backupreportplan"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/backupreportplan"
 
 backupreportplan.BackupReportPlan_IsConstruct(x interface{}) *bool
 ```
@@ -471,7 +471,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.backupReportPlan.BackupReportPlan.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/backupreportplan"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/backupreportplan"
 
 backupreportplan.BackupReportPlan_IsTerraformElement(x interface{}) *bool
 ```
@@ -485,7 +485,7 @@ backupreportplan.BackupReportPlan_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.backupReportPlan.BackupReportPlan.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/backupreportplan"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/backupreportplan"
 
 backupreportplan.BackupReportPlan_IsTerraformResource(x interface{}) *bool
 ```
@@ -499,7 +499,7 @@ backupreportplan.BackupReportPlan_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.backupReportPlan.BackupReportPlan.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/backupreportplan"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/backupreportplan"
 
 backupreportplan.BackupReportPlan_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -528,7 +528,7 @@ The construct id used in the generated config for the BackupReportPlan to import
 
 The id of the existing BackupReportPlan that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/backup_report_plan#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/backup_report_plan#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -937,7 +937,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.backupReportPlan.BackupReportPlanConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/backupreportplan"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/backupreportplan"
 
 &backupreportplan.BackupReportPlanConfig {
 	Connection: interface{},
@@ -948,8 +948,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/backupreportplan"
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	Name: *string,
-	ReportDeliveryChannel: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.backupReportPlan.BackupReportPlanReportDeliveryChannel,
-	ReportSetting: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.backupReportPlan.BackupReportPlanReportSetting,
+	ReportDeliveryChannel: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.backupReportPlan.BackupReportPlanReportDeliveryChannel,
+	ReportSetting: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.backupReportPlan.BackupReportPlanReportSetting,
 	Description: *string,
 	Id: *string,
 	Region: *string,
@@ -969,14 +969,14 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/backupreportplan"
 | <code><a href="#@cdktn/provider-aws.backupReportPlan.BackupReportPlanConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.backupReportPlan.BackupReportPlanConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.backupReportPlan.BackupReportPlanConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.backupReportPlan.BackupReportPlanConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/backup_report_plan#name BackupReportPlan#name}. |
+| <code><a href="#@cdktn/provider-aws.backupReportPlan.BackupReportPlanConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/backup_report_plan#name BackupReportPlan#name}. |
 | <code><a href="#@cdktn/provider-aws.backupReportPlan.BackupReportPlanConfig.property.reportDeliveryChannel">ReportDeliveryChannel</a></code> | <code><a href="#@cdktn/provider-aws.backupReportPlan.BackupReportPlanReportDeliveryChannel">BackupReportPlanReportDeliveryChannel</a></code> | report_delivery_channel block. |
 | <code><a href="#@cdktn/provider-aws.backupReportPlan.BackupReportPlanConfig.property.reportSetting">ReportSetting</a></code> | <code><a href="#@cdktn/provider-aws.backupReportPlan.BackupReportPlanReportSetting">BackupReportPlanReportSetting</a></code> | report_setting block. |
-| <code><a href="#@cdktn/provider-aws.backupReportPlan.BackupReportPlanConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/backup_report_plan#description BackupReportPlan#description}. |
-| <code><a href="#@cdktn/provider-aws.backupReportPlan.BackupReportPlanConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/backup_report_plan#id BackupReportPlan#id}. |
+| <code><a href="#@cdktn/provider-aws.backupReportPlan.BackupReportPlanConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/backup_report_plan#description BackupReportPlan#description}. |
+| <code><a href="#@cdktn/provider-aws.backupReportPlan.BackupReportPlanConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/backup_report_plan#id BackupReportPlan#id}. |
 | <code><a href="#@cdktn/provider-aws.backupReportPlan.BackupReportPlanConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.backupReportPlan.BackupReportPlanConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/backup_report_plan#tags BackupReportPlan#tags}. |
-| <code><a href="#@cdktn/provider-aws.backupReportPlan.BackupReportPlanConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/backup_report_plan#tags_all BackupReportPlan#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.backupReportPlan.BackupReportPlanConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/backup_report_plan#tags BackupReportPlan#tags}. |
+| <code><a href="#@cdktn/provider-aws.backupReportPlan.BackupReportPlanConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/backup_report_plan#tags_all BackupReportPlan#tags_all}. |
 
 ---
 
@@ -1058,7 +1058,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/backup_report_plan#name BackupReportPlan#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/backup_report_plan#name BackupReportPlan#name}.
 
 ---
 
@@ -1072,7 +1072,7 @@ ReportDeliveryChannel BackupReportPlanReportDeliveryChannel
 
 report_delivery_channel block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/backup_report_plan#report_delivery_channel BackupReportPlan#report_delivery_channel}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/backup_report_plan#report_delivery_channel BackupReportPlan#report_delivery_channel}
 
 ---
 
@@ -1086,7 +1086,7 @@ ReportSetting BackupReportPlanReportSetting
 
 report_setting block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/backup_report_plan#report_setting BackupReportPlan#report_setting}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/backup_report_plan#report_setting BackupReportPlan#report_setting}
 
 ---
 
@@ -1098,7 +1098,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/backup_report_plan#description BackupReportPlan#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/backup_report_plan#description BackupReportPlan#description}.
 
 ---
 
@@ -1110,7 +1110,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/backup_report_plan#id BackupReportPlan#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/backup_report_plan#id BackupReportPlan#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1127,7 +1127,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/backup_report_plan#region BackupReportPlan#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/backup_report_plan#region BackupReportPlan#region}
 
 ---
 
@@ -1139,7 +1139,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/backup_report_plan#tags BackupReportPlan#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/backup_report_plan#tags BackupReportPlan#tags}.
 
 ---
 
@@ -1151,7 +1151,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/backup_report_plan#tags_all BackupReportPlan#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/backup_report_plan#tags_all BackupReportPlan#tags_all}.
 
 ---
 
@@ -1160,7 +1160,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.backupReportPlan.BackupReportPlanReportDeliveryChannel.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/backupreportplan"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/backupreportplan"
 
 &backupreportplan.BackupReportPlanReportDeliveryChannel {
 	S3BucketName: *string,
@@ -1173,9 +1173,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/backupreportplan"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.backupReportPlan.BackupReportPlanReportDeliveryChannel.property.s3BucketName">S3BucketName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/backup_report_plan#s3_bucket_name BackupReportPlan#s3_bucket_name}. |
-| <code><a href="#@cdktn/provider-aws.backupReportPlan.BackupReportPlanReportDeliveryChannel.property.formats">Formats</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/backup_report_plan#formats BackupReportPlan#formats}. |
-| <code><a href="#@cdktn/provider-aws.backupReportPlan.BackupReportPlanReportDeliveryChannel.property.s3KeyPrefix">S3KeyPrefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/backup_report_plan#s3_key_prefix BackupReportPlan#s3_key_prefix}. |
+| <code><a href="#@cdktn/provider-aws.backupReportPlan.BackupReportPlanReportDeliveryChannel.property.s3BucketName">S3BucketName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/backup_report_plan#s3_bucket_name BackupReportPlan#s3_bucket_name}. |
+| <code><a href="#@cdktn/provider-aws.backupReportPlan.BackupReportPlanReportDeliveryChannel.property.formats">Formats</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/backup_report_plan#formats BackupReportPlan#formats}. |
+| <code><a href="#@cdktn/provider-aws.backupReportPlan.BackupReportPlanReportDeliveryChannel.property.s3KeyPrefix">S3KeyPrefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/backup_report_plan#s3_key_prefix BackupReportPlan#s3_key_prefix}. |
 
 ---
 
@@ -1187,7 +1187,7 @@ S3BucketName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/backup_report_plan#s3_bucket_name BackupReportPlan#s3_bucket_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/backup_report_plan#s3_bucket_name BackupReportPlan#s3_bucket_name}.
 
 ---
 
@@ -1199,7 +1199,7 @@ Formats *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/backup_report_plan#formats BackupReportPlan#formats}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/backup_report_plan#formats BackupReportPlan#formats}.
 
 ---
 
@@ -1211,7 +1211,7 @@ S3KeyPrefix *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/backup_report_plan#s3_key_prefix BackupReportPlan#s3_key_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/backup_report_plan#s3_key_prefix BackupReportPlan#s3_key_prefix}.
 
 ---
 
@@ -1220,7 +1220,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.backupReportPlan.BackupReportPlanReportSetting.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/backupreportplan"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/backupreportplan"
 
 &backupreportplan.BackupReportPlanReportSetting {
 	ReportTemplate: *string,
@@ -1236,12 +1236,12 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/backupreportplan"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.backupReportPlan.BackupReportPlanReportSetting.property.reportTemplate">ReportTemplate</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/backup_report_plan#report_template BackupReportPlan#report_template}. |
-| <code><a href="#@cdktn/provider-aws.backupReportPlan.BackupReportPlanReportSetting.property.accounts">Accounts</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/backup_report_plan#accounts BackupReportPlan#accounts}. |
-| <code><a href="#@cdktn/provider-aws.backupReportPlan.BackupReportPlanReportSetting.property.frameworkArns">FrameworkArns</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/backup_report_plan#framework_arns BackupReportPlan#framework_arns}. |
-| <code><a href="#@cdktn/provider-aws.backupReportPlan.BackupReportPlanReportSetting.property.numberOfFrameworks">NumberOfFrameworks</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/backup_report_plan#number_of_frameworks BackupReportPlan#number_of_frameworks}. |
-| <code><a href="#@cdktn/provider-aws.backupReportPlan.BackupReportPlanReportSetting.property.organizationUnits">OrganizationUnits</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/backup_report_plan#organization_units BackupReportPlan#organization_units}. |
-| <code><a href="#@cdktn/provider-aws.backupReportPlan.BackupReportPlanReportSetting.property.regions">Regions</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/backup_report_plan#regions BackupReportPlan#regions}. |
+| <code><a href="#@cdktn/provider-aws.backupReportPlan.BackupReportPlanReportSetting.property.reportTemplate">ReportTemplate</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/backup_report_plan#report_template BackupReportPlan#report_template}. |
+| <code><a href="#@cdktn/provider-aws.backupReportPlan.BackupReportPlanReportSetting.property.accounts">Accounts</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/backup_report_plan#accounts BackupReportPlan#accounts}. |
+| <code><a href="#@cdktn/provider-aws.backupReportPlan.BackupReportPlanReportSetting.property.frameworkArns">FrameworkArns</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/backup_report_plan#framework_arns BackupReportPlan#framework_arns}. |
+| <code><a href="#@cdktn/provider-aws.backupReportPlan.BackupReportPlanReportSetting.property.numberOfFrameworks">NumberOfFrameworks</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/backup_report_plan#number_of_frameworks BackupReportPlan#number_of_frameworks}. |
+| <code><a href="#@cdktn/provider-aws.backupReportPlan.BackupReportPlanReportSetting.property.organizationUnits">OrganizationUnits</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/backup_report_plan#organization_units BackupReportPlan#organization_units}. |
+| <code><a href="#@cdktn/provider-aws.backupReportPlan.BackupReportPlanReportSetting.property.regions">Regions</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/backup_report_plan#regions BackupReportPlan#regions}. |
 
 ---
 
@@ -1253,7 +1253,7 @@ ReportTemplate *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/backup_report_plan#report_template BackupReportPlan#report_template}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/backup_report_plan#report_template BackupReportPlan#report_template}.
 
 ---
 
@@ -1265,7 +1265,7 @@ Accounts *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/backup_report_plan#accounts BackupReportPlan#accounts}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/backup_report_plan#accounts BackupReportPlan#accounts}.
 
 ---
 
@@ -1277,7 +1277,7 @@ FrameworkArns *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/backup_report_plan#framework_arns BackupReportPlan#framework_arns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/backup_report_plan#framework_arns BackupReportPlan#framework_arns}.
 
 ---
 
@@ -1289,7 +1289,7 @@ NumberOfFrameworks *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/backup_report_plan#number_of_frameworks BackupReportPlan#number_of_frameworks}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/backup_report_plan#number_of_frameworks BackupReportPlan#number_of_frameworks}.
 
 ---
 
@@ -1301,7 +1301,7 @@ OrganizationUnits *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/backup_report_plan#organization_units BackupReportPlan#organization_units}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/backup_report_plan#organization_units BackupReportPlan#organization_units}.
 
 ---
 
@@ -1313,7 +1313,7 @@ Regions *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/backup_report_plan#regions BackupReportPlan#regions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/backup_report_plan#regions BackupReportPlan#regions}.
 
 ---
 
@@ -1324,7 +1324,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.backupReportPlan.BackupReportPlanReportDeliveryChannelOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/backupreportplan"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/backupreportplan"
 
 backupreportplan.NewBackupReportPlanReportDeliveryChannelOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BackupReportPlanReportDeliveryChannelOutputReference
 ```
@@ -1653,7 +1653,7 @@ func InternalValue() BackupReportPlanReportDeliveryChannel
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.backupReportPlan.BackupReportPlanReportSettingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/backupreportplan"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/backupreportplan"
 
 backupreportplan.NewBackupReportPlanReportSettingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BackupReportPlanReportSettingOutputReference
 ```

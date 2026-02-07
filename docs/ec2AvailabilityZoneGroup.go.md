@@ -4,12 +4,12 @@
 
 ### Ec2AvailabilityZoneGroup <a name="Ec2AvailabilityZoneGroup" id="@cdktn/provider-aws.ec2AvailabilityZoneGroup.Ec2AvailabilityZoneGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ec2_availability_zone_group aws_ec2_availability_zone_group}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/ec2_availability_zone_group aws_ec2_availability_zone_group}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ec2AvailabilityZoneGroup.Ec2AvailabilityZoneGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/ec2availabilityzonegroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/ec2availabilityzonegroup"
 
 ec2availabilityzonegroup.NewEc2AvailabilityZoneGroup(scope Construct, id *string, config Ec2AvailabilityZoneGroupConfig) Ec2AvailabilityZoneGroup
 ```
@@ -392,7 +392,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.ec2AvailabilityZoneGroup.Ec2AvailabilityZoneGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/ec2availabilityzonegroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/ec2availabilityzonegroup"
 
 ec2availabilityzonegroup.Ec2AvailabilityZoneGroup_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.ec2AvailabilityZoneGroup.Ec2AvailabilityZoneGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/ec2availabilityzonegroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/ec2availabilityzonegroup"
 
 ec2availabilityzonegroup.Ec2AvailabilityZoneGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ ec2availabilityzonegroup.Ec2AvailabilityZoneGroup_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.ec2AvailabilityZoneGroup.Ec2AvailabilityZoneGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/ec2availabilityzonegroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/ec2availabilityzonegroup"
 
 ec2availabilityzonegroup.Ec2AvailabilityZoneGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ ec2availabilityzonegroup.Ec2AvailabilityZoneGroup_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.ec2AvailabilityZoneGroup.Ec2AvailabilityZoneGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/ec2availabilityzonegroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/ec2availabilityzonegroup"
 
 ec2availabilityzonegroup.Ec2AvailabilityZoneGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -481,7 +481,7 @@ The construct id used in the generated config for the Ec2AvailabilityZoneGroup t
 
 The id of the existing Ec2AvailabilityZoneGroup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ec2_availability_zone_group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/ec2_availability_zone_group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -769,7 +769,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ec2AvailabilityZoneGroup.Ec2AvailabilityZoneGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/ec2availabilityzonegroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/ec2availabilityzonegroup"
 
 &ec2availabilityzonegroup.Ec2AvailabilityZoneGroupConfig {
 	Connection: interface{},
@@ -797,9 +797,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/ec2availabilityzonegro
 | <code><a href="#@cdktn/provider-aws.ec2AvailabilityZoneGroup.Ec2AvailabilityZoneGroupConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ec2AvailabilityZoneGroup.Ec2AvailabilityZoneGroupConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ec2AvailabilityZoneGroup.Ec2AvailabilityZoneGroupConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.ec2AvailabilityZoneGroup.Ec2AvailabilityZoneGroupConfig.property.groupName">GroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ec2_availability_zone_group#group_name Ec2AvailabilityZoneGroup#group_name}. |
-| <code><a href="#@cdktn/provider-aws.ec2AvailabilityZoneGroup.Ec2AvailabilityZoneGroupConfig.property.optInStatus">OptInStatus</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ec2_availability_zone_group#opt_in_status Ec2AvailabilityZoneGroup#opt_in_status}. |
-| <code><a href="#@cdktn/provider-aws.ec2AvailabilityZoneGroup.Ec2AvailabilityZoneGroupConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ec2_availability_zone_group#id Ec2AvailabilityZoneGroup#id}. |
+| <code><a href="#@cdktn/provider-aws.ec2AvailabilityZoneGroup.Ec2AvailabilityZoneGroupConfig.property.groupName">GroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/ec2_availability_zone_group#group_name Ec2AvailabilityZoneGroup#group_name}. |
+| <code><a href="#@cdktn/provider-aws.ec2AvailabilityZoneGroup.Ec2AvailabilityZoneGroupConfig.property.optInStatus">OptInStatus</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/ec2_availability_zone_group#opt_in_status Ec2AvailabilityZoneGroup#opt_in_status}. |
+| <code><a href="#@cdktn/provider-aws.ec2AvailabilityZoneGroup.Ec2AvailabilityZoneGroupConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/ec2_availability_zone_group#id Ec2AvailabilityZoneGroup#id}. |
 | <code><a href="#@cdktn/provider-aws.ec2AvailabilityZoneGroup.Ec2AvailabilityZoneGroupConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -882,7 +882,7 @@ GroupName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ec2_availability_zone_group#group_name Ec2AvailabilityZoneGroup#group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/ec2_availability_zone_group#group_name Ec2AvailabilityZoneGroup#group_name}.
 
 ---
 
@@ -894,7 +894,7 @@ OptInStatus *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ec2_availability_zone_group#opt_in_status Ec2AvailabilityZoneGroup#opt_in_status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/ec2_availability_zone_group#opt_in_status Ec2AvailabilityZoneGroup#opt_in_status}.
 
 ---
 
@@ -906,7 +906,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ec2_availability_zone_group#id Ec2AvailabilityZoneGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/ec2_availability_zone_group#id Ec2AvailabilityZoneGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -923,7 +923,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ec2_availability_zone_group#region Ec2AvailabilityZoneGroup#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/ec2_availability_zone_group#region Ec2AvailabilityZoneGroup#region}
 
 ---
 

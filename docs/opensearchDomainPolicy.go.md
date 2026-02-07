@@ -4,12 +4,12 @@
 
 ### OpensearchDomainPolicy <a name="OpensearchDomainPolicy" id="@cdktn/provider-aws.opensearchDomainPolicy.OpensearchDomainPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/opensearch_domain_policy aws_opensearch_domain_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/opensearch_domain_policy aws_opensearch_domain_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.opensearchDomainPolicy.OpensearchDomainPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/opensearchdomainpolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/opensearchdomainpolicy"
 
 opensearchdomainpolicy.NewOpensearchDomainPolicy(scope Construct, id *string, config OpensearchDomainPolicyConfig) OpensearchDomainPolicy
 ```
@@ -412,7 +412,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.opensearchDomainPolicy.OpensearchDomainPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/opensearchdomainpolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/opensearchdomainpolicy"
 
 opensearchdomainpolicy.OpensearchDomainPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -444,7 +444,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.opensearchDomainPolicy.OpensearchDomainPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/opensearchdomainpolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/opensearchdomainpolicy"
 
 opensearchdomainpolicy.OpensearchDomainPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ opensearchdomainpolicy.OpensearchDomainPolicy_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.opensearchDomainPolicy.OpensearchDomainPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/opensearchdomainpolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/opensearchdomainpolicy"
 
 opensearchdomainpolicy.OpensearchDomainPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ opensearchdomainpolicy.OpensearchDomainPolicy_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.opensearchDomainPolicy.OpensearchDomainPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/opensearchdomainpolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/opensearchdomainpolicy"
 
 opensearchdomainpolicy.OpensearchDomainPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -501,7 +501,7 @@ The construct id used in the generated config for the OpensearchDomainPolicy to 
 
 The id of the existing OpensearchDomainPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/opensearch_domain_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/opensearch_domain_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -811,7 +811,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.opensearchDomainPolicy.OpensearchDomainPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/opensearchdomainpolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/opensearchdomainpolicy"
 
 &opensearchdomainpolicy.OpensearchDomainPolicyConfig {
 	Connection: interface{},
@@ -825,7 +825,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/opensearchdomainpolicy
 	DomainName: *string,
 	Id: *string,
 	Region: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.opensearchDomainPolicy.OpensearchDomainPolicyTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.opensearchDomainPolicy.OpensearchDomainPolicyTimeouts,
 }
 ```
 
@@ -840,9 +840,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/opensearchdomainpolicy
 | <code><a href="#@cdktn/provider-aws.opensearchDomainPolicy.OpensearchDomainPolicyConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.opensearchDomainPolicy.OpensearchDomainPolicyConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.opensearchDomainPolicy.OpensearchDomainPolicyConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.opensearchDomainPolicy.OpensearchDomainPolicyConfig.property.accessPolicies">AccessPolicies</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/opensearch_domain_policy#access_policies OpensearchDomainPolicy#access_policies}. |
-| <code><a href="#@cdktn/provider-aws.opensearchDomainPolicy.OpensearchDomainPolicyConfig.property.domainName">DomainName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/opensearch_domain_policy#domain_name OpensearchDomainPolicy#domain_name}. |
-| <code><a href="#@cdktn/provider-aws.opensearchDomainPolicy.OpensearchDomainPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/opensearch_domain_policy#id OpensearchDomainPolicy#id}. |
+| <code><a href="#@cdktn/provider-aws.opensearchDomainPolicy.OpensearchDomainPolicyConfig.property.accessPolicies">AccessPolicies</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/opensearch_domain_policy#access_policies OpensearchDomainPolicy#access_policies}. |
+| <code><a href="#@cdktn/provider-aws.opensearchDomainPolicy.OpensearchDomainPolicyConfig.property.domainName">DomainName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/opensearch_domain_policy#domain_name OpensearchDomainPolicy#domain_name}. |
+| <code><a href="#@cdktn/provider-aws.opensearchDomainPolicy.OpensearchDomainPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/opensearch_domain_policy#id OpensearchDomainPolicy#id}. |
 | <code><a href="#@cdktn/provider-aws.opensearchDomainPolicy.OpensearchDomainPolicyConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktn/provider-aws.opensearchDomainPolicy.OpensearchDomainPolicyConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.opensearchDomainPolicy.OpensearchDomainPolicyTimeouts">OpensearchDomainPolicyTimeouts</a></code> | timeouts block. |
 
@@ -926,7 +926,7 @@ AccessPolicies *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/opensearch_domain_policy#access_policies OpensearchDomainPolicy#access_policies}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/opensearch_domain_policy#access_policies OpensearchDomainPolicy#access_policies}.
 
 ---
 
@@ -938,7 +938,7 @@ DomainName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/opensearch_domain_policy#domain_name OpensearchDomainPolicy#domain_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/opensearch_domain_policy#domain_name OpensearchDomainPolicy#domain_name}.
 
 ---
 
@@ -950,7 +950,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/opensearch_domain_policy#id OpensearchDomainPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/opensearch_domain_policy#id OpensearchDomainPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -967,7 +967,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/opensearch_domain_policy#region OpensearchDomainPolicy#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/opensearch_domain_policy#region OpensearchDomainPolicy#region}
 
 ---
 
@@ -981,7 +981,7 @@ Timeouts OpensearchDomainPolicyTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/opensearch_domain_policy#timeouts OpensearchDomainPolicy#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/opensearch_domain_policy#timeouts OpensearchDomainPolicy#timeouts}
 
 ---
 
@@ -990,7 +990,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.opensearchDomainPolicy.OpensearchDomainPolicyTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/opensearchdomainpolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/opensearchdomainpolicy"
 
 &opensearchdomainpolicy.OpensearchDomainPolicyTimeouts {
 	Delete: *string,
@@ -1002,8 +1002,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/opensearchdomainpolicy
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.opensearchDomainPolicy.OpensearchDomainPolicyTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/opensearch_domain_policy#delete OpensearchDomainPolicy#delete}. |
-| <code><a href="#@cdktn/provider-aws.opensearchDomainPolicy.OpensearchDomainPolicyTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/opensearch_domain_policy#update OpensearchDomainPolicy#update}. |
+| <code><a href="#@cdktn/provider-aws.opensearchDomainPolicy.OpensearchDomainPolicyTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/opensearch_domain_policy#delete OpensearchDomainPolicy#delete}. |
+| <code><a href="#@cdktn/provider-aws.opensearchDomainPolicy.OpensearchDomainPolicyTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/opensearch_domain_policy#update OpensearchDomainPolicy#update}. |
 
 ---
 
@@ -1015,7 +1015,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/opensearch_domain_policy#delete OpensearchDomainPolicy#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/opensearch_domain_policy#delete OpensearchDomainPolicy#delete}.
 
 ---
 
@@ -1027,7 +1027,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/opensearch_domain_policy#update OpensearchDomainPolicy#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/opensearch_domain_policy#update OpensearchDomainPolicy#update}.
 
 ---
 
@@ -1038,7 +1038,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.opensearchDomainPolicy.OpensearchDomainPolicyTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/opensearchdomainpolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/opensearchdomainpolicy"
 
 opensearchdomainpolicy.NewOpensearchDomainPolicyTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OpensearchDomainPolicyTimeoutsOutputReference
 ```

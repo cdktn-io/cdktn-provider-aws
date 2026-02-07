@@ -4,12 +4,12 @@
 
 ### SecretsmanagerSecretRotation <a name="SecretsmanagerSecretRotation" id="@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/secretsmanager_secret_rotation aws_secretsmanager_secret_rotation}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/secretsmanager_secret_rotation aws_secretsmanager_secret_rotation}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/secretsmanagersecretrotation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/secretsmanagersecretrotation"
 
 secretsmanagersecretrotation.NewSecretsmanagerSecretRotation(scope Construct, id *string, config SecretsmanagerSecretRotationConfig) SecretsmanagerSecretRotation
 ```
@@ -419,7 +419,7 @@ func ResetRotationLambdaArn()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotation.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/secretsmanagersecretrotation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/secretsmanagersecretrotation"
 
 secretsmanagersecretrotation.SecretsmanagerSecretRotation_IsConstruct(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/secretsmanagersecretrotation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/secretsmanagersecretrotation"
 
 secretsmanagersecretrotation.SecretsmanagerSecretRotation_IsTerraformElement(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ secretsmanagersecretrotation.SecretsmanagerSecretRotation_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/secretsmanagersecretrotation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/secretsmanagersecretrotation"
 
 secretsmanagersecretrotation.SecretsmanagerSecretRotation_IsTerraformResource(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ secretsmanagersecretrotation.SecretsmanagerSecretRotation_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/secretsmanagersecretrotation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/secretsmanagersecretrotation"
 
 secretsmanagersecretrotation.SecretsmanagerSecretRotation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -508,7 +508,7 @@ The construct id used in the generated config for the SecretsmanagerSecretRotati
 
 The id of the existing SecretsmanagerSecretRotation that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/secretsmanager_secret_rotation#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/secretsmanager_secret_rotation#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -851,7 +851,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/secretsmanagersecretrotation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/secretsmanagersecretrotation"
 
 &secretsmanagersecretrotation.SecretsmanagerSecretRotationConfig {
 	Connection: interface{},
@@ -861,7 +861,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/secretsmanagersecretro
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	RotationRules: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.secretsmanagerSecretRotation.SecretsmanagerSecretRotationRotationRules,
+	RotationRules: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.secretsmanagerSecretRotation.SecretsmanagerSecretRotationRotationRules,
 	SecretId: *string,
 	Id: *string,
 	Region: *string,
@@ -882,11 +882,11 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/secretsmanagersecretro
 | <code><a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationConfig.property.rotationRules">RotationRules</a></code> | <code><a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationRotationRules">SecretsmanagerSecretRotationRotationRules</a></code> | rotation_rules block. |
-| <code><a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationConfig.property.secretId">SecretId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/secretsmanager_secret_rotation#secret_id SecretsmanagerSecretRotation#secret_id}. |
-| <code><a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/secretsmanager_secret_rotation#id SecretsmanagerSecretRotation#id}. |
+| <code><a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationConfig.property.secretId">SecretId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/secretsmanager_secret_rotation#secret_id SecretsmanagerSecretRotation#secret_id}. |
+| <code><a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/secretsmanager_secret_rotation#id SecretsmanagerSecretRotation#id}. |
 | <code><a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationConfig.property.rotateImmediately">RotateImmediately</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/secretsmanager_secret_rotation#rotate_immediately SecretsmanagerSecretRotation#rotate_immediately}. |
-| <code><a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationConfig.property.rotationLambdaArn">RotationLambdaArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/secretsmanager_secret_rotation#rotation_lambda_arn SecretsmanagerSecretRotation#rotation_lambda_arn}. |
+| <code><a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationConfig.property.rotateImmediately">RotateImmediately</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/secretsmanager_secret_rotation#rotate_immediately SecretsmanagerSecretRotation#rotate_immediately}. |
+| <code><a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationConfig.property.rotationLambdaArn">RotationLambdaArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/secretsmanager_secret_rotation#rotation_lambda_arn SecretsmanagerSecretRotation#rotation_lambda_arn}. |
 
 ---
 
@@ -970,7 +970,7 @@ RotationRules SecretsmanagerSecretRotationRotationRules
 
 rotation_rules block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/secretsmanager_secret_rotation#rotation_rules SecretsmanagerSecretRotation#rotation_rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/secretsmanager_secret_rotation#rotation_rules SecretsmanagerSecretRotation#rotation_rules}
 
 ---
 
@@ -982,7 +982,7 @@ SecretId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/secretsmanager_secret_rotation#secret_id SecretsmanagerSecretRotation#secret_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/secretsmanager_secret_rotation#secret_id SecretsmanagerSecretRotation#secret_id}.
 
 ---
 
@@ -994,7 +994,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/secretsmanager_secret_rotation#id SecretsmanagerSecretRotation#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/secretsmanager_secret_rotation#id SecretsmanagerSecretRotation#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1011,7 +1011,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/secretsmanager_secret_rotation#region SecretsmanagerSecretRotation#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/secretsmanager_secret_rotation#region SecretsmanagerSecretRotation#region}
 
 ---
 
@@ -1023,7 +1023,7 @@ RotateImmediately interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/secretsmanager_secret_rotation#rotate_immediately SecretsmanagerSecretRotation#rotate_immediately}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/secretsmanager_secret_rotation#rotate_immediately SecretsmanagerSecretRotation#rotate_immediately}.
 
 ---
 
@@ -1035,7 +1035,7 @@ RotationLambdaArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/secretsmanager_secret_rotation#rotation_lambda_arn SecretsmanagerSecretRotation#rotation_lambda_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/secretsmanager_secret_rotation#rotation_lambda_arn SecretsmanagerSecretRotation#rotation_lambda_arn}.
 
 ---
 
@@ -1044,7 +1044,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationRotationRules.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/secretsmanagersecretrotation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/secretsmanagersecretrotation"
 
 &secretsmanagersecretrotation.SecretsmanagerSecretRotationRotationRules {
 	AutomaticallyAfterDays: *f64,
@@ -1057,9 +1057,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/secretsmanagersecretro
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationRotationRules.property.automaticallyAfterDays">AutomaticallyAfterDays</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/secretsmanager_secret_rotation#automatically_after_days SecretsmanagerSecretRotation#automatically_after_days}. |
-| <code><a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationRotationRules.property.duration">Duration</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/secretsmanager_secret_rotation#duration SecretsmanagerSecretRotation#duration}. |
-| <code><a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationRotationRules.property.scheduleExpression">ScheduleExpression</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/secretsmanager_secret_rotation#schedule_expression SecretsmanagerSecretRotation#schedule_expression}. |
+| <code><a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationRotationRules.property.automaticallyAfterDays">AutomaticallyAfterDays</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/secretsmanager_secret_rotation#automatically_after_days SecretsmanagerSecretRotation#automatically_after_days}. |
+| <code><a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationRotationRules.property.duration">Duration</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/secretsmanager_secret_rotation#duration SecretsmanagerSecretRotation#duration}. |
+| <code><a href="#@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationRotationRules.property.scheduleExpression">ScheduleExpression</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/secretsmanager_secret_rotation#schedule_expression SecretsmanagerSecretRotation#schedule_expression}. |
 
 ---
 
@@ -1071,7 +1071,7 @@ AutomaticallyAfterDays *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/secretsmanager_secret_rotation#automatically_after_days SecretsmanagerSecretRotation#automatically_after_days}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/secretsmanager_secret_rotation#automatically_after_days SecretsmanagerSecretRotation#automatically_after_days}.
 
 ---
 
@@ -1083,7 +1083,7 @@ Duration *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/secretsmanager_secret_rotation#duration SecretsmanagerSecretRotation#duration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/secretsmanager_secret_rotation#duration SecretsmanagerSecretRotation#duration}.
 
 ---
 
@@ -1095,7 +1095,7 @@ ScheduleExpression *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/secretsmanager_secret_rotation#schedule_expression SecretsmanagerSecretRotation#schedule_expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/secretsmanager_secret_rotation#schedule_expression SecretsmanagerSecretRotation#schedule_expression}.
 
 ---
 
@@ -1106,7 +1106,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationRotationRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/secretsmanagersecretrotation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/secretsmanagersecretrotation"
 
 secretsmanagersecretrotation.NewSecretsmanagerSecretRotationRotationRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SecretsmanagerSecretRotationRotationRulesOutputReference
 ```

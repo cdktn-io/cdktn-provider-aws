@@ -4,12 +4,12 @@
 
 ### ConfigOrganizationCustomRule <a name="ConfigOrganizationCustomRule" id="@cdktn/provider-aws.configOrganizationCustomRule.ConfigOrganizationCustomRule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_organization_custom_rule aws_config_organization_custom_rule}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/config_organization_custom_rule aws_config_organization_custom_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.configOrganizationCustomRule.ConfigOrganizationCustomRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/configorganizationcustomrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/configorganizationcustomrule"
 
 configorganizationcustomrule.NewConfigOrganizationCustomRule(scope Construct, id *string, config ConfigOrganizationCustomRuleConfig) ConfigOrganizationCustomRule
 ```
@@ -468,7 +468,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.configOrganizationCustomRule.ConfigOrganizationCustomRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/configorganizationcustomrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/configorganizationcustomrule"
 
 configorganizationcustomrule.ConfigOrganizationCustomRule_IsConstruct(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.configOrganizationCustomRule.ConfigOrganizationCustomRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/configorganizationcustomrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/configorganizationcustomrule"
 
 configorganizationcustomrule.ConfigOrganizationCustomRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ configorganizationcustomrule.ConfigOrganizationCustomRule_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.configOrganizationCustomRule.ConfigOrganizationCustomRule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/configorganizationcustomrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/configorganizationcustomrule"
 
 configorganizationcustomrule.ConfigOrganizationCustomRule_IsTerraformResource(x interface{}) *bool
 ```
@@ -528,7 +528,7 @@ configorganizationcustomrule.ConfigOrganizationCustomRule_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.configOrganizationCustomRule.ConfigOrganizationCustomRule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/configorganizationcustomrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/configorganizationcustomrule"
 
 configorganizationcustomrule.ConfigOrganizationCustomRule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -557,7 +557,7 @@ The construct id used in the generated config for the ConfigOrganizationCustomRu
 
 The id of the existing ConfigOrganizationCustomRule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_organization_custom_rule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/config_organization_custom_rule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1076,7 +1076,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.configOrganizationCustomRule.ConfigOrganizationCustomRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/configorganizationcustomrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/configorganizationcustomrule"
 
 &configorganizationcustomrule.ConfigOrganizationCustomRuleConfig {
 	Connection: interface{},
@@ -1099,7 +1099,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/configorganizationcust
 	ResourceTypesScope: *[]*string,
 	TagKeyScope: *string,
 	TagValueScope: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.configOrganizationCustomRule.ConfigOrganizationCustomRuleTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.configOrganizationCustomRule.ConfigOrganizationCustomRuleTimeouts,
 }
 ```
 
@@ -1114,19 +1114,19 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/configorganizationcust
 | <code><a href="#@cdktn/provider-aws.configOrganizationCustomRule.ConfigOrganizationCustomRuleConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.configOrganizationCustomRule.ConfigOrganizationCustomRuleConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.configOrganizationCustomRule.ConfigOrganizationCustomRuleConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.configOrganizationCustomRule.ConfigOrganizationCustomRuleConfig.property.lambdaFunctionArn">LambdaFunctionArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_organization_custom_rule#lambda_function_arn ConfigOrganizationCustomRule#lambda_function_arn}. |
-| <code><a href="#@cdktn/provider-aws.configOrganizationCustomRule.ConfigOrganizationCustomRuleConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_organization_custom_rule#name ConfigOrganizationCustomRule#name}. |
-| <code><a href="#@cdktn/provider-aws.configOrganizationCustomRule.ConfigOrganizationCustomRuleConfig.property.triggerTypes">TriggerTypes</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_organization_custom_rule#trigger_types ConfigOrganizationCustomRule#trigger_types}. |
-| <code><a href="#@cdktn/provider-aws.configOrganizationCustomRule.ConfigOrganizationCustomRuleConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_organization_custom_rule#description ConfigOrganizationCustomRule#description}. |
-| <code><a href="#@cdktn/provider-aws.configOrganizationCustomRule.ConfigOrganizationCustomRuleConfig.property.excludedAccounts">ExcludedAccounts</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_organization_custom_rule#excluded_accounts ConfigOrganizationCustomRule#excluded_accounts}. |
-| <code><a href="#@cdktn/provider-aws.configOrganizationCustomRule.ConfigOrganizationCustomRuleConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_organization_custom_rule#id ConfigOrganizationCustomRule#id}. |
-| <code><a href="#@cdktn/provider-aws.configOrganizationCustomRule.ConfigOrganizationCustomRuleConfig.property.inputParameters">InputParameters</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_organization_custom_rule#input_parameters ConfigOrganizationCustomRule#input_parameters}. |
-| <code><a href="#@cdktn/provider-aws.configOrganizationCustomRule.ConfigOrganizationCustomRuleConfig.property.maximumExecutionFrequency">MaximumExecutionFrequency</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_organization_custom_rule#maximum_execution_frequency ConfigOrganizationCustomRule#maximum_execution_frequency}. |
+| <code><a href="#@cdktn/provider-aws.configOrganizationCustomRule.ConfigOrganizationCustomRuleConfig.property.lambdaFunctionArn">LambdaFunctionArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/config_organization_custom_rule#lambda_function_arn ConfigOrganizationCustomRule#lambda_function_arn}. |
+| <code><a href="#@cdktn/provider-aws.configOrganizationCustomRule.ConfigOrganizationCustomRuleConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/config_organization_custom_rule#name ConfigOrganizationCustomRule#name}. |
+| <code><a href="#@cdktn/provider-aws.configOrganizationCustomRule.ConfigOrganizationCustomRuleConfig.property.triggerTypes">TriggerTypes</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/config_organization_custom_rule#trigger_types ConfigOrganizationCustomRule#trigger_types}. |
+| <code><a href="#@cdktn/provider-aws.configOrganizationCustomRule.ConfigOrganizationCustomRuleConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/config_organization_custom_rule#description ConfigOrganizationCustomRule#description}. |
+| <code><a href="#@cdktn/provider-aws.configOrganizationCustomRule.ConfigOrganizationCustomRuleConfig.property.excludedAccounts">ExcludedAccounts</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/config_organization_custom_rule#excluded_accounts ConfigOrganizationCustomRule#excluded_accounts}. |
+| <code><a href="#@cdktn/provider-aws.configOrganizationCustomRule.ConfigOrganizationCustomRuleConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/config_organization_custom_rule#id ConfigOrganizationCustomRule#id}. |
+| <code><a href="#@cdktn/provider-aws.configOrganizationCustomRule.ConfigOrganizationCustomRuleConfig.property.inputParameters">InputParameters</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/config_organization_custom_rule#input_parameters ConfigOrganizationCustomRule#input_parameters}. |
+| <code><a href="#@cdktn/provider-aws.configOrganizationCustomRule.ConfigOrganizationCustomRuleConfig.property.maximumExecutionFrequency">MaximumExecutionFrequency</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/config_organization_custom_rule#maximum_execution_frequency ConfigOrganizationCustomRule#maximum_execution_frequency}. |
 | <code><a href="#@cdktn/provider-aws.configOrganizationCustomRule.ConfigOrganizationCustomRuleConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.configOrganizationCustomRule.ConfigOrganizationCustomRuleConfig.property.resourceIdScope">ResourceIdScope</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_organization_custom_rule#resource_id_scope ConfigOrganizationCustomRule#resource_id_scope}. |
-| <code><a href="#@cdktn/provider-aws.configOrganizationCustomRule.ConfigOrganizationCustomRuleConfig.property.resourceTypesScope">ResourceTypesScope</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_organization_custom_rule#resource_types_scope ConfigOrganizationCustomRule#resource_types_scope}. |
-| <code><a href="#@cdktn/provider-aws.configOrganizationCustomRule.ConfigOrganizationCustomRuleConfig.property.tagKeyScope">TagKeyScope</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_organization_custom_rule#tag_key_scope ConfigOrganizationCustomRule#tag_key_scope}. |
-| <code><a href="#@cdktn/provider-aws.configOrganizationCustomRule.ConfigOrganizationCustomRuleConfig.property.tagValueScope">TagValueScope</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_organization_custom_rule#tag_value_scope ConfigOrganizationCustomRule#tag_value_scope}. |
+| <code><a href="#@cdktn/provider-aws.configOrganizationCustomRule.ConfigOrganizationCustomRuleConfig.property.resourceIdScope">ResourceIdScope</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/config_organization_custom_rule#resource_id_scope ConfigOrganizationCustomRule#resource_id_scope}. |
+| <code><a href="#@cdktn/provider-aws.configOrganizationCustomRule.ConfigOrganizationCustomRuleConfig.property.resourceTypesScope">ResourceTypesScope</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/config_organization_custom_rule#resource_types_scope ConfigOrganizationCustomRule#resource_types_scope}. |
+| <code><a href="#@cdktn/provider-aws.configOrganizationCustomRule.ConfigOrganizationCustomRuleConfig.property.tagKeyScope">TagKeyScope</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/config_organization_custom_rule#tag_key_scope ConfigOrganizationCustomRule#tag_key_scope}. |
+| <code><a href="#@cdktn/provider-aws.configOrganizationCustomRule.ConfigOrganizationCustomRuleConfig.property.tagValueScope">TagValueScope</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/config_organization_custom_rule#tag_value_scope ConfigOrganizationCustomRule#tag_value_scope}. |
 | <code><a href="#@cdktn/provider-aws.configOrganizationCustomRule.ConfigOrganizationCustomRuleConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.configOrganizationCustomRule.ConfigOrganizationCustomRuleTimeouts">ConfigOrganizationCustomRuleTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1209,7 +1209,7 @@ LambdaFunctionArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_organization_custom_rule#lambda_function_arn ConfigOrganizationCustomRule#lambda_function_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/config_organization_custom_rule#lambda_function_arn ConfigOrganizationCustomRule#lambda_function_arn}.
 
 ---
 
@@ -1221,7 +1221,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_organization_custom_rule#name ConfigOrganizationCustomRule#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/config_organization_custom_rule#name ConfigOrganizationCustomRule#name}.
 
 ---
 
@@ -1233,7 +1233,7 @@ TriggerTypes *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_organization_custom_rule#trigger_types ConfigOrganizationCustomRule#trigger_types}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/config_organization_custom_rule#trigger_types ConfigOrganizationCustomRule#trigger_types}.
 
 ---
 
@@ -1245,7 +1245,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_organization_custom_rule#description ConfigOrganizationCustomRule#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/config_organization_custom_rule#description ConfigOrganizationCustomRule#description}.
 
 ---
 
@@ -1257,7 +1257,7 @@ ExcludedAccounts *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_organization_custom_rule#excluded_accounts ConfigOrganizationCustomRule#excluded_accounts}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/config_organization_custom_rule#excluded_accounts ConfigOrganizationCustomRule#excluded_accounts}.
 
 ---
 
@@ -1269,7 +1269,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_organization_custom_rule#id ConfigOrganizationCustomRule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/config_organization_custom_rule#id ConfigOrganizationCustomRule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1284,7 +1284,7 @@ InputParameters *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_organization_custom_rule#input_parameters ConfigOrganizationCustomRule#input_parameters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/config_organization_custom_rule#input_parameters ConfigOrganizationCustomRule#input_parameters}.
 
 ---
 
@@ -1296,7 +1296,7 @@ MaximumExecutionFrequency *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_organization_custom_rule#maximum_execution_frequency ConfigOrganizationCustomRule#maximum_execution_frequency}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/config_organization_custom_rule#maximum_execution_frequency ConfigOrganizationCustomRule#maximum_execution_frequency}.
 
 ---
 
@@ -1310,7 +1310,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_organization_custom_rule#region ConfigOrganizationCustomRule#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/config_organization_custom_rule#region ConfigOrganizationCustomRule#region}
 
 ---
 
@@ -1322,7 +1322,7 @@ ResourceIdScope *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_organization_custom_rule#resource_id_scope ConfigOrganizationCustomRule#resource_id_scope}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/config_organization_custom_rule#resource_id_scope ConfigOrganizationCustomRule#resource_id_scope}.
 
 ---
 
@@ -1334,7 +1334,7 @@ ResourceTypesScope *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_organization_custom_rule#resource_types_scope ConfigOrganizationCustomRule#resource_types_scope}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/config_organization_custom_rule#resource_types_scope ConfigOrganizationCustomRule#resource_types_scope}.
 
 ---
 
@@ -1346,7 +1346,7 @@ TagKeyScope *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_organization_custom_rule#tag_key_scope ConfigOrganizationCustomRule#tag_key_scope}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/config_organization_custom_rule#tag_key_scope ConfigOrganizationCustomRule#tag_key_scope}.
 
 ---
 
@@ -1358,7 +1358,7 @@ TagValueScope *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_organization_custom_rule#tag_value_scope ConfigOrganizationCustomRule#tag_value_scope}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/config_organization_custom_rule#tag_value_scope ConfigOrganizationCustomRule#tag_value_scope}.
 
 ---
 
@@ -1372,7 +1372,7 @@ Timeouts ConfigOrganizationCustomRuleTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_organization_custom_rule#timeouts ConfigOrganizationCustomRule#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/config_organization_custom_rule#timeouts ConfigOrganizationCustomRule#timeouts}
 
 ---
 
@@ -1381,7 +1381,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.configOrganizationCustomRule.ConfigOrganizationCustomRuleTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/configorganizationcustomrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/configorganizationcustomrule"
 
 &configorganizationcustomrule.ConfigOrganizationCustomRuleTimeouts {
 	Create: *string,
@@ -1394,9 +1394,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/configorganizationcust
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.configOrganizationCustomRule.ConfigOrganizationCustomRuleTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_organization_custom_rule#create ConfigOrganizationCustomRule#create}. |
-| <code><a href="#@cdktn/provider-aws.configOrganizationCustomRule.ConfigOrganizationCustomRuleTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_organization_custom_rule#delete ConfigOrganizationCustomRule#delete}. |
-| <code><a href="#@cdktn/provider-aws.configOrganizationCustomRule.ConfigOrganizationCustomRuleTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_organization_custom_rule#update ConfigOrganizationCustomRule#update}. |
+| <code><a href="#@cdktn/provider-aws.configOrganizationCustomRule.ConfigOrganizationCustomRuleTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/config_organization_custom_rule#create ConfigOrganizationCustomRule#create}. |
+| <code><a href="#@cdktn/provider-aws.configOrganizationCustomRule.ConfigOrganizationCustomRuleTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/config_organization_custom_rule#delete ConfigOrganizationCustomRule#delete}. |
+| <code><a href="#@cdktn/provider-aws.configOrganizationCustomRule.ConfigOrganizationCustomRuleTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/config_organization_custom_rule#update ConfigOrganizationCustomRule#update}. |
 
 ---
 
@@ -1408,7 +1408,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_organization_custom_rule#create ConfigOrganizationCustomRule#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/config_organization_custom_rule#create ConfigOrganizationCustomRule#create}.
 
 ---
 
@@ -1420,7 +1420,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_organization_custom_rule#delete ConfigOrganizationCustomRule#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/config_organization_custom_rule#delete ConfigOrganizationCustomRule#delete}.
 
 ---
 
@@ -1432,7 +1432,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_organization_custom_rule#update ConfigOrganizationCustomRule#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/config_organization_custom_rule#update ConfigOrganizationCustomRule#update}.
 
 ---
 
@@ -1443,7 +1443,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.configOrganizationCustomRule.ConfigOrganizationCustomRuleTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/configorganizationcustomrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/configorganizationcustomrule"
 
 configorganizationcustomrule.NewConfigOrganizationCustomRuleTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ConfigOrganizationCustomRuleTimeoutsOutputReference
 ```

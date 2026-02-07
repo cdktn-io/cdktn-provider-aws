@@ -4,7 +4,7 @@
 
 ### DynamodbTable <a name="DynamodbTable" id="@cdktn/provider-aws.dynamodbTable.DynamodbTable"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table aws_dynamodb_table}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table aws_dynamodb_table}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dynamodbTable.DynamodbTable.Initializer"></a>
 
@@ -65,36 +65,36 @@ dynamodbTable.DynamodbTable(
 | <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTable.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTable.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTable.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTable.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#name DynamodbTable#name}. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTable.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#name DynamodbTable#name}. |
 | <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTable.Initializer.parameter.attribute">attribute</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableAttribute">DynamodbTableAttribute</a>]</code> | attribute block. |
-| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTable.Initializer.parameter.billingMode">billing_mode</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#billing_mode DynamodbTable#billing_mode}. |
-| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTable.Initializer.parameter.deletionProtectionEnabled">deletion_protection_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#deletion_protection_enabled DynamodbTable#deletion_protection_enabled}. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTable.Initializer.parameter.billingMode">billing_mode</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#billing_mode DynamodbTable#billing_mode}. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTable.Initializer.parameter.deletionProtectionEnabled">deletion_protection_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#deletion_protection_enabled DynamodbTable#deletion_protection_enabled}. |
 | <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTable.Initializer.parameter.globalSecondaryIndex">global_secondary_index</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndex">DynamodbTableGlobalSecondaryIndex</a>]</code> | global_secondary_index block. |
 | <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTable.Initializer.parameter.globalTableWitness">global_table_witness</a></code> | <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalTableWitness">DynamodbTableGlobalTableWitness</a></code> | global_table_witness block. |
-| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTable.Initializer.parameter.hashKey">hash_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#hash_key DynamodbTable#hash_key}. |
-| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTable.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#id DynamodbTable#id}. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTable.Initializer.parameter.hashKey">hash_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#hash_key DynamodbTable#hash_key}. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTable.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#id DynamodbTable#id}. |
 | <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTable.Initializer.parameter.importTable">import_table</a></code> | <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableImportTable">DynamodbTableImportTable</a></code> | import_table block. |
 | <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTable.Initializer.parameter.localSecondaryIndex">local_secondary_index</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableLocalSecondaryIndex">DynamodbTableLocalSecondaryIndex</a>]</code> | local_secondary_index block. |
 | <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTable.Initializer.parameter.onDemandThroughput">on_demand_throughput</a></code> | <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableOnDemandThroughput">DynamodbTableOnDemandThroughput</a></code> | on_demand_throughput block. |
 | <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTable.Initializer.parameter.pointInTimeRecovery">point_in_time_recovery</a></code> | <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTablePointInTimeRecovery">DynamodbTablePointInTimeRecovery</a></code> | point_in_time_recovery block. |
-| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTable.Initializer.parameter.rangeKey">range_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#range_key DynamodbTable#range_key}. |
-| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTable.Initializer.parameter.readCapacity">read_capacity</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#read_capacity DynamodbTable#read_capacity}. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTable.Initializer.parameter.rangeKey">range_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#range_key DynamodbTable#range_key}. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTable.Initializer.parameter.readCapacity">read_capacity</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#read_capacity DynamodbTable#read_capacity}. |
 | <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTable.Initializer.parameter.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTable.Initializer.parameter.replica">replica</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableReplica">DynamodbTableReplica</a>]</code> | replica block. |
-| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTable.Initializer.parameter.restoreDateTime">restore_date_time</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#restore_date_time DynamodbTable#restore_date_time}. |
-| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTable.Initializer.parameter.restoreSourceName">restore_source_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#restore_source_name DynamodbTable#restore_source_name}. |
-| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTable.Initializer.parameter.restoreSourceTableArn">restore_source_table_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#restore_source_table_arn DynamodbTable#restore_source_table_arn}. |
-| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTable.Initializer.parameter.restoreToLatestTime">restore_to_latest_time</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#restore_to_latest_time DynamodbTable#restore_to_latest_time}. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTable.Initializer.parameter.restoreDateTime">restore_date_time</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#restore_date_time DynamodbTable#restore_date_time}. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTable.Initializer.parameter.restoreSourceName">restore_source_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#restore_source_name DynamodbTable#restore_source_name}. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTable.Initializer.parameter.restoreSourceTableArn">restore_source_table_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#restore_source_table_arn DynamodbTable#restore_source_table_arn}. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTable.Initializer.parameter.restoreToLatestTime">restore_to_latest_time</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#restore_to_latest_time DynamodbTable#restore_to_latest_time}. |
 | <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTable.Initializer.parameter.serverSideEncryption">server_side_encryption</a></code> | <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableServerSideEncryption">DynamodbTableServerSideEncryption</a></code> | server_side_encryption block. |
-| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTable.Initializer.parameter.streamEnabled">stream_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#stream_enabled DynamodbTable#stream_enabled}. |
-| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTable.Initializer.parameter.streamViewType">stream_view_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#stream_view_type DynamodbTable#stream_view_type}. |
-| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTable.Initializer.parameter.tableClass">table_class</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#table_class DynamodbTable#table_class}. |
-| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTable.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#tags DynamodbTable#tags}. |
-| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTable.Initializer.parameter.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#tags_all DynamodbTable#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTable.Initializer.parameter.streamEnabled">stream_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#stream_enabled DynamodbTable#stream_enabled}. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTable.Initializer.parameter.streamViewType">stream_view_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#stream_view_type DynamodbTable#stream_view_type}. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTable.Initializer.parameter.tableClass">table_class</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#table_class DynamodbTable#table_class}. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTable.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#tags DynamodbTable#tags}. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTable.Initializer.parameter.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#tags_all DynamodbTable#tags_all}. |
 | <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTable.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableTimeouts">DynamodbTableTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTable.Initializer.parameter.ttl">ttl</a></code> | <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableTtl">DynamodbTableTtl</a></code> | ttl block. |
 | <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTable.Initializer.parameter.warmThroughput">warm_throughput</a></code> | <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableWarmThroughput">DynamodbTableWarmThroughput</a></code> | warm_throughput block. |
-| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTable.Initializer.parameter.writeCapacity">write_capacity</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#write_capacity DynamodbTable#write_capacity}. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTable.Initializer.parameter.writeCapacity">write_capacity</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#write_capacity DynamodbTable#write_capacity}. |
 
 ---
 
@@ -162,7 +162,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#name DynamodbTable#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#name DynamodbTable#name}.
 
 ---
 
@@ -172,7 +172,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 attribute block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#attribute DynamodbTable#attribute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#attribute DynamodbTable#attribute}
 
 ---
 
@@ -180,7 +180,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#billing_mode DynamodbTable#billing_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#billing_mode DynamodbTable#billing_mode}.
 
 ---
 
@@ -188,7 +188,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#deletion_protection_enabled DynamodbTable#deletion_protection_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#deletion_protection_enabled DynamodbTable#deletion_protection_enabled}.
 
 ---
 
@@ -198,7 +198,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 global_secondary_index block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#global_secondary_index DynamodbTable#global_secondary_index}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#global_secondary_index DynamodbTable#global_secondary_index}
 
 ---
 
@@ -208,7 +208,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 global_table_witness block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#global_table_witness DynamodbTable#global_table_witness}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#global_table_witness DynamodbTable#global_table_witness}
 
 ---
 
@@ -216,7 +216,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#hash_key DynamodbTable#hash_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#hash_key DynamodbTable#hash_key}.
 
 ---
 
@@ -224,7 +224,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#id DynamodbTable#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#id DynamodbTable#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -237,7 +237,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 import_table block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#import_table DynamodbTable#import_table}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#import_table DynamodbTable#import_table}
 
 ---
 
@@ -247,7 +247,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 local_secondary_index block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#local_secondary_index DynamodbTable#local_secondary_index}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#local_secondary_index DynamodbTable#local_secondary_index}
 
 ---
 
@@ -257,7 +257,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 on_demand_throughput block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#on_demand_throughput DynamodbTable#on_demand_throughput}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#on_demand_throughput DynamodbTable#on_demand_throughput}
 
 ---
 
@@ -267,7 +267,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 point_in_time_recovery block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#point_in_time_recovery DynamodbTable#point_in_time_recovery}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#point_in_time_recovery DynamodbTable#point_in_time_recovery}
 
 ---
 
@@ -275,7 +275,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#range_key DynamodbTable#range_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#range_key DynamodbTable#range_key}.
 
 ---
 
@@ -283,7 +283,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#read_capacity DynamodbTable#read_capacity}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#read_capacity DynamodbTable#read_capacity}.
 
 ---
 
@@ -293,7 +293,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#region DynamodbTable#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#region DynamodbTable#region}
 
 ---
 
@@ -303,7 +303,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 replica block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#replica DynamodbTable#replica}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#replica DynamodbTable#replica}
 
 ---
 
@@ -311,7 +311,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#restore_date_time DynamodbTable#restore_date_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#restore_date_time DynamodbTable#restore_date_time}.
 
 ---
 
@@ -319,7 +319,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#restore_source_name DynamodbTable#restore_source_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#restore_source_name DynamodbTable#restore_source_name}.
 
 ---
 
@@ -327,7 +327,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#restore_source_table_arn DynamodbTable#restore_source_table_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#restore_source_table_arn DynamodbTable#restore_source_table_arn}.
 
 ---
 
@@ -335,7 +335,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#restore_to_latest_time DynamodbTable#restore_to_latest_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#restore_to_latest_time DynamodbTable#restore_to_latest_time}.
 
 ---
 
@@ -345,7 +345,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 server_side_encryption block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#server_side_encryption DynamodbTable#server_side_encryption}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#server_side_encryption DynamodbTable#server_side_encryption}
 
 ---
 
@@ -353,7 +353,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#stream_enabled DynamodbTable#stream_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#stream_enabled DynamodbTable#stream_enabled}.
 
 ---
 
@@ -361,7 +361,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#stream_view_type DynamodbTable#stream_view_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#stream_view_type DynamodbTable#stream_view_type}.
 
 ---
 
@@ -369,7 +369,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#table_class DynamodbTable#table_class}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#table_class DynamodbTable#table_class}.
 
 ---
 
@@ -377,7 +377,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#tags DynamodbTable#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#tags DynamodbTable#tags}.
 
 ---
 
@@ -385,7 +385,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#tags_all DynamodbTable#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#tags_all DynamodbTable#tags_all}.
 
 ---
 
@@ -395,7 +395,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#timeouts DynamodbTable#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#timeouts DynamodbTable#timeouts}
 
 ---
 
@@ -405,7 +405,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ttl block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#ttl DynamodbTable#ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#ttl DynamodbTable#ttl}
 
 ---
 
@@ -415,7 +415,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 warm_throughput block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#warm_throughput DynamodbTable#warm_throughput}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#warm_throughput DynamodbTable#warm_throughput}
 
 ---
 
@@ -423,7 +423,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#write_capacity DynamodbTable#write_capacity}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#write_capacity DynamodbTable#write_capacity}.
 
 ---
 
@@ -863,7 +863,7 @@ def put_global_table_witness(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#region_name DynamodbTable#region_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#region_name DynamodbTable#region_name}.
 
 ---
 
@@ -882,7 +882,7 @@ def put_import_table(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#input_format DynamodbTable#input_format}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#input_format DynamodbTable#input_format}.
 
 ---
 
@@ -892,7 +892,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 s3_bucket_source block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#s3_bucket_source DynamodbTable#s3_bucket_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#s3_bucket_source DynamodbTable#s3_bucket_source}
 
 ---
 
@@ -900,7 +900,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#input_compression_type DynamodbTable#input_compression_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#input_compression_type DynamodbTable#input_compression_type}.
 
 ---
 
@@ -910,7 +910,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 input_format_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#input_format_options DynamodbTable#input_format_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#input_format_options DynamodbTable#input_format_options}
 
 ---
 
@@ -941,7 +941,7 @@ def put_on_demand_throughput(
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#max_read_request_units DynamodbTable#max_read_request_units}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#max_read_request_units DynamodbTable#max_read_request_units}.
 
 ---
 
@@ -949,7 +949,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#max_write_request_units DynamodbTable#max_write_request_units}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#max_write_request_units DynamodbTable#max_write_request_units}.
 
 ---
 
@@ -966,7 +966,7 @@ def put_point_in_time_recovery(
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#enabled DynamodbTable#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#enabled DynamodbTable#enabled}.
 
 ---
 
@@ -974,7 +974,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#recovery_period_in_days DynamodbTable#recovery_period_in_days}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#recovery_period_in_days DynamodbTable#recovery_period_in_days}.
 
 ---
 
@@ -1005,7 +1005,7 @@ def put_server_side_encryption(
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#enabled DynamodbTable#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#enabled DynamodbTable#enabled}.
 
 ---
 
@@ -1013,7 +1013,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#kms_key_arn DynamodbTable#kms_key_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#kms_key_arn DynamodbTable#kms_key_arn}.
 
 ---
 
@@ -1031,7 +1031,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#create DynamodbTable#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#create DynamodbTable#create}.
 
 ---
 
@@ -1039,7 +1039,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#delete DynamodbTable#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#delete DynamodbTable#delete}.
 
 ---
 
@@ -1047,7 +1047,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#update DynamodbTable#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#update DynamodbTable#update}.
 
 ---
 
@@ -1064,7 +1064,7 @@ def put_ttl(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#attribute_name DynamodbTable#attribute_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#attribute_name DynamodbTable#attribute_name}.
 
 ---
 
@@ -1072,7 +1072,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#enabled DynamodbTable#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#enabled DynamodbTable#enabled}.
 
 ---
 
@@ -1089,7 +1089,7 @@ def put_warm_throughput(
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#read_units_per_second DynamodbTable#read_units_per_second}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#read_units_per_second DynamodbTable#read_units_per_second}.
 
 ---
 
@@ -1097,7 +1097,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#write_units_per_second DynamodbTable#write_units_per_second}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#write_units_per_second DynamodbTable#write_units_per_second}.
 
 ---
 
@@ -1389,7 +1389,7 @@ The construct id used in the generated config for the DynamodbTable to import.
 
 The id of the existing DynamodbTable that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -2294,8 +2294,8 @@ dynamodbTable.DynamodbTableAttribute(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableAttribute.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#name DynamodbTable#name}. |
-| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableAttribute.property.type">type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#type DynamodbTable#type}. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableAttribute.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#name DynamodbTable#name}. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableAttribute.property.type">type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#type DynamodbTable#type}. |
 
 ---
 
@@ -2307,7 +2307,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#name DynamodbTable#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#name DynamodbTable#name}.
 
 ---
 
@@ -2319,7 +2319,7 @@ type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#type DynamodbTable#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#type DynamodbTable#type}.
 
 ---
 
@@ -2382,36 +2382,36 @@ dynamodbTable.DynamodbTableConfig(
 | <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#name DynamodbTable#name}. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#name DynamodbTable#name}. |
 | <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableConfig.property.attribute">attribute</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableAttribute">DynamodbTableAttribute</a>]</code> | attribute block. |
-| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableConfig.property.billingMode">billing_mode</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#billing_mode DynamodbTable#billing_mode}. |
-| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableConfig.property.deletionProtectionEnabled">deletion_protection_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#deletion_protection_enabled DynamodbTable#deletion_protection_enabled}. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableConfig.property.billingMode">billing_mode</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#billing_mode DynamodbTable#billing_mode}. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableConfig.property.deletionProtectionEnabled">deletion_protection_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#deletion_protection_enabled DynamodbTable#deletion_protection_enabled}. |
 | <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableConfig.property.globalSecondaryIndex">global_secondary_index</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndex">DynamodbTableGlobalSecondaryIndex</a>]</code> | global_secondary_index block. |
 | <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableConfig.property.globalTableWitness">global_table_witness</a></code> | <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalTableWitness">DynamodbTableGlobalTableWitness</a></code> | global_table_witness block. |
-| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableConfig.property.hashKey">hash_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#hash_key DynamodbTable#hash_key}. |
-| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#id DynamodbTable#id}. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableConfig.property.hashKey">hash_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#hash_key DynamodbTable#hash_key}. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#id DynamodbTable#id}. |
 | <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableConfig.property.importTable">import_table</a></code> | <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableImportTable">DynamodbTableImportTable</a></code> | import_table block. |
 | <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableConfig.property.localSecondaryIndex">local_secondary_index</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableLocalSecondaryIndex">DynamodbTableLocalSecondaryIndex</a>]</code> | local_secondary_index block. |
 | <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableConfig.property.onDemandThroughput">on_demand_throughput</a></code> | <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableOnDemandThroughput">DynamodbTableOnDemandThroughput</a></code> | on_demand_throughput block. |
 | <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableConfig.property.pointInTimeRecovery">point_in_time_recovery</a></code> | <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTablePointInTimeRecovery">DynamodbTablePointInTimeRecovery</a></code> | point_in_time_recovery block. |
-| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableConfig.property.rangeKey">range_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#range_key DynamodbTable#range_key}. |
-| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableConfig.property.readCapacity">read_capacity</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#read_capacity DynamodbTable#read_capacity}. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableConfig.property.rangeKey">range_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#range_key DynamodbTable#range_key}. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableConfig.property.readCapacity">read_capacity</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#read_capacity DynamodbTable#read_capacity}. |
 | <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableConfig.property.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableConfig.property.replica">replica</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableReplica">DynamodbTableReplica</a>]</code> | replica block. |
-| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableConfig.property.restoreDateTime">restore_date_time</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#restore_date_time DynamodbTable#restore_date_time}. |
-| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableConfig.property.restoreSourceName">restore_source_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#restore_source_name DynamodbTable#restore_source_name}. |
-| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableConfig.property.restoreSourceTableArn">restore_source_table_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#restore_source_table_arn DynamodbTable#restore_source_table_arn}. |
-| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableConfig.property.restoreToLatestTime">restore_to_latest_time</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#restore_to_latest_time DynamodbTable#restore_to_latest_time}. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableConfig.property.restoreDateTime">restore_date_time</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#restore_date_time DynamodbTable#restore_date_time}. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableConfig.property.restoreSourceName">restore_source_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#restore_source_name DynamodbTable#restore_source_name}. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableConfig.property.restoreSourceTableArn">restore_source_table_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#restore_source_table_arn DynamodbTable#restore_source_table_arn}. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableConfig.property.restoreToLatestTime">restore_to_latest_time</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#restore_to_latest_time DynamodbTable#restore_to_latest_time}. |
 | <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableConfig.property.serverSideEncryption">server_side_encryption</a></code> | <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableServerSideEncryption">DynamodbTableServerSideEncryption</a></code> | server_side_encryption block. |
-| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableConfig.property.streamEnabled">stream_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#stream_enabled DynamodbTable#stream_enabled}. |
-| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableConfig.property.streamViewType">stream_view_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#stream_view_type DynamodbTable#stream_view_type}. |
-| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableConfig.property.tableClass">table_class</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#table_class DynamodbTable#table_class}. |
-| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#tags DynamodbTable#tags}. |
-| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableConfig.property.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#tags_all DynamodbTable#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableConfig.property.streamEnabled">stream_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#stream_enabled DynamodbTable#stream_enabled}. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableConfig.property.streamViewType">stream_view_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#stream_view_type DynamodbTable#stream_view_type}. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableConfig.property.tableClass">table_class</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#table_class DynamodbTable#table_class}. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#tags DynamodbTable#tags}. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableConfig.property.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#tags_all DynamodbTable#tags_all}. |
 | <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableTimeouts">DynamodbTableTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableConfig.property.ttl">ttl</a></code> | <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableTtl">DynamodbTableTtl</a></code> | ttl block. |
 | <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableConfig.property.warmThroughput">warm_throughput</a></code> | <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableWarmThroughput">DynamodbTableWarmThroughput</a></code> | warm_throughput block. |
-| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableConfig.property.writeCapacity">write_capacity</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#write_capacity DynamodbTable#write_capacity}. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableConfig.property.writeCapacity">write_capacity</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#write_capacity DynamodbTable#write_capacity}. |
 
 ---
 
@@ -2493,7 +2493,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#name DynamodbTable#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#name DynamodbTable#name}.
 
 ---
 
@@ -2507,7 +2507,7 @@ attribute: IResolvable | typing.List[DynamodbTableAttribute]
 
 attribute block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#attribute DynamodbTable#attribute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#attribute DynamodbTable#attribute}
 
 ---
 
@@ -2519,7 +2519,7 @@ billing_mode: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#billing_mode DynamodbTable#billing_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#billing_mode DynamodbTable#billing_mode}.
 
 ---
 
@@ -2531,7 +2531,7 @@ deletion_protection_enabled: bool | IResolvable
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#deletion_protection_enabled DynamodbTable#deletion_protection_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#deletion_protection_enabled DynamodbTable#deletion_protection_enabled}.
 
 ---
 
@@ -2545,7 +2545,7 @@ global_secondary_index: IResolvable | typing.List[DynamodbTableGlobalSecondaryIn
 
 global_secondary_index block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#global_secondary_index DynamodbTable#global_secondary_index}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#global_secondary_index DynamodbTable#global_secondary_index}
 
 ---
 
@@ -2559,7 +2559,7 @@ global_table_witness: DynamodbTableGlobalTableWitness
 
 global_table_witness block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#global_table_witness DynamodbTable#global_table_witness}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#global_table_witness DynamodbTable#global_table_witness}
 
 ---
 
@@ -2571,7 +2571,7 @@ hash_key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#hash_key DynamodbTable#hash_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#hash_key DynamodbTable#hash_key}.
 
 ---
 
@@ -2583,7 +2583,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#id DynamodbTable#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#id DynamodbTable#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2600,7 +2600,7 @@ import_table: DynamodbTableImportTable
 
 import_table block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#import_table DynamodbTable#import_table}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#import_table DynamodbTable#import_table}
 
 ---
 
@@ -2614,7 +2614,7 @@ local_secondary_index: IResolvable | typing.List[DynamodbTableLocalSecondaryInde
 
 local_secondary_index block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#local_secondary_index DynamodbTable#local_secondary_index}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#local_secondary_index DynamodbTable#local_secondary_index}
 
 ---
 
@@ -2628,7 +2628,7 @@ on_demand_throughput: DynamodbTableOnDemandThroughput
 
 on_demand_throughput block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#on_demand_throughput DynamodbTable#on_demand_throughput}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#on_demand_throughput DynamodbTable#on_demand_throughput}
 
 ---
 
@@ -2642,7 +2642,7 @@ point_in_time_recovery: DynamodbTablePointInTimeRecovery
 
 point_in_time_recovery block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#point_in_time_recovery DynamodbTable#point_in_time_recovery}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#point_in_time_recovery DynamodbTable#point_in_time_recovery}
 
 ---
 
@@ -2654,7 +2654,7 @@ range_key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#range_key DynamodbTable#range_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#range_key DynamodbTable#range_key}.
 
 ---
 
@@ -2666,7 +2666,7 @@ read_capacity: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#read_capacity DynamodbTable#read_capacity}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#read_capacity DynamodbTable#read_capacity}.
 
 ---
 
@@ -2680,7 +2680,7 @@ region: str
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#region DynamodbTable#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#region DynamodbTable#region}
 
 ---
 
@@ -2694,7 +2694,7 @@ replica: IResolvable | typing.List[DynamodbTableReplica]
 
 replica block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#replica DynamodbTable#replica}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#replica DynamodbTable#replica}
 
 ---
 
@@ -2706,7 +2706,7 @@ restore_date_time: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#restore_date_time DynamodbTable#restore_date_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#restore_date_time DynamodbTable#restore_date_time}.
 
 ---
 
@@ -2718,7 +2718,7 @@ restore_source_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#restore_source_name DynamodbTable#restore_source_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#restore_source_name DynamodbTable#restore_source_name}.
 
 ---
 
@@ -2730,7 +2730,7 @@ restore_source_table_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#restore_source_table_arn DynamodbTable#restore_source_table_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#restore_source_table_arn DynamodbTable#restore_source_table_arn}.
 
 ---
 
@@ -2742,7 +2742,7 @@ restore_to_latest_time: bool | IResolvable
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#restore_to_latest_time DynamodbTable#restore_to_latest_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#restore_to_latest_time DynamodbTable#restore_to_latest_time}.
 
 ---
 
@@ -2756,7 +2756,7 @@ server_side_encryption: DynamodbTableServerSideEncryption
 
 server_side_encryption block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#server_side_encryption DynamodbTable#server_side_encryption}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#server_side_encryption DynamodbTable#server_side_encryption}
 
 ---
 
@@ -2768,7 +2768,7 @@ stream_enabled: bool | IResolvable
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#stream_enabled DynamodbTable#stream_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#stream_enabled DynamodbTable#stream_enabled}.
 
 ---
 
@@ -2780,7 +2780,7 @@ stream_view_type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#stream_view_type DynamodbTable#stream_view_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#stream_view_type DynamodbTable#stream_view_type}.
 
 ---
 
@@ -2792,7 +2792,7 @@ table_class: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#table_class DynamodbTable#table_class}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#table_class DynamodbTable#table_class}.
 
 ---
 
@@ -2804,7 +2804,7 @@ tags: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#tags DynamodbTable#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#tags DynamodbTable#tags}.
 
 ---
 
@@ -2816,7 +2816,7 @@ tags_all: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#tags_all DynamodbTable#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#tags_all DynamodbTable#tags_all}.
 
 ---
 
@@ -2830,7 +2830,7 @@ timeouts: DynamodbTableTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#timeouts DynamodbTable#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#timeouts DynamodbTable#timeouts}
 
 ---
 
@@ -2844,7 +2844,7 @@ ttl: DynamodbTableTtl
 
 ttl block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#ttl DynamodbTable#ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#ttl DynamodbTable#ttl}
 
 ---
 
@@ -2858,7 +2858,7 @@ warm_throughput: DynamodbTableWarmThroughput
 
 warm_throughput block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#warm_throughput DynamodbTable#warm_throughput}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#warm_throughput DynamodbTable#warm_throughput}
 
 ---
 
@@ -2870,7 +2870,7 @@ write_capacity: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#write_capacity DynamodbTable#write_capacity}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#write_capacity DynamodbTable#write_capacity}.
 
 ---
 
@@ -2882,9 +2882,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 from cdktn_provider_aws import dynamodb_table
 
 dynamodbTable.DynamodbTableGlobalSecondaryIndex(
-  hash_key: str,
   name: str,
   projection_type: str,
+  hash_key: str = None,
+  key_schema: IResolvable | typing.List[DynamodbTableGlobalSecondaryIndexKeySchema] = None,
   non_key_attributes: typing.List[str] = None,
   on_demand_throughput: DynamodbTableGlobalSecondaryIndexOnDemandThroughput = None,
   range_key: str = None,
@@ -2898,27 +2899,16 @@ dynamodbTable.DynamodbTableGlobalSecondaryIndex(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndex.property.hashKey">hash_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#hash_key DynamodbTable#hash_key}. |
-| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndex.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#name DynamodbTable#name}. |
-| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndex.property.projectionType">projection_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#projection_type DynamodbTable#projection_type}. |
-| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndex.property.nonKeyAttributes">non_key_attributes</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#non_key_attributes DynamodbTable#non_key_attributes}. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndex.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#name DynamodbTable#name}. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndex.property.projectionType">projection_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#projection_type DynamodbTable#projection_type}. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndex.property.hashKey">hash_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#hash_key DynamodbTable#hash_key}. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndex.property.keySchema">key_schema</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexKeySchema">DynamodbTableGlobalSecondaryIndexKeySchema</a>]</code> | key_schema block. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndex.property.nonKeyAttributes">non_key_attributes</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#non_key_attributes DynamodbTable#non_key_attributes}. |
 | <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndex.property.onDemandThroughput">on_demand_throughput</a></code> | <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexOnDemandThroughput">DynamodbTableGlobalSecondaryIndexOnDemandThroughput</a></code> | on_demand_throughput block. |
-| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndex.property.rangeKey">range_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#range_key DynamodbTable#range_key}. |
-| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndex.property.readCapacity">read_capacity</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#read_capacity DynamodbTable#read_capacity}. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndex.property.rangeKey">range_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#range_key DynamodbTable#range_key}. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndex.property.readCapacity">read_capacity</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#read_capacity DynamodbTable#read_capacity}. |
 | <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndex.property.warmThroughput">warm_throughput</a></code> | <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexWarmThroughput">DynamodbTableGlobalSecondaryIndexWarmThroughput</a></code> | warm_throughput block. |
-| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndex.property.writeCapacity">write_capacity</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#write_capacity DynamodbTable#write_capacity}. |
-
----
-
-##### `hash_key`<sup>Required</sup> <a name="hash_key" id="@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndex.property.hashKey"></a>
-
-```python
-hash_key: str
-```
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#hash_key DynamodbTable#hash_key}.
+| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndex.property.writeCapacity">write_capacity</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#write_capacity DynamodbTable#write_capacity}. |
 
 ---
 
@@ -2930,7 +2920,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#name DynamodbTable#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#name DynamodbTable#name}.
 
 ---
 
@@ -2942,7 +2932,33 @@ projection_type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#projection_type DynamodbTable#projection_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#projection_type DynamodbTable#projection_type}.
+
+---
+
+##### `hash_key`<sup>Optional</sup> <a name="hash_key" id="@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndex.property.hashKey"></a>
+
+```python
+hash_key: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#hash_key DynamodbTable#hash_key}.
+
+---
+
+##### `key_schema`<sup>Optional</sup> <a name="key_schema" id="@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndex.property.keySchema"></a>
+
+```python
+key_schema: IResolvable | typing.List[DynamodbTableGlobalSecondaryIndexKeySchema]
+```
+
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexKeySchema">DynamodbTableGlobalSecondaryIndexKeySchema</a>]
+
+key_schema block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#key_schema DynamodbTable#key_schema}
 
 ---
 
@@ -2954,7 +2970,7 @@ non_key_attributes: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#non_key_attributes DynamodbTable#non_key_attributes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#non_key_attributes DynamodbTable#non_key_attributes}.
 
 ---
 
@@ -2968,7 +2984,7 @@ on_demand_throughput: DynamodbTableGlobalSecondaryIndexOnDemandThroughput
 
 on_demand_throughput block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#on_demand_throughput DynamodbTable#on_demand_throughput}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#on_demand_throughput DynamodbTable#on_demand_throughput}
 
 ---
 
@@ -2980,7 +2996,7 @@ range_key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#range_key DynamodbTable#range_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#range_key DynamodbTable#range_key}.
 
 ---
 
@@ -2992,7 +3008,7 @@ read_capacity: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#read_capacity DynamodbTable#read_capacity}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#read_capacity DynamodbTable#read_capacity}.
 
 ---
 
@@ -3006,7 +3022,7 @@ warm_throughput: DynamodbTableGlobalSecondaryIndexWarmThroughput
 
 warm_throughput block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#warm_throughput DynamodbTable#warm_throughput}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#warm_throughput DynamodbTable#warm_throughput}
 
 ---
 
@@ -3018,7 +3034,53 @@ write_capacity: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#write_capacity DynamodbTable#write_capacity}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#write_capacity DynamodbTable#write_capacity}.
+
+---
+
+### DynamodbTableGlobalSecondaryIndexKeySchema <a name="DynamodbTableGlobalSecondaryIndexKeySchema" id="@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexKeySchema"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexKeySchema.Initializer"></a>
+
+```python
+from cdktn_provider_aws import dynamodb_table
+
+dynamodbTable.DynamodbTableGlobalSecondaryIndexKeySchema(
+  attribute_name: str,
+  key_type: str
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexKeySchema.property.attributeName">attribute_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#attribute_name DynamodbTable#attribute_name}. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexKeySchema.property.keyType">key_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#key_type DynamodbTable#key_type}. |
+
+---
+
+##### `attribute_name`<sup>Required</sup> <a name="attribute_name" id="@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexKeySchema.property.attributeName"></a>
+
+```python
+attribute_name: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#attribute_name DynamodbTable#attribute_name}.
+
+---
+
+##### `key_type`<sup>Required</sup> <a name="key_type" id="@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexKeySchema.property.keyType"></a>
+
+```python
+key_type: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#key_type DynamodbTable#key_type}.
 
 ---
 
@@ -3039,8 +3101,8 @@ dynamodbTable.DynamodbTableGlobalSecondaryIndexOnDemandThroughput(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexOnDemandThroughput.property.maxReadRequestUnits">max_read_request_units</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#max_read_request_units DynamodbTable#max_read_request_units}. |
-| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexOnDemandThroughput.property.maxWriteRequestUnits">max_write_request_units</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#max_write_request_units DynamodbTable#max_write_request_units}. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexOnDemandThroughput.property.maxReadRequestUnits">max_read_request_units</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#max_read_request_units DynamodbTable#max_read_request_units}. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexOnDemandThroughput.property.maxWriteRequestUnits">max_write_request_units</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#max_write_request_units DynamodbTable#max_write_request_units}. |
 
 ---
 
@@ -3052,7 +3114,7 @@ max_read_request_units: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#max_read_request_units DynamodbTable#max_read_request_units}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#max_read_request_units DynamodbTable#max_read_request_units}.
 
 ---
 
@@ -3064,7 +3126,7 @@ max_write_request_units: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#max_write_request_units DynamodbTable#max_write_request_units}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#max_write_request_units DynamodbTable#max_write_request_units}.
 
 ---
 
@@ -3085,8 +3147,8 @@ dynamodbTable.DynamodbTableGlobalSecondaryIndexWarmThroughput(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexWarmThroughput.property.readUnitsPerSecond">read_units_per_second</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#read_units_per_second DynamodbTable#read_units_per_second}. |
-| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexWarmThroughput.property.writeUnitsPerSecond">write_units_per_second</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#write_units_per_second DynamodbTable#write_units_per_second}. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexWarmThroughput.property.readUnitsPerSecond">read_units_per_second</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#read_units_per_second DynamodbTable#read_units_per_second}. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexWarmThroughput.property.writeUnitsPerSecond">write_units_per_second</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#write_units_per_second DynamodbTable#write_units_per_second}. |
 
 ---
 
@@ -3098,7 +3160,7 @@ read_units_per_second: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#read_units_per_second DynamodbTable#read_units_per_second}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#read_units_per_second DynamodbTable#read_units_per_second}.
 
 ---
 
@@ -3110,7 +3172,7 @@ write_units_per_second: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#write_units_per_second DynamodbTable#write_units_per_second}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#write_units_per_second DynamodbTable#write_units_per_second}.
 
 ---
 
@@ -3130,7 +3192,7 @@ dynamodbTable.DynamodbTableGlobalTableWitness(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalTableWitness.property.regionName">region_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#region_name DynamodbTable#region_name}. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalTableWitness.property.regionName">region_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#region_name DynamodbTable#region_name}. |
 
 ---
 
@@ -3142,7 +3204,7 @@ region_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#region_name DynamodbTable#region_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#region_name DynamodbTable#region_name}.
 
 ---
 
@@ -3165,9 +3227,9 @@ dynamodbTable.DynamodbTableImportTable(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableImportTable.property.inputFormat">input_format</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#input_format DynamodbTable#input_format}. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableImportTable.property.inputFormat">input_format</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#input_format DynamodbTable#input_format}. |
 | <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableImportTable.property.s3BucketSource">s3_bucket_source</a></code> | <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableImportTableS3BucketSource">DynamodbTableImportTableS3BucketSource</a></code> | s3_bucket_source block. |
-| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableImportTable.property.inputCompressionType">input_compression_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#input_compression_type DynamodbTable#input_compression_type}. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableImportTable.property.inputCompressionType">input_compression_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#input_compression_type DynamodbTable#input_compression_type}. |
 | <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableImportTable.property.inputFormatOptions">input_format_options</a></code> | <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableImportTableInputFormatOptions">DynamodbTableImportTableInputFormatOptions</a></code> | input_format_options block. |
 
 ---
@@ -3180,7 +3242,7 @@ input_format: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#input_format DynamodbTable#input_format}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#input_format DynamodbTable#input_format}.
 
 ---
 
@@ -3194,7 +3256,7 @@ s3_bucket_source: DynamodbTableImportTableS3BucketSource
 
 s3_bucket_source block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#s3_bucket_source DynamodbTable#s3_bucket_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#s3_bucket_source DynamodbTable#s3_bucket_source}
 
 ---
 
@@ -3206,7 +3268,7 @@ input_compression_type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#input_compression_type DynamodbTable#input_compression_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#input_compression_type DynamodbTable#input_compression_type}.
 
 ---
 
@@ -3220,7 +3282,7 @@ input_format_options: DynamodbTableImportTableInputFormatOptions
 
 input_format_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#input_format_options DynamodbTable#input_format_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#input_format_options DynamodbTable#input_format_options}
 
 ---
 
@@ -3254,7 +3316,7 @@ csv: DynamodbTableImportTableInputFormatOptionsCsv
 
 csv block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#csv DynamodbTable#csv}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#csv DynamodbTable#csv}
 
 ---
 
@@ -3275,8 +3337,8 @@ dynamodbTable.DynamodbTableImportTableInputFormatOptionsCsv(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableImportTableInputFormatOptionsCsv.property.delimiter">delimiter</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#delimiter DynamodbTable#delimiter}. |
-| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableImportTableInputFormatOptionsCsv.property.headerList">header_list</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#header_list DynamodbTable#header_list}. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableImportTableInputFormatOptionsCsv.property.delimiter">delimiter</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#delimiter DynamodbTable#delimiter}. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableImportTableInputFormatOptionsCsv.property.headerList">header_list</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#header_list DynamodbTable#header_list}. |
 
 ---
 
@@ -3288,7 +3350,7 @@ delimiter: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#delimiter DynamodbTable#delimiter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#delimiter DynamodbTable#delimiter}.
 
 ---
 
@@ -3300,7 +3362,7 @@ header_list: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#header_list DynamodbTable#header_list}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#header_list DynamodbTable#header_list}.
 
 ---
 
@@ -3322,9 +3384,9 @@ dynamodbTable.DynamodbTableImportTableS3BucketSource(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableImportTableS3BucketSource.property.bucket">bucket</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#bucket DynamodbTable#bucket}. |
-| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableImportTableS3BucketSource.property.bucketOwner">bucket_owner</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#bucket_owner DynamodbTable#bucket_owner}. |
-| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableImportTableS3BucketSource.property.keyPrefix">key_prefix</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#key_prefix DynamodbTable#key_prefix}. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableImportTableS3BucketSource.property.bucket">bucket</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#bucket DynamodbTable#bucket}. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableImportTableS3BucketSource.property.bucketOwner">bucket_owner</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#bucket_owner DynamodbTable#bucket_owner}. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableImportTableS3BucketSource.property.keyPrefix">key_prefix</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#key_prefix DynamodbTable#key_prefix}. |
 
 ---
 
@@ -3336,7 +3398,7 @@ bucket: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#bucket DynamodbTable#bucket}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#bucket DynamodbTable#bucket}.
 
 ---
 
@@ -3348,7 +3410,7 @@ bucket_owner: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#bucket_owner DynamodbTable#bucket_owner}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#bucket_owner DynamodbTable#bucket_owner}.
 
 ---
 
@@ -3360,7 +3422,7 @@ key_prefix: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#key_prefix DynamodbTable#key_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#key_prefix DynamodbTable#key_prefix}.
 
 ---
 
@@ -3383,10 +3445,10 @@ dynamodbTable.DynamodbTableLocalSecondaryIndex(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableLocalSecondaryIndex.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#name DynamodbTable#name}. |
-| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableLocalSecondaryIndex.property.projectionType">projection_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#projection_type DynamodbTable#projection_type}. |
-| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableLocalSecondaryIndex.property.rangeKey">range_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#range_key DynamodbTable#range_key}. |
-| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableLocalSecondaryIndex.property.nonKeyAttributes">non_key_attributes</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#non_key_attributes DynamodbTable#non_key_attributes}. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableLocalSecondaryIndex.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#name DynamodbTable#name}. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableLocalSecondaryIndex.property.projectionType">projection_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#projection_type DynamodbTable#projection_type}. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableLocalSecondaryIndex.property.rangeKey">range_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#range_key DynamodbTable#range_key}. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableLocalSecondaryIndex.property.nonKeyAttributes">non_key_attributes</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#non_key_attributes DynamodbTable#non_key_attributes}. |
 
 ---
 
@@ -3398,7 +3460,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#name DynamodbTable#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#name DynamodbTable#name}.
 
 ---
 
@@ -3410,7 +3472,7 @@ projection_type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#projection_type DynamodbTable#projection_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#projection_type DynamodbTable#projection_type}.
 
 ---
 
@@ -3422,7 +3484,7 @@ range_key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#range_key DynamodbTable#range_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#range_key DynamodbTable#range_key}.
 
 ---
 
@@ -3434,7 +3496,7 @@ non_key_attributes: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#non_key_attributes DynamodbTable#non_key_attributes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#non_key_attributes DynamodbTable#non_key_attributes}.
 
 ---
 
@@ -3455,8 +3517,8 @@ dynamodbTable.DynamodbTableOnDemandThroughput(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableOnDemandThroughput.property.maxReadRequestUnits">max_read_request_units</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#max_read_request_units DynamodbTable#max_read_request_units}. |
-| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableOnDemandThroughput.property.maxWriteRequestUnits">max_write_request_units</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#max_write_request_units DynamodbTable#max_write_request_units}. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableOnDemandThroughput.property.maxReadRequestUnits">max_read_request_units</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#max_read_request_units DynamodbTable#max_read_request_units}. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableOnDemandThroughput.property.maxWriteRequestUnits">max_write_request_units</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#max_write_request_units DynamodbTable#max_write_request_units}. |
 
 ---
 
@@ -3468,7 +3530,7 @@ max_read_request_units: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#max_read_request_units DynamodbTable#max_read_request_units}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#max_read_request_units DynamodbTable#max_read_request_units}.
 
 ---
 
@@ -3480,7 +3542,7 @@ max_write_request_units: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#max_write_request_units DynamodbTable#max_write_request_units}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#max_write_request_units DynamodbTable#max_write_request_units}.
 
 ---
 
@@ -3501,8 +3563,8 @@ dynamodbTable.DynamodbTablePointInTimeRecovery(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTablePointInTimeRecovery.property.enabled">enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#enabled DynamodbTable#enabled}. |
-| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTablePointInTimeRecovery.property.recoveryPeriodInDays">recovery_period_in_days</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#recovery_period_in_days DynamodbTable#recovery_period_in_days}. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTablePointInTimeRecovery.property.enabled">enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#enabled DynamodbTable#enabled}. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTablePointInTimeRecovery.property.recoveryPeriodInDays">recovery_period_in_days</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#recovery_period_in_days DynamodbTable#recovery_period_in_days}. |
 
 ---
 
@@ -3514,7 +3576,7 @@ enabled: bool | IResolvable
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#enabled DynamodbTable#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#enabled DynamodbTable#enabled}.
 
 ---
 
@@ -3526,7 +3588,7 @@ recovery_period_in_days: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#recovery_period_in_days DynamodbTable#recovery_period_in_days}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#recovery_period_in_days DynamodbTable#recovery_period_in_days}.
 
 ---
 
@@ -3551,12 +3613,12 @@ dynamodbTable.DynamodbTableReplica(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableReplica.property.regionName">region_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#region_name DynamodbTable#region_name}. |
-| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableReplica.property.consistencyMode">consistency_mode</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#consistency_mode DynamodbTable#consistency_mode}. |
-| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableReplica.property.deletionProtectionEnabled">deletion_protection_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#deletion_protection_enabled DynamodbTable#deletion_protection_enabled}. |
-| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableReplica.property.kmsKeyArn">kms_key_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#kms_key_arn DynamodbTable#kms_key_arn}. |
-| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableReplica.property.pointInTimeRecovery">point_in_time_recovery</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#point_in_time_recovery DynamodbTable#point_in_time_recovery}. |
-| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableReplica.property.propagateTags">propagate_tags</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#propagate_tags DynamodbTable#propagate_tags}. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableReplica.property.regionName">region_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#region_name DynamodbTable#region_name}. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableReplica.property.consistencyMode">consistency_mode</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#consistency_mode DynamodbTable#consistency_mode}. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableReplica.property.deletionProtectionEnabled">deletion_protection_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#deletion_protection_enabled DynamodbTable#deletion_protection_enabled}. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableReplica.property.kmsKeyArn">kms_key_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#kms_key_arn DynamodbTable#kms_key_arn}. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableReplica.property.pointInTimeRecovery">point_in_time_recovery</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#point_in_time_recovery DynamodbTable#point_in_time_recovery}. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableReplica.property.propagateTags">propagate_tags</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#propagate_tags DynamodbTable#propagate_tags}. |
 
 ---
 
@@ -3568,7 +3630,7 @@ region_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#region_name DynamodbTable#region_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#region_name DynamodbTable#region_name}.
 
 ---
 
@@ -3580,7 +3642,7 @@ consistency_mode: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#consistency_mode DynamodbTable#consistency_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#consistency_mode DynamodbTable#consistency_mode}.
 
 ---
 
@@ -3592,7 +3654,7 @@ deletion_protection_enabled: bool | IResolvable
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#deletion_protection_enabled DynamodbTable#deletion_protection_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#deletion_protection_enabled DynamodbTable#deletion_protection_enabled}.
 
 ---
 
@@ -3604,7 +3666,7 @@ kms_key_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#kms_key_arn DynamodbTable#kms_key_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#kms_key_arn DynamodbTable#kms_key_arn}.
 
 ---
 
@@ -3616,7 +3678,7 @@ point_in_time_recovery: bool | IResolvable
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#point_in_time_recovery DynamodbTable#point_in_time_recovery}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#point_in_time_recovery DynamodbTable#point_in_time_recovery}.
 
 ---
 
@@ -3628,7 +3690,7 @@ propagate_tags: bool | IResolvable
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#propagate_tags DynamodbTable#propagate_tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#propagate_tags DynamodbTable#propagate_tags}.
 
 ---
 
@@ -3649,8 +3711,8 @@ dynamodbTable.DynamodbTableServerSideEncryption(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableServerSideEncryption.property.enabled">enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#enabled DynamodbTable#enabled}. |
-| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableServerSideEncryption.property.kmsKeyArn">kms_key_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#kms_key_arn DynamodbTable#kms_key_arn}. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableServerSideEncryption.property.enabled">enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#enabled DynamodbTable#enabled}. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableServerSideEncryption.property.kmsKeyArn">kms_key_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#kms_key_arn DynamodbTable#kms_key_arn}. |
 
 ---
 
@@ -3662,7 +3724,7 @@ enabled: bool | IResolvable
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#enabled DynamodbTable#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#enabled DynamodbTable#enabled}.
 
 ---
 
@@ -3674,7 +3736,7 @@ kms_key_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#kms_key_arn DynamodbTable#kms_key_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#kms_key_arn DynamodbTable#kms_key_arn}.
 
 ---
 
@@ -3696,9 +3758,9 @@ dynamodbTable.DynamodbTableTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#create DynamodbTable#create}. |
-| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#delete DynamodbTable#delete}. |
-| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#update DynamodbTable#update}. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#create DynamodbTable#create}. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#delete DynamodbTable#delete}. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#update DynamodbTable#update}. |
 
 ---
 
@@ -3710,7 +3772,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#create DynamodbTable#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#create DynamodbTable#create}.
 
 ---
 
@@ -3722,7 +3784,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#delete DynamodbTable#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#delete DynamodbTable#delete}.
 
 ---
 
@@ -3734,7 +3796,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#update DynamodbTable#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#update DynamodbTable#update}.
 
 ---
 
@@ -3755,8 +3817,8 @@ dynamodbTable.DynamodbTableTtl(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableTtl.property.attributeName">attribute_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#attribute_name DynamodbTable#attribute_name}. |
-| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableTtl.property.enabled">enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#enabled DynamodbTable#enabled}. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableTtl.property.attributeName">attribute_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#attribute_name DynamodbTable#attribute_name}. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableTtl.property.enabled">enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#enabled DynamodbTable#enabled}. |
 
 ---
 
@@ -3768,7 +3830,7 @@ attribute_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#attribute_name DynamodbTable#attribute_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#attribute_name DynamodbTable#attribute_name}.
 
 ---
 
@@ -3780,7 +3842,7 @@ enabled: bool | IResolvable
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#enabled DynamodbTable#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#enabled DynamodbTable#enabled}.
 
 ---
 
@@ -3801,8 +3863,8 @@ dynamodbTable.DynamodbTableWarmThroughput(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableWarmThroughput.property.readUnitsPerSecond">read_units_per_second</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#read_units_per_second DynamodbTable#read_units_per_second}. |
-| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableWarmThroughput.property.writeUnitsPerSecond">write_units_per_second</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#write_units_per_second DynamodbTable#write_units_per_second}. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableWarmThroughput.property.readUnitsPerSecond">read_units_per_second</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#read_units_per_second DynamodbTable#read_units_per_second}. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableWarmThroughput.property.writeUnitsPerSecond">write_units_per_second</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#write_units_per_second DynamodbTable#write_units_per_second}. |
 
 ---
 
@@ -3814,7 +3876,7 @@ read_units_per_second: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#read_units_per_second DynamodbTable#read_units_per_second}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#read_units_per_second DynamodbTable#read_units_per_second}.
 
 ---
 
@@ -3826,7 +3888,7 @@ write_units_per_second: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#write_units_per_second DynamodbTable#write_units_per_second}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#write_units_per_second DynamodbTable#write_units_per_second}.
 
 ---
 
@@ -4336,6 +4398,514 @@ internal_value: IResolvable | DynamodbTableAttribute
 ```
 
 - *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableAttribute">DynamodbTableAttribute</a>
+
+---
+
+
+### DynamodbTableGlobalSecondaryIndexKeySchemaList <a name="DynamodbTableGlobalSecondaryIndexKeySchemaList" id="@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexKeySchemaList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexKeySchemaList.Initializer"></a>
+
+```python
+from cdktn_provider_aws import dynamodb_table
+
+dynamodbTable.DynamodbTableGlobalSecondaryIndexKeySchemaList(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  wraps_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexKeySchemaList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexKeySchemaList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexKeySchemaList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexKeySchemaList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexKeySchemaList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexKeySchemaList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexKeySchemaList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexKeySchemaList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexKeySchemaList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexKeySchemaList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexKeySchemaList.get">get</a></code> | *No description.* |
+
+---
+
+##### `all_with_map_key` <a name="all_with_map_key" id="@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexKeySchemaList.allWithMapKey"></a>
+
+```python
+def all_with_map_key(
+  map_key_attribute_name: str
+) -> DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexKeySchemaList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* str
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexKeySchemaList.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexKeySchemaList.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexKeySchemaList.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexKeySchemaList.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexKeySchemaList.get"></a>
+
+```python
+def get(
+  index: typing.Union[int, float]
+) -> DynamodbTableGlobalSecondaryIndexKeySchemaOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexKeySchemaList.get.parameter.index"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexKeySchemaList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexKeySchemaList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexKeySchemaList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexKeySchema">DynamodbTableGlobalSecondaryIndexKeySchema</a>]</code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexKeySchemaList.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexKeySchemaList.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexKeySchemaList.property.internalValue"></a>
+
+```python
+internal_value: IResolvable | typing.List[DynamodbTableGlobalSecondaryIndexKeySchema]
+```
+
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexKeySchema">DynamodbTableGlobalSecondaryIndexKeySchema</a>]
+
+---
+
+
+### DynamodbTableGlobalSecondaryIndexKeySchemaOutputReference <a name="DynamodbTableGlobalSecondaryIndexKeySchemaOutputReference" id="@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexKeySchemaOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexKeySchemaOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_aws import dynamodb_table
+
+dynamodbTable.DynamodbTableGlobalSecondaryIndexKeySchemaOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  complex_object_index: typing.Union[int, float],
+  complex_object_is_from_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexKeySchemaOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexKeySchemaOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexKeySchemaOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexKeySchemaOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexKeySchemaOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexKeySchemaOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexKeySchemaOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of this item in the list.
+
+---
+
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexKeySchemaOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexKeySchemaOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexKeySchemaOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexKeySchemaOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexKeySchemaOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexKeySchemaOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexKeySchemaOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexKeySchemaOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexKeySchemaOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexKeySchemaOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexKeySchemaOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexKeySchemaOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexKeySchemaOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexKeySchemaOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexKeySchemaOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexKeySchemaOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexKeySchemaOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexKeySchemaOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexKeySchemaOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexKeySchemaOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexKeySchemaOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexKeySchemaOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexKeySchemaOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexKeySchemaOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexKeySchemaOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexKeySchemaOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexKeySchemaOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexKeySchemaOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexKeySchemaOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexKeySchemaOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexKeySchemaOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexKeySchemaOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexKeySchemaOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexKeySchemaOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexKeySchemaOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexKeySchemaOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexKeySchemaOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexKeySchemaOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexKeySchemaOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexKeySchemaOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexKeySchemaOutputReference.property.attributeNameInput">attribute_name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexKeySchemaOutputReference.property.keyTypeInput">key_type_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexKeySchemaOutputReference.property.attributeName">attribute_name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexKeySchemaOutputReference.property.keyType">key_type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexKeySchemaOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexKeySchema">DynamodbTableGlobalSecondaryIndexKeySchema</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexKeySchemaOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexKeySchemaOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `attribute_name_input`<sup>Optional</sup> <a name="attribute_name_input" id="@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexKeySchemaOutputReference.property.attributeNameInput"></a>
+
+```python
+attribute_name_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `key_type_input`<sup>Optional</sup> <a name="key_type_input" id="@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexKeySchemaOutputReference.property.keyTypeInput"></a>
+
+```python
+key_type_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `attribute_name`<sup>Required</sup> <a name="attribute_name" id="@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexKeySchemaOutputReference.property.attributeName"></a>
+
+```python
+attribute_name: str
+```
+
+- *Type:* str
+
+---
+
+##### `key_type`<sup>Required</sup> <a name="key_type" id="@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexKeySchemaOutputReference.property.keyType"></a>
+
+```python
+key_type: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexKeySchemaOutputReference.property.internalValue"></a>
+
+```python
+internal_value: IResolvable | DynamodbTableGlobalSecondaryIndexKeySchema
+```
+
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexKeySchema">DynamodbTableGlobalSecondaryIndexKeySchema</a>
 
 ---
 
@@ -4915,8 +5485,11 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexOutputReference.putKeySchema">put_key_schema</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexOutputReference.putOnDemandThroughput">put_on_demand_throughput</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexOutputReference.putWarmThroughput">put_warm_throughput</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexOutputReference.resetHashKey">reset_hash_key</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexOutputReference.resetKeySchema">reset_key_schema</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexOutputReference.resetNonKeyAttributes">reset_non_key_attributes</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexOutputReference.resetOnDemandThroughput">reset_on_demand_throughput</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexOutputReference.resetRangeKey">reset_range_key</a></code> | *No description.* |
@@ -5098,6 +5671,20 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `put_key_schema` <a name="put_key_schema" id="@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexOutputReference.putKeySchema"></a>
+
+```python
+def put_key_schema(
+  value: IResolvable | typing.List[DynamodbTableGlobalSecondaryIndexKeySchema]
+) -> None
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexOutputReference.putKeySchema.parameter.value"></a>
+
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexKeySchema">DynamodbTableGlobalSecondaryIndexKeySchema</a>]
+
+---
+
 ##### `put_on_demand_throughput` <a name="put_on_demand_throughput" id="@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexOutputReference.putOnDemandThroughput"></a>
 
 ```python
@@ -5111,7 +5698,7 @@ def put_on_demand_throughput(
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#max_read_request_units DynamodbTable#max_read_request_units}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#max_read_request_units DynamodbTable#max_read_request_units}.
 
 ---
 
@@ -5119,7 +5706,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#max_write_request_units DynamodbTable#max_write_request_units}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#max_write_request_units DynamodbTable#max_write_request_units}.
 
 ---
 
@@ -5136,7 +5723,7 @@ def put_warm_throughput(
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#read_units_per_second DynamodbTable#read_units_per_second}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#read_units_per_second DynamodbTable#read_units_per_second}.
 
 ---
 
@@ -5144,9 +5731,21 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#write_units_per_second DynamodbTable#write_units_per_second}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#write_units_per_second DynamodbTable#write_units_per_second}.
 
 ---
+
+##### `reset_hash_key` <a name="reset_hash_key" id="@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexOutputReference.resetHashKey"></a>
+
+```python
+def reset_hash_key() -> None
+```
+
+##### `reset_key_schema` <a name="reset_key_schema" id="@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexOutputReference.resetKeySchema"></a>
+
+```python
+def reset_key_schema() -> None
+```
 
 ##### `reset_non_key_attributes` <a name="reset_non_key_attributes" id="@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexOutputReference.resetNonKeyAttributes"></a>
 
@@ -5191,9 +5790,11 @@ def reset_write_capacity() -> None
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexOutputReference.property.keySchema">key_schema</a></code> | <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexKeySchemaList">DynamodbTableGlobalSecondaryIndexKeySchemaList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexOutputReference.property.onDemandThroughput">on_demand_throughput</a></code> | <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexOnDemandThroughputOutputReference">DynamodbTableGlobalSecondaryIndexOnDemandThroughputOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexOutputReference.property.warmThroughput">warm_throughput</a></code> | <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexWarmThroughputOutputReference">DynamodbTableGlobalSecondaryIndexWarmThroughputOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexOutputReference.property.hashKeyInput">hash_key_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexOutputReference.property.keySchemaInput">key_schema_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexKeySchema">DynamodbTableGlobalSecondaryIndexKeySchema</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexOutputReference.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexOutputReference.property.nonKeyAttributesInput">non_key_attributes_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexOutputReference.property.onDemandThroughputInput">on_demand_throughput_input</a></code> | <code><a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexOnDemandThroughput">DynamodbTableGlobalSecondaryIndexOnDemandThroughput</a></code> | *No description.* |
@@ -5237,6 +5838,16 @@ fqn: str
 
 ---
 
+##### `key_schema`<sup>Required</sup> <a name="key_schema" id="@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexOutputReference.property.keySchema"></a>
+
+```python
+key_schema: DynamodbTableGlobalSecondaryIndexKeySchemaList
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexKeySchemaList">DynamodbTableGlobalSecondaryIndexKeySchemaList</a>
+
+---
+
 ##### `on_demand_throughput`<sup>Required</sup> <a name="on_demand_throughput" id="@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexOutputReference.property.onDemandThroughput"></a>
 
 ```python
@@ -5264,6 +5875,16 @@ hash_key_input: str
 ```
 
 - *Type:* str
+
+---
+
+##### `key_schema_input`<sup>Optional</sup> <a name="key_schema_input" id="@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexOutputReference.property.keySchemaInput"></a>
+
+```python
+key_schema_input: IResolvable | typing.List[DynamodbTableGlobalSecondaryIndexKeySchema]
+```
+
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-aws.dynamodbTable.DynamodbTableGlobalSecondaryIndexKeySchema">DynamodbTableGlobalSecondaryIndexKeySchema</a>]
 
 ---
 
@@ -6638,7 +7259,7 @@ def put_csv(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#delimiter DynamodbTable#delimiter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#delimiter DynamodbTable#delimiter}.
 
 ---
 
@@ -6646,7 +7267,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#header_list DynamodbTable#header_list}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#header_list DynamodbTable#header_list}.
 
 ---
 
@@ -6970,7 +7591,7 @@ def put_input_format_options(
 
 csv block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#csv DynamodbTable#csv}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#csv DynamodbTable#csv}
 
 ---
 
@@ -6988,7 +7609,7 @@ def put_s3_bucket_source(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#bucket DynamodbTable#bucket}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#bucket DynamodbTable#bucket}.
 
 ---
 
@@ -6996,7 +7617,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#bucket_owner DynamodbTable#bucket_owner}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#bucket_owner DynamodbTable#bucket_owner}.
 
 ---
 
@@ -7004,7 +7625,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_table#key_prefix DynamodbTable#key_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_table#key_prefix DynamodbTable#key_prefix}.
 
 ---
 

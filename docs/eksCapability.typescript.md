@@ -4,7 +4,7 @@
 
 ### EksCapability <a name="EksCapability" id="@cdktn/provider-aws.eksCapability.EksCapability"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/eks_capability aws_eks_capability}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/eks_capability aws_eks_capability}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.eksCapability.EksCapability.Initializer"></a>
 
@@ -521,7 +521,7 @@ The construct id used in the generated config for the EksCapability to import.
 
 The id of the existing EksCapability that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/eks_capability#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/eks_capability#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -968,14 +968,14 @@ const eksCapabilityConfig: eksCapability.EksCapabilityConfig = { ... }
 | <code><a href="#@cdktn/provider-aws.eksCapability.EksCapabilityConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.eksCapability.EksCapabilityConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.eksCapability.EksCapabilityConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.eksCapability.EksCapabilityConfig.property.capabilityName">capabilityName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/eks_capability#capability_name EksCapability#capability_name}. |
-| <code><a href="#@cdktn/provider-aws.eksCapability.EksCapabilityConfig.property.clusterName">clusterName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/eks_capability#cluster_name EksCapability#cluster_name}. |
-| <code><a href="#@cdktn/provider-aws.eksCapability.EksCapabilityConfig.property.deletePropagationPolicy">deletePropagationPolicy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/eks_capability#delete_propagation_policy EksCapability#delete_propagation_policy}. |
-| <code><a href="#@cdktn/provider-aws.eksCapability.EksCapabilityConfig.property.roleArn">roleArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/eks_capability#role_arn EksCapability#role_arn}. |
-| <code><a href="#@cdktn/provider-aws.eksCapability.EksCapabilityConfig.property.type">type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/eks_capability#type EksCapability#type}. |
+| <code><a href="#@cdktn/provider-aws.eksCapability.EksCapabilityConfig.property.capabilityName">capabilityName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/eks_capability#capability_name EksCapability#capability_name}. |
+| <code><a href="#@cdktn/provider-aws.eksCapability.EksCapabilityConfig.property.clusterName">clusterName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/eks_capability#cluster_name EksCapability#cluster_name}. |
+| <code><a href="#@cdktn/provider-aws.eksCapability.EksCapabilityConfig.property.deletePropagationPolicy">deletePropagationPolicy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/eks_capability#delete_propagation_policy EksCapability#delete_propagation_policy}. |
+| <code><a href="#@cdktn/provider-aws.eksCapability.EksCapabilityConfig.property.roleArn">roleArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/eks_capability#role_arn EksCapability#role_arn}. |
+| <code><a href="#@cdktn/provider-aws.eksCapability.EksCapabilityConfig.property.type">type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/eks_capability#type EksCapability#type}. |
 | <code><a href="#@cdktn/provider-aws.eksCapability.EksCapabilityConfig.property.configuration">configuration</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.eksCapability.EksCapabilityConfiguration">EksCapabilityConfiguration</a>[]</code> | configuration block. |
 | <code><a href="#@cdktn/provider-aws.eksCapability.EksCapabilityConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.eksCapability.EksCapabilityConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/eks_capability#tags EksCapability#tags}. |
+| <code><a href="#@cdktn/provider-aws.eksCapability.EksCapabilityConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/eks_capability#tags EksCapability#tags}. |
 | <code><a href="#@cdktn/provider-aws.eksCapability.EksCapabilityConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.eksCapability.EksCapabilityTimeouts">EksCapabilityTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1058,7 +1058,7 @@ public readonly capabilityName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/eks_capability#capability_name EksCapability#capability_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/eks_capability#capability_name EksCapability#capability_name}.
 
 ---
 
@@ -1070,7 +1070,7 @@ public readonly clusterName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/eks_capability#cluster_name EksCapability#cluster_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/eks_capability#cluster_name EksCapability#cluster_name}.
 
 ---
 
@@ -1082,7 +1082,7 @@ public readonly deletePropagationPolicy: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/eks_capability#delete_propagation_policy EksCapability#delete_propagation_policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/eks_capability#delete_propagation_policy EksCapability#delete_propagation_policy}.
 
 ---
 
@@ -1094,7 +1094,7 @@ public readonly roleArn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/eks_capability#role_arn EksCapability#role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/eks_capability#role_arn EksCapability#role_arn}.
 
 ---
 
@@ -1106,7 +1106,7 @@ public readonly type: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/eks_capability#type EksCapability#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/eks_capability#type EksCapability#type}.
 
 ---
 
@@ -1120,7 +1120,7 @@ public readonly configuration: IResolvable | EksCapabilityConfiguration[];
 
 configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/eks_capability#configuration EksCapability#configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/eks_capability#configuration EksCapability#configuration}
 
 ---
 
@@ -1134,7 +1134,7 @@ public readonly region: string;
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/eks_capability#region EksCapability#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/eks_capability#region EksCapability#region}
 
 ---
 
@@ -1146,7 +1146,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/eks_capability#tags EksCapability#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/eks_capability#tags EksCapability#tags}.
 
 ---
 
@@ -1160,7 +1160,7 @@ public readonly timeouts: EksCapabilityTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/eks_capability#timeouts EksCapability#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/eks_capability#timeouts EksCapability#timeouts}
 
 ---
 
@@ -1192,7 +1192,7 @@ public readonly argoCd: IResolvable | EksCapabilityConfigurationArgoCd[];
 
 argo_cd block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/eks_capability#argo_cd EksCapability#argo_cd}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/eks_capability#argo_cd EksCapability#argo_cd}
 
 ---
 
@@ -1211,7 +1211,7 @@ const eksCapabilityConfigurationArgoCd: eksCapability.EksCapabilityConfiguration
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.eksCapability.EksCapabilityConfigurationArgoCd.property.awsIdc">awsIdc</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.eksCapability.EksCapabilityConfigurationArgoCdAwsIdc">EksCapabilityConfigurationArgoCdAwsIdc</a>[]</code> | aws_idc block. |
-| <code><a href="#@cdktn/provider-aws.eksCapability.EksCapabilityConfigurationArgoCd.property.namespace">namespace</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/eks_capability#namespace EksCapability#namespace}. |
+| <code><a href="#@cdktn/provider-aws.eksCapability.EksCapabilityConfigurationArgoCd.property.namespace">namespace</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/eks_capability#namespace EksCapability#namespace}. |
 | <code><a href="#@cdktn/provider-aws.eksCapability.EksCapabilityConfigurationArgoCd.property.networkAccess">networkAccess</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.eksCapability.EksCapabilityConfigurationArgoCdNetworkAccess">EksCapabilityConfigurationArgoCdNetworkAccess</a>[]</code> | network_access block. |
 | <code><a href="#@cdktn/provider-aws.eksCapability.EksCapabilityConfigurationArgoCd.property.rbacRoleMapping">rbacRoleMapping</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.eksCapability.EksCapabilityConfigurationArgoCdRbacRoleMapping">EksCapabilityConfigurationArgoCdRbacRoleMapping</a>[]</code> | rbac_role_mapping block. |
 
@@ -1227,7 +1227,7 @@ public readonly awsIdc: IResolvable | EksCapabilityConfigurationArgoCdAwsIdc[];
 
 aws_idc block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/eks_capability#aws_idc EksCapability#aws_idc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/eks_capability#aws_idc EksCapability#aws_idc}
 
 ---
 
@@ -1239,7 +1239,7 @@ public readonly namespace: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/eks_capability#namespace EksCapability#namespace}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/eks_capability#namespace EksCapability#namespace}.
 
 ---
 
@@ -1253,7 +1253,7 @@ public readonly networkAccess: IResolvable | EksCapabilityConfigurationArgoCdNet
 
 network_access block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/eks_capability#network_access EksCapability#network_access}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/eks_capability#network_access EksCapability#network_access}
 
 ---
 
@@ -1267,7 +1267,7 @@ public readonly rbacRoleMapping: IResolvable | EksCapabilityConfigurationArgoCdR
 
 rbac_role_mapping block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/eks_capability#rbac_role_mapping EksCapability#rbac_role_mapping}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/eks_capability#rbac_role_mapping EksCapability#rbac_role_mapping}
 
 ---
 
@@ -1285,8 +1285,8 @@ const eksCapabilityConfigurationArgoCdAwsIdc: eksCapability.EksCapabilityConfigu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.eksCapability.EksCapabilityConfigurationArgoCdAwsIdc.property.idcInstanceArn">idcInstanceArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/eks_capability#idc_instance_arn EksCapability#idc_instance_arn}. |
-| <code><a href="#@cdktn/provider-aws.eksCapability.EksCapabilityConfigurationArgoCdAwsIdc.property.idcRegion">idcRegion</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/eks_capability#idc_region EksCapability#idc_region}. |
+| <code><a href="#@cdktn/provider-aws.eksCapability.EksCapabilityConfigurationArgoCdAwsIdc.property.idcInstanceArn">idcInstanceArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/eks_capability#idc_instance_arn EksCapability#idc_instance_arn}. |
+| <code><a href="#@cdktn/provider-aws.eksCapability.EksCapabilityConfigurationArgoCdAwsIdc.property.idcRegion">idcRegion</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/eks_capability#idc_region EksCapability#idc_region}. |
 
 ---
 
@@ -1298,7 +1298,7 @@ public readonly idcInstanceArn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/eks_capability#idc_instance_arn EksCapability#idc_instance_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/eks_capability#idc_instance_arn EksCapability#idc_instance_arn}.
 
 ---
 
@@ -1310,7 +1310,7 @@ public readonly idcRegion: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/eks_capability#idc_region EksCapability#idc_region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/eks_capability#idc_region EksCapability#idc_region}.
 
 ---
 
@@ -1328,7 +1328,7 @@ const eksCapabilityConfigurationArgoCdNetworkAccess: eksCapability.EksCapability
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.eksCapability.EksCapabilityConfigurationArgoCdNetworkAccess.property.vpceIds">vpceIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/eks_capability#vpce_ids EksCapability#vpce_ids}. |
+| <code><a href="#@cdktn/provider-aws.eksCapability.EksCapabilityConfigurationArgoCdNetworkAccess.property.vpceIds">vpceIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/eks_capability#vpce_ids EksCapability#vpce_ids}. |
 
 ---
 
@@ -1340,7 +1340,7 @@ public readonly vpceIds: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/eks_capability#vpce_ids EksCapability#vpce_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/eks_capability#vpce_ids EksCapability#vpce_ids}.
 
 ---
 
@@ -1358,7 +1358,7 @@ const eksCapabilityConfigurationArgoCdRbacRoleMapping: eksCapability.EksCapabili
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.eksCapability.EksCapabilityConfigurationArgoCdRbacRoleMapping.property.role">role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/eks_capability#role EksCapability#role}. |
+| <code><a href="#@cdktn/provider-aws.eksCapability.EksCapabilityConfigurationArgoCdRbacRoleMapping.property.role">role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/eks_capability#role EksCapability#role}. |
 | <code><a href="#@cdktn/provider-aws.eksCapability.EksCapabilityConfigurationArgoCdRbacRoleMapping.property.identity">identity</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.eksCapability.EksCapabilityConfigurationArgoCdRbacRoleMappingIdentity">EksCapabilityConfigurationArgoCdRbacRoleMappingIdentity</a>[]</code> | identity block. |
 
 ---
@@ -1371,7 +1371,7 @@ public readonly role: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/eks_capability#role EksCapability#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/eks_capability#role EksCapability#role}.
 
 ---
 
@@ -1385,7 +1385,7 @@ public readonly identity: IResolvable | EksCapabilityConfigurationArgoCdRbacRole
 
 identity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/eks_capability#identity EksCapability#identity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/eks_capability#identity EksCapability#identity}
 
 ---
 
@@ -1403,8 +1403,8 @@ const eksCapabilityConfigurationArgoCdRbacRoleMappingIdentity: eksCapability.Eks
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.eksCapability.EksCapabilityConfigurationArgoCdRbacRoleMappingIdentity.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/eks_capability#id EksCapability#id}. |
-| <code><a href="#@cdktn/provider-aws.eksCapability.EksCapabilityConfigurationArgoCdRbacRoleMappingIdentity.property.type">type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/eks_capability#type EksCapability#type}. |
+| <code><a href="#@cdktn/provider-aws.eksCapability.EksCapabilityConfigurationArgoCdRbacRoleMappingIdentity.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/eks_capability#id EksCapability#id}. |
+| <code><a href="#@cdktn/provider-aws.eksCapability.EksCapabilityConfigurationArgoCdRbacRoleMappingIdentity.property.type">type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/eks_capability#type EksCapability#type}. |
 
 ---
 
@@ -1416,7 +1416,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/eks_capability#id EksCapability#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/eks_capability#id EksCapability#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1431,7 +1431,7 @@ public readonly type: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/eks_capability#type EksCapability#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/eks_capability#type EksCapability#type}.
 
 ---
 
@@ -1465,7 +1465,7 @@ public readonly create: string;
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/eks_capability#create EksCapability#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/eks_capability#create EksCapability#create}
 
 ---
 
@@ -1479,7 +1479,7 @@ public readonly delete: string;
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/eks_capability#delete EksCapability#delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/eks_capability#delete EksCapability#delete}
 
 ---
 
@@ -1493,7 +1493,7 @@ public readonly update: string;
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/eks_capability#update EksCapability#update}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/eks_capability#update EksCapability#update}
 
 ---
 

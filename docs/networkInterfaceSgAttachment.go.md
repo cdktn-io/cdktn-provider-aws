@@ -4,12 +4,12 @@
 
 ### NetworkInterfaceSgAttachment <a name="NetworkInterfaceSgAttachment" id="@cdktn/provider-aws.networkInterfaceSgAttachment.NetworkInterfaceSgAttachment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/network_interface_sg_attachment aws_network_interface_sg_attachment}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/network_interface_sg_attachment aws_network_interface_sg_attachment}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.networkInterfaceSgAttachment.NetworkInterfaceSgAttachment.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/networkinterfacesgattachment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/networkinterfacesgattachment"
 
 networkinterfacesgattachment.NewNetworkInterfaceSgAttachment(scope Construct, id *string, config NetworkInterfaceSgAttachmentConfig) NetworkInterfaceSgAttachment
 ```
@@ -412,7 +412,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.networkInterfaceSgAttachment.NetworkInterfaceSgAttachment.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/networkinterfacesgattachment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/networkinterfacesgattachment"
 
 networkinterfacesgattachment.NetworkInterfaceSgAttachment_IsConstruct(x interface{}) *bool
 ```
@@ -444,7 +444,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.networkInterfaceSgAttachment.NetworkInterfaceSgAttachment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/networkinterfacesgattachment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/networkinterfacesgattachment"
 
 networkinterfacesgattachment.NetworkInterfaceSgAttachment_IsTerraformElement(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ networkinterfacesgattachment.NetworkInterfaceSgAttachment_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.networkInterfaceSgAttachment.NetworkInterfaceSgAttachment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/networkinterfacesgattachment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/networkinterfacesgattachment"
 
 networkinterfacesgattachment.NetworkInterfaceSgAttachment_IsTerraformResource(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ networkinterfacesgattachment.NetworkInterfaceSgAttachment_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.networkInterfaceSgAttachment.NetworkInterfaceSgAttachment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/networkinterfacesgattachment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/networkinterfacesgattachment"
 
 networkinterfacesgattachment.NetworkInterfaceSgAttachment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -501,7 +501,7 @@ The construct id used in the generated config for the NetworkInterfaceSgAttachme
 
 The id of the existing NetworkInterfaceSgAttachment that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/network_interface_sg_attachment#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/network_interface_sg_attachment#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -811,7 +811,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.networkInterfaceSgAttachment.NetworkInterfaceSgAttachmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/networkinterfacesgattachment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/networkinterfacesgattachment"
 
 &networkinterfacesgattachment.NetworkInterfaceSgAttachmentConfig {
 	Connection: interface{},
@@ -825,7 +825,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/networkinterfacesgatta
 	SecurityGroupId: *string,
 	Id: *string,
 	Region: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.networkInterfaceSgAttachment.NetworkInterfaceSgAttachmentTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.networkInterfaceSgAttachment.NetworkInterfaceSgAttachmentTimeouts,
 }
 ```
 
@@ -840,9 +840,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/networkinterfacesgatta
 | <code><a href="#@cdktn/provider-aws.networkInterfaceSgAttachment.NetworkInterfaceSgAttachmentConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.networkInterfaceSgAttachment.NetworkInterfaceSgAttachmentConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.networkInterfaceSgAttachment.NetworkInterfaceSgAttachmentConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.networkInterfaceSgAttachment.NetworkInterfaceSgAttachmentConfig.property.networkInterfaceId">NetworkInterfaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/network_interface_sg_attachment#network_interface_id NetworkInterfaceSgAttachment#network_interface_id}. |
-| <code><a href="#@cdktn/provider-aws.networkInterfaceSgAttachment.NetworkInterfaceSgAttachmentConfig.property.securityGroupId">SecurityGroupId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/network_interface_sg_attachment#security_group_id NetworkInterfaceSgAttachment#security_group_id}. |
-| <code><a href="#@cdktn/provider-aws.networkInterfaceSgAttachment.NetworkInterfaceSgAttachmentConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/network_interface_sg_attachment#id NetworkInterfaceSgAttachment#id}. |
+| <code><a href="#@cdktn/provider-aws.networkInterfaceSgAttachment.NetworkInterfaceSgAttachmentConfig.property.networkInterfaceId">NetworkInterfaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/network_interface_sg_attachment#network_interface_id NetworkInterfaceSgAttachment#network_interface_id}. |
+| <code><a href="#@cdktn/provider-aws.networkInterfaceSgAttachment.NetworkInterfaceSgAttachmentConfig.property.securityGroupId">SecurityGroupId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/network_interface_sg_attachment#security_group_id NetworkInterfaceSgAttachment#security_group_id}. |
+| <code><a href="#@cdktn/provider-aws.networkInterfaceSgAttachment.NetworkInterfaceSgAttachmentConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/network_interface_sg_attachment#id NetworkInterfaceSgAttachment#id}. |
 | <code><a href="#@cdktn/provider-aws.networkInterfaceSgAttachment.NetworkInterfaceSgAttachmentConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktn/provider-aws.networkInterfaceSgAttachment.NetworkInterfaceSgAttachmentConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.networkInterfaceSgAttachment.NetworkInterfaceSgAttachmentTimeouts">NetworkInterfaceSgAttachmentTimeouts</a></code> | timeouts block. |
 
@@ -926,7 +926,7 @@ NetworkInterfaceId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/network_interface_sg_attachment#network_interface_id NetworkInterfaceSgAttachment#network_interface_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/network_interface_sg_attachment#network_interface_id NetworkInterfaceSgAttachment#network_interface_id}.
 
 ---
 
@@ -938,7 +938,7 @@ SecurityGroupId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/network_interface_sg_attachment#security_group_id NetworkInterfaceSgAttachment#security_group_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/network_interface_sg_attachment#security_group_id NetworkInterfaceSgAttachment#security_group_id}.
 
 ---
 
@@ -950,7 +950,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/network_interface_sg_attachment#id NetworkInterfaceSgAttachment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/network_interface_sg_attachment#id NetworkInterfaceSgAttachment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -967,7 +967,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/network_interface_sg_attachment#region NetworkInterfaceSgAttachment#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/network_interface_sg_attachment#region NetworkInterfaceSgAttachment#region}
 
 ---
 
@@ -981,7 +981,7 @@ Timeouts NetworkInterfaceSgAttachmentTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/network_interface_sg_attachment#timeouts NetworkInterfaceSgAttachment#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/network_interface_sg_attachment#timeouts NetworkInterfaceSgAttachment#timeouts}
 
 ---
 
@@ -990,7 +990,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.networkInterfaceSgAttachment.NetworkInterfaceSgAttachmentTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/networkinterfacesgattachment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/networkinterfacesgattachment"
 
 &networkinterfacesgattachment.NetworkInterfaceSgAttachmentTimeouts {
 	Create: *string,
@@ -1003,9 +1003,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/networkinterfacesgatta
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.networkInterfaceSgAttachment.NetworkInterfaceSgAttachmentTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/network_interface_sg_attachment#create NetworkInterfaceSgAttachment#create}. |
-| <code><a href="#@cdktn/provider-aws.networkInterfaceSgAttachment.NetworkInterfaceSgAttachmentTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/network_interface_sg_attachment#delete NetworkInterfaceSgAttachment#delete}. |
-| <code><a href="#@cdktn/provider-aws.networkInterfaceSgAttachment.NetworkInterfaceSgAttachmentTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/network_interface_sg_attachment#read NetworkInterfaceSgAttachment#read}. |
+| <code><a href="#@cdktn/provider-aws.networkInterfaceSgAttachment.NetworkInterfaceSgAttachmentTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/network_interface_sg_attachment#create NetworkInterfaceSgAttachment#create}. |
+| <code><a href="#@cdktn/provider-aws.networkInterfaceSgAttachment.NetworkInterfaceSgAttachmentTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/network_interface_sg_attachment#delete NetworkInterfaceSgAttachment#delete}. |
+| <code><a href="#@cdktn/provider-aws.networkInterfaceSgAttachment.NetworkInterfaceSgAttachmentTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/network_interface_sg_attachment#read NetworkInterfaceSgAttachment#read}. |
 
 ---
 
@@ -1017,7 +1017,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/network_interface_sg_attachment#create NetworkInterfaceSgAttachment#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/network_interface_sg_attachment#create NetworkInterfaceSgAttachment#create}.
 
 ---
 
@@ -1029,7 +1029,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/network_interface_sg_attachment#delete NetworkInterfaceSgAttachment#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/network_interface_sg_attachment#delete NetworkInterfaceSgAttachment#delete}.
 
 ---
 
@@ -1041,7 +1041,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/network_interface_sg_attachment#read NetworkInterfaceSgAttachment#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/network_interface_sg_attachment#read NetworkInterfaceSgAttachment#read}.
 
 ---
 
@@ -1052,7 +1052,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.networkInterfaceSgAttachment.NetworkInterfaceSgAttachmentTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/networkinterfacesgattachment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/networkinterfacesgattachment"
 
 networkinterfacesgattachment.NewNetworkInterfaceSgAttachmentTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetworkInterfaceSgAttachmentTimeoutsOutputReference
 ```

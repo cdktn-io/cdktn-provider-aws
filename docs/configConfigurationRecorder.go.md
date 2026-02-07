@@ -4,12 +4,12 @@
 
 ### ConfigConfigurationRecorder <a name="ConfigConfigurationRecorder" id="@cdktn/provider-aws.configConfigurationRecorder.ConfigConfigurationRecorder"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_configuration_recorder aws_config_configuration_recorder}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/config_configuration_recorder aws_config_configuration_recorder}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.configConfigurationRecorder.ConfigConfigurationRecorder.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/configconfigurationrecorder"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/configconfigurationrecorder"
 
 configconfigurationrecorder.NewConfigConfigurationRecorder(scope Construct, id *string, config ConfigConfigurationRecorderConfig) ConfigConfigurationRecorder
 ```
@@ -439,7 +439,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.configConfigurationRecorder.ConfigConfigurationRecorder.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/configconfigurationrecorder"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/configconfigurationrecorder"
 
 configconfigurationrecorder.ConfigConfigurationRecorder_IsConstruct(x interface{}) *bool
 ```
@@ -471,7 +471,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.configConfigurationRecorder.ConfigConfigurationRecorder.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/configconfigurationrecorder"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/configconfigurationrecorder"
 
 configconfigurationrecorder.ConfigConfigurationRecorder_IsTerraformElement(x interface{}) *bool
 ```
@@ -485,7 +485,7 @@ configconfigurationrecorder.ConfigConfigurationRecorder_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.configConfigurationRecorder.ConfigConfigurationRecorder.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/configconfigurationrecorder"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/configconfigurationrecorder"
 
 configconfigurationrecorder.ConfigConfigurationRecorder_IsTerraformResource(x interface{}) *bool
 ```
@@ -499,7 +499,7 @@ configconfigurationrecorder.ConfigConfigurationRecorder_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.configConfigurationRecorder.ConfigConfigurationRecorder.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/configconfigurationrecorder"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/configconfigurationrecorder"
 
 configconfigurationrecorder.ConfigConfigurationRecorder_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -528,7 +528,7 @@ The construct id used in the generated config for the ConfigConfigurationRecorde
 
 The id of the existing ConfigConfigurationRecorder that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_configuration_recorder#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/config_configuration_recorder#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -860,7 +860,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.configConfigurationRecorder.ConfigConfigurationRecorderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/configconfigurationrecorder"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/configconfigurationrecorder"
 
 &configconfigurationrecorder.ConfigConfigurationRecorderConfig {
 	Connection: interface{},
@@ -873,8 +873,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/configconfigurationrec
 	RoleArn: *string,
 	Id: *string,
 	Name: *string,
-	RecordingGroup: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.configConfigurationRecorder.ConfigConfigurationRecorderRecordingGroup,
-	RecordingMode: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.configConfigurationRecorder.ConfigConfigurationRecorderRecordingMode,
+	RecordingGroup: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.configConfigurationRecorder.ConfigConfigurationRecorderRecordingGroup,
+	RecordingMode: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.configConfigurationRecorder.ConfigConfigurationRecorderRecordingMode,
 	Region: *string,
 }
 ```
@@ -890,9 +890,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/configconfigurationrec
 | <code><a href="#@cdktn/provider-aws.configConfigurationRecorder.ConfigConfigurationRecorderConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.configConfigurationRecorder.ConfigConfigurationRecorderConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.configConfigurationRecorder.ConfigConfigurationRecorderConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.configConfigurationRecorder.ConfigConfigurationRecorderConfig.property.roleArn">RoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_configuration_recorder#role_arn ConfigConfigurationRecorder#role_arn}. |
-| <code><a href="#@cdktn/provider-aws.configConfigurationRecorder.ConfigConfigurationRecorderConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_configuration_recorder#id ConfigConfigurationRecorder#id}. |
-| <code><a href="#@cdktn/provider-aws.configConfigurationRecorder.ConfigConfigurationRecorderConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_configuration_recorder#name ConfigConfigurationRecorder#name}. |
+| <code><a href="#@cdktn/provider-aws.configConfigurationRecorder.ConfigConfigurationRecorderConfig.property.roleArn">RoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/config_configuration_recorder#role_arn ConfigConfigurationRecorder#role_arn}. |
+| <code><a href="#@cdktn/provider-aws.configConfigurationRecorder.ConfigConfigurationRecorderConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/config_configuration_recorder#id ConfigConfigurationRecorder#id}. |
+| <code><a href="#@cdktn/provider-aws.configConfigurationRecorder.ConfigConfigurationRecorderConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/config_configuration_recorder#name ConfigConfigurationRecorder#name}. |
 | <code><a href="#@cdktn/provider-aws.configConfigurationRecorder.ConfigConfigurationRecorderConfig.property.recordingGroup">RecordingGroup</a></code> | <code><a href="#@cdktn/provider-aws.configConfigurationRecorder.ConfigConfigurationRecorderRecordingGroup">ConfigConfigurationRecorderRecordingGroup</a></code> | recording_group block. |
 | <code><a href="#@cdktn/provider-aws.configConfigurationRecorder.ConfigConfigurationRecorderConfig.property.recordingMode">RecordingMode</a></code> | <code><a href="#@cdktn/provider-aws.configConfigurationRecorder.ConfigConfigurationRecorderRecordingMode">ConfigConfigurationRecorderRecordingMode</a></code> | recording_mode block. |
 | <code><a href="#@cdktn/provider-aws.configConfigurationRecorder.ConfigConfigurationRecorderConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
@@ -977,7 +977,7 @@ RoleArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_configuration_recorder#role_arn ConfigConfigurationRecorder#role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/config_configuration_recorder#role_arn ConfigConfigurationRecorder#role_arn}.
 
 ---
 
@@ -989,7 +989,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_configuration_recorder#id ConfigConfigurationRecorder#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/config_configuration_recorder#id ConfigConfigurationRecorder#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1004,7 +1004,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_configuration_recorder#name ConfigConfigurationRecorder#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/config_configuration_recorder#name ConfigConfigurationRecorder#name}.
 
 ---
 
@@ -1018,7 +1018,7 @@ RecordingGroup ConfigConfigurationRecorderRecordingGroup
 
 recording_group block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_configuration_recorder#recording_group ConfigConfigurationRecorder#recording_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/config_configuration_recorder#recording_group ConfigConfigurationRecorder#recording_group}
 
 ---
 
@@ -1032,7 +1032,7 @@ RecordingMode ConfigConfigurationRecorderRecordingMode
 
 recording_mode block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_configuration_recorder#recording_mode ConfigConfigurationRecorder#recording_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/config_configuration_recorder#recording_mode ConfigConfigurationRecorder#recording_mode}
 
 ---
 
@@ -1046,7 +1046,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_configuration_recorder#region ConfigConfigurationRecorder#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/config_configuration_recorder#region ConfigConfigurationRecorder#region}
 
 ---
 
@@ -1055,7 +1055,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.configConfigurationRecorder.ConfigConfigurationRecorderRecordingGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/configconfigurationrecorder"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/configconfigurationrecorder"
 
 &configconfigurationrecorder.ConfigConfigurationRecorderRecordingGroup {
 	AllSupported: interface{},
@@ -1070,11 +1070,11 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/configconfigurationrec
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.configConfigurationRecorder.ConfigConfigurationRecorderRecordingGroup.property.allSupported">AllSupported</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_configuration_recorder#all_supported ConfigConfigurationRecorder#all_supported}. |
+| <code><a href="#@cdktn/provider-aws.configConfigurationRecorder.ConfigConfigurationRecorderRecordingGroup.property.allSupported">AllSupported</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/config_configuration_recorder#all_supported ConfigConfigurationRecorder#all_supported}. |
 | <code><a href="#@cdktn/provider-aws.configConfigurationRecorder.ConfigConfigurationRecorderRecordingGroup.property.exclusionByResourceTypes">ExclusionByResourceTypes</a></code> | <code>interface{}</code> | exclusion_by_resource_types block. |
-| <code><a href="#@cdktn/provider-aws.configConfigurationRecorder.ConfigConfigurationRecorderRecordingGroup.property.includeGlobalResourceTypes">IncludeGlobalResourceTypes</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_configuration_recorder#include_global_resource_types ConfigConfigurationRecorder#include_global_resource_types}. |
+| <code><a href="#@cdktn/provider-aws.configConfigurationRecorder.ConfigConfigurationRecorderRecordingGroup.property.includeGlobalResourceTypes">IncludeGlobalResourceTypes</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/config_configuration_recorder#include_global_resource_types ConfigConfigurationRecorder#include_global_resource_types}. |
 | <code><a href="#@cdktn/provider-aws.configConfigurationRecorder.ConfigConfigurationRecorderRecordingGroup.property.recordingStrategy">RecordingStrategy</a></code> | <code>interface{}</code> | recording_strategy block. |
-| <code><a href="#@cdktn/provider-aws.configConfigurationRecorder.ConfigConfigurationRecorderRecordingGroup.property.resourceTypes">ResourceTypes</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_configuration_recorder#resource_types ConfigConfigurationRecorder#resource_types}. |
+| <code><a href="#@cdktn/provider-aws.configConfigurationRecorder.ConfigConfigurationRecorderRecordingGroup.property.resourceTypes">ResourceTypes</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/config_configuration_recorder#resource_types ConfigConfigurationRecorder#resource_types}. |
 
 ---
 
@@ -1086,7 +1086,7 @@ AllSupported interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_configuration_recorder#all_supported ConfigConfigurationRecorder#all_supported}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/config_configuration_recorder#all_supported ConfigConfigurationRecorder#all_supported}.
 
 ---
 
@@ -1100,7 +1100,7 @@ ExclusionByResourceTypes interface{}
 
 exclusion_by_resource_types block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_configuration_recorder#exclusion_by_resource_types ConfigConfigurationRecorder#exclusion_by_resource_types}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/config_configuration_recorder#exclusion_by_resource_types ConfigConfigurationRecorder#exclusion_by_resource_types}
 
 ---
 
@@ -1112,7 +1112,7 @@ IncludeGlobalResourceTypes interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_configuration_recorder#include_global_resource_types ConfigConfigurationRecorder#include_global_resource_types}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/config_configuration_recorder#include_global_resource_types ConfigConfigurationRecorder#include_global_resource_types}.
 
 ---
 
@@ -1126,7 +1126,7 @@ RecordingStrategy interface{}
 
 recording_strategy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_configuration_recorder#recording_strategy ConfigConfigurationRecorder#recording_strategy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/config_configuration_recorder#recording_strategy ConfigConfigurationRecorder#recording_strategy}
 
 ---
 
@@ -1138,7 +1138,7 @@ ResourceTypes *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_configuration_recorder#resource_types ConfigConfigurationRecorder#resource_types}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/config_configuration_recorder#resource_types ConfigConfigurationRecorder#resource_types}.
 
 ---
 
@@ -1147,7 +1147,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.configConfigurationRecorder.ConfigConfigurationRecorderRecordingGroupExclusionByResourceTypes.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/configconfigurationrecorder"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/configconfigurationrecorder"
 
 &configconfigurationrecorder.ConfigConfigurationRecorderRecordingGroupExclusionByResourceTypes {
 	ResourceTypes: *[]*string,
@@ -1158,7 +1158,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/configconfigurationrec
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.configConfigurationRecorder.ConfigConfigurationRecorderRecordingGroupExclusionByResourceTypes.property.resourceTypes">ResourceTypes</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_configuration_recorder#resource_types ConfigConfigurationRecorder#resource_types}. |
+| <code><a href="#@cdktn/provider-aws.configConfigurationRecorder.ConfigConfigurationRecorderRecordingGroupExclusionByResourceTypes.property.resourceTypes">ResourceTypes</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/config_configuration_recorder#resource_types ConfigConfigurationRecorder#resource_types}. |
 
 ---
 
@@ -1170,7 +1170,7 @@ ResourceTypes *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_configuration_recorder#resource_types ConfigConfigurationRecorder#resource_types}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/config_configuration_recorder#resource_types ConfigConfigurationRecorder#resource_types}.
 
 ---
 
@@ -1179,7 +1179,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.configConfigurationRecorder.ConfigConfigurationRecorderRecordingGroupRecordingStrategy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/configconfigurationrecorder"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/configconfigurationrecorder"
 
 &configconfigurationrecorder.ConfigConfigurationRecorderRecordingGroupRecordingStrategy {
 	UseOnly: *string,
@@ -1190,7 +1190,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/configconfigurationrec
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.configConfigurationRecorder.ConfigConfigurationRecorderRecordingGroupRecordingStrategy.property.useOnly">UseOnly</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_configuration_recorder#use_only ConfigConfigurationRecorder#use_only}. |
+| <code><a href="#@cdktn/provider-aws.configConfigurationRecorder.ConfigConfigurationRecorderRecordingGroupRecordingStrategy.property.useOnly">UseOnly</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/config_configuration_recorder#use_only ConfigConfigurationRecorder#use_only}. |
 
 ---
 
@@ -1202,7 +1202,7 @@ UseOnly *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_configuration_recorder#use_only ConfigConfigurationRecorder#use_only}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/config_configuration_recorder#use_only ConfigConfigurationRecorder#use_only}.
 
 ---
 
@@ -1211,11 +1211,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.configConfigurationRecorder.ConfigConfigurationRecorderRecordingMode.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/configconfigurationrecorder"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/configconfigurationrecorder"
 
 &configconfigurationrecorder.ConfigConfigurationRecorderRecordingMode {
 	RecordingFrequency: *string,
-	RecordingModeOverride: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.configConfigurationRecorder.ConfigConfigurationRecorderRecordingModeRecordingModeOverride,
+	RecordingModeOverride: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.configConfigurationRecorder.ConfigConfigurationRecorderRecordingModeRecordingModeOverride,
 }
 ```
 
@@ -1223,7 +1223,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/configconfigurationrec
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.configConfigurationRecorder.ConfigConfigurationRecorderRecordingMode.property.recordingFrequency">RecordingFrequency</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_configuration_recorder#recording_frequency ConfigConfigurationRecorder#recording_frequency}. |
+| <code><a href="#@cdktn/provider-aws.configConfigurationRecorder.ConfigConfigurationRecorderRecordingMode.property.recordingFrequency">RecordingFrequency</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/config_configuration_recorder#recording_frequency ConfigConfigurationRecorder#recording_frequency}. |
 | <code><a href="#@cdktn/provider-aws.configConfigurationRecorder.ConfigConfigurationRecorderRecordingMode.property.recordingModeOverride">RecordingModeOverride</a></code> | <code><a href="#@cdktn/provider-aws.configConfigurationRecorder.ConfigConfigurationRecorderRecordingModeRecordingModeOverride">ConfigConfigurationRecorderRecordingModeRecordingModeOverride</a></code> | recording_mode_override block. |
 
 ---
@@ -1236,7 +1236,7 @@ RecordingFrequency *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_configuration_recorder#recording_frequency ConfigConfigurationRecorder#recording_frequency}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/config_configuration_recorder#recording_frequency ConfigConfigurationRecorder#recording_frequency}.
 
 ---
 
@@ -1250,7 +1250,7 @@ RecordingModeOverride ConfigConfigurationRecorderRecordingModeRecordingModeOverr
 
 recording_mode_override block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_configuration_recorder#recording_mode_override ConfigConfigurationRecorder#recording_mode_override}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/config_configuration_recorder#recording_mode_override ConfigConfigurationRecorder#recording_mode_override}
 
 ---
 
@@ -1259,7 +1259,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.configConfigurationRecorder.ConfigConfigurationRecorderRecordingModeRecordingModeOverride.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/configconfigurationrecorder"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/configconfigurationrecorder"
 
 &configconfigurationrecorder.ConfigConfigurationRecorderRecordingModeRecordingModeOverride {
 	RecordingFrequency: *string,
@@ -1272,9 +1272,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/configconfigurationrec
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.configConfigurationRecorder.ConfigConfigurationRecorderRecordingModeRecordingModeOverride.property.recordingFrequency">RecordingFrequency</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_configuration_recorder#recording_frequency ConfigConfigurationRecorder#recording_frequency}. |
-| <code><a href="#@cdktn/provider-aws.configConfigurationRecorder.ConfigConfigurationRecorderRecordingModeRecordingModeOverride.property.resourceTypes">ResourceTypes</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_configuration_recorder#resource_types ConfigConfigurationRecorder#resource_types}. |
-| <code><a href="#@cdktn/provider-aws.configConfigurationRecorder.ConfigConfigurationRecorderRecordingModeRecordingModeOverride.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_configuration_recorder#description ConfigConfigurationRecorder#description}. |
+| <code><a href="#@cdktn/provider-aws.configConfigurationRecorder.ConfigConfigurationRecorderRecordingModeRecordingModeOverride.property.recordingFrequency">RecordingFrequency</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/config_configuration_recorder#recording_frequency ConfigConfigurationRecorder#recording_frequency}. |
+| <code><a href="#@cdktn/provider-aws.configConfigurationRecorder.ConfigConfigurationRecorderRecordingModeRecordingModeOverride.property.resourceTypes">ResourceTypes</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/config_configuration_recorder#resource_types ConfigConfigurationRecorder#resource_types}. |
+| <code><a href="#@cdktn/provider-aws.configConfigurationRecorder.ConfigConfigurationRecorderRecordingModeRecordingModeOverride.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/config_configuration_recorder#description ConfigConfigurationRecorder#description}. |
 
 ---
 
@@ -1286,7 +1286,7 @@ RecordingFrequency *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_configuration_recorder#recording_frequency ConfigConfigurationRecorder#recording_frequency}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/config_configuration_recorder#recording_frequency ConfigConfigurationRecorder#recording_frequency}.
 
 ---
 
@@ -1298,7 +1298,7 @@ ResourceTypes *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_configuration_recorder#resource_types ConfigConfigurationRecorder#resource_types}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/config_configuration_recorder#resource_types ConfigConfigurationRecorder#resource_types}.
 
 ---
 
@@ -1310,7 +1310,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/config_configuration_recorder#description ConfigConfigurationRecorder#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/config_configuration_recorder#description ConfigConfigurationRecorder#description}.
 
 ---
 
@@ -1321,7 +1321,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.configConfigurationRecorder.ConfigConfigurationRecorderRecordingGroupExclusionByResourceTypesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/configconfigurationrecorder"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/configconfigurationrecorder"
 
 configconfigurationrecorder.NewConfigConfigurationRecorderRecordingGroupExclusionByResourceTypesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ConfigConfigurationRecorderRecordingGroupExclusionByResourceTypesList
 ```
@@ -1481,7 +1481,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.configConfigurationRecorder.ConfigConfigurationRecorderRecordingGroupExclusionByResourceTypesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/configconfigurationrecorder"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/configconfigurationrecorder"
 
 configconfigurationrecorder.NewConfigConfigurationRecorderRecordingGroupExclusionByResourceTypesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ConfigConfigurationRecorderRecordingGroupExclusionByResourceTypesOutputReference
 ```
@@ -1777,7 +1777,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.configConfigurationRecorder.ConfigConfigurationRecorderRecordingGroupOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/configconfigurationrecorder"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/configconfigurationrecorder"
 
 configconfigurationrecorder.NewConfigConfigurationRecorderRecordingGroupOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ConfigConfigurationRecorderRecordingGroupOutputReference
 ```
@@ -2197,7 +2197,7 @@ func InternalValue() ConfigConfigurationRecorderRecordingGroup
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.configConfigurationRecorder.ConfigConfigurationRecorderRecordingGroupRecordingStrategyList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/configconfigurationrecorder"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/configconfigurationrecorder"
 
 configconfigurationrecorder.NewConfigConfigurationRecorderRecordingGroupRecordingStrategyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ConfigConfigurationRecorderRecordingGroupRecordingStrategyList
 ```
@@ -2357,7 +2357,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.configConfigurationRecorder.ConfigConfigurationRecorderRecordingGroupRecordingStrategyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/configconfigurationrecorder"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/configconfigurationrecorder"
 
 configconfigurationrecorder.NewConfigConfigurationRecorderRecordingGroupRecordingStrategyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ConfigConfigurationRecorderRecordingGroupRecordingStrategyOutputReference
 ```
@@ -2653,7 +2653,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.configConfigurationRecorder.ConfigConfigurationRecorderRecordingModeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/configconfigurationrecorder"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/configconfigurationrecorder"
 
 configconfigurationrecorder.NewConfigConfigurationRecorderRecordingModeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ConfigConfigurationRecorderRecordingModeOutputReference
 ```
@@ -2973,7 +2973,7 @@ func InternalValue() ConfigConfigurationRecorderRecordingMode
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.configConfigurationRecorder.ConfigConfigurationRecorderRecordingModeRecordingModeOverrideOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/configconfigurationrecorder"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/configconfigurationrecorder"
 
 configconfigurationrecorder.NewConfigConfigurationRecorderRecordingModeRecordingModeOverrideOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ConfigConfigurationRecorderRecordingModeRecordingModeOverrideOutputReference
 ```

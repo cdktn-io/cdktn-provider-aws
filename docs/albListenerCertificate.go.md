@@ -4,12 +4,12 @@
 
 ### AlbListenerCertificate <a name="AlbListenerCertificate" id="@cdktn/provider-aws.albListenerCertificate.AlbListenerCertificate"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/alb_listener_certificate aws_alb_listener_certificate}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/alb_listener_certificate aws_alb_listener_certificate}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.albListenerCertificate.AlbListenerCertificate.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/alblistenercertificate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/alblistenercertificate"
 
 alblistenercertificate.NewAlbListenerCertificate(scope Construct, id *string, config AlbListenerCertificateConfig) AlbListenerCertificate
 ```
@@ -392,7 +392,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.albListenerCertificate.AlbListenerCertificate.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/alblistenercertificate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/alblistenercertificate"
 
 alblistenercertificate.AlbListenerCertificate_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.albListenerCertificate.AlbListenerCertificate.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/alblistenercertificate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/alblistenercertificate"
 
 alblistenercertificate.AlbListenerCertificate_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ alblistenercertificate.AlbListenerCertificate_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.albListenerCertificate.AlbListenerCertificate.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/alblistenercertificate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/alblistenercertificate"
 
 alblistenercertificate.AlbListenerCertificate_IsTerraformResource(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ alblistenercertificate.AlbListenerCertificate_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.albListenerCertificate.AlbListenerCertificate.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/alblistenercertificate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/alblistenercertificate"
 
 alblistenercertificate.AlbListenerCertificate_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -481,7 +481,7 @@ The construct id used in the generated config for the AlbListenerCertificate to 
 
 The id of the existing AlbListenerCertificate that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/alb_listener_certificate#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/alb_listener_certificate#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -769,7 +769,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.albListenerCertificate.AlbListenerCertificateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/alblistenercertificate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/alblistenercertificate"
 
 &alblistenercertificate.AlbListenerCertificateConfig {
 	Connection: interface{},
@@ -797,9 +797,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/alblistenercertificate
 | <code><a href="#@cdktn/provider-aws.albListenerCertificate.AlbListenerCertificateConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.albListenerCertificate.AlbListenerCertificateConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.albListenerCertificate.AlbListenerCertificateConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.albListenerCertificate.AlbListenerCertificateConfig.property.certificateArn">CertificateArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/alb_listener_certificate#certificate_arn AlbListenerCertificate#certificate_arn}. |
-| <code><a href="#@cdktn/provider-aws.albListenerCertificate.AlbListenerCertificateConfig.property.listenerArn">ListenerArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/alb_listener_certificate#listener_arn AlbListenerCertificate#listener_arn}. |
-| <code><a href="#@cdktn/provider-aws.albListenerCertificate.AlbListenerCertificateConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/alb_listener_certificate#id AlbListenerCertificate#id}. |
+| <code><a href="#@cdktn/provider-aws.albListenerCertificate.AlbListenerCertificateConfig.property.certificateArn">CertificateArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/alb_listener_certificate#certificate_arn AlbListenerCertificate#certificate_arn}. |
+| <code><a href="#@cdktn/provider-aws.albListenerCertificate.AlbListenerCertificateConfig.property.listenerArn">ListenerArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/alb_listener_certificate#listener_arn AlbListenerCertificate#listener_arn}. |
+| <code><a href="#@cdktn/provider-aws.albListenerCertificate.AlbListenerCertificateConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/alb_listener_certificate#id AlbListenerCertificate#id}. |
 | <code><a href="#@cdktn/provider-aws.albListenerCertificate.AlbListenerCertificateConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -882,7 +882,7 @@ CertificateArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/alb_listener_certificate#certificate_arn AlbListenerCertificate#certificate_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/alb_listener_certificate#certificate_arn AlbListenerCertificate#certificate_arn}.
 
 ---
 
@@ -894,7 +894,7 @@ ListenerArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/alb_listener_certificate#listener_arn AlbListenerCertificate#listener_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/alb_listener_certificate#listener_arn AlbListenerCertificate#listener_arn}.
 
 ---
 
@@ -906,7 +906,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/alb_listener_certificate#id AlbListenerCertificate#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/alb_listener_certificate#id AlbListenerCertificate#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -923,7 +923,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/alb_listener_certificate#region AlbListenerCertificate#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/alb_listener_certificate#region AlbListenerCertificate#region}
 
 ---
 

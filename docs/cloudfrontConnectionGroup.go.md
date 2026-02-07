@@ -4,12 +4,12 @@
 
 ### CloudfrontConnectionGroup <a name="CloudfrontConnectionGroup" id="@cdktn/provider-aws.cloudfrontConnectionGroup.CloudfrontConnectionGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_connection_group aws_cloudfront_connection_group}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_connection_group aws_cloudfront_connection_group}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontConnectionGroup.CloudfrontConnectionGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontconnectiongroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudfrontconnectiongroup"
 
 cloudfrontconnectiongroup.NewCloudfrontConnectionGroup(scope Construct, id *string, config CloudfrontConnectionGroupConfig) CloudfrontConnectionGroup
 ```
@@ -433,7 +433,7 @@ func ResetWaitForDeployment()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.cloudfrontConnectionGroup.CloudfrontConnectionGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontconnectiongroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudfrontconnectiongroup"
 
 cloudfrontconnectiongroup.CloudfrontConnectionGroup_IsConstruct(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.cloudfrontConnectionGroup.CloudfrontConnectionGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontconnectiongroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudfrontconnectiongroup"
 
 cloudfrontconnectiongroup.CloudfrontConnectionGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ cloudfrontconnectiongroup.CloudfrontConnectionGroup_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.cloudfrontConnectionGroup.CloudfrontConnectionGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontconnectiongroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudfrontconnectiongroup"
 
 cloudfrontconnectiongroup.CloudfrontConnectionGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ cloudfrontconnectiongroup.CloudfrontConnectionGroup_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.cloudfrontConnectionGroup.CloudfrontConnectionGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontconnectiongroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudfrontconnectiongroup"
 
 cloudfrontconnectiongroup.CloudfrontConnectionGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -522,7 +522,7 @@ The construct id used in the generated config for the CloudfrontConnectionGroup 
 
 The id of the existing CloudfrontConnectionGroup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_connection_group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_connection_group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -964,7 +964,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudfrontConnectionGroup.CloudfrontConnectionGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontconnectiongroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudfrontconnectiongroup"
 
 &cloudfrontconnectiongroup.CloudfrontConnectionGroupConfig {
 	Connection: interface{},
@@ -979,7 +979,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontconnectiongr
 	Enabled: interface{},
 	Ipv6Enabled: interface{},
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.cloudfrontConnectionGroup.CloudfrontConnectionGroupTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.cloudfrontConnectionGroup.CloudfrontConnectionGroupTimeouts,
 	WaitForDeployment: interface{},
 }
 ```
@@ -995,13 +995,13 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontconnectiongr
 | <code><a href="#@cdktn/provider-aws.cloudfrontConnectionGroup.CloudfrontConnectionGroupConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontConnectionGroup.CloudfrontConnectionGroupConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontConnectionGroup.CloudfrontConnectionGroupConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontConnectionGroup.CloudfrontConnectionGroupConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_connection_group#name CloudfrontConnectionGroup#name}. |
-| <code><a href="#@cdktn/provider-aws.cloudfrontConnectionGroup.CloudfrontConnectionGroupConfig.property.anycastIpListId">AnycastIpListId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_connection_group#anycast_ip_list_id CloudfrontConnectionGroup#anycast_ip_list_id}. |
-| <code><a href="#@cdktn/provider-aws.cloudfrontConnectionGroup.CloudfrontConnectionGroupConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_connection_group#enabled CloudfrontConnectionGroup#enabled}. |
-| <code><a href="#@cdktn/provider-aws.cloudfrontConnectionGroup.CloudfrontConnectionGroupConfig.property.ipv6Enabled">Ipv6Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_connection_group#ipv6_enabled CloudfrontConnectionGroup#ipv6_enabled}. |
-| <code><a href="#@cdktn/provider-aws.cloudfrontConnectionGroup.CloudfrontConnectionGroupConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_connection_group#tags CloudfrontConnectionGroup#tags}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontConnectionGroup.CloudfrontConnectionGroupConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_connection_group#name CloudfrontConnectionGroup#name}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontConnectionGroup.CloudfrontConnectionGroupConfig.property.anycastIpListId">AnycastIpListId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_connection_group#anycast_ip_list_id CloudfrontConnectionGroup#anycast_ip_list_id}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontConnectionGroup.CloudfrontConnectionGroupConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_connection_group#enabled CloudfrontConnectionGroup#enabled}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontConnectionGroup.CloudfrontConnectionGroupConfig.property.ipv6Enabled">Ipv6Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_connection_group#ipv6_enabled CloudfrontConnectionGroup#ipv6_enabled}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontConnectionGroup.CloudfrontConnectionGroupConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_connection_group#tags CloudfrontConnectionGroup#tags}. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontConnectionGroup.CloudfrontConnectionGroupConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.cloudfrontConnectionGroup.CloudfrontConnectionGroupTimeouts">CloudfrontConnectionGroupTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktn/provider-aws.cloudfrontConnectionGroup.CloudfrontConnectionGroupConfig.property.waitForDeployment">WaitForDeployment</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_connection_group#wait_for_deployment CloudfrontConnectionGroup#wait_for_deployment}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontConnectionGroup.CloudfrontConnectionGroupConfig.property.waitForDeployment">WaitForDeployment</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_connection_group#wait_for_deployment CloudfrontConnectionGroup#wait_for_deployment}. |
 
 ---
 
@@ -1083,7 +1083,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_connection_group#name CloudfrontConnectionGroup#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_connection_group#name CloudfrontConnectionGroup#name}.
 
 ---
 
@@ -1095,7 +1095,7 @@ AnycastIpListId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_connection_group#anycast_ip_list_id CloudfrontConnectionGroup#anycast_ip_list_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_connection_group#anycast_ip_list_id CloudfrontConnectionGroup#anycast_ip_list_id}.
 
 ---
 
@@ -1107,7 +1107,7 @@ Enabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_connection_group#enabled CloudfrontConnectionGroup#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_connection_group#enabled CloudfrontConnectionGroup#enabled}.
 
 ---
 
@@ -1119,7 +1119,7 @@ Ipv6Enabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_connection_group#ipv6_enabled CloudfrontConnectionGroup#ipv6_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_connection_group#ipv6_enabled CloudfrontConnectionGroup#ipv6_enabled}.
 
 ---
 
@@ -1131,7 +1131,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_connection_group#tags CloudfrontConnectionGroup#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_connection_group#tags CloudfrontConnectionGroup#tags}.
 
 ---
 
@@ -1145,7 +1145,7 @@ Timeouts CloudfrontConnectionGroupTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_connection_group#timeouts CloudfrontConnectionGroup#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_connection_group#timeouts CloudfrontConnectionGroup#timeouts}
 
 ---
 
@@ -1157,7 +1157,7 @@ WaitForDeployment interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_connection_group#wait_for_deployment CloudfrontConnectionGroup#wait_for_deployment}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_connection_group#wait_for_deployment CloudfrontConnectionGroup#wait_for_deployment}.
 
 ---
 
@@ -1166,7 +1166,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudfrontConnectionGroup.CloudfrontConnectionGroupTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontconnectiongroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudfrontconnectiongroup"
 
 &cloudfrontconnectiongroup.CloudfrontConnectionGroupTimeouts {
 	Create: *string,
@@ -1195,7 +1195,7 @@ Create *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Default is 90 minutes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_connection_group#create CloudfrontConnectionGroup#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_connection_group#create CloudfrontConnectionGroup#create}
 
 ---
 
@@ -1209,7 +1209,7 @@ Delete *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Default is 90 minutes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_connection_group#delete CloudfrontConnectionGroup#delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_connection_group#delete CloudfrontConnectionGroup#delete}
 
 ---
 
@@ -1223,7 +1223,7 @@ Update *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Default is 90 minutes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_connection_group#update CloudfrontConnectionGroup#update}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_connection_group#update CloudfrontConnectionGroup#update}
 
 ---
 
@@ -1234,7 +1234,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontConnectionGroup.CloudfrontConnectionGroupTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontconnectiongroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudfrontconnectiongroup"
 
 cloudfrontconnectiongroup.NewCloudfrontConnectionGroupTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudfrontConnectionGroupTimeoutsOutputReference
 ```

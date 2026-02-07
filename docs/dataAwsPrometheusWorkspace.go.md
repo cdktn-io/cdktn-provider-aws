@@ -4,12 +4,12 @@
 
 ### DataAwsPrometheusWorkspace <a name="DataAwsPrometheusWorkspace" id="@cdktn/provider-aws.dataAwsPrometheusWorkspace.DataAwsPrometheusWorkspace"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/prometheus_workspace aws_prometheus_workspace}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/prometheus_workspace aws_prometheus_workspace}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsPrometheusWorkspace.DataAwsPrometheusWorkspace.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsprometheusworkspace"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsprometheusworkspace"
 
 dataawsprometheusworkspace.NewDataAwsPrometheusWorkspace(scope Construct, id *string, config DataAwsPrometheusWorkspaceConfig) DataAwsPrometheusWorkspace
 ```
@@ -297,7 +297,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsPrometheusWorkspace.DataAwsPrometheusWorkspace.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsprometheusworkspace"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsprometheusworkspace"
 
 dataawsprometheusworkspace.DataAwsPrometheusWorkspace_IsConstruct(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsPrometheusWorkspace.DataAwsPrometheusWorkspace.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsprometheusworkspace"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsprometheusworkspace"
 
 dataawsprometheusworkspace.DataAwsPrometheusWorkspace_IsTerraformElement(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ dataawsprometheusworkspace.DataAwsPrometheusWorkspace_IsTerraformElement(x inter
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsPrometheusWorkspace.DataAwsPrometheusWorkspace.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsprometheusworkspace"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsprometheusworkspace"
 
 dataawsprometheusworkspace.DataAwsPrometheusWorkspace_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ dataawsprometheusworkspace.DataAwsPrometheusWorkspace_IsTerraformDataSource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsPrometheusWorkspace.DataAwsPrometheusWorkspace.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsprometheusworkspace"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsprometheusworkspace"
 
 dataawsprometheusworkspace.DataAwsPrometheusWorkspace_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -386,7 +386,7 @@ The construct id used in the generated config for the DataAwsPrometheusWorkspace
 
 The id of the existing DataAwsPrometheusWorkspace that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/prometheus_workspace#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/prometheus_workspace#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -718,7 +718,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsPrometheusWorkspace.DataAwsPrometheusWorkspaceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsprometheusworkspace"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsprometheusworkspace"
 
 &dataawsprometheusworkspace.DataAwsPrometheusWorkspaceConfig {
 	Connection: interface{},
@@ -746,10 +746,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsprometheusworks
 | <code><a href="#@cdktn/provider-aws.dataAwsPrometheusWorkspace.DataAwsPrometheusWorkspaceConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsPrometheusWorkspace.DataAwsPrometheusWorkspaceConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsPrometheusWorkspace.DataAwsPrometheusWorkspaceConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsPrometheusWorkspace.DataAwsPrometheusWorkspaceConfig.property.workspaceId">WorkspaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/prometheus_workspace#workspace_id DataAwsPrometheusWorkspace#workspace_id}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsPrometheusWorkspace.DataAwsPrometheusWorkspaceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/prometheus_workspace#id DataAwsPrometheusWorkspace#id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsPrometheusWorkspace.DataAwsPrometheusWorkspaceConfig.property.workspaceId">WorkspaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/prometheus_workspace#workspace_id DataAwsPrometheusWorkspace#workspace_id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsPrometheusWorkspace.DataAwsPrometheusWorkspaceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/prometheus_workspace#id DataAwsPrometheusWorkspace#id}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsPrometheusWorkspace.DataAwsPrometheusWorkspaceConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.dataAwsPrometheusWorkspace.DataAwsPrometheusWorkspaceConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/prometheus_workspace#tags DataAwsPrometheusWorkspace#tags}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsPrometheusWorkspace.DataAwsPrometheusWorkspaceConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/prometheus_workspace#tags DataAwsPrometheusWorkspace#tags}. |
 
 ---
 
@@ -831,7 +831,7 @@ WorkspaceId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/prometheus_workspace#workspace_id DataAwsPrometheusWorkspace#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/prometheus_workspace#workspace_id DataAwsPrometheusWorkspace#workspace_id}.
 
 ---
 
@@ -843,7 +843,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/prometheus_workspace#id DataAwsPrometheusWorkspace#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/prometheus_workspace#id DataAwsPrometheusWorkspace#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -860,7 +860,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/prometheus_workspace#region DataAwsPrometheusWorkspace#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/prometheus_workspace#region DataAwsPrometheusWorkspace#region}
 
 ---
 
@@ -872,7 +872,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/prometheus_workspace#tags DataAwsPrometheusWorkspace#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/prometheus_workspace#tags DataAwsPrometheusWorkspace#tags}.
 
 ---
 

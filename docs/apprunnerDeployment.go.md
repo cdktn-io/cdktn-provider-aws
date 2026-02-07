@@ -4,12 +4,12 @@
 
 ### ApprunnerDeployment <a name="ApprunnerDeployment" id="@cdktn/provider-aws.apprunnerDeployment.ApprunnerDeployment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/apprunner_deployment aws_apprunner_deployment}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/apprunner_deployment aws_apprunner_deployment}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.apprunnerDeployment.ApprunnerDeployment.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/apprunnerdeployment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/apprunnerdeployment"
 
 apprunnerdeployment.NewApprunnerDeployment(scope Construct, id *string, config ApprunnerDeploymentConfig) ApprunnerDeployment
 ```
@@ -405,7 +405,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.apprunnerDeployment.ApprunnerDeployment.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/apprunnerdeployment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/apprunnerdeployment"
 
 apprunnerdeployment.ApprunnerDeployment_IsConstruct(x interface{}) *bool
 ```
@@ -437,7 +437,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.apprunnerDeployment.ApprunnerDeployment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/apprunnerdeployment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/apprunnerdeployment"
 
 apprunnerdeployment.ApprunnerDeployment_IsTerraformElement(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ apprunnerdeployment.ApprunnerDeployment_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.apprunnerDeployment.ApprunnerDeployment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/apprunnerdeployment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/apprunnerdeployment"
 
 apprunnerdeployment.ApprunnerDeployment_IsTerraformResource(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ apprunnerdeployment.ApprunnerDeployment_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.apprunnerDeployment.ApprunnerDeployment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/apprunnerdeployment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/apprunnerdeployment"
 
 apprunnerdeployment.ApprunnerDeployment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -494,7 +494,7 @@ The construct id used in the generated config for the ApprunnerDeployment to imp
 
 The id of the existing ApprunnerDeployment that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/apprunner_deployment#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/apprunner_deployment#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -793,7 +793,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.apprunnerDeployment.ApprunnerDeploymentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/apprunnerdeployment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/apprunnerdeployment"
 
 &apprunnerdeployment.ApprunnerDeploymentConfig {
 	Connection: interface{},
@@ -805,7 +805,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/apprunnerdeployment"
 	Provisioners: *[]interface{},
 	ServiceArn: *string,
 	Region: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.apprunnerDeployment.ApprunnerDeploymentTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.apprunnerDeployment.ApprunnerDeploymentTimeouts,
 }
 ```
 
@@ -820,7 +820,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/apprunnerdeployment"
 | <code><a href="#@cdktn/provider-aws.apprunnerDeployment.ApprunnerDeploymentConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.apprunnerDeployment.ApprunnerDeploymentConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.apprunnerDeployment.ApprunnerDeploymentConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.apprunnerDeployment.ApprunnerDeploymentConfig.property.serviceArn">ServiceArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/apprunner_deployment#service_arn ApprunnerDeployment#service_arn}. |
+| <code><a href="#@cdktn/provider-aws.apprunnerDeployment.ApprunnerDeploymentConfig.property.serviceArn">ServiceArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/apprunner_deployment#service_arn ApprunnerDeployment#service_arn}. |
 | <code><a href="#@cdktn/provider-aws.apprunnerDeployment.ApprunnerDeploymentConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktn/provider-aws.apprunnerDeployment.ApprunnerDeploymentConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.apprunnerDeployment.ApprunnerDeploymentTimeouts">ApprunnerDeploymentTimeouts</a></code> | timeouts block. |
 
@@ -904,7 +904,7 @@ ServiceArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/apprunner_deployment#service_arn ApprunnerDeployment#service_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/apprunner_deployment#service_arn ApprunnerDeployment#service_arn}.
 
 ---
 
@@ -918,7 +918,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/apprunner_deployment#region ApprunnerDeployment#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/apprunner_deployment#region ApprunnerDeployment#region}
 
 ---
 
@@ -932,7 +932,7 @@ Timeouts ApprunnerDeploymentTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/apprunner_deployment#timeouts ApprunnerDeployment#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/apprunner_deployment#timeouts ApprunnerDeployment#timeouts}
 
 ---
 
@@ -941,7 +941,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.apprunnerDeployment.ApprunnerDeploymentTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/apprunnerdeployment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/apprunnerdeployment"
 
 &apprunnerdeployment.ApprunnerDeploymentTimeouts {
 	Create: *string,
@@ -966,7 +966,7 @@ Create *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/apprunner_deployment#create ApprunnerDeployment#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/apprunner_deployment#create ApprunnerDeployment#create}
 
 ---
 
@@ -977,7 +977,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.apprunnerDeployment.ApprunnerDeploymentTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/apprunnerdeployment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/apprunnerdeployment"
 
 apprunnerdeployment.NewApprunnerDeploymentTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApprunnerDeploymentTimeoutsOutputReference
 ```

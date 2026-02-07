@@ -4,12 +4,12 @@
 
 ### OdbNetwork <a name="OdbNetwork" id="@cdktn/provider-aws.odbNetwork.OdbNetwork"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/odb_network aws_odb_network}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/odb_network aws_odb_network}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.odbNetwork.OdbNetwork.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/odbnetwork"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/odbnetwork"
 
 odbnetwork.NewOdbNetwork(scope Construct, id *string, config OdbNetworkConfig) OdbNetwork
 ```
@@ -78,8 +78,12 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetwork.resetCustomDomainName">ResetCustomDomainName</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetwork.resetDefaultDnsPrefix">ResetDefaultDnsPrefix</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetwork.resetDeleteAssociatedResources">ResetDeleteAssociatedResources</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetwork.resetKmsAccess">ResetKmsAccess</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetwork.resetKmsPolicyDocument">ResetKmsPolicyDocument</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetwork.resetRegion">ResetRegion</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetwork.resetS3PolicyDocument">ResetS3PolicyDocument</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetwork.resetStsAccess">ResetStsAccess</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetwork.resetStsPolicyDocument">ResetStsPolicyDocument</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetwork.resetTags">ResetTags</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetwork.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
 
@@ -409,6 +413,18 @@ func ResetDefaultDnsPrefix()
 func ResetDeleteAssociatedResources()
 ```
 
+##### `ResetKmsAccess` <a name="ResetKmsAccess" id="@cdktn/provider-aws.odbNetwork.OdbNetwork.resetKmsAccess"></a>
+
+```go
+func ResetKmsAccess()
+```
+
+##### `ResetKmsPolicyDocument` <a name="ResetKmsPolicyDocument" id="@cdktn/provider-aws.odbNetwork.OdbNetwork.resetKmsPolicyDocument"></a>
+
+```go
+func ResetKmsPolicyDocument()
+```
+
 ##### `ResetRegion` <a name="ResetRegion" id="@cdktn/provider-aws.odbNetwork.OdbNetwork.resetRegion"></a>
 
 ```go
@@ -419,6 +435,18 @@ func ResetRegion()
 
 ```go
 func ResetS3PolicyDocument()
+```
+
+##### `ResetStsAccess` <a name="ResetStsAccess" id="@cdktn/provider-aws.odbNetwork.OdbNetwork.resetStsAccess"></a>
+
+```go
+func ResetStsAccess()
+```
+
+##### `ResetStsPolicyDocument` <a name="ResetStsPolicyDocument" id="@cdktn/provider-aws.odbNetwork.OdbNetwork.resetStsPolicyDocument"></a>
+
+```go
+func ResetStsPolicyDocument()
 ```
 
 ##### `ResetTags` <a name="ResetTags" id="@cdktn/provider-aws.odbNetwork.OdbNetwork.resetTags"></a>
@@ -447,7 +475,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.odbNetwork.OdbNetwork.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/odbnetwork"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/odbnetwork"
 
 odbnetwork.OdbNetwork_IsConstruct(x interface{}) *bool
 ```
@@ -479,7 +507,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.odbNetwork.OdbNetwork.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/odbnetwork"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/odbnetwork"
 
 odbnetwork.OdbNetwork_IsTerraformElement(x interface{}) *bool
 ```
@@ -493,7 +521,7 @@ odbnetwork.OdbNetwork_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.odbNetwork.OdbNetwork.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/odbnetwork"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/odbnetwork"
 
 odbnetwork.OdbNetwork_IsTerraformResource(x interface{}) *bool
 ```
@@ -507,7 +535,7 @@ odbnetwork.OdbNetwork_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.odbNetwork.OdbNetwork.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/odbnetwork"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/odbnetwork"
 
 odbnetwork.OdbNetwork_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -536,7 +564,7 @@ The construct id used in the generated config for the OdbNetwork to import.
 
 The id of the existing OdbNetwork that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/odb_network#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/odb_network#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -590,9 +618,13 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 | <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetwork.property.defaultDnsPrefixInput">DefaultDnsPrefixInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetwork.property.deleteAssociatedResourcesInput">DeleteAssociatedResourcesInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetwork.property.displayNameInput">DisplayNameInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetwork.property.kmsAccessInput">KmsAccessInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetwork.property.kmsPolicyDocumentInput">KmsPolicyDocumentInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetwork.property.regionInput">RegionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetwork.property.s3AccessInput">S3AccessInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetwork.property.s3PolicyDocumentInput">S3PolicyDocumentInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetwork.property.stsAccessInput">StsAccessInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetwork.property.stsPolicyDocumentInput">StsPolicyDocumentInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetwork.property.tagsInput">TagsInput</a></code> | <code>*map[string]*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetwork.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetwork.property.zeroEtlAccessInput">ZeroEtlAccessInput</a></code> | <code>*string</code> | *No description.* |
@@ -604,9 +636,13 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 | <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetwork.property.defaultDnsPrefix">DefaultDnsPrefix</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetwork.property.deleteAssociatedResources">DeleteAssociatedResources</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetwork.property.displayName">DisplayName</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetwork.property.kmsAccess">KmsAccess</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetwork.property.kmsPolicyDocument">KmsPolicyDocument</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetwork.property.region">Region</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetwork.property.s3Access">S3Access</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetwork.property.s3PolicyDocument">S3PolicyDocument</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetwork.property.stsAccess">StsAccess</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetwork.property.stsPolicyDocument">StsPolicyDocument</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetwork.property.tags">Tags</a></code> | <code>*map[string]*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetwork.property.zeroEtlAccess">ZeroEtlAccess</a></code> | <code>*string</code> | *No description.* |
 
@@ -994,6 +1030,26 @@ func DisplayNameInput() *string
 
 ---
 
+##### `KmsAccessInput`<sup>Optional</sup> <a name="KmsAccessInput" id="@cdktn/provider-aws.odbNetwork.OdbNetwork.property.kmsAccessInput"></a>
+
+```go
+func KmsAccessInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `KmsPolicyDocumentInput`<sup>Optional</sup> <a name="KmsPolicyDocumentInput" id="@cdktn/provider-aws.odbNetwork.OdbNetwork.property.kmsPolicyDocumentInput"></a>
+
+```go
+func KmsPolicyDocumentInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `RegionInput`<sup>Optional</sup> <a name="RegionInput" id="@cdktn/provider-aws.odbNetwork.OdbNetwork.property.regionInput"></a>
 
 ```go
@@ -1018,6 +1074,26 @@ func S3AccessInput() *string
 
 ```go
 func S3PolicyDocumentInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `StsAccessInput`<sup>Optional</sup> <a name="StsAccessInput" id="@cdktn/provider-aws.odbNetwork.OdbNetwork.property.stsAccessInput"></a>
+
+```go
+func StsAccessInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `StsPolicyDocumentInput`<sup>Optional</sup> <a name="StsPolicyDocumentInput" id="@cdktn/provider-aws.odbNetwork.OdbNetwork.property.stsPolicyDocumentInput"></a>
+
+```go
+func StsPolicyDocumentInput() *string
 ```
 
 - *Type:* *string
@@ -1134,6 +1210,26 @@ func DisplayName() *string
 
 ---
 
+##### `KmsAccess`<sup>Required</sup> <a name="KmsAccess" id="@cdktn/provider-aws.odbNetwork.OdbNetwork.property.kmsAccess"></a>
+
+```go
+func KmsAccess() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `KmsPolicyDocument`<sup>Required</sup> <a name="KmsPolicyDocument" id="@cdktn/provider-aws.odbNetwork.OdbNetwork.property.kmsPolicyDocument"></a>
+
+```go
+func KmsPolicyDocument() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `Region`<sup>Required</sup> <a name="Region" id="@cdktn/provider-aws.odbNetwork.OdbNetwork.property.region"></a>
 
 ```go
@@ -1158,6 +1254,26 @@ func S3Access() *string
 
 ```go
 func S3PolicyDocument() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `StsAccess`<sup>Required</sup> <a name="StsAccess" id="@cdktn/provider-aws.odbNetwork.OdbNetwork.property.stsAccess"></a>
+
+```go
+func StsAccess() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `StsPolicyDocument`<sup>Required</sup> <a name="StsPolicyDocument" id="@cdktn/provider-aws.odbNetwork.OdbNetwork.property.stsPolicyDocument"></a>
+
+```go
+func StsPolicyDocument() *string
 ```
 
 - *Type:* *string
@@ -1209,7 +1325,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.odbNetwork.OdbNetworkConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/odbnetwork"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/odbnetwork"
 
 &odbnetwork.OdbNetworkConfig {
 	Connection: interface{},
@@ -1229,10 +1345,14 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/odbnetwork"
 	CustomDomainName: *string,
 	DefaultDnsPrefix: *string,
 	DeleteAssociatedResources: interface{},
+	KmsAccess: *string,
+	KmsPolicyDocument: *string,
 	Region: *string,
 	S3PolicyDocument: *string,
+	StsAccess: *string,
+	StsPolicyDocument: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.odbNetwork.OdbNetworkTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.odbNetwork.OdbNetworkTimeouts,
 }
 ```
 
@@ -1257,9 +1377,13 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/odbnetwork"
 | <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkConfig.property.customDomainName">CustomDomainName</a></code> | <code>*string</code> | The name of the custom domain that the network is located. custom_domain_name and default_dns_prefix both can't be given. |
 | <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkConfig.property.defaultDnsPrefix">DefaultDnsPrefix</a></code> | <code>*string</code> | The default DNS prefix for the network resource. Changing this will force terraform to create new resource. |
 | <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkConfig.property.deleteAssociatedResources">DeleteAssociatedResources</a></code> | <code>interface{}</code> | If set to true deletes associated OCI resources. Default false. |
+| <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkConfig.property.kmsAccess">KmsAccess</a></code> | <code>*string</code> | Specifies the configuration for Amazon KMS access from the ODB network. |
+| <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkConfig.property.kmsPolicyDocument">KmsPolicyDocument</a></code> | <code>*string</code> | Specifies the endpoint policy for Amazon KMS access from the ODB network. |
 | <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkConfig.property.s3PolicyDocument">S3PolicyDocument</a></code> | <code>*string</code> | Specifies the endpoint policy for Amazon S3 access from the ODB network. |
-| <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/odb_network#tags OdbNetwork#tags}. |
+| <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkConfig.property.stsAccess">StsAccess</a></code> | <code>*string</code> | Specifies the configuration for Amazon STS access from the ODB network. |
+| <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkConfig.property.stsPolicyDocument">StsPolicyDocument</a></code> | <code>*string</code> | Specifies the endpoint policy for Amazon STS access from the ODB network. |
+| <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/odb_network#tags OdbNetwork#tags}. |
 | <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkTimeouts">OdbNetworkTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1346,7 +1470,7 @@ The AZ ID of the AZ where the ODB network is located.
 
 Changing this will force terraform to create new resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/odb_network#availability_zone_id OdbNetwork#availability_zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/odb_network#availability_zone_id OdbNetwork#availability_zone_id}
 
 ---
 
@@ -1371,7 +1495,7 @@ ODB network.
 - 224.0.0.0 - 239.255.255.255
 - 240.0.0.0 - 255.255.255.255
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/odb_network#backup_subnet_cidr OdbNetwork#backup_subnet_cidr}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/odb_network#backup_subnet_cidr OdbNetwork#backup_subnet_cidr}
 
 ---
 
@@ -1396,7 +1520,7 @@ ODB network.
 - 224.0.0.0 - 239.255.255.255
 - 240.0.0.0 - 255.255.255.255
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/odb_network#client_subnet_cidr OdbNetwork#client_subnet_cidr}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/odb_network#client_subnet_cidr OdbNetwork#client_subnet_cidr}
 
 ---
 
@@ -1410,7 +1534,7 @@ DisplayName *string
 
 The user-friendly name for the odb network. Changing this will force terraform to create a new resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/odb_network#display_name OdbNetwork#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/odb_network#display_name OdbNetwork#display_name}
 
 ---
 
@@ -1424,7 +1548,7 @@ S3Access *string
 
 Specifies the configuration for Amazon S3 access from the ODB network.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/odb_network#s3_access OdbNetwork#s3_access}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/odb_network#s3_access OdbNetwork#s3_access}
 
 ---
 
@@ -1438,7 +1562,7 @@ ZeroEtlAccess *string
 
 Specifies the configuration for Zero-ETL access from the ODB network.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/odb_network#zero_etl_access OdbNetwork#zero_etl_access}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/odb_network#zero_etl_access OdbNetwork#zero_etl_access}
 
 ---
 
@@ -1454,7 +1578,7 @@ The name of the Availability Zone (AZ) where the odb network is located.
 
 Changing this will force terraform to create new resource
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/odb_network#availability_zone OdbNetwork#availability_zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/odb_network#availability_zone OdbNetwork#availability_zone}
 
 ---
 
@@ -1468,7 +1592,7 @@ CustomDomainName *string
 
 The name of the custom domain that the network is located. custom_domain_name and default_dns_prefix both can't be given.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/odb_network#custom_domain_name OdbNetwork#custom_domain_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/odb_network#custom_domain_name OdbNetwork#custom_domain_name}
 
 ---
 
@@ -1482,7 +1606,7 @@ DefaultDnsPrefix *string
 
 The default DNS prefix for the network resource. Changing this will force terraform to create new resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/odb_network#default_dns_prefix OdbNetwork#default_dns_prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/odb_network#default_dns_prefix OdbNetwork#default_dns_prefix}
 
 ---
 
@@ -1496,7 +1620,35 @@ DeleteAssociatedResources interface{}
 
 If set to true deletes associated OCI resources. Default false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/odb_network#delete_associated_resources OdbNetwork#delete_associated_resources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/odb_network#delete_associated_resources OdbNetwork#delete_associated_resources}
+
+---
+
+##### `KmsAccess`<sup>Optional</sup> <a name="KmsAccess" id="@cdktn/provider-aws.odbNetwork.OdbNetworkConfig.property.kmsAccess"></a>
+
+```go
+KmsAccess *string
+```
+
+- *Type:* *string
+
+Specifies the configuration for Amazon KMS access from the ODB network.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/odb_network#kms_access OdbNetwork#kms_access}
+
+---
+
+##### `KmsPolicyDocument`<sup>Optional</sup> <a name="KmsPolicyDocument" id="@cdktn/provider-aws.odbNetwork.OdbNetworkConfig.property.kmsPolicyDocument"></a>
+
+```go
+KmsPolicyDocument *string
+```
+
+- *Type:* *string
+
+Specifies the endpoint policy for Amazon KMS access from the ODB network.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/odb_network#kms_policy_document OdbNetwork#kms_policy_document}
 
 ---
 
@@ -1510,7 +1662,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/odb_network#region OdbNetwork#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/odb_network#region OdbNetwork#region}
 
 ---
 
@@ -1524,7 +1676,35 @@ S3PolicyDocument *string
 
 Specifies the endpoint policy for Amazon S3 access from the ODB network.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/odb_network#s3_policy_document OdbNetwork#s3_policy_document}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/odb_network#s3_policy_document OdbNetwork#s3_policy_document}
+
+---
+
+##### `StsAccess`<sup>Optional</sup> <a name="StsAccess" id="@cdktn/provider-aws.odbNetwork.OdbNetworkConfig.property.stsAccess"></a>
+
+```go
+StsAccess *string
+```
+
+- *Type:* *string
+
+Specifies the configuration for Amazon STS access from the ODB network.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/odb_network#sts_access OdbNetwork#sts_access}
+
+---
+
+##### `StsPolicyDocument`<sup>Optional</sup> <a name="StsPolicyDocument" id="@cdktn/provider-aws.odbNetwork.OdbNetworkConfig.property.stsPolicyDocument"></a>
+
+```go
+StsPolicyDocument *string
+```
+
+- *Type:* *string
+
+Specifies the endpoint policy for Amazon STS access from the ODB network.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/odb_network#sts_policy_document OdbNetwork#sts_policy_document}
 
 ---
 
@@ -1536,7 +1716,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/odb_network#tags OdbNetwork#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/odb_network#tags OdbNetwork#tags}.
 
 ---
 
@@ -1550,7 +1730,7 @@ Timeouts OdbNetworkTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/odb_network#timeouts OdbNetwork#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/odb_network#timeouts OdbNetwork#timeouts}
 
 ---
 
@@ -1559,9 +1739,22 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServices.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/odbnetwork"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/odbnetwork"
 
 &odbnetwork.OdbNetworkManagedServices {
+
+}
+```
+
+
+### OdbNetworkManagedServicesKmsAccess <a name="OdbNetworkManagedServicesKmsAccess" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesKmsAccess"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesKmsAccess.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/odbnetwork"
+
+&odbnetwork.OdbNetworkManagedServicesKmsAccess {
 
 }
 ```
@@ -1572,7 +1765,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/odbnetwork"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesManagedS3BackupAccess.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/odbnetwork"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/odbnetwork"
 
 &odbnetwork.OdbNetworkManagedServicesManagedS3BackupAccess {
 
@@ -1585,7 +1778,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/odbnetwork"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesS3Access.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/odbnetwork"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/odbnetwork"
 
 &odbnetwork.OdbNetworkManagedServicesS3Access {
 
@@ -1598,9 +1791,22 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/odbnetwork"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesServiceNetworkEndpoint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/odbnetwork"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/odbnetwork"
 
 &odbnetwork.OdbNetworkManagedServicesServiceNetworkEndpoint {
+
+}
+```
+
+
+### OdbNetworkManagedServicesStsAccess <a name="OdbNetworkManagedServicesStsAccess" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesStsAccess"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesStsAccess.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/odbnetwork"
+
+&odbnetwork.OdbNetworkManagedServicesStsAccess {
 
 }
 ```
@@ -1611,7 +1817,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/odbnetwork"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesZeroEtlAccess.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/odbnetwork"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/odbnetwork"
 
 &odbnetwork.OdbNetworkManagedServicesZeroEtlAccess {
 
@@ -1624,7 +1830,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/odbnetwork"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.odbNetwork.OdbNetworkOciDnsForwardingConfigs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/odbnetwork"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/odbnetwork"
 
 &odbnetwork.OdbNetworkOciDnsForwardingConfigs {
 
@@ -1637,7 +1843,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/odbnetwork"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.odbNetwork.OdbNetworkTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/odbnetwork"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/odbnetwork"
 
 &odbnetwork.OdbNetworkTimeouts {
 	Create: *string,
@@ -1666,7 +1872,7 @@ Create *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/odb_network#create OdbNetwork#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/odb_network#create OdbNetwork#create}
 
 ---
 
@@ -1680,7 +1886,7 @@ Delete *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/odb_network#delete OdbNetwork#delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/odb_network#delete OdbNetwork#delete}
 
 ---
 
@@ -1694,18 +1900,478 @@ Update *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/odb_network#update OdbNetwork#update}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/odb_network#update OdbNetwork#update}
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
+
+### OdbNetworkManagedServicesKmsAccessList <a name="OdbNetworkManagedServicesKmsAccessList" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesKmsAccessList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesKmsAccessList.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/odbnetwork"
+
+odbnetwork.NewOdbNetworkManagedServicesKmsAccessList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OdbNetworkManagedServicesKmsAccessList
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesKmsAccessList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesKmsAccessList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesKmsAccessList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesKmsAccessList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesKmsAccessList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesKmsAccessList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesKmsAccessList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesKmsAccessList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesKmsAccessList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesKmsAccessList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesKmsAccessList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesKmsAccessList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesKmsAccessList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesKmsAccessList.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesKmsAccessList.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesKmsAccessList.resolve.parameter._context"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesKmsAccessList.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesKmsAccessList.get"></a>
+
+```go
+func Get(index *f64) OdbNetworkManagedServicesKmsAccessOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesKmsAccessList.get.parameter.index"></a>
+
+- *Type:* *f64
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesKmsAccessList.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesKmsAccessList.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesKmsAccessList.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesKmsAccessList.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+
+### OdbNetworkManagedServicesKmsAccessOutputReference <a name="OdbNetworkManagedServicesKmsAccessOutputReference" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesKmsAccessOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesKmsAccessOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/odbnetwork"
+
+odbnetwork.NewOdbNetworkManagedServicesKmsAccessOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OdbNetworkManagedServicesKmsAccessOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesKmsAccessOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesKmsAccessOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesKmsAccessOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesKmsAccessOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesKmsAccessOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesKmsAccessOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesKmsAccessOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* *f64
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesKmsAccessOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesKmsAccessOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesKmsAccessOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesKmsAccessOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesKmsAccessOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesKmsAccessOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesKmsAccessOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesKmsAccessOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesKmsAccessOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesKmsAccessOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesKmsAccessOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesKmsAccessOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesKmsAccessOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesKmsAccessOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesKmsAccessOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesKmsAccessOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesKmsAccessOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesKmsAccessOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesKmsAccessOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesKmsAccessOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesKmsAccessOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesKmsAccessOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesKmsAccessOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesKmsAccessOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesKmsAccessOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesKmsAccessOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesKmsAccessOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesKmsAccessOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesKmsAccessOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesKmsAccessOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesKmsAccessOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesKmsAccessOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesKmsAccessOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesKmsAccessOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesKmsAccessOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesKmsAccessOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesKmsAccessOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesKmsAccessOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesKmsAccessOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesKmsAccessOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesKmsAccessOutputReference.property.domainName">DomainName</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesKmsAccessOutputReference.property.ipv4Addresses">Ipv4Addresses</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesKmsAccessOutputReference.property.kmsPolicyDocument">KmsPolicyDocument</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesKmsAccessOutputReference.property.status">Status</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesKmsAccessOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesKmsAccess">OdbNetworkManagedServicesKmsAccess</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesKmsAccessOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesKmsAccessOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `DomainName`<sup>Required</sup> <a name="DomainName" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesKmsAccessOutputReference.property.domainName"></a>
+
+```go
+func DomainName() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Ipv4Addresses`<sup>Required</sup> <a name="Ipv4Addresses" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesKmsAccessOutputReference.property.ipv4Addresses"></a>
+
+```go
+func Ipv4Addresses() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `KmsPolicyDocument`<sup>Required</sup> <a name="KmsPolicyDocument" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesKmsAccessOutputReference.property.kmsPolicyDocument"></a>
+
+```go
+func KmsPolicyDocument() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Status`<sup>Required</sup> <a name="Status" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesKmsAccessOutputReference.property.status"></a>
+
+```go
+func Status() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesKmsAccessOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() OdbNetworkManagedServicesKmsAccess
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesKmsAccess">OdbNetworkManagedServicesKmsAccess</a>
+
+---
+
 
 ### OdbNetworkManagedServicesList <a name="OdbNetworkManagedServicesList" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesList"></a>
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/odbnetwork"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/odbnetwork"
 
 odbnetwork.NewOdbNetworkManagedServicesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OdbNetworkManagedServicesList
 ```
@@ -1854,7 +2520,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesManagedS3BackupAccessList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/odbnetwork"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/odbnetwork"
 
 odbnetwork.NewOdbNetworkManagedServicesManagedS3BackupAccessList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OdbNetworkManagedServicesManagedS3BackupAccessList
 ```
@@ -2003,7 +2669,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesManagedS3BackupAccessOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/odbnetwork"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/odbnetwork"
 
 odbnetwork.NewOdbNetworkManagedServicesManagedS3BackupAccessOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OdbNetworkManagedServicesManagedS3BackupAccessOutputReference
 ```
@@ -2292,7 +2958,7 @@ func InternalValue() OdbNetworkManagedServicesManagedS3BackupAccess
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/odbnetwork"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/odbnetwork"
 
 odbnetwork.NewOdbNetworkManagedServicesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OdbNetworkManagedServicesOutputReference
 ```
@@ -2515,12 +3181,14 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesOutputReference.property.kmsAccess">KmsAccess</a></code> | <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesKmsAccessList">OdbNetworkManagedServicesKmsAccessList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesOutputReference.property.managedS3BackupAccess">ManagedS3BackupAccess</a></code> | <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesManagedS3BackupAccessList">OdbNetworkManagedServicesManagedS3BackupAccessList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesOutputReference.property.managedServiceIpv4Cidrs">ManagedServiceIpv4Cidrs</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesOutputReference.property.resourceGatewayArn">ResourceGatewayArn</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesOutputReference.property.s3Access">S3Access</a></code> | <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesS3AccessList">OdbNetworkManagedServicesS3AccessList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesOutputReference.property.serviceNetworkArn">ServiceNetworkArn</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesOutputReference.property.serviceNetworkEndpoint">ServiceNetworkEndpoint</a></code> | <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesServiceNetworkEndpointList">OdbNetworkManagedServicesServiceNetworkEndpointList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesOutputReference.property.stsAccess">StsAccess</a></code> | <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesStsAccessList">OdbNetworkManagedServicesStsAccessList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesOutputReference.property.zeroEtlAccess">ZeroEtlAccess</a></code> | <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesZeroEtlAccessList">OdbNetworkManagedServicesZeroEtlAccessList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServices">OdbNetworkManagedServices</a></code> | *No description.* |
 
@@ -2547,6 +3215,16 @@ func Fqn() *string
 ```
 
 - *Type:* *string
+
+---
+
+##### `KmsAccess`<sup>Required</sup> <a name="KmsAccess" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesOutputReference.property.kmsAccess"></a>
+
+```go
+func KmsAccess() OdbNetworkManagedServicesKmsAccessList
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesKmsAccessList">OdbNetworkManagedServicesKmsAccessList</a>
 
 ---
 
@@ -2610,6 +3288,16 @@ func ServiceNetworkEndpoint() OdbNetworkManagedServicesServiceNetworkEndpointLis
 
 ---
 
+##### `StsAccess`<sup>Required</sup> <a name="StsAccess" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesOutputReference.property.stsAccess"></a>
+
+```go
+func StsAccess() OdbNetworkManagedServicesStsAccessList
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesStsAccessList">OdbNetworkManagedServicesStsAccessList</a>
+
+---
+
 ##### `ZeroEtlAccess`<sup>Required</sup> <a name="ZeroEtlAccess" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesOutputReference.property.zeroEtlAccess"></a>
 
 ```go
@@ -2636,7 +3324,7 @@ func InternalValue() OdbNetworkManagedServices
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesS3AccessList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/odbnetwork"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/odbnetwork"
 
 odbnetwork.NewOdbNetworkManagedServicesS3AccessList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OdbNetworkManagedServicesS3AccessList
 ```
@@ -2785,7 +3473,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesS3AccessOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/odbnetwork"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/odbnetwork"
 
 odbnetwork.NewOdbNetworkManagedServicesS3AccessOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OdbNetworkManagedServicesS3AccessOutputReference
 ```
@@ -3096,7 +3784,7 @@ func InternalValue() OdbNetworkManagedServicesS3Access
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesServiceNetworkEndpointList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/odbnetwork"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/odbnetwork"
 
 odbnetwork.NewOdbNetworkManagedServicesServiceNetworkEndpointList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OdbNetworkManagedServicesServiceNetworkEndpointList
 ```
@@ -3245,7 +3933,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesServiceNetworkEndpointOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/odbnetwork"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/odbnetwork"
 
 odbnetwork.NewOdbNetworkManagedServicesServiceNetworkEndpointOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OdbNetworkManagedServicesServiceNetworkEndpointOutputReference
 ```
@@ -3529,12 +4217,472 @@ func InternalValue() OdbNetworkManagedServicesServiceNetworkEndpoint
 ---
 
 
+### OdbNetworkManagedServicesStsAccessList <a name="OdbNetworkManagedServicesStsAccessList" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesStsAccessList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesStsAccessList.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/odbnetwork"
+
+odbnetwork.NewOdbNetworkManagedServicesStsAccessList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OdbNetworkManagedServicesStsAccessList
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesStsAccessList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesStsAccessList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesStsAccessList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesStsAccessList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesStsAccessList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesStsAccessList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesStsAccessList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesStsAccessList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesStsAccessList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesStsAccessList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesStsAccessList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesStsAccessList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesStsAccessList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesStsAccessList.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesStsAccessList.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesStsAccessList.resolve.parameter._context"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesStsAccessList.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesStsAccessList.get"></a>
+
+```go
+func Get(index *f64) OdbNetworkManagedServicesStsAccessOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesStsAccessList.get.parameter.index"></a>
+
+- *Type:* *f64
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesStsAccessList.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesStsAccessList.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesStsAccessList.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesStsAccessList.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+
+### OdbNetworkManagedServicesStsAccessOutputReference <a name="OdbNetworkManagedServicesStsAccessOutputReference" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesStsAccessOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesStsAccessOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/odbnetwork"
+
+odbnetwork.NewOdbNetworkManagedServicesStsAccessOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OdbNetworkManagedServicesStsAccessOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesStsAccessOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesStsAccessOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesStsAccessOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesStsAccessOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesStsAccessOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesStsAccessOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesStsAccessOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* *f64
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesStsAccessOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesStsAccessOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesStsAccessOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesStsAccessOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesStsAccessOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesStsAccessOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesStsAccessOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesStsAccessOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesStsAccessOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesStsAccessOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesStsAccessOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesStsAccessOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesStsAccessOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesStsAccessOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesStsAccessOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesStsAccessOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesStsAccessOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesStsAccessOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesStsAccessOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesStsAccessOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesStsAccessOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesStsAccessOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesStsAccessOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesStsAccessOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesStsAccessOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesStsAccessOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesStsAccessOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesStsAccessOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesStsAccessOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesStsAccessOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesStsAccessOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesStsAccessOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesStsAccessOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesStsAccessOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesStsAccessOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesStsAccessOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesStsAccessOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesStsAccessOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesStsAccessOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesStsAccessOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesStsAccessOutputReference.property.domainName">DomainName</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesStsAccessOutputReference.property.ipv4Addresses">Ipv4Addresses</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesStsAccessOutputReference.property.status">Status</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesStsAccessOutputReference.property.stsPolicyDocument">StsPolicyDocument</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesStsAccessOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesStsAccess">OdbNetworkManagedServicesStsAccess</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesStsAccessOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesStsAccessOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `DomainName`<sup>Required</sup> <a name="DomainName" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesStsAccessOutputReference.property.domainName"></a>
+
+```go
+func DomainName() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Ipv4Addresses`<sup>Required</sup> <a name="Ipv4Addresses" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesStsAccessOutputReference.property.ipv4Addresses"></a>
+
+```go
+func Ipv4Addresses() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `Status`<sup>Required</sup> <a name="Status" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesStsAccessOutputReference.property.status"></a>
+
+```go
+func Status() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `StsPolicyDocument`<sup>Required</sup> <a name="StsPolicyDocument" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesStsAccessOutputReference.property.stsPolicyDocument"></a>
+
+```go
+func StsPolicyDocument() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesStsAccessOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() OdbNetworkManagedServicesStsAccess
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesStsAccess">OdbNetworkManagedServicesStsAccess</a>
+
+---
+
+
 ### OdbNetworkManagedServicesZeroEtlAccessList <a name="OdbNetworkManagedServicesZeroEtlAccessList" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesZeroEtlAccessList"></a>
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesZeroEtlAccessList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/odbnetwork"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/odbnetwork"
 
 odbnetwork.NewOdbNetworkManagedServicesZeroEtlAccessList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OdbNetworkManagedServicesZeroEtlAccessList
 ```
@@ -3683,7 +4831,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.odbNetwork.OdbNetworkManagedServicesZeroEtlAccessOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/odbnetwork"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/odbnetwork"
 
 odbnetwork.NewOdbNetworkManagedServicesZeroEtlAccessOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OdbNetworkManagedServicesZeroEtlAccessOutputReference
 ```
@@ -3972,7 +5120,7 @@ func InternalValue() OdbNetworkManagedServicesZeroEtlAccess
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.odbNetwork.OdbNetworkOciDnsForwardingConfigsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/odbnetwork"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/odbnetwork"
 
 odbnetwork.NewOdbNetworkOciDnsForwardingConfigsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OdbNetworkOciDnsForwardingConfigsList
 ```
@@ -4121,7 +5269,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.odbNetwork.OdbNetworkOciDnsForwardingConfigsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/odbnetwork"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/odbnetwork"
 
 odbnetwork.NewOdbNetworkOciDnsForwardingConfigsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OdbNetworkOciDnsForwardingConfigsOutputReference
 ```
@@ -4410,7 +5558,7 @@ func InternalValue() OdbNetworkOciDnsForwardingConfigs
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.odbNetwork.OdbNetworkTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/odbnetwork"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/odbnetwork"
 
 odbnetwork.NewOdbNetworkTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OdbNetworkTimeoutsOutputReference
 ```

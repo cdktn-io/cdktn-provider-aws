@@ -4,12 +4,12 @@
 
 ### CloudwatchEventConnection <a name="CloudwatchEventConnection" id="@cdktn/provider-aws.cloudwatchEventConnection.CloudwatchEventConnection"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_event_connection aws_cloudwatch_event_connection}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_event_connection aws_cloudwatch_event_connection}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudwatchEventConnection.CloudwatchEventConnection.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatcheventconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatcheventconnection"
 
 cloudwatcheventconnection.NewCloudwatchEventConnection(scope Construct, id *string, config CloudwatchEventConnectionConfig) CloudwatchEventConnection
 ```
@@ -439,7 +439,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.cloudwatchEventConnection.CloudwatchEventConnection.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatcheventconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatcheventconnection"
 
 cloudwatcheventconnection.CloudwatchEventConnection_IsConstruct(x interface{}) *bool
 ```
@@ -471,7 +471,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.cloudwatchEventConnection.CloudwatchEventConnection.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatcheventconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatcheventconnection"
 
 cloudwatcheventconnection.CloudwatchEventConnection_IsTerraformElement(x interface{}) *bool
 ```
@@ -485,7 +485,7 @@ cloudwatcheventconnection.CloudwatchEventConnection_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.cloudwatchEventConnection.CloudwatchEventConnection.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatcheventconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatcheventconnection"
 
 cloudwatcheventconnection.CloudwatchEventConnection_IsTerraformResource(x interface{}) *bool
 ```
@@ -499,7 +499,7 @@ cloudwatcheventconnection.CloudwatchEventConnection_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.cloudwatchEventConnection.CloudwatchEventConnection.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatcheventconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatcheventconnection"
 
 cloudwatcheventconnection.CloudwatchEventConnection_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -528,7 +528,7 @@ The construct id used in the generated config for the CloudwatchEventConnection 
 
 The id of the existing CloudwatchEventConnection that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_event_connection#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_event_connection#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -926,13 +926,13 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatcheventconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatcheventconnection"
 
 &cloudwatcheventconnection.CloudwatchEventConnectionAuthParameters {
-	ApiKey: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersApiKey,
-	Basic: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersBasic,
-	InvocationHttpParameters: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersInvocationHttpParameters,
-	Oauth: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersOauth,
+	ApiKey: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersApiKey,
+	Basic: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersBasic,
+	InvocationHttpParameters: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersInvocationHttpParameters,
+	Oauth: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersOauth,
 }
 ```
 
@@ -957,7 +957,7 @@ ApiKey CloudwatchEventConnectionAuthParametersApiKey
 
 api_key block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_event_connection#api_key CloudwatchEventConnection#api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_event_connection#api_key CloudwatchEventConnection#api_key}
 
 ---
 
@@ -971,7 +971,7 @@ Basic CloudwatchEventConnectionAuthParametersBasic
 
 basic block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_event_connection#basic CloudwatchEventConnection#basic}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_event_connection#basic CloudwatchEventConnection#basic}
 
 ---
 
@@ -985,7 +985,7 @@ InvocationHttpParameters CloudwatchEventConnectionAuthParametersInvocationHttpPa
 
 invocation_http_parameters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_event_connection#invocation_http_parameters CloudwatchEventConnection#invocation_http_parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_event_connection#invocation_http_parameters CloudwatchEventConnection#invocation_http_parameters}
 
 ---
 
@@ -999,7 +999,7 @@ Oauth CloudwatchEventConnectionAuthParametersOauth
 
 oauth block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_event_connection#oauth CloudwatchEventConnection#oauth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_event_connection#oauth CloudwatchEventConnection#oauth}
 
 ---
 
@@ -1008,7 +1008,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersApiKey.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatcheventconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatcheventconnection"
 
 &cloudwatcheventconnection.CloudwatchEventConnectionAuthParametersApiKey {
 	Key: *string,
@@ -1020,8 +1020,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatcheventconnect
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersApiKey.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_event_connection#key CloudwatchEventConnection#key}. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersApiKey.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_event_connection#value CloudwatchEventConnection#value}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersApiKey.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_event_connection#key CloudwatchEventConnection#key}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersApiKey.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_event_connection#value CloudwatchEventConnection#value}. |
 
 ---
 
@@ -1033,7 +1033,7 @@ Key *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_event_connection#key CloudwatchEventConnection#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_event_connection#key CloudwatchEventConnection#key}.
 
 ---
 
@@ -1045,7 +1045,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_event_connection#value CloudwatchEventConnection#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_event_connection#value CloudwatchEventConnection#value}.
 
 ---
 
@@ -1054,7 +1054,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersBasic.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatcheventconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatcheventconnection"
 
 &cloudwatcheventconnection.CloudwatchEventConnectionAuthParametersBasic {
 	Password: *string,
@@ -1066,8 +1066,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatcheventconnect
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersBasic.property.password">Password</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_event_connection#password CloudwatchEventConnection#password}. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersBasic.property.username">Username</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_event_connection#username CloudwatchEventConnection#username}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersBasic.property.password">Password</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_event_connection#password CloudwatchEventConnection#password}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersBasic.property.username">Username</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_event_connection#username CloudwatchEventConnection#username}. |
 
 ---
 
@@ -1079,7 +1079,7 @@ Password *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_event_connection#password CloudwatchEventConnection#password}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_event_connection#password CloudwatchEventConnection#password}.
 
 ---
 
@@ -1091,7 +1091,7 @@ Username *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_event_connection#username CloudwatchEventConnection#username}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_event_connection#username CloudwatchEventConnection#username}.
 
 ---
 
@@ -1100,7 +1100,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersInvocationHttpParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatcheventconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatcheventconnection"
 
 &cloudwatcheventconnection.CloudwatchEventConnectionAuthParametersInvocationHttpParameters {
 	Body: interface{},
@@ -1129,7 +1129,7 @@ Body interface{}
 
 body block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_event_connection#body CloudwatchEventConnection#body}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_event_connection#body CloudwatchEventConnection#body}
 
 ---
 
@@ -1143,7 +1143,7 @@ Header interface{}
 
 header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_event_connection#header CloudwatchEventConnection#header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_event_connection#header CloudwatchEventConnection#header}
 
 ---
 
@@ -1157,7 +1157,7 @@ QueryString interface{}
 
 query_string block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_event_connection#query_string CloudwatchEventConnection#query_string}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_event_connection#query_string CloudwatchEventConnection#query_string}
 
 ---
 
@@ -1166,7 +1166,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersInvocationHttpParametersBody.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatcheventconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatcheventconnection"
 
 &cloudwatcheventconnection.CloudwatchEventConnectionAuthParametersInvocationHttpParametersBody {
 	IsValueSecret: interface{},
@@ -1179,9 +1179,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatcheventconnect
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersInvocationHttpParametersBody.property.isValueSecret">IsValueSecret</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_event_connection#is_value_secret CloudwatchEventConnection#is_value_secret}. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersInvocationHttpParametersBody.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_event_connection#key CloudwatchEventConnection#key}. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersInvocationHttpParametersBody.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_event_connection#value CloudwatchEventConnection#value}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersInvocationHttpParametersBody.property.isValueSecret">IsValueSecret</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_event_connection#is_value_secret CloudwatchEventConnection#is_value_secret}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersInvocationHttpParametersBody.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_event_connection#key CloudwatchEventConnection#key}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersInvocationHttpParametersBody.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_event_connection#value CloudwatchEventConnection#value}. |
 
 ---
 
@@ -1193,7 +1193,7 @@ IsValueSecret interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_event_connection#is_value_secret CloudwatchEventConnection#is_value_secret}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_event_connection#is_value_secret CloudwatchEventConnection#is_value_secret}.
 
 ---
 
@@ -1205,7 +1205,7 @@ Key *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_event_connection#key CloudwatchEventConnection#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_event_connection#key CloudwatchEventConnection#key}.
 
 ---
 
@@ -1217,7 +1217,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_event_connection#value CloudwatchEventConnection#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_event_connection#value CloudwatchEventConnection#value}.
 
 ---
 
@@ -1226,7 +1226,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersInvocationHttpParametersHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatcheventconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatcheventconnection"
 
 &cloudwatcheventconnection.CloudwatchEventConnectionAuthParametersInvocationHttpParametersHeader {
 	IsValueSecret: interface{},
@@ -1239,9 +1239,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatcheventconnect
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersInvocationHttpParametersHeader.property.isValueSecret">IsValueSecret</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_event_connection#is_value_secret CloudwatchEventConnection#is_value_secret}. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersInvocationHttpParametersHeader.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_event_connection#key CloudwatchEventConnection#key}. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersInvocationHttpParametersHeader.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_event_connection#value CloudwatchEventConnection#value}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersInvocationHttpParametersHeader.property.isValueSecret">IsValueSecret</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_event_connection#is_value_secret CloudwatchEventConnection#is_value_secret}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersInvocationHttpParametersHeader.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_event_connection#key CloudwatchEventConnection#key}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersInvocationHttpParametersHeader.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_event_connection#value CloudwatchEventConnection#value}. |
 
 ---
 
@@ -1253,7 +1253,7 @@ IsValueSecret interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_event_connection#is_value_secret CloudwatchEventConnection#is_value_secret}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_event_connection#is_value_secret CloudwatchEventConnection#is_value_secret}.
 
 ---
 
@@ -1265,7 +1265,7 @@ Key *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_event_connection#key CloudwatchEventConnection#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_event_connection#key CloudwatchEventConnection#key}.
 
 ---
 
@@ -1277,7 +1277,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_event_connection#value CloudwatchEventConnection#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_event_connection#value CloudwatchEventConnection#value}.
 
 ---
 
@@ -1286,7 +1286,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersInvocationHttpParametersQueryString.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatcheventconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatcheventconnection"
 
 &cloudwatcheventconnection.CloudwatchEventConnectionAuthParametersInvocationHttpParametersQueryString {
 	IsValueSecret: interface{},
@@ -1299,9 +1299,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatcheventconnect
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersInvocationHttpParametersQueryString.property.isValueSecret">IsValueSecret</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_event_connection#is_value_secret CloudwatchEventConnection#is_value_secret}. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersInvocationHttpParametersQueryString.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_event_connection#key CloudwatchEventConnection#key}. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersInvocationHttpParametersQueryString.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_event_connection#value CloudwatchEventConnection#value}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersInvocationHttpParametersQueryString.property.isValueSecret">IsValueSecret</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_event_connection#is_value_secret CloudwatchEventConnection#is_value_secret}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersInvocationHttpParametersQueryString.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_event_connection#key CloudwatchEventConnection#key}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersInvocationHttpParametersQueryString.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_event_connection#value CloudwatchEventConnection#value}. |
 
 ---
 
@@ -1313,7 +1313,7 @@ IsValueSecret interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_event_connection#is_value_secret CloudwatchEventConnection#is_value_secret}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_event_connection#is_value_secret CloudwatchEventConnection#is_value_secret}.
 
 ---
 
@@ -1325,7 +1325,7 @@ Key *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_event_connection#key CloudwatchEventConnection#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_event_connection#key CloudwatchEventConnection#key}.
 
 ---
 
@@ -1337,7 +1337,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_event_connection#value CloudwatchEventConnection#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_event_connection#value CloudwatchEventConnection#value}.
 
 ---
 
@@ -1346,13 +1346,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersOauth.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatcheventconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatcheventconnection"
 
 &cloudwatcheventconnection.CloudwatchEventConnectionAuthParametersOauth {
 	AuthorizationEndpoint: *string,
 	HttpMethod: *string,
-	OauthHttpParameters: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersOauthOauthHttpParameters,
-	ClientParameters: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersOauthClientParameters,
+	OauthHttpParameters: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersOauthOauthHttpParameters,
+	ClientParameters: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersOauthClientParameters,
 }
 ```
 
@@ -1360,8 +1360,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatcheventconnect
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersOauth.property.authorizationEndpoint">AuthorizationEndpoint</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_event_connection#authorization_endpoint CloudwatchEventConnection#authorization_endpoint}. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersOauth.property.httpMethod">HttpMethod</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_event_connection#http_method CloudwatchEventConnection#http_method}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersOauth.property.authorizationEndpoint">AuthorizationEndpoint</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_event_connection#authorization_endpoint CloudwatchEventConnection#authorization_endpoint}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersOauth.property.httpMethod">HttpMethod</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_event_connection#http_method CloudwatchEventConnection#http_method}. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersOauth.property.oauthHttpParameters">OauthHttpParameters</a></code> | <code><a href="#@cdktn/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersOauthOauthHttpParameters">CloudwatchEventConnectionAuthParametersOauthOauthHttpParameters</a></code> | oauth_http_parameters block. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersOauth.property.clientParameters">ClientParameters</a></code> | <code><a href="#@cdktn/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersOauthClientParameters">CloudwatchEventConnectionAuthParametersOauthClientParameters</a></code> | client_parameters block. |
 
@@ -1375,7 +1375,7 @@ AuthorizationEndpoint *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_event_connection#authorization_endpoint CloudwatchEventConnection#authorization_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_event_connection#authorization_endpoint CloudwatchEventConnection#authorization_endpoint}.
 
 ---
 
@@ -1387,7 +1387,7 @@ HttpMethod *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_event_connection#http_method CloudwatchEventConnection#http_method}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_event_connection#http_method CloudwatchEventConnection#http_method}.
 
 ---
 
@@ -1401,7 +1401,7 @@ OauthHttpParameters CloudwatchEventConnectionAuthParametersOauthOauthHttpParamet
 
 oauth_http_parameters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_event_connection#oauth_http_parameters CloudwatchEventConnection#oauth_http_parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_event_connection#oauth_http_parameters CloudwatchEventConnection#oauth_http_parameters}
 
 ---
 
@@ -1415,7 +1415,7 @@ ClientParameters CloudwatchEventConnectionAuthParametersOauthClientParameters
 
 client_parameters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_event_connection#client_parameters CloudwatchEventConnection#client_parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_event_connection#client_parameters CloudwatchEventConnection#client_parameters}
 
 ---
 
@@ -1424,7 +1424,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersOauthClientParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatcheventconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatcheventconnection"
 
 &cloudwatcheventconnection.CloudwatchEventConnectionAuthParametersOauthClientParameters {
 	ClientId: *string,
@@ -1436,8 +1436,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatcheventconnect
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersOauthClientParameters.property.clientId">ClientId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_event_connection#client_id CloudwatchEventConnection#client_id}. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersOauthClientParameters.property.clientSecret">ClientSecret</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_event_connection#client_secret CloudwatchEventConnection#client_secret}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersOauthClientParameters.property.clientId">ClientId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_event_connection#client_id CloudwatchEventConnection#client_id}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersOauthClientParameters.property.clientSecret">ClientSecret</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_event_connection#client_secret CloudwatchEventConnection#client_secret}. |
 
 ---
 
@@ -1449,7 +1449,7 @@ ClientId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_event_connection#client_id CloudwatchEventConnection#client_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_event_connection#client_id CloudwatchEventConnection#client_id}.
 
 ---
 
@@ -1461,7 +1461,7 @@ ClientSecret *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_event_connection#client_secret CloudwatchEventConnection#client_secret}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_event_connection#client_secret CloudwatchEventConnection#client_secret}.
 
 ---
 
@@ -1470,7 +1470,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersOauthOauthHttpParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatcheventconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatcheventconnection"
 
 &cloudwatcheventconnection.CloudwatchEventConnectionAuthParametersOauthOauthHttpParameters {
 	Body: interface{},
@@ -1499,7 +1499,7 @@ Body interface{}
 
 body block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_event_connection#body CloudwatchEventConnection#body}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_event_connection#body CloudwatchEventConnection#body}
 
 ---
 
@@ -1513,7 +1513,7 @@ Header interface{}
 
 header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_event_connection#header CloudwatchEventConnection#header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_event_connection#header CloudwatchEventConnection#header}
 
 ---
 
@@ -1527,7 +1527,7 @@ QueryString interface{}
 
 query_string block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_event_connection#query_string CloudwatchEventConnection#query_string}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_event_connection#query_string CloudwatchEventConnection#query_string}
 
 ---
 
@@ -1536,7 +1536,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersBody.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatcheventconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatcheventconnection"
 
 &cloudwatcheventconnection.CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersBody {
 	IsValueSecret: interface{},
@@ -1549,9 +1549,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatcheventconnect
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersBody.property.isValueSecret">IsValueSecret</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_event_connection#is_value_secret CloudwatchEventConnection#is_value_secret}. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersBody.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_event_connection#key CloudwatchEventConnection#key}. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersBody.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_event_connection#value CloudwatchEventConnection#value}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersBody.property.isValueSecret">IsValueSecret</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_event_connection#is_value_secret CloudwatchEventConnection#is_value_secret}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersBody.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_event_connection#key CloudwatchEventConnection#key}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersBody.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_event_connection#value CloudwatchEventConnection#value}. |
 
 ---
 
@@ -1563,7 +1563,7 @@ IsValueSecret interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_event_connection#is_value_secret CloudwatchEventConnection#is_value_secret}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_event_connection#is_value_secret CloudwatchEventConnection#is_value_secret}.
 
 ---
 
@@ -1575,7 +1575,7 @@ Key *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_event_connection#key CloudwatchEventConnection#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_event_connection#key CloudwatchEventConnection#key}.
 
 ---
 
@@ -1587,7 +1587,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_event_connection#value CloudwatchEventConnection#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_event_connection#value CloudwatchEventConnection#value}.
 
 ---
 
@@ -1596,7 +1596,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatcheventconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatcheventconnection"
 
 &cloudwatcheventconnection.CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersHeader {
 	IsValueSecret: interface{},
@@ -1609,9 +1609,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatcheventconnect
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersHeader.property.isValueSecret">IsValueSecret</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_event_connection#is_value_secret CloudwatchEventConnection#is_value_secret}. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersHeader.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_event_connection#key CloudwatchEventConnection#key}. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersHeader.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_event_connection#value CloudwatchEventConnection#value}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersHeader.property.isValueSecret">IsValueSecret</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_event_connection#is_value_secret CloudwatchEventConnection#is_value_secret}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersHeader.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_event_connection#key CloudwatchEventConnection#key}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersHeader.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_event_connection#value CloudwatchEventConnection#value}. |
 
 ---
 
@@ -1623,7 +1623,7 @@ IsValueSecret interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_event_connection#is_value_secret CloudwatchEventConnection#is_value_secret}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_event_connection#is_value_secret CloudwatchEventConnection#is_value_secret}.
 
 ---
 
@@ -1635,7 +1635,7 @@ Key *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_event_connection#key CloudwatchEventConnection#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_event_connection#key CloudwatchEventConnection#key}.
 
 ---
 
@@ -1647,7 +1647,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_event_connection#value CloudwatchEventConnection#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_event_connection#value CloudwatchEventConnection#value}.
 
 ---
 
@@ -1656,7 +1656,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersQueryString.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatcheventconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatcheventconnection"
 
 &cloudwatcheventconnection.CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersQueryString {
 	IsValueSecret: interface{},
@@ -1669,9 +1669,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatcheventconnect
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersQueryString.property.isValueSecret">IsValueSecret</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_event_connection#is_value_secret CloudwatchEventConnection#is_value_secret}. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersQueryString.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_event_connection#key CloudwatchEventConnection#key}. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersQueryString.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_event_connection#value CloudwatchEventConnection#value}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersQueryString.property.isValueSecret">IsValueSecret</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_event_connection#is_value_secret CloudwatchEventConnection#is_value_secret}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersQueryString.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_event_connection#key CloudwatchEventConnection#key}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersQueryString.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_event_connection#value CloudwatchEventConnection#value}. |
 
 ---
 
@@ -1683,7 +1683,7 @@ IsValueSecret interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_event_connection#is_value_secret CloudwatchEventConnection#is_value_secret}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_event_connection#is_value_secret CloudwatchEventConnection#is_value_secret}.
 
 ---
 
@@ -1695,7 +1695,7 @@ Key *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_event_connection#key CloudwatchEventConnection#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_event_connection#key CloudwatchEventConnection#key}.
 
 ---
 
@@ -1707,7 +1707,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_event_connection#value CloudwatchEventConnection#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_event_connection#value CloudwatchEventConnection#value}.
 
 ---
 
@@ -1716,7 +1716,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatcheventconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatcheventconnection"
 
 &cloudwatcheventconnection.CloudwatchEventConnectionConfig {
 	Connection: interface{},
@@ -1727,11 +1727,11 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatcheventconnect
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	AuthorizationType: *string,
-	AuthParameters: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.cloudwatchEventConnection.CloudwatchEventConnectionAuthParameters,
+	AuthParameters: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.cloudwatchEventConnection.CloudwatchEventConnectionAuthParameters,
 	Name: *string,
 	Description: *string,
 	Id: *string,
-	InvocationConnectivityParameters: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.cloudwatchEventConnection.CloudwatchEventConnectionInvocationConnectivityParameters,
+	InvocationConnectivityParameters: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.cloudwatchEventConnection.CloudwatchEventConnectionInvocationConnectivityParameters,
 	KmsKeyIdentifier: *string,
 	Region: *string,
 }
@@ -1748,13 +1748,13 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatcheventconnect
 | <code><a href="#@cdktn/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionConfig.property.authorizationType">AuthorizationType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_event_connection#authorization_type CloudwatchEventConnection#authorization_type}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionConfig.property.authorizationType">AuthorizationType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_event_connection#authorization_type CloudwatchEventConnection#authorization_type}. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionConfig.property.authParameters">AuthParameters</a></code> | <code><a href="#@cdktn/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParameters">CloudwatchEventConnectionAuthParameters</a></code> | auth_parameters block. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_event_connection#name CloudwatchEventConnection#name}. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_event_connection#description CloudwatchEventConnection#description}. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_event_connection#id CloudwatchEventConnection#id}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_event_connection#name CloudwatchEventConnection#name}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_event_connection#description CloudwatchEventConnection#description}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_event_connection#id CloudwatchEventConnection#id}. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionConfig.property.invocationConnectivityParameters">InvocationConnectivityParameters</a></code> | <code><a href="#@cdktn/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionInvocationConnectivityParameters">CloudwatchEventConnectionInvocationConnectivityParameters</a></code> | invocation_connectivity_parameters block. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionConfig.property.kmsKeyIdentifier">KmsKeyIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_event_connection#kms_key_identifier CloudwatchEventConnection#kms_key_identifier}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionConfig.property.kmsKeyIdentifier">KmsKeyIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_event_connection#kms_key_identifier CloudwatchEventConnection#kms_key_identifier}. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -1837,7 +1837,7 @@ AuthorizationType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_event_connection#authorization_type CloudwatchEventConnection#authorization_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_event_connection#authorization_type CloudwatchEventConnection#authorization_type}.
 
 ---
 
@@ -1851,7 +1851,7 @@ AuthParameters CloudwatchEventConnectionAuthParameters
 
 auth_parameters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_event_connection#auth_parameters CloudwatchEventConnection#auth_parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_event_connection#auth_parameters CloudwatchEventConnection#auth_parameters}
 
 ---
 
@@ -1863,7 +1863,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_event_connection#name CloudwatchEventConnection#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_event_connection#name CloudwatchEventConnection#name}.
 
 ---
 
@@ -1875,7 +1875,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_event_connection#description CloudwatchEventConnection#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_event_connection#description CloudwatchEventConnection#description}.
 
 ---
 
@@ -1887,7 +1887,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_event_connection#id CloudwatchEventConnection#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_event_connection#id CloudwatchEventConnection#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1904,7 +1904,7 @@ InvocationConnectivityParameters CloudwatchEventConnectionInvocationConnectivity
 
 invocation_connectivity_parameters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_event_connection#invocation_connectivity_parameters CloudwatchEventConnection#invocation_connectivity_parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_event_connection#invocation_connectivity_parameters CloudwatchEventConnection#invocation_connectivity_parameters}
 
 ---
 
@@ -1916,7 +1916,7 @@ KmsKeyIdentifier *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_event_connection#kms_key_identifier CloudwatchEventConnection#kms_key_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_event_connection#kms_key_identifier CloudwatchEventConnection#kms_key_identifier}.
 
 ---
 
@@ -1930,7 +1930,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_event_connection#region CloudwatchEventConnection#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_event_connection#region CloudwatchEventConnection#region}
 
 ---
 
@@ -1939,10 +1939,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionInvocationConnectivityParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatcheventconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatcheventconnection"
 
 &cloudwatcheventconnection.CloudwatchEventConnectionInvocationConnectivityParameters {
-	ResourceParameters: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.cloudwatchEventConnection.CloudwatchEventConnectionInvocationConnectivityParametersResourceParameters,
+	ResourceParameters: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.cloudwatchEventConnection.CloudwatchEventConnectionInvocationConnectivityParametersResourceParameters,
 }
 ```
 
@@ -1964,7 +1964,7 @@ ResourceParameters CloudwatchEventConnectionInvocationConnectivityParametersReso
 
 resource_parameters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_event_connection#resource_parameters CloudwatchEventConnection#resource_parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_event_connection#resource_parameters CloudwatchEventConnection#resource_parameters}
 
 ---
 
@@ -1973,7 +1973,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionInvocationConnectivityParametersResourceParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatcheventconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatcheventconnection"
 
 &cloudwatcheventconnection.CloudwatchEventConnectionInvocationConnectivityParametersResourceParameters {
 	ResourceConfigurationArn: *string,
@@ -1984,7 +1984,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatcheventconnect
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionInvocationConnectivityParametersResourceParameters.property.resourceConfigurationArn">ResourceConfigurationArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_event_connection#resource_configuration_arn CloudwatchEventConnection#resource_configuration_arn}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionInvocationConnectivityParametersResourceParameters.property.resourceConfigurationArn">ResourceConfigurationArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_event_connection#resource_configuration_arn CloudwatchEventConnection#resource_configuration_arn}. |
 
 ---
 
@@ -1996,7 +1996,7 @@ ResourceConfigurationArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_event_connection#resource_configuration_arn CloudwatchEventConnection#resource_configuration_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_event_connection#resource_configuration_arn CloudwatchEventConnection#resource_configuration_arn}.
 
 ---
 
@@ -2007,7 +2007,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersApiKeyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatcheventconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatcheventconnection"
 
 cloudwatcheventconnection.NewCloudwatchEventConnectionAuthParametersApiKeyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudwatchEventConnectionAuthParametersApiKeyOutputReference
 ```
@@ -2300,7 +2300,7 @@ func InternalValue() CloudwatchEventConnectionAuthParametersApiKey
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersBasicOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatcheventconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatcheventconnection"
 
 cloudwatcheventconnection.NewCloudwatchEventConnectionAuthParametersBasicOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudwatchEventConnectionAuthParametersBasicOutputReference
 ```
@@ -2593,7 +2593,7 @@ func InternalValue() CloudwatchEventConnectionAuthParametersBasic
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersInvocationHttpParametersBodyList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatcheventconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatcheventconnection"
 
 cloudwatcheventconnection.NewCloudwatchEventConnectionAuthParametersInvocationHttpParametersBodyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudwatchEventConnectionAuthParametersInvocationHttpParametersBodyList
 ```
@@ -2753,7 +2753,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersInvocationHttpParametersBodyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatcheventconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatcheventconnection"
 
 cloudwatcheventconnection.NewCloudwatchEventConnectionAuthParametersInvocationHttpParametersBodyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudwatchEventConnectionAuthParametersInvocationHttpParametersBodyOutputReference
 ```
@@ -3107,7 +3107,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersInvocationHttpParametersHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatcheventconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatcheventconnection"
 
 cloudwatcheventconnection.NewCloudwatchEventConnectionAuthParametersInvocationHttpParametersHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudwatchEventConnectionAuthParametersInvocationHttpParametersHeaderList
 ```
@@ -3267,7 +3267,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersInvocationHttpParametersHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatcheventconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatcheventconnection"
 
 cloudwatcheventconnection.NewCloudwatchEventConnectionAuthParametersInvocationHttpParametersHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudwatchEventConnectionAuthParametersInvocationHttpParametersHeaderOutputReference
 ```
@@ -3621,7 +3621,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersInvocationHttpParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatcheventconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatcheventconnection"
 
 cloudwatcheventconnection.NewCloudwatchEventConnectionAuthParametersInvocationHttpParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudwatchEventConnectionAuthParametersInvocationHttpParametersOutputReference
 ```
@@ -3996,7 +3996,7 @@ func InternalValue() CloudwatchEventConnectionAuthParametersInvocationHttpParame
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersInvocationHttpParametersQueryStringList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatcheventconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatcheventconnection"
 
 cloudwatcheventconnection.NewCloudwatchEventConnectionAuthParametersInvocationHttpParametersQueryStringList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudwatchEventConnectionAuthParametersInvocationHttpParametersQueryStringList
 ```
@@ -4156,7 +4156,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersInvocationHttpParametersQueryStringOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatcheventconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatcheventconnection"
 
 cloudwatcheventconnection.NewCloudwatchEventConnectionAuthParametersInvocationHttpParametersQueryStringOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudwatchEventConnectionAuthParametersInvocationHttpParametersQueryStringOutputReference
 ```
@@ -4510,7 +4510,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersOauthClientParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatcheventconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatcheventconnection"
 
 cloudwatcheventconnection.NewCloudwatchEventConnectionAuthParametersOauthClientParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudwatchEventConnectionAuthParametersOauthClientParametersOutputReference
 ```
@@ -4803,7 +4803,7 @@ func InternalValue() CloudwatchEventConnectionAuthParametersOauthClientParameter
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersBodyList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatcheventconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatcheventconnection"
 
 cloudwatcheventconnection.NewCloudwatchEventConnectionAuthParametersOauthOauthHttpParametersBodyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersBodyList
 ```
@@ -4963,7 +4963,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersBodyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatcheventconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatcheventconnection"
 
 cloudwatcheventconnection.NewCloudwatchEventConnectionAuthParametersOauthOauthHttpParametersBodyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersBodyOutputReference
 ```
@@ -5317,7 +5317,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatcheventconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatcheventconnection"
 
 cloudwatcheventconnection.NewCloudwatchEventConnectionAuthParametersOauthOauthHttpParametersHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersHeaderList
 ```
@@ -5477,7 +5477,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatcheventconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatcheventconnection"
 
 cloudwatcheventconnection.NewCloudwatchEventConnectionAuthParametersOauthOauthHttpParametersHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersHeaderOutputReference
 ```
@@ -5831,7 +5831,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatcheventconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatcheventconnection"
 
 cloudwatcheventconnection.NewCloudwatchEventConnectionAuthParametersOauthOauthHttpParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersOutputReference
 ```
@@ -6206,7 +6206,7 @@ func InternalValue() CloudwatchEventConnectionAuthParametersOauthOauthHttpParame
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersQueryStringList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatcheventconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatcheventconnection"
 
 cloudwatcheventconnection.NewCloudwatchEventConnectionAuthParametersOauthOauthHttpParametersQueryStringList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersQueryStringList
 ```
@@ -6366,7 +6366,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersQueryStringOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatcheventconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatcheventconnection"
 
 cloudwatcheventconnection.NewCloudwatchEventConnectionAuthParametersOauthOauthHttpParametersQueryStringOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersQueryStringOutputReference
 ```
@@ -6720,7 +6720,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersOauthOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatcheventconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatcheventconnection"
 
 cloudwatcheventconnection.NewCloudwatchEventConnectionAuthParametersOauthOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudwatchEventConnectionAuthParametersOauthOutputReference
 ```
@@ -7090,7 +7090,7 @@ func InternalValue() CloudwatchEventConnectionAuthParametersOauth
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatcheventconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatcheventconnection"
 
 cloudwatcheventconnection.NewCloudwatchEventConnectionAuthParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudwatchEventConnectionAuthParametersOutputReference
 ```
@@ -7507,7 +7507,7 @@ func InternalValue() CloudwatchEventConnectionAuthParameters
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionInvocationConnectivityParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatcheventconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatcheventconnection"
 
 cloudwatcheventconnection.NewCloudwatchEventConnectionInvocationConnectivityParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudwatchEventConnectionInvocationConnectivityParametersOutputReference
 ```
@@ -7791,7 +7791,7 @@ func InternalValue() CloudwatchEventConnectionInvocationConnectivityParameters
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionInvocationConnectivityParametersResourceParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatcheventconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatcheventconnection"
 
 cloudwatcheventconnection.NewCloudwatchEventConnectionInvocationConnectivityParametersResourceParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudwatchEventConnectionInvocationConnectivityParametersResourceParametersOutputReference
 ```

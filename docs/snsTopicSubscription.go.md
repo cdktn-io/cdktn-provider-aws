@@ -4,12 +4,12 @@
 
 ### SnsTopicSubscription <a name="SnsTopicSubscription" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic_subscription aws_sns_topic_subscription}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sns_topic_subscription aws_sns_topic_subscription}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/snstopicsubscription"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/snstopicsubscription"
 
 snstopicsubscription.NewSnsTopicSubscription(scope Construct, id *string, config SnsTopicSubscriptionConfig) SnsTopicSubscription
 ```
@@ -455,7 +455,7 @@ func ResetSubscriptionRoleArn()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/snstopicsubscription"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/snstopicsubscription"
 
 snstopicsubscription.SnsTopicSubscription_IsConstruct(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/snstopicsubscription"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/snstopicsubscription"
 
 snstopicsubscription.SnsTopicSubscription_IsTerraformElement(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ snstopicsubscription.SnsTopicSubscription_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/snstopicsubscription"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/snstopicsubscription"
 
 snstopicsubscription.SnsTopicSubscription_IsTerraformResource(x interface{}) *bool
 ```
@@ -515,7 +515,7 @@ snstopicsubscription.SnsTopicSubscription_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscription.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/snstopicsubscription"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/snstopicsubscription"
 
 snstopicsubscription.SnsTopicSubscription_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -544,7 +544,7 @@ The construct id used in the generated config for the SnsTopicSubscription to im
 
 The id of the existing SnsTopicSubscription that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic_subscription#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sns_topic_subscription#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1096,7 +1096,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscriptionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/snstopicsubscription"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/snstopicsubscription"
 
 &snstopicsubscription.SnsTopicSubscriptionConfig {
 	Connection: interface{},
@@ -1134,20 +1134,20 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/snstopicsubscription"
 | <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscriptionConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscriptionConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscriptionConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscriptionConfig.property.endpoint">Endpoint</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic_subscription#endpoint SnsTopicSubscription#endpoint}. |
-| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscriptionConfig.property.protocol">Protocol</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic_subscription#protocol SnsTopicSubscription#protocol}. |
-| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscriptionConfig.property.topicArn">TopicArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic_subscription#topic_arn SnsTopicSubscription#topic_arn}. |
-| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscriptionConfig.property.confirmationTimeoutInMinutes">ConfirmationTimeoutInMinutes</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic_subscription#confirmation_timeout_in_minutes SnsTopicSubscription#confirmation_timeout_in_minutes}. |
-| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscriptionConfig.property.deliveryPolicy">DeliveryPolicy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic_subscription#delivery_policy SnsTopicSubscription#delivery_policy}. |
-| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscriptionConfig.property.endpointAutoConfirms">EndpointAutoConfirms</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic_subscription#endpoint_auto_confirms SnsTopicSubscription#endpoint_auto_confirms}. |
-| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscriptionConfig.property.filterPolicy">FilterPolicy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic_subscription#filter_policy SnsTopicSubscription#filter_policy}. |
-| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscriptionConfig.property.filterPolicyScope">FilterPolicyScope</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic_subscription#filter_policy_scope SnsTopicSubscription#filter_policy_scope}. |
-| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscriptionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic_subscription#id SnsTopicSubscription#id}. |
-| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscriptionConfig.property.rawMessageDelivery">RawMessageDelivery</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic_subscription#raw_message_delivery SnsTopicSubscription#raw_message_delivery}. |
-| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscriptionConfig.property.redrivePolicy">RedrivePolicy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic_subscription#redrive_policy SnsTopicSubscription#redrive_policy}. |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscriptionConfig.property.endpoint">Endpoint</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sns_topic_subscription#endpoint SnsTopicSubscription#endpoint}. |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscriptionConfig.property.protocol">Protocol</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sns_topic_subscription#protocol SnsTopicSubscription#protocol}. |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscriptionConfig.property.topicArn">TopicArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sns_topic_subscription#topic_arn SnsTopicSubscription#topic_arn}. |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscriptionConfig.property.confirmationTimeoutInMinutes">ConfirmationTimeoutInMinutes</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sns_topic_subscription#confirmation_timeout_in_minutes SnsTopicSubscription#confirmation_timeout_in_minutes}. |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscriptionConfig.property.deliveryPolicy">DeliveryPolicy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sns_topic_subscription#delivery_policy SnsTopicSubscription#delivery_policy}. |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscriptionConfig.property.endpointAutoConfirms">EndpointAutoConfirms</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sns_topic_subscription#endpoint_auto_confirms SnsTopicSubscription#endpoint_auto_confirms}. |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscriptionConfig.property.filterPolicy">FilterPolicy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sns_topic_subscription#filter_policy SnsTopicSubscription#filter_policy}. |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscriptionConfig.property.filterPolicyScope">FilterPolicyScope</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sns_topic_subscription#filter_policy_scope SnsTopicSubscription#filter_policy_scope}. |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscriptionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sns_topic_subscription#id SnsTopicSubscription#id}. |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscriptionConfig.property.rawMessageDelivery">RawMessageDelivery</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sns_topic_subscription#raw_message_delivery SnsTopicSubscription#raw_message_delivery}. |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscriptionConfig.property.redrivePolicy">RedrivePolicy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sns_topic_subscription#redrive_policy SnsTopicSubscription#redrive_policy}. |
 | <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscriptionConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscriptionConfig.property.replayPolicy">ReplayPolicy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic_subscription#replay_policy SnsTopicSubscription#replay_policy}. |
-| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscriptionConfig.property.subscriptionRoleArn">SubscriptionRoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic_subscription#subscription_role_arn SnsTopicSubscription#subscription_role_arn}. |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscriptionConfig.property.replayPolicy">ReplayPolicy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sns_topic_subscription#replay_policy SnsTopicSubscription#replay_policy}. |
+| <code><a href="#@cdktn/provider-aws.snsTopicSubscription.SnsTopicSubscriptionConfig.property.subscriptionRoleArn">SubscriptionRoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sns_topic_subscription#subscription_role_arn SnsTopicSubscription#subscription_role_arn}. |
 
 ---
 
@@ -1229,7 +1229,7 @@ Endpoint *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic_subscription#endpoint SnsTopicSubscription#endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sns_topic_subscription#endpoint SnsTopicSubscription#endpoint}.
 
 ---
 
@@ -1241,7 +1241,7 @@ Protocol *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic_subscription#protocol SnsTopicSubscription#protocol}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sns_topic_subscription#protocol SnsTopicSubscription#protocol}.
 
 ---
 
@@ -1253,7 +1253,7 @@ TopicArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic_subscription#topic_arn SnsTopicSubscription#topic_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sns_topic_subscription#topic_arn SnsTopicSubscription#topic_arn}.
 
 ---
 
@@ -1265,7 +1265,7 @@ ConfirmationTimeoutInMinutes *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic_subscription#confirmation_timeout_in_minutes SnsTopicSubscription#confirmation_timeout_in_minutes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sns_topic_subscription#confirmation_timeout_in_minutes SnsTopicSubscription#confirmation_timeout_in_minutes}.
 
 ---
 
@@ -1277,7 +1277,7 @@ DeliveryPolicy *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic_subscription#delivery_policy SnsTopicSubscription#delivery_policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sns_topic_subscription#delivery_policy SnsTopicSubscription#delivery_policy}.
 
 ---
 
@@ -1289,7 +1289,7 @@ EndpointAutoConfirms interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic_subscription#endpoint_auto_confirms SnsTopicSubscription#endpoint_auto_confirms}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sns_topic_subscription#endpoint_auto_confirms SnsTopicSubscription#endpoint_auto_confirms}.
 
 ---
 
@@ -1301,7 +1301,7 @@ FilterPolicy *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic_subscription#filter_policy SnsTopicSubscription#filter_policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sns_topic_subscription#filter_policy SnsTopicSubscription#filter_policy}.
 
 ---
 
@@ -1313,7 +1313,7 @@ FilterPolicyScope *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic_subscription#filter_policy_scope SnsTopicSubscription#filter_policy_scope}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sns_topic_subscription#filter_policy_scope SnsTopicSubscription#filter_policy_scope}.
 
 ---
 
@@ -1325,7 +1325,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic_subscription#id SnsTopicSubscription#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sns_topic_subscription#id SnsTopicSubscription#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1340,7 +1340,7 @@ RawMessageDelivery interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic_subscription#raw_message_delivery SnsTopicSubscription#raw_message_delivery}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sns_topic_subscription#raw_message_delivery SnsTopicSubscription#raw_message_delivery}.
 
 ---
 
@@ -1352,7 +1352,7 @@ RedrivePolicy *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic_subscription#redrive_policy SnsTopicSubscription#redrive_policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sns_topic_subscription#redrive_policy SnsTopicSubscription#redrive_policy}.
 
 ---
 
@@ -1366,7 +1366,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic_subscription#region SnsTopicSubscription#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sns_topic_subscription#region SnsTopicSubscription#region}
 
 ---
 
@@ -1378,7 +1378,7 @@ ReplayPolicy *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic_subscription#replay_policy SnsTopicSubscription#replay_policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sns_topic_subscription#replay_policy SnsTopicSubscription#replay_policy}.
 
 ---
 
@@ -1390,7 +1390,7 @@ SubscriptionRoleArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sns_topic_subscription#subscription_role_arn SnsTopicSubscription#subscription_role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sns_topic_subscription#subscription_role_arn SnsTopicSubscription#subscription_role_arn}.
 
 ---
 

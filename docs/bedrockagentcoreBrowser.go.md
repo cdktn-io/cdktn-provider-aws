@@ -4,12 +4,12 @@
 
 ### BedrockagentcoreBrowser <a name="BedrockagentcoreBrowser" id="@cdktn/provider-aws.bedrockagentcoreBrowser.BedrockagentcoreBrowser"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/bedrockagentcore_browser aws_bedrockagentcore_browser}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/bedrockagentcore_browser aws_bedrockagentcore_browser}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreBrowser.BedrockagentcoreBrowser.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcorebrowser"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/bedrockagentcorebrowser"
 
 bedrockagentcorebrowser.NewBedrockagentcoreBrowser(scope Construct, id *string, config BedrockagentcoreBrowserConfig) BedrockagentcoreBrowser
 ```
@@ -466,7 +466,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.bedrockagentcoreBrowser.BedrockagentcoreBrowser.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcorebrowser"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/bedrockagentcorebrowser"
 
 bedrockagentcorebrowser.BedrockagentcoreBrowser_IsConstruct(x interface{}) *bool
 ```
@@ -498,7 +498,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.bedrockagentcoreBrowser.BedrockagentcoreBrowser.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcorebrowser"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/bedrockagentcorebrowser"
 
 bedrockagentcorebrowser.BedrockagentcoreBrowser_IsTerraformElement(x interface{}) *bool
 ```
@@ -512,7 +512,7 @@ bedrockagentcorebrowser.BedrockagentcoreBrowser_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.bedrockagentcoreBrowser.BedrockagentcoreBrowser.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcorebrowser"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/bedrockagentcorebrowser"
 
 bedrockagentcorebrowser.BedrockagentcoreBrowser_IsTerraformResource(x interface{}) *bool
 ```
@@ -526,7 +526,7 @@ bedrockagentcorebrowser.BedrockagentcoreBrowser_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.bedrockagentcoreBrowser.BedrockagentcoreBrowser.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcorebrowser"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/bedrockagentcorebrowser"
 
 bedrockagentcorebrowser.BedrockagentcoreBrowser_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -555,7 +555,7 @@ The construct id used in the generated config for the BedrockagentcoreBrowser to
 
 The id of the existing BedrockagentcoreBrowser that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/bedrockagentcore_browser#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/bedrockagentcore_browser#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -964,7 +964,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreBrowser.BedrockagentcoreBrowserConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcorebrowser"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/bedrockagentcorebrowser"
 
 &bedrockagentcorebrowser.BedrockagentcoreBrowserConfig {
 	Connection: interface{},
@@ -981,7 +981,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcorebrowse
 	Recording: interface{},
 	Region: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.bedrockagentcoreBrowser.BedrockagentcoreBrowserTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.bedrockagentcoreBrowser.BedrockagentcoreBrowserTimeouts,
 }
 ```
 
@@ -996,13 +996,13 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcorebrowse
 | <code><a href="#@cdktn/provider-aws.bedrockagentcoreBrowser.BedrockagentcoreBrowserConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.bedrockagentcoreBrowser.BedrockagentcoreBrowserConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.bedrockagentcoreBrowser.BedrockagentcoreBrowserConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.bedrockagentcoreBrowser.BedrockagentcoreBrowserConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/bedrockagentcore_browser#name BedrockagentcoreBrowser#name}. |
-| <code><a href="#@cdktn/provider-aws.bedrockagentcoreBrowser.BedrockagentcoreBrowserConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/bedrockagentcore_browser#description BedrockagentcoreBrowser#description}. |
-| <code><a href="#@cdktn/provider-aws.bedrockagentcoreBrowser.BedrockagentcoreBrowserConfig.property.executionRoleArn">ExecutionRoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/bedrockagentcore_browser#execution_role_arn BedrockagentcoreBrowser#execution_role_arn}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreBrowser.BedrockagentcoreBrowserConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/bedrockagentcore_browser#name BedrockagentcoreBrowser#name}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreBrowser.BedrockagentcoreBrowserConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/bedrockagentcore_browser#description BedrockagentcoreBrowser#description}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreBrowser.BedrockagentcoreBrowserConfig.property.executionRoleArn">ExecutionRoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/bedrockagentcore_browser#execution_role_arn BedrockagentcoreBrowser#execution_role_arn}. |
 | <code><a href="#@cdktn/provider-aws.bedrockagentcoreBrowser.BedrockagentcoreBrowserConfig.property.networkConfiguration">NetworkConfiguration</a></code> | <code>interface{}</code> | network_configuration block. |
 | <code><a href="#@cdktn/provider-aws.bedrockagentcoreBrowser.BedrockagentcoreBrowserConfig.property.recording">Recording</a></code> | <code>interface{}</code> | recording block. |
 | <code><a href="#@cdktn/provider-aws.bedrockagentcoreBrowser.BedrockagentcoreBrowserConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.bedrockagentcoreBrowser.BedrockagentcoreBrowserConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/bedrockagentcore_browser#tags BedrockagentcoreBrowser#tags}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreBrowser.BedrockagentcoreBrowserConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/bedrockagentcore_browser#tags BedrockagentcoreBrowser#tags}. |
 | <code><a href="#@cdktn/provider-aws.bedrockagentcoreBrowser.BedrockagentcoreBrowserConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.bedrockagentcoreBrowser.BedrockagentcoreBrowserTimeouts">BedrockagentcoreBrowserTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1085,7 +1085,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/bedrockagentcore_browser#name BedrockagentcoreBrowser#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/bedrockagentcore_browser#name BedrockagentcoreBrowser#name}.
 
 ---
 
@@ -1097,7 +1097,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/bedrockagentcore_browser#description BedrockagentcoreBrowser#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/bedrockagentcore_browser#description BedrockagentcoreBrowser#description}.
 
 ---
 
@@ -1109,7 +1109,7 @@ ExecutionRoleArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/bedrockagentcore_browser#execution_role_arn BedrockagentcoreBrowser#execution_role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/bedrockagentcore_browser#execution_role_arn BedrockagentcoreBrowser#execution_role_arn}.
 
 ---
 
@@ -1123,7 +1123,7 @@ NetworkConfiguration interface{}
 
 network_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/bedrockagentcore_browser#network_configuration BedrockagentcoreBrowser#network_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/bedrockagentcore_browser#network_configuration BedrockagentcoreBrowser#network_configuration}
 
 ---
 
@@ -1137,7 +1137,7 @@ Recording interface{}
 
 recording block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/bedrockagentcore_browser#recording BedrockagentcoreBrowser#recording}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/bedrockagentcore_browser#recording BedrockagentcoreBrowser#recording}
 
 ---
 
@@ -1151,7 +1151,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/bedrockagentcore_browser#region BedrockagentcoreBrowser#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/bedrockagentcore_browser#region BedrockagentcoreBrowser#region}
 
 ---
 
@@ -1163,7 +1163,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/bedrockagentcore_browser#tags BedrockagentcoreBrowser#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/bedrockagentcore_browser#tags BedrockagentcoreBrowser#tags}.
 
 ---
 
@@ -1177,7 +1177,7 @@ Timeouts BedrockagentcoreBrowserTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/bedrockagentcore_browser#timeouts BedrockagentcoreBrowser#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/bedrockagentcore_browser#timeouts BedrockagentcoreBrowser#timeouts}
 
 ---
 
@@ -1186,7 +1186,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreBrowser.BedrockagentcoreBrowserNetworkConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcorebrowser"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/bedrockagentcorebrowser"
 
 &bedrockagentcorebrowser.BedrockagentcoreBrowserNetworkConfiguration {
 	NetworkMode: *string,
@@ -1198,7 +1198,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcorebrowse
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.bedrockagentcoreBrowser.BedrockagentcoreBrowserNetworkConfiguration.property.networkMode">NetworkMode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/bedrockagentcore_browser#network_mode BedrockagentcoreBrowser#network_mode}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreBrowser.BedrockagentcoreBrowserNetworkConfiguration.property.networkMode">NetworkMode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/bedrockagentcore_browser#network_mode BedrockagentcoreBrowser#network_mode}. |
 | <code><a href="#@cdktn/provider-aws.bedrockagentcoreBrowser.BedrockagentcoreBrowserNetworkConfiguration.property.vpcConfig">VpcConfig</a></code> | <code>interface{}</code> | vpc_config block. |
 
 ---
@@ -1211,7 +1211,7 @@ NetworkMode *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/bedrockagentcore_browser#network_mode BedrockagentcoreBrowser#network_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/bedrockagentcore_browser#network_mode BedrockagentcoreBrowser#network_mode}.
 
 ---
 
@@ -1225,7 +1225,7 @@ VpcConfig interface{}
 
 vpc_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/bedrockagentcore_browser#vpc_config BedrockagentcoreBrowser#vpc_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/bedrockagentcore_browser#vpc_config BedrockagentcoreBrowser#vpc_config}
 
 ---
 
@@ -1234,7 +1234,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreBrowser.BedrockagentcoreBrowserNetworkConfigurationVpcConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcorebrowser"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/bedrockagentcorebrowser"
 
 &bedrockagentcorebrowser.BedrockagentcoreBrowserNetworkConfigurationVpcConfig {
 	SecurityGroups: *[]*string,
@@ -1246,8 +1246,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcorebrowse
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.bedrockagentcoreBrowser.BedrockagentcoreBrowserNetworkConfigurationVpcConfig.property.securityGroups">SecurityGroups</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/bedrockagentcore_browser#security_groups BedrockagentcoreBrowser#security_groups}. |
-| <code><a href="#@cdktn/provider-aws.bedrockagentcoreBrowser.BedrockagentcoreBrowserNetworkConfigurationVpcConfig.property.subnets">Subnets</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/bedrockagentcore_browser#subnets BedrockagentcoreBrowser#subnets}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreBrowser.BedrockagentcoreBrowserNetworkConfigurationVpcConfig.property.securityGroups">SecurityGroups</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/bedrockagentcore_browser#security_groups BedrockagentcoreBrowser#security_groups}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreBrowser.BedrockagentcoreBrowserNetworkConfigurationVpcConfig.property.subnets">Subnets</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/bedrockagentcore_browser#subnets BedrockagentcoreBrowser#subnets}. |
 
 ---
 
@@ -1259,7 +1259,7 @@ SecurityGroups *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/bedrockagentcore_browser#security_groups BedrockagentcoreBrowser#security_groups}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/bedrockagentcore_browser#security_groups BedrockagentcoreBrowser#security_groups}.
 
 ---
 
@@ -1271,7 +1271,7 @@ Subnets *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/bedrockagentcore_browser#subnets BedrockagentcoreBrowser#subnets}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/bedrockagentcore_browser#subnets BedrockagentcoreBrowser#subnets}.
 
 ---
 
@@ -1280,7 +1280,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreBrowser.BedrockagentcoreBrowserRecording.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcorebrowser"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/bedrockagentcorebrowser"
 
 &bedrockagentcorebrowser.BedrockagentcoreBrowserRecording {
 	Enabled: interface{},
@@ -1292,7 +1292,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcorebrowse
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.bedrockagentcoreBrowser.BedrockagentcoreBrowserRecording.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/bedrockagentcore_browser#enabled BedrockagentcoreBrowser#enabled}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreBrowser.BedrockagentcoreBrowserRecording.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/bedrockagentcore_browser#enabled BedrockagentcoreBrowser#enabled}. |
 | <code><a href="#@cdktn/provider-aws.bedrockagentcoreBrowser.BedrockagentcoreBrowserRecording.property.s3Location">S3Location</a></code> | <code>interface{}</code> | s3_location block. |
 
 ---
@@ -1305,7 +1305,7 @@ Enabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/bedrockagentcore_browser#enabled BedrockagentcoreBrowser#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/bedrockagentcore_browser#enabled BedrockagentcoreBrowser#enabled}.
 
 ---
 
@@ -1319,7 +1319,7 @@ S3Location interface{}
 
 s3_location block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/bedrockagentcore_browser#s3_location BedrockagentcoreBrowser#s3_location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/bedrockagentcore_browser#s3_location BedrockagentcoreBrowser#s3_location}
 
 ---
 
@@ -1328,7 +1328,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreBrowser.BedrockagentcoreBrowserRecordingS3Location.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcorebrowser"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/bedrockagentcorebrowser"
 
 &bedrockagentcorebrowser.BedrockagentcoreBrowserRecordingS3Location {
 	Bucket: *string,
@@ -1340,8 +1340,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcorebrowse
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.bedrockagentcoreBrowser.BedrockagentcoreBrowserRecordingS3Location.property.bucket">Bucket</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/bedrockagentcore_browser#bucket BedrockagentcoreBrowser#bucket}. |
-| <code><a href="#@cdktn/provider-aws.bedrockagentcoreBrowser.BedrockagentcoreBrowserRecordingS3Location.property.prefix">Prefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/bedrockagentcore_browser#prefix BedrockagentcoreBrowser#prefix}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreBrowser.BedrockagentcoreBrowserRecordingS3Location.property.bucket">Bucket</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/bedrockagentcore_browser#bucket BedrockagentcoreBrowser#bucket}. |
+| <code><a href="#@cdktn/provider-aws.bedrockagentcoreBrowser.BedrockagentcoreBrowserRecordingS3Location.property.prefix">Prefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/bedrockagentcore_browser#prefix BedrockagentcoreBrowser#prefix}. |
 
 ---
 
@@ -1353,7 +1353,7 @@ Bucket *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/bedrockagentcore_browser#bucket BedrockagentcoreBrowser#bucket}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/bedrockagentcore_browser#bucket BedrockagentcoreBrowser#bucket}.
 
 ---
 
@@ -1365,7 +1365,7 @@ Prefix *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/bedrockagentcore_browser#prefix BedrockagentcoreBrowser#prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/bedrockagentcore_browser#prefix BedrockagentcoreBrowser#prefix}.
 
 ---
 
@@ -1374,7 +1374,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockagentcoreBrowser.BedrockagentcoreBrowserTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcorebrowser"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/bedrockagentcorebrowser"
 
 &bedrockagentcorebrowser.BedrockagentcoreBrowserTimeouts {
 	Create: *string,
@@ -1401,7 +1401,7 @@ Create *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/bedrockagentcore_browser#create BedrockagentcoreBrowser#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/bedrockagentcore_browser#create BedrockagentcoreBrowser#create}
 
 ---
 
@@ -1415,7 +1415,7 @@ Delete *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/bedrockagentcore_browser#delete BedrockagentcoreBrowser#delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/bedrockagentcore_browser#delete BedrockagentcoreBrowser#delete}
 
 ---
 
@@ -1426,7 +1426,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreBrowser.BedrockagentcoreBrowserNetworkConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcorebrowser"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/bedrockagentcorebrowser"
 
 bedrockagentcorebrowser.NewBedrockagentcoreBrowserNetworkConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentcoreBrowserNetworkConfigurationList
 ```
@@ -1586,7 +1586,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreBrowser.BedrockagentcoreBrowserNetworkConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcorebrowser"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/bedrockagentcorebrowser"
 
 bedrockagentcorebrowser.NewBedrockagentcoreBrowserNetworkConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentcoreBrowserNetworkConfigurationOutputReference
 ```
@@ -1917,7 +1917,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreBrowser.BedrockagentcoreBrowserNetworkConfigurationVpcConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcorebrowser"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/bedrockagentcorebrowser"
 
 bedrockagentcorebrowser.NewBedrockagentcoreBrowserNetworkConfigurationVpcConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentcoreBrowserNetworkConfigurationVpcConfigList
 ```
@@ -2077,7 +2077,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreBrowser.BedrockagentcoreBrowserNetworkConfigurationVpcConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcorebrowser"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/bedrockagentcorebrowser"
 
 bedrockagentcorebrowser.NewBedrockagentcoreBrowserNetworkConfigurationVpcConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentcoreBrowserNetworkConfigurationVpcConfigOutputReference
 ```
@@ -2388,7 +2388,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreBrowser.BedrockagentcoreBrowserRecordingList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcorebrowser"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/bedrockagentcorebrowser"
 
 bedrockagentcorebrowser.NewBedrockagentcoreBrowserRecordingList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentcoreBrowserRecordingList
 ```
@@ -2548,7 +2548,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreBrowser.BedrockagentcoreBrowserRecordingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcorebrowser"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/bedrockagentcorebrowser"
 
 bedrockagentcorebrowser.NewBedrockagentcoreBrowserRecordingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentcoreBrowserRecordingOutputReference
 ```
@@ -2886,7 +2886,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreBrowser.BedrockagentcoreBrowserRecordingS3LocationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcorebrowser"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/bedrockagentcorebrowser"
 
 bedrockagentcorebrowser.NewBedrockagentcoreBrowserRecordingS3LocationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BedrockagentcoreBrowserRecordingS3LocationList
 ```
@@ -3046,7 +3046,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreBrowser.BedrockagentcoreBrowserRecordingS3LocationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcorebrowser"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/bedrockagentcorebrowser"
 
 bedrockagentcorebrowser.NewBedrockagentcoreBrowserRecordingS3LocationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BedrockagentcoreBrowserRecordingS3LocationOutputReference
 ```
@@ -3357,7 +3357,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockagentcoreBrowser.BedrockagentcoreBrowserTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockagentcorebrowser"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/bedrockagentcorebrowser"
 
 bedrockagentcorebrowser.NewBedrockagentcoreBrowserTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BedrockagentcoreBrowserTimeoutsOutputReference
 ```

@@ -4,12 +4,12 @@
 
 ### DataAwsLocationRouteCalculator <a name="DataAwsLocationRouteCalculator" id="@cdktn/provider-aws.dataAwsLocationRouteCalculator.DataAwsLocationRouteCalculator"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/location_route_calculator aws_location_route_calculator}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/location_route_calculator aws_location_route_calculator}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLocationRouteCalculator.DataAwsLocationRouteCalculator.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawslocationroutecalculator"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawslocationroutecalculator"
 
 dataawslocationroutecalculator.NewDataAwsLocationRouteCalculator(scope Construct, id *string, config DataAwsLocationRouteCalculatorConfig) DataAwsLocationRouteCalculator
 ```
@@ -297,7 +297,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsLocationRouteCalculator.DataAwsLocationRouteCalculator.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawslocationroutecalculator"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawslocationroutecalculator"
 
 dataawslocationroutecalculator.DataAwsLocationRouteCalculator_IsConstruct(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsLocationRouteCalculator.DataAwsLocationRouteCalculator.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawslocationroutecalculator"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawslocationroutecalculator"
 
 dataawslocationroutecalculator.DataAwsLocationRouteCalculator_IsTerraformElement(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ dataawslocationroutecalculator.DataAwsLocationRouteCalculator_IsTerraformElement
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsLocationRouteCalculator.DataAwsLocationRouteCalculator.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawslocationroutecalculator"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawslocationroutecalculator"
 
 dataawslocationroutecalculator.DataAwsLocationRouteCalculator_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ dataawslocationroutecalculator.DataAwsLocationRouteCalculator_IsTerraformDataSou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsLocationRouteCalculator.DataAwsLocationRouteCalculator.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawslocationroutecalculator"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawslocationroutecalculator"
 
 dataawslocationroutecalculator.DataAwsLocationRouteCalculator_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -386,7 +386,7 @@ The construct id used in the generated config for the DataAwsLocationRouteCalcul
 
 The id of the existing DataAwsLocationRouteCalculator that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/location_route_calculator#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/location_route_calculator#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -707,7 +707,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsLocationRouteCalculator.DataAwsLocationRouteCalculatorConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawslocationroutecalculator"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawslocationroutecalculator"
 
 &dataawslocationroutecalculator.DataAwsLocationRouteCalculatorConfig {
 	Connection: interface{},
@@ -735,10 +735,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawslocationrouteca
 | <code><a href="#@cdktn/provider-aws.dataAwsLocationRouteCalculator.DataAwsLocationRouteCalculatorConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsLocationRouteCalculator.DataAwsLocationRouteCalculatorConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsLocationRouteCalculator.DataAwsLocationRouteCalculatorConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsLocationRouteCalculator.DataAwsLocationRouteCalculatorConfig.property.calculatorName">CalculatorName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/location_route_calculator#calculator_name DataAwsLocationRouteCalculator#calculator_name}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsLocationRouteCalculator.DataAwsLocationRouteCalculatorConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/location_route_calculator#id DataAwsLocationRouteCalculator#id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsLocationRouteCalculator.DataAwsLocationRouteCalculatorConfig.property.calculatorName">CalculatorName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/location_route_calculator#calculator_name DataAwsLocationRouteCalculator#calculator_name}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsLocationRouteCalculator.DataAwsLocationRouteCalculatorConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/location_route_calculator#id DataAwsLocationRouteCalculator#id}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsLocationRouteCalculator.DataAwsLocationRouteCalculatorConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.dataAwsLocationRouteCalculator.DataAwsLocationRouteCalculatorConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/location_route_calculator#tags DataAwsLocationRouteCalculator#tags}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsLocationRouteCalculator.DataAwsLocationRouteCalculatorConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/location_route_calculator#tags DataAwsLocationRouteCalculator#tags}. |
 
 ---
 
@@ -820,7 +820,7 @@ CalculatorName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/location_route_calculator#calculator_name DataAwsLocationRouteCalculator#calculator_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/location_route_calculator#calculator_name DataAwsLocationRouteCalculator#calculator_name}.
 
 ---
 
@@ -832,7 +832,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/location_route_calculator#id DataAwsLocationRouteCalculator#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/location_route_calculator#id DataAwsLocationRouteCalculator#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -849,7 +849,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/location_route_calculator#region DataAwsLocationRouteCalculator#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/location_route_calculator#region DataAwsLocationRouteCalculator#region}
 
 ---
 
@@ -861,7 +861,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/location_route_calculator#tags DataAwsLocationRouteCalculator#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/location_route_calculator#tags DataAwsLocationRouteCalculator#tags}.
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### VpcIpamPool <a name="VpcIpamPool" id="@cdktn/provider-aws.vpcIpamPool.VpcIpamPool"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpc_ipam_pool aws_vpc_ipam_pool}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/vpc_ipam_pool aws_vpc_ipam_pool}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.vpcIpamPool.VpcIpamPool.Initializer"></a>
 
@@ -37,6 +37,7 @@ vpcIpamPool.VpcIpamPool(
   publicly_advertisable: bool | IResolvable = None,
   region: str = None,
   source_ipam_pool_id: str = None,
+  source_resource: VpcIpamPoolSourceResource = None,
   tags: typing.Mapping[str] = None,
   tags_all: typing.Mapping[str] = None,
   timeouts: VpcIpamPoolTimeouts = None
@@ -54,24 +55,25 @@ vpcIpamPool.VpcIpamPool(
 | <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPool.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPool.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPool.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPool.Initializer.parameter.addressFamily">address_family</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpc_ipam_pool#address_family VpcIpamPool#address_family}. |
-| <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPool.Initializer.parameter.ipamScopeId">ipam_scope_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpc_ipam_pool#ipam_scope_id VpcIpamPool#ipam_scope_id}. |
-| <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPool.Initializer.parameter.allocationDefaultNetmaskLength">allocation_default_netmask_length</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpc_ipam_pool#allocation_default_netmask_length VpcIpamPool#allocation_default_netmask_length}. |
-| <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPool.Initializer.parameter.allocationMaxNetmaskLength">allocation_max_netmask_length</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpc_ipam_pool#allocation_max_netmask_length VpcIpamPool#allocation_max_netmask_length}. |
-| <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPool.Initializer.parameter.allocationMinNetmaskLength">allocation_min_netmask_length</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpc_ipam_pool#allocation_min_netmask_length VpcIpamPool#allocation_min_netmask_length}. |
-| <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPool.Initializer.parameter.allocationResourceTags">allocation_resource_tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpc_ipam_pool#allocation_resource_tags VpcIpamPool#allocation_resource_tags}. |
-| <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPool.Initializer.parameter.autoImport">auto_import</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpc_ipam_pool#auto_import VpcIpamPool#auto_import}. |
-| <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPool.Initializer.parameter.awsService">aws_service</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpc_ipam_pool#aws_service VpcIpamPool#aws_service}. |
-| <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPool.Initializer.parameter.cascade">cascade</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpc_ipam_pool#cascade VpcIpamPool#cascade}. |
-| <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPool.Initializer.parameter.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpc_ipam_pool#description VpcIpamPool#description}. |
-| <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPool.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpc_ipam_pool#id VpcIpamPool#id}. |
-| <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPool.Initializer.parameter.locale">locale</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpc_ipam_pool#locale VpcIpamPool#locale}. |
-| <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPool.Initializer.parameter.publicIpSource">public_ip_source</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpc_ipam_pool#public_ip_source VpcIpamPool#public_ip_source}. |
-| <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPool.Initializer.parameter.publiclyAdvertisable">publicly_advertisable</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpc_ipam_pool#publicly_advertisable VpcIpamPool#publicly_advertisable}. |
+| <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPool.Initializer.parameter.addressFamily">address_family</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/vpc_ipam_pool#address_family VpcIpamPool#address_family}. |
+| <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPool.Initializer.parameter.ipamScopeId">ipam_scope_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/vpc_ipam_pool#ipam_scope_id VpcIpamPool#ipam_scope_id}. |
+| <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPool.Initializer.parameter.allocationDefaultNetmaskLength">allocation_default_netmask_length</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/vpc_ipam_pool#allocation_default_netmask_length VpcIpamPool#allocation_default_netmask_length}. |
+| <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPool.Initializer.parameter.allocationMaxNetmaskLength">allocation_max_netmask_length</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/vpc_ipam_pool#allocation_max_netmask_length VpcIpamPool#allocation_max_netmask_length}. |
+| <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPool.Initializer.parameter.allocationMinNetmaskLength">allocation_min_netmask_length</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/vpc_ipam_pool#allocation_min_netmask_length VpcIpamPool#allocation_min_netmask_length}. |
+| <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPool.Initializer.parameter.allocationResourceTags">allocation_resource_tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/vpc_ipam_pool#allocation_resource_tags VpcIpamPool#allocation_resource_tags}. |
+| <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPool.Initializer.parameter.autoImport">auto_import</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/vpc_ipam_pool#auto_import VpcIpamPool#auto_import}. |
+| <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPool.Initializer.parameter.awsService">aws_service</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/vpc_ipam_pool#aws_service VpcIpamPool#aws_service}. |
+| <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPool.Initializer.parameter.cascade">cascade</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/vpc_ipam_pool#cascade VpcIpamPool#cascade}. |
+| <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPool.Initializer.parameter.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/vpc_ipam_pool#description VpcIpamPool#description}. |
+| <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPool.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/vpc_ipam_pool#id VpcIpamPool#id}. |
+| <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPool.Initializer.parameter.locale">locale</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/vpc_ipam_pool#locale VpcIpamPool#locale}. |
+| <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPool.Initializer.parameter.publicIpSource">public_ip_source</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/vpc_ipam_pool#public_ip_source VpcIpamPool#public_ip_source}. |
+| <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPool.Initializer.parameter.publiclyAdvertisable">publicly_advertisable</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/vpc_ipam_pool#publicly_advertisable VpcIpamPool#publicly_advertisable}. |
 | <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPool.Initializer.parameter.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPool.Initializer.parameter.sourceIpamPoolId">source_ipam_pool_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpc_ipam_pool#source_ipam_pool_id VpcIpamPool#source_ipam_pool_id}. |
-| <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPool.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpc_ipam_pool#tags VpcIpamPool#tags}. |
-| <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPool.Initializer.parameter.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpc_ipam_pool#tags_all VpcIpamPool#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPool.Initializer.parameter.sourceIpamPoolId">source_ipam_pool_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/vpc_ipam_pool#source_ipam_pool_id VpcIpamPool#source_ipam_pool_id}. |
+| <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPool.Initializer.parameter.sourceResource">source_resource</a></code> | <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolSourceResource">VpcIpamPoolSourceResource</a></code> | source_resource block. |
+| <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPool.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/vpc_ipam_pool#tags VpcIpamPool#tags}. |
+| <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPool.Initializer.parameter.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/vpc_ipam_pool#tags_all VpcIpamPool#tags_all}. |
 | <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPool.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolTimeouts">VpcIpamPoolTimeouts</a></code> | timeouts block. |
 
 ---
@@ -140,7 +142,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpc_ipam_pool#address_family VpcIpamPool#address_family}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/vpc_ipam_pool#address_family VpcIpamPool#address_family}.
 
 ---
 
@@ -148,7 +150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpc_ipam_pool#ipam_scope_id VpcIpamPool#ipam_scope_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/vpc_ipam_pool#ipam_scope_id VpcIpamPool#ipam_scope_id}.
 
 ---
 
@@ -156,7 +158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpc_ipam_pool#allocation_default_netmask_length VpcIpamPool#allocation_default_netmask_length}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/vpc_ipam_pool#allocation_default_netmask_length VpcIpamPool#allocation_default_netmask_length}.
 
 ---
 
@@ -164,7 +166,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpc_ipam_pool#allocation_max_netmask_length VpcIpamPool#allocation_max_netmask_length}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/vpc_ipam_pool#allocation_max_netmask_length VpcIpamPool#allocation_max_netmask_length}.
 
 ---
 
@@ -172,7 +174,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpc_ipam_pool#allocation_min_netmask_length VpcIpamPool#allocation_min_netmask_length}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/vpc_ipam_pool#allocation_min_netmask_length VpcIpamPool#allocation_min_netmask_length}.
 
 ---
 
@@ -180,7 +182,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpc_ipam_pool#allocation_resource_tags VpcIpamPool#allocation_resource_tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/vpc_ipam_pool#allocation_resource_tags VpcIpamPool#allocation_resource_tags}.
 
 ---
 
@@ -188,7 +190,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpc_ipam_pool#auto_import VpcIpamPool#auto_import}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/vpc_ipam_pool#auto_import VpcIpamPool#auto_import}.
 
 ---
 
@@ -196,7 +198,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpc_ipam_pool#aws_service VpcIpamPool#aws_service}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/vpc_ipam_pool#aws_service VpcIpamPool#aws_service}.
 
 ---
 
@@ -204,7 +206,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpc_ipam_pool#cascade VpcIpamPool#cascade}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/vpc_ipam_pool#cascade VpcIpamPool#cascade}.
 
 ---
 
@@ -212,7 +214,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpc_ipam_pool#description VpcIpamPool#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/vpc_ipam_pool#description VpcIpamPool#description}.
 
 ---
 
@@ -220,7 +222,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpc_ipam_pool#id VpcIpamPool#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/vpc_ipam_pool#id VpcIpamPool#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -231,7 +233,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpc_ipam_pool#locale VpcIpamPool#locale}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/vpc_ipam_pool#locale VpcIpamPool#locale}.
 
 ---
 
@@ -239,7 +241,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpc_ipam_pool#public_ip_source VpcIpamPool#public_ip_source}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/vpc_ipam_pool#public_ip_source VpcIpamPool#public_ip_source}.
 
 ---
 
@@ -247,7 +249,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpc_ipam_pool#publicly_advertisable VpcIpamPool#publicly_advertisable}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/vpc_ipam_pool#publicly_advertisable VpcIpamPool#publicly_advertisable}.
 
 ---
 
@@ -257,7 +259,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpc_ipam_pool#region VpcIpamPool#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/vpc_ipam_pool#region VpcIpamPool#region}
 
 ---
 
@@ -265,7 +267,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpc_ipam_pool#source_ipam_pool_id VpcIpamPool#source_ipam_pool_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/vpc_ipam_pool#source_ipam_pool_id VpcIpamPool#source_ipam_pool_id}.
+
+---
+
+##### `source_resource`<sup>Optional</sup> <a name="source_resource" id="@cdktn/provider-aws.vpcIpamPool.VpcIpamPool.Initializer.parameter.sourceResource"></a>
+
+- *Type:* <a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolSourceResource">VpcIpamPoolSourceResource</a>
+
+source_resource block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/vpc_ipam_pool#source_resource VpcIpamPool#source_resource}
 
 ---
 
@@ -273,7 +285,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpc_ipam_pool#tags VpcIpamPool#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/vpc_ipam_pool#tags VpcIpamPool#tags}.
 
 ---
 
@@ -281,7 +293,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpc_ipam_pool#tags_all VpcIpamPool#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/vpc_ipam_pool#tags_all VpcIpamPool#tags_all}.
 
 ---
 
@@ -291,7 +303,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpc_ipam_pool#timeouts VpcIpamPool#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/vpc_ipam_pool#timeouts VpcIpamPool#timeouts}
 
 ---
 
@@ -322,6 +334,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPool.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPool.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPool.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPool.putSourceResource">put_source_resource</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPool.putTimeouts">put_timeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPool.resetAllocationDefaultNetmaskLength">reset_allocation_default_netmask_length</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPool.resetAllocationMaxNetmaskLength">reset_allocation_max_netmask_length</a></code> | *No description.* |
@@ -337,6 +350,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPool.resetPubliclyAdvertisable">reset_publicly_advertisable</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPool.resetRegion">reset_region</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPool.resetSourceIpamPoolId">reset_source_ipam_pool_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPool.resetSourceResource">reset_source_resource</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPool.resetTags">reset_tags</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPool.resetTagsAll">reset_tags_all</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPool.resetTimeouts">reset_timeouts</a></code> | *No description.* |
@@ -668,6 +682,49 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `put_source_resource` <a name="put_source_resource" id="@cdktn/provider-aws.vpcIpamPool.VpcIpamPool.putSourceResource"></a>
+
+```python
+def put_source_resource(
+  resource_id: str,
+  resource_owner: str,
+  resource_region: str,
+  resource_type: str
+) -> None
+```
+
+###### `resource_id`<sup>Required</sup> <a name="resource_id" id="@cdktn/provider-aws.vpcIpamPool.VpcIpamPool.putSourceResource.parameter.resourceId"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/vpc_ipam_pool#resource_id VpcIpamPool#resource_id}.
+
+---
+
+###### `resource_owner`<sup>Required</sup> <a name="resource_owner" id="@cdktn/provider-aws.vpcIpamPool.VpcIpamPool.putSourceResource.parameter.resourceOwner"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/vpc_ipam_pool#resource_owner VpcIpamPool#resource_owner}.
+
+---
+
+###### `resource_region`<sup>Required</sup> <a name="resource_region" id="@cdktn/provider-aws.vpcIpamPool.VpcIpamPool.putSourceResource.parameter.resourceRegion"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/vpc_ipam_pool#resource_region VpcIpamPool#resource_region}.
+
+---
+
+###### `resource_type`<sup>Required</sup> <a name="resource_type" id="@cdktn/provider-aws.vpcIpamPool.VpcIpamPool.putSourceResource.parameter.resourceType"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/vpc_ipam_pool#resource_type VpcIpamPool#resource_type}.
+
+---
+
 ##### `put_timeouts` <a name="put_timeouts" id="@cdktn/provider-aws.vpcIpamPool.VpcIpamPool.putTimeouts"></a>
 
 ```python
@@ -682,7 +739,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpc_ipam_pool#create VpcIpamPool#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/vpc_ipam_pool#create VpcIpamPool#create}.
 
 ---
 
@@ -690,7 +747,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpc_ipam_pool#delete VpcIpamPool#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/vpc_ipam_pool#delete VpcIpamPool#delete}.
 
 ---
 
@@ -698,7 +755,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpc_ipam_pool#update VpcIpamPool#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/vpc_ipam_pool#update VpcIpamPool#update}.
 
 ---
 
@@ -784,6 +841,12 @@ def reset_region() -> None
 
 ```python
 def reset_source_ipam_pool_id() -> None
+```
+
+##### `reset_source_resource` <a name="reset_source_resource" id="@cdktn/provider-aws.vpcIpamPool.VpcIpamPool.resetSourceResource"></a>
+
+```python
+def reset_source_resource() -> None
 ```
 
 ##### `reset_tags` <a name="reset_tags" id="@cdktn/provider-aws.vpcIpamPool.VpcIpamPool.resetTags"></a>
@@ -918,7 +981,7 @@ The construct id used in the generated config for the VpcIpamPool to import.
 
 The id of the existing VpcIpamPool that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpc_ipam_pool#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/vpc_ipam_pool#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -951,6 +1014,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 | <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPool.property.arn">arn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPool.property.ipamScopeType">ipam_scope_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPool.property.poolDepth">pool_depth</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPool.property.sourceResource">source_resource</a></code> | <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolSourceResourceOutputReference">VpcIpamPoolSourceResourceOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPool.property.state">state</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPool.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolTimeoutsOutputReference">VpcIpamPoolTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPool.property.addressFamilyInput">address_family_input</a></code> | <code>str</code> | *No description.* |
@@ -969,6 +1033,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 | <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPool.property.publiclyAdvertisableInput">publicly_advertisable_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPool.property.regionInput">region_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPool.property.sourceIpamPoolIdInput">source_ipam_pool_id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPool.property.sourceResourceInput">source_resource_input</a></code> | <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolSourceResource">VpcIpamPoolSourceResource</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPool.property.tagsAllInput">tags_all_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPool.property.tagsInput">tags_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPool.property.timeoutsInput">timeouts_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolTimeouts">VpcIpamPoolTimeouts</a></code> | *No description.* |
@@ -1165,6 +1230,16 @@ pool_depth: typing.Union[int, float]
 
 ---
 
+##### `source_resource`<sup>Required</sup> <a name="source_resource" id="@cdktn/provider-aws.vpcIpamPool.VpcIpamPool.property.sourceResource"></a>
+
+```python
+source_resource: VpcIpamPoolSourceResourceOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolSourceResourceOutputReference">VpcIpamPoolSourceResourceOutputReference</a>
+
+---
+
 ##### `state`<sup>Required</sup> <a name="state" id="@cdktn/provider-aws.vpcIpamPool.VpcIpamPool.property.state"></a>
 
 ```python
@@ -1342,6 +1417,16 @@ source_ipam_pool_id_input: str
 ```
 
 - *Type:* str
+
+---
+
+##### `source_resource_input`<sup>Optional</sup> <a name="source_resource_input" id="@cdktn/provider-aws.vpcIpamPool.VpcIpamPool.property.sourceResourceInput"></a>
+
+```python
+source_resource_input: VpcIpamPoolSourceResource
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolSourceResource">VpcIpamPoolSourceResource</a>
 
 ---
 
@@ -1606,6 +1691,7 @@ vpcIpamPool.VpcIpamPoolConfig(
   publicly_advertisable: bool | IResolvable = None,
   region: str = None,
   source_ipam_pool_id: str = None,
+  source_resource: VpcIpamPoolSourceResource = None,
   tags: typing.Mapping[str] = None,
   tags_all: typing.Mapping[str] = None,
   timeouts: VpcIpamPoolTimeouts = None
@@ -1623,24 +1709,25 @@ vpcIpamPool.VpcIpamPoolConfig(
 | <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolConfig.property.addressFamily">address_family</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpc_ipam_pool#address_family VpcIpamPool#address_family}. |
-| <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolConfig.property.ipamScopeId">ipam_scope_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpc_ipam_pool#ipam_scope_id VpcIpamPool#ipam_scope_id}. |
-| <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolConfig.property.allocationDefaultNetmaskLength">allocation_default_netmask_length</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpc_ipam_pool#allocation_default_netmask_length VpcIpamPool#allocation_default_netmask_length}. |
-| <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolConfig.property.allocationMaxNetmaskLength">allocation_max_netmask_length</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpc_ipam_pool#allocation_max_netmask_length VpcIpamPool#allocation_max_netmask_length}. |
-| <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolConfig.property.allocationMinNetmaskLength">allocation_min_netmask_length</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpc_ipam_pool#allocation_min_netmask_length VpcIpamPool#allocation_min_netmask_length}. |
-| <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolConfig.property.allocationResourceTags">allocation_resource_tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpc_ipam_pool#allocation_resource_tags VpcIpamPool#allocation_resource_tags}. |
-| <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolConfig.property.autoImport">auto_import</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpc_ipam_pool#auto_import VpcIpamPool#auto_import}. |
-| <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolConfig.property.awsService">aws_service</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpc_ipam_pool#aws_service VpcIpamPool#aws_service}. |
-| <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolConfig.property.cascade">cascade</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpc_ipam_pool#cascade VpcIpamPool#cascade}. |
-| <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolConfig.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpc_ipam_pool#description VpcIpamPool#description}. |
-| <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpc_ipam_pool#id VpcIpamPool#id}. |
-| <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolConfig.property.locale">locale</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpc_ipam_pool#locale VpcIpamPool#locale}. |
-| <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolConfig.property.publicIpSource">public_ip_source</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpc_ipam_pool#public_ip_source VpcIpamPool#public_ip_source}. |
-| <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolConfig.property.publiclyAdvertisable">publicly_advertisable</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpc_ipam_pool#publicly_advertisable VpcIpamPool#publicly_advertisable}. |
+| <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolConfig.property.addressFamily">address_family</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/vpc_ipam_pool#address_family VpcIpamPool#address_family}. |
+| <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolConfig.property.ipamScopeId">ipam_scope_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/vpc_ipam_pool#ipam_scope_id VpcIpamPool#ipam_scope_id}. |
+| <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolConfig.property.allocationDefaultNetmaskLength">allocation_default_netmask_length</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/vpc_ipam_pool#allocation_default_netmask_length VpcIpamPool#allocation_default_netmask_length}. |
+| <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolConfig.property.allocationMaxNetmaskLength">allocation_max_netmask_length</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/vpc_ipam_pool#allocation_max_netmask_length VpcIpamPool#allocation_max_netmask_length}. |
+| <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolConfig.property.allocationMinNetmaskLength">allocation_min_netmask_length</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/vpc_ipam_pool#allocation_min_netmask_length VpcIpamPool#allocation_min_netmask_length}. |
+| <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolConfig.property.allocationResourceTags">allocation_resource_tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/vpc_ipam_pool#allocation_resource_tags VpcIpamPool#allocation_resource_tags}. |
+| <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolConfig.property.autoImport">auto_import</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/vpc_ipam_pool#auto_import VpcIpamPool#auto_import}. |
+| <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolConfig.property.awsService">aws_service</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/vpc_ipam_pool#aws_service VpcIpamPool#aws_service}. |
+| <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolConfig.property.cascade">cascade</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/vpc_ipam_pool#cascade VpcIpamPool#cascade}. |
+| <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolConfig.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/vpc_ipam_pool#description VpcIpamPool#description}. |
+| <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/vpc_ipam_pool#id VpcIpamPool#id}. |
+| <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolConfig.property.locale">locale</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/vpc_ipam_pool#locale VpcIpamPool#locale}. |
+| <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolConfig.property.publicIpSource">public_ip_source</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/vpc_ipam_pool#public_ip_source VpcIpamPool#public_ip_source}. |
+| <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolConfig.property.publiclyAdvertisable">publicly_advertisable</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/vpc_ipam_pool#publicly_advertisable VpcIpamPool#publicly_advertisable}. |
 | <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolConfig.property.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolConfig.property.sourceIpamPoolId">source_ipam_pool_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpc_ipam_pool#source_ipam_pool_id VpcIpamPool#source_ipam_pool_id}. |
-| <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpc_ipam_pool#tags VpcIpamPool#tags}. |
-| <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolConfig.property.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpc_ipam_pool#tags_all VpcIpamPool#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolConfig.property.sourceIpamPoolId">source_ipam_pool_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/vpc_ipam_pool#source_ipam_pool_id VpcIpamPool#source_ipam_pool_id}. |
+| <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolConfig.property.sourceResource">source_resource</a></code> | <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolSourceResource">VpcIpamPoolSourceResource</a></code> | source_resource block. |
+| <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/vpc_ipam_pool#tags VpcIpamPool#tags}. |
+| <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolConfig.property.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/vpc_ipam_pool#tags_all VpcIpamPool#tags_all}. |
 | <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolTimeouts">VpcIpamPoolTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1723,7 +1810,7 @@ address_family: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpc_ipam_pool#address_family VpcIpamPool#address_family}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/vpc_ipam_pool#address_family VpcIpamPool#address_family}.
 
 ---
 
@@ -1735,7 +1822,7 @@ ipam_scope_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpc_ipam_pool#ipam_scope_id VpcIpamPool#ipam_scope_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/vpc_ipam_pool#ipam_scope_id VpcIpamPool#ipam_scope_id}.
 
 ---
 
@@ -1747,7 +1834,7 @@ allocation_default_netmask_length: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpc_ipam_pool#allocation_default_netmask_length VpcIpamPool#allocation_default_netmask_length}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/vpc_ipam_pool#allocation_default_netmask_length VpcIpamPool#allocation_default_netmask_length}.
 
 ---
 
@@ -1759,7 +1846,7 @@ allocation_max_netmask_length: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpc_ipam_pool#allocation_max_netmask_length VpcIpamPool#allocation_max_netmask_length}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/vpc_ipam_pool#allocation_max_netmask_length VpcIpamPool#allocation_max_netmask_length}.
 
 ---
 
@@ -1771,7 +1858,7 @@ allocation_min_netmask_length: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpc_ipam_pool#allocation_min_netmask_length VpcIpamPool#allocation_min_netmask_length}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/vpc_ipam_pool#allocation_min_netmask_length VpcIpamPool#allocation_min_netmask_length}.
 
 ---
 
@@ -1783,7 +1870,7 @@ allocation_resource_tags: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpc_ipam_pool#allocation_resource_tags VpcIpamPool#allocation_resource_tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/vpc_ipam_pool#allocation_resource_tags VpcIpamPool#allocation_resource_tags}.
 
 ---
 
@@ -1795,7 +1882,7 @@ auto_import: bool | IResolvable
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpc_ipam_pool#auto_import VpcIpamPool#auto_import}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/vpc_ipam_pool#auto_import VpcIpamPool#auto_import}.
 
 ---
 
@@ -1807,7 +1894,7 @@ aws_service: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpc_ipam_pool#aws_service VpcIpamPool#aws_service}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/vpc_ipam_pool#aws_service VpcIpamPool#aws_service}.
 
 ---
 
@@ -1819,7 +1906,7 @@ cascade: bool | IResolvable
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpc_ipam_pool#cascade VpcIpamPool#cascade}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/vpc_ipam_pool#cascade VpcIpamPool#cascade}.
 
 ---
 
@@ -1831,7 +1918,7 @@ description: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpc_ipam_pool#description VpcIpamPool#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/vpc_ipam_pool#description VpcIpamPool#description}.
 
 ---
 
@@ -1843,7 +1930,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpc_ipam_pool#id VpcIpamPool#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/vpc_ipam_pool#id VpcIpamPool#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1858,7 +1945,7 @@ locale: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpc_ipam_pool#locale VpcIpamPool#locale}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/vpc_ipam_pool#locale VpcIpamPool#locale}.
 
 ---
 
@@ -1870,7 +1957,7 @@ public_ip_source: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpc_ipam_pool#public_ip_source VpcIpamPool#public_ip_source}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/vpc_ipam_pool#public_ip_source VpcIpamPool#public_ip_source}.
 
 ---
 
@@ -1882,7 +1969,7 @@ publicly_advertisable: bool | IResolvable
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpc_ipam_pool#publicly_advertisable VpcIpamPool#publicly_advertisable}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/vpc_ipam_pool#publicly_advertisable VpcIpamPool#publicly_advertisable}.
 
 ---
 
@@ -1896,7 +1983,7 @@ region: str
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpc_ipam_pool#region VpcIpamPool#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/vpc_ipam_pool#region VpcIpamPool#region}
 
 ---
 
@@ -1908,7 +1995,21 @@ source_ipam_pool_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpc_ipam_pool#source_ipam_pool_id VpcIpamPool#source_ipam_pool_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/vpc_ipam_pool#source_ipam_pool_id VpcIpamPool#source_ipam_pool_id}.
+
+---
+
+##### `source_resource`<sup>Optional</sup> <a name="source_resource" id="@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolConfig.property.sourceResource"></a>
+
+```python
+source_resource: VpcIpamPoolSourceResource
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolSourceResource">VpcIpamPoolSourceResource</a>
+
+source_resource block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/vpc_ipam_pool#source_resource VpcIpamPool#source_resource}
 
 ---
 
@@ -1920,7 +2021,7 @@ tags: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpc_ipam_pool#tags VpcIpamPool#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/vpc_ipam_pool#tags VpcIpamPool#tags}.
 
 ---
 
@@ -1932,7 +2033,7 @@ tags_all: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpc_ipam_pool#tags_all VpcIpamPool#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/vpc_ipam_pool#tags_all VpcIpamPool#tags_all}.
 
 ---
 
@@ -1946,7 +2047,81 @@ timeouts: VpcIpamPoolTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpc_ipam_pool#timeouts VpcIpamPool#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/vpc_ipam_pool#timeouts VpcIpamPool#timeouts}
+
+---
+
+### VpcIpamPoolSourceResource <a name="VpcIpamPoolSourceResource" id="@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolSourceResource"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolSourceResource.Initializer"></a>
+
+```python
+from cdktn_provider_aws import vpc_ipam_pool
+
+vpcIpamPool.VpcIpamPoolSourceResource(
+  resource_id: str,
+  resource_owner: str,
+  resource_region: str,
+  resource_type: str
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolSourceResource.property.resourceId">resource_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/vpc_ipam_pool#resource_id VpcIpamPool#resource_id}. |
+| <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolSourceResource.property.resourceOwner">resource_owner</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/vpc_ipam_pool#resource_owner VpcIpamPool#resource_owner}. |
+| <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolSourceResource.property.resourceRegion">resource_region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/vpc_ipam_pool#resource_region VpcIpamPool#resource_region}. |
+| <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolSourceResource.property.resourceType">resource_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/vpc_ipam_pool#resource_type VpcIpamPool#resource_type}. |
+
+---
+
+##### `resource_id`<sup>Required</sup> <a name="resource_id" id="@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolSourceResource.property.resourceId"></a>
+
+```python
+resource_id: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/vpc_ipam_pool#resource_id VpcIpamPool#resource_id}.
+
+---
+
+##### `resource_owner`<sup>Required</sup> <a name="resource_owner" id="@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolSourceResource.property.resourceOwner"></a>
+
+```python
+resource_owner: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/vpc_ipam_pool#resource_owner VpcIpamPool#resource_owner}.
+
+---
+
+##### `resource_region`<sup>Required</sup> <a name="resource_region" id="@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolSourceResource.property.resourceRegion"></a>
+
+```python
+resource_region: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/vpc_ipam_pool#resource_region VpcIpamPool#resource_region}.
+
+---
+
+##### `resource_type`<sup>Required</sup> <a name="resource_type" id="@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolSourceResource.property.resourceType"></a>
+
+```python
+resource_type: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/vpc_ipam_pool#resource_type VpcIpamPool#resource_type}.
 
 ---
 
@@ -1968,9 +2143,9 @@ vpcIpamPool.VpcIpamPoolTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpc_ipam_pool#create VpcIpamPool#create}. |
-| <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpc_ipam_pool#delete VpcIpamPool#delete}. |
-| <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpc_ipam_pool#update VpcIpamPool#update}. |
+| <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/vpc_ipam_pool#create VpcIpamPool#create}. |
+| <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/vpc_ipam_pool#delete VpcIpamPool#delete}. |
+| <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/vpc_ipam_pool#update VpcIpamPool#update}. |
 
 ---
 
@@ -1982,7 +2157,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpc_ipam_pool#create VpcIpamPool#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/vpc_ipam_pool#create VpcIpamPool#create}.
 
 ---
 
@@ -1994,7 +2169,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpc_ipam_pool#delete VpcIpamPool#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/vpc_ipam_pool#delete VpcIpamPool#delete}.
 
 ---
 
@@ -2006,11 +2181,373 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpc_ipam_pool#update VpcIpamPool#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/vpc_ipam_pool#update VpcIpamPool#update}.
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
+
+### VpcIpamPoolSourceResourceOutputReference <a name="VpcIpamPoolSourceResourceOutputReference" id="@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolSourceResourceOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolSourceResourceOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_aws import vpc_ipam_pool
+
+vpcIpamPool.VpcIpamPoolSourceResourceOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolSourceResourceOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolSourceResourceOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolSourceResourceOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolSourceResourceOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolSourceResourceOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolSourceResourceOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolSourceResourceOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolSourceResourceOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolSourceResourceOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolSourceResourceOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolSourceResourceOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolSourceResourceOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolSourceResourceOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolSourceResourceOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolSourceResourceOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolSourceResourceOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolSourceResourceOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolSourceResourceOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolSourceResourceOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolSourceResourceOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolSourceResourceOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolSourceResourceOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolSourceResourceOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolSourceResourceOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolSourceResourceOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolSourceResourceOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolSourceResourceOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolSourceResourceOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolSourceResourceOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolSourceResourceOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolSourceResourceOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolSourceResourceOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolSourceResourceOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolSourceResourceOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolSourceResourceOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolSourceResourceOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolSourceResourceOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolSourceResourceOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolSourceResourceOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolSourceResourceOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolSourceResourceOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolSourceResourceOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolSourceResourceOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolSourceResourceOutputReference.property.resourceIdInput">resource_id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolSourceResourceOutputReference.property.resourceOwnerInput">resource_owner_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolSourceResourceOutputReference.property.resourceRegionInput">resource_region_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolSourceResourceOutputReference.property.resourceTypeInput">resource_type_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolSourceResourceOutputReference.property.resourceId">resource_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolSourceResourceOutputReference.property.resourceOwner">resource_owner</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolSourceResourceOutputReference.property.resourceRegion">resource_region</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolSourceResourceOutputReference.property.resourceType">resource_type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolSourceResourceOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolSourceResource">VpcIpamPoolSourceResource</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolSourceResourceOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolSourceResourceOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `resource_id_input`<sup>Optional</sup> <a name="resource_id_input" id="@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolSourceResourceOutputReference.property.resourceIdInput"></a>
+
+```python
+resource_id_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `resource_owner_input`<sup>Optional</sup> <a name="resource_owner_input" id="@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolSourceResourceOutputReference.property.resourceOwnerInput"></a>
+
+```python
+resource_owner_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `resource_region_input`<sup>Optional</sup> <a name="resource_region_input" id="@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolSourceResourceOutputReference.property.resourceRegionInput"></a>
+
+```python
+resource_region_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `resource_type_input`<sup>Optional</sup> <a name="resource_type_input" id="@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolSourceResourceOutputReference.property.resourceTypeInput"></a>
+
+```python
+resource_type_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `resource_id`<sup>Required</sup> <a name="resource_id" id="@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolSourceResourceOutputReference.property.resourceId"></a>
+
+```python
+resource_id: str
+```
+
+- *Type:* str
+
+---
+
+##### `resource_owner`<sup>Required</sup> <a name="resource_owner" id="@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolSourceResourceOutputReference.property.resourceOwner"></a>
+
+```python
+resource_owner: str
+```
+
+- *Type:* str
+
+---
+
+##### `resource_region`<sup>Required</sup> <a name="resource_region" id="@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolSourceResourceOutputReference.property.resourceRegion"></a>
+
+```python
+resource_region: str
+```
+
+- *Type:* str
+
+---
+
+##### `resource_type`<sup>Required</sup> <a name="resource_type" id="@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolSourceResourceOutputReference.property.resourceType"></a>
+
+```python
+resource_type: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolSourceResourceOutputReference.property.internalValue"></a>
+
+```python
+internal_value: VpcIpamPoolSourceResource
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolSourceResource">VpcIpamPoolSourceResource</a>
+
+---
+
 
 ### VpcIpamPoolTimeoutsOutputReference <a name="VpcIpamPoolTimeoutsOutputReference" id="@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolTimeoutsOutputReference"></a>
 

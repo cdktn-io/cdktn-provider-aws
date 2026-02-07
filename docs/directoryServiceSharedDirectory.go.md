@@ -4,12 +4,12 @@
 
 ### DirectoryServiceSharedDirectory <a name="DirectoryServiceSharedDirectory" id="@cdktn/provider-aws.directoryServiceSharedDirectory.DirectoryServiceSharedDirectory"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/directory_service_shared_directory aws_directory_service_shared_directory}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/directory_service_shared_directory aws_directory_service_shared_directory}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.directoryServiceSharedDirectory.DirectoryServiceSharedDirectory.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/directoryserviceshareddirectory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/directoryserviceshareddirectory"
 
 directoryserviceshareddirectory.NewDirectoryServiceSharedDirectory(scope Construct, id *string, config DirectoryServiceSharedDirectoryConfig) DirectoryServiceSharedDirectory
 ```
@@ -439,7 +439,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.directoryServiceSharedDirectory.DirectoryServiceSharedDirectory.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/directoryserviceshareddirectory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/directoryserviceshareddirectory"
 
 directoryserviceshareddirectory.DirectoryServiceSharedDirectory_IsConstruct(x interface{}) *bool
 ```
@@ -471,7 +471,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.directoryServiceSharedDirectory.DirectoryServiceSharedDirectory.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/directoryserviceshareddirectory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/directoryserviceshareddirectory"
 
 directoryserviceshareddirectory.DirectoryServiceSharedDirectory_IsTerraformElement(x interface{}) *bool
 ```
@@ -485,7 +485,7 @@ directoryserviceshareddirectory.DirectoryServiceSharedDirectory_IsTerraformEleme
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.directoryServiceSharedDirectory.DirectoryServiceSharedDirectory.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/directoryserviceshareddirectory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/directoryserviceshareddirectory"
 
 directoryserviceshareddirectory.DirectoryServiceSharedDirectory_IsTerraformResource(x interface{}) *bool
 ```
@@ -499,7 +499,7 @@ directoryserviceshareddirectory.DirectoryServiceSharedDirectory_IsTerraformResou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.directoryServiceSharedDirectory.DirectoryServiceSharedDirectory.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/directoryserviceshareddirectory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/directoryserviceshareddirectory"
 
 directoryserviceshareddirectory.DirectoryServiceSharedDirectory_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -528,7 +528,7 @@ The construct id used in the generated config for the DirectoryServiceSharedDire
 
 The id of the existing DirectoryServiceSharedDirectory that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/directory_service_shared_directory#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/directory_service_shared_directory#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -893,7 +893,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.directoryServiceSharedDirectory.DirectoryServiceSharedDirectoryConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/directoryserviceshareddirectory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/directoryserviceshareddirectory"
 
 &directoryserviceshareddirectory.DirectoryServiceSharedDirectoryConfig {
 	Connection: interface{},
@@ -904,12 +904,12 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/directoryserviceshared
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	DirectoryId: *string,
-	Target: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.directoryServiceSharedDirectory.DirectoryServiceSharedDirectoryTarget,
+	Target: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.directoryServiceSharedDirectory.DirectoryServiceSharedDirectoryTarget,
 	Id: *string,
 	Method: *string,
 	Notes: *string,
 	Region: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.directoryServiceSharedDirectory.DirectoryServiceSharedDirectoryTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.directoryServiceSharedDirectory.DirectoryServiceSharedDirectoryTimeouts,
 }
 ```
 
@@ -924,11 +924,11 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/directoryserviceshared
 | <code><a href="#@cdktn/provider-aws.directoryServiceSharedDirectory.DirectoryServiceSharedDirectoryConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.directoryServiceSharedDirectory.DirectoryServiceSharedDirectoryConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.directoryServiceSharedDirectory.DirectoryServiceSharedDirectoryConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.directoryServiceSharedDirectory.DirectoryServiceSharedDirectoryConfig.property.directoryId">DirectoryId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/directory_service_shared_directory#directory_id DirectoryServiceSharedDirectory#directory_id}. |
+| <code><a href="#@cdktn/provider-aws.directoryServiceSharedDirectory.DirectoryServiceSharedDirectoryConfig.property.directoryId">DirectoryId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/directory_service_shared_directory#directory_id DirectoryServiceSharedDirectory#directory_id}. |
 | <code><a href="#@cdktn/provider-aws.directoryServiceSharedDirectory.DirectoryServiceSharedDirectoryConfig.property.target">Target</a></code> | <code><a href="#@cdktn/provider-aws.directoryServiceSharedDirectory.DirectoryServiceSharedDirectoryTarget">DirectoryServiceSharedDirectoryTarget</a></code> | target block. |
-| <code><a href="#@cdktn/provider-aws.directoryServiceSharedDirectory.DirectoryServiceSharedDirectoryConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/directory_service_shared_directory#id DirectoryServiceSharedDirectory#id}. |
-| <code><a href="#@cdktn/provider-aws.directoryServiceSharedDirectory.DirectoryServiceSharedDirectoryConfig.property.method">Method</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/directory_service_shared_directory#method DirectoryServiceSharedDirectory#method}. |
-| <code><a href="#@cdktn/provider-aws.directoryServiceSharedDirectory.DirectoryServiceSharedDirectoryConfig.property.notes">Notes</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/directory_service_shared_directory#notes DirectoryServiceSharedDirectory#notes}. |
+| <code><a href="#@cdktn/provider-aws.directoryServiceSharedDirectory.DirectoryServiceSharedDirectoryConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/directory_service_shared_directory#id DirectoryServiceSharedDirectory#id}. |
+| <code><a href="#@cdktn/provider-aws.directoryServiceSharedDirectory.DirectoryServiceSharedDirectoryConfig.property.method">Method</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/directory_service_shared_directory#method DirectoryServiceSharedDirectory#method}. |
+| <code><a href="#@cdktn/provider-aws.directoryServiceSharedDirectory.DirectoryServiceSharedDirectoryConfig.property.notes">Notes</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/directory_service_shared_directory#notes DirectoryServiceSharedDirectory#notes}. |
 | <code><a href="#@cdktn/provider-aws.directoryServiceSharedDirectory.DirectoryServiceSharedDirectoryConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktn/provider-aws.directoryServiceSharedDirectory.DirectoryServiceSharedDirectoryConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.directoryServiceSharedDirectory.DirectoryServiceSharedDirectoryTimeouts">DirectoryServiceSharedDirectoryTimeouts</a></code> | timeouts block. |
 
@@ -1012,7 +1012,7 @@ DirectoryId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/directory_service_shared_directory#directory_id DirectoryServiceSharedDirectory#directory_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/directory_service_shared_directory#directory_id DirectoryServiceSharedDirectory#directory_id}.
 
 ---
 
@@ -1026,7 +1026,7 @@ Target DirectoryServiceSharedDirectoryTarget
 
 target block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/directory_service_shared_directory#target DirectoryServiceSharedDirectory#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/directory_service_shared_directory#target DirectoryServiceSharedDirectory#target}
 
 ---
 
@@ -1038,7 +1038,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/directory_service_shared_directory#id DirectoryServiceSharedDirectory#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/directory_service_shared_directory#id DirectoryServiceSharedDirectory#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1053,7 +1053,7 @@ Method *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/directory_service_shared_directory#method DirectoryServiceSharedDirectory#method}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/directory_service_shared_directory#method DirectoryServiceSharedDirectory#method}.
 
 ---
 
@@ -1065,7 +1065,7 @@ Notes *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/directory_service_shared_directory#notes DirectoryServiceSharedDirectory#notes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/directory_service_shared_directory#notes DirectoryServiceSharedDirectory#notes}.
 
 ---
 
@@ -1079,7 +1079,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/directory_service_shared_directory#region DirectoryServiceSharedDirectory#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/directory_service_shared_directory#region DirectoryServiceSharedDirectory#region}
 
 ---
 
@@ -1093,7 +1093,7 @@ Timeouts DirectoryServiceSharedDirectoryTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/directory_service_shared_directory#timeouts DirectoryServiceSharedDirectory#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/directory_service_shared_directory#timeouts DirectoryServiceSharedDirectory#timeouts}
 
 ---
 
@@ -1102,7 +1102,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.directoryServiceSharedDirectory.DirectoryServiceSharedDirectoryTarget.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/directoryserviceshareddirectory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/directoryserviceshareddirectory"
 
 &directoryserviceshareddirectory.DirectoryServiceSharedDirectoryTarget {
 	Id: *string,
@@ -1114,8 +1114,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/directoryserviceshared
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.directoryServiceSharedDirectory.DirectoryServiceSharedDirectoryTarget.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/directory_service_shared_directory#id DirectoryServiceSharedDirectory#id}. |
-| <code><a href="#@cdktn/provider-aws.directoryServiceSharedDirectory.DirectoryServiceSharedDirectoryTarget.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/directory_service_shared_directory#type DirectoryServiceSharedDirectory#type}. |
+| <code><a href="#@cdktn/provider-aws.directoryServiceSharedDirectory.DirectoryServiceSharedDirectoryTarget.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/directory_service_shared_directory#id DirectoryServiceSharedDirectory#id}. |
+| <code><a href="#@cdktn/provider-aws.directoryServiceSharedDirectory.DirectoryServiceSharedDirectoryTarget.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/directory_service_shared_directory#type DirectoryServiceSharedDirectory#type}. |
 
 ---
 
@@ -1127,7 +1127,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/directory_service_shared_directory#id DirectoryServiceSharedDirectory#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/directory_service_shared_directory#id DirectoryServiceSharedDirectory#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1142,7 +1142,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/directory_service_shared_directory#type DirectoryServiceSharedDirectory#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/directory_service_shared_directory#type DirectoryServiceSharedDirectory#type}.
 
 ---
 
@@ -1151,7 +1151,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.directoryServiceSharedDirectory.DirectoryServiceSharedDirectoryTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/directoryserviceshareddirectory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/directoryserviceshareddirectory"
 
 &directoryserviceshareddirectory.DirectoryServiceSharedDirectoryTimeouts {
 	Delete: *string,
@@ -1162,7 +1162,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/directoryserviceshared
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.directoryServiceSharedDirectory.DirectoryServiceSharedDirectoryTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/directory_service_shared_directory#delete DirectoryServiceSharedDirectory#delete}. |
+| <code><a href="#@cdktn/provider-aws.directoryServiceSharedDirectory.DirectoryServiceSharedDirectoryTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/directory_service_shared_directory#delete DirectoryServiceSharedDirectory#delete}. |
 
 ---
 
@@ -1174,7 +1174,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/directory_service_shared_directory#delete DirectoryServiceSharedDirectory#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/directory_service_shared_directory#delete DirectoryServiceSharedDirectory#delete}.
 
 ---
 
@@ -1185,7 +1185,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.directoryServiceSharedDirectory.DirectoryServiceSharedDirectoryTargetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/directoryserviceshareddirectory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/directoryserviceshareddirectory"
 
 directoryserviceshareddirectory.NewDirectoryServiceSharedDirectoryTargetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DirectoryServiceSharedDirectoryTargetOutputReference
 ```
@@ -1485,7 +1485,7 @@ func InternalValue() DirectoryServiceSharedDirectoryTarget
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.directoryServiceSharedDirectory.DirectoryServiceSharedDirectoryTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/directoryserviceshareddirectory"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/directoryserviceshareddirectory"
 
 directoryserviceshareddirectory.NewDirectoryServiceSharedDirectoryTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DirectoryServiceSharedDirectoryTimeoutsOutputReference
 ```

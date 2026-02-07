@@ -4,12 +4,12 @@
 
 ### SecurityhubMember <a name="SecurityhubMember" id="@cdktn/provider-aws.securityhubMember.SecurityhubMember"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/securityhub_member aws_securityhub_member}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/securityhub_member aws_securityhub_member}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.securityhubMember.SecurityhubMember.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/securityhubmember"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/securityhubmember"
 
 securityhubmember.NewSecurityhubMember(scope Construct, id *string, config SecurityhubMemberConfig) SecurityhubMember
 ```
@@ -406,7 +406,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.securityhubMember.SecurityhubMember.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/securityhubmember"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/securityhubmember"
 
 securityhubmember.SecurityhubMember_IsConstruct(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.securityhubMember.SecurityhubMember.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/securityhubmember"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/securityhubmember"
 
 securityhubmember.SecurityhubMember_IsTerraformElement(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ securityhubmember.SecurityhubMember_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.securityhubMember.SecurityhubMember.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/securityhubmember"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/securityhubmember"
 
 securityhubmember.SecurityhubMember_IsTerraformResource(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ securityhubmember.SecurityhubMember_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.securityhubMember.SecurityhubMember.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/securityhubmember"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/securityhubmember"
 
 securityhubmember.SecurityhubMember_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -495,7 +495,7 @@ The construct id used in the generated config for the SecurityhubMember to impor
 
 The id of the existing SecurityhubMember that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/securityhub_member#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/securityhub_member#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -827,7 +827,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.securityhubMember.SecurityhubMemberConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/securityhubmember"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/securityhubmember"
 
 &securityhubmember.SecurityhubMemberConfig {
 	Connection: interface{},
@@ -856,10 +856,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/securityhubmember"
 | <code><a href="#@cdktn/provider-aws.securityhubMember.SecurityhubMemberConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubMember.SecurityhubMemberConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.securityhubMember.SecurityhubMemberConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.securityhubMember.SecurityhubMemberConfig.property.accountId">AccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/securityhub_member#account_id SecurityhubMember#account_id}. |
-| <code><a href="#@cdktn/provider-aws.securityhubMember.SecurityhubMemberConfig.property.email">Email</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/securityhub_member#email SecurityhubMember#email}. |
-| <code><a href="#@cdktn/provider-aws.securityhubMember.SecurityhubMemberConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/securityhub_member#id SecurityhubMember#id}. |
-| <code><a href="#@cdktn/provider-aws.securityhubMember.SecurityhubMemberConfig.property.invite">Invite</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/securityhub_member#invite SecurityhubMember#invite}. |
+| <code><a href="#@cdktn/provider-aws.securityhubMember.SecurityhubMemberConfig.property.accountId">AccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/securityhub_member#account_id SecurityhubMember#account_id}. |
+| <code><a href="#@cdktn/provider-aws.securityhubMember.SecurityhubMemberConfig.property.email">Email</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/securityhub_member#email SecurityhubMember#email}. |
+| <code><a href="#@cdktn/provider-aws.securityhubMember.SecurityhubMemberConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/securityhub_member#id SecurityhubMember#id}. |
+| <code><a href="#@cdktn/provider-aws.securityhubMember.SecurityhubMemberConfig.property.invite">Invite</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/securityhub_member#invite SecurityhubMember#invite}. |
 | <code><a href="#@cdktn/provider-aws.securityhubMember.SecurityhubMemberConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -942,7 +942,7 @@ AccountId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/securityhub_member#account_id SecurityhubMember#account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/securityhub_member#account_id SecurityhubMember#account_id}.
 
 ---
 
@@ -954,7 +954,7 @@ Email *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/securityhub_member#email SecurityhubMember#email}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/securityhub_member#email SecurityhubMember#email}.
 
 ---
 
@@ -966,7 +966,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/securityhub_member#id SecurityhubMember#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/securityhub_member#id SecurityhubMember#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -981,7 +981,7 @@ Invite interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/securityhub_member#invite SecurityhubMember#invite}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/securityhub_member#invite SecurityhubMember#invite}.
 
 ---
 
@@ -995,7 +995,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/securityhub_member#region SecurityhubMember#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/securityhub_member#region SecurityhubMember#region}
 
 ---
 

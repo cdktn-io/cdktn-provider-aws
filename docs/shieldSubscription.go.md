@@ -4,12 +4,12 @@
 
 ### ShieldSubscription <a name="ShieldSubscription" id="@cdktn/provider-aws.shieldSubscription.ShieldSubscription"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/shield_subscription aws_shield_subscription}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/shield_subscription aws_shield_subscription}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.shieldSubscription.ShieldSubscription.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/shieldsubscription"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/shieldsubscription"
 
 shieldsubscription.NewShieldSubscription(scope Construct, id *string, config ShieldSubscriptionConfig) ShieldSubscription
 ```
@@ -392,7 +392,7 @@ func ResetSkipDestroy()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.shieldSubscription.ShieldSubscription.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/shieldsubscription"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/shieldsubscription"
 
 shieldsubscription.ShieldSubscription_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.shieldSubscription.ShieldSubscription.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/shieldsubscription"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/shieldsubscription"
 
 shieldsubscription.ShieldSubscription_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ shieldsubscription.ShieldSubscription_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.shieldSubscription.ShieldSubscription.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/shieldsubscription"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/shieldsubscription"
 
 shieldsubscription.ShieldSubscription_IsTerraformResource(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ shieldsubscription.ShieldSubscription_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.shieldSubscription.ShieldSubscription.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/shieldsubscription"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/shieldsubscription"
 
 shieldsubscription.ShieldSubscription_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -481,7 +481,7 @@ The construct id used in the generated config for the ShieldSubscription to impo
 
 The id of the existing ShieldSubscription that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/shield_subscription#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/shield_subscription#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -736,7 +736,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.shieldSubscription.ShieldSubscriptionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/shieldsubscription"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/shieldsubscription"
 
 &shieldsubscription.ShieldSubscriptionConfig {
 	Connection: interface{},
@@ -763,7 +763,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/shieldsubscription"
 | <code><a href="#@cdktn/provider-aws.shieldSubscription.ShieldSubscriptionConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.shieldSubscription.ShieldSubscriptionConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.shieldSubscription.ShieldSubscriptionConfig.property.autoRenew">AutoRenew</a></code> | <code>*string</code> | Whether to automatically renew the subscription when it expires. |
-| <code><a href="#@cdktn/provider-aws.shieldSubscription.ShieldSubscriptionConfig.property.skipDestroy">SkipDestroy</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/shield_subscription#skip_destroy ShieldSubscription#skip_destroy}. |
+| <code><a href="#@cdktn/provider-aws.shieldSubscription.ShieldSubscriptionConfig.property.skipDestroy">SkipDestroy</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/shield_subscription#skip_destroy ShieldSubscription#skip_destroy}. |
 
 ---
 
@@ -847,7 +847,7 @@ AutoRenew *string
 
 Whether to automatically renew the subscription when it expires.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/shield_subscription#auto_renew ShieldSubscription#auto_renew}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/shield_subscription#auto_renew ShieldSubscription#auto_renew}
 
 ---
 
@@ -859,7 +859,7 @@ SkipDestroy interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/shield_subscription#skip_destroy ShieldSubscription#skip_destroy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/shield_subscription#skip_destroy ShieldSubscription#skip_destroy}.
 
 ---
 

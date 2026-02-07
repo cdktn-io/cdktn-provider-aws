@@ -4,12 +4,12 @@
 
 ### CloudhsmV2Cluster <a name="CloudhsmV2Cluster" id="@cdktn/provider-aws.cloudhsmV2Cluster.CloudhsmV2Cluster"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudhsm_v2_cluster aws_cloudhsm_v2_cluster}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudhsm_v2_cluster aws_cloudhsm_v2_cluster}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudhsmV2Cluster.CloudhsmV2Cluster.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudhsmv2cluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudhsmv2cluster"
 
 cloudhsmv2cluster.NewCloudhsmV2Cluster(scope Construct, id *string, config CloudhsmV2ClusterConfig) CloudhsmV2Cluster
 ```
@@ -440,7 +440,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.cloudhsmV2Cluster.CloudhsmV2Cluster.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudhsmv2cluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudhsmv2cluster"
 
 cloudhsmv2cluster.CloudhsmV2Cluster_IsConstruct(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.cloudhsmV2Cluster.CloudhsmV2Cluster.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudhsmv2cluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudhsmv2cluster"
 
 cloudhsmv2cluster.CloudhsmV2Cluster_IsTerraformElement(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ cloudhsmv2cluster.CloudhsmV2Cluster_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.cloudhsmV2Cluster.CloudhsmV2Cluster.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudhsmv2cluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudhsmv2cluster"
 
 cloudhsmv2cluster.CloudhsmV2Cluster_IsTerraformResource(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ cloudhsmv2cluster.CloudhsmV2Cluster_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.cloudhsmV2Cluster.CloudhsmV2Cluster.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudhsmv2cluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudhsmv2cluster"
 
 cloudhsmv2cluster.CloudhsmV2Cluster_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -529,7 +529,7 @@ The construct id used in the generated config for the CloudhsmV2Cluster to impor
 
 The id of the existing CloudhsmV2Cluster that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudhsm_v2_cluster#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudhsm_v2_cluster#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -982,7 +982,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudhsmV2Cluster.CloudhsmV2ClusterClusterCertificates.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudhsmv2cluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudhsmv2cluster"
 
 &cloudhsmv2cluster.CloudhsmV2ClusterClusterCertificates {
 
@@ -995,7 +995,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudhsmv2cluster"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudhsmV2Cluster.CloudhsmV2ClusterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudhsmv2cluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudhsmv2cluster"
 
 &cloudhsmv2cluster.CloudhsmV2ClusterConfig {
 	Connection: interface{},
@@ -1013,7 +1013,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudhsmv2cluster"
 	SourceBackupIdentifier: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.cloudhsmV2Cluster.CloudhsmV2ClusterTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.cloudhsmV2Cluster.CloudhsmV2ClusterTimeouts,
 }
 ```
 
@@ -1028,14 +1028,14 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudhsmv2cluster"
 | <code><a href="#@cdktn/provider-aws.cloudhsmV2Cluster.CloudhsmV2ClusterConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudhsmV2Cluster.CloudhsmV2ClusterConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudhsmV2Cluster.CloudhsmV2ClusterConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudhsmV2Cluster.CloudhsmV2ClusterConfig.property.hsmType">HsmType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudhsm_v2_cluster#hsm_type CloudhsmV2Cluster#hsm_type}. |
-| <code><a href="#@cdktn/provider-aws.cloudhsmV2Cluster.CloudhsmV2ClusterConfig.property.subnetIds">SubnetIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudhsm_v2_cluster#subnet_ids CloudhsmV2Cluster#subnet_ids}. |
-| <code><a href="#@cdktn/provider-aws.cloudhsmV2Cluster.CloudhsmV2ClusterConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudhsm_v2_cluster#id CloudhsmV2Cluster#id}. |
-| <code><a href="#@cdktn/provider-aws.cloudhsmV2Cluster.CloudhsmV2ClusterConfig.property.mode">Mode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudhsm_v2_cluster#mode CloudhsmV2Cluster#mode}. |
+| <code><a href="#@cdktn/provider-aws.cloudhsmV2Cluster.CloudhsmV2ClusterConfig.property.hsmType">HsmType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudhsm_v2_cluster#hsm_type CloudhsmV2Cluster#hsm_type}. |
+| <code><a href="#@cdktn/provider-aws.cloudhsmV2Cluster.CloudhsmV2ClusterConfig.property.subnetIds">SubnetIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudhsm_v2_cluster#subnet_ids CloudhsmV2Cluster#subnet_ids}. |
+| <code><a href="#@cdktn/provider-aws.cloudhsmV2Cluster.CloudhsmV2ClusterConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudhsm_v2_cluster#id CloudhsmV2Cluster#id}. |
+| <code><a href="#@cdktn/provider-aws.cloudhsmV2Cluster.CloudhsmV2ClusterConfig.property.mode">Mode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudhsm_v2_cluster#mode CloudhsmV2Cluster#mode}. |
 | <code><a href="#@cdktn/provider-aws.cloudhsmV2Cluster.CloudhsmV2ClusterConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.cloudhsmV2Cluster.CloudhsmV2ClusterConfig.property.sourceBackupIdentifier">SourceBackupIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudhsm_v2_cluster#source_backup_identifier CloudhsmV2Cluster#source_backup_identifier}. |
-| <code><a href="#@cdktn/provider-aws.cloudhsmV2Cluster.CloudhsmV2ClusterConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudhsm_v2_cluster#tags CloudhsmV2Cluster#tags}. |
-| <code><a href="#@cdktn/provider-aws.cloudhsmV2Cluster.CloudhsmV2ClusterConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudhsm_v2_cluster#tags_all CloudhsmV2Cluster#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.cloudhsmV2Cluster.CloudhsmV2ClusterConfig.property.sourceBackupIdentifier">SourceBackupIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudhsm_v2_cluster#source_backup_identifier CloudhsmV2Cluster#source_backup_identifier}. |
+| <code><a href="#@cdktn/provider-aws.cloudhsmV2Cluster.CloudhsmV2ClusterConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudhsm_v2_cluster#tags CloudhsmV2Cluster#tags}. |
+| <code><a href="#@cdktn/provider-aws.cloudhsmV2Cluster.CloudhsmV2ClusterConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudhsm_v2_cluster#tags_all CloudhsmV2Cluster#tags_all}. |
 | <code><a href="#@cdktn/provider-aws.cloudhsmV2Cluster.CloudhsmV2ClusterConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.cloudhsmV2Cluster.CloudhsmV2ClusterTimeouts">CloudhsmV2ClusterTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1118,7 +1118,7 @@ HsmType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudhsm_v2_cluster#hsm_type CloudhsmV2Cluster#hsm_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudhsm_v2_cluster#hsm_type CloudhsmV2Cluster#hsm_type}.
 
 ---
 
@@ -1130,7 +1130,7 @@ SubnetIds *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudhsm_v2_cluster#subnet_ids CloudhsmV2Cluster#subnet_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudhsm_v2_cluster#subnet_ids CloudhsmV2Cluster#subnet_ids}.
 
 ---
 
@@ -1142,7 +1142,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudhsm_v2_cluster#id CloudhsmV2Cluster#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudhsm_v2_cluster#id CloudhsmV2Cluster#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1157,7 +1157,7 @@ Mode *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudhsm_v2_cluster#mode CloudhsmV2Cluster#mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudhsm_v2_cluster#mode CloudhsmV2Cluster#mode}.
 
 ---
 
@@ -1171,7 +1171,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudhsm_v2_cluster#region CloudhsmV2Cluster#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudhsm_v2_cluster#region CloudhsmV2Cluster#region}
 
 ---
 
@@ -1183,7 +1183,7 @@ SourceBackupIdentifier *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudhsm_v2_cluster#source_backup_identifier CloudhsmV2Cluster#source_backup_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudhsm_v2_cluster#source_backup_identifier CloudhsmV2Cluster#source_backup_identifier}.
 
 ---
 
@@ -1195,7 +1195,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudhsm_v2_cluster#tags CloudhsmV2Cluster#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudhsm_v2_cluster#tags CloudhsmV2Cluster#tags}.
 
 ---
 
@@ -1207,7 +1207,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudhsm_v2_cluster#tags_all CloudhsmV2Cluster#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudhsm_v2_cluster#tags_all CloudhsmV2Cluster#tags_all}.
 
 ---
 
@@ -1221,7 +1221,7 @@ Timeouts CloudhsmV2ClusterTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudhsm_v2_cluster#timeouts CloudhsmV2Cluster#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudhsm_v2_cluster#timeouts CloudhsmV2Cluster#timeouts}
 
 ---
 
@@ -1230,7 +1230,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudhsmV2Cluster.CloudhsmV2ClusterTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudhsmv2cluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudhsmv2cluster"
 
 &cloudhsmv2cluster.CloudhsmV2ClusterTimeouts {
 	Create: *string,
@@ -1243,9 +1243,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudhsmv2cluster"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudhsmV2Cluster.CloudhsmV2ClusterTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudhsm_v2_cluster#create CloudhsmV2Cluster#create}. |
-| <code><a href="#@cdktn/provider-aws.cloudhsmV2Cluster.CloudhsmV2ClusterTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudhsm_v2_cluster#delete CloudhsmV2Cluster#delete}. |
-| <code><a href="#@cdktn/provider-aws.cloudhsmV2Cluster.CloudhsmV2ClusterTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudhsm_v2_cluster#update CloudhsmV2Cluster#update}. |
+| <code><a href="#@cdktn/provider-aws.cloudhsmV2Cluster.CloudhsmV2ClusterTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudhsm_v2_cluster#create CloudhsmV2Cluster#create}. |
+| <code><a href="#@cdktn/provider-aws.cloudhsmV2Cluster.CloudhsmV2ClusterTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudhsm_v2_cluster#delete CloudhsmV2Cluster#delete}. |
+| <code><a href="#@cdktn/provider-aws.cloudhsmV2Cluster.CloudhsmV2ClusterTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudhsm_v2_cluster#update CloudhsmV2Cluster#update}. |
 
 ---
 
@@ -1257,7 +1257,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudhsm_v2_cluster#create CloudhsmV2Cluster#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudhsm_v2_cluster#create CloudhsmV2Cluster#create}.
 
 ---
 
@@ -1269,7 +1269,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudhsm_v2_cluster#delete CloudhsmV2Cluster#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudhsm_v2_cluster#delete CloudhsmV2Cluster#delete}.
 
 ---
 
@@ -1281,7 +1281,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudhsm_v2_cluster#update CloudhsmV2Cluster#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudhsm_v2_cluster#update CloudhsmV2Cluster#update}.
 
 ---
 
@@ -1292,7 +1292,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudhsmV2Cluster.CloudhsmV2ClusterClusterCertificatesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudhsmv2cluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudhsmv2cluster"
 
 cloudhsmv2cluster.NewCloudhsmV2ClusterClusterCertificatesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudhsmV2ClusterClusterCertificatesList
 ```
@@ -1441,7 +1441,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudhsmV2Cluster.CloudhsmV2ClusterClusterCertificatesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudhsmv2cluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudhsmv2cluster"
 
 cloudhsmv2cluster.NewCloudhsmV2ClusterClusterCertificatesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudhsmV2ClusterClusterCertificatesOutputReference
 ```
@@ -1763,7 +1763,7 @@ func InternalValue() CloudhsmV2ClusterClusterCertificates
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudhsmV2Cluster.CloudhsmV2ClusterTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudhsmv2cluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudhsmv2cluster"
 
 cloudhsmv2cluster.NewCloudhsmV2ClusterTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudhsmV2ClusterTimeoutsOutputReference
 ```

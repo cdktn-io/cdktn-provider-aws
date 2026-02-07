@@ -4,12 +4,12 @@
 
 ### ImagebuilderImage <a name="ImagebuilderImage" id="@cdktn/provider-aws.imagebuilderImage.ImagebuilderImage"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/imagebuilder_image aws_imagebuilder_image}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/imagebuilder_image aws_imagebuilder_image}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.imagebuilderImage.ImagebuilderImage.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/imagebuilderimage"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/imagebuilderimage"
 
 imagebuilderimage.NewImagebuilderImage(scope Construct, id *string, config ImagebuilderImageConfig) ImagebuilderImage
 ```
@@ -541,7 +541,7 @@ func ResetWorkflow()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.imagebuilderImage.ImagebuilderImage.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/imagebuilderimage"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/imagebuilderimage"
 
 imagebuilderimage.ImagebuilderImage_IsConstruct(x interface{}) *bool
 ```
@@ -573,7 +573,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.imagebuilderImage.ImagebuilderImage.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/imagebuilderimage"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/imagebuilderimage"
 
 imagebuilderimage.ImagebuilderImage_IsTerraformElement(x interface{}) *bool
 ```
@@ -587,7 +587,7 @@ imagebuilderimage.ImagebuilderImage_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.imagebuilderImage.ImagebuilderImage.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/imagebuilderimage"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/imagebuilderimage"
 
 imagebuilderimage.ImagebuilderImage_IsTerraformResource(x interface{}) *bool
 ```
@@ -601,7 +601,7 @@ imagebuilderimage.ImagebuilderImage_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.imagebuilderImage.ImagebuilderImage.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/imagebuilderimage"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/imagebuilderimage"
 
 imagebuilderimage.ImagebuilderImage_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -630,7 +630,7 @@ The construct id used in the generated config for the ImagebuilderImage to impor
 
 The id of the existing ImagebuilderImage that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/imagebuilder_image#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/imagebuilder_image#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1237,7 +1237,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.imagebuilderImage.ImagebuilderImageConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/imagebuilderimage"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/imagebuilderimage"
 
 &imagebuilderimage.ImagebuilderImageConfig {
 	Connection: interface{},
@@ -1254,13 +1254,13 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/imagebuilderimage"
 	ExecutionRole: *string,
 	Id: *string,
 	ImageRecipeArn: *string,
-	ImageScanningConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.imagebuilderImage.ImagebuilderImageImageScanningConfiguration,
-	ImageTestsConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.imagebuilderImage.ImagebuilderImageImageTestsConfiguration,
-	LoggingConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.imagebuilderImage.ImagebuilderImageLoggingConfiguration,
+	ImageScanningConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.imagebuilderImage.ImagebuilderImageImageScanningConfiguration,
+	ImageTestsConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.imagebuilderImage.ImagebuilderImageImageTestsConfiguration,
+	LoggingConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.imagebuilderImage.ImagebuilderImageLoggingConfiguration,
 	Region: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.imagebuilderImage.ImagebuilderImageTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.imagebuilderImage.ImagebuilderImageTimeouts,
 	Workflow: interface{},
 }
 ```
@@ -1276,19 +1276,19 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/imagebuilderimage"
 | <code><a href="#@cdktn/provider-aws.imagebuilderImage.ImagebuilderImageConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.imagebuilderImage.ImagebuilderImageConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.imagebuilderImage.ImagebuilderImageConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.imagebuilderImage.ImagebuilderImageConfig.property.infrastructureConfigurationArn">InfrastructureConfigurationArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/imagebuilder_image#infrastructure_configuration_arn ImagebuilderImage#infrastructure_configuration_arn}. |
-| <code><a href="#@cdktn/provider-aws.imagebuilderImage.ImagebuilderImageConfig.property.containerRecipeArn">ContainerRecipeArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/imagebuilder_image#container_recipe_arn ImagebuilderImage#container_recipe_arn}. |
-| <code><a href="#@cdktn/provider-aws.imagebuilderImage.ImagebuilderImageConfig.property.distributionConfigurationArn">DistributionConfigurationArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/imagebuilder_image#distribution_configuration_arn ImagebuilderImage#distribution_configuration_arn}. |
-| <code><a href="#@cdktn/provider-aws.imagebuilderImage.ImagebuilderImageConfig.property.enhancedImageMetadataEnabled">EnhancedImageMetadataEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/imagebuilder_image#enhanced_image_metadata_enabled ImagebuilderImage#enhanced_image_metadata_enabled}. |
-| <code><a href="#@cdktn/provider-aws.imagebuilderImage.ImagebuilderImageConfig.property.executionRole">ExecutionRole</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/imagebuilder_image#execution_role ImagebuilderImage#execution_role}. |
-| <code><a href="#@cdktn/provider-aws.imagebuilderImage.ImagebuilderImageConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/imagebuilder_image#id ImagebuilderImage#id}. |
-| <code><a href="#@cdktn/provider-aws.imagebuilderImage.ImagebuilderImageConfig.property.imageRecipeArn">ImageRecipeArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/imagebuilder_image#image_recipe_arn ImagebuilderImage#image_recipe_arn}. |
+| <code><a href="#@cdktn/provider-aws.imagebuilderImage.ImagebuilderImageConfig.property.infrastructureConfigurationArn">InfrastructureConfigurationArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/imagebuilder_image#infrastructure_configuration_arn ImagebuilderImage#infrastructure_configuration_arn}. |
+| <code><a href="#@cdktn/provider-aws.imagebuilderImage.ImagebuilderImageConfig.property.containerRecipeArn">ContainerRecipeArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/imagebuilder_image#container_recipe_arn ImagebuilderImage#container_recipe_arn}. |
+| <code><a href="#@cdktn/provider-aws.imagebuilderImage.ImagebuilderImageConfig.property.distributionConfigurationArn">DistributionConfigurationArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/imagebuilder_image#distribution_configuration_arn ImagebuilderImage#distribution_configuration_arn}. |
+| <code><a href="#@cdktn/provider-aws.imagebuilderImage.ImagebuilderImageConfig.property.enhancedImageMetadataEnabled">EnhancedImageMetadataEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/imagebuilder_image#enhanced_image_metadata_enabled ImagebuilderImage#enhanced_image_metadata_enabled}. |
+| <code><a href="#@cdktn/provider-aws.imagebuilderImage.ImagebuilderImageConfig.property.executionRole">ExecutionRole</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/imagebuilder_image#execution_role ImagebuilderImage#execution_role}. |
+| <code><a href="#@cdktn/provider-aws.imagebuilderImage.ImagebuilderImageConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/imagebuilder_image#id ImagebuilderImage#id}. |
+| <code><a href="#@cdktn/provider-aws.imagebuilderImage.ImagebuilderImageConfig.property.imageRecipeArn">ImageRecipeArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/imagebuilder_image#image_recipe_arn ImagebuilderImage#image_recipe_arn}. |
 | <code><a href="#@cdktn/provider-aws.imagebuilderImage.ImagebuilderImageConfig.property.imageScanningConfiguration">ImageScanningConfiguration</a></code> | <code><a href="#@cdktn/provider-aws.imagebuilderImage.ImagebuilderImageImageScanningConfiguration">ImagebuilderImageImageScanningConfiguration</a></code> | image_scanning_configuration block. |
 | <code><a href="#@cdktn/provider-aws.imagebuilderImage.ImagebuilderImageConfig.property.imageTestsConfiguration">ImageTestsConfiguration</a></code> | <code><a href="#@cdktn/provider-aws.imagebuilderImage.ImagebuilderImageImageTestsConfiguration">ImagebuilderImageImageTestsConfiguration</a></code> | image_tests_configuration block. |
 | <code><a href="#@cdktn/provider-aws.imagebuilderImage.ImagebuilderImageConfig.property.loggingConfiguration">LoggingConfiguration</a></code> | <code><a href="#@cdktn/provider-aws.imagebuilderImage.ImagebuilderImageLoggingConfiguration">ImagebuilderImageLoggingConfiguration</a></code> | logging_configuration block. |
 | <code><a href="#@cdktn/provider-aws.imagebuilderImage.ImagebuilderImageConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.imagebuilderImage.ImagebuilderImageConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/imagebuilder_image#tags ImagebuilderImage#tags}. |
-| <code><a href="#@cdktn/provider-aws.imagebuilderImage.ImagebuilderImageConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/imagebuilder_image#tags_all ImagebuilderImage#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.imagebuilderImage.ImagebuilderImageConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/imagebuilder_image#tags ImagebuilderImage#tags}. |
+| <code><a href="#@cdktn/provider-aws.imagebuilderImage.ImagebuilderImageConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/imagebuilder_image#tags_all ImagebuilderImage#tags_all}. |
 | <code><a href="#@cdktn/provider-aws.imagebuilderImage.ImagebuilderImageConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.imagebuilderImage.ImagebuilderImageTimeouts">ImagebuilderImageTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-aws.imagebuilderImage.ImagebuilderImageConfig.property.workflow">Workflow</a></code> | <code>interface{}</code> | workflow block. |
 
@@ -1372,7 +1372,7 @@ InfrastructureConfigurationArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/imagebuilder_image#infrastructure_configuration_arn ImagebuilderImage#infrastructure_configuration_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/imagebuilder_image#infrastructure_configuration_arn ImagebuilderImage#infrastructure_configuration_arn}.
 
 ---
 
@@ -1384,7 +1384,7 @@ ContainerRecipeArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/imagebuilder_image#container_recipe_arn ImagebuilderImage#container_recipe_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/imagebuilder_image#container_recipe_arn ImagebuilderImage#container_recipe_arn}.
 
 ---
 
@@ -1396,7 +1396,7 @@ DistributionConfigurationArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/imagebuilder_image#distribution_configuration_arn ImagebuilderImage#distribution_configuration_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/imagebuilder_image#distribution_configuration_arn ImagebuilderImage#distribution_configuration_arn}.
 
 ---
 
@@ -1408,7 +1408,7 @@ EnhancedImageMetadataEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/imagebuilder_image#enhanced_image_metadata_enabled ImagebuilderImage#enhanced_image_metadata_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/imagebuilder_image#enhanced_image_metadata_enabled ImagebuilderImage#enhanced_image_metadata_enabled}.
 
 ---
 
@@ -1420,7 +1420,7 @@ ExecutionRole *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/imagebuilder_image#execution_role ImagebuilderImage#execution_role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/imagebuilder_image#execution_role ImagebuilderImage#execution_role}.
 
 ---
 
@@ -1432,7 +1432,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/imagebuilder_image#id ImagebuilderImage#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/imagebuilder_image#id ImagebuilderImage#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1447,7 +1447,7 @@ ImageRecipeArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/imagebuilder_image#image_recipe_arn ImagebuilderImage#image_recipe_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/imagebuilder_image#image_recipe_arn ImagebuilderImage#image_recipe_arn}.
 
 ---
 
@@ -1461,7 +1461,7 @@ ImageScanningConfiguration ImagebuilderImageImageScanningConfiguration
 
 image_scanning_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/imagebuilder_image#image_scanning_configuration ImagebuilderImage#image_scanning_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/imagebuilder_image#image_scanning_configuration ImagebuilderImage#image_scanning_configuration}
 
 ---
 
@@ -1475,7 +1475,7 @@ ImageTestsConfiguration ImagebuilderImageImageTestsConfiguration
 
 image_tests_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/imagebuilder_image#image_tests_configuration ImagebuilderImage#image_tests_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/imagebuilder_image#image_tests_configuration ImagebuilderImage#image_tests_configuration}
 
 ---
 
@@ -1489,7 +1489,7 @@ LoggingConfiguration ImagebuilderImageLoggingConfiguration
 
 logging_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/imagebuilder_image#logging_configuration ImagebuilderImage#logging_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/imagebuilder_image#logging_configuration ImagebuilderImage#logging_configuration}
 
 ---
 
@@ -1503,7 +1503,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/imagebuilder_image#region ImagebuilderImage#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/imagebuilder_image#region ImagebuilderImage#region}
 
 ---
 
@@ -1515,7 +1515,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/imagebuilder_image#tags ImagebuilderImage#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/imagebuilder_image#tags ImagebuilderImage#tags}.
 
 ---
 
@@ -1527,7 +1527,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/imagebuilder_image#tags_all ImagebuilderImage#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/imagebuilder_image#tags_all ImagebuilderImage#tags_all}.
 
 ---
 
@@ -1541,7 +1541,7 @@ Timeouts ImagebuilderImageTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/imagebuilder_image#timeouts ImagebuilderImage#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/imagebuilder_image#timeouts ImagebuilderImage#timeouts}
 
 ---
 
@@ -1555,7 +1555,7 @@ Workflow interface{}
 
 workflow block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/imagebuilder_image#workflow ImagebuilderImage#workflow}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/imagebuilder_image#workflow ImagebuilderImage#workflow}
 
 ---
 
@@ -1564,10 +1564,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.imagebuilderImage.ImagebuilderImageImageScanningConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/imagebuilderimage"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/imagebuilderimage"
 
 &imagebuilderimage.ImagebuilderImageImageScanningConfiguration {
-	EcrConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.imagebuilderImage.ImagebuilderImageImageScanningConfigurationEcrConfiguration,
+	EcrConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.imagebuilderImage.ImagebuilderImageImageScanningConfigurationEcrConfiguration,
 	ImageScanningEnabled: interface{},
 }
 ```
@@ -1577,7 +1577,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/imagebuilderimage"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.imagebuilderImage.ImagebuilderImageImageScanningConfiguration.property.ecrConfiguration">EcrConfiguration</a></code> | <code><a href="#@cdktn/provider-aws.imagebuilderImage.ImagebuilderImageImageScanningConfigurationEcrConfiguration">ImagebuilderImageImageScanningConfigurationEcrConfiguration</a></code> | ecr_configuration block. |
-| <code><a href="#@cdktn/provider-aws.imagebuilderImage.ImagebuilderImageImageScanningConfiguration.property.imageScanningEnabled">ImageScanningEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/imagebuilder_image#image_scanning_enabled ImagebuilderImage#image_scanning_enabled}. |
+| <code><a href="#@cdktn/provider-aws.imagebuilderImage.ImagebuilderImageImageScanningConfiguration.property.imageScanningEnabled">ImageScanningEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/imagebuilder_image#image_scanning_enabled ImagebuilderImage#image_scanning_enabled}. |
 
 ---
 
@@ -1591,7 +1591,7 @@ EcrConfiguration ImagebuilderImageImageScanningConfigurationEcrConfiguration
 
 ecr_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/imagebuilder_image#ecr_configuration ImagebuilderImage#ecr_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/imagebuilder_image#ecr_configuration ImagebuilderImage#ecr_configuration}
 
 ---
 
@@ -1603,7 +1603,7 @@ ImageScanningEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/imagebuilder_image#image_scanning_enabled ImagebuilderImage#image_scanning_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/imagebuilder_image#image_scanning_enabled ImagebuilderImage#image_scanning_enabled}.
 
 ---
 
@@ -1612,7 +1612,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.imagebuilderImage.ImagebuilderImageImageScanningConfigurationEcrConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/imagebuilderimage"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/imagebuilderimage"
 
 &imagebuilderimage.ImagebuilderImageImageScanningConfigurationEcrConfiguration {
 	ContainerTags: *[]*string,
@@ -1624,8 +1624,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/imagebuilderimage"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.imagebuilderImage.ImagebuilderImageImageScanningConfigurationEcrConfiguration.property.containerTags">ContainerTags</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/imagebuilder_image#container_tags ImagebuilderImage#container_tags}. |
-| <code><a href="#@cdktn/provider-aws.imagebuilderImage.ImagebuilderImageImageScanningConfigurationEcrConfiguration.property.repositoryName">RepositoryName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/imagebuilder_image#repository_name ImagebuilderImage#repository_name}. |
+| <code><a href="#@cdktn/provider-aws.imagebuilderImage.ImagebuilderImageImageScanningConfigurationEcrConfiguration.property.containerTags">ContainerTags</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/imagebuilder_image#container_tags ImagebuilderImage#container_tags}. |
+| <code><a href="#@cdktn/provider-aws.imagebuilderImage.ImagebuilderImageImageScanningConfigurationEcrConfiguration.property.repositoryName">RepositoryName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/imagebuilder_image#repository_name ImagebuilderImage#repository_name}. |
 
 ---
 
@@ -1637,7 +1637,7 @@ ContainerTags *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/imagebuilder_image#container_tags ImagebuilderImage#container_tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/imagebuilder_image#container_tags ImagebuilderImage#container_tags}.
 
 ---
 
@@ -1649,7 +1649,7 @@ RepositoryName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/imagebuilder_image#repository_name ImagebuilderImage#repository_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/imagebuilder_image#repository_name ImagebuilderImage#repository_name}.
 
 ---
 
@@ -1658,7 +1658,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.imagebuilderImage.ImagebuilderImageImageTestsConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/imagebuilderimage"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/imagebuilderimage"
 
 &imagebuilderimage.ImagebuilderImageImageTestsConfiguration {
 	ImageTestsEnabled: interface{},
@@ -1670,8 +1670,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/imagebuilderimage"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.imagebuilderImage.ImagebuilderImageImageTestsConfiguration.property.imageTestsEnabled">ImageTestsEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/imagebuilder_image#image_tests_enabled ImagebuilderImage#image_tests_enabled}. |
-| <code><a href="#@cdktn/provider-aws.imagebuilderImage.ImagebuilderImageImageTestsConfiguration.property.timeoutMinutes">TimeoutMinutes</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/imagebuilder_image#timeout_minutes ImagebuilderImage#timeout_minutes}. |
+| <code><a href="#@cdktn/provider-aws.imagebuilderImage.ImagebuilderImageImageTestsConfiguration.property.imageTestsEnabled">ImageTestsEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/imagebuilder_image#image_tests_enabled ImagebuilderImage#image_tests_enabled}. |
+| <code><a href="#@cdktn/provider-aws.imagebuilderImage.ImagebuilderImageImageTestsConfiguration.property.timeoutMinutes">TimeoutMinutes</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/imagebuilder_image#timeout_minutes ImagebuilderImage#timeout_minutes}. |
 
 ---
 
@@ -1683,7 +1683,7 @@ ImageTestsEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/imagebuilder_image#image_tests_enabled ImagebuilderImage#image_tests_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/imagebuilder_image#image_tests_enabled ImagebuilderImage#image_tests_enabled}.
 
 ---
 
@@ -1695,7 +1695,7 @@ TimeoutMinutes *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/imagebuilder_image#timeout_minutes ImagebuilderImage#timeout_minutes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/imagebuilder_image#timeout_minutes ImagebuilderImage#timeout_minutes}.
 
 ---
 
@@ -1704,7 +1704,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.imagebuilderImage.ImagebuilderImageLoggingConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/imagebuilderimage"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/imagebuilderimage"
 
 &imagebuilderimage.ImagebuilderImageLoggingConfiguration {
 	LogGroupName: *string,
@@ -1715,7 +1715,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/imagebuilderimage"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.imagebuilderImage.ImagebuilderImageLoggingConfiguration.property.logGroupName">LogGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/imagebuilder_image#log_group_name ImagebuilderImage#log_group_name}. |
+| <code><a href="#@cdktn/provider-aws.imagebuilderImage.ImagebuilderImageLoggingConfiguration.property.logGroupName">LogGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/imagebuilder_image#log_group_name ImagebuilderImage#log_group_name}. |
 
 ---
 
@@ -1727,7 +1727,7 @@ LogGroupName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/imagebuilder_image#log_group_name ImagebuilderImage#log_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/imagebuilder_image#log_group_name ImagebuilderImage#log_group_name}.
 
 ---
 
@@ -1736,7 +1736,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.imagebuilderImage.ImagebuilderImageOutputResources.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/imagebuilderimage"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/imagebuilderimage"
 
 &imagebuilderimage.ImagebuilderImageOutputResources {
 
@@ -1749,7 +1749,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/imagebuilderimage"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.imagebuilderImage.ImagebuilderImageOutputResourcesAmis.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/imagebuilderimage"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/imagebuilderimage"
 
 &imagebuilderimage.ImagebuilderImageOutputResourcesAmis {
 
@@ -1762,7 +1762,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/imagebuilderimage"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.imagebuilderImage.ImagebuilderImageOutputResourcesContainers.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/imagebuilderimage"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/imagebuilderimage"
 
 &imagebuilderimage.ImagebuilderImageOutputResourcesContainers {
 
@@ -1775,7 +1775,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/imagebuilderimage"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.imagebuilderImage.ImagebuilderImageTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/imagebuilderimage"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/imagebuilderimage"
 
 &imagebuilderimage.ImagebuilderImageTimeouts {
 	Create: *string,
@@ -1786,7 +1786,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/imagebuilderimage"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.imagebuilderImage.ImagebuilderImageTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/imagebuilder_image#create ImagebuilderImage#create}. |
+| <code><a href="#@cdktn/provider-aws.imagebuilderImage.ImagebuilderImageTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/imagebuilder_image#create ImagebuilderImage#create}. |
 
 ---
 
@@ -1798,7 +1798,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/imagebuilder_image#create ImagebuilderImage#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/imagebuilder_image#create ImagebuilderImage#create}.
 
 ---
 
@@ -1807,7 +1807,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.imagebuilderImage.ImagebuilderImageWorkflow.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/imagebuilderimage"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/imagebuilderimage"
 
 &imagebuilderimage.ImagebuilderImageWorkflow {
 	WorkflowArn: *string,
@@ -1821,9 +1821,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/imagebuilderimage"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.imagebuilderImage.ImagebuilderImageWorkflow.property.workflowArn">WorkflowArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/imagebuilder_image#workflow_arn ImagebuilderImage#workflow_arn}. |
-| <code><a href="#@cdktn/provider-aws.imagebuilderImage.ImagebuilderImageWorkflow.property.onFailure">OnFailure</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/imagebuilder_image#on_failure ImagebuilderImage#on_failure}. |
-| <code><a href="#@cdktn/provider-aws.imagebuilderImage.ImagebuilderImageWorkflow.property.parallelGroup">ParallelGroup</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/imagebuilder_image#parallel_group ImagebuilderImage#parallel_group}. |
+| <code><a href="#@cdktn/provider-aws.imagebuilderImage.ImagebuilderImageWorkflow.property.workflowArn">WorkflowArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/imagebuilder_image#workflow_arn ImagebuilderImage#workflow_arn}. |
+| <code><a href="#@cdktn/provider-aws.imagebuilderImage.ImagebuilderImageWorkflow.property.onFailure">OnFailure</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/imagebuilder_image#on_failure ImagebuilderImage#on_failure}. |
+| <code><a href="#@cdktn/provider-aws.imagebuilderImage.ImagebuilderImageWorkflow.property.parallelGroup">ParallelGroup</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/imagebuilder_image#parallel_group ImagebuilderImage#parallel_group}. |
 | <code><a href="#@cdktn/provider-aws.imagebuilderImage.ImagebuilderImageWorkflow.property.parameter">Parameter</a></code> | <code>interface{}</code> | parameter block. |
 
 ---
@@ -1836,7 +1836,7 @@ WorkflowArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/imagebuilder_image#workflow_arn ImagebuilderImage#workflow_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/imagebuilder_image#workflow_arn ImagebuilderImage#workflow_arn}.
 
 ---
 
@@ -1848,7 +1848,7 @@ OnFailure *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/imagebuilder_image#on_failure ImagebuilderImage#on_failure}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/imagebuilder_image#on_failure ImagebuilderImage#on_failure}.
 
 ---
 
@@ -1860,7 +1860,7 @@ ParallelGroup *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/imagebuilder_image#parallel_group ImagebuilderImage#parallel_group}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/imagebuilder_image#parallel_group ImagebuilderImage#parallel_group}.
 
 ---
 
@@ -1874,7 +1874,7 @@ Parameter interface{}
 
 parameter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/imagebuilder_image#parameter ImagebuilderImage#parameter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/imagebuilder_image#parameter ImagebuilderImage#parameter}
 
 ---
 
@@ -1883,7 +1883,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.imagebuilderImage.ImagebuilderImageWorkflowParameter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/imagebuilderimage"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/imagebuilderimage"
 
 &imagebuilderimage.ImagebuilderImageWorkflowParameter {
 	Name: *string,
@@ -1895,8 +1895,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/imagebuilderimage"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.imagebuilderImage.ImagebuilderImageWorkflowParameter.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/imagebuilder_image#name ImagebuilderImage#name}. |
-| <code><a href="#@cdktn/provider-aws.imagebuilderImage.ImagebuilderImageWorkflowParameter.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/imagebuilder_image#value ImagebuilderImage#value}. |
+| <code><a href="#@cdktn/provider-aws.imagebuilderImage.ImagebuilderImageWorkflowParameter.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/imagebuilder_image#name ImagebuilderImage#name}. |
+| <code><a href="#@cdktn/provider-aws.imagebuilderImage.ImagebuilderImageWorkflowParameter.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/imagebuilder_image#value ImagebuilderImage#value}. |
 
 ---
 
@@ -1908,7 +1908,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/imagebuilder_image#name ImagebuilderImage#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/imagebuilder_image#name ImagebuilderImage#name}.
 
 ---
 
@@ -1920,7 +1920,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/imagebuilder_image#value ImagebuilderImage#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/imagebuilder_image#value ImagebuilderImage#value}.
 
 ---
 
@@ -1931,7 +1931,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.imagebuilderImage.ImagebuilderImageImageScanningConfigurationEcrConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/imagebuilderimage"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/imagebuilderimage"
 
 imagebuilderimage.NewImagebuilderImageImageScanningConfigurationEcrConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ImagebuilderImageImageScanningConfigurationEcrConfigurationOutputReference
 ```
@@ -2238,7 +2238,7 @@ func InternalValue() ImagebuilderImageImageScanningConfigurationEcrConfiguration
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.imagebuilderImage.ImagebuilderImageImageScanningConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/imagebuilderimage"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/imagebuilderimage"
 
 imagebuilderimage.NewImagebuilderImageImageScanningConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ImagebuilderImageImageScanningConfigurationOutputReference
 ```
@@ -2558,7 +2558,7 @@ func InternalValue() ImagebuilderImageImageScanningConfiguration
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.imagebuilderImage.ImagebuilderImageImageTestsConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/imagebuilderimage"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/imagebuilderimage"
 
 imagebuilderimage.NewImagebuilderImageImageTestsConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ImagebuilderImageImageTestsConfigurationOutputReference
 ```
@@ -2865,7 +2865,7 @@ func InternalValue() ImagebuilderImageImageTestsConfiguration
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.imagebuilderImage.ImagebuilderImageLoggingConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/imagebuilderimage"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/imagebuilderimage"
 
 imagebuilderimage.NewImagebuilderImageLoggingConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ImagebuilderImageLoggingConfigurationOutputReference
 ```
@@ -3136,7 +3136,7 @@ func InternalValue() ImagebuilderImageLoggingConfiguration
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.imagebuilderImage.ImagebuilderImageOutputResourcesAmisList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/imagebuilderimage"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/imagebuilderimage"
 
 imagebuilderimage.NewImagebuilderImageOutputResourcesAmisList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ImagebuilderImageOutputResourcesAmisList
 ```
@@ -3285,7 +3285,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.imagebuilderImage.ImagebuilderImageOutputResourcesAmisOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/imagebuilderimage"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/imagebuilderimage"
 
 imagebuilderimage.NewImagebuilderImageOutputResourcesAmisOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ImagebuilderImageOutputResourcesAmisOutputReference
 ```
@@ -3607,7 +3607,7 @@ func InternalValue() ImagebuilderImageOutputResourcesAmis
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.imagebuilderImage.ImagebuilderImageOutputResourcesContainersList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/imagebuilderimage"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/imagebuilderimage"
 
 imagebuilderimage.NewImagebuilderImageOutputResourcesContainersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ImagebuilderImageOutputResourcesContainersList
 ```
@@ -3756,7 +3756,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.imagebuilderImage.ImagebuilderImageOutputResourcesContainersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/imagebuilderimage"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/imagebuilderimage"
 
 imagebuilderimage.NewImagebuilderImageOutputResourcesContainersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ImagebuilderImageOutputResourcesContainersOutputReference
 ```
@@ -4045,7 +4045,7 @@ func InternalValue() ImagebuilderImageOutputResourcesContainers
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.imagebuilderImage.ImagebuilderImageOutputResourcesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/imagebuilderimage"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/imagebuilderimage"
 
 imagebuilderimage.NewImagebuilderImageOutputResourcesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ImagebuilderImageOutputResourcesList
 ```
@@ -4194,7 +4194,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.imagebuilderImage.ImagebuilderImageOutputResourcesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/imagebuilderimage"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/imagebuilderimage"
 
 imagebuilderimage.NewImagebuilderImageOutputResourcesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ImagebuilderImageOutputResourcesOutputReference
 ```
@@ -4483,7 +4483,7 @@ func InternalValue() ImagebuilderImageOutputResources
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.imagebuilderImage.ImagebuilderImageTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/imagebuilderimage"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/imagebuilderimage"
 
 imagebuilderimage.NewImagebuilderImageTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ImagebuilderImageTimeoutsOutputReference
 ```
@@ -4761,7 +4761,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.imagebuilderImage.ImagebuilderImageWorkflowList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/imagebuilderimage"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/imagebuilderimage"
 
 imagebuilderimage.NewImagebuilderImageWorkflowList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ImagebuilderImageWorkflowList
 ```
@@ -4921,7 +4921,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.imagebuilderImage.ImagebuilderImageWorkflowOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/imagebuilderimage"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/imagebuilderimage"
 
 imagebuilderimage.NewImagebuilderImageWorkflowOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ImagebuilderImageWorkflowOutputReference
 ```
@@ -5310,7 +5310,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.imagebuilderImage.ImagebuilderImageWorkflowParameterList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/imagebuilderimage"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/imagebuilderimage"
 
 imagebuilderimage.NewImagebuilderImageWorkflowParameterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ImagebuilderImageWorkflowParameterList
 ```
@@ -5470,7 +5470,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.imagebuilderImage.ImagebuilderImageWorkflowParameterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/imagebuilderimage"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/imagebuilderimage"
 
 imagebuilderimage.NewImagebuilderImageWorkflowParameterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ImagebuilderImageWorkflowParameterOutputReference
 ```

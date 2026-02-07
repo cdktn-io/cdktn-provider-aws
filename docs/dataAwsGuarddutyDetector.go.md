@@ -4,12 +4,12 @@
 
 ### DataAwsGuarddutyDetector <a name="DataAwsGuarddutyDetector" id="@cdktn/provider-aws.dataAwsGuarddutyDetector.DataAwsGuarddutyDetector"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/guardduty_detector aws_guardduty_detector}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/guardduty_detector aws_guardduty_detector}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsGuarddutyDetector.DataAwsGuarddutyDetector.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsguarddutydetector"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsguarddutydetector"
 
 dataawsguarddutydetector.NewDataAwsGuarddutyDetector(scope Construct, id *string, config DataAwsGuarddutyDetectorConfig) DataAwsGuarddutyDetector
 ```
@@ -297,7 +297,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsGuarddutyDetector.DataAwsGuarddutyDetector.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsguarddutydetector"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsguarddutydetector"
 
 dataawsguarddutydetector.DataAwsGuarddutyDetector_IsConstruct(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsGuarddutyDetector.DataAwsGuarddutyDetector.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsguarddutydetector"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsguarddutydetector"
 
 dataawsguarddutydetector.DataAwsGuarddutyDetector_IsTerraformElement(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ dataawsguarddutydetector.DataAwsGuarddutyDetector_IsTerraformElement(x interface
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsGuarddutyDetector.DataAwsGuarddutyDetector.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsguarddutydetector"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsguarddutydetector"
 
 dataawsguarddutydetector.DataAwsGuarddutyDetector_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ dataawsguarddutydetector.DataAwsGuarddutyDetector_IsTerraformDataSource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsGuarddutyDetector.DataAwsGuarddutyDetector.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsguarddutydetector"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsguarddutydetector"
 
 dataawsguarddutydetector.DataAwsGuarddutyDetector_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -386,7 +386,7 @@ The construct id used in the generated config for the DataAwsGuarddutyDetector t
 
 The id of the existing DataAwsGuarddutyDetector that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/guardduty_detector#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/guardduty_detector#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -685,7 +685,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsGuarddutyDetector.DataAwsGuarddutyDetectorConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsguarddutydetector"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsguarddutydetector"
 
 &dataawsguarddutydetector.DataAwsGuarddutyDetectorConfig {
 	Connection: interface{},
@@ -712,9 +712,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsguarddutydetect
 | <code><a href="#@cdktn/provider-aws.dataAwsGuarddutyDetector.DataAwsGuarddutyDetectorConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsGuarddutyDetector.DataAwsGuarddutyDetectorConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsGuarddutyDetector.DataAwsGuarddutyDetectorConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsGuarddutyDetector.DataAwsGuarddutyDetectorConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/guardduty_detector#id DataAwsGuarddutyDetector#id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsGuarddutyDetector.DataAwsGuarddutyDetectorConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/guardduty_detector#id DataAwsGuarddutyDetector#id}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsGuarddutyDetector.DataAwsGuarddutyDetectorConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.dataAwsGuarddutyDetector.DataAwsGuarddutyDetectorConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/guardduty_detector#tags DataAwsGuarddutyDetector#tags}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsGuarddutyDetector.DataAwsGuarddutyDetectorConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/guardduty_detector#tags DataAwsGuarddutyDetector#tags}. |
 
 ---
 
@@ -796,7 +796,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/guardduty_detector#id DataAwsGuarddutyDetector#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/guardduty_detector#id DataAwsGuarddutyDetector#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -813,7 +813,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/guardduty_detector#region DataAwsGuarddutyDetector#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/guardduty_detector#region DataAwsGuarddutyDetector#region}
 
 ---
 
@@ -825,7 +825,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/guardduty_detector#tags DataAwsGuarddutyDetector#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/guardduty_detector#tags DataAwsGuarddutyDetector#tags}.
 
 ---
 
@@ -834,7 +834,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsGuarddutyDetector.DataAwsGuarddutyDetectorFeatures.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsguarddutydetector"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsguarddutydetector"
 
 &dataawsguarddutydetector.DataAwsGuarddutyDetectorFeatures {
 
@@ -847,7 +847,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsguarddutydetect
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsGuarddutyDetector.DataAwsGuarddutyDetectorFeaturesAdditionalConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsguarddutydetector"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsguarddutydetector"
 
 &dataawsguarddutydetector.DataAwsGuarddutyDetectorFeaturesAdditionalConfiguration {
 
@@ -862,7 +862,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsguarddutydetect
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsGuarddutyDetector.DataAwsGuarddutyDetectorFeaturesAdditionalConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsguarddutydetector"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsguarddutydetector"
 
 dataawsguarddutydetector.NewDataAwsGuarddutyDetectorFeaturesAdditionalConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsGuarddutyDetectorFeaturesAdditionalConfigurationList
 ```
@@ -1011,7 +1011,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsGuarddutyDetector.DataAwsGuarddutyDetectorFeaturesAdditionalConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsguarddutydetector"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsguarddutydetector"
 
 dataawsguarddutydetector.NewDataAwsGuarddutyDetectorFeaturesAdditionalConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsGuarddutyDetectorFeaturesAdditionalConfigurationOutputReference
 ```
@@ -1300,7 +1300,7 @@ func InternalValue() DataAwsGuarddutyDetectorFeaturesAdditionalConfiguration
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsGuarddutyDetector.DataAwsGuarddutyDetectorFeaturesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsguarddutydetector"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsguarddutydetector"
 
 dataawsguarddutydetector.NewDataAwsGuarddutyDetectorFeaturesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsGuarddutyDetectorFeaturesList
 ```
@@ -1449,7 +1449,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsGuarddutyDetector.DataAwsGuarddutyDetectorFeaturesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsguarddutydetector"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsguarddutydetector"
 
 dataawsguarddutydetector.NewDataAwsGuarddutyDetectorFeaturesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsGuarddutyDetectorFeaturesOutputReference
 ```

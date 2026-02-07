@@ -4,7 +4,7 @@
 
 ### DataAwsOrganizationsOrganization <a name="DataAwsOrganizationsOrganization" id="@cdktn/provider-aws.dataAwsOrganizationsOrganization.DataAwsOrganizationsOrganization"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/organizations_organization aws_organizations_organization}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/organizations_organization aws_organizations_organization}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsOrganizationsOrganization.DataAwsOrganizationsOrganization.Initializer"></a>
 
@@ -68,6 +68,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-aws.dataAwsOrganizationsOrganization.DataAwsOrganizationsOrganization.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsOrganizationsOrganization.DataAwsOrganizationsOrganization.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsOrganizationsOrganization.DataAwsOrganizationsOrganization.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsOrganizationsOrganization.DataAwsOrganizationsOrganization.resetReturnOrganizationOnly">resetReturnOrganizationOnly</a></code> | *No description.* |
 
 ---
 
@@ -269,6 +270,12 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 public resetId(): void
 ```
 
+##### `resetReturnOrganizationOnly` <a name="resetReturnOrganizationOnly" id="@cdktn/provider-aws.dataAwsOrganizationsOrganization.DataAwsOrganizationsOrganization.resetReturnOrganizationOnly"></a>
+
+```typescript
+public resetReturnOrganizationOnly(): void
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -372,7 +379,7 @@ The construct id used in the generated config for the DataAwsOrganizationsOrgani
 
 The id of the existing DataAwsOrganizationsOrganization that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/organizations_organization#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/organizations_organization#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -412,7 +419,9 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 | <code><a href="#@cdktn/provider-aws.dataAwsOrganizationsOrganization.DataAwsOrganizationsOrganization.property.nonMasterAccounts">nonMasterAccounts</a></code> | <code><a href="#@cdktn/provider-aws.dataAwsOrganizationsOrganization.DataAwsOrganizationsOrganizationNonMasterAccountsList">DataAwsOrganizationsOrganizationNonMasterAccountsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsOrganizationsOrganization.DataAwsOrganizationsOrganization.property.roots">roots</a></code> | <code><a href="#@cdktn/provider-aws.dataAwsOrganizationsOrganization.DataAwsOrganizationsOrganizationRootsList">DataAwsOrganizationsOrganizationRootsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsOrganizationsOrganization.DataAwsOrganizationsOrganization.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsOrganizationsOrganization.DataAwsOrganizationsOrganization.property.returnOrganizationOnlyInput">returnOrganizationOnlyInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsOrganizationsOrganization.DataAwsOrganizationsOrganization.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsOrganizationsOrganization.DataAwsOrganizationsOrganization.property.returnOrganizationOnly">returnOrganizationOnly</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 
 ---
 
@@ -658,6 +667,16 @@ public readonly idInput: string;
 
 ---
 
+##### `returnOrganizationOnlyInput`<sup>Optional</sup> <a name="returnOrganizationOnlyInput" id="@cdktn/provider-aws.dataAwsOrganizationsOrganization.DataAwsOrganizationsOrganization.property.returnOrganizationOnlyInput"></a>
+
+```typescript
+public readonly returnOrganizationOnlyInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
 ##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-aws.dataAwsOrganizationsOrganization.DataAwsOrganizationsOrganization.property.id"></a>
 
 ```typescript
@@ -665,6 +684,16 @@ public readonly id: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `returnOrganizationOnly`<sup>Required</sup> <a name="returnOrganizationOnly" id="@cdktn/provider-aws.dataAwsOrganizationsOrganization.DataAwsOrganizationsOrganization.property.returnOrganizationOnly"></a>
+
+```typescript
+public readonly returnOrganizationOnly: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
 
 ---
 
@@ -720,7 +749,8 @@ const dataAwsOrganizationsOrganizationConfig: dataAwsOrganizationsOrganization.D
 | <code><a href="#@cdktn/provider-aws.dataAwsOrganizationsOrganization.DataAwsOrganizationsOrganizationConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsOrganizationsOrganization.DataAwsOrganizationsOrganizationConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsOrganizationsOrganization.DataAwsOrganizationsOrganizationConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsOrganizationsOrganization.DataAwsOrganizationsOrganizationConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/organizations_organization#id DataAwsOrganizationsOrganization#id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsOrganizationsOrganization.DataAwsOrganizationsOrganizationConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/organizations_organization#id DataAwsOrganizationsOrganization#id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsOrganizationsOrganization.DataAwsOrganizationsOrganizationConfig.property.returnOrganizationOnly">returnOrganizationOnly</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/organizations_organization#return_organization_only DataAwsOrganizationsOrganization#return_organization_only}. |
 
 ---
 
@@ -802,10 +832,22 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/organizations_organization#id DataAwsOrganizationsOrganization#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/organizations_organization#id DataAwsOrganizationsOrganization#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `returnOrganizationOnly`<sup>Optional</sup> <a name="returnOrganizationOnly" id="@cdktn/provider-aws.dataAwsOrganizationsOrganization.DataAwsOrganizationsOrganizationConfig.property.returnOrganizationOnly"></a>
+
+```typescript
+public readonly returnOrganizationOnly: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/organizations_organization#return_organization_only DataAwsOrganizationsOrganization#return_organization_only}.
 
 ---
 

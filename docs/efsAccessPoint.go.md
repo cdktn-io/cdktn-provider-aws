@@ -4,12 +4,12 @@
 
 ### EfsAccessPoint <a name="EfsAccessPoint" id="@cdktn/provider-aws.efsAccessPoint.EfsAccessPoint"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/efs_access_point aws_efs_access_point}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/efs_access_point aws_efs_access_point}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.efsAccessPoint.EfsAccessPoint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/efsaccesspoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/efsaccesspoint"
 
 efsaccesspoint.NewEfsAccessPoint(scope Construct, id *string, config EfsAccessPointConfig) EfsAccessPoint
 ```
@@ -446,7 +446,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.efsAccessPoint.EfsAccessPoint.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/efsaccesspoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/efsaccesspoint"
 
 efsaccesspoint.EfsAccessPoint_IsConstruct(x interface{}) *bool
 ```
@@ -478,7 +478,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.efsAccessPoint.EfsAccessPoint.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/efsaccesspoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/efsaccesspoint"
 
 efsaccesspoint.EfsAccessPoint_IsTerraformElement(x interface{}) *bool
 ```
@@ -492,7 +492,7 @@ efsaccesspoint.EfsAccessPoint_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.efsAccessPoint.EfsAccessPoint.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/efsaccesspoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/efsaccesspoint"
 
 efsaccesspoint.EfsAccessPoint_IsTerraformResource(x interface{}) *bool
 ```
@@ -506,7 +506,7 @@ efsaccesspoint.EfsAccessPoint_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.efsAccessPoint.EfsAccessPoint.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/efsaccesspoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/efsaccesspoint"
 
 efsaccesspoint.EfsAccessPoint_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -535,7 +535,7 @@ The construct id used in the generated config for the EfsAccessPoint to import.
 
 The id of the existing EfsAccessPoint that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/efs_access_point#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/efs_access_point#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -922,7 +922,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.efsAccessPoint.EfsAccessPointConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/efsaccesspoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/efsaccesspoint"
 
 &efsaccesspoint.EfsAccessPointConfig {
 	Connection: interface{},
@@ -934,9 +934,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/efsaccesspoint"
 	Provisioners: *[]interface{},
 	FileSystemId: *string,
 	Id: *string,
-	PosixUser: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.efsAccessPoint.EfsAccessPointPosixUser,
+	PosixUser: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.efsAccessPoint.EfsAccessPointPosixUser,
 	Region: *string,
-	RootDirectory: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.efsAccessPoint.EfsAccessPointRootDirectory,
+	RootDirectory: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.efsAccessPoint.EfsAccessPointRootDirectory,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
 }
@@ -953,13 +953,13 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/efsaccesspoint"
 | <code><a href="#@cdktn/provider-aws.efsAccessPoint.EfsAccessPointConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.efsAccessPoint.EfsAccessPointConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.efsAccessPoint.EfsAccessPointConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.efsAccessPoint.EfsAccessPointConfig.property.fileSystemId">FileSystemId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/efs_access_point#file_system_id EfsAccessPoint#file_system_id}. |
-| <code><a href="#@cdktn/provider-aws.efsAccessPoint.EfsAccessPointConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/efs_access_point#id EfsAccessPoint#id}. |
+| <code><a href="#@cdktn/provider-aws.efsAccessPoint.EfsAccessPointConfig.property.fileSystemId">FileSystemId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/efs_access_point#file_system_id EfsAccessPoint#file_system_id}. |
+| <code><a href="#@cdktn/provider-aws.efsAccessPoint.EfsAccessPointConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/efs_access_point#id EfsAccessPoint#id}. |
 | <code><a href="#@cdktn/provider-aws.efsAccessPoint.EfsAccessPointConfig.property.posixUser">PosixUser</a></code> | <code><a href="#@cdktn/provider-aws.efsAccessPoint.EfsAccessPointPosixUser">EfsAccessPointPosixUser</a></code> | posix_user block. |
 | <code><a href="#@cdktn/provider-aws.efsAccessPoint.EfsAccessPointConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktn/provider-aws.efsAccessPoint.EfsAccessPointConfig.property.rootDirectory">RootDirectory</a></code> | <code><a href="#@cdktn/provider-aws.efsAccessPoint.EfsAccessPointRootDirectory">EfsAccessPointRootDirectory</a></code> | root_directory block. |
-| <code><a href="#@cdktn/provider-aws.efsAccessPoint.EfsAccessPointConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/efs_access_point#tags EfsAccessPoint#tags}. |
-| <code><a href="#@cdktn/provider-aws.efsAccessPoint.EfsAccessPointConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/efs_access_point#tags_all EfsAccessPoint#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.efsAccessPoint.EfsAccessPointConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/efs_access_point#tags EfsAccessPoint#tags}. |
+| <code><a href="#@cdktn/provider-aws.efsAccessPoint.EfsAccessPointConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/efs_access_point#tags_all EfsAccessPoint#tags_all}. |
 
 ---
 
@@ -1041,7 +1041,7 @@ FileSystemId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/efs_access_point#file_system_id EfsAccessPoint#file_system_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/efs_access_point#file_system_id EfsAccessPoint#file_system_id}.
 
 ---
 
@@ -1053,7 +1053,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/efs_access_point#id EfsAccessPoint#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/efs_access_point#id EfsAccessPoint#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1070,7 +1070,7 @@ PosixUser EfsAccessPointPosixUser
 
 posix_user block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/efs_access_point#posix_user EfsAccessPoint#posix_user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/efs_access_point#posix_user EfsAccessPoint#posix_user}
 
 ---
 
@@ -1084,7 +1084,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/efs_access_point#region EfsAccessPoint#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/efs_access_point#region EfsAccessPoint#region}
 
 ---
 
@@ -1098,7 +1098,7 @@ RootDirectory EfsAccessPointRootDirectory
 
 root_directory block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/efs_access_point#root_directory EfsAccessPoint#root_directory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/efs_access_point#root_directory EfsAccessPoint#root_directory}
 
 ---
 
@@ -1110,7 +1110,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/efs_access_point#tags EfsAccessPoint#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/efs_access_point#tags EfsAccessPoint#tags}.
 
 ---
 
@@ -1122,7 +1122,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/efs_access_point#tags_all EfsAccessPoint#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/efs_access_point#tags_all EfsAccessPoint#tags_all}.
 
 ---
 
@@ -1131,7 +1131,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.efsAccessPoint.EfsAccessPointPosixUser.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/efsaccesspoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/efsaccesspoint"
 
 &efsaccesspoint.EfsAccessPointPosixUser {
 	Gid: *f64,
@@ -1144,9 +1144,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/efsaccesspoint"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.efsAccessPoint.EfsAccessPointPosixUser.property.gid">Gid</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/efs_access_point#gid EfsAccessPoint#gid}. |
-| <code><a href="#@cdktn/provider-aws.efsAccessPoint.EfsAccessPointPosixUser.property.uid">Uid</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/efs_access_point#uid EfsAccessPoint#uid}. |
-| <code><a href="#@cdktn/provider-aws.efsAccessPoint.EfsAccessPointPosixUser.property.secondaryGids">SecondaryGids</a></code> | <code>*[]*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/efs_access_point#secondary_gids EfsAccessPoint#secondary_gids}. |
+| <code><a href="#@cdktn/provider-aws.efsAccessPoint.EfsAccessPointPosixUser.property.gid">Gid</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/efs_access_point#gid EfsAccessPoint#gid}. |
+| <code><a href="#@cdktn/provider-aws.efsAccessPoint.EfsAccessPointPosixUser.property.uid">Uid</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/efs_access_point#uid EfsAccessPoint#uid}. |
+| <code><a href="#@cdktn/provider-aws.efsAccessPoint.EfsAccessPointPosixUser.property.secondaryGids">SecondaryGids</a></code> | <code>*[]*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/efs_access_point#secondary_gids EfsAccessPoint#secondary_gids}. |
 
 ---
 
@@ -1158,7 +1158,7 @@ Gid *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/efs_access_point#gid EfsAccessPoint#gid}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/efs_access_point#gid EfsAccessPoint#gid}.
 
 ---
 
@@ -1170,7 +1170,7 @@ Uid *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/efs_access_point#uid EfsAccessPoint#uid}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/efs_access_point#uid EfsAccessPoint#uid}.
 
 ---
 
@@ -1182,7 +1182,7 @@ SecondaryGids *[]*f64
 
 - *Type:* *[]*f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/efs_access_point#secondary_gids EfsAccessPoint#secondary_gids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/efs_access_point#secondary_gids EfsAccessPoint#secondary_gids}.
 
 ---
 
@@ -1191,10 +1191,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.efsAccessPoint.EfsAccessPointRootDirectory.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/efsaccesspoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/efsaccesspoint"
 
 &efsaccesspoint.EfsAccessPointRootDirectory {
-	CreationInfo: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.efsAccessPoint.EfsAccessPointRootDirectoryCreationInfo,
+	CreationInfo: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.efsAccessPoint.EfsAccessPointRootDirectoryCreationInfo,
 	Path: *string,
 }
 ```
@@ -1204,7 +1204,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/efsaccesspoint"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.efsAccessPoint.EfsAccessPointRootDirectory.property.creationInfo">CreationInfo</a></code> | <code><a href="#@cdktn/provider-aws.efsAccessPoint.EfsAccessPointRootDirectoryCreationInfo">EfsAccessPointRootDirectoryCreationInfo</a></code> | creation_info block. |
-| <code><a href="#@cdktn/provider-aws.efsAccessPoint.EfsAccessPointRootDirectory.property.path">Path</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/efs_access_point#path EfsAccessPoint#path}. |
+| <code><a href="#@cdktn/provider-aws.efsAccessPoint.EfsAccessPointRootDirectory.property.path">Path</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/efs_access_point#path EfsAccessPoint#path}. |
 
 ---
 
@@ -1218,7 +1218,7 @@ CreationInfo EfsAccessPointRootDirectoryCreationInfo
 
 creation_info block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/efs_access_point#creation_info EfsAccessPoint#creation_info}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/efs_access_point#creation_info EfsAccessPoint#creation_info}
 
 ---
 
@@ -1230,7 +1230,7 @@ Path *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/efs_access_point#path EfsAccessPoint#path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/efs_access_point#path EfsAccessPoint#path}.
 
 ---
 
@@ -1239,7 +1239,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.efsAccessPoint.EfsAccessPointRootDirectoryCreationInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/efsaccesspoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/efsaccesspoint"
 
 &efsaccesspoint.EfsAccessPointRootDirectoryCreationInfo {
 	OwnerGid: *f64,
@@ -1252,9 +1252,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/efsaccesspoint"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.efsAccessPoint.EfsAccessPointRootDirectoryCreationInfo.property.ownerGid">OwnerGid</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/efs_access_point#owner_gid EfsAccessPoint#owner_gid}. |
-| <code><a href="#@cdktn/provider-aws.efsAccessPoint.EfsAccessPointRootDirectoryCreationInfo.property.ownerUid">OwnerUid</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/efs_access_point#owner_uid EfsAccessPoint#owner_uid}. |
-| <code><a href="#@cdktn/provider-aws.efsAccessPoint.EfsAccessPointRootDirectoryCreationInfo.property.permissions">Permissions</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/efs_access_point#permissions EfsAccessPoint#permissions}. |
+| <code><a href="#@cdktn/provider-aws.efsAccessPoint.EfsAccessPointRootDirectoryCreationInfo.property.ownerGid">OwnerGid</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/efs_access_point#owner_gid EfsAccessPoint#owner_gid}. |
+| <code><a href="#@cdktn/provider-aws.efsAccessPoint.EfsAccessPointRootDirectoryCreationInfo.property.ownerUid">OwnerUid</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/efs_access_point#owner_uid EfsAccessPoint#owner_uid}. |
+| <code><a href="#@cdktn/provider-aws.efsAccessPoint.EfsAccessPointRootDirectoryCreationInfo.property.permissions">Permissions</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/efs_access_point#permissions EfsAccessPoint#permissions}. |
 
 ---
 
@@ -1266,7 +1266,7 @@ OwnerGid *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/efs_access_point#owner_gid EfsAccessPoint#owner_gid}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/efs_access_point#owner_gid EfsAccessPoint#owner_gid}.
 
 ---
 
@@ -1278,7 +1278,7 @@ OwnerUid *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/efs_access_point#owner_uid EfsAccessPoint#owner_uid}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/efs_access_point#owner_uid EfsAccessPoint#owner_uid}.
 
 ---
 
@@ -1290,7 +1290,7 @@ Permissions *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/efs_access_point#permissions EfsAccessPoint#permissions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/efs_access_point#permissions EfsAccessPoint#permissions}.
 
 ---
 
@@ -1301,7 +1301,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.efsAccessPoint.EfsAccessPointPosixUserOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/efsaccesspoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/efsaccesspoint"
 
 efsaccesspoint.NewEfsAccessPointPosixUserOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EfsAccessPointPosixUserOutputReference
 ```
@@ -1623,7 +1623,7 @@ func InternalValue() EfsAccessPointPosixUser
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.efsAccessPoint.EfsAccessPointRootDirectoryCreationInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/efsaccesspoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/efsaccesspoint"
 
 efsaccesspoint.NewEfsAccessPointRootDirectoryCreationInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EfsAccessPointRootDirectoryCreationInfoOutputReference
 ```
@@ -1938,7 +1938,7 @@ func InternalValue() EfsAccessPointRootDirectoryCreationInfo
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.efsAccessPoint.EfsAccessPointRootDirectoryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/efsaccesspoint"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/efsaccesspoint"
 
 efsaccesspoint.NewEfsAccessPointRootDirectoryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EfsAccessPointRootDirectoryOutputReference
 ```

@@ -4,12 +4,12 @@
 
 ### DirectoryServiceSharedDirectoryAccepter <a name="DirectoryServiceSharedDirectoryAccepter" id="@cdktn/provider-aws.directoryServiceSharedDirectoryAccepter.DirectoryServiceSharedDirectoryAccepter"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/directory_service_shared_directory_accepter aws_directory_service_shared_directory_accepter}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/directory_service_shared_directory_accepter aws_directory_service_shared_directory_accepter}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.directoryServiceSharedDirectoryAccepter.DirectoryServiceSharedDirectoryAccepter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/directoryserviceshareddirectoryaccepter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/directoryserviceshareddirectoryaccepter"
 
 directoryserviceshareddirectoryaccepter.NewDirectoryServiceSharedDirectoryAccepter(scope Construct, id *string, config DirectoryServiceSharedDirectoryAccepterConfig) DirectoryServiceSharedDirectoryAccepter
 ```
@@ -412,7 +412,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.directoryServiceSharedDirectoryAccepter.DirectoryServiceSharedDirectoryAccepter.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/directoryserviceshareddirectoryaccepter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/directoryserviceshareddirectoryaccepter"
 
 directoryserviceshareddirectoryaccepter.DirectoryServiceSharedDirectoryAccepter_IsConstruct(x interface{}) *bool
 ```
@@ -444,7 +444,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.directoryServiceSharedDirectoryAccepter.DirectoryServiceSharedDirectoryAccepter.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/directoryserviceshareddirectoryaccepter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/directoryserviceshareddirectoryaccepter"
 
 directoryserviceshareddirectoryaccepter.DirectoryServiceSharedDirectoryAccepter_IsTerraformElement(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ directoryserviceshareddirectoryaccepter.DirectoryServiceSharedDirectoryAccepter_
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.directoryServiceSharedDirectoryAccepter.DirectoryServiceSharedDirectoryAccepter.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/directoryserviceshareddirectoryaccepter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/directoryserviceshareddirectoryaccepter"
 
 directoryserviceshareddirectoryaccepter.DirectoryServiceSharedDirectoryAccepter_IsTerraformResource(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ directoryserviceshareddirectoryaccepter.DirectoryServiceSharedDirectoryAccepter_
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.directoryServiceSharedDirectoryAccepter.DirectoryServiceSharedDirectoryAccepter.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/directoryserviceshareddirectoryaccepter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/directoryserviceshareddirectoryaccepter"
 
 directoryserviceshareddirectoryaccepter.DirectoryServiceSharedDirectoryAccepter_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -501,7 +501,7 @@ The construct id used in the generated config for the DirectoryServiceSharedDire
 
 The id of the existing DirectoryServiceSharedDirectoryAccepter that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/directory_service_shared_directory_accepter#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/directory_service_shared_directory_accepter#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -833,7 +833,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.directoryServiceSharedDirectoryAccepter.DirectoryServiceSharedDirectoryAccepterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/directoryserviceshareddirectoryaccepter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/directoryserviceshareddirectoryaccepter"
 
 &directoryserviceshareddirectoryaccepter.DirectoryServiceSharedDirectoryAccepterConfig {
 	Connection: interface{},
@@ -846,7 +846,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/directoryserviceshared
 	SharedDirectoryId: *string,
 	Id: *string,
 	Region: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.directoryServiceSharedDirectoryAccepter.DirectoryServiceSharedDirectoryAccepterTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.directoryServiceSharedDirectoryAccepter.DirectoryServiceSharedDirectoryAccepterTimeouts,
 }
 ```
 
@@ -861,8 +861,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/directoryserviceshared
 | <code><a href="#@cdktn/provider-aws.directoryServiceSharedDirectoryAccepter.DirectoryServiceSharedDirectoryAccepterConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.directoryServiceSharedDirectoryAccepter.DirectoryServiceSharedDirectoryAccepterConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.directoryServiceSharedDirectoryAccepter.DirectoryServiceSharedDirectoryAccepterConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.directoryServiceSharedDirectoryAccepter.DirectoryServiceSharedDirectoryAccepterConfig.property.sharedDirectoryId">SharedDirectoryId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/directory_service_shared_directory_accepter#shared_directory_id DirectoryServiceSharedDirectoryAccepter#shared_directory_id}. |
-| <code><a href="#@cdktn/provider-aws.directoryServiceSharedDirectoryAccepter.DirectoryServiceSharedDirectoryAccepterConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/directory_service_shared_directory_accepter#id DirectoryServiceSharedDirectoryAccepter#id}. |
+| <code><a href="#@cdktn/provider-aws.directoryServiceSharedDirectoryAccepter.DirectoryServiceSharedDirectoryAccepterConfig.property.sharedDirectoryId">SharedDirectoryId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/directory_service_shared_directory_accepter#shared_directory_id DirectoryServiceSharedDirectoryAccepter#shared_directory_id}. |
+| <code><a href="#@cdktn/provider-aws.directoryServiceSharedDirectoryAccepter.DirectoryServiceSharedDirectoryAccepterConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/directory_service_shared_directory_accepter#id DirectoryServiceSharedDirectoryAccepter#id}. |
 | <code><a href="#@cdktn/provider-aws.directoryServiceSharedDirectoryAccepter.DirectoryServiceSharedDirectoryAccepterConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktn/provider-aws.directoryServiceSharedDirectoryAccepter.DirectoryServiceSharedDirectoryAccepterConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.directoryServiceSharedDirectoryAccepter.DirectoryServiceSharedDirectoryAccepterTimeouts">DirectoryServiceSharedDirectoryAccepterTimeouts</a></code> | timeouts block. |
 
@@ -946,7 +946,7 @@ SharedDirectoryId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/directory_service_shared_directory_accepter#shared_directory_id DirectoryServiceSharedDirectoryAccepter#shared_directory_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/directory_service_shared_directory_accepter#shared_directory_id DirectoryServiceSharedDirectoryAccepter#shared_directory_id}.
 
 ---
 
@@ -958,7 +958,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/directory_service_shared_directory_accepter#id DirectoryServiceSharedDirectoryAccepter#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/directory_service_shared_directory_accepter#id DirectoryServiceSharedDirectoryAccepter#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -975,7 +975,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/directory_service_shared_directory_accepter#region DirectoryServiceSharedDirectoryAccepter#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/directory_service_shared_directory_accepter#region DirectoryServiceSharedDirectoryAccepter#region}
 
 ---
 
@@ -989,7 +989,7 @@ Timeouts DirectoryServiceSharedDirectoryAccepterTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/directory_service_shared_directory_accepter#timeouts DirectoryServiceSharedDirectoryAccepter#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/directory_service_shared_directory_accepter#timeouts DirectoryServiceSharedDirectoryAccepter#timeouts}
 
 ---
 
@@ -998,7 +998,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.directoryServiceSharedDirectoryAccepter.DirectoryServiceSharedDirectoryAccepterTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/directoryserviceshareddirectoryaccepter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/directoryserviceshareddirectoryaccepter"
 
 &directoryserviceshareddirectoryaccepter.DirectoryServiceSharedDirectoryAccepterTimeouts {
 	Create: *string,
@@ -1010,8 +1010,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/directoryserviceshared
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.directoryServiceSharedDirectoryAccepter.DirectoryServiceSharedDirectoryAccepterTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/directory_service_shared_directory_accepter#create DirectoryServiceSharedDirectoryAccepter#create}. |
-| <code><a href="#@cdktn/provider-aws.directoryServiceSharedDirectoryAccepter.DirectoryServiceSharedDirectoryAccepterTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/directory_service_shared_directory_accepter#delete DirectoryServiceSharedDirectoryAccepter#delete}. |
+| <code><a href="#@cdktn/provider-aws.directoryServiceSharedDirectoryAccepter.DirectoryServiceSharedDirectoryAccepterTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/directory_service_shared_directory_accepter#create DirectoryServiceSharedDirectoryAccepter#create}. |
+| <code><a href="#@cdktn/provider-aws.directoryServiceSharedDirectoryAccepter.DirectoryServiceSharedDirectoryAccepterTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/directory_service_shared_directory_accepter#delete DirectoryServiceSharedDirectoryAccepter#delete}. |
 
 ---
 
@@ -1023,7 +1023,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/directory_service_shared_directory_accepter#create DirectoryServiceSharedDirectoryAccepter#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/directory_service_shared_directory_accepter#create DirectoryServiceSharedDirectoryAccepter#create}.
 
 ---
 
@@ -1035,7 +1035,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/directory_service_shared_directory_accepter#delete DirectoryServiceSharedDirectoryAccepter#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/directory_service_shared_directory_accepter#delete DirectoryServiceSharedDirectoryAccepter#delete}.
 
 ---
 
@@ -1046,7 +1046,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.directoryServiceSharedDirectoryAccepter.DirectoryServiceSharedDirectoryAccepterTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/directoryserviceshareddirectoryaccepter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/directoryserviceshareddirectoryaccepter"
 
 directoryserviceshareddirectoryaccepter.NewDirectoryServiceSharedDirectoryAccepterTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DirectoryServiceSharedDirectoryAccepterTimeoutsOutputReference
 ```

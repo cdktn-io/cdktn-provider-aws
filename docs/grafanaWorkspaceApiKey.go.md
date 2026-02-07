@@ -4,12 +4,12 @@
 
 ### GrafanaWorkspaceApiKey <a name="GrafanaWorkspaceApiKey" id="@cdktn/provider-aws.grafanaWorkspaceApiKey.GrafanaWorkspaceApiKey"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/grafana_workspace_api_key aws_grafana_workspace_api_key}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/grafana_workspace_api_key aws_grafana_workspace_api_key}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.grafanaWorkspaceApiKey.GrafanaWorkspaceApiKey.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/grafanaworkspaceapikey"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/grafanaworkspaceapikey"
 
 grafanaworkspaceapikey.NewGrafanaWorkspaceApiKey(scope Construct, id *string, config GrafanaWorkspaceApiKeyConfig) GrafanaWorkspaceApiKey
 ```
@@ -392,7 +392,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.grafanaWorkspaceApiKey.GrafanaWorkspaceApiKey.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/grafanaworkspaceapikey"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/grafanaworkspaceapikey"
 
 grafanaworkspaceapikey.GrafanaWorkspaceApiKey_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.grafanaWorkspaceApiKey.GrafanaWorkspaceApiKey.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/grafanaworkspaceapikey"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/grafanaworkspaceapikey"
 
 grafanaworkspaceapikey.GrafanaWorkspaceApiKey_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ grafanaworkspaceapikey.GrafanaWorkspaceApiKey_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.grafanaWorkspaceApiKey.GrafanaWorkspaceApiKey.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/grafanaworkspaceapikey"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/grafanaworkspaceapikey"
 
 grafanaworkspaceapikey.GrafanaWorkspaceApiKey_IsTerraformResource(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ grafanaworkspaceapikey.GrafanaWorkspaceApiKey_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.grafanaWorkspaceApiKey.GrafanaWorkspaceApiKey.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/grafanaworkspaceapikey"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/grafanaworkspaceapikey"
 
 grafanaworkspaceapikey.GrafanaWorkspaceApiKey_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -481,7 +481,7 @@ The construct id used in the generated config for the GrafanaWorkspaceApiKey to 
 
 The id of the existing GrafanaWorkspaceApiKey that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/grafana_workspace_api_key#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/grafana_workspace_api_key#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -824,7 +824,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.grafanaWorkspaceApiKey.GrafanaWorkspaceApiKeyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/grafanaworkspaceapikey"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/grafanaworkspaceapikey"
 
 &grafanaworkspaceapikey.GrafanaWorkspaceApiKeyConfig {
 	Connection: interface{},
@@ -854,11 +854,11 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/grafanaworkspaceapikey
 | <code><a href="#@cdktn/provider-aws.grafanaWorkspaceApiKey.GrafanaWorkspaceApiKeyConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.grafanaWorkspaceApiKey.GrafanaWorkspaceApiKeyConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.grafanaWorkspaceApiKey.GrafanaWorkspaceApiKeyConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.grafanaWorkspaceApiKey.GrafanaWorkspaceApiKeyConfig.property.keyName">KeyName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/grafana_workspace_api_key#key_name GrafanaWorkspaceApiKey#key_name}. |
-| <code><a href="#@cdktn/provider-aws.grafanaWorkspaceApiKey.GrafanaWorkspaceApiKeyConfig.property.keyRole">KeyRole</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/grafana_workspace_api_key#key_role GrafanaWorkspaceApiKey#key_role}. |
-| <code><a href="#@cdktn/provider-aws.grafanaWorkspaceApiKey.GrafanaWorkspaceApiKeyConfig.property.secondsToLive">SecondsToLive</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/grafana_workspace_api_key#seconds_to_live GrafanaWorkspaceApiKey#seconds_to_live}. |
-| <code><a href="#@cdktn/provider-aws.grafanaWorkspaceApiKey.GrafanaWorkspaceApiKeyConfig.property.workspaceId">WorkspaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/grafana_workspace_api_key#workspace_id GrafanaWorkspaceApiKey#workspace_id}. |
-| <code><a href="#@cdktn/provider-aws.grafanaWorkspaceApiKey.GrafanaWorkspaceApiKeyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/grafana_workspace_api_key#id GrafanaWorkspaceApiKey#id}. |
+| <code><a href="#@cdktn/provider-aws.grafanaWorkspaceApiKey.GrafanaWorkspaceApiKeyConfig.property.keyName">KeyName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/grafana_workspace_api_key#key_name GrafanaWorkspaceApiKey#key_name}. |
+| <code><a href="#@cdktn/provider-aws.grafanaWorkspaceApiKey.GrafanaWorkspaceApiKeyConfig.property.keyRole">KeyRole</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/grafana_workspace_api_key#key_role GrafanaWorkspaceApiKey#key_role}. |
+| <code><a href="#@cdktn/provider-aws.grafanaWorkspaceApiKey.GrafanaWorkspaceApiKeyConfig.property.secondsToLive">SecondsToLive</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/grafana_workspace_api_key#seconds_to_live GrafanaWorkspaceApiKey#seconds_to_live}. |
+| <code><a href="#@cdktn/provider-aws.grafanaWorkspaceApiKey.GrafanaWorkspaceApiKeyConfig.property.workspaceId">WorkspaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/grafana_workspace_api_key#workspace_id GrafanaWorkspaceApiKey#workspace_id}. |
+| <code><a href="#@cdktn/provider-aws.grafanaWorkspaceApiKey.GrafanaWorkspaceApiKeyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/grafana_workspace_api_key#id GrafanaWorkspaceApiKey#id}. |
 | <code><a href="#@cdktn/provider-aws.grafanaWorkspaceApiKey.GrafanaWorkspaceApiKeyConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -941,7 +941,7 @@ KeyName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/grafana_workspace_api_key#key_name GrafanaWorkspaceApiKey#key_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/grafana_workspace_api_key#key_name GrafanaWorkspaceApiKey#key_name}.
 
 ---
 
@@ -953,7 +953,7 @@ KeyRole *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/grafana_workspace_api_key#key_role GrafanaWorkspaceApiKey#key_role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/grafana_workspace_api_key#key_role GrafanaWorkspaceApiKey#key_role}.
 
 ---
 
@@ -965,7 +965,7 @@ SecondsToLive *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/grafana_workspace_api_key#seconds_to_live GrafanaWorkspaceApiKey#seconds_to_live}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/grafana_workspace_api_key#seconds_to_live GrafanaWorkspaceApiKey#seconds_to_live}.
 
 ---
 
@@ -977,7 +977,7 @@ WorkspaceId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/grafana_workspace_api_key#workspace_id GrafanaWorkspaceApiKey#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/grafana_workspace_api_key#workspace_id GrafanaWorkspaceApiKey#workspace_id}.
 
 ---
 
@@ -989,7 +989,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/grafana_workspace_api_key#id GrafanaWorkspaceApiKey#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/grafana_workspace_api_key#id GrafanaWorkspaceApiKey#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1006,7 +1006,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/grafana_workspace_api_key#region GrafanaWorkspaceApiKey#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/grafana_workspace_api_key#region GrafanaWorkspaceApiKey#region}
 
 ---
 

@@ -4,12 +4,12 @@
 
 ### DataAwsEc2Host <a name="DataAwsEc2Host" id="@cdktn/provider-aws.dataAwsEc2Host.DataAwsEc2Host"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/ec2_host aws_ec2_host}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/ec2_host aws_ec2_host}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEc2Host.DataAwsEc2Host.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsec2host"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsec2host"
 
 dataawsec2host.NewDataAwsEc2Host(scope Construct, id *string, config DataAwsEc2HostConfig) DataAwsEc2Host
 ```
@@ -344,7 +344,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsEc2Host.DataAwsEc2Host.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsec2host"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsec2host"
 
 dataawsec2host.DataAwsEc2Host_IsConstruct(x interface{}) *bool
 ```
@@ -376,7 +376,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsEc2Host.DataAwsEc2Host.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsec2host"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsec2host"
 
 dataawsec2host.DataAwsEc2Host_IsTerraformElement(x interface{}) *bool
 ```
@@ -390,7 +390,7 @@ dataawsec2host.DataAwsEc2Host_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsEc2Host.DataAwsEc2Host.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsec2host"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsec2host"
 
 dataawsec2host.DataAwsEc2Host_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -404,7 +404,7 @@ dataawsec2host.DataAwsEc2Host_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsEc2Host.DataAwsEc2Host.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsec2host"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsec2host"
 
 dataawsec2host.DataAwsEc2Host_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -433,7 +433,7 @@ The construct id used in the generated config for the DataAwsEc2Host to import.
 
 The id of the existing DataAwsEc2Host that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/ec2_host#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/ec2_host#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -875,7 +875,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEc2Host.DataAwsEc2HostConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsec2host"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsec2host"
 
 &dataawsec2host.DataAwsEc2HostConfig {
 	Connection: interface{},
@@ -890,7 +890,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsec2host"
 	Id: *string,
 	Region: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.dataAwsEc2Host.DataAwsEc2HostTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.dataAwsEc2Host.DataAwsEc2HostTimeouts,
 }
 ```
 
@@ -906,10 +906,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsec2host"
 | <code><a href="#@cdktn/provider-aws.dataAwsEc2Host.DataAwsEc2HostConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsEc2Host.DataAwsEc2HostConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsEc2Host.DataAwsEc2HostConfig.property.filter">Filter</a></code> | <code>interface{}</code> | filter block. |
-| <code><a href="#@cdktn/provider-aws.dataAwsEc2Host.DataAwsEc2HostConfig.property.hostId">HostId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/ec2_host#host_id DataAwsEc2Host#host_id}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsEc2Host.DataAwsEc2HostConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/ec2_host#id DataAwsEc2Host#id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsEc2Host.DataAwsEc2HostConfig.property.hostId">HostId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/ec2_host#host_id DataAwsEc2Host#host_id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsEc2Host.DataAwsEc2HostConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/ec2_host#id DataAwsEc2Host#id}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsEc2Host.DataAwsEc2HostConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.dataAwsEc2Host.DataAwsEc2HostConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/ec2_host#tags DataAwsEc2Host#tags}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsEc2Host.DataAwsEc2HostConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/ec2_host#tags DataAwsEc2Host#tags}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsEc2Host.DataAwsEc2HostConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.dataAwsEc2Host.DataAwsEc2HostTimeouts">DataAwsEc2HostTimeouts</a></code> | timeouts block. |
 
 ---
@@ -994,7 +994,7 @@ Filter interface{}
 
 filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/ec2_host#filter DataAwsEc2Host#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/ec2_host#filter DataAwsEc2Host#filter}
 
 ---
 
@@ -1006,7 +1006,7 @@ HostId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/ec2_host#host_id DataAwsEc2Host#host_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/ec2_host#host_id DataAwsEc2Host#host_id}.
 
 ---
 
@@ -1018,7 +1018,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/ec2_host#id DataAwsEc2Host#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/ec2_host#id DataAwsEc2Host#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1035,7 +1035,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/ec2_host#region DataAwsEc2Host#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/ec2_host#region DataAwsEc2Host#region}
 
 ---
 
@@ -1047,7 +1047,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/ec2_host#tags DataAwsEc2Host#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/ec2_host#tags DataAwsEc2Host#tags}.
 
 ---
 
@@ -1061,7 +1061,7 @@ Timeouts DataAwsEc2HostTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/ec2_host#timeouts DataAwsEc2Host#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/ec2_host#timeouts DataAwsEc2Host#timeouts}
 
 ---
 
@@ -1070,7 +1070,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEc2Host.DataAwsEc2HostFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsec2host"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsec2host"
 
 &dataawsec2host.DataAwsEc2HostFilter {
 	Name: *string,
@@ -1082,8 +1082,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsec2host"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.dataAwsEc2Host.DataAwsEc2HostFilter.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/ec2_host#name DataAwsEc2Host#name}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsEc2Host.DataAwsEc2HostFilter.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/ec2_host#values DataAwsEc2Host#values}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsEc2Host.DataAwsEc2HostFilter.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/ec2_host#name DataAwsEc2Host#name}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsEc2Host.DataAwsEc2HostFilter.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/ec2_host#values DataAwsEc2Host#values}. |
 
 ---
 
@@ -1095,7 +1095,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/ec2_host#name DataAwsEc2Host#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/ec2_host#name DataAwsEc2Host#name}.
 
 ---
 
@@ -1107,7 +1107,7 @@ Values *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/ec2_host#values DataAwsEc2Host#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/ec2_host#values DataAwsEc2Host#values}.
 
 ---
 
@@ -1116,7 +1116,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEc2Host.DataAwsEc2HostTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsec2host"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsec2host"
 
 &dataawsec2host.DataAwsEc2HostTimeouts {
 	Read: *string,
@@ -1127,7 +1127,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsec2host"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.dataAwsEc2Host.DataAwsEc2HostTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/ec2_host#read DataAwsEc2Host#read}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsEc2Host.DataAwsEc2HostTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/ec2_host#read DataAwsEc2Host#read}. |
 
 ---
 
@@ -1139,7 +1139,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/ec2_host#read DataAwsEc2Host#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/ec2_host#read DataAwsEc2Host#read}.
 
 ---
 
@@ -1150,7 +1150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEc2Host.DataAwsEc2HostFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsec2host"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsec2host"
 
 dataawsec2host.NewDataAwsEc2HostFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2HostFilterList
 ```
@@ -1310,7 +1310,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEc2Host.DataAwsEc2HostFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsec2host"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsec2host"
 
 dataawsec2host.NewDataAwsEc2HostFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEc2HostFilterOutputReference
 ```
@@ -1621,7 +1621,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEc2Host.DataAwsEc2HostTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsec2host"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsec2host"
 
 dataawsec2host.NewDataAwsEc2HostTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAwsEc2HostTimeoutsOutputReference
 ```

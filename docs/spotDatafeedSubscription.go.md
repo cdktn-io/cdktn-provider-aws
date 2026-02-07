@@ -4,12 +4,12 @@
 
 ### SpotDatafeedSubscription <a name="SpotDatafeedSubscription" id="@cdktn/provider-aws.spotDatafeedSubscription.SpotDatafeedSubscription"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/spot_datafeed_subscription aws_spot_datafeed_subscription}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/spot_datafeed_subscription aws_spot_datafeed_subscription}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.spotDatafeedSubscription.SpotDatafeedSubscription.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/spotdatafeedsubscription"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/spotdatafeedsubscription"
 
 spotdatafeedsubscription.NewSpotDatafeedSubscription(scope Construct, id *string, config SpotDatafeedSubscriptionConfig) SpotDatafeedSubscription
 ```
@@ -399,7 +399,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.spotDatafeedSubscription.SpotDatafeedSubscription.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/spotdatafeedsubscription"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/spotdatafeedsubscription"
 
 spotdatafeedsubscription.SpotDatafeedSubscription_IsConstruct(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.spotDatafeedSubscription.SpotDatafeedSubscription.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/spotdatafeedsubscription"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/spotdatafeedsubscription"
 
 spotdatafeedsubscription.SpotDatafeedSubscription_IsTerraformElement(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ spotdatafeedsubscription.SpotDatafeedSubscription_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.spotDatafeedSubscription.SpotDatafeedSubscription.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/spotdatafeedsubscription"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/spotdatafeedsubscription"
 
 spotdatafeedsubscription.SpotDatafeedSubscription_IsTerraformResource(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ spotdatafeedsubscription.SpotDatafeedSubscription_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.spotDatafeedSubscription.SpotDatafeedSubscription.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/spotdatafeedsubscription"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/spotdatafeedsubscription"
 
 spotdatafeedsubscription.SpotDatafeedSubscription_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -488,7 +488,7 @@ The construct id used in the generated config for the SpotDatafeedSubscription t
 
 The id of the existing SpotDatafeedSubscription that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/spot_datafeed_subscription#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/spot_datafeed_subscription#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -776,7 +776,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.spotDatafeedSubscription.SpotDatafeedSubscriptionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/spotdatafeedsubscription"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/spotdatafeedsubscription"
 
 &spotdatafeedsubscription.SpotDatafeedSubscriptionConfig {
 	Connection: interface{},
@@ -804,9 +804,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/spotdatafeedsubscripti
 | <code><a href="#@cdktn/provider-aws.spotDatafeedSubscription.SpotDatafeedSubscriptionConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.spotDatafeedSubscription.SpotDatafeedSubscriptionConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.spotDatafeedSubscription.SpotDatafeedSubscriptionConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.spotDatafeedSubscription.SpotDatafeedSubscriptionConfig.property.bucket">Bucket</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/spot_datafeed_subscription#bucket SpotDatafeedSubscription#bucket}. |
-| <code><a href="#@cdktn/provider-aws.spotDatafeedSubscription.SpotDatafeedSubscriptionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/spot_datafeed_subscription#id SpotDatafeedSubscription#id}. |
-| <code><a href="#@cdktn/provider-aws.spotDatafeedSubscription.SpotDatafeedSubscriptionConfig.property.prefix">Prefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/spot_datafeed_subscription#prefix SpotDatafeedSubscription#prefix}. |
+| <code><a href="#@cdktn/provider-aws.spotDatafeedSubscription.SpotDatafeedSubscriptionConfig.property.bucket">Bucket</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/spot_datafeed_subscription#bucket SpotDatafeedSubscription#bucket}. |
+| <code><a href="#@cdktn/provider-aws.spotDatafeedSubscription.SpotDatafeedSubscriptionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/spot_datafeed_subscription#id SpotDatafeedSubscription#id}. |
+| <code><a href="#@cdktn/provider-aws.spotDatafeedSubscription.SpotDatafeedSubscriptionConfig.property.prefix">Prefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/spot_datafeed_subscription#prefix SpotDatafeedSubscription#prefix}. |
 | <code><a href="#@cdktn/provider-aws.spotDatafeedSubscription.SpotDatafeedSubscriptionConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -889,7 +889,7 @@ Bucket *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/spot_datafeed_subscription#bucket SpotDatafeedSubscription#bucket}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/spot_datafeed_subscription#bucket SpotDatafeedSubscription#bucket}.
 
 ---
 
@@ -901,7 +901,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/spot_datafeed_subscription#id SpotDatafeedSubscription#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/spot_datafeed_subscription#id SpotDatafeedSubscription#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -916,7 +916,7 @@ Prefix *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/spot_datafeed_subscription#prefix SpotDatafeedSubscription#prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/spot_datafeed_subscription#prefix SpotDatafeedSubscription#prefix}.
 
 ---
 
@@ -930,7 +930,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/spot_datafeed_subscription#region SpotDatafeedSubscription#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/spot_datafeed_subscription#region SpotDatafeedSubscription#region}
 
 ---
 

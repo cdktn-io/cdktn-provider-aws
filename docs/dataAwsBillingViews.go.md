@@ -4,12 +4,12 @@
 
 ### DataAwsBillingViews <a name="DataAwsBillingViews" id="@cdktn/provider-aws.dataAwsBillingViews.DataAwsBillingViews"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/billing_views aws_billing_views}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/billing_views aws_billing_views}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsBillingViews.DataAwsBillingViews.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsbillingviews"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsbillingviews"
 
 dataawsbillingviews.NewDataAwsBillingViews(scope Construct, id *string, config DataAwsBillingViewsConfig) DataAwsBillingViews
 ```
@@ -283,7 +283,7 @@ func ResetBillingViewTypes()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsBillingViews.DataAwsBillingViews.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsbillingviews"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsbillingviews"
 
 dataawsbillingviews.DataAwsBillingViews_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsBillingViews.DataAwsBillingViews.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsbillingviews"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsbillingviews"
 
 dataawsbillingviews.DataAwsBillingViews_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ dataawsbillingviews.DataAwsBillingViews_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsBillingViews.DataAwsBillingViews.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsbillingviews"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsbillingviews"
 
 dataawsbillingviews.DataAwsBillingViews_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ dataawsbillingviews.DataAwsBillingViews_IsTerraformDataSource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsBillingViews.DataAwsBillingViews.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsbillingviews"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsbillingviews"
 
 dataawsbillingviews.DataAwsBillingViews_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -372,7 +372,7 @@ The construct id used in the generated config for the DataAwsBillingViews to imp
 
 The id of the existing DataAwsBillingViews that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/billing_views#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/billing_views#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -583,7 +583,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsBillingViews.DataAwsBillingViewsBillingView.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsbillingviews"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsbillingviews"
 
 &dataawsbillingviews.DataAwsBillingViewsBillingView {
 
@@ -596,7 +596,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsbillingviews"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsBillingViews.DataAwsBillingViewsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsbillingviews"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsbillingviews"
 
 &dataawsbillingviews.DataAwsBillingViewsConfig {
 	Connection: interface{},
@@ -621,7 +621,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsbillingviews"
 | <code><a href="#@cdktn/provider-aws.dataAwsBillingViews.DataAwsBillingViewsConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsBillingViews.DataAwsBillingViewsConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsBillingViews.DataAwsBillingViewsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsBillingViews.DataAwsBillingViewsConfig.property.billingViewTypes">BillingViewTypes</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/billing_views#billing_view_types DataAwsBillingViews#billing_view_types}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsBillingViews.DataAwsBillingViewsConfig.property.billingViewTypes">BillingViewTypes</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/billing_views#billing_view_types DataAwsBillingViews#billing_view_types}. |
 
 ---
 
@@ -703,7 +703,7 @@ BillingViewTypes *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/billing_views#billing_view_types DataAwsBillingViews#billing_view_types}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/billing_views#billing_view_types DataAwsBillingViews#billing_view_types}.
 
 ---
 
@@ -714,7 +714,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsBillingViews.DataAwsBillingViewsBillingViewList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsbillingviews"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsbillingviews"
 
 dataawsbillingviews.NewDataAwsBillingViewsBillingViewList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsBillingViewsBillingViewList
 ```
@@ -863,7 +863,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsBillingViews.DataAwsBillingViewsBillingViewOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsbillingviews"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsbillingviews"
 
 dataawsbillingviews.NewDataAwsBillingViewsBillingViewOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsBillingViewsBillingViewOutputReference
 ```

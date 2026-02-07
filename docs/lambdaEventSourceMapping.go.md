@@ -4,12 +4,12 @@
 
 ### LambdaEventSourceMapping <a name="LambdaEventSourceMapping" id="@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMapping"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lambda_event_source_mapping aws_lambda_event_source_mapping}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lambda_event_source_mapping aws_lambda_event_source_mapping}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMapping.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lambdaeventsourcemapping"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/lambdaeventsourcemapping"
 
 lambdaeventsourcemapping.NewLambdaEventSourceMapping(scope Construct, id *string, config LambdaEventSourceMappingConfig) LambdaEventSourceMapping
 ```
@@ -711,7 +711,7 @@ func ResetTumblingWindowInSeconds()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMapping.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lambdaeventsourcemapping"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/lambdaeventsourcemapping"
 
 lambdaeventsourcemapping.LambdaEventSourceMapping_IsConstruct(x interface{}) *bool
 ```
@@ -743,7 +743,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMapping.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lambdaeventsourcemapping"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/lambdaeventsourcemapping"
 
 lambdaeventsourcemapping.LambdaEventSourceMapping_IsTerraformElement(x interface{}) *bool
 ```
@@ -757,7 +757,7 @@ lambdaeventsourcemapping.LambdaEventSourceMapping_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMapping.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lambdaeventsourcemapping"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/lambdaeventsourcemapping"
 
 lambdaeventsourcemapping.LambdaEventSourceMapping_IsTerraformResource(x interface{}) *bool
 ```
@@ -771,7 +771,7 @@ lambdaeventsourcemapping.LambdaEventSourceMapping_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMapping.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lambdaeventsourcemapping"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/lambdaeventsourcemapping"
 
 lambdaeventsourcemapping.LambdaEventSourceMapping_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -800,7 +800,7 @@ The construct id used in the generated config for the LambdaEventSourceMapping t
 
 The id of the existing LambdaEventSourceMapping that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lambda_event_source_mapping#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lambda_event_source_mapping#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1737,11 +1737,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingAmazonManagedKafkaEventSourceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lambdaeventsourcemapping"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/lambdaeventsourcemapping"
 
 &lambdaeventsourcemapping.LambdaEventSourceMappingAmazonManagedKafkaEventSourceConfig {
 	ConsumerGroupId: *string,
-	SchemaRegistryConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.lambdaEventSourceMapping.LambdaEventSourceMappingAmazonManagedKafkaEventSourceConfigSchemaRegistryConfig,
+	SchemaRegistryConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.lambdaEventSourceMapping.LambdaEventSourceMappingAmazonManagedKafkaEventSourceConfigSchemaRegistryConfig,
 }
 ```
 
@@ -1749,7 +1749,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lambdaeventsourcemappi
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingAmazonManagedKafkaEventSourceConfig.property.consumerGroupId">ConsumerGroupId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lambda_event_source_mapping#consumer_group_id LambdaEventSourceMapping#consumer_group_id}. |
+| <code><a href="#@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingAmazonManagedKafkaEventSourceConfig.property.consumerGroupId">ConsumerGroupId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lambda_event_source_mapping#consumer_group_id LambdaEventSourceMapping#consumer_group_id}. |
 | <code><a href="#@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingAmazonManagedKafkaEventSourceConfig.property.schemaRegistryConfig">SchemaRegistryConfig</a></code> | <code><a href="#@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingAmazonManagedKafkaEventSourceConfigSchemaRegistryConfig">LambdaEventSourceMappingAmazonManagedKafkaEventSourceConfigSchemaRegistryConfig</a></code> | schema_registry_config block. |
 
 ---
@@ -1762,7 +1762,7 @@ ConsumerGroupId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lambda_event_source_mapping#consumer_group_id LambdaEventSourceMapping#consumer_group_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lambda_event_source_mapping#consumer_group_id LambdaEventSourceMapping#consumer_group_id}.
 
 ---
 
@@ -1776,7 +1776,7 @@ SchemaRegistryConfig LambdaEventSourceMappingAmazonManagedKafkaEventSourceConfig
 
 schema_registry_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lambda_event_source_mapping#schema_registry_config LambdaEventSourceMapping#schema_registry_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lambda_event_source_mapping#schema_registry_config LambdaEventSourceMapping#schema_registry_config}
 
 ---
 
@@ -1785,7 +1785,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingAmazonManagedKafkaEventSourceConfigSchemaRegistryConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lambdaeventsourcemapping"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/lambdaeventsourcemapping"
 
 &lambdaeventsourcemapping.LambdaEventSourceMappingAmazonManagedKafkaEventSourceConfigSchemaRegistryConfig {
 	AccessConfig: interface{},
@@ -1800,8 +1800,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lambdaeventsourcemappi
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingAmazonManagedKafkaEventSourceConfigSchemaRegistryConfig.property.accessConfig">AccessConfig</a></code> | <code>interface{}</code> | access_config block. |
-| <code><a href="#@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingAmazonManagedKafkaEventSourceConfigSchemaRegistryConfig.property.eventRecordFormat">EventRecordFormat</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lambda_event_source_mapping#event_record_format LambdaEventSourceMapping#event_record_format}. |
-| <code><a href="#@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingAmazonManagedKafkaEventSourceConfigSchemaRegistryConfig.property.schemaRegistryUri">SchemaRegistryUri</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lambda_event_source_mapping#schema_registry_uri LambdaEventSourceMapping#schema_registry_uri}. |
+| <code><a href="#@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingAmazonManagedKafkaEventSourceConfigSchemaRegistryConfig.property.eventRecordFormat">EventRecordFormat</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lambda_event_source_mapping#event_record_format LambdaEventSourceMapping#event_record_format}. |
+| <code><a href="#@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingAmazonManagedKafkaEventSourceConfigSchemaRegistryConfig.property.schemaRegistryUri">SchemaRegistryUri</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lambda_event_source_mapping#schema_registry_uri LambdaEventSourceMapping#schema_registry_uri}. |
 | <code><a href="#@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingAmazonManagedKafkaEventSourceConfigSchemaRegistryConfig.property.schemaValidationConfig">SchemaValidationConfig</a></code> | <code>interface{}</code> | schema_validation_config block. |
 
 ---
@@ -1816,7 +1816,7 @@ AccessConfig interface{}
 
 access_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lambda_event_source_mapping#access_config LambdaEventSourceMapping#access_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lambda_event_source_mapping#access_config LambdaEventSourceMapping#access_config}
 
 ---
 
@@ -1828,7 +1828,7 @@ EventRecordFormat *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lambda_event_source_mapping#event_record_format LambdaEventSourceMapping#event_record_format}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lambda_event_source_mapping#event_record_format LambdaEventSourceMapping#event_record_format}.
 
 ---
 
@@ -1840,7 +1840,7 @@ SchemaRegistryUri *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lambda_event_source_mapping#schema_registry_uri LambdaEventSourceMapping#schema_registry_uri}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lambda_event_source_mapping#schema_registry_uri LambdaEventSourceMapping#schema_registry_uri}.
 
 ---
 
@@ -1854,7 +1854,7 @@ SchemaValidationConfig interface{}
 
 schema_validation_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lambda_event_source_mapping#schema_validation_config LambdaEventSourceMapping#schema_validation_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lambda_event_source_mapping#schema_validation_config LambdaEventSourceMapping#schema_validation_config}
 
 ---
 
@@ -1863,7 +1863,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingAmazonManagedKafkaEventSourceConfigSchemaRegistryConfigAccessConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lambdaeventsourcemapping"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/lambdaeventsourcemapping"
 
 &lambdaeventsourcemapping.LambdaEventSourceMappingAmazonManagedKafkaEventSourceConfigSchemaRegistryConfigAccessConfig {
 	Type: *string,
@@ -1875,8 +1875,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lambdaeventsourcemappi
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingAmazonManagedKafkaEventSourceConfigSchemaRegistryConfigAccessConfig.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lambda_event_source_mapping#type LambdaEventSourceMapping#type}. |
-| <code><a href="#@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingAmazonManagedKafkaEventSourceConfigSchemaRegistryConfigAccessConfig.property.uri">Uri</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lambda_event_source_mapping#uri LambdaEventSourceMapping#uri}. |
+| <code><a href="#@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingAmazonManagedKafkaEventSourceConfigSchemaRegistryConfigAccessConfig.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lambda_event_source_mapping#type LambdaEventSourceMapping#type}. |
+| <code><a href="#@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingAmazonManagedKafkaEventSourceConfigSchemaRegistryConfigAccessConfig.property.uri">Uri</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lambda_event_source_mapping#uri LambdaEventSourceMapping#uri}. |
 
 ---
 
@@ -1888,7 +1888,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lambda_event_source_mapping#type LambdaEventSourceMapping#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lambda_event_source_mapping#type LambdaEventSourceMapping#type}.
 
 ---
 
@@ -1900,7 +1900,7 @@ Uri *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lambda_event_source_mapping#uri LambdaEventSourceMapping#uri}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lambda_event_source_mapping#uri LambdaEventSourceMapping#uri}.
 
 ---
 
@@ -1909,7 +1909,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingAmazonManagedKafkaEventSourceConfigSchemaRegistryConfigSchemaValidationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lambdaeventsourcemapping"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/lambdaeventsourcemapping"
 
 &lambdaeventsourcemapping.LambdaEventSourceMappingAmazonManagedKafkaEventSourceConfigSchemaRegistryConfigSchemaValidationConfig {
 	Attribute: *string,
@@ -1920,7 +1920,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lambdaeventsourcemappi
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingAmazonManagedKafkaEventSourceConfigSchemaRegistryConfigSchemaValidationConfig.property.attribute">Attribute</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lambda_event_source_mapping#attribute LambdaEventSourceMapping#attribute}. |
+| <code><a href="#@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingAmazonManagedKafkaEventSourceConfigSchemaRegistryConfigSchemaValidationConfig.property.attribute">Attribute</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lambda_event_source_mapping#attribute LambdaEventSourceMapping#attribute}. |
 
 ---
 
@@ -1932,7 +1932,7 @@ Attribute *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lambda_event_source_mapping#attribute LambdaEventSourceMapping#attribute}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lambda_event_source_mapping#attribute LambdaEventSourceMapping#attribute}.
 
 ---
 
@@ -1941,7 +1941,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lambdaeventsourcemapping"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/lambdaeventsourcemapping"
 
 &lambdaeventsourcemapping.LambdaEventSourceMappingConfig {
 	Connection: interface{},
@@ -1952,28 +1952,28 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lambdaeventsourcemappi
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	FunctionName: *string,
-	AmazonManagedKafkaEventSourceConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.lambdaEventSourceMapping.LambdaEventSourceMappingAmazonManagedKafkaEventSourceConfig,
+	AmazonManagedKafkaEventSourceConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.lambdaEventSourceMapping.LambdaEventSourceMappingAmazonManagedKafkaEventSourceConfig,
 	BatchSize: *f64,
 	BisectBatchOnFunctionError: interface{},
-	DestinationConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.lambdaEventSourceMapping.LambdaEventSourceMappingDestinationConfig,
-	DocumentDbEventSourceConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.lambdaEventSourceMapping.LambdaEventSourceMappingDocumentDbEventSourceConfig,
+	DestinationConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.lambdaEventSourceMapping.LambdaEventSourceMappingDestinationConfig,
+	DocumentDbEventSourceConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.lambdaEventSourceMapping.LambdaEventSourceMappingDocumentDbEventSourceConfig,
 	Enabled: interface{},
 	EventSourceArn: *string,
-	FilterCriteria: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.lambdaEventSourceMapping.LambdaEventSourceMappingFilterCriteria,
+	FilterCriteria: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.lambdaEventSourceMapping.LambdaEventSourceMappingFilterCriteria,
 	FunctionResponseTypes: *[]*string,
 	Id: *string,
 	KmsKeyArn: *string,
 	MaximumBatchingWindowInSeconds: *f64,
 	MaximumRecordAgeInSeconds: *f64,
 	MaximumRetryAttempts: *f64,
-	MetricsConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.lambdaEventSourceMapping.LambdaEventSourceMappingMetricsConfig,
+	MetricsConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.lambdaEventSourceMapping.LambdaEventSourceMappingMetricsConfig,
 	ParallelizationFactor: *f64,
-	ProvisionedPollerConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.lambdaEventSourceMapping.LambdaEventSourceMappingProvisionedPollerConfig,
+	ProvisionedPollerConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.lambdaEventSourceMapping.LambdaEventSourceMappingProvisionedPollerConfig,
 	Queues: *[]*string,
 	Region: *string,
-	ScalingConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.lambdaEventSourceMapping.LambdaEventSourceMappingScalingConfig,
-	SelfManagedEventSource: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.lambdaEventSourceMapping.LambdaEventSourceMappingSelfManagedEventSource,
-	SelfManagedKafkaEventSourceConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.lambdaEventSourceMapping.LambdaEventSourceMappingSelfManagedKafkaEventSourceConfig,
+	ScalingConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.lambdaEventSourceMapping.LambdaEventSourceMappingScalingConfig,
+	SelfManagedEventSource: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.lambdaEventSourceMapping.LambdaEventSourceMappingSelfManagedEventSource,
+	SelfManagedKafkaEventSourceConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.lambdaEventSourceMapping.LambdaEventSourceMappingSelfManagedKafkaEventSourceConfig,
 	SourceAccessConfiguration: interface{},
 	StartingPosition: *string,
 	StartingPositionTimestamp: *string,
@@ -1995,36 +1995,36 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lambdaeventsourcemappi
 | <code><a href="#@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingConfig.property.functionName">FunctionName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lambda_event_source_mapping#function_name LambdaEventSourceMapping#function_name}. |
+| <code><a href="#@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingConfig.property.functionName">FunctionName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lambda_event_source_mapping#function_name LambdaEventSourceMapping#function_name}. |
 | <code><a href="#@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingConfig.property.amazonManagedKafkaEventSourceConfig">AmazonManagedKafkaEventSourceConfig</a></code> | <code><a href="#@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingAmazonManagedKafkaEventSourceConfig">LambdaEventSourceMappingAmazonManagedKafkaEventSourceConfig</a></code> | amazon_managed_kafka_event_source_config block. |
-| <code><a href="#@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingConfig.property.batchSize">BatchSize</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lambda_event_source_mapping#batch_size LambdaEventSourceMapping#batch_size}. |
-| <code><a href="#@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingConfig.property.bisectBatchOnFunctionError">BisectBatchOnFunctionError</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lambda_event_source_mapping#bisect_batch_on_function_error LambdaEventSourceMapping#bisect_batch_on_function_error}. |
+| <code><a href="#@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingConfig.property.batchSize">BatchSize</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lambda_event_source_mapping#batch_size LambdaEventSourceMapping#batch_size}. |
+| <code><a href="#@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingConfig.property.bisectBatchOnFunctionError">BisectBatchOnFunctionError</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lambda_event_source_mapping#bisect_batch_on_function_error LambdaEventSourceMapping#bisect_batch_on_function_error}. |
 | <code><a href="#@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingConfig.property.destinationConfig">DestinationConfig</a></code> | <code><a href="#@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingDestinationConfig">LambdaEventSourceMappingDestinationConfig</a></code> | destination_config block. |
 | <code><a href="#@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingConfig.property.documentDbEventSourceConfig">DocumentDbEventSourceConfig</a></code> | <code><a href="#@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingDocumentDbEventSourceConfig">LambdaEventSourceMappingDocumentDbEventSourceConfig</a></code> | document_db_event_source_config block. |
-| <code><a href="#@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lambda_event_source_mapping#enabled LambdaEventSourceMapping#enabled}. |
-| <code><a href="#@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingConfig.property.eventSourceArn">EventSourceArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lambda_event_source_mapping#event_source_arn LambdaEventSourceMapping#event_source_arn}. |
+| <code><a href="#@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lambda_event_source_mapping#enabled LambdaEventSourceMapping#enabled}. |
+| <code><a href="#@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingConfig.property.eventSourceArn">EventSourceArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lambda_event_source_mapping#event_source_arn LambdaEventSourceMapping#event_source_arn}. |
 | <code><a href="#@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingConfig.property.filterCriteria">FilterCriteria</a></code> | <code><a href="#@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingFilterCriteria">LambdaEventSourceMappingFilterCriteria</a></code> | filter_criteria block. |
-| <code><a href="#@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingConfig.property.functionResponseTypes">FunctionResponseTypes</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lambda_event_source_mapping#function_response_types LambdaEventSourceMapping#function_response_types}. |
-| <code><a href="#@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lambda_event_source_mapping#id LambdaEventSourceMapping#id}. |
-| <code><a href="#@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingConfig.property.kmsKeyArn">KmsKeyArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lambda_event_source_mapping#kms_key_arn LambdaEventSourceMapping#kms_key_arn}. |
-| <code><a href="#@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingConfig.property.maximumBatchingWindowInSeconds">MaximumBatchingWindowInSeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lambda_event_source_mapping#maximum_batching_window_in_seconds LambdaEventSourceMapping#maximum_batching_window_in_seconds}. |
-| <code><a href="#@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingConfig.property.maximumRecordAgeInSeconds">MaximumRecordAgeInSeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lambda_event_source_mapping#maximum_record_age_in_seconds LambdaEventSourceMapping#maximum_record_age_in_seconds}. |
-| <code><a href="#@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingConfig.property.maximumRetryAttempts">MaximumRetryAttempts</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lambda_event_source_mapping#maximum_retry_attempts LambdaEventSourceMapping#maximum_retry_attempts}. |
+| <code><a href="#@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingConfig.property.functionResponseTypes">FunctionResponseTypes</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lambda_event_source_mapping#function_response_types LambdaEventSourceMapping#function_response_types}. |
+| <code><a href="#@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lambda_event_source_mapping#id LambdaEventSourceMapping#id}. |
+| <code><a href="#@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingConfig.property.kmsKeyArn">KmsKeyArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lambda_event_source_mapping#kms_key_arn LambdaEventSourceMapping#kms_key_arn}. |
+| <code><a href="#@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingConfig.property.maximumBatchingWindowInSeconds">MaximumBatchingWindowInSeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lambda_event_source_mapping#maximum_batching_window_in_seconds LambdaEventSourceMapping#maximum_batching_window_in_seconds}. |
+| <code><a href="#@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingConfig.property.maximumRecordAgeInSeconds">MaximumRecordAgeInSeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lambda_event_source_mapping#maximum_record_age_in_seconds LambdaEventSourceMapping#maximum_record_age_in_seconds}. |
+| <code><a href="#@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingConfig.property.maximumRetryAttempts">MaximumRetryAttempts</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lambda_event_source_mapping#maximum_retry_attempts LambdaEventSourceMapping#maximum_retry_attempts}. |
 | <code><a href="#@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingConfig.property.metricsConfig">MetricsConfig</a></code> | <code><a href="#@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingMetricsConfig">LambdaEventSourceMappingMetricsConfig</a></code> | metrics_config block. |
-| <code><a href="#@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingConfig.property.parallelizationFactor">ParallelizationFactor</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lambda_event_source_mapping#parallelization_factor LambdaEventSourceMapping#parallelization_factor}. |
+| <code><a href="#@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingConfig.property.parallelizationFactor">ParallelizationFactor</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lambda_event_source_mapping#parallelization_factor LambdaEventSourceMapping#parallelization_factor}. |
 | <code><a href="#@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingConfig.property.provisionedPollerConfig">ProvisionedPollerConfig</a></code> | <code><a href="#@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingProvisionedPollerConfig">LambdaEventSourceMappingProvisionedPollerConfig</a></code> | provisioned_poller_config block. |
-| <code><a href="#@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingConfig.property.queues">Queues</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lambda_event_source_mapping#queues LambdaEventSourceMapping#queues}. |
+| <code><a href="#@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingConfig.property.queues">Queues</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lambda_event_source_mapping#queues LambdaEventSourceMapping#queues}. |
 | <code><a href="#@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingConfig.property.scalingConfig">ScalingConfig</a></code> | <code><a href="#@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingScalingConfig">LambdaEventSourceMappingScalingConfig</a></code> | scaling_config block. |
 | <code><a href="#@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingConfig.property.selfManagedEventSource">SelfManagedEventSource</a></code> | <code><a href="#@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingSelfManagedEventSource">LambdaEventSourceMappingSelfManagedEventSource</a></code> | self_managed_event_source block. |
 | <code><a href="#@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingConfig.property.selfManagedKafkaEventSourceConfig">SelfManagedKafkaEventSourceConfig</a></code> | <code><a href="#@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingSelfManagedKafkaEventSourceConfig">LambdaEventSourceMappingSelfManagedKafkaEventSourceConfig</a></code> | self_managed_kafka_event_source_config block. |
 | <code><a href="#@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingConfig.property.sourceAccessConfiguration">SourceAccessConfiguration</a></code> | <code>interface{}</code> | source_access_configuration block. |
-| <code><a href="#@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingConfig.property.startingPosition">StartingPosition</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lambda_event_source_mapping#starting_position LambdaEventSourceMapping#starting_position}. |
-| <code><a href="#@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingConfig.property.startingPositionTimestamp">StartingPositionTimestamp</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lambda_event_source_mapping#starting_position_timestamp LambdaEventSourceMapping#starting_position_timestamp}. |
-| <code><a href="#@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lambda_event_source_mapping#tags LambdaEventSourceMapping#tags}. |
-| <code><a href="#@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lambda_event_source_mapping#tags_all LambdaEventSourceMapping#tags_all}. |
-| <code><a href="#@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingConfig.property.topics">Topics</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lambda_event_source_mapping#topics LambdaEventSourceMapping#topics}. |
-| <code><a href="#@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingConfig.property.tumblingWindowInSeconds">TumblingWindowInSeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lambda_event_source_mapping#tumbling_window_in_seconds LambdaEventSourceMapping#tumbling_window_in_seconds}. |
+| <code><a href="#@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingConfig.property.startingPosition">StartingPosition</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lambda_event_source_mapping#starting_position LambdaEventSourceMapping#starting_position}. |
+| <code><a href="#@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingConfig.property.startingPositionTimestamp">StartingPositionTimestamp</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lambda_event_source_mapping#starting_position_timestamp LambdaEventSourceMapping#starting_position_timestamp}. |
+| <code><a href="#@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lambda_event_source_mapping#tags LambdaEventSourceMapping#tags}. |
+| <code><a href="#@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lambda_event_source_mapping#tags_all LambdaEventSourceMapping#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingConfig.property.topics">Topics</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lambda_event_source_mapping#topics LambdaEventSourceMapping#topics}. |
+| <code><a href="#@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingConfig.property.tumblingWindowInSeconds">TumblingWindowInSeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lambda_event_source_mapping#tumbling_window_in_seconds LambdaEventSourceMapping#tumbling_window_in_seconds}. |
 
 ---
 
@@ -2106,7 +2106,7 @@ FunctionName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lambda_event_source_mapping#function_name LambdaEventSourceMapping#function_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lambda_event_source_mapping#function_name LambdaEventSourceMapping#function_name}.
 
 ---
 
@@ -2120,7 +2120,7 @@ AmazonManagedKafkaEventSourceConfig LambdaEventSourceMappingAmazonManagedKafkaEv
 
 amazon_managed_kafka_event_source_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lambda_event_source_mapping#amazon_managed_kafka_event_source_config LambdaEventSourceMapping#amazon_managed_kafka_event_source_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lambda_event_source_mapping#amazon_managed_kafka_event_source_config LambdaEventSourceMapping#amazon_managed_kafka_event_source_config}
 
 ---
 
@@ -2132,7 +2132,7 @@ BatchSize *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lambda_event_source_mapping#batch_size LambdaEventSourceMapping#batch_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lambda_event_source_mapping#batch_size LambdaEventSourceMapping#batch_size}.
 
 ---
 
@@ -2144,7 +2144,7 @@ BisectBatchOnFunctionError interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lambda_event_source_mapping#bisect_batch_on_function_error LambdaEventSourceMapping#bisect_batch_on_function_error}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lambda_event_source_mapping#bisect_batch_on_function_error LambdaEventSourceMapping#bisect_batch_on_function_error}.
 
 ---
 
@@ -2158,7 +2158,7 @@ DestinationConfig LambdaEventSourceMappingDestinationConfig
 
 destination_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lambda_event_source_mapping#destination_config LambdaEventSourceMapping#destination_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lambda_event_source_mapping#destination_config LambdaEventSourceMapping#destination_config}
 
 ---
 
@@ -2172,7 +2172,7 @@ DocumentDbEventSourceConfig LambdaEventSourceMappingDocumentDbEventSourceConfig
 
 document_db_event_source_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lambda_event_source_mapping#document_db_event_source_config LambdaEventSourceMapping#document_db_event_source_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lambda_event_source_mapping#document_db_event_source_config LambdaEventSourceMapping#document_db_event_source_config}
 
 ---
 
@@ -2184,7 +2184,7 @@ Enabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lambda_event_source_mapping#enabled LambdaEventSourceMapping#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lambda_event_source_mapping#enabled LambdaEventSourceMapping#enabled}.
 
 ---
 
@@ -2196,7 +2196,7 @@ EventSourceArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lambda_event_source_mapping#event_source_arn LambdaEventSourceMapping#event_source_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lambda_event_source_mapping#event_source_arn LambdaEventSourceMapping#event_source_arn}.
 
 ---
 
@@ -2210,7 +2210,7 @@ FilterCriteria LambdaEventSourceMappingFilterCriteria
 
 filter_criteria block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lambda_event_source_mapping#filter_criteria LambdaEventSourceMapping#filter_criteria}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lambda_event_source_mapping#filter_criteria LambdaEventSourceMapping#filter_criteria}
 
 ---
 
@@ -2222,7 +2222,7 @@ FunctionResponseTypes *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lambda_event_source_mapping#function_response_types LambdaEventSourceMapping#function_response_types}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lambda_event_source_mapping#function_response_types LambdaEventSourceMapping#function_response_types}.
 
 ---
 
@@ -2234,7 +2234,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lambda_event_source_mapping#id LambdaEventSourceMapping#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lambda_event_source_mapping#id LambdaEventSourceMapping#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2249,7 +2249,7 @@ KmsKeyArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lambda_event_source_mapping#kms_key_arn LambdaEventSourceMapping#kms_key_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lambda_event_source_mapping#kms_key_arn LambdaEventSourceMapping#kms_key_arn}.
 
 ---
 
@@ -2261,7 +2261,7 @@ MaximumBatchingWindowInSeconds *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lambda_event_source_mapping#maximum_batching_window_in_seconds LambdaEventSourceMapping#maximum_batching_window_in_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lambda_event_source_mapping#maximum_batching_window_in_seconds LambdaEventSourceMapping#maximum_batching_window_in_seconds}.
 
 ---
 
@@ -2273,7 +2273,7 @@ MaximumRecordAgeInSeconds *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lambda_event_source_mapping#maximum_record_age_in_seconds LambdaEventSourceMapping#maximum_record_age_in_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lambda_event_source_mapping#maximum_record_age_in_seconds LambdaEventSourceMapping#maximum_record_age_in_seconds}.
 
 ---
 
@@ -2285,7 +2285,7 @@ MaximumRetryAttempts *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lambda_event_source_mapping#maximum_retry_attempts LambdaEventSourceMapping#maximum_retry_attempts}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lambda_event_source_mapping#maximum_retry_attempts LambdaEventSourceMapping#maximum_retry_attempts}.
 
 ---
 
@@ -2299,7 +2299,7 @@ MetricsConfig LambdaEventSourceMappingMetricsConfig
 
 metrics_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lambda_event_source_mapping#metrics_config LambdaEventSourceMapping#metrics_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lambda_event_source_mapping#metrics_config LambdaEventSourceMapping#metrics_config}
 
 ---
 
@@ -2311,7 +2311,7 @@ ParallelizationFactor *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lambda_event_source_mapping#parallelization_factor LambdaEventSourceMapping#parallelization_factor}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lambda_event_source_mapping#parallelization_factor LambdaEventSourceMapping#parallelization_factor}.
 
 ---
 
@@ -2325,7 +2325,7 @@ ProvisionedPollerConfig LambdaEventSourceMappingProvisionedPollerConfig
 
 provisioned_poller_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lambda_event_source_mapping#provisioned_poller_config LambdaEventSourceMapping#provisioned_poller_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lambda_event_source_mapping#provisioned_poller_config LambdaEventSourceMapping#provisioned_poller_config}
 
 ---
 
@@ -2337,7 +2337,7 @@ Queues *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lambda_event_source_mapping#queues LambdaEventSourceMapping#queues}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lambda_event_source_mapping#queues LambdaEventSourceMapping#queues}.
 
 ---
 
@@ -2351,7 +2351,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lambda_event_source_mapping#region LambdaEventSourceMapping#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lambda_event_source_mapping#region LambdaEventSourceMapping#region}
 
 ---
 
@@ -2365,7 +2365,7 @@ ScalingConfig LambdaEventSourceMappingScalingConfig
 
 scaling_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lambda_event_source_mapping#scaling_config LambdaEventSourceMapping#scaling_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lambda_event_source_mapping#scaling_config LambdaEventSourceMapping#scaling_config}
 
 ---
 
@@ -2379,7 +2379,7 @@ SelfManagedEventSource LambdaEventSourceMappingSelfManagedEventSource
 
 self_managed_event_source block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lambda_event_source_mapping#self_managed_event_source LambdaEventSourceMapping#self_managed_event_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lambda_event_source_mapping#self_managed_event_source LambdaEventSourceMapping#self_managed_event_source}
 
 ---
 
@@ -2393,7 +2393,7 @@ SelfManagedKafkaEventSourceConfig LambdaEventSourceMappingSelfManagedKafkaEventS
 
 self_managed_kafka_event_source_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lambda_event_source_mapping#self_managed_kafka_event_source_config LambdaEventSourceMapping#self_managed_kafka_event_source_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lambda_event_source_mapping#self_managed_kafka_event_source_config LambdaEventSourceMapping#self_managed_kafka_event_source_config}
 
 ---
 
@@ -2407,7 +2407,7 @@ SourceAccessConfiguration interface{}
 
 source_access_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lambda_event_source_mapping#source_access_configuration LambdaEventSourceMapping#source_access_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lambda_event_source_mapping#source_access_configuration LambdaEventSourceMapping#source_access_configuration}
 
 ---
 
@@ -2419,7 +2419,7 @@ StartingPosition *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lambda_event_source_mapping#starting_position LambdaEventSourceMapping#starting_position}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lambda_event_source_mapping#starting_position LambdaEventSourceMapping#starting_position}.
 
 ---
 
@@ -2431,7 +2431,7 @@ StartingPositionTimestamp *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lambda_event_source_mapping#starting_position_timestamp LambdaEventSourceMapping#starting_position_timestamp}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lambda_event_source_mapping#starting_position_timestamp LambdaEventSourceMapping#starting_position_timestamp}.
 
 ---
 
@@ -2443,7 +2443,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lambda_event_source_mapping#tags LambdaEventSourceMapping#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lambda_event_source_mapping#tags LambdaEventSourceMapping#tags}.
 
 ---
 
@@ -2455,7 +2455,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lambda_event_source_mapping#tags_all LambdaEventSourceMapping#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lambda_event_source_mapping#tags_all LambdaEventSourceMapping#tags_all}.
 
 ---
 
@@ -2467,7 +2467,7 @@ Topics *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lambda_event_source_mapping#topics LambdaEventSourceMapping#topics}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lambda_event_source_mapping#topics LambdaEventSourceMapping#topics}.
 
 ---
 
@@ -2479,7 +2479,7 @@ TumblingWindowInSeconds *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lambda_event_source_mapping#tumbling_window_in_seconds LambdaEventSourceMapping#tumbling_window_in_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lambda_event_source_mapping#tumbling_window_in_seconds LambdaEventSourceMapping#tumbling_window_in_seconds}.
 
 ---
 
@@ -2488,10 +2488,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingDestinationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lambdaeventsourcemapping"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/lambdaeventsourcemapping"
 
 &lambdaeventsourcemapping.LambdaEventSourceMappingDestinationConfig {
-	OnFailure: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.lambdaEventSourceMapping.LambdaEventSourceMappingDestinationConfigOnFailure,
+	OnFailure: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.lambdaEventSourceMapping.LambdaEventSourceMappingDestinationConfigOnFailure,
 }
 ```
 
@@ -2513,7 +2513,7 @@ OnFailure LambdaEventSourceMappingDestinationConfigOnFailure
 
 on_failure block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lambda_event_source_mapping#on_failure LambdaEventSourceMapping#on_failure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lambda_event_source_mapping#on_failure LambdaEventSourceMapping#on_failure}
 
 ---
 
@@ -2522,7 +2522,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingDestinationConfigOnFailure.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lambdaeventsourcemapping"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/lambdaeventsourcemapping"
 
 &lambdaeventsourcemapping.LambdaEventSourceMappingDestinationConfigOnFailure {
 	DestinationArn: *string,
@@ -2533,7 +2533,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lambdaeventsourcemappi
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingDestinationConfigOnFailure.property.destinationArn">DestinationArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lambda_event_source_mapping#destination_arn LambdaEventSourceMapping#destination_arn}. |
+| <code><a href="#@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingDestinationConfigOnFailure.property.destinationArn">DestinationArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lambda_event_source_mapping#destination_arn LambdaEventSourceMapping#destination_arn}. |
 
 ---
 
@@ -2545,7 +2545,7 @@ DestinationArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lambda_event_source_mapping#destination_arn LambdaEventSourceMapping#destination_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lambda_event_source_mapping#destination_arn LambdaEventSourceMapping#destination_arn}.
 
 ---
 
@@ -2554,7 +2554,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingDocumentDbEventSourceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lambdaeventsourcemapping"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/lambdaeventsourcemapping"
 
 &lambdaeventsourcemapping.LambdaEventSourceMappingDocumentDbEventSourceConfig {
 	DatabaseName: *string,
@@ -2567,9 +2567,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lambdaeventsourcemappi
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingDocumentDbEventSourceConfig.property.databaseName">DatabaseName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lambda_event_source_mapping#database_name LambdaEventSourceMapping#database_name}. |
-| <code><a href="#@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingDocumentDbEventSourceConfig.property.collectionName">CollectionName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lambda_event_source_mapping#collection_name LambdaEventSourceMapping#collection_name}. |
-| <code><a href="#@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingDocumentDbEventSourceConfig.property.fullDocument">FullDocument</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lambda_event_source_mapping#full_document LambdaEventSourceMapping#full_document}. |
+| <code><a href="#@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingDocumentDbEventSourceConfig.property.databaseName">DatabaseName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lambda_event_source_mapping#database_name LambdaEventSourceMapping#database_name}. |
+| <code><a href="#@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingDocumentDbEventSourceConfig.property.collectionName">CollectionName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lambda_event_source_mapping#collection_name LambdaEventSourceMapping#collection_name}. |
+| <code><a href="#@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingDocumentDbEventSourceConfig.property.fullDocument">FullDocument</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lambda_event_source_mapping#full_document LambdaEventSourceMapping#full_document}. |
 
 ---
 
@@ -2581,7 +2581,7 @@ DatabaseName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lambda_event_source_mapping#database_name LambdaEventSourceMapping#database_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lambda_event_source_mapping#database_name LambdaEventSourceMapping#database_name}.
 
 ---
 
@@ -2593,7 +2593,7 @@ CollectionName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lambda_event_source_mapping#collection_name LambdaEventSourceMapping#collection_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lambda_event_source_mapping#collection_name LambdaEventSourceMapping#collection_name}.
 
 ---
 
@@ -2605,7 +2605,7 @@ FullDocument *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lambda_event_source_mapping#full_document LambdaEventSourceMapping#full_document}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lambda_event_source_mapping#full_document LambdaEventSourceMapping#full_document}.
 
 ---
 
@@ -2614,7 +2614,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingFilterCriteria.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lambdaeventsourcemapping"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/lambdaeventsourcemapping"
 
 &lambdaeventsourcemapping.LambdaEventSourceMappingFilterCriteria {
 	Filter: interface{},
@@ -2639,7 +2639,7 @@ Filter interface{}
 
 filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lambda_event_source_mapping#filter LambdaEventSourceMapping#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lambda_event_source_mapping#filter LambdaEventSourceMapping#filter}
 
 ---
 
@@ -2648,7 +2648,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingFilterCriteriaFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lambdaeventsourcemapping"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/lambdaeventsourcemapping"
 
 &lambdaeventsourcemapping.LambdaEventSourceMappingFilterCriteriaFilter {
 	Pattern: *string,
@@ -2659,7 +2659,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lambdaeventsourcemappi
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingFilterCriteriaFilter.property.pattern">Pattern</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lambda_event_source_mapping#pattern LambdaEventSourceMapping#pattern}. |
+| <code><a href="#@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingFilterCriteriaFilter.property.pattern">Pattern</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lambda_event_source_mapping#pattern LambdaEventSourceMapping#pattern}. |
 
 ---
 
@@ -2671,7 +2671,7 @@ Pattern *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lambda_event_source_mapping#pattern LambdaEventSourceMapping#pattern}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lambda_event_source_mapping#pattern LambdaEventSourceMapping#pattern}.
 
 ---
 
@@ -2680,7 +2680,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingMetricsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lambdaeventsourcemapping"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/lambdaeventsourcemapping"
 
 &lambdaeventsourcemapping.LambdaEventSourceMappingMetricsConfig {
 	Metrics: *[]*string,
@@ -2691,7 +2691,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lambdaeventsourcemappi
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingMetricsConfig.property.metrics">Metrics</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lambda_event_source_mapping#metrics LambdaEventSourceMapping#metrics}. |
+| <code><a href="#@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingMetricsConfig.property.metrics">Metrics</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lambda_event_source_mapping#metrics LambdaEventSourceMapping#metrics}. |
 
 ---
 
@@ -2703,7 +2703,7 @@ Metrics *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lambda_event_source_mapping#metrics LambdaEventSourceMapping#metrics}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lambda_event_source_mapping#metrics LambdaEventSourceMapping#metrics}.
 
 ---
 
@@ -2712,7 +2712,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingProvisionedPollerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lambdaeventsourcemapping"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/lambdaeventsourcemapping"
 
 &lambdaeventsourcemapping.LambdaEventSourceMappingProvisionedPollerConfig {
 	MaximumPollers: *f64,
@@ -2725,9 +2725,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lambdaeventsourcemappi
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingProvisionedPollerConfig.property.maximumPollers">MaximumPollers</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lambda_event_source_mapping#maximum_pollers LambdaEventSourceMapping#maximum_pollers}. |
-| <code><a href="#@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingProvisionedPollerConfig.property.minimumPollers">MinimumPollers</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lambda_event_source_mapping#minimum_pollers LambdaEventSourceMapping#minimum_pollers}. |
-| <code><a href="#@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingProvisionedPollerConfig.property.pollerGroupName">PollerGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lambda_event_source_mapping#poller_group_name LambdaEventSourceMapping#poller_group_name}. |
+| <code><a href="#@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingProvisionedPollerConfig.property.maximumPollers">MaximumPollers</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lambda_event_source_mapping#maximum_pollers LambdaEventSourceMapping#maximum_pollers}. |
+| <code><a href="#@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingProvisionedPollerConfig.property.minimumPollers">MinimumPollers</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lambda_event_source_mapping#minimum_pollers LambdaEventSourceMapping#minimum_pollers}. |
+| <code><a href="#@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingProvisionedPollerConfig.property.pollerGroupName">PollerGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lambda_event_source_mapping#poller_group_name LambdaEventSourceMapping#poller_group_name}. |
 
 ---
 
@@ -2739,7 +2739,7 @@ MaximumPollers *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lambda_event_source_mapping#maximum_pollers LambdaEventSourceMapping#maximum_pollers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lambda_event_source_mapping#maximum_pollers LambdaEventSourceMapping#maximum_pollers}.
 
 ---
 
@@ -2751,7 +2751,7 @@ MinimumPollers *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lambda_event_source_mapping#minimum_pollers LambdaEventSourceMapping#minimum_pollers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lambda_event_source_mapping#minimum_pollers LambdaEventSourceMapping#minimum_pollers}.
 
 ---
 
@@ -2763,7 +2763,7 @@ PollerGroupName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lambda_event_source_mapping#poller_group_name LambdaEventSourceMapping#poller_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lambda_event_source_mapping#poller_group_name LambdaEventSourceMapping#poller_group_name}.
 
 ---
 
@@ -2772,7 +2772,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingScalingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lambdaeventsourcemapping"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/lambdaeventsourcemapping"
 
 &lambdaeventsourcemapping.LambdaEventSourceMappingScalingConfig {
 	MaximumConcurrency: *f64,
@@ -2783,7 +2783,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lambdaeventsourcemappi
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingScalingConfig.property.maximumConcurrency">MaximumConcurrency</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lambda_event_source_mapping#maximum_concurrency LambdaEventSourceMapping#maximum_concurrency}. |
+| <code><a href="#@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingScalingConfig.property.maximumConcurrency">MaximumConcurrency</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lambda_event_source_mapping#maximum_concurrency LambdaEventSourceMapping#maximum_concurrency}. |
 
 ---
 
@@ -2795,7 +2795,7 @@ MaximumConcurrency *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lambda_event_source_mapping#maximum_concurrency LambdaEventSourceMapping#maximum_concurrency}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lambda_event_source_mapping#maximum_concurrency LambdaEventSourceMapping#maximum_concurrency}.
 
 ---
 
@@ -2804,7 +2804,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingSelfManagedEventSource.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lambdaeventsourcemapping"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/lambdaeventsourcemapping"
 
 &lambdaeventsourcemapping.LambdaEventSourceMappingSelfManagedEventSource {
 	Endpoints: *map[string]*string,
@@ -2815,7 +2815,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lambdaeventsourcemappi
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingSelfManagedEventSource.property.endpoints">Endpoints</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lambda_event_source_mapping#endpoints LambdaEventSourceMapping#endpoints}. |
+| <code><a href="#@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingSelfManagedEventSource.property.endpoints">Endpoints</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lambda_event_source_mapping#endpoints LambdaEventSourceMapping#endpoints}. |
 
 ---
 
@@ -2827,7 +2827,7 @@ Endpoints *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lambda_event_source_mapping#endpoints LambdaEventSourceMapping#endpoints}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lambda_event_source_mapping#endpoints LambdaEventSourceMapping#endpoints}.
 
 ---
 
@@ -2836,11 +2836,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingSelfManagedKafkaEventSourceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lambdaeventsourcemapping"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/lambdaeventsourcemapping"
 
 &lambdaeventsourcemapping.LambdaEventSourceMappingSelfManagedKafkaEventSourceConfig {
 	ConsumerGroupId: *string,
-	SchemaRegistryConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.lambdaEventSourceMapping.LambdaEventSourceMappingSelfManagedKafkaEventSourceConfigSchemaRegistryConfig,
+	SchemaRegistryConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.lambdaEventSourceMapping.LambdaEventSourceMappingSelfManagedKafkaEventSourceConfigSchemaRegistryConfig,
 }
 ```
 
@@ -2848,7 +2848,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lambdaeventsourcemappi
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingSelfManagedKafkaEventSourceConfig.property.consumerGroupId">ConsumerGroupId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lambda_event_source_mapping#consumer_group_id LambdaEventSourceMapping#consumer_group_id}. |
+| <code><a href="#@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingSelfManagedKafkaEventSourceConfig.property.consumerGroupId">ConsumerGroupId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lambda_event_source_mapping#consumer_group_id LambdaEventSourceMapping#consumer_group_id}. |
 | <code><a href="#@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingSelfManagedKafkaEventSourceConfig.property.schemaRegistryConfig">SchemaRegistryConfig</a></code> | <code><a href="#@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingSelfManagedKafkaEventSourceConfigSchemaRegistryConfig">LambdaEventSourceMappingSelfManagedKafkaEventSourceConfigSchemaRegistryConfig</a></code> | schema_registry_config block. |
 
 ---
@@ -2861,7 +2861,7 @@ ConsumerGroupId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lambda_event_source_mapping#consumer_group_id LambdaEventSourceMapping#consumer_group_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lambda_event_source_mapping#consumer_group_id LambdaEventSourceMapping#consumer_group_id}.
 
 ---
 
@@ -2875,7 +2875,7 @@ SchemaRegistryConfig LambdaEventSourceMappingSelfManagedKafkaEventSourceConfigSc
 
 schema_registry_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lambda_event_source_mapping#schema_registry_config LambdaEventSourceMapping#schema_registry_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lambda_event_source_mapping#schema_registry_config LambdaEventSourceMapping#schema_registry_config}
 
 ---
 
@@ -2884,7 +2884,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingSelfManagedKafkaEventSourceConfigSchemaRegistryConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lambdaeventsourcemapping"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/lambdaeventsourcemapping"
 
 &lambdaeventsourcemapping.LambdaEventSourceMappingSelfManagedKafkaEventSourceConfigSchemaRegistryConfig {
 	AccessConfig: interface{},
@@ -2899,8 +2899,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lambdaeventsourcemappi
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingSelfManagedKafkaEventSourceConfigSchemaRegistryConfig.property.accessConfig">AccessConfig</a></code> | <code>interface{}</code> | access_config block. |
-| <code><a href="#@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingSelfManagedKafkaEventSourceConfigSchemaRegistryConfig.property.eventRecordFormat">EventRecordFormat</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lambda_event_source_mapping#event_record_format LambdaEventSourceMapping#event_record_format}. |
-| <code><a href="#@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingSelfManagedKafkaEventSourceConfigSchemaRegistryConfig.property.schemaRegistryUri">SchemaRegistryUri</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lambda_event_source_mapping#schema_registry_uri LambdaEventSourceMapping#schema_registry_uri}. |
+| <code><a href="#@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingSelfManagedKafkaEventSourceConfigSchemaRegistryConfig.property.eventRecordFormat">EventRecordFormat</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lambda_event_source_mapping#event_record_format LambdaEventSourceMapping#event_record_format}. |
+| <code><a href="#@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingSelfManagedKafkaEventSourceConfigSchemaRegistryConfig.property.schemaRegistryUri">SchemaRegistryUri</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lambda_event_source_mapping#schema_registry_uri LambdaEventSourceMapping#schema_registry_uri}. |
 | <code><a href="#@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingSelfManagedKafkaEventSourceConfigSchemaRegistryConfig.property.schemaValidationConfig">SchemaValidationConfig</a></code> | <code>interface{}</code> | schema_validation_config block. |
 
 ---
@@ -2915,7 +2915,7 @@ AccessConfig interface{}
 
 access_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lambda_event_source_mapping#access_config LambdaEventSourceMapping#access_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lambda_event_source_mapping#access_config LambdaEventSourceMapping#access_config}
 
 ---
 
@@ -2927,7 +2927,7 @@ EventRecordFormat *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lambda_event_source_mapping#event_record_format LambdaEventSourceMapping#event_record_format}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lambda_event_source_mapping#event_record_format LambdaEventSourceMapping#event_record_format}.
 
 ---
 
@@ -2939,7 +2939,7 @@ SchemaRegistryUri *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lambda_event_source_mapping#schema_registry_uri LambdaEventSourceMapping#schema_registry_uri}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lambda_event_source_mapping#schema_registry_uri LambdaEventSourceMapping#schema_registry_uri}.
 
 ---
 
@@ -2953,7 +2953,7 @@ SchemaValidationConfig interface{}
 
 schema_validation_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lambda_event_source_mapping#schema_validation_config LambdaEventSourceMapping#schema_validation_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lambda_event_source_mapping#schema_validation_config LambdaEventSourceMapping#schema_validation_config}
 
 ---
 
@@ -2962,7 +2962,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingSelfManagedKafkaEventSourceConfigSchemaRegistryConfigAccessConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lambdaeventsourcemapping"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/lambdaeventsourcemapping"
 
 &lambdaeventsourcemapping.LambdaEventSourceMappingSelfManagedKafkaEventSourceConfigSchemaRegistryConfigAccessConfig {
 	Type: *string,
@@ -2974,8 +2974,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lambdaeventsourcemappi
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingSelfManagedKafkaEventSourceConfigSchemaRegistryConfigAccessConfig.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lambda_event_source_mapping#type LambdaEventSourceMapping#type}. |
-| <code><a href="#@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingSelfManagedKafkaEventSourceConfigSchemaRegistryConfigAccessConfig.property.uri">Uri</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lambda_event_source_mapping#uri LambdaEventSourceMapping#uri}. |
+| <code><a href="#@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingSelfManagedKafkaEventSourceConfigSchemaRegistryConfigAccessConfig.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lambda_event_source_mapping#type LambdaEventSourceMapping#type}. |
+| <code><a href="#@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingSelfManagedKafkaEventSourceConfigSchemaRegistryConfigAccessConfig.property.uri">Uri</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lambda_event_source_mapping#uri LambdaEventSourceMapping#uri}. |
 
 ---
 
@@ -2987,7 +2987,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lambda_event_source_mapping#type LambdaEventSourceMapping#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lambda_event_source_mapping#type LambdaEventSourceMapping#type}.
 
 ---
 
@@ -2999,7 +2999,7 @@ Uri *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lambda_event_source_mapping#uri LambdaEventSourceMapping#uri}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lambda_event_source_mapping#uri LambdaEventSourceMapping#uri}.
 
 ---
 
@@ -3008,7 +3008,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingSelfManagedKafkaEventSourceConfigSchemaRegistryConfigSchemaValidationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lambdaeventsourcemapping"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/lambdaeventsourcemapping"
 
 &lambdaeventsourcemapping.LambdaEventSourceMappingSelfManagedKafkaEventSourceConfigSchemaRegistryConfigSchemaValidationConfig {
 	Attribute: *string,
@@ -3019,7 +3019,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lambdaeventsourcemappi
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingSelfManagedKafkaEventSourceConfigSchemaRegistryConfigSchemaValidationConfig.property.attribute">Attribute</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lambda_event_source_mapping#attribute LambdaEventSourceMapping#attribute}. |
+| <code><a href="#@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingSelfManagedKafkaEventSourceConfigSchemaRegistryConfigSchemaValidationConfig.property.attribute">Attribute</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lambda_event_source_mapping#attribute LambdaEventSourceMapping#attribute}. |
 
 ---
 
@@ -3031,7 +3031,7 @@ Attribute *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lambda_event_source_mapping#attribute LambdaEventSourceMapping#attribute}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lambda_event_source_mapping#attribute LambdaEventSourceMapping#attribute}.
 
 ---
 
@@ -3040,7 +3040,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingSourceAccessConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lambdaeventsourcemapping"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/lambdaeventsourcemapping"
 
 &lambdaeventsourcemapping.LambdaEventSourceMappingSourceAccessConfiguration {
 	Type: *string,
@@ -3052,8 +3052,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lambdaeventsourcemappi
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingSourceAccessConfiguration.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lambda_event_source_mapping#type LambdaEventSourceMapping#type}. |
-| <code><a href="#@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingSourceAccessConfiguration.property.uri">Uri</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lambda_event_source_mapping#uri LambdaEventSourceMapping#uri}. |
+| <code><a href="#@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingSourceAccessConfiguration.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lambda_event_source_mapping#type LambdaEventSourceMapping#type}. |
+| <code><a href="#@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingSourceAccessConfiguration.property.uri">Uri</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lambda_event_source_mapping#uri LambdaEventSourceMapping#uri}. |
 
 ---
 
@@ -3065,7 +3065,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lambda_event_source_mapping#type LambdaEventSourceMapping#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lambda_event_source_mapping#type LambdaEventSourceMapping#type}.
 
 ---
 
@@ -3077,7 +3077,7 @@ Uri *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lambda_event_source_mapping#uri LambdaEventSourceMapping#uri}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lambda_event_source_mapping#uri LambdaEventSourceMapping#uri}.
 
 ---
 
@@ -3088,7 +3088,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingAmazonManagedKafkaEventSourceConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lambdaeventsourcemapping"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/lambdaeventsourcemapping"
 
 lambdaeventsourcemapping.NewLambdaEventSourceMappingAmazonManagedKafkaEventSourceConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LambdaEventSourceMappingAmazonManagedKafkaEventSourceConfigOutputReference
 ```
@@ -3408,7 +3408,7 @@ func InternalValue() LambdaEventSourceMappingAmazonManagedKafkaEventSourceConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingAmazonManagedKafkaEventSourceConfigSchemaRegistryConfigAccessConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lambdaeventsourcemapping"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/lambdaeventsourcemapping"
 
 lambdaeventsourcemapping.NewLambdaEventSourceMappingAmazonManagedKafkaEventSourceConfigSchemaRegistryConfigAccessConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LambdaEventSourceMappingAmazonManagedKafkaEventSourceConfigSchemaRegistryConfigAccessConfigList
 ```
@@ -3568,7 +3568,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingAmazonManagedKafkaEventSourceConfigSchemaRegistryConfigAccessConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lambdaeventsourcemapping"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/lambdaeventsourcemapping"
 
 lambdaeventsourcemapping.NewLambdaEventSourceMappingAmazonManagedKafkaEventSourceConfigSchemaRegistryConfigAccessConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LambdaEventSourceMappingAmazonManagedKafkaEventSourceConfigSchemaRegistryConfigAccessConfigOutputReference
 ```
@@ -3893,7 +3893,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingAmazonManagedKafkaEventSourceConfigSchemaRegistryConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lambdaeventsourcemapping"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/lambdaeventsourcemapping"
 
 lambdaeventsourcemapping.NewLambdaEventSourceMappingAmazonManagedKafkaEventSourceConfigSchemaRegistryConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LambdaEventSourceMappingAmazonManagedKafkaEventSourceConfigSchemaRegistryConfigOutputReference
 ```
@@ -4284,7 +4284,7 @@ func InternalValue() LambdaEventSourceMappingAmazonManagedKafkaEventSourceConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingAmazonManagedKafkaEventSourceConfigSchemaRegistryConfigSchemaValidationConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lambdaeventsourcemapping"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/lambdaeventsourcemapping"
 
 lambdaeventsourcemapping.NewLambdaEventSourceMappingAmazonManagedKafkaEventSourceConfigSchemaRegistryConfigSchemaValidationConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LambdaEventSourceMappingAmazonManagedKafkaEventSourceConfigSchemaRegistryConfigSchemaValidationConfigList
 ```
@@ -4444,7 +4444,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingAmazonManagedKafkaEventSourceConfigSchemaRegistryConfigSchemaValidationConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lambdaeventsourcemapping"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/lambdaeventsourcemapping"
 
 lambdaeventsourcemapping.NewLambdaEventSourceMappingAmazonManagedKafkaEventSourceConfigSchemaRegistryConfigSchemaValidationConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LambdaEventSourceMappingAmazonManagedKafkaEventSourceConfigSchemaRegistryConfigSchemaValidationConfigOutputReference
 ```
@@ -4740,7 +4740,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingDestinationConfigOnFailureOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lambdaeventsourcemapping"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/lambdaeventsourcemapping"
 
 lambdaeventsourcemapping.NewLambdaEventSourceMappingDestinationConfigOnFailureOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LambdaEventSourceMappingDestinationConfigOnFailureOutputReference
 ```
@@ -5011,7 +5011,7 @@ func InternalValue() LambdaEventSourceMappingDestinationConfigOnFailure
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingDestinationConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lambdaeventsourcemapping"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/lambdaeventsourcemapping"
 
 lambdaeventsourcemapping.NewLambdaEventSourceMappingDestinationConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LambdaEventSourceMappingDestinationConfigOutputReference
 ```
@@ -5302,7 +5302,7 @@ func InternalValue() LambdaEventSourceMappingDestinationConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingDocumentDbEventSourceConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lambdaeventsourcemapping"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/lambdaeventsourcemapping"
 
 lambdaeventsourcemapping.NewLambdaEventSourceMappingDocumentDbEventSourceConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LambdaEventSourceMappingDocumentDbEventSourceConfigOutputReference
 ```
@@ -5631,7 +5631,7 @@ func InternalValue() LambdaEventSourceMappingDocumentDbEventSourceConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingFilterCriteriaFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lambdaeventsourcemapping"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/lambdaeventsourcemapping"
 
 lambdaeventsourcemapping.NewLambdaEventSourceMappingFilterCriteriaFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LambdaEventSourceMappingFilterCriteriaFilterList
 ```
@@ -5791,7 +5791,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingFilterCriteriaFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lambdaeventsourcemapping"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/lambdaeventsourcemapping"
 
 lambdaeventsourcemapping.NewLambdaEventSourceMappingFilterCriteriaFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LambdaEventSourceMappingFilterCriteriaFilterOutputReference
 ```
@@ -6087,7 +6087,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingFilterCriteriaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lambdaeventsourcemapping"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/lambdaeventsourcemapping"
 
 lambdaeventsourcemapping.NewLambdaEventSourceMappingFilterCriteriaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LambdaEventSourceMappingFilterCriteriaOutputReference
 ```
@@ -6378,7 +6378,7 @@ func InternalValue() LambdaEventSourceMappingFilterCriteria
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingMetricsConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lambdaeventsourcemapping"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/lambdaeventsourcemapping"
 
 lambdaeventsourcemapping.NewLambdaEventSourceMappingMetricsConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LambdaEventSourceMappingMetricsConfigOutputReference
 ```
@@ -6649,7 +6649,7 @@ func InternalValue() LambdaEventSourceMappingMetricsConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingProvisionedPollerConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lambdaeventsourcemapping"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/lambdaeventsourcemapping"
 
 lambdaeventsourcemapping.NewLambdaEventSourceMappingProvisionedPollerConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LambdaEventSourceMappingProvisionedPollerConfigOutputReference
 ```
@@ -6985,7 +6985,7 @@ func InternalValue() LambdaEventSourceMappingProvisionedPollerConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingScalingConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lambdaeventsourcemapping"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/lambdaeventsourcemapping"
 
 lambdaeventsourcemapping.NewLambdaEventSourceMappingScalingConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LambdaEventSourceMappingScalingConfigOutputReference
 ```
@@ -7263,7 +7263,7 @@ func InternalValue() LambdaEventSourceMappingScalingConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingSelfManagedEventSourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lambdaeventsourcemapping"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/lambdaeventsourcemapping"
 
 lambdaeventsourcemapping.NewLambdaEventSourceMappingSelfManagedEventSourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LambdaEventSourceMappingSelfManagedEventSourceOutputReference
 ```
@@ -7534,7 +7534,7 @@ func InternalValue() LambdaEventSourceMappingSelfManagedEventSource
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingSelfManagedKafkaEventSourceConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lambdaeventsourcemapping"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/lambdaeventsourcemapping"
 
 lambdaeventsourcemapping.NewLambdaEventSourceMappingSelfManagedKafkaEventSourceConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LambdaEventSourceMappingSelfManagedKafkaEventSourceConfigOutputReference
 ```
@@ -7854,7 +7854,7 @@ func InternalValue() LambdaEventSourceMappingSelfManagedKafkaEventSourceConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingSelfManagedKafkaEventSourceConfigSchemaRegistryConfigAccessConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lambdaeventsourcemapping"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/lambdaeventsourcemapping"
 
 lambdaeventsourcemapping.NewLambdaEventSourceMappingSelfManagedKafkaEventSourceConfigSchemaRegistryConfigAccessConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LambdaEventSourceMappingSelfManagedKafkaEventSourceConfigSchemaRegistryConfigAccessConfigList
 ```
@@ -8014,7 +8014,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingSelfManagedKafkaEventSourceConfigSchemaRegistryConfigAccessConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lambdaeventsourcemapping"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/lambdaeventsourcemapping"
 
 lambdaeventsourcemapping.NewLambdaEventSourceMappingSelfManagedKafkaEventSourceConfigSchemaRegistryConfigAccessConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LambdaEventSourceMappingSelfManagedKafkaEventSourceConfigSchemaRegistryConfigAccessConfigOutputReference
 ```
@@ -8339,7 +8339,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingSelfManagedKafkaEventSourceConfigSchemaRegistryConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lambdaeventsourcemapping"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/lambdaeventsourcemapping"
 
 lambdaeventsourcemapping.NewLambdaEventSourceMappingSelfManagedKafkaEventSourceConfigSchemaRegistryConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LambdaEventSourceMappingSelfManagedKafkaEventSourceConfigSchemaRegistryConfigOutputReference
 ```
@@ -8730,7 +8730,7 @@ func InternalValue() LambdaEventSourceMappingSelfManagedKafkaEventSourceConfigSc
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingSelfManagedKafkaEventSourceConfigSchemaRegistryConfigSchemaValidationConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lambdaeventsourcemapping"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/lambdaeventsourcemapping"
 
 lambdaeventsourcemapping.NewLambdaEventSourceMappingSelfManagedKafkaEventSourceConfigSchemaRegistryConfigSchemaValidationConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LambdaEventSourceMappingSelfManagedKafkaEventSourceConfigSchemaRegistryConfigSchemaValidationConfigList
 ```
@@ -8890,7 +8890,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingSelfManagedKafkaEventSourceConfigSchemaRegistryConfigSchemaValidationConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lambdaeventsourcemapping"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/lambdaeventsourcemapping"
 
 lambdaeventsourcemapping.NewLambdaEventSourceMappingSelfManagedKafkaEventSourceConfigSchemaRegistryConfigSchemaValidationConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LambdaEventSourceMappingSelfManagedKafkaEventSourceConfigSchemaRegistryConfigSchemaValidationConfigOutputReference
 ```
@@ -9186,7 +9186,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingSourceAccessConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lambdaeventsourcemapping"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/lambdaeventsourcemapping"
 
 lambdaeventsourcemapping.NewLambdaEventSourceMappingSourceAccessConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LambdaEventSourceMappingSourceAccessConfigurationList
 ```
@@ -9346,7 +9346,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingSourceAccessConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lambdaeventsourcemapping"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/lambdaeventsourcemapping"
 
 lambdaeventsourcemapping.NewLambdaEventSourceMappingSourceAccessConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LambdaEventSourceMappingSourceAccessConfigurationOutputReference
 ```

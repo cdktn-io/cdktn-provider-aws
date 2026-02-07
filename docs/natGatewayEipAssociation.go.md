@@ -4,12 +4,12 @@
 
 ### NatGatewayEipAssociation <a name="NatGatewayEipAssociation" id="@cdktn/provider-aws.natGatewayEipAssociation.NatGatewayEipAssociation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/nat_gateway_eip_association aws_nat_gateway_eip_association}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/nat_gateway_eip_association aws_nat_gateway_eip_association}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.natGatewayEipAssociation.NatGatewayEipAssociation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/natgatewayeipassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/natgatewayeipassociation"
 
 natgatewayeipassociation.NewNatGatewayEipAssociation(scope Construct, id *string, config NatGatewayEipAssociationConfig) NatGatewayEipAssociation
 ```
@@ -405,7 +405,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.natGatewayEipAssociation.NatGatewayEipAssociation.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/natgatewayeipassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/natgatewayeipassociation"
 
 natgatewayeipassociation.NatGatewayEipAssociation_IsConstruct(x interface{}) *bool
 ```
@@ -437,7 +437,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.natGatewayEipAssociation.NatGatewayEipAssociation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/natgatewayeipassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/natgatewayeipassociation"
 
 natgatewayeipassociation.NatGatewayEipAssociation_IsTerraformElement(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ natgatewayeipassociation.NatGatewayEipAssociation_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.natGatewayEipAssociation.NatGatewayEipAssociation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/natgatewayeipassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/natgatewayeipassociation"
 
 natgatewayeipassociation.NatGatewayEipAssociation_IsTerraformResource(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ natgatewayeipassociation.NatGatewayEipAssociation_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.natGatewayEipAssociation.NatGatewayEipAssociation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/natgatewayeipassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/natgatewayeipassociation"
 
 natgatewayeipassociation.NatGatewayEipAssociation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -494,7 +494,7 @@ The construct id used in the generated config for the NatGatewayEipAssociation t
 
 The id of the existing NatGatewayEipAssociation that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/nat_gateway_eip_association#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/nat_gateway_eip_association#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -793,7 +793,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.natGatewayEipAssociation.NatGatewayEipAssociationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/natgatewayeipassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/natgatewayeipassociation"
 
 &natgatewayeipassociation.NatGatewayEipAssociationConfig {
 	Connection: interface{},
@@ -806,7 +806,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/natgatewayeipassociati
 	AllocationId: *string,
 	NatGatewayId: *string,
 	Region: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.natGatewayEipAssociation.NatGatewayEipAssociationTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.natGatewayEipAssociation.NatGatewayEipAssociationTimeouts,
 }
 ```
 
@@ -821,8 +821,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/natgatewayeipassociati
 | <code><a href="#@cdktn/provider-aws.natGatewayEipAssociation.NatGatewayEipAssociationConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.natGatewayEipAssociation.NatGatewayEipAssociationConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.natGatewayEipAssociation.NatGatewayEipAssociationConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.natGatewayEipAssociation.NatGatewayEipAssociationConfig.property.allocationId">AllocationId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/nat_gateway_eip_association#allocation_id NatGatewayEipAssociation#allocation_id}. |
-| <code><a href="#@cdktn/provider-aws.natGatewayEipAssociation.NatGatewayEipAssociationConfig.property.natGatewayId">NatGatewayId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/nat_gateway_eip_association#nat_gateway_id NatGatewayEipAssociation#nat_gateway_id}. |
+| <code><a href="#@cdktn/provider-aws.natGatewayEipAssociation.NatGatewayEipAssociationConfig.property.allocationId">AllocationId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/nat_gateway_eip_association#allocation_id NatGatewayEipAssociation#allocation_id}. |
+| <code><a href="#@cdktn/provider-aws.natGatewayEipAssociation.NatGatewayEipAssociationConfig.property.natGatewayId">NatGatewayId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/nat_gateway_eip_association#nat_gateway_id NatGatewayEipAssociation#nat_gateway_id}. |
 | <code><a href="#@cdktn/provider-aws.natGatewayEipAssociation.NatGatewayEipAssociationConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktn/provider-aws.natGatewayEipAssociation.NatGatewayEipAssociationConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.natGatewayEipAssociation.NatGatewayEipAssociationTimeouts">NatGatewayEipAssociationTimeouts</a></code> | timeouts block. |
 
@@ -906,7 +906,7 @@ AllocationId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/nat_gateway_eip_association#allocation_id NatGatewayEipAssociation#allocation_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/nat_gateway_eip_association#allocation_id NatGatewayEipAssociation#allocation_id}.
 
 ---
 
@@ -918,7 +918,7 @@ NatGatewayId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/nat_gateway_eip_association#nat_gateway_id NatGatewayEipAssociation#nat_gateway_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/nat_gateway_eip_association#nat_gateway_id NatGatewayEipAssociation#nat_gateway_id}.
 
 ---
 
@@ -932,7 +932,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/nat_gateway_eip_association#region NatGatewayEipAssociation#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/nat_gateway_eip_association#region NatGatewayEipAssociation#region}
 
 ---
 
@@ -946,7 +946,7 @@ Timeouts NatGatewayEipAssociationTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/nat_gateway_eip_association#timeouts NatGatewayEipAssociation#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/nat_gateway_eip_association#timeouts NatGatewayEipAssociation#timeouts}
 
 ---
 
@@ -955,7 +955,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.natGatewayEipAssociation.NatGatewayEipAssociationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/natgatewayeipassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/natgatewayeipassociation"
 
 &natgatewayeipassociation.NatGatewayEipAssociationTimeouts {
 	Create: *string,
@@ -982,7 +982,7 @@ Create *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/nat_gateway_eip_association#create NatGatewayEipAssociation#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/nat_gateway_eip_association#create NatGatewayEipAssociation#create}
 
 ---
 
@@ -996,7 +996,7 @@ Delete *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/nat_gateway_eip_association#delete NatGatewayEipAssociation#delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/nat_gateway_eip_association#delete NatGatewayEipAssociation#delete}
 
 ---
 
@@ -1007,7 +1007,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.natGatewayEipAssociation.NatGatewayEipAssociationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/natgatewayeipassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/natgatewayeipassociation"
 
 natgatewayeipassociation.NewNatGatewayEipAssociationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NatGatewayEipAssociationTimeoutsOutputReference
 ```

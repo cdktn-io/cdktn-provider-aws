@@ -4,12 +4,12 @@
 
 ### S3BucketMetadataConfiguration <a name="S3BucketMetadataConfiguration" id="@cdktn/provider-aws.s3BucketMetadataConfiguration.S3BucketMetadataConfiguration"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_bucket_metadata_configuration aws_s3_bucket_metadata_configuration}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3_bucket_metadata_configuration aws_s3_bucket_metadata_configuration}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3BucketMetadataConfiguration.S3BucketMetadataConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3bucketmetadataconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/s3bucketmetadataconfiguration"
 
 s3bucketmetadataconfiguration.NewS3BucketMetadataConfiguration(scope Construct, id *string, config S3BucketMetadataConfigurationConfig) S3BucketMetadataConfiguration
 ```
@@ -432,7 +432,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.s3BucketMetadataConfiguration.S3BucketMetadataConfiguration.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3bucketmetadataconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/s3bucketmetadataconfiguration"
 
 s3bucketmetadataconfiguration.S3BucketMetadataConfiguration_IsConstruct(x interface{}) *bool
 ```
@@ -464,7 +464,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.s3BucketMetadataConfiguration.S3BucketMetadataConfiguration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3bucketmetadataconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/s3bucketmetadataconfiguration"
 
 s3bucketmetadataconfiguration.S3BucketMetadataConfiguration_IsTerraformElement(x interface{}) *bool
 ```
@@ -478,7 +478,7 @@ s3bucketmetadataconfiguration.S3BucketMetadataConfiguration_IsTerraformElement(x
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.s3BucketMetadataConfiguration.S3BucketMetadataConfiguration.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3bucketmetadataconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/s3bucketmetadataconfiguration"
 
 s3bucketmetadataconfiguration.S3BucketMetadataConfiguration_IsTerraformResource(x interface{}) *bool
 ```
@@ -492,7 +492,7 @@ s3bucketmetadataconfiguration.S3BucketMetadataConfiguration_IsTerraformResource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.s3BucketMetadataConfiguration.S3BucketMetadataConfiguration.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3bucketmetadataconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/s3bucketmetadataconfiguration"
 
 s3bucketmetadataconfiguration.S3BucketMetadataConfiguration_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -521,7 +521,7 @@ The construct id used in the generated config for the S3BucketMetadataConfigurat
 
 The id of the existing S3BucketMetadataConfiguration that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_bucket_metadata_configuration#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3_bucket_metadata_configuration#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -831,7 +831,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3BucketMetadataConfiguration.S3BucketMetadataConfigurationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3bucketmetadataconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/s3bucketmetadataconfiguration"
 
 &s3bucketmetadataconfiguration.S3BucketMetadataConfigurationConfig {
 	Connection: interface{},
@@ -845,7 +845,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3bucketmetadataconfig
 	ExpectedBucketOwner: *string,
 	MetadataConfiguration: interface{},
 	Region: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.s3BucketMetadataConfiguration.S3BucketMetadataConfigurationTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.s3BucketMetadataConfiguration.S3BucketMetadataConfigurationTimeouts,
 }
 ```
 
@@ -860,8 +860,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3bucketmetadataconfig
 | <code><a href="#@cdktn/provider-aws.s3BucketMetadataConfiguration.S3BucketMetadataConfigurationConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.s3BucketMetadataConfiguration.S3BucketMetadataConfigurationConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.s3BucketMetadataConfiguration.S3BucketMetadataConfigurationConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.s3BucketMetadataConfiguration.S3BucketMetadataConfigurationConfig.property.bucket">Bucket</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_bucket_metadata_configuration#bucket S3BucketMetadataConfiguration#bucket}. |
-| <code><a href="#@cdktn/provider-aws.s3BucketMetadataConfiguration.S3BucketMetadataConfigurationConfig.property.expectedBucketOwner">ExpectedBucketOwner</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_bucket_metadata_configuration#expected_bucket_owner S3BucketMetadataConfiguration#expected_bucket_owner}. |
+| <code><a href="#@cdktn/provider-aws.s3BucketMetadataConfiguration.S3BucketMetadataConfigurationConfig.property.bucket">Bucket</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3_bucket_metadata_configuration#bucket S3BucketMetadataConfiguration#bucket}. |
+| <code><a href="#@cdktn/provider-aws.s3BucketMetadataConfiguration.S3BucketMetadataConfigurationConfig.property.expectedBucketOwner">ExpectedBucketOwner</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3_bucket_metadata_configuration#expected_bucket_owner S3BucketMetadataConfiguration#expected_bucket_owner}. |
 | <code><a href="#@cdktn/provider-aws.s3BucketMetadataConfiguration.S3BucketMetadataConfigurationConfig.property.metadataConfiguration">MetadataConfiguration</a></code> | <code>interface{}</code> | metadata_configuration block. |
 | <code><a href="#@cdktn/provider-aws.s3BucketMetadataConfiguration.S3BucketMetadataConfigurationConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktn/provider-aws.s3BucketMetadataConfiguration.S3BucketMetadataConfigurationConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.s3BucketMetadataConfiguration.S3BucketMetadataConfigurationTimeouts">S3BucketMetadataConfigurationTimeouts</a></code> | timeouts block. |
@@ -946,7 +946,7 @@ Bucket *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_bucket_metadata_configuration#bucket S3BucketMetadataConfiguration#bucket}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3_bucket_metadata_configuration#bucket S3BucketMetadataConfiguration#bucket}.
 
 ---
 
@@ -958,7 +958,7 @@ ExpectedBucketOwner *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_bucket_metadata_configuration#expected_bucket_owner S3BucketMetadataConfiguration#expected_bucket_owner}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3_bucket_metadata_configuration#expected_bucket_owner S3BucketMetadataConfiguration#expected_bucket_owner}.
 
 ---
 
@@ -972,7 +972,7 @@ MetadataConfiguration interface{}
 
 metadata_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_bucket_metadata_configuration#metadata_configuration S3BucketMetadataConfiguration#metadata_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3_bucket_metadata_configuration#metadata_configuration S3BucketMetadataConfiguration#metadata_configuration}
 
 ---
 
@@ -986,7 +986,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_bucket_metadata_configuration#region S3BucketMetadataConfiguration#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3_bucket_metadata_configuration#region S3BucketMetadataConfiguration#region}
 
 ---
 
@@ -1000,7 +1000,7 @@ Timeouts S3BucketMetadataConfigurationTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_bucket_metadata_configuration#timeouts S3BucketMetadataConfiguration#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3_bucket_metadata_configuration#timeouts S3BucketMetadataConfiguration#timeouts}
 
 ---
 
@@ -1009,7 +1009,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3BucketMetadataConfiguration.S3BucketMetadataConfigurationMetadataConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3bucketmetadataconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/s3bucketmetadataconfiguration"
 
 &s3bucketmetadataconfiguration.S3BucketMetadataConfigurationMetadataConfiguration {
 	InventoryTableConfiguration: interface{},
@@ -1036,7 +1036,7 @@ InventoryTableConfiguration interface{}
 
 inventory_table_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_bucket_metadata_configuration#inventory_table_configuration S3BucketMetadataConfiguration#inventory_table_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3_bucket_metadata_configuration#inventory_table_configuration S3BucketMetadataConfiguration#inventory_table_configuration}
 
 ---
 
@@ -1050,7 +1050,7 @@ JournalTableConfiguration interface{}
 
 journal_table_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_bucket_metadata_configuration#journal_table_configuration S3BucketMetadataConfiguration#journal_table_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3_bucket_metadata_configuration#journal_table_configuration S3BucketMetadataConfiguration#journal_table_configuration}
 
 ---
 
@@ -1059,7 +1059,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3BucketMetadataConfiguration.S3BucketMetadataConfigurationMetadataConfigurationDestination.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3bucketmetadataconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/s3bucketmetadataconfiguration"
 
 &s3bucketmetadataconfiguration.S3BucketMetadataConfigurationMetadataConfigurationDestination {
 
@@ -1072,7 +1072,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3bucketmetadataconfig
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3BucketMetadataConfiguration.S3BucketMetadataConfigurationMetadataConfigurationInventoryTableConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3bucketmetadataconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/s3bucketmetadataconfiguration"
 
 &s3bucketmetadataconfiguration.S3BucketMetadataConfigurationMetadataConfigurationInventoryTableConfiguration {
 	ConfigurationState: *string,
@@ -1084,7 +1084,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3bucketmetadataconfig
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.s3BucketMetadataConfiguration.S3BucketMetadataConfigurationMetadataConfigurationInventoryTableConfiguration.property.configurationState">ConfigurationState</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_bucket_metadata_configuration#configuration_state S3BucketMetadataConfiguration#configuration_state}. |
+| <code><a href="#@cdktn/provider-aws.s3BucketMetadataConfiguration.S3BucketMetadataConfigurationMetadataConfigurationInventoryTableConfiguration.property.configurationState">ConfigurationState</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3_bucket_metadata_configuration#configuration_state S3BucketMetadataConfiguration#configuration_state}. |
 | <code><a href="#@cdktn/provider-aws.s3BucketMetadataConfiguration.S3BucketMetadataConfigurationMetadataConfigurationInventoryTableConfiguration.property.encryptionConfiguration">EncryptionConfiguration</a></code> | <code>interface{}</code> | encryption_configuration block. |
 
 ---
@@ -1097,7 +1097,7 @@ ConfigurationState *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_bucket_metadata_configuration#configuration_state S3BucketMetadataConfiguration#configuration_state}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3_bucket_metadata_configuration#configuration_state S3BucketMetadataConfiguration#configuration_state}.
 
 ---
 
@@ -1111,7 +1111,7 @@ EncryptionConfiguration interface{}
 
 encryption_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_bucket_metadata_configuration#encryption_configuration S3BucketMetadataConfiguration#encryption_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3_bucket_metadata_configuration#encryption_configuration S3BucketMetadataConfiguration#encryption_configuration}
 
 ---
 
@@ -1120,7 +1120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3BucketMetadataConfiguration.S3BucketMetadataConfigurationMetadataConfigurationInventoryTableConfigurationEncryptionConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3bucketmetadataconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/s3bucketmetadataconfiguration"
 
 &s3bucketmetadataconfiguration.S3BucketMetadataConfigurationMetadataConfigurationInventoryTableConfigurationEncryptionConfiguration {
 	SseAlgorithm: *string,
@@ -1132,8 +1132,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3bucketmetadataconfig
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.s3BucketMetadataConfiguration.S3BucketMetadataConfigurationMetadataConfigurationInventoryTableConfigurationEncryptionConfiguration.property.sseAlgorithm">SseAlgorithm</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_bucket_metadata_configuration#sse_algorithm S3BucketMetadataConfiguration#sse_algorithm}. |
-| <code><a href="#@cdktn/provider-aws.s3BucketMetadataConfiguration.S3BucketMetadataConfigurationMetadataConfigurationInventoryTableConfigurationEncryptionConfiguration.property.kmsKeyArn">KmsKeyArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_bucket_metadata_configuration#kms_key_arn S3BucketMetadataConfiguration#kms_key_arn}. |
+| <code><a href="#@cdktn/provider-aws.s3BucketMetadataConfiguration.S3BucketMetadataConfigurationMetadataConfigurationInventoryTableConfigurationEncryptionConfiguration.property.sseAlgorithm">SseAlgorithm</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3_bucket_metadata_configuration#sse_algorithm S3BucketMetadataConfiguration#sse_algorithm}. |
+| <code><a href="#@cdktn/provider-aws.s3BucketMetadataConfiguration.S3BucketMetadataConfigurationMetadataConfigurationInventoryTableConfigurationEncryptionConfiguration.property.kmsKeyArn">KmsKeyArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3_bucket_metadata_configuration#kms_key_arn S3BucketMetadataConfiguration#kms_key_arn}. |
 
 ---
 
@@ -1145,7 +1145,7 @@ SseAlgorithm *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_bucket_metadata_configuration#sse_algorithm S3BucketMetadataConfiguration#sse_algorithm}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3_bucket_metadata_configuration#sse_algorithm S3BucketMetadataConfiguration#sse_algorithm}.
 
 ---
 
@@ -1157,7 +1157,7 @@ KmsKeyArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_bucket_metadata_configuration#kms_key_arn S3BucketMetadataConfiguration#kms_key_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3_bucket_metadata_configuration#kms_key_arn S3BucketMetadataConfiguration#kms_key_arn}.
 
 ---
 
@@ -1166,7 +1166,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3BucketMetadataConfiguration.S3BucketMetadataConfigurationMetadataConfigurationJournalTableConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3bucketmetadataconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/s3bucketmetadataconfiguration"
 
 &s3bucketmetadataconfiguration.S3BucketMetadataConfigurationMetadataConfigurationJournalTableConfiguration {
 	EncryptionConfiguration: interface{},
@@ -1193,7 +1193,7 @@ EncryptionConfiguration interface{}
 
 encryption_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_bucket_metadata_configuration#encryption_configuration S3BucketMetadataConfiguration#encryption_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3_bucket_metadata_configuration#encryption_configuration S3BucketMetadataConfiguration#encryption_configuration}
 
 ---
 
@@ -1207,7 +1207,7 @@ RecordExpiration interface{}
 
 record_expiration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_bucket_metadata_configuration#record_expiration S3BucketMetadataConfiguration#record_expiration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3_bucket_metadata_configuration#record_expiration S3BucketMetadataConfiguration#record_expiration}
 
 ---
 
@@ -1216,7 +1216,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3BucketMetadataConfiguration.S3BucketMetadataConfigurationMetadataConfigurationJournalTableConfigurationEncryptionConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3bucketmetadataconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/s3bucketmetadataconfiguration"
 
 &s3bucketmetadataconfiguration.S3BucketMetadataConfigurationMetadataConfigurationJournalTableConfigurationEncryptionConfiguration {
 	SseAlgorithm: *string,
@@ -1228,8 +1228,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3bucketmetadataconfig
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.s3BucketMetadataConfiguration.S3BucketMetadataConfigurationMetadataConfigurationJournalTableConfigurationEncryptionConfiguration.property.sseAlgorithm">SseAlgorithm</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_bucket_metadata_configuration#sse_algorithm S3BucketMetadataConfiguration#sse_algorithm}. |
-| <code><a href="#@cdktn/provider-aws.s3BucketMetadataConfiguration.S3BucketMetadataConfigurationMetadataConfigurationJournalTableConfigurationEncryptionConfiguration.property.kmsKeyArn">KmsKeyArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_bucket_metadata_configuration#kms_key_arn S3BucketMetadataConfiguration#kms_key_arn}. |
+| <code><a href="#@cdktn/provider-aws.s3BucketMetadataConfiguration.S3BucketMetadataConfigurationMetadataConfigurationJournalTableConfigurationEncryptionConfiguration.property.sseAlgorithm">SseAlgorithm</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3_bucket_metadata_configuration#sse_algorithm S3BucketMetadataConfiguration#sse_algorithm}. |
+| <code><a href="#@cdktn/provider-aws.s3BucketMetadataConfiguration.S3BucketMetadataConfigurationMetadataConfigurationJournalTableConfigurationEncryptionConfiguration.property.kmsKeyArn">KmsKeyArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3_bucket_metadata_configuration#kms_key_arn S3BucketMetadataConfiguration#kms_key_arn}. |
 
 ---
 
@@ -1241,7 +1241,7 @@ SseAlgorithm *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_bucket_metadata_configuration#sse_algorithm S3BucketMetadataConfiguration#sse_algorithm}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3_bucket_metadata_configuration#sse_algorithm S3BucketMetadataConfiguration#sse_algorithm}.
 
 ---
 
@@ -1253,7 +1253,7 @@ KmsKeyArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_bucket_metadata_configuration#kms_key_arn S3BucketMetadataConfiguration#kms_key_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3_bucket_metadata_configuration#kms_key_arn S3BucketMetadataConfiguration#kms_key_arn}.
 
 ---
 
@@ -1262,7 +1262,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3BucketMetadataConfiguration.S3BucketMetadataConfigurationMetadataConfigurationJournalTableConfigurationRecordExpiration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3bucketmetadataconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/s3bucketmetadataconfiguration"
 
 &s3bucketmetadataconfiguration.S3BucketMetadataConfigurationMetadataConfigurationJournalTableConfigurationRecordExpiration {
 	Expiration: *string,
@@ -1274,8 +1274,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3bucketmetadataconfig
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.s3BucketMetadataConfiguration.S3BucketMetadataConfigurationMetadataConfigurationJournalTableConfigurationRecordExpiration.property.expiration">Expiration</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_bucket_metadata_configuration#expiration S3BucketMetadataConfiguration#expiration}. |
-| <code><a href="#@cdktn/provider-aws.s3BucketMetadataConfiguration.S3BucketMetadataConfigurationMetadataConfigurationJournalTableConfigurationRecordExpiration.property.days">Days</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_bucket_metadata_configuration#days S3BucketMetadataConfiguration#days}. |
+| <code><a href="#@cdktn/provider-aws.s3BucketMetadataConfiguration.S3BucketMetadataConfigurationMetadataConfigurationJournalTableConfigurationRecordExpiration.property.expiration">Expiration</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3_bucket_metadata_configuration#expiration S3BucketMetadataConfiguration#expiration}. |
+| <code><a href="#@cdktn/provider-aws.s3BucketMetadataConfiguration.S3BucketMetadataConfigurationMetadataConfigurationJournalTableConfigurationRecordExpiration.property.days">Days</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3_bucket_metadata_configuration#days S3BucketMetadataConfiguration#days}. |
 
 ---
 
@@ -1287,7 +1287,7 @@ Expiration *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_bucket_metadata_configuration#expiration S3BucketMetadataConfiguration#expiration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3_bucket_metadata_configuration#expiration S3BucketMetadataConfiguration#expiration}.
 
 ---
 
@@ -1299,7 +1299,7 @@ Days *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_bucket_metadata_configuration#days S3BucketMetadataConfiguration#days}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3_bucket_metadata_configuration#days S3BucketMetadataConfiguration#days}.
 
 ---
 
@@ -1308,7 +1308,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3BucketMetadataConfiguration.S3BucketMetadataConfigurationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3bucketmetadataconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/s3bucketmetadataconfiguration"
 
 &s3bucketmetadataconfiguration.S3BucketMetadataConfigurationTimeouts {
 	Create: *string,
@@ -1333,7 +1333,7 @@ Create *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_bucket_metadata_configuration#create S3BucketMetadataConfiguration#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3_bucket_metadata_configuration#create S3BucketMetadataConfiguration#create}
 
 ---
 
@@ -1344,7 +1344,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3BucketMetadataConfiguration.S3BucketMetadataConfigurationMetadataConfigurationDestinationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3bucketmetadataconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/s3bucketmetadataconfiguration"
 
 s3bucketmetadataconfiguration.NewS3BucketMetadataConfigurationMetadataConfigurationDestinationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) S3BucketMetadataConfigurationMetadataConfigurationDestinationList
 ```
@@ -1493,7 +1493,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3BucketMetadataConfiguration.S3BucketMetadataConfigurationMetadataConfigurationDestinationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3bucketmetadataconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/s3bucketmetadataconfiguration"
 
 s3bucketmetadataconfiguration.NewS3BucketMetadataConfigurationMetadataConfigurationDestinationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) S3BucketMetadataConfigurationMetadataConfigurationDestinationOutputReference
 ```
@@ -1793,7 +1793,7 @@ func InternalValue() S3BucketMetadataConfigurationMetadataConfigurationDestinati
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3BucketMetadataConfiguration.S3BucketMetadataConfigurationMetadataConfigurationInventoryTableConfigurationEncryptionConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3bucketmetadataconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/s3bucketmetadataconfiguration"
 
 s3bucketmetadataconfiguration.NewS3BucketMetadataConfigurationMetadataConfigurationInventoryTableConfigurationEncryptionConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) S3BucketMetadataConfigurationMetadataConfigurationInventoryTableConfigurationEncryptionConfigurationList
 ```
@@ -1953,7 +1953,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3BucketMetadataConfiguration.S3BucketMetadataConfigurationMetadataConfigurationInventoryTableConfigurationEncryptionConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3bucketmetadataconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/s3bucketmetadataconfiguration"
 
 s3bucketmetadataconfiguration.NewS3BucketMetadataConfigurationMetadataConfigurationInventoryTableConfigurationEncryptionConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) S3BucketMetadataConfigurationMetadataConfigurationInventoryTableConfigurationEncryptionConfigurationOutputReference
 ```
@@ -2271,7 +2271,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3BucketMetadataConfiguration.S3BucketMetadataConfigurationMetadataConfigurationInventoryTableConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3bucketmetadataconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/s3bucketmetadataconfiguration"
 
 s3bucketmetadataconfiguration.NewS3BucketMetadataConfigurationMetadataConfigurationInventoryTableConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) S3BucketMetadataConfigurationMetadataConfigurationInventoryTableConfigurationList
 ```
@@ -2431,7 +2431,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3BucketMetadataConfiguration.S3BucketMetadataConfigurationMetadataConfigurationInventoryTableConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3bucketmetadataconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/s3bucketmetadataconfiguration"
 
 s3bucketmetadataconfiguration.NewS3BucketMetadataConfigurationMetadataConfigurationInventoryTableConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) S3BucketMetadataConfigurationMetadataConfigurationInventoryTableConfigurationOutputReference
 ```
@@ -2784,7 +2784,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3BucketMetadataConfiguration.S3BucketMetadataConfigurationMetadataConfigurationJournalTableConfigurationEncryptionConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3bucketmetadataconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/s3bucketmetadataconfiguration"
 
 s3bucketmetadataconfiguration.NewS3BucketMetadataConfigurationMetadataConfigurationJournalTableConfigurationEncryptionConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) S3BucketMetadataConfigurationMetadataConfigurationJournalTableConfigurationEncryptionConfigurationList
 ```
@@ -2944,7 +2944,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3BucketMetadataConfiguration.S3BucketMetadataConfigurationMetadataConfigurationJournalTableConfigurationEncryptionConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3bucketmetadataconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/s3bucketmetadataconfiguration"
 
 s3bucketmetadataconfiguration.NewS3BucketMetadataConfigurationMetadataConfigurationJournalTableConfigurationEncryptionConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) S3BucketMetadataConfigurationMetadataConfigurationJournalTableConfigurationEncryptionConfigurationOutputReference
 ```
@@ -3262,7 +3262,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3BucketMetadataConfiguration.S3BucketMetadataConfigurationMetadataConfigurationJournalTableConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3bucketmetadataconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/s3bucketmetadataconfiguration"
 
 s3bucketmetadataconfiguration.NewS3BucketMetadataConfigurationMetadataConfigurationJournalTableConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) S3BucketMetadataConfigurationMetadataConfigurationJournalTableConfigurationList
 ```
@@ -3422,7 +3422,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3BucketMetadataConfiguration.S3BucketMetadataConfigurationMetadataConfigurationJournalTableConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3bucketmetadataconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/s3bucketmetadataconfiguration"
 
 s3bucketmetadataconfiguration.NewS3BucketMetadataConfigurationMetadataConfigurationJournalTableConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) S3BucketMetadataConfigurationMetadataConfigurationJournalTableConfigurationOutputReference
 ```
@@ -3795,7 +3795,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3BucketMetadataConfiguration.S3BucketMetadataConfigurationMetadataConfigurationJournalTableConfigurationRecordExpirationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3bucketmetadataconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/s3bucketmetadataconfiguration"
 
 s3bucketmetadataconfiguration.NewS3BucketMetadataConfigurationMetadataConfigurationJournalTableConfigurationRecordExpirationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) S3BucketMetadataConfigurationMetadataConfigurationJournalTableConfigurationRecordExpirationList
 ```
@@ -3955,7 +3955,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3BucketMetadataConfiguration.S3BucketMetadataConfigurationMetadataConfigurationJournalTableConfigurationRecordExpirationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3bucketmetadataconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/s3bucketmetadataconfiguration"
 
 s3bucketmetadataconfiguration.NewS3BucketMetadataConfigurationMetadataConfigurationJournalTableConfigurationRecordExpirationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) S3BucketMetadataConfigurationMetadataConfigurationJournalTableConfigurationRecordExpirationOutputReference
 ```
@@ -4273,7 +4273,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3BucketMetadataConfiguration.S3BucketMetadataConfigurationMetadataConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3bucketmetadataconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/s3bucketmetadataconfiguration"
 
 s3bucketmetadataconfiguration.NewS3BucketMetadataConfigurationMetadataConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) S3BucketMetadataConfigurationMetadataConfigurationList
 ```
@@ -4433,7 +4433,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3BucketMetadataConfiguration.S3BucketMetadataConfigurationMetadataConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3bucketmetadataconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/s3bucketmetadataconfiguration"
 
 s3bucketmetadataconfiguration.NewS3BucketMetadataConfigurationMetadataConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) S3BucketMetadataConfigurationMetadataConfigurationOutputReference
 ```
@@ -4795,7 +4795,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3BucketMetadataConfiguration.S3BucketMetadataConfigurationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3bucketmetadataconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/s3bucketmetadataconfiguration"
 
 s3bucketmetadataconfiguration.NewS3BucketMetadataConfigurationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3BucketMetadataConfigurationTimeoutsOutputReference
 ```

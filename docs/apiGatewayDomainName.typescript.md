@@ -4,7 +4,7 @@
 
 ### ApiGatewayDomainName <a name="ApiGatewayDomainName" id="@cdktn/provider-aws.apiGatewayDomainName.ApiGatewayDomainName"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/api_gateway_domain_name aws_api_gateway_domain_name}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/api_gateway_domain_name aws_api_gateway_domain_name}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.apiGatewayDomainName.ApiGatewayDomainName.Initializer"></a>
 
@@ -90,6 +90,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-aws.apiGatewayDomainName.ApiGatewayDomainName.resetRegion">resetRegion</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.apiGatewayDomainName.ApiGatewayDomainName.resetRegionalCertificateArn">resetRegionalCertificateArn</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.apiGatewayDomainName.ApiGatewayDomainName.resetRegionalCertificateName">resetRegionalCertificateName</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apiGatewayDomainName.ApiGatewayDomainName.resetRoutingMode">resetRoutingMode</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.apiGatewayDomainName.ApiGatewayDomainName.resetSecurityPolicy">resetSecurityPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.apiGatewayDomainName.ApiGatewayDomainName.resetTags">resetTags</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.apiGatewayDomainName.ApiGatewayDomainName.resetTagsAll">resetTagsAll</a></code> | *No description.* |
@@ -505,6 +506,12 @@ public resetRegionalCertificateArn(): void
 public resetRegionalCertificateName(): void
 ```
 
+##### `resetRoutingMode` <a name="resetRoutingMode" id="@cdktn/provider-aws.apiGatewayDomainName.ApiGatewayDomainName.resetRoutingMode"></a>
+
+```typescript
+public resetRoutingMode(): void
+```
+
 ##### `resetSecurityPolicy` <a name="resetSecurityPolicy" id="@cdktn/provider-aws.apiGatewayDomainName.ApiGatewayDomainName.resetSecurityPolicy"></a>
 
 ```typescript
@@ -632,7 +639,7 @@ The construct id used in the generated config for the ApiGatewayDomainName to im
 
 The id of the existing ApiGatewayDomainName that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/api_gateway_domain_name#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/api_gateway_domain_name#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -687,6 +694,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 | <code><a href="#@cdktn/provider-aws.apiGatewayDomainName.ApiGatewayDomainName.property.regionalCertificateArnInput">regionalCertificateArnInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.apiGatewayDomainName.ApiGatewayDomainName.property.regionalCertificateNameInput">regionalCertificateNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.apiGatewayDomainName.ApiGatewayDomainName.property.regionInput">regionInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apiGatewayDomainName.ApiGatewayDomainName.property.routingModeInput">routingModeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.apiGatewayDomainName.ApiGatewayDomainName.property.securityPolicyInput">securityPolicyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.apiGatewayDomainName.ApiGatewayDomainName.property.tagsAllInput">tagsAllInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.apiGatewayDomainName.ApiGatewayDomainName.property.tagsInput">tagsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
@@ -704,6 +712,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 | <code><a href="#@cdktn/provider-aws.apiGatewayDomainName.ApiGatewayDomainName.property.region">region</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.apiGatewayDomainName.ApiGatewayDomainName.property.regionalCertificateArn">regionalCertificateArn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.apiGatewayDomainName.ApiGatewayDomainName.property.regionalCertificateName">regionalCertificateName</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.apiGatewayDomainName.ApiGatewayDomainName.property.routingMode">routingMode</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.apiGatewayDomainName.ApiGatewayDomainName.property.securityPolicy">securityPolicy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.apiGatewayDomainName.ApiGatewayDomainName.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.apiGatewayDomainName.ApiGatewayDomainName.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
@@ -1102,6 +1111,16 @@ public readonly regionInput: string;
 
 ---
 
+##### `routingModeInput`<sup>Optional</sup> <a name="routingModeInput" id="@cdktn/provider-aws.apiGatewayDomainName.ApiGatewayDomainName.property.routingModeInput"></a>
+
+```typescript
+public readonly routingModeInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `securityPolicyInput`<sup>Optional</sup> <a name="securityPolicyInput" id="@cdktn/provider-aws.apiGatewayDomainName.ApiGatewayDomainName.property.securityPolicyInput"></a>
 
 ```typescript
@@ -1272,6 +1291,16 @@ public readonly regionalCertificateName: string;
 
 ---
 
+##### `routingMode`<sup>Required</sup> <a name="routingMode" id="@cdktn/provider-aws.apiGatewayDomainName.ApiGatewayDomainName.property.routingMode"></a>
+
+```typescript
+public readonly routingMode: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `securityPolicy`<sup>Required</sup> <a name="securityPolicy" id="@cdktn/provider-aws.apiGatewayDomainName.ApiGatewayDomainName.property.securityPolicy"></a>
 
 ```typescript
@@ -1343,24 +1372,25 @@ const apiGatewayDomainNameConfig: apiGatewayDomainName.ApiGatewayDomainNameConfi
 | <code><a href="#@cdktn/provider-aws.apiGatewayDomainName.ApiGatewayDomainNameConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.apiGatewayDomainName.ApiGatewayDomainNameConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.apiGatewayDomainName.ApiGatewayDomainNameConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.apiGatewayDomainName.ApiGatewayDomainNameConfig.property.domainName">domainName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/api_gateway_domain_name#domain_name ApiGatewayDomainName#domain_name}. |
-| <code><a href="#@cdktn/provider-aws.apiGatewayDomainName.ApiGatewayDomainNameConfig.property.certificateArn">certificateArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/api_gateway_domain_name#certificate_arn ApiGatewayDomainName#certificate_arn}. |
-| <code><a href="#@cdktn/provider-aws.apiGatewayDomainName.ApiGatewayDomainNameConfig.property.certificateBody">certificateBody</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/api_gateway_domain_name#certificate_body ApiGatewayDomainName#certificate_body}. |
-| <code><a href="#@cdktn/provider-aws.apiGatewayDomainName.ApiGatewayDomainNameConfig.property.certificateChain">certificateChain</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/api_gateway_domain_name#certificate_chain ApiGatewayDomainName#certificate_chain}. |
-| <code><a href="#@cdktn/provider-aws.apiGatewayDomainName.ApiGatewayDomainNameConfig.property.certificateName">certificateName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/api_gateway_domain_name#certificate_name ApiGatewayDomainName#certificate_name}. |
-| <code><a href="#@cdktn/provider-aws.apiGatewayDomainName.ApiGatewayDomainNameConfig.property.certificatePrivateKey">certificatePrivateKey</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/api_gateway_domain_name#certificate_private_key ApiGatewayDomainName#certificate_private_key}. |
-| <code><a href="#@cdktn/provider-aws.apiGatewayDomainName.ApiGatewayDomainNameConfig.property.endpointAccessMode">endpointAccessMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/api_gateway_domain_name#endpoint_access_mode ApiGatewayDomainName#endpoint_access_mode}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayDomainName.ApiGatewayDomainNameConfig.property.domainName">domainName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/api_gateway_domain_name#domain_name ApiGatewayDomainName#domain_name}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayDomainName.ApiGatewayDomainNameConfig.property.certificateArn">certificateArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/api_gateway_domain_name#certificate_arn ApiGatewayDomainName#certificate_arn}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayDomainName.ApiGatewayDomainNameConfig.property.certificateBody">certificateBody</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/api_gateway_domain_name#certificate_body ApiGatewayDomainName#certificate_body}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayDomainName.ApiGatewayDomainNameConfig.property.certificateChain">certificateChain</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/api_gateway_domain_name#certificate_chain ApiGatewayDomainName#certificate_chain}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayDomainName.ApiGatewayDomainNameConfig.property.certificateName">certificateName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/api_gateway_domain_name#certificate_name ApiGatewayDomainName#certificate_name}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayDomainName.ApiGatewayDomainNameConfig.property.certificatePrivateKey">certificatePrivateKey</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/api_gateway_domain_name#certificate_private_key ApiGatewayDomainName#certificate_private_key}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayDomainName.ApiGatewayDomainNameConfig.property.endpointAccessMode">endpointAccessMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/api_gateway_domain_name#endpoint_access_mode ApiGatewayDomainName#endpoint_access_mode}. |
 | <code><a href="#@cdktn/provider-aws.apiGatewayDomainName.ApiGatewayDomainNameConfig.property.endpointConfiguration">endpointConfiguration</a></code> | <code><a href="#@cdktn/provider-aws.apiGatewayDomainName.ApiGatewayDomainNameEndpointConfiguration">ApiGatewayDomainNameEndpointConfiguration</a></code> | endpoint_configuration block. |
-| <code><a href="#@cdktn/provider-aws.apiGatewayDomainName.ApiGatewayDomainNameConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/api_gateway_domain_name#id ApiGatewayDomainName#id}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayDomainName.ApiGatewayDomainNameConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/api_gateway_domain_name#id ApiGatewayDomainName#id}. |
 | <code><a href="#@cdktn/provider-aws.apiGatewayDomainName.ApiGatewayDomainNameConfig.property.mutualTlsAuthentication">mutualTlsAuthentication</a></code> | <code><a href="#@cdktn/provider-aws.apiGatewayDomainName.ApiGatewayDomainNameMutualTlsAuthentication">ApiGatewayDomainNameMutualTlsAuthentication</a></code> | mutual_tls_authentication block. |
-| <code><a href="#@cdktn/provider-aws.apiGatewayDomainName.ApiGatewayDomainNameConfig.property.ownershipVerificationCertificateArn">ownershipVerificationCertificateArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/api_gateway_domain_name#ownership_verification_certificate_arn ApiGatewayDomainName#ownership_verification_certificate_arn}. |
-| <code><a href="#@cdktn/provider-aws.apiGatewayDomainName.ApiGatewayDomainNameConfig.property.policy">policy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/api_gateway_domain_name#policy ApiGatewayDomainName#policy}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayDomainName.ApiGatewayDomainNameConfig.property.ownershipVerificationCertificateArn">ownershipVerificationCertificateArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/api_gateway_domain_name#ownership_verification_certificate_arn ApiGatewayDomainName#ownership_verification_certificate_arn}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayDomainName.ApiGatewayDomainNameConfig.property.policy">policy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/api_gateway_domain_name#policy ApiGatewayDomainName#policy}. |
 | <code><a href="#@cdktn/provider-aws.apiGatewayDomainName.ApiGatewayDomainNameConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.apiGatewayDomainName.ApiGatewayDomainNameConfig.property.regionalCertificateArn">regionalCertificateArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/api_gateway_domain_name#regional_certificate_arn ApiGatewayDomainName#regional_certificate_arn}. |
-| <code><a href="#@cdktn/provider-aws.apiGatewayDomainName.ApiGatewayDomainNameConfig.property.regionalCertificateName">regionalCertificateName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/api_gateway_domain_name#regional_certificate_name ApiGatewayDomainName#regional_certificate_name}. |
-| <code><a href="#@cdktn/provider-aws.apiGatewayDomainName.ApiGatewayDomainNameConfig.property.securityPolicy">securityPolicy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/api_gateway_domain_name#security_policy ApiGatewayDomainName#security_policy}. |
-| <code><a href="#@cdktn/provider-aws.apiGatewayDomainName.ApiGatewayDomainNameConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/api_gateway_domain_name#tags ApiGatewayDomainName#tags}. |
-| <code><a href="#@cdktn/provider-aws.apiGatewayDomainName.ApiGatewayDomainNameConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/api_gateway_domain_name#tags_all ApiGatewayDomainName#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayDomainName.ApiGatewayDomainNameConfig.property.regionalCertificateArn">regionalCertificateArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/api_gateway_domain_name#regional_certificate_arn ApiGatewayDomainName#regional_certificate_arn}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayDomainName.ApiGatewayDomainNameConfig.property.regionalCertificateName">regionalCertificateName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/api_gateway_domain_name#regional_certificate_name ApiGatewayDomainName#regional_certificate_name}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayDomainName.ApiGatewayDomainNameConfig.property.routingMode">routingMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/api_gateway_domain_name#routing_mode ApiGatewayDomainName#routing_mode}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayDomainName.ApiGatewayDomainNameConfig.property.securityPolicy">securityPolicy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/api_gateway_domain_name#security_policy ApiGatewayDomainName#security_policy}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayDomainName.ApiGatewayDomainNameConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/api_gateway_domain_name#tags ApiGatewayDomainName#tags}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayDomainName.ApiGatewayDomainNameConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/api_gateway_domain_name#tags_all ApiGatewayDomainName#tags_all}. |
 | <code><a href="#@cdktn/provider-aws.apiGatewayDomainName.ApiGatewayDomainNameConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.apiGatewayDomainName.ApiGatewayDomainNameTimeouts">ApiGatewayDomainNameTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1443,7 +1473,7 @@ public readonly domainName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/api_gateway_domain_name#domain_name ApiGatewayDomainName#domain_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/api_gateway_domain_name#domain_name ApiGatewayDomainName#domain_name}.
 
 ---
 
@@ -1455,7 +1485,7 @@ public readonly certificateArn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/api_gateway_domain_name#certificate_arn ApiGatewayDomainName#certificate_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/api_gateway_domain_name#certificate_arn ApiGatewayDomainName#certificate_arn}.
 
 ---
 
@@ -1467,7 +1497,7 @@ public readonly certificateBody: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/api_gateway_domain_name#certificate_body ApiGatewayDomainName#certificate_body}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/api_gateway_domain_name#certificate_body ApiGatewayDomainName#certificate_body}.
 
 ---
 
@@ -1479,7 +1509,7 @@ public readonly certificateChain: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/api_gateway_domain_name#certificate_chain ApiGatewayDomainName#certificate_chain}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/api_gateway_domain_name#certificate_chain ApiGatewayDomainName#certificate_chain}.
 
 ---
 
@@ -1491,7 +1521,7 @@ public readonly certificateName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/api_gateway_domain_name#certificate_name ApiGatewayDomainName#certificate_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/api_gateway_domain_name#certificate_name ApiGatewayDomainName#certificate_name}.
 
 ---
 
@@ -1503,7 +1533,7 @@ public readonly certificatePrivateKey: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/api_gateway_domain_name#certificate_private_key ApiGatewayDomainName#certificate_private_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/api_gateway_domain_name#certificate_private_key ApiGatewayDomainName#certificate_private_key}.
 
 ---
 
@@ -1515,7 +1545,7 @@ public readonly endpointAccessMode: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/api_gateway_domain_name#endpoint_access_mode ApiGatewayDomainName#endpoint_access_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/api_gateway_domain_name#endpoint_access_mode ApiGatewayDomainName#endpoint_access_mode}.
 
 ---
 
@@ -1529,7 +1559,7 @@ public readonly endpointConfiguration: ApiGatewayDomainNameEndpointConfiguration
 
 endpoint_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/api_gateway_domain_name#endpoint_configuration ApiGatewayDomainName#endpoint_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/api_gateway_domain_name#endpoint_configuration ApiGatewayDomainName#endpoint_configuration}
 
 ---
 
@@ -1541,7 +1571,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/api_gateway_domain_name#id ApiGatewayDomainName#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/api_gateway_domain_name#id ApiGatewayDomainName#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1558,7 +1588,7 @@ public readonly mutualTlsAuthentication: ApiGatewayDomainNameMutualTlsAuthentica
 
 mutual_tls_authentication block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/api_gateway_domain_name#mutual_tls_authentication ApiGatewayDomainName#mutual_tls_authentication}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/api_gateway_domain_name#mutual_tls_authentication ApiGatewayDomainName#mutual_tls_authentication}
 
 ---
 
@@ -1570,7 +1600,7 @@ public readonly ownershipVerificationCertificateArn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/api_gateway_domain_name#ownership_verification_certificate_arn ApiGatewayDomainName#ownership_verification_certificate_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/api_gateway_domain_name#ownership_verification_certificate_arn ApiGatewayDomainName#ownership_verification_certificate_arn}.
 
 ---
 
@@ -1582,7 +1612,7 @@ public readonly policy: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/api_gateway_domain_name#policy ApiGatewayDomainName#policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/api_gateway_domain_name#policy ApiGatewayDomainName#policy}.
 
 ---
 
@@ -1596,7 +1626,7 @@ public readonly region: string;
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/api_gateway_domain_name#region ApiGatewayDomainName#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/api_gateway_domain_name#region ApiGatewayDomainName#region}
 
 ---
 
@@ -1608,7 +1638,7 @@ public readonly regionalCertificateArn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/api_gateway_domain_name#regional_certificate_arn ApiGatewayDomainName#regional_certificate_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/api_gateway_domain_name#regional_certificate_arn ApiGatewayDomainName#regional_certificate_arn}.
 
 ---
 
@@ -1620,7 +1650,19 @@ public readonly regionalCertificateName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/api_gateway_domain_name#regional_certificate_name ApiGatewayDomainName#regional_certificate_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/api_gateway_domain_name#regional_certificate_name ApiGatewayDomainName#regional_certificate_name}.
+
+---
+
+##### `routingMode`<sup>Optional</sup> <a name="routingMode" id="@cdktn/provider-aws.apiGatewayDomainName.ApiGatewayDomainNameConfig.property.routingMode"></a>
+
+```typescript
+public readonly routingMode: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/api_gateway_domain_name#routing_mode ApiGatewayDomainName#routing_mode}.
 
 ---
 
@@ -1632,7 +1674,7 @@ public readonly securityPolicy: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/api_gateway_domain_name#security_policy ApiGatewayDomainName#security_policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/api_gateway_domain_name#security_policy ApiGatewayDomainName#security_policy}.
 
 ---
 
@@ -1644,7 +1686,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/api_gateway_domain_name#tags ApiGatewayDomainName#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/api_gateway_domain_name#tags ApiGatewayDomainName#tags}.
 
 ---
 
@@ -1656,7 +1698,7 @@ public readonly tagsAll: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/api_gateway_domain_name#tags_all ApiGatewayDomainName#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/api_gateway_domain_name#tags_all ApiGatewayDomainName#tags_all}.
 
 ---
 
@@ -1670,7 +1712,7 @@ public readonly timeouts: ApiGatewayDomainNameTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/api_gateway_domain_name#timeouts ApiGatewayDomainName#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/api_gateway_domain_name#timeouts ApiGatewayDomainName#timeouts}
 
 ---
 
@@ -1688,8 +1730,8 @@ const apiGatewayDomainNameEndpointConfiguration: apiGatewayDomainName.ApiGateway
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.apiGatewayDomainName.ApiGatewayDomainNameEndpointConfiguration.property.types">types</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/api_gateway_domain_name#types ApiGatewayDomainName#types}. |
-| <code><a href="#@cdktn/provider-aws.apiGatewayDomainName.ApiGatewayDomainNameEndpointConfiguration.property.ipAddressType">ipAddressType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/api_gateway_domain_name#ip_address_type ApiGatewayDomainName#ip_address_type}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayDomainName.ApiGatewayDomainNameEndpointConfiguration.property.types">types</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/api_gateway_domain_name#types ApiGatewayDomainName#types}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayDomainName.ApiGatewayDomainNameEndpointConfiguration.property.ipAddressType">ipAddressType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/api_gateway_domain_name#ip_address_type ApiGatewayDomainName#ip_address_type}. |
 
 ---
 
@@ -1701,7 +1743,7 @@ public readonly types: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/api_gateway_domain_name#types ApiGatewayDomainName#types}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/api_gateway_domain_name#types ApiGatewayDomainName#types}.
 
 ---
 
@@ -1713,7 +1755,7 @@ public readonly ipAddressType: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/api_gateway_domain_name#ip_address_type ApiGatewayDomainName#ip_address_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/api_gateway_domain_name#ip_address_type ApiGatewayDomainName#ip_address_type}.
 
 ---
 
@@ -1731,8 +1773,8 @@ const apiGatewayDomainNameMutualTlsAuthentication: apiGatewayDomainName.ApiGatew
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.apiGatewayDomainName.ApiGatewayDomainNameMutualTlsAuthentication.property.truststoreUri">truststoreUri</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/api_gateway_domain_name#truststore_uri ApiGatewayDomainName#truststore_uri}. |
-| <code><a href="#@cdktn/provider-aws.apiGatewayDomainName.ApiGatewayDomainNameMutualTlsAuthentication.property.truststoreVersion">truststoreVersion</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/api_gateway_domain_name#truststore_version ApiGatewayDomainName#truststore_version}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayDomainName.ApiGatewayDomainNameMutualTlsAuthentication.property.truststoreUri">truststoreUri</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/api_gateway_domain_name#truststore_uri ApiGatewayDomainName#truststore_uri}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayDomainName.ApiGatewayDomainNameMutualTlsAuthentication.property.truststoreVersion">truststoreVersion</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/api_gateway_domain_name#truststore_version ApiGatewayDomainName#truststore_version}. |
 
 ---
 
@@ -1744,7 +1786,7 @@ public readonly truststoreUri: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/api_gateway_domain_name#truststore_uri ApiGatewayDomainName#truststore_uri}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/api_gateway_domain_name#truststore_uri ApiGatewayDomainName#truststore_uri}.
 
 ---
 
@@ -1756,7 +1798,7 @@ public readonly truststoreVersion: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/api_gateway_domain_name#truststore_version ApiGatewayDomainName#truststore_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/api_gateway_domain_name#truststore_version ApiGatewayDomainName#truststore_version}.
 
 ---
 
@@ -1774,8 +1816,8 @@ const apiGatewayDomainNameTimeouts: apiGatewayDomainName.ApiGatewayDomainNameTim
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.apiGatewayDomainName.ApiGatewayDomainNameTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/api_gateway_domain_name#create ApiGatewayDomainName#create}. |
-| <code><a href="#@cdktn/provider-aws.apiGatewayDomainName.ApiGatewayDomainNameTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/api_gateway_domain_name#update ApiGatewayDomainName#update}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayDomainName.ApiGatewayDomainNameTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/api_gateway_domain_name#create ApiGatewayDomainName#create}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayDomainName.ApiGatewayDomainNameTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/api_gateway_domain_name#update ApiGatewayDomainName#update}. |
 
 ---
 
@@ -1787,7 +1829,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/api_gateway_domain_name#create ApiGatewayDomainName#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/api_gateway_domain_name#create ApiGatewayDomainName#create}.
 
 ---
 
@@ -1799,7 +1841,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/api_gateway_domain_name#update ApiGatewayDomainName#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/api_gateway_domain_name#update ApiGatewayDomainName#update}.
 
 ---
 

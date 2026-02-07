@@ -4,12 +4,12 @@
 
 ### TranscribeLanguageModel <a name="TranscribeLanguageModel" id="@cdktn/provider-aws.transcribeLanguageModel.TranscribeLanguageModel"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/transcribe_language_model aws_transcribe_language_model}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/transcribe_language_model aws_transcribe_language_model}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.transcribeLanguageModel.TranscribeLanguageModel.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/transcribelanguagemodel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/transcribelanguagemodel"
 
 transcribelanguagemodel.NewTranscribeLanguageModel(scope Construct, id *string, config TranscribeLanguageModelConfig) TranscribeLanguageModel
 ```
@@ -439,7 +439,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.transcribeLanguageModel.TranscribeLanguageModel.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/transcribelanguagemodel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/transcribelanguagemodel"
 
 transcribelanguagemodel.TranscribeLanguageModel_IsConstruct(x interface{}) *bool
 ```
@@ -471,7 +471,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.transcribeLanguageModel.TranscribeLanguageModel.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/transcribelanguagemodel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/transcribelanguagemodel"
 
 transcribelanguagemodel.TranscribeLanguageModel_IsTerraformElement(x interface{}) *bool
 ```
@@ -485,7 +485,7 @@ transcribelanguagemodel.TranscribeLanguageModel_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.transcribeLanguageModel.TranscribeLanguageModel.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/transcribelanguagemodel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/transcribelanguagemodel"
 
 transcribelanguagemodel.TranscribeLanguageModel_IsTerraformResource(x interface{}) *bool
 ```
@@ -499,7 +499,7 @@ transcribelanguagemodel.TranscribeLanguageModel_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.transcribeLanguageModel.TranscribeLanguageModel.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/transcribelanguagemodel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/transcribelanguagemodel"
 
 transcribelanguagemodel.TranscribeLanguageModel_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -528,7 +528,7 @@ The construct id used in the generated config for the TranscribeLanguageModel to
 
 The id of the existing TranscribeLanguageModel that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/transcribe_language_model#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/transcribe_language_model#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -937,7 +937,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.transcribeLanguageModel.TranscribeLanguageModelConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/transcribelanguagemodel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/transcribelanguagemodel"
 
 &transcribelanguagemodel.TranscribeLanguageModelConfig {
 	Connection: interface{},
@@ -948,14 +948,14 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/transcribelanguagemode
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	BaseModelName: *string,
-	InputDataConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.transcribeLanguageModel.TranscribeLanguageModelInputDataConfig,
+	InputDataConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.transcribeLanguageModel.TranscribeLanguageModelInputDataConfig,
 	LanguageCode: *string,
 	ModelName: *string,
 	Id: *string,
 	Region: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.transcribeLanguageModel.TranscribeLanguageModelTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.transcribeLanguageModel.TranscribeLanguageModelTimeouts,
 }
 ```
 
@@ -970,14 +970,14 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/transcribelanguagemode
 | <code><a href="#@cdktn/provider-aws.transcribeLanguageModel.TranscribeLanguageModelConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.transcribeLanguageModel.TranscribeLanguageModelConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.transcribeLanguageModel.TranscribeLanguageModelConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.transcribeLanguageModel.TranscribeLanguageModelConfig.property.baseModelName">BaseModelName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/transcribe_language_model#base_model_name TranscribeLanguageModel#base_model_name}. |
+| <code><a href="#@cdktn/provider-aws.transcribeLanguageModel.TranscribeLanguageModelConfig.property.baseModelName">BaseModelName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/transcribe_language_model#base_model_name TranscribeLanguageModel#base_model_name}. |
 | <code><a href="#@cdktn/provider-aws.transcribeLanguageModel.TranscribeLanguageModelConfig.property.inputDataConfig">InputDataConfig</a></code> | <code><a href="#@cdktn/provider-aws.transcribeLanguageModel.TranscribeLanguageModelInputDataConfig">TranscribeLanguageModelInputDataConfig</a></code> | input_data_config block. |
-| <code><a href="#@cdktn/provider-aws.transcribeLanguageModel.TranscribeLanguageModelConfig.property.languageCode">LanguageCode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/transcribe_language_model#language_code TranscribeLanguageModel#language_code}. |
-| <code><a href="#@cdktn/provider-aws.transcribeLanguageModel.TranscribeLanguageModelConfig.property.modelName">ModelName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/transcribe_language_model#model_name TranscribeLanguageModel#model_name}. |
-| <code><a href="#@cdktn/provider-aws.transcribeLanguageModel.TranscribeLanguageModelConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/transcribe_language_model#id TranscribeLanguageModel#id}. |
+| <code><a href="#@cdktn/provider-aws.transcribeLanguageModel.TranscribeLanguageModelConfig.property.languageCode">LanguageCode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/transcribe_language_model#language_code TranscribeLanguageModel#language_code}. |
+| <code><a href="#@cdktn/provider-aws.transcribeLanguageModel.TranscribeLanguageModelConfig.property.modelName">ModelName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/transcribe_language_model#model_name TranscribeLanguageModel#model_name}. |
+| <code><a href="#@cdktn/provider-aws.transcribeLanguageModel.TranscribeLanguageModelConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/transcribe_language_model#id TranscribeLanguageModel#id}. |
 | <code><a href="#@cdktn/provider-aws.transcribeLanguageModel.TranscribeLanguageModelConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.transcribeLanguageModel.TranscribeLanguageModelConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/transcribe_language_model#tags TranscribeLanguageModel#tags}. |
-| <code><a href="#@cdktn/provider-aws.transcribeLanguageModel.TranscribeLanguageModelConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/transcribe_language_model#tags_all TranscribeLanguageModel#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.transcribeLanguageModel.TranscribeLanguageModelConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/transcribe_language_model#tags TranscribeLanguageModel#tags}. |
+| <code><a href="#@cdktn/provider-aws.transcribeLanguageModel.TranscribeLanguageModelConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/transcribe_language_model#tags_all TranscribeLanguageModel#tags_all}. |
 | <code><a href="#@cdktn/provider-aws.transcribeLanguageModel.TranscribeLanguageModelConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.transcribeLanguageModel.TranscribeLanguageModelTimeouts">TranscribeLanguageModelTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1060,7 +1060,7 @@ BaseModelName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/transcribe_language_model#base_model_name TranscribeLanguageModel#base_model_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/transcribe_language_model#base_model_name TranscribeLanguageModel#base_model_name}.
 
 ---
 
@@ -1074,7 +1074,7 @@ InputDataConfig TranscribeLanguageModelInputDataConfig
 
 input_data_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/transcribe_language_model#input_data_config TranscribeLanguageModel#input_data_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/transcribe_language_model#input_data_config TranscribeLanguageModel#input_data_config}
 
 ---
 
@@ -1086,7 +1086,7 @@ LanguageCode *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/transcribe_language_model#language_code TranscribeLanguageModel#language_code}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/transcribe_language_model#language_code TranscribeLanguageModel#language_code}.
 
 ---
 
@@ -1098,7 +1098,7 @@ ModelName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/transcribe_language_model#model_name TranscribeLanguageModel#model_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/transcribe_language_model#model_name TranscribeLanguageModel#model_name}.
 
 ---
 
@@ -1110,7 +1110,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/transcribe_language_model#id TranscribeLanguageModel#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/transcribe_language_model#id TranscribeLanguageModel#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1127,7 +1127,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/transcribe_language_model#region TranscribeLanguageModel#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/transcribe_language_model#region TranscribeLanguageModel#region}
 
 ---
 
@@ -1139,7 +1139,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/transcribe_language_model#tags TranscribeLanguageModel#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/transcribe_language_model#tags TranscribeLanguageModel#tags}.
 
 ---
 
@@ -1151,7 +1151,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/transcribe_language_model#tags_all TranscribeLanguageModel#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/transcribe_language_model#tags_all TranscribeLanguageModel#tags_all}.
 
 ---
 
@@ -1165,7 +1165,7 @@ Timeouts TranscribeLanguageModelTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/transcribe_language_model#timeouts TranscribeLanguageModel#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/transcribe_language_model#timeouts TranscribeLanguageModel#timeouts}
 
 ---
 
@@ -1174,7 +1174,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.transcribeLanguageModel.TranscribeLanguageModelInputDataConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/transcribelanguagemodel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/transcribelanguagemodel"
 
 &transcribelanguagemodel.TranscribeLanguageModelInputDataConfig {
 	DataAccessRoleArn: *string,
@@ -1187,9 +1187,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/transcribelanguagemode
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.transcribeLanguageModel.TranscribeLanguageModelInputDataConfig.property.dataAccessRoleArn">DataAccessRoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/transcribe_language_model#data_access_role_arn TranscribeLanguageModel#data_access_role_arn}. |
-| <code><a href="#@cdktn/provider-aws.transcribeLanguageModel.TranscribeLanguageModelInputDataConfig.property.s3Uri">S3Uri</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/transcribe_language_model#s3_uri TranscribeLanguageModel#s3_uri}. |
-| <code><a href="#@cdktn/provider-aws.transcribeLanguageModel.TranscribeLanguageModelInputDataConfig.property.tuningDataS3Uri">TuningDataS3Uri</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/transcribe_language_model#tuning_data_s3_uri TranscribeLanguageModel#tuning_data_s3_uri}. |
+| <code><a href="#@cdktn/provider-aws.transcribeLanguageModel.TranscribeLanguageModelInputDataConfig.property.dataAccessRoleArn">DataAccessRoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/transcribe_language_model#data_access_role_arn TranscribeLanguageModel#data_access_role_arn}. |
+| <code><a href="#@cdktn/provider-aws.transcribeLanguageModel.TranscribeLanguageModelInputDataConfig.property.s3Uri">S3Uri</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/transcribe_language_model#s3_uri TranscribeLanguageModel#s3_uri}. |
+| <code><a href="#@cdktn/provider-aws.transcribeLanguageModel.TranscribeLanguageModelInputDataConfig.property.tuningDataS3Uri">TuningDataS3Uri</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/transcribe_language_model#tuning_data_s3_uri TranscribeLanguageModel#tuning_data_s3_uri}. |
 
 ---
 
@@ -1201,7 +1201,7 @@ DataAccessRoleArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/transcribe_language_model#data_access_role_arn TranscribeLanguageModel#data_access_role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/transcribe_language_model#data_access_role_arn TranscribeLanguageModel#data_access_role_arn}.
 
 ---
 
@@ -1213,7 +1213,7 @@ S3Uri *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/transcribe_language_model#s3_uri TranscribeLanguageModel#s3_uri}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/transcribe_language_model#s3_uri TranscribeLanguageModel#s3_uri}.
 
 ---
 
@@ -1225,7 +1225,7 @@ TuningDataS3Uri *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/transcribe_language_model#tuning_data_s3_uri TranscribeLanguageModel#tuning_data_s3_uri}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/transcribe_language_model#tuning_data_s3_uri TranscribeLanguageModel#tuning_data_s3_uri}.
 
 ---
 
@@ -1234,7 +1234,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.transcribeLanguageModel.TranscribeLanguageModelTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/transcribelanguagemodel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/transcribelanguagemodel"
 
 &transcribelanguagemodel.TranscribeLanguageModelTimeouts {
 	Create: *string,
@@ -1245,7 +1245,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/transcribelanguagemode
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.transcribeLanguageModel.TranscribeLanguageModelTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/transcribe_language_model#create TranscribeLanguageModel#create}. |
+| <code><a href="#@cdktn/provider-aws.transcribeLanguageModel.TranscribeLanguageModelTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/transcribe_language_model#create TranscribeLanguageModel#create}. |
 
 ---
 
@@ -1257,7 +1257,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/transcribe_language_model#create TranscribeLanguageModel#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/transcribe_language_model#create TranscribeLanguageModel#create}.
 
 ---
 
@@ -1268,7 +1268,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.transcribeLanguageModel.TranscribeLanguageModelInputDataConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/transcribelanguagemodel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/transcribelanguagemodel"
 
 transcribelanguagemodel.NewTranscribeLanguageModelInputDataConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TranscribeLanguageModelInputDataConfigOutputReference
 ```
@@ -1590,7 +1590,7 @@ func InternalValue() TranscribeLanguageModelInputDataConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.transcribeLanguageModel.TranscribeLanguageModelTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/transcribelanguagemodel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/transcribelanguagemodel"
 
 transcribelanguagemodel.NewTranscribeLanguageModelTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TranscribeLanguageModelTimeoutsOutputReference
 ```

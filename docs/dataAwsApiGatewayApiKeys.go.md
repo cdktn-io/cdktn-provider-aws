@@ -4,12 +4,12 @@
 
 ### DataAwsApiGatewayApiKeys <a name="DataAwsApiGatewayApiKeys" id="@cdktn/provider-aws.dataAwsApiGatewayApiKeys.DataAwsApiGatewayApiKeys"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/api_gateway_api_keys aws_api_gateway_api_keys}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/api_gateway_api_keys aws_api_gateway_api_keys}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsApiGatewayApiKeys.DataAwsApiGatewayApiKeys.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsapigatewayapikeys"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsapigatewayapikeys"
 
 dataawsapigatewayapikeys.NewDataAwsApiGatewayApiKeys(scope Construct, id *string, config DataAwsApiGatewayApiKeysConfig) DataAwsApiGatewayApiKeys
 ```
@@ -297,7 +297,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsApiGatewayApiKeys.DataAwsApiGatewayApiKeys.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsapigatewayapikeys"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsapigatewayapikeys"
 
 dataawsapigatewayapikeys.DataAwsApiGatewayApiKeys_IsConstruct(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsApiGatewayApiKeys.DataAwsApiGatewayApiKeys.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsapigatewayapikeys"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsapigatewayapikeys"
 
 dataawsapigatewayapikeys.DataAwsApiGatewayApiKeys_IsTerraformElement(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ dataawsapigatewayapikeys.DataAwsApiGatewayApiKeys_IsTerraformElement(x interface
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsApiGatewayApiKeys.DataAwsApiGatewayApiKeys.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsapigatewayapikeys"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsapigatewayapikeys"
 
 dataawsapigatewayapikeys.DataAwsApiGatewayApiKeys_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ dataawsapigatewayapikeys.DataAwsApiGatewayApiKeys_IsTerraformDataSource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsApiGatewayApiKeys.DataAwsApiGatewayApiKeys.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsapigatewayapikeys"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsapigatewayapikeys"
 
 dataawsapigatewayapikeys.DataAwsApiGatewayApiKeys_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -386,7 +386,7 @@ The construct id used in the generated config for the DataAwsApiGatewayApiKeys t
 
 The id of the existing DataAwsApiGatewayApiKeys that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/api_gateway_api_keys#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/api_gateway_api_keys#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -652,7 +652,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsApiGatewayApiKeys.DataAwsApiGatewayApiKeysConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsapigatewayapikeys"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsapigatewayapikeys"
 
 &dataawsapigatewayapikeys.DataAwsApiGatewayApiKeysConfig {
 	Connection: interface{},
@@ -679,8 +679,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsapigatewayapike
 | <code><a href="#@cdktn/provider-aws.dataAwsApiGatewayApiKeys.DataAwsApiGatewayApiKeysConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsApiGatewayApiKeys.DataAwsApiGatewayApiKeysConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsApiGatewayApiKeys.DataAwsApiGatewayApiKeysConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsApiGatewayApiKeys.DataAwsApiGatewayApiKeysConfig.property.customerId">CustomerId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/api_gateway_api_keys#customer_id DataAwsApiGatewayApiKeys#customer_id}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsApiGatewayApiKeys.DataAwsApiGatewayApiKeysConfig.property.includeValues">IncludeValues</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/api_gateway_api_keys#include_values DataAwsApiGatewayApiKeys#include_values}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsApiGatewayApiKeys.DataAwsApiGatewayApiKeysConfig.property.customerId">CustomerId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/api_gateway_api_keys#customer_id DataAwsApiGatewayApiKeys#customer_id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsApiGatewayApiKeys.DataAwsApiGatewayApiKeysConfig.property.includeValues">IncludeValues</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/api_gateway_api_keys#include_values DataAwsApiGatewayApiKeys#include_values}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsApiGatewayApiKeys.DataAwsApiGatewayApiKeysConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -763,7 +763,7 @@ CustomerId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/api_gateway_api_keys#customer_id DataAwsApiGatewayApiKeys#customer_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/api_gateway_api_keys#customer_id DataAwsApiGatewayApiKeys#customer_id}.
 
 ---
 
@@ -775,7 +775,7 @@ IncludeValues interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/api_gateway_api_keys#include_values DataAwsApiGatewayApiKeys#include_values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/api_gateway_api_keys#include_values DataAwsApiGatewayApiKeys#include_values}.
 
 ---
 
@@ -789,7 +789,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/api_gateway_api_keys#region DataAwsApiGatewayApiKeys#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/api_gateway_api_keys#region DataAwsApiGatewayApiKeys#region}
 
 ---
 
@@ -798,7 +798,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsApiGatewayApiKeys.DataAwsApiGatewayApiKeysItems.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsapigatewayapikeys"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsapigatewayapikeys"
 
 &dataawsapigatewayapikeys.DataAwsApiGatewayApiKeysItems {
 
@@ -813,7 +813,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsapigatewayapike
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsApiGatewayApiKeys.DataAwsApiGatewayApiKeysItemsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsapigatewayapikeys"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsapigatewayapikeys"
 
 dataawsapigatewayapikeys.NewDataAwsApiGatewayApiKeysItemsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsApiGatewayApiKeysItemsList
 ```
@@ -962,7 +962,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsApiGatewayApiKeys.DataAwsApiGatewayApiKeysItemsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsapigatewayapikeys"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsapigatewayapikeys"
 
 dataawsapigatewayapikeys.NewDataAwsApiGatewayApiKeysItemsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsApiGatewayApiKeysItemsOutputReference
 ```

@@ -4,12 +4,12 @@
 
 ### ServicecatalogOrganizationsAccess <a name="ServicecatalogOrganizationsAccess" id="@cdktn/provider-aws.servicecatalogOrganizationsAccess.ServicecatalogOrganizationsAccess"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/servicecatalog_organizations_access aws_servicecatalog_organizations_access}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/servicecatalog_organizations_access aws_servicecatalog_organizations_access}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.servicecatalogOrganizationsAccess.ServicecatalogOrganizationsAccess.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/servicecatalogorganizationsaccess"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/servicecatalogorganizationsaccess"
 
 servicecatalogorganizationsaccess.NewServicecatalogOrganizationsAccess(scope Construct, id *string, config ServicecatalogOrganizationsAccessConfig) ServicecatalogOrganizationsAccess
 ```
@@ -405,7 +405,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.servicecatalogOrganizationsAccess.ServicecatalogOrganizationsAccess.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/servicecatalogorganizationsaccess"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/servicecatalogorganizationsaccess"
 
 servicecatalogorganizationsaccess.ServicecatalogOrganizationsAccess_IsConstruct(x interface{}) *bool
 ```
@@ -437,7 +437,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.servicecatalogOrganizationsAccess.ServicecatalogOrganizationsAccess.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/servicecatalogorganizationsaccess"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/servicecatalogorganizationsaccess"
 
 servicecatalogorganizationsaccess.ServicecatalogOrganizationsAccess_IsTerraformElement(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ servicecatalogorganizationsaccess.ServicecatalogOrganizationsAccess_IsTerraformE
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.servicecatalogOrganizationsAccess.ServicecatalogOrganizationsAccess.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/servicecatalogorganizationsaccess"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/servicecatalogorganizationsaccess"
 
 servicecatalogorganizationsaccess.ServicecatalogOrganizationsAccess_IsTerraformResource(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ servicecatalogorganizationsaccess.ServicecatalogOrganizationsAccess_IsTerraformR
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.servicecatalogOrganizationsAccess.ServicecatalogOrganizationsAccess.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/servicecatalogorganizationsaccess"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/servicecatalogorganizationsaccess"
 
 servicecatalogorganizationsaccess.ServicecatalogOrganizationsAccess_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -494,7 +494,7 @@ The construct id used in the generated config for the ServicecatalogOrganization
 
 The id of the existing ServicecatalogOrganizationsAccess that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/servicecatalog_organizations_access#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/servicecatalog_organizations_access#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -760,7 +760,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.servicecatalogOrganizationsAccess.ServicecatalogOrganizationsAccessConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/servicecatalogorganizationsaccess"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/servicecatalogorganizationsaccess"
 
 &servicecatalogorganizationsaccess.ServicecatalogOrganizationsAccessConfig {
 	Connection: interface{},
@@ -772,7 +772,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/servicecatalogorganiza
 	Provisioners: *[]interface{},
 	Enabled: interface{},
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.servicecatalogOrganizationsAccess.ServicecatalogOrganizationsAccessTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.servicecatalogOrganizationsAccess.ServicecatalogOrganizationsAccessTimeouts,
 }
 ```
 
@@ -787,8 +787,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/servicecatalogorganiza
 | <code><a href="#@cdktn/provider-aws.servicecatalogOrganizationsAccess.ServicecatalogOrganizationsAccessConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.servicecatalogOrganizationsAccess.ServicecatalogOrganizationsAccessConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.servicecatalogOrganizationsAccess.ServicecatalogOrganizationsAccessConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.servicecatalogOrganizationsAccess.ServicecatalogOrganizationsAccessConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/servicecatalog_organizations_access#enabled ServicecatalogOrganizationsAccess#enabled}. |
-| <code><a href="#@cdktn/provider-aws.servicecatalogOrganizationsAccess.ServicecatalogOrganizationsAccessConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/servicecatalog_organizations_access#id ServicecatalogOrganizationsAccess#id}. |
+| <code><a href="#@cdktn/provider-aws.servicecatalogOrganizationsAccess.ServicecatalogOrganizationsAccessConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/servicecatalog_organizations_access#enabled ServicecatalogOrganizationsAccess#enabled}. |
+| <code><a href="#@cdktn/provider-aws.servicecatalogOrganizationsAccess.ServicecatalogOrganizationsAccessConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/servicecatalog_organizations_access#id ServicecatalogOrganizationsAccess#id}. |
 | <code><a href="#@cdktn/provider-aws.servicecatalogOrganizationsAccess.ServicecatalogOrganizationsAccessConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.servicecatalogOrganizationsAccess.ServicecatalogOrganizationsAccessTimeouts">ServicecatalogOrganizationsAccessTimeouts</a></code> | timeouts block. |
 
 ---
@@ -871,7 +871,7 @@ Enabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/servicecatalog_organizations_access#enabled ServicecatalogOrganizationsAccess#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/servicecatalog_organizations_access#enabled ServicecatalogOrganizationsAccess#enabled}.
 
 ---
 
@@ -883,7 +883,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/servicecatalog_organizations_access#id ServicecatalogOrganizationsAccess#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/servicecatalog_organizations_access#id ServicecatalogOrganizationsAccess#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -900,7 +900,7 @@ Timeouts ServicecatalogOrganizationsAccessTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/servicecatalog_organizations_access#timeouts ServicecatalogOrganizationsAccess#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/servicecatalog_organizations_access#timeouts ServicecatalogOrganizationsAccess#timeouts}
 
 ---
 
@@ -909,7 +909,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.servicecatalogOrganizationsAccess.ServicecatalogOrganizationsAccessTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/servicecatalogorganizationsaccess"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/servicecatalogorganizationsaccess"
 
 &servicecatalogorganizationsaccess.ServicecatalogOrganizationsAccessTimeouts {
 	Read: *string,
@@ -920,7 +920,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/servicecatalogorganiza
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.servicecatalogOrganizationsAccess.ServicecatalogOrganizationsAccessTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/servicecatalog_organizations_access#read ServicecatalogOrganizationsAccess#read}. |
+| <code><a href="#@cdktn/provider-aws.servicecatalogOrganizationsAccess.ServicecatalogOrganizationsAccessTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/servicecatalog_organizations_access#read ServicecatalogOrganizationsAccess#read}. |
 
 ---
 
@@ -932,7 +932,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/servicecatalog_organizations_access#read ServicecatalogOrganizationsAccess#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/servicecatalog_organizations_access#read ServicecatalogOrganizationsAccess#read}.
 
 ---
 
@@ -943,7 +943,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.servicecatalogOrganizationsAccess.ServicecatalogOrganizationsAccessTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/servicecatalogorganizationsaccess"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/servicecatalogorganizationsaccess"
 
 servicecatalogorganizationsaccess.NewServicecatalogOrganizationsAccessTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ServicecatalogOrganizationsAccessTimeoutsOutputReference
 ```

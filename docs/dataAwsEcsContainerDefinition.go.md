@@ -4,12 +4,12 @@
 
 ### DataAwsEcsContainerDefinition <a name="DataAwsEcsContainerDefinition" id="@cdktn/provider-aws.dataAwsEcsContainerDefinition.DataAwsEcsContainerDefinition"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/ecs_container_definition aws_ecs_container_definition}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/ecs_container_definition aws_ecs_container_definition}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEcsContainerDefinition.DataAwsEcsContainerDefinition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsecscontainerdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsecscontainerdefinition"
 
 dataawsecscontainerdefinition.NewDataAwsEcsContainerDefinition(scope Construct, id *string, config DataAwsEcsContainerDefinitionConfig) DataAwsEcsContainerDefinition
 ```
@@ -290,7 +290,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsEcsContainerDefinition.DataAwsEcsContainerDefinition.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsecscontainerdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsecscontainerdefinition"
 
 dataawsecscontainerdefinition.DataAwsEcsContainerDefinition_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsEcsContainerDefinition.DataAwsEcsContainerDefinition.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsecscontainerdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsecscontainerdefinition"
 
 dataawsecscontainerdefinition.DataAwsEcsContainerDefinition_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ dataawsecscontainerdefinition.DataAwsEcsContainerDefinition_IsTerraformElement(x
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsEcsContainerDefinition.DataAwsEcsContainerDefinition.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsecscontainerdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsecscontainerdefinition"
 
 dataawsecscontainerdefinition.DataAwsEcsContainerDefinition_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ dataawsecscontainerdefinition.DataAwsEcsContainerDefinition_IsTerraformDataSourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsEcsContainerDefinition.DataAwsEcsContainerDefinition.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsecscontainerdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsecscontainerdefinition"
 
 dataawsecscontainerdefinition.DataAwsEcsContainerDefinition_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -379,7 +379,7 @@ The construct id used in the generated config for the DataAwsEcsContainerDefinit
 
 The id of the existing DataAwsEcsContainerDefinition that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/ecs_container_definition#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/ecs_container_definition#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -733,7 +733,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEcsContainerDefinition.DataAwsEcsContainerDefinitionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsecscontainerdefinition"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsecscontainerdefinition"
 
 &dataawsecscontainerdefinition.DataAwsEcsContainerDefinitionConfig {
 	Connection: interface{},
@@ -761,9 +761,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsecscontainerdef
 | <code><a href="#@cdktn/provider-aws.dataAwsEcsContainerDefinition.DataAwsEcsContainerDefinitionConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsEcsContainerDefinition.DataAwsEcsContainerDefinitionConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsEcsContainerDefinition.DataAwsEcsContainerDefinitionConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsEcsContainerDefinition.DataAwsEcsContainerDefinitionConfig.property.containerName">ContainerName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/ecs_container_definition#container_name DataAwsEcsContainerDefinition#container_name}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsEcsContainerDefinition.DataAwsEcsContainerDefinitionConfig.property.taskDefinition">TaskDefinition</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/ecs_container_definition#task_definition DataAwsEcsContainerDefinition#task_definition}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsEcsContainerDefinition.DataAwsEcsContainerDefinitionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/ecs_container_definition#id DataAwsEcsContainerDefinition#id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsEcsContainerDefinition.DataAwsEcsContainerDefinitionConfig.property.containerName">ContainerName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/ecs_container_definition#container_name DataAwsEcsContainerDefinition#container_name}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsEcsContainerDefinition.DataAwsEcsContainerDefinitionConfig.property.taskDefinition">TaskDefinition</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/ecs_container_definition#task_definition DataAwsEcsContainerDefinition#task_definition}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsEcsContainerDefinition.DataAwsEcsContainerDefinitionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/ecs_container_definition#id DataAwsEcsContainerDefinition#id}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsEcsContainerDefinition.DataAwsEcsContainerDefinitionConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -846,7 +846,7 @@ ContainerName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/ecs_container_definition#container_name DataAwsEcsContainerDefinition#container_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/ecs_container_definition#container_name DataAwsEcsContainerDefinition#container_name}.
 
 ---
 
@@ -858,7 +858,7 @@ TaskDefinition *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/ecs_container_definition#task_definition DataAwsEcsContainerDefinition#task_definition}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/ecs_container_definition#task_definition DataAwsEcsContainerDefinition#task_definition}.
 
 ---
 
@@ -870,7 +870,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/ecs_container_definition#id DataAwsEcsContainerDefinition#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/ecs_container_definition#id DataAwsEcsContainerDefinition#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -887,7 +887,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/ecs_container_definition#region DataAwsEcsContainerDefinition#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/ecs_container_definition#region DataAwsEcsContainerDefinition#region}
 
 ---
 

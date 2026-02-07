@@ -4,12 +4,12 @@
 
 ### AppfabricIngestion <a name="AppfabricIngestion" id="@cdktn/provider-aws.appfabricIngestion.AppfabricIngestion"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/appfabric_ingestion aws_appfabric_ingestion}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/appfabric_ingestion aws_appfabric_ingestion}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appfabricIngestion.AppfabricIngestion.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/appfabricingestion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/appfabricingestion"
 
 appfabricingestion.NewAppfabricIngestion(scope Construct, id *string, config AppfabricIngestionConfig) AppfabricIngestion
 ```
@@ -392,7 +392,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.appfabricIngestion.AppfabricIngestion.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/appfabricingestion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/appfabricingestion"
 
 appfabricingestion.AppfabricIngestion_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.appfabricIngestion.AppfabricIngestion.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/appfabricingestion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/appfabricingestion"
 
 appfabricingestion.AppfabricIngestion_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ appfabricingestion.AppfabricIngestion_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.appfabricIngestion.AppfabricIngestion.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/appfabricingestion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/appfabricingestion"
 
 appfabricingestion.AppfabricIngestion_IsTerraformResource(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ appfabricingestion.AppfabricIngestion_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.appfabricIngestion.AppfabricIngestion.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/appfabricingestion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/appfabricingestion"
 
 appfabricingestion.AppfabricIngestion_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -481,7 +481,7 @@ The construct id used in the generated config for the AppfabricIngestion to impo
 
 The id of the existing AppfabricIngestion that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/appfabric_ingestion#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/appfabric_ingestion#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -846,7 +846,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appfabricIngestion.AppfabricIngestionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/appfabricingestion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/appfabricingestion"
 
 &appfabricingestion.AppfabricIngestionConfig {
 	Connection: interface{},
@@ -876,12 +876,12 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/appfabricingestion"
 | <code><a href="#@cdktn/provider-aws.appfabricIngestion.AppfabricIngestionConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.appfabricIngestion.AppfabricIngestionConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.appfabricIngestion.AppfabricIngestionConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.appfabricIngestion.AppfabricIngestionConfig.property.app">App</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/appfabric_ingestion#app AppfabricIngestion#app}. |
-| <code><a href="#@cdktn/provider-aws.appfabricIngestion.AppfabricIngestionConfig.property.appBundleArn">AppBundleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/appfabric_ingestion#app_bundle_arn AppfabricIngestion#app_bundle_arn}. |
-| <code><a href="#@cdktn/provider-aws.appfabricIngestion.AppfabricIngestionConfig.property.ingestionType">IngestionType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/appfabric_ingestion#ingestion_type AppfabricIngestion#ingestion_type}. |
-| <code><a href="#@cdktn/provider-aws.appfabricIngestion.AppfabricIngestionConfig.property.tenantId">TenantId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/appfabric_ingestion#tenant_id AppfabricIngestion#tenant_id}. |
+| <code><a href="#@cdktn/provider-aws.appfabricIngestion.AppfabricIngestionConfig.property.app">App</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/appfabric_ingestion#app AppfabricIngestion#app}. |
+| <code><a href="#@cdktn/provider-aws.appfabricIngestion.AppfabricIngestionConfig.property.appBundleArn">AppBundleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/appfabric_ingestion#app_bundle_arn AppfabricIngestion#app_bundle_arn}. |
+| <code><a href="#@cdktn/provider-aws.appfabricIngestion.AppfabricIngestionConfig.property.ingestionType">IngestionType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/appfabric_ingestion#ingestion_type AppfabricIngestion#ingestion_type}. |
+| <code><a href="#@cdktn/provider-aws.appfabricIngestion.AppfabricIngestionConfig.property.tenantId">TenantId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/appfabric_ingestion#tenant_id AppfabricIngestion#tenant_id}. |
 | <code><a href="#@cdktn/provider-aws.appfabricIngestion.AppfabricIngestionConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.appfabricIngestion.AppfabricIngestionConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/appfabric_ingestion#tags AppfabricIngestion#tags}. |
+| <code><a href="#@cdktn/provider-aws.appfabricIngestion.AppfabricIngestionConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/appfabric_ingestion#tags AppfabricIngestion#tags}. |
 
 ---
 
@@ -963,7 +963,7 @@ App *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/appfabric_ingestion#app AppfabricIngestion#app}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/appfabric_ingestion#app AppfabricIngestion#app}.
 
 ---
 
@@ -975,7 +975,7 @@ AppBundleArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/appfabric_ingestion#app_bundle_arn AppfabricIngestion#app_bundle_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/appfabric_ingestion#app_bundle_arn AppfabricIngestion#app_bundle_arn}.
 
 ---
 
@@ -987,7 +987,7 @@ IngestionType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/appfabric_ingestion#ingestion_type AppfabricIngestion#ingestion_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/appfabric_ingestion#ingestion_type AppfabricIngestion#ingestion_type}.
 
 ---
 
@@ -999,7 +999,7 @@ TenantId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/appfabric_ingestion#tenant_id AppfabricIngestion#tenant_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/appfabric_ingestion#tenant_id AppfabricIngestion#tenant_id}.
 
 ---
 
@@ -1013,7 +1013,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/appfabric_ingestion#region AppfabricIngestion#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/appfabric_ingestion#region AppfabricIngestion#region}
 
 ---
 
@@ -1025,7 +1025,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/appfabric_ingestion#tags AppfabricIngestion#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/appfabric_ingestion#tags AppfabricIngestion#tags}.
 
 ---
 

@@ -4,12 +4,12 @@
 
 ### DataAwsCodebuildFleet <a name="DataAwsCodebuildFleet" id="@cdktn/provider-aws.dataAwsCodebuildFleet.DataAwsCodebuildFleet"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/codebuild_fleet aws_codebuild_fleet}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/codebuild_fleet aws_codebuild_fleet}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsCodebuildFleet.DataAwsCodebuildFleet.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawscodebuildfleet"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawscodebuildfleet"
 
 dataawscodebuildfleet.NewDataAwsCodebuildFleet(scope Construct, id *string, config DataAwsCodebuildFleetConfig) DataAwsCodebuildFleet
 ```
@@ -290,7 +290,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsCodebuildFleet.DataAwsCodebuildFleet.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawscodebuildfleet"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawscodebuildfleet"
 
 dataawscodebuildfleet.DataAwsCodebuildFleet_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsCodebuildFleet.DataAwsCodebuildFleet.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawscodebuildfleet"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawscodebuildfleet"
 
 dataawscodebuildfleet.DataAwsCodebuildFleet_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ dataawscodebuildfleet.DataAwsCodebuildFleet_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsCodebuildFleet.DataAwsCodebuildFleet.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawscodebuildfleet"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawscodebuildfleet"
 
 dataawscodebuildfleet.DataAwsCodebuildFleet_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ dataawscodebuildfleet.DataAwsCodebuildFleet_IsTerraformDataSource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsCodebuildFleet.DataAwsCodebuildFleet.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawscodebuildfleet"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawscodebuildfleet"
 
 dataawscodebuildfleet.DataAwsCodebuildFleet_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -379,7 +379,7 @@ The construct id used in the generated config for the DataAwsCodebuildFleet to i
 
 The id of the existing DataAwsCodebuildFleet that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/codebuild_fleet#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/codebuild_fleet#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -777,7 +777,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsCodebuildFleet.DataAwsCodebuildFleetComputeConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawscodebuildfleet"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawscodebuildfleet"
 
 &dataawscodebuildfleet.DataAwsCodebuildFleetComputeConfiguration {
 
@@ -790,7 +790,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawscodebuildfleet"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsCodebuildFleet.DataAwsCodebuildFleetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawscodebuildfleet"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawscodebuildfleet"
 
 &dataawscodebuildfleet.DataAwsCodebuildFleetConfig {
 	Connection: interface{},
@@ -817,9 +817,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawscodebuildfleet"
 | <code><a href="#@cdktn/provider-aws.dataAwsCodebuildFleet.DataAwsCodebuildFleetConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsCodebuildFleet.DataAwsCodebuildFleetConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsCodebuildFleet.DataAwsCodebuildFleetConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsCodebuildFleet.DataAwsCodebuildFleetConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/codebuild_fleet#name DataAwsCodebuildFleet#name}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsCodebuildFleet.DataAwsCodebuildFleetConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/codebuild_fleet#name DataAwsCodebuildFleet#name}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsCodebuildFleet.DataAwsCodebuildFleetConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.dataAwsCodebuildFleet.DataAwsCodebuildFleetConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/codebuild_fleet#tags DataAwsCodebuildFleet#tags}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsCodebuildFleet.DataAwsCodebuildFleetConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/codebuild_fleet#tags DataAwsCodebuildFleet#tags}. |
 
 ---
 
@@ -901,7 +901,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/codebuild_fleet#name DataAwsCodebuildFleet#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/codebuild_fleet#name DataAwsCodebuildFleet#name}.
 
 ---
 
@@ -915,7 +915,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/codebuild_fleet#region DataAwsCodebuildFleet#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/codebuild_fleet#region DataAwsCodebuildFleet#region}
 
 ---
 
@@ -927,7 +927,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/codebuild_fleet#tags DataAwsCodebuildFleet#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/codebuild_fleet#tags DataAwsCodebuildFleet#tags}.
 
 ---
 
@@ -936,7 +936,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsCodebuildFleet.DataAwsCodebuildFleetScalingConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawscodebuildfleet"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawscodebuildfleet"
 
 &dataawscodebuildfleet.DataAwsCodebuildFleetScalingConfiguration {
 
@@ -949,7 +949,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawscodebuildfleet"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsCodebuildFleet.DataAwsCodebuildFleetScalingConfigurationTargetTrackingScalingConfigs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawscodebuildfleet"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawscodebuildfleet"
 
 &dataawscodebuildfleet.DataAwsCodebuildFleetScalingConfigurationTargetTrackingScalingConfigs {
 
@@ -962,7 +962,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawscodebuildfleet"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsCodebuildFleet.DataAwsCodebuildFleetStatus.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawscodebuildfleet"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawscodebuildfleet"
 
 &dataawscodebuildfleet.DataAwsCodebuildFleetStatus {
 
@@ -975,7 +975,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawscodebuildfleet"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsCodebuildFleet.DataAwsCodebuildFleetVpcConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawscodebuildfleet"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawscodebuildfleet"
 
 &dataawscodebuildfleet.DataAwsCodebuildFleetVpcConfig {
 
@@ -990,7 +990,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawscodebuildfleet"
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsCodebuildFleet.DataAwsCodebuildFleetComputeConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawscodebuildfleet"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawscodebuildfleet"
 
 dataawscodebuildfleet.NewDataAwsCodebuildFleetComputeConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsCodebuildFleetComputeConfigurationList
 ```
@@ -1139,7 +1139,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsCodebuildFleet.DataAwsCodebuildFleetComputeConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawscodebuildfleet"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawscodebuildfleet"
 
 dataawscodebuildfleet.NewDataAwsCodebuildFleetComputeConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsCodebuildFleetComputeConfigurationOutputReference
 ```
@@ -1461,7 +1461,7 @@ func InternalValue() DataAwsCodebuildFleetComputeConfiguration
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsCodebuildFleet.DataAwsCodebuildFleetScalingConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawscodebuildfleet"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawscodebuildfleet"
 
 dataawscodebuildfleet.NewDataAwsCodebuildFleetScalingConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsCodebuildFleetScalingConfigurationList
 ```
@@ -1610,7 +1610,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsCodebuildFleet.DataAwsCodebuildFleetScalingConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawscodebuildfleet"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawscodebuildfleet"
 
 dataawscodebuildfleet.NewDataAwsCodebuildFleetScalingConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsCodebuildFleetScalingConfigurationOutputReference
 ```
@@ -1921,7 +1921,7 @@ func InternalValue() DataAwsCodebuildFleetScalingConfiguration
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsCodebuildFleet.DataAwsCodebuildFleetScalingConfigurationTargetTrackingScalingConfigsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawscodebuildfleet"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawscodebuildfleet"
 
 dataawscodebuildfleet.NewDataAwsCodebuildFleetScalingConfigurationTargetTrackingScalingConfigsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsCodebuildFleetScalingConfigurationTargetTrackingScalingConfigsList
 ```
@@ -2070,7 +2070,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsCodebuildFleet.DataAwsCodebuildFleetScalingConfigurationTargetTrackingScalingConfigsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawscodebuildfleet"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawscodebuildfleet"
 
 dataawscodebuildfleet.NewDataAwsCodebuildFleetScalingConfigurationTargetTrackingScalingConfigsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsCodebuildFleetScalingConfigurationTargetTrackingScalingConfigsOutputReference
 ```
@@ -2359,7 +2359,7 @@ func InternalValue() DataAwsCodebuildFleetScalingConfigurationTargetTrackingScal
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsCodebuildFleet.DataAwsCodebuildFleetStatusList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawscodebuildfleet"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawscodebuildfleet"
 
 dataawscodebuildfleet.NewDataAwsCodebuildFleetStatusList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsCodebuildFleetStatusList
 ```
@@ -2508,7 +2508,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsCodebuildFleet.DataAwsCodebuildFleetStatusOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawscodebuildfleet"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawscodebuildfleet"
 
 dataawscodebuildfleet.NewDataAwsCodebuildFleetStatusOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsCodebuildFleetStatusOutputReference
 ```
@@ -2808,7 +2808,7 @@ func InternalValue() DataAwsCodebuildFleetStatus
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsCodebuildFleet.DataAwsCodebuildFleetVpcConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawscodebuildfleet"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawscodebuildfleet"
 
 dataawscodebuildfleet.NewDataAwsCodebuildFleetVpcConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsCodebuildFleetVpcConfigList
 ```
@@ -2957,7 +2957,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsCodebuildFleet.DataAwsCodebuildFleetVpcConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawscodebuildfleet"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawscodebuildfleet"
 
 dataawscodebuildfleet.NewDataAwsCodebuildFleetVpcConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsCodebuildFleetVpcConfigOutputReference
 ```

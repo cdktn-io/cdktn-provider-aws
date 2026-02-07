@@ -4,12 +4,12 @@
 
 ### ServiceDiscoveryService <a name="ServiceDiscoveryService" id="@cdktn/provider-aws.serviceDiscoveryService.ServiceDiscoveryService"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/service_discovery_service aws_service_discovery_service}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/service_discovery_service aws_service_discovery_service}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.serviceDiscoveryService.ServiceDiscoveryService.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/servicediscoveryservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/servicediscoveryservice"
 
 servicediscoveryservice.NewServiceDiscoveryService(scope Construct, id *string, config ServiceDiscoveryServiceConfig) ServiceDiscoveryService
 ```
@@ -494,7 +494,7 @@ func ResetType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.serviceDiscoveryService.ServiceDiscoveryService.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/servicediscoveryservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/servicediscoveryservice"
 
 servicediscoveryservice.ServiceDiscoveryService_IsConstruct(x interface{}) *bool
 ```
@@ -526,7 +526,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.serviceDiscoveryService.ServiceDiscoveryService.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/servicediscoveryservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/servicediscoveryservice"
 
 servicediscoveryservice.ServiceDiscoveryService_IsTerraformElement(x interface{}) *bool
 ```
@@ -540,7 +540,7 @@ servicediscoveryservice.ServiceDiscoveryService_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.serviceDiscoveryService.ServiceDiscoveryService.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/servicediscoveryservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/servicediscoveryservice"
 
 servicediscoveryservice.ServiceDiscoveryService_IsTerraformResource(x interface{}) *bool
 ```
@@ -554,7 +554,7 @@ servicediscoveryservice.ServiceDiscoveryService_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.serviceDiscoveryService.ServiceDiscoveryService.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/servicediscoveryservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/servicediscoveryservice"
 
 servicediscoveryservice.ServiceDiscoveryService_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -583,7 +583,7 @@ The construct id used in the generated config for the ServiceDiscoveryService to
 
 The id of the existing ServiceDiscoveryService that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/service_discovery_service#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/service_discovery_service#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1058,7 +1058,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.serviceDiscoveryService.ServiceDiscoveryServiceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/servicediscoveryservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/servicediscoveryservice"
 
 &servicediscoveryservice.ServiceDiscoveryServiceConfig {
 	Connection: interface{},
@@ -1070,10 +1070,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/servicediscoveryservic
 	Provisioners: *[]interface{},
 	Name: *string,
 	Description: *string,
-	DnsConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.serviceDiscoveryService.ServiceDiscoveryServiceDnsConfig,
+	DnsConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.serviceDiscoveryService.ServiceDiscoveryServiceDnsConfig,
 	ForceDestroy: interface{},
-	HealthCheckConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.serviceDiscoveryService.ServiceDiscoveryServiceHealthCheckConfig,
-	HealthCheckCustomConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.serviceDiscoveryService.ServiceDiscoveryServiceHealthCheckCustomConfig,
+	HealthCheckConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.serviceDiscoveryService.ServiceDiscoveryServiceHealthCheckConfig,
+	HealthCheckCustomConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.serviceDiscoveryService.ServiceDiscoveryServiceHealthCheckCustomConfig,
 	Id: *string,
 	NamespaceId: *string,
 	Region: *string,
@@ -1094,18 +1094,18 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/servicediscoveryservic
 | <code><a href="#@cdktn/provider-aws.serviceDiscoveryService.ServiceDiscoveryServiceConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.serviceDiscoveryService.ServiceDiscoveryServiceConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.serviceDiscoveryService.ServiceDiscoveryServiceConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.serviceDiscoveryService.ServiceDiscoveryServiceConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/service_discovery_service#name ServiceDiscoveryService#name}. |
-| <code><a href="#@cdktn/provider-aws.serviceDiscoveryService.ServiceDiscoveryServiceConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/service_discovery_service#description ServiceDiscoveryService#description}. |
+| <code><a href="#@cdktn/provider-aws.serviceDiscoveryService.ServiceDiscoveryServiceConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/service_discovery_service#name ServiceDiscoveryService#name}. |
+| <code><a href="#@cdktn/provider-aws.serviceDiscoveryService.ServiceDiscoveryServiceConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/service_discovery_service#description ServiceDiscoveryService#description}. |
 | <code><a href="#@cdktn/provider-aws.serviceDiscoveryService.ServiceDiscoveryServiceConfig.property.dnsConfig">DnsConfig</a></code> | <code><a href="#@cdktn/provider-aws.serviceDiscoveryService.ServiceDiscoveryServiceDnsConfig">ServiceDiscoveryServiceDnsConfig</a></code> | dns_config block. |
-| <code><a href="#@cdktn/provider-aws.serviceDiscoveryService.ServiceDiscoveryServiceConfig.property.forceDestroy">ForceDestroy</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/service_discovery_service#force_destroy ServiceDiscoveryService#force_destroy}. |
+| <code><a href="#@cdktn/provider-aws.serviceDiscoveryService.ServiceDiscoveryServiceConfig.property.forceDestroy">ForceDestroy</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/service_discovery_service#force_destroy ServiceDiscoveryService#force_destroy}. |
 | <code><a href="#@cdktn/provider-aws.serviceDiscoveryService.ServiceDiscoveryServiceConfig.property.healthCheckConfig">HealthCheckConfig</a></code> | <code><a href="#@cdktn/provider-aws.serviceDiscoveryService.ServiceDiscoveryServiceHealthCheckConfig">ServiceDiscoveryServiceHealthCheckConfig</a></code> | health_check_config block. |
 | <code><a href="#@cdktn/provider-aws.serviceDiscoveryService.ServiceDiscoveryServiceConfig.property.healthCheckCustomConfig">HealthCheckCustomConfig</a></code> | <code><a href="#@cdktn/provider-aws.serviceDiscoveryService.ServiceDiscoveryServiceHealthCheckCustomConfig">ServiceDiscoveryServiceHealthCheckCustomConfig</a></code> | health_check_custom_config block. |
-| <code><a href="#@cdktn/provider-aws.serviceDiscoveryService.ServiceDiscoveryServiceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/service_discovery_service#id ServiceDiscoveryService#id}. |
-| <code><a href="#@cdktn/provider-aws.serviceDiscoveryService.ServiceDiscoveryServiceConfig.property.namespaceId">NamespaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/service_discovery_service#namespace_id ServiceDiscoveryService#namespace_id}. |
+| <code><a href="#@cdktn/provider-aws.serviceDiscoveryService.ServiceDiscoveryServiceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/service_discovery_service#id ServiceDiscoveryService#id}. |
+| <code><a href="#@cdktn/provider-aws.serviceDiscoveryService.ServiceDiscoveryServiceConfig.property.namespaceId">NamespaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/service_discovery_service#namespace_id ServiceDiscoveryService#namespace_id}. |
 | <code><a href="#@cdktn/provider-aws.serviceDiscoveryService.ServiceDiscoveryServiceConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.serviceDiscoveryService.ServiceDiscoveryServiceConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/service_discovery_service#tags ServiceDiscoveryService#tags}. |
-| <code><a href="#@cdktn/provider-aws.serviceDiscoveryService.ServiceDiscoveryServiceConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/service_discovery_service#tags_all ServiceDiscoveryService#tags_all}. |
-| <code><a href="#@cdktn/provider-aws.serviceDiscoveryService.ServiceDiscoveryServiceConfig.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/service_discovery_service#type ServiceDiscoveryService#type}. |
+| <code><a href="#@cdktn/provider-aws.serviceDiscoveryService.ServiceDiscoveryServiceConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/service_discovery_service#tags ServiceDiscoveryService#tags}. |
+| <code><a href="#@cdktn/provider-aws.serviceDiscoveryService.ServiceDiscoveryServiceConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/service_discovery_service#tags_all ServiceDiscoveryService#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.serviceDiscoveryService.ServiceDiscoveryServiceConfig.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/service_discovery_service#type ServiceDiscoveryService#type}. |
 
 ---
 
@@ -1187,7 +1187,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/service_discovery_service#name ServiceDiscoveryService#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/service_discovery_service#name ServiceDiscoveryService#name}.
 
 ---
 
@@ -1199,7 +1199,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/service_discovery_service#description ServiceDiscoveryService#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/service_discovery_service#description ServiceDiscoveryService#description}.
 
 ---
 
@@ -1213,7 +1213,7 @@ DnsConfig ServiceDiscoveryServiceDnsConfig
 
 dns_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/service_discovery_service#dns_config ServiceDiscoveryService#dns_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/service_discovery_service#dns_config ServiceDiscoveryService#dns_config}
 
 ---
 
@@ -1225,7 +1225,7 @@ ForceDestroy interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/service_discovery_service#force_destroy ServiceDiscoveryService#force_destroy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/service_discovery_service#force_destroy ServiceDiscoveryService#force_destroy}.
 
 ---
 
@@ -1239,7 +1239,7 @@ HealthCheckConfig ServiceDiscoveryServiceHealthCheckConfig
 
 health_check_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/service_discovery_service#health_check_config ServiceDiscoveryService#health_check_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/service_discovery_service#health_check_config ServiceDiscoveryService#health_check_config}
 
 ---
 
@@ -1253,7 +1253,7 @@ HealthCheckCustomConfig ServiceDiscoveryServiceHealthCheckCustomConfig
 
 health_check_custom_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/service_discovery_service#health_check_custom_config ServiceDiscoveryService#health_check_custom_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/service_discovery_service#health_check_custom_config ServiceDiscoveryService#health_check_custom_config}
 
 ---
 
@@ -1265,7 +1265,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/service_discovery_service#id ServiceDiscoveryService#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/service_discovery_service#id ServiceDiscoveryService#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1280,7 +1280,7 @@ NamespaceId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/service_discovery_service#namespace_id ServiceDiscoveryService#namespace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/service_discovery_service#namespace_id ServiceDiscoveryService#namespace_id}.
 
 ---
 
@@ -1294,7 +1294,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/service_discovery_service#region ServiceDiscoveryService#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/service_discovery_service#region ServiceDiscoveryService#region}
 
 ---
 
@@ -1306,7 +1306,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/service_discovery_service#tags ServiceDiscoveryService#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/service_discovery_service#tags ServiceDiscoveryService#tags}.
 
 ---
 
@@ -1318,7 +1318,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/service_discovery_service#tags_all ServiceDiscoveryService#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/service_discovery_service#tags_all ServiceDiscoveryService#tags_all}.
 
 ---
 
@@ -1330,7 +1330,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/service_discovery_service#type ServiceDiscoveryService#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/service_discovery_service#type ServiceDiscoveryService#type}.
 
 ---
 
@@ -1339,7 +1339,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.serviceDiscoveryService.ServiceDiscoveryServiceDnsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/servicediscoveryservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/servicediscoveryservice"
 
 &servicediscoveryservice.ServiceDiscoveryServiceDnsConfig {
 	DnsRecords: interface{},
@@ -1353,8 +1353,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/servicediscoveryservic
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.serviceDiscoveryService.ServiceDiscoveryServiceDnsConfig.property.dnsRecords">DnsRecords</a></code> | <code>interface{}</code> | dns_records block. |
-| <code><a href="#@cdktn/provider-aws.serviceDiscoveryService.ServiceDiscoveryServiceDnsConfig.property.namespaceId">NamespaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/service_discovery_service#namespace_id ServiceDiscoveryService#namespace_id}. |
-| <code><a href="#@cdktn/provider-aws.serviceDiscoveryService.ServiceDiscoveryServiceDnsConfig.property.routingPolicy">RoutingPolicy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/service_discovery_service#routing_policy ServiceDiscoveryService#routing_policy}. |
+| <code><a href="#@cdktn/provider-aws.serviceDiscoveryService.ServiceDiscoveryServiceDnsConfig.property.namespaceId">NamespaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/service_discovery_service#namespace_id ServiceDiscoveryService#namespace_id}. |
+| <code><a href="#@cdktn/provider-aws.serviceDiscoveryService.ServiceDiscoveryServiceDnsConfig.property.routingPolicy">RoutingPolicy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/service_discovery_service#routing_policy ServiceDiscoveryService#routing_policy}. |
 
 ---
 
@@ -1368,7 +1368,7 @@ DnsRecords interface{}
 
 dns_records block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/service_discovery_service#dns_records ServiceDiscoveryService#dns_records}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/service_discovery_service#dns_records ServiceDiscoveryService#dns_records}
 
 ---
 
@@ -1380,7 +1380,7 @@ NamespaceId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/service_discovery_service#namespace_id ServiceDiscoveryService#namespace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/service_discovery_service#namespace_id ServiceDiscoveryService#namespace_id}.
 
 ---
 
@@ -1392,7 +1392,7 @@ RoutingPolicy *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/service_discovery_service#routing_policy ServiceDiscoveryService#routing_policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/service_discovery_service#routing_policy ServiceDiscoveryService#routing_policy}.
 
 ---
 
@@ -1401,7 +1401,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.serviceDiscoveryService.ServiceDiscoveryServiceDnsConfigDnsRecords.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/servicediscoveryservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/servicediscoveryservice"
 
 &servicediscoveryservice.ServiceDiscoveryServiceDnsConfigDnsRecords {
 	Ttl: *f64,
@@ -1413,8 +1413,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/servicediscoveryservic
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.serviceDiscoveryService.ServiceDiscoveryServiceDnsConfigDnsRecords.property.ttl">Ttl</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/service_discovery_service#ttl ServiceDiscoveryService#ttl}. |
-| <code><a href="#@cdktn/provider-aws.serviceDiscoveryService.ServiceDiscoveryServiceDnsConfigDnsRecords.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/service_discovery_service#type ServiceDiscoveryService#type}. |
+| <code><a href="#@cdktn/provider-aws.serviceDiscoveryService.ServiceDiscoveryServiceDnsConfigDnsRecords.property.ttl">Ttl</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/service_discovery_service#ttl ServiceDiscoveryService#ttl}. |
+| <code><a href="#@cdktn/provider-aws.serviceDiscoveryService.ServiceDiscoveryServiceDnsConfigDnsRecords.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/service_discovery_service#type ServiceDiscoveryService#type}. |
 
 ---
 
@@ -1426,7 +1426,7 @@ Ttl *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/service_discovery_service#ttl ServiceDiscoveryService#ttl}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/service_discovery_service#ttl ServiceDiscoveryService#ttl}.
 
 ---
 
@@ -1438,7 +1438,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/service_discovery_service#type ServiceDiscoveryService#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/service_discovery_service#type ServiceDiscoveryService#type}.
 
 ---
 
@@ -1447,7 +1447,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.serviceDiscoveryService.ServiceDiscoveryServiceHealthCheckConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/servicediscoveryservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/servicediscoveryservice"
 
 &servicediscoveryservice.ServiceDiscoveryServiceHealthCheckConfig {
 	FailureThreshold: *f64,
@@ -1460,9 +1460,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/servicediscoveryservic
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.serviceDiscoveryService.ServiceDiscoveryServiceHealthCheckConfig.property.failureThreshold">FailureThreshold</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/service_discovery_service#failure_threshold ServiceDiscoveryService#failure_threshold}. |
-| <code><a href="#@cdktn/provider-aws.serviceDiscoveryService.ServiceDiscoveryServiceHealthCheckConfig.property.resourcePath">ResourcePath</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/service_discovery_service#resource_path ServiceDiscoveryService#resource_path}. |
-| <code><a href="#@cdktn/provider-aws.serviceDiscoveryService.ServiceDiscoveryServiceHealthCheckConfig.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/service_discovery_service#type ServiceDiscoveryService#type}. |
+| <code><a href="#@cdktn/provider-aws.serviceDiscoveryService.ServiceDiscoveryServiceHealthCheckConfig.property.failureThreshold">FailureThreshold</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/service_discovery_service#failure_threshold ServiceDiscoveryService#failure_threshold}. |
+| <code><a href="#@cdktn/provider-aws.serviceDiscoveryService.ServiceDiscoveryServiceHealthCheckConfig.property.resourcePath">ResourcePath</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/service_discovery_service#resource_path ServiceDiscoveryService#resource_path}. |
+| <code><a href="#@cdktn/provider-aws.serviceDiscoveryService.ServiceDiscoveryServiceHealthCheckConfig.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/service_discovery_service#type ServiceDiscoveryService#type}. |
 
 ---
 
@@ -1474,7 +1474,7 @@ FailureThreshold *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/service_discovery_service#failure_threshold ServiceDiscoveryService#failure_threshold}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/service_discovery_service#failure_threshold ServiceDiscoveryService#failure_threshold}.
 
 ---
 
@@ -1486,7 +1486,7 @@ ResourcePath *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/service_discovery_service#resource_path ServiceDiscoveryService#resource_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/service_discovery_service#resource_path ServiceDiscoveryService#resource_path}.
 
 ---
 
@@ -1498,7 +1498,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/service_discovery_service#type ServiceDiscoveryService#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/service_discovery_service#type ServiceDiscoveryService#type}.
 
 ---
 
@@ -1507,7 +1507,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.serviceDiscoveryService.ServiceDiscoveryServiceHealthCheckCustomConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/servicediscoveryservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/servicediscoveryservice"
 
 &servicediscoveryservice.ServiceDiscoveryServiceHealthCheckCustomConfig {
 	FailureThreshold: *f64,
@@ -1518,7 +1518,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/servicediscoveryservic
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.serviceDiscoveryService.ServiceDiscoveryServiceHealthCheckCustomConfig.property.failureThreshold">FailureThreshold</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/service_discovery_service#failure_threshold ServiceDiscoveryService#failure_threshold}. |
+| <code><a href="#@cdktn/provider-aws.serviceDiscoveryService.ServiceDiscoveryServiceHealthCheckCustomConfig.property.failureThreshold">FailureThreshold</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/service_discovery_service#failure_threshold ServiceDiscoveryService#failure_threshold}. |
 
 ---
 
@@ -1530,7 +1530,7 @@ FailureThreshold *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/service_discovery_service#failure_threshold ServiceDiscoveryService#failure_threshold}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/service_discovery_service#failure_threshold ServiceDiscoveryService#failure_threshold}.
 
 ---
 
@@ -1541,7 +1541,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.serviceDiscoveryService.ServiceDiscoveryServiceDnsConfigDnsRecordsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/servicediscoveryservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/servicediscoveryservice"
 
 servicediscoveryservice.NewServiceDiscoveryServiceDnsConfigDnsRecordsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ServiceDiscoveryServiceDnsConfigDnsRecordsList
 ```
@@ -1701,7 +1701,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.serviceDiscoveryService.ServiceDiscoveryServiceDnsConfigDnsRecordsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/servicediscoveryservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/servicediscoveryservice"
 
 servicediscoveryservice.NewServiceDiscoveryServiceDnsConfigDnsRecordsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ServiceDiscoveryServiceDnsConfigDnsRecordsOutputReference
 ```
@@ -2012,7 +2012,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.serviceDiscoveryService.ServiceDiscoveryServiceDnsConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/servicediscoveryservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/servicediscoveryservice"
 
 servicediscoveryservice.NewServiceDiscoveryServiceDnsConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ServiceDiscoveryServiceDnsConfigOutputReference
 ```
@@ -2347,7 +2347,7 @@ func InternalValue() ServiceDiscoveryServiceDnsConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.serviceDiscoveryService.ServiceDiscoveryServiceHealthCheckConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/servicediscoveryservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/servicediscoveryservice"
 
 servicediscoveryservice.NewServiceDiscoveryServiceHealthCheckConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ServiceDiscoveryServiceHealthCheckConfigOutputReference
 ```
@@ -2683,7 +2683,7 @@ func InternalValue() ServiceDiscoveryServiceHealthCheckConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.serviceDiscoveryService.ServiceDiscoveryServiceHealthCheckCustomConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/servicediscoveryservice"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/servicediscoveryservice"
 
 servicediscoveryservice.NewServiceDiscoveryServiceHealthCheckCustomConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ServiceDiscoveryServiceHealthCheckCustomConfigOutputReference
 ```

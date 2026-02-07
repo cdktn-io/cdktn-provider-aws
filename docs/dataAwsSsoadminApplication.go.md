@@ -4,12 +4,12 @@
 
 ### DataAwsSsoadminApplication <a name="DataAwsSsoadminApplication" id="@cdktn/provider-aws.dataAwsSsoadminApplication.DataAwsSsoadminApplication"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/ssoadmin_application aws_ssoadmin_application}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/ssoadmin_application aws_ssoadmin_application}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsSsoadminApplication.DataAwsSsoadminApplication.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsssoadminapplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsssoadminapplication"
 
 dataawsssoadminapplication.NewDataAwsSsoadminApplication(scope Construct, id *string, config DataAwsSsoadminApplicationConfig) DataAwsSsoadminApplication
 ```
@@ -283,7 +283,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsSsoadminApplication.DataAwsSsoadminApplication.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsssoadminapplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsssoadminapplication"
 
 dataawsssoadminapplication.DataAwsSsoadminApplication_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsSsoadminApplication.DataAwsSsoadminApplication.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsssoadminapplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsssoadminapplication"
 
 dataawsssoadminapplication.DataAwsSsoadminApplication_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ dataawsssoadminapplication.DataAwsSsoadminApplication_IsTerraformElement(x inter
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsSsoadminApplication.DataAwsSsoadminApplication.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsssoadminapplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsssoadminapplication"
 
 dataawsssoadminapplication.DataAwsSsoadminApplication_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ dataawsssoadminapplication.DataAwsSsoadminApplication_IsTerraformDataSource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsSsoadminApplication.DataAwsSsoadminApplication.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsssoadminapplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsssoadminapplication"
 
 dataawsssoadminapplication.DataAwsSsoadminApplication_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -372,7 +372,7 @@ The construct id used in the generated config for the DataAwsSsoadminApplication
 
 The id of the existing DataAwsSsoadminApplication that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/ssoadmin_application#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/ssoadmin_application#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -682,7 +682,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsSsoadminApplication.DataAwsSsoadminApplicationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsssoadminapplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsssoadminapplication"
 
 &dataawsssoadminapplication.DataAwsSsoadminApplicationConfig {
 	Connection: interface{},
@@ -708,7 +708,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsssoadminapplica
 | <code><a href="#@cdktn/provider-aws.dataAwsSsoadminApplication.DataAwsSsoadminApplicationConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsSsoadminApplication.DataAwsSsoadminApplicationConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsSsoadminApplication.DataAwsSsoadminApplicationConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsSsoadminApplication.DataAwsSsoadminApplicationConfig.property.applicationArn">ApplicationArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/ssoadmin_application#application_arn DataAwsSsoadminApplication#application_arn}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsSsoadminApplication.DataAwsSsoadminApplicationConfig.property.applicationArn">ApplicationArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/ssoadmin_application#application_arn DataAwsSsoadminApplication#application_arn}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsSsoadminApplication.DataAwsSsoadminApplicationConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -791,7 +791,7 @@ ApplicationArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/ssoadmin_application#application_arn DataAwsSsoadminApplication#application_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/ssoadmin_application#application_arn DataAwsSsoadminApplication#application_arn}.
 
 ---
 
@@ -805,7 +805,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/ssoadmin_application#region DataAwsSsoadminApplication#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/ssoadmin_application#region DataAwsSsoadminApplication#region}
 
 ---
 
@@ -814,7 +814,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsSsoadminApplication.DataAwsSsoadminApplicationPortalOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsssoadminapplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsssoadminapplication"
 
 &dataawsssoadminapplication.DataAwsSsoadminApplicationPortalOptions {
 
@@ -827,7 +827,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsssoadminapplica
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsSsoadminApplication.DataAwsSsoadminApplicationPortalOptionsSignInOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsssoadminapplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsssoadminapplication"
 
 &dataawsssoadminapplication.DataAwsSsoadminApplicationPortalOptionsSignInOptions {
 
@@ -842,7 +842,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsssoadminapplica
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsSsoadminApplication.DataAwsSsoadminApplicationPortalOptionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsssoadminapplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsssoadminapplication"
 
 dataawsssoadminapplication.NewDataAwsSsoadminApplicationPortalOptionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsSsoadminApplicationPortalOptionsList
 ```
@@ -991,7 +991,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsSsoadminApplication.DataAwsSsoadminApplicationPortalOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsssoadminapplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsssoadminapplication"
 
 dataawsssoadminapplication.NewDataAwsSsoadminApplicationPortalOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsSsoadminApplicationPortalOptionsOutputReference
 ```
@@ -1280,7 +1280,7 @@ func InternalValue() DataAwsSsoadminApplicationPortalOptions
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsSsoadminApplication.DataAwsSsoadminApplicationPortalOptionsSignInOptionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsssoadminapplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsssoadminapplication"
 
 dataawsssoadminapplication.NewDataAwsSsoadminApplicationPortalOptionsSignInOptionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsSsoadminApplicationPortalOptionsSignInOptionsList
 ```
@@ -1429,7 +1429,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsSsoadminApplication.DataAwsSsoadminApplicationPortalOptionsSignInOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsssoadminapplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsssoadminapplication"
 
 dataawsssoadminapplication.NewDataAwsSsoadminApplicationPortalOptionsSignInOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsSsoadminApplicationPortalOptionsSignInOptionsOutputReference
 ```

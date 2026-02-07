@@ -4,12 +4,12 @@
 
 ### DataAwsGuarddutyFindingIds <a name="DataAwsGuarddutyFindingIds" id="@cdktn/provider-aws.dataAwsGuarddutyFindingIds.DataAwsGuarddutyFindingIds"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/guardduty_finding_ids aws_guardduty_finding_ids}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/guardduty_finding_ids aws_guardduty_finding_ids}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsGuarddutyFindingIds.DataAwsGuarddutyFindingIds.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsguarddutyfindingids"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsguarddutyfindingids"
 
 dataawsguarddutyfindingids.NewDataAwsGuarddutyFindingIds(scope Construct, id *string, config DataAwsGuarddutyFindingIdsConfig) DataAwsGuarddutyFindingIds
 ```
@@ -283,7 +283,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsGuarddutyFindingIds.DataAwsGuarddutyFindingIds.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsguarddutyfindingids"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsguarddutyfindingids"
 
 dataawsguarddutyfindingids.DataAwsGuarddutyFindingIds_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsGuarddutyFindingIds.DataAwsGuarddutyFindingIds.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsguarddutyfindingids"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsguarddutyfindingids"
 
 dataawsguarddutyfindingids.DataAwsGuarddutyFindingIds_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ dataawsguarddutyfindingids.DataAwsGuarddutyFindingIds_IsTerraformElement(x inter
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsGuarddutyFindingIds.DataAwsGuarddutyFindingIds.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsguarddutyfindingids"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsguarddutyfindingids"
 
 dataawsguarddutyfindingids.DataAwsGuarddutyFindingIds_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ dataawsguarddutyfindingids.DataAwsGuarddutyFindingIds_IsTerraformDataSource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsGuarddutyFindingIds.DataAwsGuarddutyFindingIds.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsguarddutyfindingids"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsguarddutyfindingids"
 
 dataawsguarddutyfindingids.DataAwsGuarddutyFindingIds_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -372,7 +372,7 @@ The construct id used in the generated config for the DataAwsGuarddutyFindingIds
 
 The id of the existing DataAwsGuarddutyFindingIds that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/guardduty_finding_ids#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/guardduty_finding_ids#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -627,7 +627,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsGuarddutyFindingIds.DataAwsGuarddutyFindingIdsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsguarddutyfindingids"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsguarddutyfindingids"
 
 &dataawsguarddutyfindingids.DataAwsGuarddutyFindingIdsConfig {
 	Connection: interface{},
@@ -653,7 +653,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsguarddutyfindin
 | <code><a href="#@cdktn/provider-aws.dataAwsGuarddutyFindingIds.DataAwsGuarddutyFindingIdsConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsGuarddutyFindingIds.DataAwsGuarddutyFindingIdsConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsGuarddutyFindingIds.DataAwsGuarddutyFindingIdsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsGuarddutyFindingIds.DataAwsGuarddutyFindingIdsConfig.property.detectorId">DetectorId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/guardduty_finding_ids#detector_id DataAwsGuarddutyFindingIds#detector_id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsGuarddutyFindingIds.DataAwsGuarddutyFindingIdsConfig.property.detectorId">DetectorId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/guardduty_finding_ids#detector_id DataAwsGuarddutyFindingIds#detector_id}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsGuarddutyFindingIds.DataAwsGuarddutyFindingIdsConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -736,7 +736,7 @@ DetectorId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/guardduty_finding_ids#detector_id DataAwsGuarddutyFindingIds#detector_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/guardduty_finding_ids#detector_id DataAwsGuarddutyFindingIds#detector_id}.
 
 ---
 
@@ -750,7 +750,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/guardduty_finding_ids#region DataAwsGuarddutyFindingIds#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/guardduty_finding_ids#region DataAwsGuarddutyFindingIds#region}
 
 ---
 

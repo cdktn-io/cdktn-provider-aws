@@ -4,12 +4,12 @@
 
 ### RedshiftCluster <a name="RedshiftCluster" id="@cdktn/provider-aws.redshiftCluster.RedshiftCluster"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_cluster aws_redshift_cluster}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_cluster aws_redshift_cluster}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.redshiftCluster.RedshiftCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/redshiftcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/redshiftcluster"
 
 redshiftcluster.NewRedshiftCluster(scope Construct, id *string, config RedshiftClusterConfig) RedshiftCluster
 ```
@@ -685,7 +685,7 @@ func ResetVpcSecurityGroupIds()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.redshiftCluster.RedshiftCluster.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/redshiftcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/redshiftcluster"
 
 redshiftcluster.RedshiftCluster_IsConstruct(x interface{}) *bool
 ```
@@ -717,7 +717,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.redshiftCluster.RedshiftCluster.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/redshiftcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/redshiftcluster"
 
 redshiftcluster.RedshiftCluster_IsTerraformElement(x interface{}) *bool
 ```
@@ -731,7 +731,7 @@ redshiftcluster.RedshiftCluster_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.redshiftCluster.RedshiftCluster.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/redshiftcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/redshiftcluster"
 
 redshiftcluster.RedshiftCluster_IsTerraformResource(x interface{}) *bool
 ```
@@ -745,7 +745,7 @@ redshiftcluster.RedshiftCluster_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.redshiftCluster.RedshiftCluster.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/redshiftcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/redshiftcluster"
 
 redshiftcluster.RedshiftCluster_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -774,7 +774,7 @@ The construct id used in the generated config for the RedshiftCluster to import.
 
 The id of the existing RedshiftCluster that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_cluster#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_cluster#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -2030,7 +2030,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.redshiftCluster.RedshiftClusterClusterNodes.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/redshiftcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/redshiftcluster"
 
 &redshiftcluster.RedshiftClusterClusterNodes {
 
@@ -2043,7 +2043,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/redshiftcluster"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.redshiftCluster.RedshiftClusterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/redshiftcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/redshiftcluster"
 
 &redshiftcluster.RedshiftClusterConfig {
 	Connection: interface{},
@@ -2095,7 +2095,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/redshiftcluster"
 	SnapshotIdentifier: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.redshiftCluster.RedshiftClusterTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.redshiftCluster.RedshiftClusterTimeouts,
 	VpcSecurityGroupIds: *[]*string,
 }
 ```
@@ -2111,50 +2111,50 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/redshiftcluster"
 | <code><a href="#@cdktn/provider-aws.redshiftCluster.RedshiftClusterConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.redshiftCluster.RedshiftClusterConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.redshiftCluster.RedshiftClusterConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.redshiftCluster.RedshiftClusterConfig.property.clusterIdentifier">ClusterIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_cluster#cluster_identifier RedshiftCluster#cluster_identifier}. |
-| <code><a href="#@cdktn/provider-aws.redshiftCluster.RedshiftClusterConfig.property.nodeType">NodeType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_cluster#node_type RedshiftCluster#node_type}. |
-| <code><a href="#@cdktn/provider-aws.redshiftCluster.RedshiftClusterConfig.property.allowVersionUpgrade">AllowVersionUpgrade</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_cluster#allow_version_upgrade RedshiftCluster#allow_version_upgrade}. |
-| <code><a href="#@cdktn/provider-aws.redshiftCluster.RedshiftClusterConfig.property.applyImmediately">ApplyImmediately</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_cluster#apply_immediately RedshiftCluster#apply_immediately}. |
-| <code><a href="#@cdktn/provider-aws.redshiftCluster.RedshiftClusterConfig.property.aquaConfigurationStatus">AquaConfigurationStatus</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_cluster#aqua_configuration_status RedshiftCluster#aqua_configuration_status}. |
-| <code><a href="#@cdktn/provider-aws.redshiftCluster.RedshiftClusterConfig.property.automatedSnapshotRetentionPeriod">AutomatedSnapshotRetentionPeriod</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_cluster#automated_snapshot_retention_period RedshiftCluster#automated_snapshot_retention_period}. |
-| <code><a href="#@cdktn/provider-aws.redshiftCluster.RedshiftClusterConfig.property.availabilityZone">AvailabilityZone</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_cluster#availability_zone RedshiftCluster#availability_zone}. |
-| <code><a href="#@cdktn/provider-aws.redshiftCluster.RedshiftClusterConfig.property.availabilityZoneRelocationEnabled">AvailabilityZoneRelocationEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_cluster#availability_zone_relocation_enabled RedshiftCluster#availability_zone_relocation_enabled}. |
-| <code><a href="#@cdktn/provider-aws.redshiftCluster.RedshiftClusterConfig.property.clusterParameterGroupName">ClusterParameterGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_cluster#cluster_parameter_group_name RedshiftCluster#cluster_parameter_group_name}. |
-| <code><a href="#@cdktn/provider-aws.redshiftCluster.RedshiftClusterConfig.property.clusterSubnetGroupName">ClusterSubnetGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_cluster#cluster_subnet_group_name RedshiftCluster#cluster_subnet_group_name}. |
-| <code><a href="#@cdktn/provider-aws.redshiftCluster.RedshiftClusterConfig.property.clusterType">ClusterType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_cluster#cluster_type RedshiftCluster#cluster_type}. |
-| <code><a href="#@cdktn/provider-aws.redshiftCluster.RedshiftClusterConfig.property.clusterVersion">ClusterVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_cluster#cluster_version RedshiftCluster#cluster_version}. |
-| <code><a href="#@cdktn/provider-aws.redshiftCluster.RedshiftClusterConfig.property.databaseName">DatabaseName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_cluster#database_name RedshiftCluster#database_name}. |
-| <code><a href="#@cdktn/provider-aws.redshiftCluster.RedshiftClusterConfig.property.defaultIamRoleArn">DefaultIamRoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_cluster#default_iam_role_arn RedshiftCluster#default_iam_role_arn}. |
-| <code><a href="#@cdktn/provider-aws.redshiftCluster.RedshiftClusterConfig.property.elasticIp">ElasticIp</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_cluster#elastic_ip RedshiftCluster#elastic_ip}. |
-| <code><a href="#@cdktn/provider-aws.redshiftCluster.RedshiftClusterConfig.property.encrypted">Encrypted</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_cluster#encrypted RedshiftCluster#encrypted}. |
-| <code><a href="#@cdktn/provider-aws.redshiftCluster.RedshiftClusterConfig.property.enhancedVpcRouting">EnhancedVpcRouting</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_cluster#enhanced_vpc_routing RedshiftCluster#enhanced_vpc_routing}. |
-| <code><a href="#@cdktn/provider-aws.redshiftCluster.RedshiftClusterConfig.property.finalSnapshotIdentifier">FinalSnapshotIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_cluster#final_snapshot_identifier RedshiftCluster#final_snapshot_identifier}. |
-| <code><a href="#@cdktn/provider-aws.redshiftCluster.RedshiftClusterConfig.property.iamRoles">IamRoles</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_cluster#iam_roles RedshiftCluster#iam_roles}. |
-| <code><a href="#@cdktn/provider-aws.redshiftCluster.RedshiftClusterConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_cluster#id RedshiftCluster#id}. |
-| <code><a href="#@cdktn/provider-aws.redshiftCluster.RedshiftClusterConfig.property.kmsKeyId">KmsKeyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_cluster#kms_key_id RedshiftCluster#kms_key_id}. |
-| <code><a href="#@cdktn/provider-aws.redshiftCluster.RedshiftClusterConfig.property.maintenanceTrackName">MaintenanceTrackName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_cluster#maintenance_track_name RedshiftCluster#maintenance_track_name}. |
-| <code><a href="#@cdktn/provider-aws.redshiftCluster.RedshiftClusterConfig.property.manageMasterPassword">ManageMasterPassword</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_cluster#manage_master_password RedshiftCluster#manage_master_password}. |
-| <code><a href="#@cdktn/provider-aws.redshiftCluster.RedshiftClusterConfig.property.manualSnapshotRetentionPeriod">ManualSnapshotRetentionPeriod</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_cluster#manual_snapshot_retention_period RedshiftCluster#manual_snapshot_retention_period}. |
-| <code><a href="#@cdktn/provider-aws.redshiftCluster.RedshiftClusterConfig.property.masterPassword">MasterPassword</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_cluster#master_password RedshiftCluster#master_password}. |
-| <code><a href="#@cdktn/provider-aws.redshiftCluster.RedshiftClusterConfig.property.masterPasswordSecretKmsKeyId">MasterPasswordSecretKmsKeyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_cluster#master_password_secret_kms_key_id RedshiftCluster#master_password_secret_kms_key_id}. |
-| <code><a href="#@cdktn/provider-aws.redshiftCluster.RedshiftClusterConfig.property.masterPasswordWo">MasterPasswordWo</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_cluster#master_password_wo RedshiftCluster#master_password_wo}. |
-| <code><a href="#@cdktn/provider-aws.redshiftCluster.RedshiftClusterConfig.property.masterPasswordWoVersion">MasterPasswordWoVersion</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_cluster#master_password_wo_version RedshiftCluster#master_password_wo_version}. |
-| <code><a href="#@cdktn/provider-aws.redshiftCluster.RedshiftClusterConfig.property.masterUsername">MasterUsername</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_cluster#master_username RedshiftCluster#master_username}. |
-| <code><a href="#@cdktn/provider-aws.redshiftCluster.RedshiftClusterConfig.property.multiAz">MultiAz</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_cluster#multi_az RedshiftCluster#multi_az}. |
-| <code><a href="#@cdktn/provider-aws.redshiftCluster.RedshiftClusterConfig.property.numberOfNodes">NumberOfNodes</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_cluster#number_of_nodes RedshiftCluster#number_of_nodes}. |
-| <code><a href="#@cdktn/provider-aws.redshiftCluster.RedshiftClusterConfig.property.ownerAccount">OwnerAccount</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_cluster#owner_account RedshiftCluster#owner_account}. |
-| <code><a href="#@cdktn/provider-aws.redshiftCluster.RedshiftClusterConfig.property.port">Port</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_cluster#port RedshiftCluster#port}. |
-| <code><a href="#@cdktn/provider-aws.redshiftCluster.RedshiftClusterConfig.property.preferredMaintenanceWindow">PreferredMaintenanceWindow</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_cluster#preferred_maintenance_window RedshiftCluster#preferred_maintenance_window}. |
-| <code><a href="#@cdktn/provider-aws.redshiftCluster.RedshiftClusterConfig.property.publiclyAccessible">PubliclyAccessible</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_cluster#publicly_accessible RedshiftCluster#publicly_accessible}. |
+| <code><a href="#@cdktn/provider-aws.redshiftCluster.RedshiftClusterConfig.property.clusterIdentifier">ClusterIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_cluster#cluster_identifier RedshiftCluster#cluster_identifier}. |
+| <code><a href="#@cdktn/provider-aws.redshiftCluster.RedshiftClusterConfig.property.nodeType">NodeType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_cluster#node_type RedshiftCluster#node_type}. |
+| <code><a href="#@cdktn/provider-aws.redshiftCluster.RedshiftClusterConfig.property.allowVersionUpgrade">AllowVersionUpgrade</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_cluster#allow_version_upgrade RedshiftCluster#allow_version_upgrade}. |
+| <code><a href="#@cdktn/provider-aws.redshiftCluster.RedshiftClusterConfig.property.applyImmediately">ApplyImmediately</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_cluster#apply_immediately RedshiftCluster#apply_immediately}. |
+| <code><a href="#@cdktn/provider-aws.redshiftCluster.RedshiftClusterConfig.property.aquaConfigurationStatus">AquaConfigurationStatus</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_cluster#aqua_configuration_status RedshiftCluster#aqua_configuration_status}. |
+| <code><a href="#@cdktn/provider-aws.redshiftCluster.RedshiftClusterConfig.property.automatedSnapshotRetentionPeriod">AutomatedSnapshotRetentionPeriod</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_cluster#automated_snapshot_retention_period RedshiftCluster#automated_snapshot_retention_period}. |
+| <code><a href="#@cdktn/provider-aws.redshiftCluster.RedshiftClusterConfig.property.availabilityZone">AvailabilityZone</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_cluster#availability_zone RedshiftCluster#availability_zone}. |
+| <code><a href="#@cdktn/provider-aws.redshiftCluster.RedshiftClusterConfig.property.availabilityZoneRelocationEnabled">AvailabilityZoneRelocationEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_cluster#availability_zone_relocation_enabled RedshiftCluster#availability_zone_relocation_enabled}. |
+| <code><a href="#@cdktn/provider-aws.redshiftCluster.RedshiftClusterConfig.property.clusterParameterGroupName">ClusterParameterGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_cluster#cluster_parameter_group_name RedshiftCluster#cluster_parameter_group_name}. |
+| <code><a href="#@cdktn/provider-aws.redshiftCluster.RedshiftClusterConfig.property.clusterSubnetGroupName">ClusterSubnetGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_cluster#cluster_subnet_group_name RedshiftCluster#cluster_subnet_group_name}. |
+| <code><a href="#@cdktn/provider-aws.redshiftCluster.RedshiftClusterConfig.property.clusterType">ClusterType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_cluster#cluster_type RedshiftCluster#cluster_type}. |
+| <code><a href="#@cdktn/provider-aws.redshiftCluster.RedshiftClusterConfig.property.clusterVersion">ClusterVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_cluster#cluster_version RedshiftCluster#cluster_version}. |
+| <code><a href="#@cdktn/provider-aws.redshiftCluster.RedshiftClusterConfig.property.databaseName">DatabaseName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_cluster#database_name RedshiftCluster#database_name}. |
+| <code><a href="#@cdktn/provider-aws.redshiftCluster.RedshiftClusterConfig.property.defaultIamRoleArn">DefaultIamRoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_cluster#default_iam_role_arn RedshiftCluster#default_iam_role_arn}. |
+| <code><a href="#@cdktn/provider-aws.redshiftCluster.RedshiftClusterConfig.property.elasticIp">ElasticIp</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_cluster#elastic_ip RedshiftCluster#elastic_ip}. |
+| <code><a href="#@cdktn/provider-aws.redshiftCluster.RedshiftClusterConfig.property.encrypted">Encrypted</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_cluster#encrypted RedshiftCluster#encrypted}. |
+| <code><a href="#@cdktn/provider-aws.redshiftCluster.RedshiftClusterConfig.property.enhancedVpcRouting">EnhancedVpcRouting</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_cluster#enhanced_vpc_routing RedshiftCluster#enhanced_vpc_routing}. |
+| <code><a href="#@cdktn/provider-aws.redshiftCluster.RedshiftClusterConfig.property.finalSnapshotIdentifier">FinalSnapshotIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_cluster#final_snapshot_identifier RedshiftCluster#final_snapshot_identifier}. |
+| <code><a href="#@cdktn/provider-aws.redshiftCluster.RedshiftClusterConfig.property.iamRoles">IamRoles</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_cluster#iam_roles RedshiftCluster#iam_roles}. |
+| <code><a href="#@cdktn/provider-aws.redshiftCluster.RedshiftClusterConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_cluster#id RedshiftCluster#id}. |
+| <code><a href="#@cdktn/provider-aws.redshiftCluster.RedshiftClusterConfig.property.kmsKeyId">KmsKeyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_cluster#kms_key_id RedshiftCluster#kms_key_id}. |
+| <code><a href="#@cdktn/provider-aws.redshiftCluster.RedshiftClusterConfig.property.maintenanceTrackName">MaintenanceTrackName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_cluster#maintenance_track_name RedshiftCluster#maintenance_track_name}. |
+| <code><a href="#@cdktn/provider-aws.redshiftCluster.RedshiftClusterConfig.property.manageMasterPassword">ManageMasterPassword</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_cluster#manage_master_password RedshiftCluster#manage_master_password}. |
+| <code><a href="#@cdktn/provider-aws.redshiftCluster.RedshiftClusterConfig.property.manualSnapshotRetentionPeriod">ManualSnapshotRetentionPeriod</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_cluster#manual_snapshot_retention_period RedshiftCluster#manual_snapshot_retention_period}. |
+| <code><a href="#@cdktn/provider-aws.redshiftCluster.RedshiftClusterConfig.property.masterPassword">MasterPassword</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_cluster#master_password RedshiftCluster#master_password}. |
+| <code><a href="#@cdktn/provider-aws.redshiftCluster.RedshiftClusterConfig.property.masterPasswordSecretKmsKeyId">MasterPasswordSecretKmsKeyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_cluster#master_password_secret_kms_key_id RedshiftCluster#master_password_secret_kms_key_id}. |
+| <code><a href="#@cdktn/provider-aws.redshiftCluster.RedshiftClusterConfig.property.masterPasswordWo">MasterPasswordWo</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_cluster#master_password_wo RedshiftCluster#master_password_wo}. |
+| <code><a href="#@cdktn/provider-aws.redshiftCluster.RedshiftClusterConfig.property.masterPasswordWoVersion">MasterPasswordWoVersion</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_cluster#master_password_wo_version RedshiftCluster#master_password_wo_version}. |
+| <code><a href="#@cdktn/provider-aws.redshiftCluster.RedshiftClusterConfig.property.masterUsername">MasterUsername</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_cluster#master_username RedshiftCluster#master_username}. |
+| <code><a href="#@cdktn/provider-aws.redshiftCluster.RedshiftClusterConfig.property.multiAz">MultiAz</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_cluster#multi_az RedshiftCluster#multi_az}. |
+| <code><a href="#@cdktn/provider-aws.redshiftCluster.RedshiftClusterConfig.property.numberOfNodes">NumberOfNodes</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_cluster#number_of_nodes RedshiftCluster#number_of_nodes}. |
+| <code><a href="#@cdktn/provider-aws.redshiftCluster.RedshiftClusterConfig.property.ownerAccount">OwnerAccount</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_cluster#owner_account RedshiftCluster#owner_account}. |
+| <code><a href="#@cdktn/provider-aws.redshiftCluster.RedshiftClusterConfig.property.port">Port</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_cluster#port RedshiftCluster#port}. |
+| <code><a href="#@cdktn/provider-aws.redshiftCluster.RedshiftClusterConfig.property.preferredMaintenanceWindow">PreferredMaintenanceWindow</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_cluster#preferred_maintenance_window RedshiftCluster#preferred_maintenance_window}. |
+| <code><a href="#@cdktn/provider-aws.redshiftCluster.RedshiftClusterConfig.property.publiclyAccessible">PubliclyAccessible</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_cluster#publicly_accessible RedshiftCluster#publicly_accessible}. |
 | <code><a href="#@cdktn/provider-aws.redshiftCluster.RedshiftClusterConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.redshiftCluster.RedshiftClusterConfig.property.skipFinalSnapshot">SkipFinalSnapshot</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_cluster#skip_final_snapshot RedshiftCluster#skip_final_snapshot}. |
-| <code><a href="#@cdktn/provider-aws.redshiftCluster.RedshiftClusterConfig.property.snapshotArn">SnapshotArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_cluster#snapshot_arn RedshiftCluster#snapshot_arn}. |
-| <code><a href="#@cdktn/provider-aws.redshiftCluster.RedshiftClusterConfig.property.snapshotClusterIdentifier">SnapshotClusterIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_cluster#snapshot_cluster_identifier RedshiftCluster#snapshot_cluster_identifier}. |
-| <code><a href="#@cdktn/provider-aws.redshiftCluster.RedshiftClusterConfig.property.snapshotIdentifier">SnapshotIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_cluster#snapshot_identifier RedshiftCluster#snapshot_identifier}. |
-| <code><a href="#@cdktn/provider-aws.redshiftCluster.RedshiftClusterConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_cluster#tags RedshiftCluster#tags}. |
-| <code><a href="#@cdktn/provider-aws.redshiftCluster.RedshiftClusterConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_cluster#tags_all RedshiftCluster#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.redshiftCluster.RedshiftClusterConfig.property.skipFinalSnapshot">SkipFinalSnapshot</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_cluster#skip_final_snapshot RedshiftCluster#skip_final_snapshot}. |
+| <code><a href="#@cdktn/provider-aws.redshiftCluster.RedshiftClusterConfig.property.snapshotArn">SnapshotArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_cluster#snapshot_arn RedshiftCluster#snapshot_arn}. |
+| <code><a href="#@cdktn/provider-aws.redshiftCluster.RedshiftClusterConfig.property.snapshotClusterIdentifier">SnapshotClusterIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_cluster#snapshot_cluster_identifier RedshiftCluster#snapshot_cluster_identifier}. |
+| <code><a href="#@cdktn/provider-aws.redshiftCluster.RedshiftClusterConfig.property.snapshotIdentifier">SnapshotIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_cluster#snapshot_identifier RedshiftCluster#snapshot_identifier}. |
+| <code><a href="#@cdktn/provider-aws.redshiftCluster.RedshiftClusterConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_cluster#tags RedshiftCluster#tags}. |
+| <code><a href="#@cdktn/provider-aws.redshiftCluster.RedshiftClusterConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_cluster#tags_all RedshiftCluster#tags_all}. |
 | <code><a href="#@cdktn/provider-aws.redshiftCluster.RedshiftClusterConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.redshiftCluster.RedshiftClusterTimeouts">RedshiftClusterTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktn/provider-aws.redshiftCluster.RedshiftClusterConfig.property.vpcSecurityGroupIds">VpcSecurityGroupIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_cluster#vpc_security_group_ids RedshiftCluster#vpc_security_group_ids}. |
+| <code><a href="#@cdktn/provider-aws.redshiftCluster.RedshiftClusterConfig.property.vpcSecurityGroupIds">VpcSecurityGroupIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_cluster#vpc_security_group_ids RedshiftCluster#vpc_security_group_ids}. |
 
 ---
 
@@ -2236,7 +2236,7 @@ ClusterIdentifier *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_cluster#cluster_identifier RedshiftCluster#cluster_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_cluster#cluster_identifier RedshiftCluster#cluster_identifier}.
 
 ---
 
@@ -2248,7 +2248,7 @@ NodeType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_cluster#node_type RedshiftCluster#node_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_cluster#node_type RedshiftCluster#node_type}.
 
 ---
 
@@ -2260,7 +2260,7 @@ AllowVersionUpgrade interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_cluster#allow_version_upgrade RedshiftCluster#allow_version_upgrade}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_cluster#allow_version_upgrade RedshiftCluster#allow_version_upgrade}.
 
 ---
 
@@ -2272,7 +2272,7 @@ ApplyImmediately interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_cluster#apply_immediately RedshiftCluster#apply_immediately}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_cluster#apply_immediately RedshiftCluster#apply_immediately}.
 
 ---
 
@@ -2284,7 +2284,7 @@ AquaConfigurationStatus *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_cluster#aqua_configuration_status RedshiftCluster#aqua_configuration_status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_cluster#aqua_configuration_status RedshiftCluster#aqua_configuration_status}.
 
 ---
 
@@ -2296,7 +2296,7 @@ AutomatedSnapshotRetentionPeriod *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_cluster#automated_snapshot_retention_period RedshiftCluster#automated_snapshot_retention_period}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_cluster#automated_snapshot_retention_period RedshiftCluster#automated_snapshot_retention_period}.
 
 ---
 
@@ -2308,7 +2308,7 @@ AvailabilityZone *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_cluster#availability_zone RedshiftCluster#availability_zone}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_cluster#availability_zone RedshiftCluster#availability_zone}.
 
 ---
 
@@ -2320,7 +2320,7 @@ AvailabilityZoneRelocationEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_cluster#availability_zone_relocation_enabled RedshiftCluster#availability_zone_relocation_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_cluster#availability_zone_relocation_enabled RedshiftCluster#availability_zone_relocation_enabled}.
 
 ---
 
@@ -2332,7 +2332,7 @@ ClusterParameterGroupName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_cluster#cluster_parameter_group_name RedshiftCluster#cluster_parameter_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_cluster#cluster_parameter_group_name RedshiftCluster#cluster_parameter_group_name}.
 
 ---
 
@@ -2344,7 +2344,7 @@ ClusterSubnetGroupName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_cluster#cluster_subnet_group_name RedshiftCluster#cluster_subnet_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_cluster#cluster_subnet_group_name RedshiftCluster#cluster_subnet_group_name}.
 
 ---
 
@@ -2356,7 +2356,7 @@ ClusterType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_cluster#cluster_type RedshiftCluster#cluster_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_cluster#cluster_type RedshiftCluster#cluster_type}.
 
 ---
 
@@ -2368,7 +2368,7 @@ ClusterVersion *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_cluster#cluster_version RedshiftCluster#cluster_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_cluster#cluster_version RedshiftCluster#cluster_version}.
 
 ---
 
@@ -2380,7 +2380,7 @@ DatabaseName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_cluster#database_name RedshiftCluster#database_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_cluster#database_name RedshiftCluster#database_name}.
 
 ---
 
@@ -2392,7 +2392,7 @@ DefaultIamRoleArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_cluster#default_iam_role_arn RedshiftCluster#default_iam_role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_cluster#default_iam_role_arn RedshiftCluster#default_iam_role_arn}.
 
 ---
 
@@ -2404,7 +2404,7 @@ ElasticIp *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_cluster#elastic_ip RedshiftCluster#elastic_ip}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_cluster#elastic_ip RedshiftCluster#elastic_ip}.
 
 ---
 
@@ -2416,7 +2416,7 @@ Encrypted *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_cluster#encrypted RedshiftCluster#encrypted}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_cluster#encrypted RedshiftCluster#encrypted}.
 
 ---
 
@@ -2428,7 +2428,7 @@ EnhancedVpcRouting interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_cluster#enhanced_vpc_routing RedshiftCluster#enhanced_vpc_routing}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_cluster#enhanced_vpc_routing RedshiftCluster#enhanced_vpc_routing}.
 
 ---
 
@@ -2440,7 +2440,7 @@ FinalSnapshotIdentifier *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_cluster#final_snapshot_identifier RedshiftCluster#final_snapshot_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_cluster#final_snapshot_identifier RedshiftCluster#final_snapshot_identifier}.
 
 ---
 
@@ -2452,7 +2452,7 @@ IamRoles *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_cluster#iam_roles RedshiftCluster#iam_roles}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_cluster#iam_roles RedshiftCluster#iam_roles}.
 
 ---
 
@@ -2464,7 +2464,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_cluster#id RedshiftCluster#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_cluster#id RedshiftCluster#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2479,7 +2479,7 @@ KmsKeyId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_cluster#kms_key_id RedshiftCluster#kms_key_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_cluster#kms_key_id RedshiftCluster#kms_key_id}.
 
 ---
 
@@ -2491,7 +2491,7 @@ MaintenanceTrackName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_cluster#maintenance_track_name RedshiftCluster#maintenance_track_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_cluster#maintenance_track_name RedshiftCluster#maintenance_track_name}.
 
 ---
 
@@ -2503,7 +2503,7 @@ ManageMasterPassword interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_cluster#manage_master_password RedshiftCluster#manage_master_password}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_cluster#manage_master_password RedshiftCluster#manage_master_password}.
 
 ---
 
@@ -2515,7 +2515,7 @@ ManualSnapshotRetentionPeriod *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_cluster#manual_snapshot_retention_period RedshiftCluster#manual_snapshot_retention_period}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_cluster#manual_snapshot_retention_period RedshiftCluster#manual_snapshot_retention_period}.
 
 ---
 
@@ -2527,7 +2527,7 @@ MasterPassword *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_cluster#master_password RedshiftCluster#master_password}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_cluster#master_password RedshiftCluster#master_password}.
 
 ---
 
@@ -2539,7 +2539,7 @@ MasterPasswordSecretKmsKeyId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_cluster#master_password_secret_kms_key_id RedshiftCluster#master_password_secret_kms_key_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_cluster#master_password_secret_kms_key_id RedshiftCluster#master_password_secret_kms_key_id}.
 
 ---
 
@@ -2551,7 +2551,7 @@ MasterPasswordWo *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_cluster#master_password_wo RedshiftCluster#master_password_wo}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_cluster#master_password_wo RedshiftCluster#master_password_wo}.
 
 ---
 
@@ -2563,7 +2563,7 @@ MasterPasswordWoVersion *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_cluster#master_password_wo_version RedshiftCluster#master_password_wo_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_cluster#master_password_wo_version RedshiftCluster#master_password_wo_version}.
 
 ---
 
@@ -2575,7 +2575,7 @@ MasterUsername *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_cluster#master_username RedshiftCluster#master_username}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_cluster#master_username RedshiftCluster#master_username}.
 
 ---
 
@@ -2587,7 +2587,7 @@ MultiAz interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_cluster#multi_az RedshiftCluster#multi_az}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_cluster#multi_az RedshiftCluster#multi_az}.
 
 ---
 
@@ -2599,7 +2599,7 @@ NumberOfNodes *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_cluster#number_of_nodes RedshiftCluster#number_of_nodes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_cluster#number_of_nodes RedshiftCluster#number_of_nodes}.
 
 ---
 
@@ -2611,7 +2611,7 @@ OwnerAccount *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_cluster#owner_account RedshiftCluster#owner_account}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_cluster#owner_account RedshiftCluster#owner_account}.
 
 ---
 
@@ -2623,7 +2623,7 @@ Port *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_cluster#port RedshiftCluster#port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_cluster#port RedshiftCluster#port}.
 
 ---
 
@@ -2635,7 +2635,7 @@ PreferredMaintenanceWindow *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_cluster#preferred_maintenance_window RedshiftCluster#preferred_maintenance_window}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_cluster#preferred_maintenance_window RedshiftCluster#preferred_maintenance_window}.
 
 ---
 
@@ -2647,7 +2647,7 @@ PubliclyAccessible interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_cluster#publicly_accessible RedshiftCluster#publicly_accessible}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_cluster#publicly_accessible RedshiftCluster#publicly_accessible}.
 
 ---
 
@@ -2661,7 +2661,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_cluster#region RedshiftCluster#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_cluster#region RedshiftCluster#region}
 
 ---
 
@@ -2673,7 +2673,7 @@ SkipFinalSnapshot interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_cluster#skip_final_snapshot RedshiftCluster#skip_final_snapshot}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_cluster#skip_final_snapshot RedshiftCluster#skip_final_snapshot}.
 
 ---
 
@@ -2685,7 +2685,7 @@ SnapshotArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_cluster#snapshot_arn RedshiftCluster#snapshot_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_cluster#snapshot_arn RedshiftCluster#snapshot_arn}.
 
 ---
 
@@ -2697,7 +2697,7 @@ SnapshotClusterIdentifier *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_cluster#snapshot_cluster_identifier RedshiftCluster#snapshot_cluster_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_cluster#snapshot_cluster_identifier RedshiftCluster#snapshot_cluster_identifier}.
 
 ---
 
@@ -2709,7 +2709,7 @@ SnapshotIdentifier *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_cluster#snapshot_identifier RedshiftCluster#snapshot_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_cluster#snapshot_identifier RedshiftCluster#snapshot_identifier}.
 
 ---
 
@@ -2721,7 +2721,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_cluster#tags RedshiftCluster#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_cluster#tags RedshiftCluster#tags}.
 
 ---
 
@@ -2733,7 +2733,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_cluster#tags_all RedshiftCluster#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_cluster#tags_all RedshiftCluster#tags_all}.
 
 ---
 
@@ -2747,7 +2747,7 @@ Timeouts RedshiftClusterTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_cluster#timeouts RedshiftCluster#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_cluster#timeouts RedshiftCluster#timeouts}
 
 ---
 
@@ -2759,7 +2759,7 @@ VpcSecurityGroupIds *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_cluster#vpc_security_group_ids RedshiftCluster#vpc_security_group_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_cluster#vpc_security_group_ids RedshiftCluster#vpc_security_group_ids}.
 
 ---
 
@@ -2768,7 +2768,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.redshiftCluster.RedshiftClusterTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/redshiftcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/redshiftcluster"
 
 &redshiftcluster.RedshiftClusterTimeouts {
 	Create: *string,
@@ -2781,9 +2781,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/redshiftcluster"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.redshiftCluster.RedshiftClusterTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_cluster#create RedshiftCluster#create}. |
-| <code><a href="#@cdktn/provider-aws.redshiftCluster.RedshiftClusterTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_cluster#delete RedshiftCluster#delete}. |
-| <code><a href="#@cdktn/provider-aws.redshiftCluster.RedshiftClusterTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_cluster#update RedshiftCluster#update}. |
+| <code><a href="#@cdktn/provider-aws.redshiftCluster.RedshiftClusterTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_cluster#create RedshiftCluster#create}. |
+| <code><a href="#@cdktn/provider-aws.redshiftCluster.RedshiftClusterTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_cluster#delete RedshiftCluster#delete}. |
+| <code><a href="#@cdktn/provider-aws.redshiftCluster.RedshiftClusterTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_cluster#update RedshiftCluster#update}. |
 
 ---
 
@@ -2795,7 +2795,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_cluster#create RedshiftCluster#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_cluster#create RedshiftCluster#create}.
 
 ---
 
@@ -2807,7 +2807,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_cluster#delete RedshiftCluster#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_cluster#delete RedshiftCluster#delete}.
 
 ---
 
@@ -2819,7 +2819,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_cluster#update RedshiftCluster#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_cluster#update RedshiftCluster#update}.
 
 ---
 
@@ -2830,7 +2830,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.redshiftCluster.RedshiftClusterClusterNodesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/redshiftcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/redshiftcluster"
 
 redshiftcluster.NewRedshiftClusterClusterNodesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) RedshiftClusterClusterNodesList
 ```
@@ -2979,7 +2979,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.redshiftCluster.RedshiftClusterClusterNodesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/redshiftcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/redshiftcluster"
 
 redshiftcluster.NewRedshiftClusterClusterNodesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) RedshiftClusterClusterNodesOutputReference
 ```
@@ -3279,7 +3279,7 @@ func InternalValue() RedshiftClusterClusterNodes
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.redshiftCluster.RedshiftClusterTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/redshiftcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/redshiftcluster"
 
 redshiftcluster.NewRedshiftClusterTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RedshiftClusterTimeoutsOutputReference
 ```

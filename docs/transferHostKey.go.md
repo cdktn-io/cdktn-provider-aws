@@ -4,12 +4,12 @@
 
 ### TransferHostKey <a name="TransferHostKey" id="@cdktn/provider-aws.transferHostKey.TransferHostKey"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/transfer_host_key aws_transfer_host_key}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/transfer_host_key aws_transfer_host_key}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.transferHostKey.TransferHostKey.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/transferhostkey"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/transferhostkey"
 
 transferhostkey.NewTransferHostKey(scope Construct, id *string, config TransferHostKeyConfig) TransferHostKey
 ```
@@ -413,7 +413,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.transferHostKey.TransferHostKey.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/transferhostkey"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/transferhostkey"
 
 transferhostkey.TransferHostKey_IsConstruct(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.transferHostKey.TransferHostKey.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/transferhostkey"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/transferhostkey"
 
 transferhostkey.TransferHostKey_IsTerraformElement(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ transferhostkey.TransferHostKey_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.transferHostKey.TransferHostKey.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/transferhostkey"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/transferhostkey"
 
 transferhostkey.TransferHostKey_IsTerraformResource(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ transferhostkey.TransferHostKey_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.transferHostKey.TransferHostKey.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/transferhostkey"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/transferhostkey"
 
 transferhostkey.TransferHostKey_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -502,7 +502,7 @@ The construct id used in the generated config for the TransferHostKey to import.
 
 The id of the existing TransferHostKey that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/transfer_host_key#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/transfer_host_key#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -878,7 +878,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.transferHostKey.TransferHostKeyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/transferhostkey"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/transferhostkey"
 
 &transferhostkey.TransferHostKeyConfig {
 	Connection: interface{},
@@ -908,12 +908,12 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/transferhostkey"
 | <code><a href="#@cdktn/provider-aws.transferHostKey.TransferHostKeyConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.transferHostKey.TransferHostKeyConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.transferHostKey.TransferHostKeyConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.transferHostKey.TransferHostKeyConfig.property.serverId">ServerId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/transfer_host_key#server_id TransferHostKey#server_id}. |
-| <code><a href="#@cdktn/provider-aws.transferHostKey.TransferHostKeyConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/transfer_host_key#description TransferHostKey#description}. |
-| <code><a href="#@cdktn/provider-aws.transferHostKey.TransferHostKeyConfig.property.hostKeyBody">HostKeyBody</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/transfer_host_key#host_key_body TransferHostKey#host_key_body}. |
-| <code><a href="#@cdktn/provider-aws.transferHostKey.TransferHostKeyConfig.property.hostKeyBodyWo">HostKeyBodyWo</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/transfer_host_key#host_key_body_wo TransferHostKey#host_key_body_wo}. |
+| <code><a href="#@cdktn/provider-aws.transferHostKey.TransferHostKeyConfig.property.serverId">ServerId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/transfer_host_key#server_id TransferHostKey#server_id}. |
+| <code><a href="#@cdktn/provider-aws.transferHostKey.TransferHostKeyConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/transfer_host_key#description TransferHostKey#description}. |
+| <code><a href="#@cdktn/provider-aws.transferHostKey.TransferHostKeyConfig.property.hostKeyBody">HostKeyBody</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/transfer_host_key#host_key_body TransferHostKey#host_key_body}. |
+| <code><a href="#@cdktn/provider-aws.transferHostKey.TransferHostKeyConfig.property.hostKeyBodyWo">HostKeyBodyWo</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/transfer_host_key#host_key_body_wo TransferHostKey#host_key_body_wo}. |
 | <code><a href="#@cdktn/provider-aws.transferHostKey.TransferHostKeyConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.transferHostKey.TransferHostKeyConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/transfer_host_key#tags TransferHostKey#tags}. |
+| <code><a href="#@cdktn/provider-aws.transferHostKey.TransferHostKeyConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/transfer_host_key#tags TransferHostKey#tags}. |
 
 ---
 
@@ -995,7 +995,7 @@ ServerId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/transfer_host_key#server_id TransferHostKey#server_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/transfer_host_key#server_id TransferHostKey#server_id}.
 
 ---
 
@@ -1007,7 +1007,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/transfer_host_key#description TransferHostKey#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/transfer_host_key#description TransferHostKey#description}.
 
 ---
 
@@ -1019,7 +1019,7 @@ HostKeyBody *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/transfer_host_key#host_key_body TransferHostKey#host_key_body}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/transfer_host_key#host_key_body TransferHostKey#host_key_body}.
 
 ---
 
@@ -1031,7 +1031,7 @@ HostKeyBodyWo *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/transfer_host_key#host_key_body_wo TransferHostKey#host_key_body_wo}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/transfer_host_key#host_key_body_wo TransferHostKey#host_key_body_wo}.
 
 ---
 
@@ -1045,7 +1045,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/transfer_host_key#region TransferHostKey#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/transfer_host_key#region TransferHostKey#region}
 
 ---
 
@@ -1057,7 +1057,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/transfer_host_key#tags TransferHostKey#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/transfer_host_key#tags TransferHostKey#tags}.
 
 ---
 

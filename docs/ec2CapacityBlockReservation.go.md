@@ -4,12 +4,12 @@
 
 ### Ec2CapacityBlockReservation <a name="Ec2CapacityBlockReservation" id="@cdktn/provider-aws.ec2CapacityBlockReservation.Ec2CapacityBlockReservation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ec2_capacity_block_reservation aws_ec2_capacity_block_reservation}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/ec2_capacity_block_reservation aws_ec2_capacity_block_reservation}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ec2CapacityBlockReservation.Ec2CapacityBlockReservation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/ec2capacityblockreservation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/ec2capacityblockreservation"
 
 ec2capacityblockreservation.NewEc2CapacityBlockReservation(scope Construct, id *string, config Ec2CapacityBlockReservationConfig) Ec2CapacityBlockReservation
 ```
@@ -412,7 +412,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.ec2CapacityBlockReservation.Ec2CapacityBlockReservation.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/ec2capacityblockreservation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/ec2capacityblockreservation"
 
 ec2capacityblockreservation.Ec2CapacityBlockReservation_IsConstruct(x interface{}) *bool
 ```
@@ -444,7 +444,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.ec2CapacityBlockReservation.Ec2CapacityBlockReservation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/ec2capacityblockreservation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/ec2capacityblockreservation"
 
 ec2capacityblockreservation.Ec2CapacityBlockReservation_IsTerraformElement(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ ec2capacityblockreservation.Ec2CapacityBlockReservation_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.ec2CapacityBlockReservation.Ec2CapacityBlockReservation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/ec2capacityblockreservation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/ec2capacityblockreservation"
 
 ec2capacityblockreservation.Ec2CapacityBlockReservation_IsTerraformResource(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ ec2capacityblockreservation.Ec2CapacityBlockReservation_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.ec2CapacityBlockReservation.Ec2CapacityBlockReservation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/ec2capacityblockreservation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/ec2capacityblockreservation"
 
 ec2capacityblockreservation.Ec2CapacityBlockReservation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -501,7 +501,7 @@ The construct id used in the generated config for the Ec2CapacityBlockReservatio
 
 The id of the existing Ec2CapacityBlockReservation that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ec2_capacity_block_reservation#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/ec2_capacity_block_reservation#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -976,7 +976,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ec2CapacityBlockReservation.Ec2CapacityBlockReservationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/ec2capacityblockreservation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/ec2capacityblockreservation"
 
 &ec2capacityblockreservation.Ec2CapacityBlockReservationConfig {
 	Connection: interface{},
@@ -990,7 +990,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/ec2capacityblockreserv
 	InstancePlatform: *string,
 	Region: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.ec2CapacityBlockReservation.Ec2CapacityBlockReservationTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.ec2CapacityBlockReservation.Ec2CapacityBlockReservationTimeouts,
 }
 ```
 
@@ -1005,10 +1005,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/ec2capacityblockreserv
 | <code><a href="#@cdktn/provider-aws.ec2CapacityBlockReservation.Ec2CapacityBlockReservationConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ec2CapacityBlockReservation.Ec2CapacityBlockReservationConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ec2CapacityBlockReservation.Ec2CapacityBlockReservationConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.ec2CapacityBlockReservation.Ec2CapacityBlockReservationConfig.property.capacityBlockOfferingId">CapacityBlockOfferingId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ec2_capacity_block_reservation#capacity_block_offering_id Ec2CapacityBlockReservation#capacity_block_offering_id}. |
-| <code><a href="#@cdktn/provider-aws.ec2CapacityBlockReservation.Ec2CapacityBlockReservationConfig.property.instancePlatform">InstancePlatform</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ec2_capacity_block_reservation#instance_platform Ec2CapacityBlockReservation#instance_platform}. |
+| <code><a href="#@cdktn/provider-aws.ec2CapacityBlockReservation.Ec2CapacityBlockReservationConfig.property.capacityBlockOfferingId">CapacityBlockOfferingId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/ec2_capacity_block_reservation#capacity_block_offering_id Ec2CapacityBlockReservation#capacity_block_offering_id}. |
+| <code><a href="#@cdktn/provider-aws.ec2CapacityBlockReservation.Ec2CapacityBlockReservationConfig.property.instancePlatform">InstancePlatform</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/ec2_capacity_block_reservation#instance_platform Ec2CapacityBlockReservation#instance_platform}. |
 | <code><a href="#@cdktn/provider-aws.ec2CapacityBlockReservation.Ec2CapacityBlockReservationConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.ec2CapacityBlockReservation.Ec2CapacityBlockReservationConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ec2_capacity_block_reservation#tags Ec2CapacityBlockReservation#tags}. |
+| <code><a href="#@cdktn/provider-aws.ec2CapacityBlockReservation.Ec2CapacityBlockReservationConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/ec2_capacity_block_reservation#tags Ec2CapacityBlockReservation#tags}. |
 | <code><a href="#@cdktn/provider-aws.ec2CapacityBlockReservation.Ec2CapacityBlockReservationConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.ec2CapacityBlockReservation.Ec2CapacityBlockReservationTimeouts">Ec2CapacityBlockReservationTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1091,7 +1091,7 @@ CapacityBlockOfferingId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ec2_capacity_block_reservation#capacity_block_offering_id Ec2CapacityBlockReservation#capacity_block_offering_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/ec2_capacity_block_reservation#capacity_block_offering_id Ec2CapacityBlockReservation#capacity_block_offering_id}.
 
 ---
 
@@ -1103,7 +1103,7 @@ InstancePlatform *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ec2_capacity_block_reservation#instance_platform Ec2CapacityBlockReservation#instance_platform}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/ec2_capacity_block_reservation#instance_platform Ec2CapacityBlockReservation#instance_platform}.
 
 ---
 
@@ -1117,7 +1117,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ec2_capacity_block_reservation#region Ec2CapacityBlockReservation#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/ec2_capacity_block_reservation#region Ec2CapacityBlockReservation#region}
 
 ---
 
@@ -1129,7 +1129,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ec2_capacity_block_reservation#tags Ec2CapacityBlockReservation#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/ec2_capacity_block_reservation#tags Ec2CapacityBlockReservation#tags}.
 
 ---
 
@@ -1143,7 +1143,7 @@ Timeouts Ec2CapacityBlockReservationTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ec2_capacity_block_reservation#timeouts Ec2CapacityBlockReservation#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/ec2_capacity_block_reservation#timeouts Ec2CapacityBlockReservation#timeouts}
 
 ---
 
@@ -1152,7 +1152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ec2CapacityBlockReservation.Ec2CapacityBlockReservationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/ec2capacityblockreservation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/ec2capacityblockreservation"
 
 &ec2capacityblockreservation.Ec2CapacityBlockReservationTimeouts {
 	Create: *string,
@@ -1177,7 +1177,7 @@ Create *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ec2_capacity_block_reservation#create Ec2CapacityBlockReservation#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/ec2_capacity_block_reservation#create Ec2CapacityBlockReservation#create}
 
 ---
 
@@ -1188,7 +1188,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ec2CapacityBlockReservation.Ec2CapacityBlockReservationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/ec2capacityblockreservation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/ec2capacityblockreservation"
 
 ec2capacityblockreservation.NewEc2CapacityBlockReservationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Ec2CapacityBlockReservationTimeoutsOutputReference
 ```

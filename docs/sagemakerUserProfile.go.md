@@ -4,12 +4,12 @@
 
 ### SagemakerUserProfile <a name="SagemakerUserProfile" id="@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfile"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile aws_sagemaker_user_profile}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile aws_sagemaker_user_profile}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakeruserprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/sagemakeruserprofile"
 
 sagemakeruserprofile.NewSagemakerUserProfile(scope Construct, id *string, config SagemakerUserProfileConfig) SagemakerUserProfile
 ```
@@ -440,7 +440,7 @@ func ResetUserSettings()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfile.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakeruserprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/sagemakeruserprofile"
 
 sagemakeruserprofile.SagemakerUserProfile_IsConstruct(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfile.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakeruserprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/sagemakeruserprofile"
 
 sagemakeruserprofile.SagemakerUserProfile_IsTerraformElement(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ sagemakeruserprofile.SagemakerUserProfile_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfile.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakeruserprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/sagemakeruserprofile"
 
 sagemakeruserprofile.SagemakerUserProfile_IsTerraformResource(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ sagemakeruserprofile.SagemakerUserProfile_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfile.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakeruserprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/sagemakeruserprofile"
 
 sagemakeruserprofile.SagemakerUserProfile_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -529,7 +529,7 @@ The construct id used in the generated config for the SagemakerUserProfile to im
 
 The id of the existing SagemakerUserProfile that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -949,7 +949,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakeruserprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/sagemakeruserprofile"
 
 &sagemakeruserprofile.SagemakerUserProfileConfig {
 	Connection: interface{},
@@ -967,7 +967,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakeruserprofile"
 	SingleSignOnUserValue: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	UserSettings: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.sagemakerUserProfile.SagemakerUserProfileUserSettings,
+	UserSettings: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.sagemakerUserProfile.SagemakerUserProfileUserSettings,
 }
 ```
 
@@ -982,14 +982,14 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakeruserprofile"
 | <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileConfig.property.domainId">DomainId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#domain_id SagemakerUserProfile#domain_id}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileConfig.property.userProfileName">UserProfileName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#user_profile_name SagemakerUserProfile#user_profile_name}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#id SagemakerUserProfile#id}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileConfig.property.domainId">DomainId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#domain_id SagemakerUserProfile#domain_id}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileConfig.property.userProfileName">UserProfileName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#user_profile_name SagemakerUserProfile#user_profile_name}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#id SagemakerUserProfile#id}. |
 | <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileConfig.property.singleSignOnUserIdentifier">SingleSignOnUserIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#single_sign_on_user_identifier SagemakerUserProfile#single_sign_on_user_identifier}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileConfig.property.singleSignOnUserValue">SingleSignOnUserValue</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#single_sign_on_user_value SagemakerUserProfile#single_sign_on_user_value}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#tags SagemakerUserProfile#tags}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#tags_all SagemakerUserProfile#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileConfig.property.singleSignOnUserIdentifier">SingleSignOnUserIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#single_sign_on_user_identifier SagemakerUserProfile#single_sign_on_user_identifier}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileConfig.property.singleSignOnUserValue">SingleSignOnUserValue</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#single_sign_on_user_value SagemakerUserProfile#single_sign_on_user_value}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#tags SagemakerUserProfile#tags}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#tags_all SagemakerUserProfile#tags_all}. |
 | <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileConfig.property.userSettings">UserSettings</a></code> | <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettings">SagemakerUserProfileUserSettings</a></code> | user_settings block. |
 
 ---
@@ -1072,7 +1072,7 @@ DomainId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#domain_id SagemakerUserProfile#domain_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#domain_id SagemakerUserProfile#domain_id}.
 
 ---
 
@@ -1084,7 +1084,7 @@ UserProfileName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#user_profile_name SagemakerUserProfile#user_profile_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#user_profile_name SagemakerUserProfile#user_profile_name}.
 
 ---
 
@@ -1096,7 +1096,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#id SagemakerUserProfile#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#id SagemakerUserProfile#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1113,7 +1113,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#region SagemakerUserProfile#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#region SagemakerUserProfile#region}
 
 ---
 
@@ -1125,7 +1125,7 @@ SingleSignOnUserIdentifier *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#single_sign_on_user_identifier SagemakerUserProfile#single_sign_on_user_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#single_sign_on_user_identifier SagemakerUserProfile#single_sign_on_user_identifier}.
 
 ---
 
@@ -1137,7 +1137,7 @@ SingleSignOnUserValue *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#single_sign_on_user_value SagemakerUserProfile#single_sign_on_user_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#single_sign_on_user_value SagemakerUserProfile#single_sign_on_user_value}.
 
 ---
 
@@ -1149,7 +1149,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#tags SagemakerUserProfile#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#tags SagemakerUserProfile#tags}.
 
 ---
 
@@ -1161,7 +1161,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#tags_all SagemakerUserProfile#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#tags_all SagemakerUserProfile#tags_all}.
 
 ---
 
@@ -1175,7 +1175,7 @@ UserSettings SagemakerUserProfileUserSettings
 
 user_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#user_settings SagemakerUserProfile#user_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#user_settings SagemakerUserProfile#user_settings}
 
 ---
 
@@ -1184,27 +1184,27 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakeruserprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/sagemakeruserprofile"
 
 &sagemakeruserprofile.SagemakerUserProfileUserSettings {
 	ExecutionRole: *string,
 	AutoMountHomeEfs: *string,
-	CanvasAppSettings: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.sagemakerUserProfile.SagemakerUserProfileUserSettingsCanvasAppSettings,
-	CodeEditorAppSettings: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.sagemakerUserProfile.SagemakerUserProfileUserSettingsCodeEditorAppSettings,
+	CanvasAppSettings: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.sagemakerUserProfile.SagemakerUserProfileUserSettingsCanvasAppSettings,
+	CodeEditorAppSettings: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.sagemakerUserProfile.SagemakerUserProfileUserSettingsCodeEditorAppSettings,
 	CustomFileSystemConfig: interface{},
-	CustomPosixUserConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.sagemakerUserProfile.SagemakerUserProfileUserSettingsCustomPosixUserConfig,
+	CustomPosixUserConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.sagemakerUserProfile.SagemakerUserProfileUserSettingsCustomPosixUserConfig,
 	DefaultLandingUri: *string,
-	JupyterLabAppSettings: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.sagemakerUserProfile.SagemakerUserProfileUserSettingsJupyterLabAppSettings,
-	JupyterServerAppSettings: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.sagemakerUserProfile.SagemakerUserProfileUserSettingsJupyterServerAppSettings,
-	KernelGatewayAppSettings: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.sagemakerUserProfile.SagemakerUserProfileUserSettingsKernelGatewayAppSettings,
-	RSessionAppSettings: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.sagemakerUserProfile.SagemakerUserProfileUserSettingsRSessionAppSettings,
-	RStudioServerProAppSettings: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.sagemakerUserProfile.SagemakerUserProfileUserSettingsRStudioServerProAppSettings,
+	JupyterLabAppSettings: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.sagemakerUserProfile.SagemakerUserProfileUserSettingsJupyterLabAppSettings,
+	JupyterServerAppSettings: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.sagemakerUserProfile.SagemakerUserProfileUserSettingsJupyterServerAppSettings,
+	KernelGatewayAppSettings: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.sagemakerUserProfile.SagemakerUserProfileUserSettingsKernelGatewayAppSettings,
+	RSessionAppSettings: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.sagemakerUserProfile.SagemakerUserProfileUserSettingsRSessionAppSettings,
+	RStudioServerProAppSettings: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.sagemakerUserProfile.SagemakerUserProfileUserSettingsRStudioServerProAppSettings,
 	SecurityGroups: *[]*string,
-	SharingSettings: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.sagemakerUserProfile.SagemakerUserProfileUserSettingsSharingSettings,
-	SpaceStorageSettings: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.sagemakerUserProfile.SagemakerUserProfileUserSettingsSpaceStorageSettings,
+	SharingSettings: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.sagemakerUserProfile.SagemakerUserProfileUserSettingsSharingSettings,
+	SpaceStorageSettings: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.sagemakerUserProfile.SagemakerUserProfileUserSettingsSpaceStorageSettings,
 	StudioWebPortal: *string,
-	StudioWebPortalSettings: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.sagemakerUserProfile.SagemakerUserProfileUserSettingsStudioWebPortalSettings,
-	TensorBoardAppSettings: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.sagemakerUserProfile.SagemakerUserProfileUserSettingsTensorBoardAppSettings,
+	StudioWebPortalSettings: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.sagemakerUserProfile.SagemakerUserProfileUserSettingsStudioWebPortalSettings,
+	TensorBoardAppSettings: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.sagemakerUserProfile.SagemakerUserProfileUserSettingsTensorBoardAppSettings,
 }
 ```
 
@@ -1212,22 +1212,22 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakeruserprofile"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettings.property.executionRole">ExecutionRole</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#execution_role SagemakerUserProfile#execution_role}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettings.property.autoMountHomeEfs">AutoMountHomeEfs</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#auto_mount_home_efs SagemakerUserProfile#auto_mount_home_efs}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettings.property.executionRole">ExecutionRole</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#execution_role SagemakerUserProfile#execution_role}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettings.property.autoMountHomeEfs">AutoMountHomeEfs</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#auto_mount_home_efs SagemakerUserProfile#auto_mount_home_efs}. |
 | <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettings.property.canvasAppSettings">CanvasAppSettings</a></code> | <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsCanvasAppSettings">SagemakerUserProfileUserSettingsCanvasAppSettings</a></code> | canvas_app_settings block. |
 | <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettings.property.codeEditorAppSettings">CodeEditorAppSettings</a></code> | <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsCodeEditorAppSettings">SagemakerUserProfileUserSettingsCodeEditorAppSettings</a></code> | code_editor_app_settings block. |
 | <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettings.property.customFileSystemConfig">CustomFileSystemConfig</a></code> | <code>interface{}</code> | custom_file_system_config block. |
 | <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettings.property.customPosixUserConfig">CustomPosixUserConfig</a></code> | <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsCustomPosixUserConfig">SagemakerUserProfileUserSettingsCustomPosixUserConfig</a></code> | custom_posix_user_config block. |
-| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettings.property.defaultLandingUri">DefaultLandingUri</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#default_landing_uri SagemakerUserProfile#default_landing_uri}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettings.property.defaultLandingUri">DefaultLandingUri</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#default_landing_uri SagemakerUserProfile#default_landing_uri}. |
 | <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettings.property.jupyterLabAppSettings">JupyterLabAppSettings</a></code> | <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsJupyterLabAppSettings">SagemakerUserProfileUserSettingsJupyterLabAppSettings</a></code> | jupyter_lab_app_settings block. |
 | <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettings.property.jupyterServerAppSettings">JupyterServerAppSettings</a></code> | <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsJupyterServerAppSettings">SagemakerUserProfileUserSettingsJupyterServerAppSettings</a></code> | jupyter_server_app_settings block. |
 | <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettings.property.kernelGatewayAppSettings">KernelGatewayAppSettings</a></code> | <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsKernelGatewayAppSettings">SagemakerUserProfileUserSettingsKernelGatewayAppSettings</a></code> | kernel_gateway_app_settings block. |
 | <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettings.property.rSessionAppSettings">RSessionAppSettings</a></code> | <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsRSessionAppSettings">SagemakerUserProfileUserSettingsRSessionAppSettings</a></code> | r_session_app_settings block. |
 | <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettings.property.rStudioServerProAppSettings">RStudioServerProAppSettings</a></code> | <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsRStudioServerProAppSettings">SagemakerUserProfileUserSettingsRStudioServerProAppSettings</a></code> | r_studio_server_pro_app_settings block. |
-| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettings.property.securityGroups">SecurityGroups</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#security_groups SagemakerUserProfile#security_groups}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettings.property.securityGroups">SecurityGroups</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#security_groups SagemakerUserProfile#security_groups}. |
 | <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettings.property.sharingSettings">SharingSettings</a></code> | <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsSharingSettings">SagemakerUserProfileUserSettingsSharingSettings</a></code> | sharing_settings block. |
 | <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettings.property.spaceStorageSettings">SpaceStorageSettings</a></code> | <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsSpaceStorageSettings">SagemakerUserProfileUserSettingsSpaceStorageSettings</a></code> | space_storage_settings block. |
-| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettings.property.studioWebPortal">StudioWebPortal</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#studio_web_portal SagemakerUserProfile#studio_web_portal}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettings.property.studioWebPortal">StudioWebPortal</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#studio_web_portal SagemakerUserProfile#studio_web_portal}. |
 | <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettings.property.studioWebPortalSettings">StudioWebPortalSettings</a></code> | <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsStudioWebPortalSettings">SagemakerUserProfileUserSettingsStudioWebPortalSettings</a></code> | studio_web_portal_settings block. |
 | <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettings.property.tensorBoardAppSettings">TensorBoardAppSettings</a></code> | <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsTensorBoardAppSettings">SagemakerUserProfileUserSettingsTensorBoardAppSettings</a></code> | tensor_board_app_settings block. |
 
@@ -1241,7 +1241,7 @@ ExecutionRole *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#execution_role SagemakerUserProfile#execution_role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#execution_role SagemakerUserProfile#execution_role}.
 
 ---
 
@@ -1253,7 +1253,7 @@ AutoMountHomeEfs *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#auto_mount_home_efs SagemakerUserProfile#auto_mount_home_efs}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#auto_mount_home_efs SagemakerUserProfile#auto_mount_home_efs}.
 
 ---
 
@@ -1267,7 +1267,7 @@ CanvasAppSettings SagemakerUserProfileUserSettingsCanvasAppSettings
 
 canvas_app_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#canvas_app_settings SagemakerUserProfile#canvas_app_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#canvas_app_settings SagemakerUserProfile#canvas_app_settings}
 
 ---
 
@@ -1281,7 +1281,7 @@ CodeEditorAppSettings SagemakerUserProfileUserSettingsCodeEditorAppSettings
 
 code_editor_app_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#code_editor_app_settings SagemakerUserProfile#code_editor_app_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#code_editor_app_settings SagemakerUserProfile#code_editor_app_settings}
 
 ---
 
@@ -1295,7 +1295,7 @@ CustomFileSystemConfig interface{}
 
 custom_file_system_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#custom_file_system_config SagemakerUserProfile#custom_file_system_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#custom_file_system_config SagemakerUserProfile#custom_file_system_config}
 
 ---
 
@@ -1309,7 +1309,7 @@ CustomPosixUserConfig SagemakerUserProfileUserSettingsCustomPosixUserConfig
 
 custom_posix_user_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#custom_posix_user_config SagemakerUserProfile#custom_posix_user_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#custom_posix_user_config SagemakerUserProfile#custom_posix_user_config}
 
 ---
 
@@ -1321,7 +1321,7 @@ DefaultLandingUri *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#default_landing_uri SagemakerUserProfile#default_landing_uri}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#default_landing_uri SagemakerUserProfile#default_landing_uri}.
 
 ---
 
@@ -1335,7 +1335,7 @@ JupyterLabAppSettings SagemakerUserProfileUserSettingsJupyterLabAppSettings
 
 jupyter_lab_app_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#jupyter_lab_app_settings SagemakerUserProfile#jupyter_lab_app_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#jupyter_lab_app_settings SagemakerUserProfile#jupyter_lab_app_settings}
 
 ---
 
@@ -1349,7 +1349,7 @@ JupyterServerAppSettings SagemakerUserProfileUserSettingsJupyterServerAppSetting
 
 jupyter_server_app_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#jupyter_server_app_settings SagemakerUserProfile#jupyter_server_app_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#jupyter_server_app_settings SagemakerUserProfile#jupyter_server_app_settings}
 
 ---
 
@@ -1363,7 +1363,7 @@ KernelGatewayAppSettings SagemakerUserProfileUserSettingsKernelGatewayAppSetting
 
 kernel_gateway_app_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#kernel_gateway_app_settings SagemakerUserProfile#kernel_gateway_app_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#kernel_gateway_app_settings SagemakerUserProfile#kernel_gateway_app_settings}
 
 ---
 
@@ -1377,7 +1377,7 @@ RSessionAppSettings SagemakerUserProfileUserSettingsRSessionAppSettings
 
 r_session_app_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#r_session_app_settings SagemakerUserProfile#r_session_app_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#r_session_app_settings SagemakerUserProfile#r_session_app_settings}
 
 ---
 
@@ -1391,7 +1391,7 @@ RStudioServerProAppSettings SagemakerUserProfileUserSettingsRStudioServerProAppS
 
 r_studio_server_pro_app_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#r_studio_server_pro_app_settings SagemakerUserProfile#r_studio_server_pro_app_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#r_studio_server_pro_app_settings SagemakerUserProfile#r_studio_server_pro_app_settings}
 
 ---
 
@@ -1403,7 +1403,7 @@ SecurityGroups *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#security_groups SagemakerUserProfile#security_groups}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#security_groups SagemakerUserProfile#security_groups}.
 
 ---
 
@@ -1417,7 +1417,7 @@ SharingSettings SagemakerUserProfileUserSettingsSharingSettings
 
 sharing_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#sharing_settings SagemakerUserProfile#sharing_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#sharing_settings SagemakerUserProfile#sharing_settings}
 
 ---
 
@@ -1431,7 +1431,7 @@ SpaceStorageSettings SagemakerUserProfileUserSettingsSpaceStorageSettings
 
 space_storage_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#space_storage_settings SagemakerUserProfile#space_storage_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#space_storage_settings SagemakerUserProfile#space_storage_settings}
 
 ---
 
@@ -1443,7 +1443,7 @@ StudioWebPortal *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#studio_web_portal SagemakerUserProfile#studio_web_portal}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#studio_web_portal SagemakerUserProfile#studio_web_portal}.
 
 ---
 
@@ -1457,7 +1457,7 @@ StudioWebPortalSettings SagemakerUserProfileUserSettingsStudioWebPortalSettings
 
 studio_web_portal_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#studio_web_portal_settings SagemakerUserProfile#studio_web_portal_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#studio_web_portal_settings SagemakerUserProfile#studio_web_portal_settings}
 
 ---
 
@@ -1471,7 +1471,7 @@ TensorBoardAppSettings SagemakerUserProfileUserSettingsTensorBoardAppSettings
 
 tensor_board_app_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#tensor_board_app_settings SagemakerUserProfile#tensor_board_app_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#tensor_board_app_settings SagemakerUserProfile#tensor_board_app_settings}
 
 ---
 
@@ -1480,17 +1480,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsCanvasAppSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakeruserprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/sagemakeruserprofile"
 
 &sagemakeruserprofile.SagemakerUserProfileUserSettingsCanvasAppSettings {
-	DirectDeploySettings: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.sagemakerUserProfile.SagemakerUserProfileUserSettingsCanvasAppSettingsDirectDeploySettings,
-	EmrServerlessSettings: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.sagemakerUserProfile.SagemakerUserProfileUserSettingsCanvasAppSettingsEmrServerlessSettings,
-	GenerativeAiSettings: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.sagemakerUserProfile.SagemakerUserProfileUserSettingsCanvasAppSettingsGenerativeAiSettings,
+	DirectDeploySettings: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.sagemakerUserProfile.SagemakerUserProfileUserSettingsCanvasAppSettingsDirectDeploySettings,
+	EmrServerlessSettings: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.sagemakerUserProfile.SagemakerUserProfileUserSettingsCanvasAppSettingsEmrServerlessSettings,
+	GenerativeAiSettings: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.sagemakerUserProfile.SagemakerUserProfileUserSettingsCanvasAppSettingsGenerativeAiSettings,
 	IdentityProviderOauthSettings: interface{},
-	KendraSettings: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.sagemakerUserProfile.SagemakerUserProfileUserSettingsCanvasAppSettingsKendraSettings,
-	ModelRegisterSettings: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.sagemakerUserProfile.SagemakerUserProfileUserSettingsCanvasAppSettingsModelRegisterSettings,
-	TimeSeriesForecastingSettings: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.sagemakerUserProfile.SagemakerUserProfileUserSettingsCanvasAppSettingsTimeSeriesForecastingSettings,
-	WorkspaceSettings: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.sagemakerUserProfile.SagemakerUserProfileUserSettingsCanvasAppSettingsWorkspaceSettings,
+	KendraSettings: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.sagemakerUserProfile.SagemakerUserProfileUserSettingsCanvasAppSettingsKendraSettings,
+	ModelRegisterSettings: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.sagemakerUserProfile.SagemakerUserProfileUserSettingsCanvasAppSettingsModelRegisterSettings,
+	TimeSeriesForecastingSettings: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.sagemakerUserProfile.SagemakerUserProfileUserSettingsCanvasAppSettingsTimeSeriesForecastingSettings,
+	WorkspaceSettings: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.sagemakerUserProfile.SagemakerUserProfileUserSettingsCanvasAppSettingsWorkspaceSettings,
 }
 ```
 
@@ -1519,7 +1519,7 @@ DirectDeploySettings SagemakerUserProfileUserSettingsCanvasAppSettingsDirectDepl
 
 direct_deploy_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#direct_deploy_settings SagemakerUserProfile#direct_deploy_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#direct_deploy_settings SagemakerUserProfile#direct_deploy_settings}
 
 ---
 
@@ -1533,7 +1533,7 @@ EmrServerlessSettings SagemakerUserProfileUserSettingsCanvasAppSettingsEmrServer
 
 emr_serverless_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#emr_serverless_settings SagemakerUserProfile#emr_serverless_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#emr_serverless_settings SagemakerUserProfile#emr_serverless_settings}
 
 ---
 
@@ -1547,7 +1547,7 @@ GenerativeAiSettings SagemakerUserProfileUserSettingsCanvasAppSettingsGenerative
 
 generative_ai_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#generative_ai_settings SagemakerUserProfile#generative_ai_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#generative_ai_settings SagemakerUserProfile#generative_ai_settings}
 
 ---
 
@@ -1561,7 +1561,7 @@ IdentityProviderOauthSettings interface{}
 
 identity_provider_oauth_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#identity_provider_oauth_settings SagemakerUserProfile#identity_provider_oauth_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#identity_provider_oauth_settings SagemakerUserProfile#identity_provider_oauth_settings}
 
 ---
 
@@ -1575,7 +1575,7 @@ KendraSettings SagemakerUserProfileUserSettingsCanvasAppSettingsKendraSettings
 
 kendra_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#kendra_settings SagemakerUserProfile#kendra_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#kendra_settings SagemakerUserProfile#kendra_settings}
 
 ---
 
@@ -1589,7 +1589,7 @@ ModelRegisterSettings SagemakerUserProfileUserSettingsCanvasAppSettingsModelRegi
 
 model_register_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#model_register_settings SagemakerUserProfile#model_register_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#model_register_settings SagemakerUserProfile#model_register_settings}
 
 ---
 
@@ -1603,7 +1603,7 @@ TimeSeriesForecastingSettings SagemakerUserProfileUserSettingsCanvasAppSettingsT
 
 time_series_forecasting_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#time_series_forecasting_settings SagemakerUserProfile#time_series_forecasting_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#time_series_forecasting_settings SagemakerUserProfile#time_series_forecasting_settings}
 
 ---
 
@@ -1617,7 +1617,7 @@ WorkspaceSettings SagemakerUserProfileUserSettingsCanvasAppSettingsWorkspaceSett
 
 workspace_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#workspace_settings SagemakerUserProfile#workspace_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#workspace_settings SagemakerUserProfile#workspace_settings}
 
 ---
 
@@ -1626,7 +1626,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsCanvasAppSettingsDirectDeploySettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakeruserprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/sagemakeruserprofile"
 
 &sagemakeruserprofile.SagemakerUserProfileUserSettingsCanvasAppSettingsDirectDeploySettings {
 	Status: *string,
@@ -1637,7 +1637,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakeruserprofile"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsCanvasAppSettingsDirectDeploySettings.property.status">Status</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#status SagemakerUserProfile#status}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsCanvasAppSettingsDirectDeploySettings.property.status">Status</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#status SagemakerUserProfile#status}. |
 
 ---
 
@@ -1649,7 +1649,7 @@ Status *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#status SagemakerUserProfile#status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#status SagemakerUserProfile#status}.
 
 ---
 
@@ -1658,7 +1658,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsCanvasAppSettingsEmrServerlessSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakeruserprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/sagemakeruserprofile"
 
 &sagemakeruserprofile.SagemakerUserProfileUserSettingsCanvasAppSettingsEmrServerlessSettings {
 	ExecutionRoleArn: *string,
@@ -1670,8 +1670,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakeruserprofile"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsCanvasAppSettingsEmrServerlessSettings.property.executionRoleArn">ExecutionRoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#execution_role_arn SagemakerUserProfile#execution_role_arn}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsCanvasAppSettingsEmrServerlessSettings.property.status">Status</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#status SagemakerUserProfile#status}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsCanvasAppSettingsEmrServerlessSettings.property.executionRoleArn">ExecutionRoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#execution_role_arn SagemakerUserProfile#execution_role_arn}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsCanvasAppSettingsEmrServerlessSettings.property.status">Status</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#status SagemakerUserProfile#status}. |
 
 ---
 
@@ -1683,7 +1683,7 @@ ExecutionRoleArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#execution_role_arn SagemakerUserProfile#execution_role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#execution_role_arn SagemakerUserProfile#execution_role_arn}.
 
 ---
 
@@ -1695,7 +1695,7 @@ Status *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#status SagemakerUserProfile#status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#status SagemakerUserProfile#status}.
 
 ---
 
@@ -1704,7 +1704,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsCanvasAppSettingsGenerativeAiSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakeruserprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/sagemakeruserprofile"
 
 &sagemakeruserprofile.SagemakerUserProfileUserSettingsCanvasAppSettingsGenerativeAiSettings {
 	AmazonBedrockRoleArn: *string,
@@ -1715,7 +1715,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakeruserprofile"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsCanvasAppSettingsGenerativeAiSettings.property.amazonBedrockRoleArn">AmazonBedrockRoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#amazon_bedrock_role_arn SagemakerUserProfile#amazon_bedrock_role_arn}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsCanvasAppSettingsGenerativeAiSettings.property.amazonBedrockRoleArn">AmazonBedrockRoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#amazon_bedrock_role_arn SagemakerUserProfile#amazon_bedrock_role_arn}. |
 
 ---
 
@@ -1727,7 +1727,7 @@ AmazonBedrockRoleArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#amazon_bedrock_role_arn SagemakerUserProfile#amazon_bedrock_role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#amazon_bedrock_role_arn SagemakerUserProfile#amazon_bedrock_role_arn}.
 
 ---
 
@@ -1736,7 +1736,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsCanvasAppSettingsIdentityProviderOauthSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakeruserprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/sagemakeruserprofile"
 
 &sagemakeruserprofile.SagemakerUserProfileUserSettingsCanvasAppSettingsIdentityProviderOauthSettings {
 	SecretArn: *string,
@@ -1749,9 +1749,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakeruserprofile"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsCanvasAppSettingsIdentityProviderOauthSettings.property.secretArn">SecretArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#secret_arn SagemakerUserProfile#secret_arn}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsCanvasAppSettingsIdentityProviderOauthSettings.property.dataSourceName">DataSourceName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#data_source_name SagemakerUserProfile#data_source_name}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsCanvasAppSettingsIdentityProviderOauthSettings.property.status">Status</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#status SagemakerUserProfile#status}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsCanvasAppSettingsIdentityProviderOauthSettings.property.secretArn">SecretArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#secret_arn SagemakerUserProfile#secret_arn}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsCanvasAppSettingsIdentityProviderOauthSettings.property.dataSourceName">DataSourceName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#data_source_name SagemakerUserProfile#data_source_name}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsCanvasAppSettingsIdentityProviderOauthSettings.property.status">Status</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#status SagemakerUserProfile#status}. |
 
 ---
 
@@ -1763,7 +1763,7 @@ SecretArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#secret_arn SagemakerUserProfile#secret_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#secret_arn SagemakerUserProfile#secret_arn}.
 
 ---
 
@@ -1775,7 +1775,7 @@ DataSourceName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#data_source_name SagemakerUserProfile#data_source_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#data_source_name SagemakerUserProfile#data_source_name}.
 
 ---
 
@@ -1787,7 +1787,7 @@ Status *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#status SagemakerUserProfile#status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#status SagemakerUserProfile#status}.
 
 ---
 
@@ -1796,7 +1796,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsCanvasAppSettingsKendraSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakeruserprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/sagemakeruserprofile"
 
 &sagemakeruserprofile.SagemakerUserProfileUserSettingsCanvasAppSettingsKendraSettings {
 	Status: *string,
@@ -1807,7 +1807,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakeruserprofile"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsCanvasAppSettingsKendraSettings.property.status">Status</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#status SagemakerUserProfile#status}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsCanvasAppSettingsKendraSettings.property.status">Status</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#status SagemakerUserProfile#status}. |
 
 ---
 
@@ -1819,7 +1819,7 @@ Status *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#status SagemakerUserProfile#status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#status SagemakerUserProfile#status}.
 
 ---
 
@@ -1828,7 +1828,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsCanvasAppSettingsModelRegisterSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakeruserprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/sagemakeruserprofile"
 
 &sagemakeruserprofile.SagemakerUserProfileUserSettingsCanvasAppSettingsModelRegisterSettings {
 	CrossAccountModelRegisterRoleArn: *string,
@@ -1840,8 +1840,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakeruserprofile"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsCanvasAppSettingsModelRegisterSettings.property.crossAccountModelRegisterRoleArn">CrossAccountModelRegisterRoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#cross_account_model_register_role_arn SagemakerUserProfile#cross_account_model_register_role_arn}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsCanvasAppSettingsModelRegisterSettings.property.status">Status</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#status SagemakerUserProfile#status}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsCanvasAppSettingsModelRegisterSettings.property.crossAccountModelRegisterRoleArn">CrossAccountModelRegisterRoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#cross_account_model_register_role_arn SagemakerUserProfile#cross_account_model_register_role_arn}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsCanvasAppSettingsModelRegisterSettings.property.status">Status</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#status SagemakerUserProfile#status}. |
 
 ---
 
@@ -1853,7 +1853,7 @@ CrossAccountModelRegisterRoleArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#cross_account_model_register_role_arn SagemakerUserProfile#cross_account_model_register_role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#cross_account_model_register_role_arn SagemakerUserProfile#cross_account_model_register_role_arn}.
 
 ---
 
@@ -1865,7 +1865,7 @@ Status *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#status SagemakerUserProfile#status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#status SagemakerUserProfile#status}.
 
 ---
 
@@ -1874,7 +1874,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsCanvasAppSettingsTimeSeriesForecastingSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakeruserprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/sagemakeruserprofile"
 
 &sagemakeruserprofile.SagemakerUserProfileUserSettingsCanvasAppSettingsTimeSeriesForecastingSettings {
 	AmazonForecastRoleArn: *string,
@@ -1886,8 +1886,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakeruserprofile"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsCanvasAppSettingsTimeSeriesForecastingSettings.property.amazonForecastRoleArn">AmazonForecastRoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#amazon_forecast_role_arn SagemakerUserProfile#amazon_forecast_role_arn}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsCanvasAppSettingsTimeSeriesForecastingSettings.property.status">Status</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#status SagemakerUserProfile#status}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsCanvasAppSettingsTimeSeriesForecastingSettings.property.amazonForecastRoleArn">AmazonForecastRoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#amazon_forecast_role_arn SagemakerUserProfile#amazon_forecast_role_arn}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsCanvasAppSettingsTimeSeriesForecastingSettings.property.status">Status</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#status SagemakerUserProfile#status}. |
 
 ---
 
@@ -1899,7 +1899,7 @@ AmazonForecastRoleArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#amazon_forecast_role_arn SagemakerUserProfile#amazon_forecast_role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#amazon_forecast_role_arn SagemakerUserProfile#amazon_forecast_role_arn}.
 
 ---
 
@@ -1911,7 +1911,7 @@ Status *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#status SagemakerUserProfile#status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#status SagemakerUserProfile#status}.
 
 ---
 
@@ -1920,7 +1920,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsCanvasAppSettingsWorkspaceSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakeruserprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/sagemakeruserprofile"
 
 &sagemakeruserprofile.SagemakerUserProfileUserSettingsCanvasAppSettingsWorkspaceSettings {
 	S3ArtifactPath: *string,
@@ -1932,8 +1932,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakeruserprofile"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsCanvasAppSettingsWorkspaceSettings.property.s3ArtifactPath">S3ArtifactPath</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#s3_artifact_path SagemakerUserProfile#s3_artifact_path}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsCanvasAppSettingsWorkspaceSettings.property.s3KmsKeyId">S3KmsKeyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#s3_kms_key_id SagemakerUserProfile#s3_kms_key_id}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsCanvasAppSettingsWorkspaceSettings.property.s3ArtifactPath">S3ArtifactPath</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#s3_artifact_path SagemakerUserProfile#s3_artifact_path}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsCanvasAppSettingsWorkspaceSettings.property.s3KmsKeyId">S3KmsKeyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#s3_kms_key_id SagemakerUserProfile#s3_kms_key_id}. |
 
 ---
 
@@ -1945,7 +1945,7 @@ S3ArtifactPath *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#s3_artifact_path SagemakerUserProfile#s3_artifact_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#s3_artifact_path SagemakerUserProfile#s3_artifact_path}.
 
 ---
 
@@ -1957,7 +1957,7 @@ S3KmsKeyId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#s3_kms_key_id SagemakerUserProfile#s3_kms_key_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#s3_kms_key_id SagemakerUserProfile#s3_kms_key_id}.
 
 ---
 
@@ -1966,13 +1966,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsCodeEditorAppSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakeruserprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/sagemakeruserprofile"
 
 &sagemakeruserprofile.SagemakerUserProfileUserSettingsCodeEditorAppSettings {
-	AppLifecycleManagement: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.sagemakerUserProfile.SagemakerUserProfileUserSettingsCodeEditorAppSettingsAppLifecycleManagement,
+	AppLifecycleManagement: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.sagemakerUserProfile.SagemakerUserProfileUserSettingsCodeEditorAppSettingsAppLifecycleManagement,
 	BuiltInLifecycleConfigArn: *string,
 	CustomImage: interface{},
-	DefaultResourceSpec: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.sagemakerUserProfile.SagemakerUserProfileUserSettingsCodeEditorAppSettingsDefaultResourceSpec,
+	DefaultResourceSpec: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.sagemakerUserProfile.SagemakerUserProfileUserSettingsCodeEditorAppSettingsDefaultResourceSpec,
 	LifecycleConfigArns: *[]*string,
 }
 ```
@@ -1982,10 +1982,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakeruserprofile"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsCodeEditorAppSettings.property.appLifecycleManagement">AppLifecycleManagement</a></code> | <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsCodeEditorAppSettingsAppLifecycleManagement">SagemakerUserProfileUserSettingsCodeEditorAppSettingsAppLifecycleManagement</a></code> | app_lifecycle_management block. |
-| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsCodeEditorAppSettings.property.builtInLifecycleConfigArn">BuiltInLifecycleConfigArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#built_in_lifecycle_config_arn SagemakerUserProfile#built_in_lifecycle_config_arn}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsCodeEditorAppSettings.property.builtInLifecycleConfigArn">BuiltInLifecycleConfigArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#built_in_lifecycle_config_arn SagemakerUserProfile#built_in_lifecycle_config_arn}. |
 | <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsCodeEditorAppSettings.property.customImage">CustomImage</a></code> | <code>interface{}</code> | custom_image block. |
 | <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsCodeEditorAppSettings.property.defaultResourceSpec">DefaultResourceSpec</a></code> | <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsCodeEditorAppSettingsDefaultResourceSpec">SagemakerUserProfileUserSettingsCodeEditorAppSettingsDefaultResourceSpec</a></code> | default_resource_spec block. |
-| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsCodeEditorAppSettings.property.lifecycleConfigArns">LifecycleConfigArns</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#lifecycle_config_arns SagemakerUserProfile#lifecycle_config_arns}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsCodeEditorAppSettings.property.lifecycleConfigArns">LifecycleConfigArns</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#lifecycle_config_arns SagemakerUserProfile#lifecycle_config_arns}. |
 
 ---
 
@@ -1999,7 +1999,7 @@ AppLifecycleManagement SagemakerUserProfileUserSettingsCodeEditorAppSettingsAppL
 
 app_lifecycle_management block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#app_lifecycle_management SagemakerUserProfile#app_lifecycle_management}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#app_lifecycle_management SagemakerUserProfile#app_lifecycle_management}
 
 ---
 
@@ -2011,7 +2011,7 @@ BuiltInLifecycleConfigArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#built_in_lifecycle_config_arn SagemakerUserProfile#built_in_lifecycle_config_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#built_in_lifecycle_config_arn SagemakerUserProfile#built_in_lifecycle_config_arn}.
 
 ---
 
@@ -2025,7 +2025,7 @@ CustomImage interface{}
 
 custom_image block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#custom_image SagemakerUserProfile#custom_image}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#custom_image SagemakerUserProfile#custom_image}
 
 ---
 
@@ -2039,7 +2039,7 @@ DefaultResourceSpec SagemakerUserProfileUserSettingsCodeEditorAppSettingsDefault
 
 default_resource_spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#default_resource_spec SagemakerUserProfile#default_resource_spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#default_resource_spec SagemakerUserProfile#default_resource_spec}
 
 ---
 
@@ -2051,7 +2051,7 @@ LifecycleConfigArns *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#lifecycle_config_arns SagemakerUserProfile#lifecycle_config_arns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#lifecycle_config_arns SagemakerUserProfile#lifecycle_config_arns}.
 
 ---
 
@@ -2060,10 +2060,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsCodeEditorAppSettingsAppLifecycleManagement.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakeruserprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/sagemakeruserprofile"
 
 &sagemakeruserprofile.SagemakerUserProfileUserSettingsCodeEditorAppSettingsAppLifecycleManagement {
-	IdleSettings: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.sagemakerUserProfile.SagemakerUserProfileUserSettingsCodeEditorAppSettingsAppLifecycleManagementIdleSettings,
+	IdleSettings: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.sagemakerUserProfile.SagemakerUserProfileUserSettingsCodeEditorAppSettingsAppLifecycleManagementIdleSettings,
 }
 ```
 
@@ -2085,7 +2085,7 @@ IdleSettings SagemakerUserProfileUserSettingsCodeEditorAppSettingsAppLifecycleMa
 
 idle_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#idle_settings SagemakerUserProfile#idle_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#idle_settings SagemakerUserProfile#idle_settings}
 
 ---
 
@@ -2094,7 +2094,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsCodeEditorAppSettingsAppLifecycleManagementIdleSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakeruserprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/sagemakeruserprofile"
 
 &sagemakeruserprofile.SagemakerUserProfileUserSettingsCodeEditorAppSettingsAppLifecycleManagementIdleSettings {
 	IdleTimeoutInMinutes: *f64,
@@ -2108,10 +2108,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakeruserprofile"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsCodeEditorAppSettingsAppLifecycleManagementIdleSettings.property.idleTimeoutInMinutes">IdleTimeoutInMinutes</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#idle_timeout_in_minutes SagemakerUserProfile#idle_timeout_in_minutes}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsCodeEditorAppSettingsAppLifecycleManagementIdleSettings.property.lifecycleManagement">LifecycleManagement</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#lifecycle_management SagemakerUserProfile#lifecycle_management}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsCodeEditorAppSettingsAppLifecycleManagementIdleSettings.property.maxIdleTimeoutInMinutes">MaxIdleTimeoutInMinutes</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#max_idle_timeout_in_minutes SagemakerUserProfile#max_idle_timeout_in_minutes}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsCodeEditorAppSettingsAppLifecycleManagementIdleSettings.property.minIdleTimeoutInMinutes">MinIdleTimeoutInMinutes</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#min_idle_timeout_in_minutes SagemakerUserProfile#min_idle_timeout_in_minutes}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsCodeEditorAppSettingsAppLifecycleManagementIdleSettings.property.idleTimeoutInMinutes">IdleTimeoutInMinutes</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#idle_timeout_in_minutes SagemakerUserProfile#idle_timeout_in_minutes}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsCodeEditorAppSettingsAppLifecycleManagementIdleSettings.property.lifecycleManagement">LifecycleManagement</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#lifecycle_management SagemakerUserProfile#lifecycle_management}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsCodeEditorAppSettingsAppLifecycleManagementIdleSettings.property.maxIdleTimeoutInMinutes">MaxIdleTimeoutInMinutes</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#max_idle_timeout_in_minutes SagemakerUserProfile#max_idle_timeout_in_minutes}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsCodeEditorAppSettingsAppLifecycleManagementIdleSettings.property.minIdleTimeoutInMinutes">MinIdleTimeoutInMinutes</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#min_idle_timeout_in_minutes SagemakerUserProfile#min_idle_timeout_in_minutes}. |
 
 ---
 
@@ -2123,7 +2123,7 @@ IdleTimeoutInMinutes *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#idle_timeout_in_minutes SagemakerUserProfile#idle_timeout_in_minutes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#idle_timeout_in_minutes SagemakerUserProfile#idle_timeout_in_minutes}.
 
 ---
 
@@ -2135,7 +2135,7 @@ LifecycleManagement *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#lifecycle_management SagemakerUserProfile#lifecycle_management}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#lifecycle_management SagemakerUserProfile#lifecycle_management}.
 
 ---
 
@@ -2147,7 +2147,7 @@ MaxIdleTimeoutInMinutes *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#max_idle_timeout_in_minutes SagemakerUserProfile#max_idle_timeout_in_minutes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#max_idle_timeout_in_minutes SagemakerUserProfile#max_idle_timeout_in_minutes}.
 
 ---
 
@@ -2159,7 +2159,7 @@ MinIdleTimeoutInMinutes *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#min_idle_timeout_in_minutes SagemakerUserProfile#min_idle_timeout_in_minutes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#min_idle_timeout_in_minutes SagemakerUserProfile#min_idle_timeout_in_minutes}.
 
 ---
 
@@ -2168,7 +2168,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsCodeEditorAppSettingsCustomImage.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakeruserprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/sagemakeruserprofile"
 
 &sagemakeruserprofile.SagemakerUserProfileUserSettingsCodeEditorAppSettingsCustomImage {
 	AppImageConfigName: *string,
@@ -2181,9 +2181,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakeruserprofile"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsCodeEditorAppSettingsCustomImage.property.appImageConfigName">AppImageConfigName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#app_image_config_name SagemakerUserProfile#app_image_config_name}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsCodeEditorAppSettingsCustomImage.property.imageName">ImageName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#image_name SagemakerUserProfile#image_name}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsCodeEditorAppSettingsCustomImage.property.imageVersionNumber">ImageVersionNumber</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#image_version_number SagemakerUserProfile#image_version_number}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsCodeEditorAppSettingsCustomImage.property.appImageConfigName">AppImageConfigName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#app_image_config_name SagemakerUserProfile#app_image_config_name}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsCodeEditorAppSettingsCustomImage.property.imageName">ImageName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#image_name SagemakerUserProfile#image_name}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsCodeEditorAppSettingsCustomImage.property.imageVersionNumber">ImageVersionNumber</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#image_version_number SagemakerUserProfile#image_version_number}. |
 
 ---
 
@@ -2195,7 +2195,7 @@ AppImageConfigName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#app_image_config_name SagemakerUserProfile#app_image_config_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#app_image_config_name SagemakerUserProfile#app_image_config_name}.
 
 ---
 
@@ -2207,7 +2207,7 @@ ImageName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#image_name SagemakerUserProfile#image_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#image_name SagemakerUserProfile#image_name}.
 
 ---
 
@@ -2219,7 +2219,7 @@ ImageVersionNumber *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#image_version_number SagemakerUserProfile#image_version_number}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#image_version_number SagemakerUserProfile#image_version_number}.
 
 ---
 
@@ -2228,7 +2228,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsCodeEditorAppSettingsDefaultResourceSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakeruserprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/sagemakeruserprofile"
 
 &sagemakeruserprofile.SagemakerUserProfileUserSettingsCodeEditorAppSettingsDefaultResourceSpec {
 	InstanceType: *string,
@@ -2243,11 +2243,11 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakeruserprofile"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsCodeEditorAppSettingsDefaultResourceSpec.property.instanceType">InstanceType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#instance_type SagemakerUserProfile#instance_type}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsCodeEditorAppSettingsDefaultResourceSpec.property.lifecycleConfigArn">LifecycleConfigArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#lifecycle_config_arn SagemakerUserProfile#lifecycle_config_arn}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsCodeEditorAppSettingsDefaultResourceSpec.property.sagemakerImageArn">SagemakerImageArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#sagemaker_image_arn SagemakerUserProfile#sagemaker_image_arn}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsCodeEditorAppSettingsDefaultResourceSpec.property.sagemakerImageVersionAlias">SagemakerImageVersionAlias</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#sagemaker_image_version_alias SagemakerUserProfile#sagemaker_image_version_alias}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsCodeEditorAppSettingsDefaultResourceSpec.property.sagemakerImageVersionArn">SagemakerImageVersionArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#sagemaker_image_version_arn SagemakerUserProfile#sagemaker_image_version_arn}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsCodeEditorAppSettingsDefaultResourceSpec.property.instanceType">InstanceType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#instance_type SagemakerUserProfile#instance_type}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsCodeEditorAppSettingsDefaultResourceSpec.property.lifecycleConfigArn">LifecycleConfigArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#lifecycle_config_arn SagemakerUserProfile#lifecycle_config_arn}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsCodeEditorAppSettingsDefaultResourceSpec.property.sagemakerImageArn">SagemakerImageArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#sagemaker_image_arn SagemakerUserProfile#sagemaker_image_arn}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsCodeEditorAppSettingsDefaultResourceSpec.property.sagemakerImageVersionAlias">SagemakerImageVersionAlias</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#sagemaker_image_version_alias SagemakerUserProfile#sagemaker_image_version_alias}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsCodeEditorAppSettingsDefaultResourceSpec.property.sagemakerImageVersionArn">SagemakerImageVersionArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#sagemaker_image_version_arn SagemakerUserProfile#sagemaker_image_version_arn}. |
 
 ---
 
@@ -2259,7 +2259,7 @@ InstanceType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#instance_type SagemakerUserProfile#instance_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#instance_type SagemakerUserProfile#instance_type}.
 
 ---
 
@@ -2271,7 +2271,7 @@ LifecycleConfigArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#lifecycle_config_arn SagemakerUserProfile#lifecycle_config_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#lifecycle_config_arn SagemakerUserProfile#lifecycle_config_arn}.
 
 ---
 
@@ -2283,7 +2283,7 @@ SagemakerImageArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#sagemaker_image_arn SagemakerUserProfile#sagemaker_image_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#sagemaker_image_arn SagemakerUserProfile#sagemaker_image_arn}.
 
 ---
 
@@ -2295,7 +2295,7 @@ SagemakerImageVersionAlias *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#sagemaker_image_version_alias SagemakerUserProfile#sagemaker_image_version_alias}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#sagemaker_image_version_alias SagemakerUserProfile#sagemaker_image_version_alias}.
 
 ---
 
@@ -2307,7 +2307,7 @@ SagemakerImageVersionArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#sagemaker_image_version_arn SagemakerUserProfile#sagemaker_image_version_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#sagemaker_image_version_arn SagemakerUserProfile#sagemaker_image_version_arn}.
 
 ---
 
@@ -2316,7 +2316,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsCustomFileSystemConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakeruserprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/sagemakeruserprofile"
 
 &sagemakeruserprofile.SagemakerUserProfileUserSettingsCustomFileSystemConfig {
 	EfsFileSystemConfig: interface{},
@@ -2341,7 +2341,7 @@ EfsFileSystemConfig interface{}
 
 efs_file_system_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#efs_file_system_config SagemakerUserProfile#efs_file_system_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#efs_file_system_config SagemakerUserProfile#efs_file_system_config}
 
 ---
 
@@ -2350,7 +2350,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsCustomFileSystemConfigEfsFileSystemConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakeruserprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/sagemakeruserprofile"
 
 &sagemakeruserprofile.SagemakerUserProfileUserSettingsCustomFileSystemConfigEfsFileSystemConfig {
 	FileSystemId: *string,
@@ -2362,8 +2362,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakeruserprofile"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsCustomFileSystemConfigEfsFileSystemConfig.property.fileSystemId">FileSystemId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#file_system_id SagemakerUserProfile#file_system_id}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsCustomFileSystemConfigEfsFileSystemConfig.property.fileSystemPath">FileSystemPath</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#file_system_path SagemakerUserProfile#file_system_path}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsCustomFileSystemConfigEfsFileSystemConfig.property.fileSystemId">FileSystemId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#file_system_id SagemakerUserProfile#file_system_id}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsCustomFileSystemConfigEfsFileSystemConfig.property.fileSystemPath">FileSystemPath</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#file_system_path SagemakerUserProfile#file_system_path}. |
 
 ---
 
@@ -2375,7 +2375,7 @@ FileSystemId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#file_system_id SagemakerUserProfile#file_system_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#file_system_id SagemakerUserProfile#file_system_id}.
 
 ---
 
@@ -2387,7 +2387,7 @@ FileSystemPath *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#file_system_path SagemakerUserProfile#file_system_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#file_system_path SagemakerUserProfile#file_system_path}.
 
 ---
 
@@ -2396,7 +2396,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsCustomPosixUserConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakeruserprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/sagemakeruserprofile"
 
 &sagemakeruserprofile.SagemakerUserProfileUserSettingsCustomPosixUserConfig {
 	Gid: *f64,
@@ -2408,8 +2408,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakeruserprofile"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsCustomPosixUserConfig.property.gid">Gid</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#gid SagemakerUserProfile#gid}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsCustomPosixUserConfig.property.uid">Uid</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#uid SagemakerUserProfile#uid}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsCustomPosixUserConfig.property.gid">Gid</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#gid SagemakerUserProfile#gid}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsCustomPosixUserConfig.property.uid">Uid</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#uid SagemakerUserProfile#uid}. |
 
 ---
 
@@ -2421,7 +2421,7 @@ Gid *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#gid SagemakerUserProfile#gid}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#gid SagemakerUserProfile#gid}.
 
 ---
 
@@ -2433,7 +2433,7 @@ Uid *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#uid SagemakerUserProfile#uid}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#uid SagemakerUserProfile#uid}.
 
 ---
 
@@ -2442,15 +2442,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsJupyterLabAppSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakeruserprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/sagemakeruserprofile"
 
 &sagemakeruserprofile.SagemakerUserProfileUserSettingsJupyterLabAppSettings {
-	AppLifecycleManagement: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.sagemakerUserProfile.SagemakerUserProfileUserSettingsJupyterLabAppSettingsAppLifecycleManagement,
+	AppLifecycleManagement: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.sagemakerUserProfile.SagemakerUserProfileUserSettingsJupyterLabAppSettingsAppLifecycleManagement,
 	BuiltInLifecycleConfigArn: *string,
 	CodeRepository: interface{},
 	CustomImage: interface{},
-	DefaultResourceSpec: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.sagemakerUserProfile.SagemakerUserProfileUserSettingsJupyterLabAppSettingsDefaultResourceSpec,
-	EmrSettings: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.sagemakerUserProfile.SagemakerUserProfileUserSettingsJupyterLabAppSettingsEmrSettings,
+	DefaultResourceSpec: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.sagemakerUserProfile.SagemakerUserProfileUserSettingsJupyterLabAppSettingsDefaultResourceSpec,
+	EmrSettings: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.sagemakerUserProfile.SagemakerUserProfileUserSettingsJupyterLabAppSettingsEmrSettings,
 	LifecycleConfigArns: *[]*string,
 }
 ```
@@ -2460,12 +2460,12 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakeruserprofile"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsJupyterLabAppSettings.property.appLifecycleManagement">AppLifecycleManagement</a></code> | <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsJupyterLabAppSettingsAppLifecycleManagement">SagemakerUserProfileUserSettingsJupyterLabAppSettingsAppLifecycleManagement</a></code> | app_lifecycle_management block. |
-| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsJupyterLabAppSettings.property.builtInLifecycleConfigArn">BuiltInLifecycleConfigArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#built_in_lifecycle_config_arn SagemakerUserProfile#built_in_lifecycle_config_arn}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsJupyterLabAppSettings.property.builtInLifecycleConfigArn">BuiltInLifecycleConfigArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#built_in_lifecycle_config_arn SagemakerUserProfile#built_in_lifecycle_config_arn}. |
 | <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsJupyterLabAppSettings.property.codeRepository">CodeRepository</a></code> | <code>interface{}</code> | code_repository block. |
 | <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsJupyterLabAppSettings.property.customImage">CustomImage</a></code> | <code>interface{}</code> | custom_image block. |
 | <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsJupyterLabAppSettings.property.defaultResourceSpec">DefaultResourceSpec</a></code> | <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsJupyterLabAppSettingsDefaultResourceSpec">SagemakerUserProfileUserSettingsJupyterLabAppSettingsDefaultResourceSpec</a></code> | default_resource_spec block. |
 | <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsJupyterLabAppSettings.property.emrSettings">EmrSettings</a></code> | <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsJupyterLabAppSettingsEmrSettings">SagemakerUserProfileUserSettingsJupyterLabAppSettingsEmrSettings</a></code> | emr_settings block. |
-| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsJupyterLabAppSettings.property.lifecycleConfigArns">LifecycleConfigArns</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#lifecycle_config_arns SagemakerUserProfile#lifecycle_config_arns}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsJupyterLabAppSettings.property.lifecycleConfigArns">LifecycleConfigArns</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#lifecycle_config_arns SagemakerUserProfile#lifecycle_config_arns}. |
 
 ---
 
@@ -2479,7 +2479,7 @@ AppLifecycleManagement SagemakerUserProfileUserSettingsJupyterLabAppSettingsAppL
 
 app_lifecycle_management block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#app_lifecycle_management SagemakerUserProfile#app_lifecycle_management}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#app_lifecycle_management SagemakerUserProfile#app_lifecycle_management}
 
 ---
 
@@ -2491,7 +2491,7 @@ BuiltInLifecycleConfigArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#built_in_lifecycle_config_arn SagemakerUserProfile#built_in_lifecycle_config_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#built_in_lifecycle_config_arn SagemakerUserProfile#built_in_lifecycle_config_arn}.
 
 ---
 
@@ -2505,7 +2505,7 @@ CodeRepository interface{}
 
 code_repository block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#code_repository SagemakerUserProfile#code_repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#code_repository SagemakerUserProfile#code_repository}
 
 ---
 
@@ -2519,7 +2519,7 @@ CustomImage interface{}
 
 custom_image block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#custom_image SagemakerUserProfile#custom_image}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#custom_image SagemakerUserProfile#custom_image}
 
 ---
 
@@ -2533,7 +2533,7 @@ DefaultResourceSpec SagemakerUserProfileUserSettingsJupyterLabAppSettingsDefault
 
 default_resource_spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#default_resource_spec SagemakerUserProfile#default_resource_spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#default_resource_spec SagemakerUserProfile#default_resource_spec}
 
 ---
 
@@ -2547,7 +2547,7 @@ EmrSettings SagemakerUserProfileUserSettingsJupyterLabAppSettingsEmrSettings
 
 emr_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#emr_settings SagemakerUserProfile#emr_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#emr_settings SagemakerUserProfile#emr_settings}
 
 ---
 
@@ -2559,7 +2559,7 @@ LifecycleConfigArns *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#lifecycle_config_arns SagemakerUserProfile#lifecycle_config_arns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#lifecycle_config_arns SagemakerUserProfile#lifecycle_config_arns}.
 
 ---
 
@@ -2568,10 +2568,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsJupyterLabAppSettingsAppLifecycleManagement.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakeruserprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/sagemakeruserprofile"
 
 &sagemakeruserprofile.SagemakerUserProfileUserSettingsJupyterLabAppSettingsAppLifecycleManagement {
-	IdleSettings: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.sagemakerUserProfile.SagemakerUserProfileUserSettingsJupyterLabAppSettingsAppLifecycleManagementIdleSettings,
+	IdleSettings: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.sagemakerUserProfile.SagemakerUserProfileUserSettingsJupyterLabAppSettingsAppLifecycleManagementIdleSettings,
 }
 ```
 
@@ -2593,7 +2593,7 @@ IdleSettings SagemakerUserProfileUserSettingsJupyterLabAppSettingsAppLifecycleMa
 
 idle_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#idle_settings SagemakerUserProfile#idle_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#idle_settings SagemakerUserProfile#idle_settings}
 
 ---
 
@@ -2602,7 +2602,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsJupyterLabAppSettingsAppLifecycleManagementIdleSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakeruserprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/sagemakeruserprofile"
 
 &sagemakeruserprofile.SagemakerUserProfileUserSettingsJupyterLabAppSettingsAppLifecycleManagementIdleSettings {
 	IdleTimeoutInMinutes: *f64,
@@ -2616,10 +2616,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakeruserprofile"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsJupyterLabAppSettingsAppLifecycleManagementIdleSettings.property.idleTimeoutInMinutes">IdleTimeoutInMinutes</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#idle_timeout_in_minutes SagemakerUserProfile#idle_timeout_in_minutes}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsJupyterLabAppSettingsAppLifecycleManagementIdleSettings.property.lifecycleManagement">LifecycleManagement</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#lifecycle_management SagemakerUserProfile#lifecycle_management}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsJupyterLabAppSettingsAppLifecycleManagementIdleSettings.property.maxIdleTimeoutInMinutes">MaxIdleTimeoutInMinutes</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#max_idle_timeout_in_minutes SagemakerUserProfile#max_idle_timeout_in_minutes}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsJupyterLabAppSettingsAppLifecycleManagementIdleSettings.property.minIdleTimeoutInMinutes">MinIdleTimeoutInMinutes</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#min_idle_timeout_in_minutes SagemakerUserProfile#min_idle_timeout_in_minutes}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsJupyterLabAppSettingsAppLifecycleManagementIdleSettings.property.idleTimeoutInMinutes">IdleTimeoutInMinutes</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#idle_timeout_in_minutes SagemakerUserProfile#idle_timeout_in_minutes}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsJupyterLabAppSettingsAppLifecycleManagementIdleSettings.property.lifecycleManagement">LifecycleManagement</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#lifecycle_management SagemakerUserProfile#lifecycle_management}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsJupyterLabAppSettingsAppLifecycleManagementIdleSettings.property.maxIdleTimeoutInMinutes">MaxIdleTimeoutInMinutes</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#max_idle_timeout_in_minutes SagemakerUserProfile#max_idle_timeout_in_minutes}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsJupyterLabAppSettingsAppLifecycleManagementIdleSettings.property.minIdleTimeoutInMinutes">MinIdleTimeoutInMinutes</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#min_idle_timeout_in_minutes SagemakerUserProfile#min_idle_timeout_in_minutes}. |
 
 ---
 
@@ -2631,7 +2631,7 @@ IdleTimeoutInMinutes *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#idle_timeout_in_minutes SagemakerUserProfile#idle_timeout_in_minutes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#idle_timeout_in_minutes SagemakerUserProfile#idle_timeout_in_minutes}.
 
 ---
 
@@ -2643,7 +2643,7 @@ LifecycleManagement *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#lifecycle_management SagemakerUserProfile#lifecycle_management}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#lifecycle_management SagemakerUserProfile#lifecycle_management}.
 
 ---
 
@@ -2655,7 +2655,7 @@ MaxIdleTimeoutInMinutes *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#max_idle_timeout_in_minutes SagemakerUserProfile#max_idle_timeout_in_minutes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#max_idle_timeout_in_minutes SagemakerUserProfile#max_idle_timeout_in_minutes}.
 
 ---
 
@@ -2667,7 +2667,7 @@ MinIdleTimeoutInMinutes *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#min_idle_timeout_in_minutes SagemakerUserProfile#min_idle_timeout_in_minutes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#min_idle_timeout_in_minutes SagemakerUserProfile#min_idle_timeout_in_minutes}.
 
 ---
 
@@ -2676,7 +2676,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsJupyterLabAppSettingsCodeRepository.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakeruserprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/sagemakeruserprofile"
 
 &sagemakeruserprofile.SagemakerUserProfileUserSettingsJupyterLabAppSettingsCodeRepository {
 	RepositoryUrl: *string,
@@ -2687,7 +2687,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakeruserprofile"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsJupyterLabAppSettingsCodeRepository.property.repositoryUrl">RepositoryUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#repository_url SagemakerUserProfile#repository_url}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsJupyterLabAppSettingsCodeRepository.property.repositoryUrl">RepositoryUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#repository_url SagemakerUserProfile#repository_url}. |
 
 ---
 
@@ -2699,7 +2699,7 @@ RepositoryUrl *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#repository_url SagemakerUserProfile#repository_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#repository_url SagemakerUserProfile#repository_url}.
 
 ---
 
@@ -2708,7 +2708,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsJupyterLabAppSettingsCustomImage.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakeruserprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/sagemakeruserprofile"
 
 &sagemakeruserprofile.SagemakerUserProfileUserSettingsJupyterLabAppSettingsCustomImage {
 	AppImageConfigName: *string,
@@ -2721,9 +2721,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakeruserprofile"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsJupyterLabAppSettingsCustomImage.property.appImageConfigName">AppImageConfigName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#app_image_config_name SagemakerUserProfile#app_image_config_name}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsJupyterLabAppSettingsCustomImage.property.imageName">ImageName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#image_name SagemakerUserProfile#image_name}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsJupyterLabAppSettingsCustomImage.property.imageVersionNumber">ImageVersionNumber</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#image_version_number SagemakerUserProfile#image_version_number}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsJupyterLabAppSettingsCustomImage.property.appImageConfigName">AppImageConfigName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#app_image_config_name SagemakerUserProfile#app_image_config_name}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsJupyterLabAppSettingsCustomImage.property.imageName">ImageName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#image_name SagemakerUserProfile#image_name}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsJupyterLabAppSettingsCustomImage.property.imageVersionNumber">ImageVersionNumber</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#image_version_number SagemakerUserProfile#image_version_number}. |
 
 ---
 
@@ -2735,7 +2735,7 @@ AppImageConfigName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#app_image_config_name SagemakerUserProfile#app_image_config_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#app_image_config_name SagemakerUserProfile#app_image_config_name}.
 
 ---
 
@@ -2747,7 +2747,7 @@ ImageName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#image_name SagemakerUserProfile#image_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#image_name SagemakerUserProfile#image_name}.
 
 ---
 
@@ -2759,7 +2759,7 @@ ImageVersionNumber *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#image_version_number SagemakerUserProfile#image_version_number}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#image_version_number SagemakerUserProfile#image_version_number}.
 
 ---
 
@@ -2768,7 +2768,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsJupyterLabAppSettingsDefaultResourceSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakeruserprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/sagemakeruserprofile"
 
 &sagemakeruserprofile.SagemakerUserProfileUserSettingsJupyterLabAppSettingsDefaultResourceSpec {
 	InstanceType: *string,
@@ -2783,11 +2783,11 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakeruserprofile"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsJupyterLabAppSettingsDefaultResourceSpec.property.instanceType">InstanceType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#instance_type SagemakerUserProfile#instance_type}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsJupyterLabAppSettingsDefaultResourceSpec.property.lifecycleConfigArn">LifecycleConfigArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#lifecycle_config_arn SagemakerUserProfile#lifecycle_config_arn}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsJupyterLabAppSettingsDefaultResourceSpec.property.sagemakerImageArn">SagemakerImageArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#sagemaker_image_arn SagemakerUserProfile#sagemaker_image_arn}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsJupyterLabAppSettingsDefaultResourceSpec.property.sagemakerImageVersionAlias">SagemakerImageVersionAlias</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#sagemaker_image_version_alias SagemakerUserProfile#sagemaker_image_version_alias}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsJupyterLabAppSettingsDefaultResourceSpec.property.sagemakerImageVersionArn">SagemakerImageVersionArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#sagemaker_image_version_arn SagemakerUserProfile#sagemaker_image_version_arn}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsJupyterLabAppSettingsDefaultResourceSpec.property.instanceType">InstanceType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#instance_type SagemakerUserProfile#instance_type}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsJupyterLabAppSettingsDefaultResourceSpec.property.lifecycleConfigArn">LifecycleConfigArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#lifecycle_config_arn SagemakerUserProfile#lifecycle_config_arn}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsJupyterLabAppSettingsDefaultResourceSpec.property.sagemakerImageArn">SagemakerImageArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#sagemaker_image_arn SagemakerUserProfile#sagemaker_image_arn}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsJupyterLabAppSettingsDefaultResourceSpec.property.sagemakerImageVersionAlias">SagemakerImageVersionAlias</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#sagemaker_image_version_alias SagemakerUserProfile#sagemaker_image_version_alias}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsJupyterLabAppSettingsDefaultResourceSpec.property.sagemakerImageVersionArn">SagemakerImageVersionArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#sagemaker_image_version_arn SagemakerUserProfile#sagemaker_image_version_arn}. |
 
 ---
 
@@ -2799,7 +2799,7 @@ InstanceType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#instance_type SagemakerUserProfile#instance_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#instance_type SagemakerUserProfile#instance_type}.
 
 ---
 
@@ -2811,7 +2811,7 @@ LifecycleConfigArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#lifecycle_config_arn SagemakerUserProfile#lifecycle_config_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#lifecycle_config_arn SagemakerUserProfile#lifecycle_config_arn}.
 
 ---
 
@@ -2823,7 +2823,7 @@ SagemakerImageArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#sagemaker_image_arn SagemakerUserProfile#sagemaker_image_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#sagemaker_image_arn SagemakerUserProfile#sagemaker_image_arn}.
 
 ---
 
@@ -2835,7 +2835,7 @@ SagemakerImageVersionAlias *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#sagemaker_image_version_alias SagemakerUserProfile#sagemaker_image_version_alias}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#sagemaker_image_version_alias SagemakerUserProfile#sagemaker_image_version_alias}.
 
 ---
 
@@ -2847,7 +2847,7 @@ SagemakerImageVersionArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#sagemaker_image_version_arn SagemakerUserProfile#sagemaker_image_version_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#sagemaker_image_version_arn SagemakerUserProfile#sagemaker_image_version_arn}.
 
 ---
 
@@ -2856,7 +2856,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsJupyterLabAppSettingsEmrSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakeruserprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/sagemakeruserprofile"
 
 &sagemakeruserprofile.SagemakerUserProfileUserSettingsJupyterLabAppSettingsEmrSettings {
 	AssumableRoleArns: *[]*string,
@@ -2868,8 +2868,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakeruserprofile"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsJupyterLabAppSettingsEmrSettings.property.assumableRoleArns">AssumableRoleArns</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#assumable_role_arns SagemakerUserProfile#assumable_role_arns}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsJupyterLabAppSettingsEmrSettings.property.executionRoleArns">ExecutionRoleArns</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#execution_role_arns SagemakerUserProfile#execution_role_arns}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsJupyterLabAppSettingsEmrSettings.property.assumableRoleArns">AssumableRoleArns</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#assumable_role_arns SagemakerUserProfile#assumable_role_arns}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsJupyterLabAppSettingsEmrSettings.property.executionRoleArns">ExecutionRoleArns</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#execution_role_arns SagemakerUserProfile#execution_role_arns}. |
 
 ---
 
@@ -2881,7 +2881,7 @@ AssumableRoleArns *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#assumable_role_arns SagemakerUserProfile#assumable_role_arns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#assumable_role_arns SagemakerUserProfile#assumable_role_arns}.
 
 ---
 
@@ -2893,7 +2893,7 @@ ExecutionRoleArns *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#execution_role_arns SagemakerUserProfile#execution_role_arns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#execution_role_arns SagemakerUserProfile#execution_role_arns}.
 
 ---
 
@@ -2902,11 +2902,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsJupyterServerAppSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakeruserprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/sagemakeruserprofile"
 
 &sagemakeruserprofile.SagemakerUserProfileUserSettingsJupyterServerAppSettings {
 	CodeRepository: interface{},
-	DefaultResourceSpec: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.sagemakerUserProfile.SagemakerUserProfileUserSettingsJupyterServerAppSettingsDefaultResourceSpec,
+	DefaultResourceSpec: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.sagemakerUserProfile.SagemakerUserProfileUserSettingsJupyterServerAppSettingsDefaultResourceSpec,
 	LifecycleConfigArns: *[]*string,
 }
 ```
@@ -2917,7 +2917,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakeruserprofile"
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsJupyterServerAppSettings.property.codeRepository">CodeRepository</a></code> | <code>interface{}</code> | code_repository block. |
 | <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsJupyterServerAppSettings.property.defaultResourceSpec">DefaultResourceSpec</a></code> | <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsJupyterServerAppSettingsDefaultResourceSpec">SagemakerUserProfileUserSettingsJupyterServerAppSettingsDefaultResourceSpec</a></code> | default_resource_spec block. |
-| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsJupyterServerAppSettings.property.lifecycleConfigArns">LifecycleConfigArns</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#lifecycle_config_arns SagemakerUserProfile#lifecycle_config_arns}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsJupyterServerAppSettings.property.lifecycleConfigArns">LifecycleConfigArns</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#lifecycle_config_arns SagemakerUserProfile#lifecycle_config_arns}. |
 
 ---
 
@@ -2931,7 +2931,7 @@ CodeRepository interface{}
 
 code_repository block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#code_repository SagemakerUserProfile#code_repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#code_repository SagemakerUserProfile#code_repository}
 
 ---
 
@@ -2945,7 +2945,7 @@ DefaultResourceSpec SagemakerUserProfileUserSettingsJupyterServerAppSettingsDefa
 
 default_resource_spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#default_resource_spec SagemakerUserProfile#default_resource_spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#default_resource_spec SagemakerUserProfile#default_resource_spec}
 
 ---
 
@@ -2957,7 +2957,7 @@ LifecycleConfigArns *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#lifecycle_config_arns SagemakerUserProfile#lifecycle_config_arns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#lifecycle_config_arns SagemakerUserProfile#lifecycle_config_arns}.
 
 ---
 
@@ -2966,7 +2966,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsJupyterServerAppSettingsCodeRepository.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakeruserprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/sagemakeruserprofile"
 
 &sagemakeruserprofile.SagemakerUserProfileUserSettingsJupyterServerAppSettingsCodeRepository {
 	RepositoryUrl: *string,
@@ -2977,7 +2977,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakeruserprofile"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsJupyterServerAppSettingsCodeRepository.property.repositoryUrl">RepositoryUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#repository_url SagemakerUserProfile#repository_url}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsJupyterServerAppSettingsCodeRepository.property.repositoryUrl">RepositoryUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#repository_url SagemakerUserProfile#repository_url}. |
 
 ---
 
@@ -2989,7 +2989,7 @@ RepositoryUrl *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#repository_url SagemakerUserProfile#repository_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#repository_url SagemakerUserProfile#repository_url}.
 
 ---
 
@@ -2998,7 +2998,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsJupyterServerAppSettingsDefaultResourceSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakeruserprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/sagemakeruserprofile"
 
 &sagemakeruserprofile.SagemakerUserProfileUserSettingsJupyterServerAppSettingsDefaultResourceSpec {
 	InstanceType: *string,
@@ -3013,11 +3013,11 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakeruserprofile"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsJupyterServerAppSettingsDefaultResourceSpec.property.instanceType">InstanceType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#instance_type SagemakerUserProfile#instance_type}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsJupyterServerAppSettingsDefaultResourceSpec.property.lifecycleConfigArn">LifecycleConfigArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#lifecycle_config_arn SagemakerUserProfile#lifecycle_config_arn}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsJupyterServerAppSettingsDefaultResourceSpec.property.sagemakerImageArn">SagemakerImageArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#sagemaker_image_arn SagemakerUserProfile#sagemaker_image_arn}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsJupyterServerAppSettingsDefaultResourceSpec.property.sagemakerImageVersionAlias">SagemakerImageVersionAlias</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#sagemaker_image_version_alias SagemakerUserProfile#sagemaker_image_version_alias}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsJupyterServerAppSettingsDefaultResourceSpec.property.sagemakerImageVersionArn">SagemakerImageVersionArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#sagemaker_image_version_arn SagemakerUserProfile#sagemaker_image_version_arn}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsJupyterServerAppSettingsDefaultResourceSpec.property.instanceType">InstanceType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#instance_type SagemakerUserProfile#instance_type}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsJupyterServerAppSettingsDefaultResourceSpec.property.lifecycleConfigArn">LifecycleConfigArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#lifecycle_config_arn SagemakerUserProfile#lifecycle_config_arn}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsJupyterServerAppSettingsDefaultResourceSpec.property.sagemakerImageArn">SagemakerImageArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#sagemaker_image_arn SagemakerUserProfile#sagemaker_image_arn}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsJupyterServerAppSettingsDefaultResourceSpec.property.sagemakerImageVersionAlias">SagemakerImageVersionAlias</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#sagemaker_image_version_alias SagemakerUserProfile#sagemaker_image_version_alias}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsJupyterServerAppSettingsDefaultResourceSpec.property.sagemakerImageVersionArn">SagemakerImageVersionArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#sagemaker_image_version_arn SagemakerUserProfile#sagemaker_image_version_arn}. |
 
 ---
 
@@ -3029,7 +3029,7 @@ InstanceType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#instance_type SagemakerUserProfile#instance_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#instance_type SagemakerUserProfile#instance_type}.
 
 ---
 
@@ -3041,7 +3041,7 @@ LifecycleConfigArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#lifecycle_config_arn SagemakerUserProfile#lifecycle_config_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#lifecycle_config_arn SagemakerUserProfile#lifecycle_config_arn}.
 
 ---
 
@@ -3053,7 +3053,7 @@ SagemakerImageArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#sagemaker_image_arn SagemakerUserProfile#sagemaker_image_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#sagemaker_image_arn SagemakerUserProfile#sagemaker_image_arn}.
 
 ---
 
@@ -3065,7 +3065,7 @@ SagemakerImageVersionAlias *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#sagemaker_image_version_alias SagemakerUserProfile#sagemaker_image_version_alias}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#sagemaker_image_version_alias SagemakerUserProfile#sagemaker_image_version_alias}.
 
 ---
 
@@ -3077,7 +3077,7 @@ SagemakerImageVersionArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#sagemaker_image_version_arn SagemakerUserProfile#sagemaker_image_version_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#sagemaker_image_version_arn SagemakerUserProfile#sagemaker_image_version_arn}.
 
 ---
 
@@ -3086,11 +3086,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsKernelGatewayAppSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakeruserprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/sagemakeruserprofile"
 
 &sagemakeruserprofile.SagemakerUserProfileUserSettingsKernelGatewayAppSettings {
 	CustomImage: interface{},
-	DefaultResourceSpec: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.sagemakerUserProfile.SagemakerUserProfileUserSettingsKernelGatewayAppSettingsDefaultResourceSpec,
+	DefaultResourceSpec: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.sagemakerUserProfile.SagemakerUserProfileUserSettingsKernelGatewayAppSettingsDefaultResourceSpec,
 	LifecycleConfigArns: *[]*string,
 }
 ```
@@ -3101,7 +3101,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakeruserprofile"
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsKernelGatewayAppSettings.property.customImage">CustomImage</a></code> | <code>interface{}</code> | custom_image block. |
 | <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsKernelGatewayAppSettings.property.defaultResourceSpec">DefaultResourceSpec</a></code> | <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsKernelGatewayAppSettingsDefaultResourceSpec">SagemakerUserProfileUserSettingsKernelGatewayAppSettingsDefaultResourceSpec</a></code> | default_resource_spec block. |
-| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsKernelGatewayAppSettings.property.lifecycleConfigArns">LifecycleConfigArns</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#lifecycle_config_arns SagemakerUserProfile#lifecycle_config_arns}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsKernelGatewayAppSettings.property.lifecycleConfigArns">LifecycleConfigArns</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#lifecycle_config_arns SagemakerUserProfile#lifecycle_config_arns}. |
 
 ---
 
@@ -3115,7 +3115,7 @@ CustomImage interface{}
 
 custom_image block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#custom_image SagemakerUserProfile#custom_image}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#custom_image SagemakerUserProfile#custom_image}
 
 ---
 
@@ -3129,7 +3129,7 @@ DefaultResourceSpec SagemakerUserProfileUserSettingsKernelGatewayAppSettingsDefa
 
 default_resource_spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#default_resource_spec SagemakerUserProfile#default_resource_spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#default_resource_spec SagemakerUserProfile#default_resource_spec}
 
 ---
 
@@ -3141,7 +3141,7 @@ LifecycleConfigArns *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#lifecycle_config_arns SagemakerUserProfile#lifecycle_config_arns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#lifecycle_config_arns SagemakerUserProfile#lifecycle_config_arns}.
 
 ---
 
@@ -3150,7 +3150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsKernelGatewayAppSettingsCustomImage.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakeruserprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/sagemakeruserprofile"
 
 &sagemakeruserprofile.SagemakerUserProfileUserSettingsKernelGatewayAppSettingsCustomImage {
 	AppImageConfigName: *string,
@@ -3163,9 +3163,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakeruserprofile"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsKernelGatewayAppSettingsCustomImage.property.appImageConfigName">AppImageConfigName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#app_image_config_name SagemakerUserProfile#app_image_config_name}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsKernelGatewayAppSettingsCustomImage.property.imageName">ImageName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#image_name SagemakerUserProfile#image_name}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsKernelGatewayAppSettingsCustomImage.property.imageVersionNumber">ImageVersionNumber</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#image_version_number SagemakerUserProfile#image_version_number}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsKernelGatewayAppSettingsCustomImage.property.appImageConfigName">AppImageConfigName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#app_image_config_name SagemakerUserProfile#app_image_config_name}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsKernelGatewayAppSettingsCustomImage.property.imageName">ImageName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#image_name SagemakerUserProfile#image_name}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsKernelGatewayAppSettingsCustomImage.property.imageVersionNumber">ImageVersionNumber</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#image_version_number SagemakerUserProfile#image_version_number}. |
 
 ---
 
@@ -3177,7 +3177,7 @@ AppImageConfigName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#app_image_config_name SagemakerUserProfile#app_image_config_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#app_image_config_name SagemakerUserProfile#app_image_config_name}.
 
 ---
 
@@ -3189,7 +3189,7 @@ ImageName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#image_name SagemakerUserProfile#image_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#image_name SagemakerUserProfile#image_name}.
 
 ---
 
@@ -3201,7 +3201,7 @@ ImageVersionNumber *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#image_version_number SagemakerUserProfile#image_version_number}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#image_version_number SagemakerUserProfile#image_version_number}.
 
 ---
 
@@ -3210,7 +3210,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsKernelGatewayAppSettingsDefaultResourceSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakeruserprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/sagemakeruserprofile"
 
 &sagemakeruserprofile.SagemakerUserProfileUserSettingsKernelGatewayAppSettingsDefaultResourceSpec {
 	InstanceType: *string,
@@ -3225,11 +3225,11 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakeruserprofile"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsKernelGatewayAppSettingsDefaultResourceSpec.property.instanceType">InstanceType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#instance_type SagemakerUserProfile#instance_type}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsKernelGatewayAppSettingsDefaultResourceSpec.property.lifecycleConfigArn">LifecycleConfigArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#lifecycle_config_arn SagemakerUserProfile#lifecycle_config_arn}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsKernelGatewayAppSettingsDefaultResourceSpec.property.sagemakerImageArn">SagemakerImageArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#sagemaker_image_arn SagemakerUserProfile#sagemaker_image_arn}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsKernelGatewayAppSettingsDefaultResourceSpec.property.sagemakerImageVersionAlias">SagemakerImageVersionAlias</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#sagemaker_image_version_alias SagemakerUserProfile#sagemaker_image_version_alias}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsKernelGatewayAppSettingsDefaultResourceSpec.property.sagemakerImageVersionArn">SagemakerImageVersionArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#sagemaker_image_version_arn SagemakerUserProfile#sagemaker_image_version_arn}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsKernelGatewayAppSettingsDefaultResourceSpec.property.instanceType">InstanceType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#instance_type SagemakerUserProfile#instance_type}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsKernelGatewayAppSettingsDefaultResourceSpec.property.lifecycleConfigArn">LifecycleConfigArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#lifecycle_config_arn SagemakerUserProfile#lifecycle_config_arn}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsKernelGatewayAppSettingsDefaultResourceSpec.property.sagemakerImageArn">SagemakerImageArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#sagemaker_image_arn SagemakerUserProfile#sagemaker_image_arn}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsKernelGatewayAppSettingsDefaultResourceSpec.property.sagemakerImageVersionAlias">SagemakerImageVersionAlias</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#sagemaker_image_version_alias SagemakerUserProfile#sagemaker_image_version_alias}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsKernelGatewayAppSettingsDefaultResourceSpec.property.sagemakerImageVersionArn">SagemakerImageVersionArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#sagemaker_image_version_arn SagemakerUserProfile#sagemaker_image_version_arn}. |
 
 ---
 
@@ -3241,7 +3241,7 @@ InstanceType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#instance_type SagemakerUserProfile#instance_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#instance_type SagemakerUserProfile#instance_type}.
 
 ---
 
@@ -3253,7 +3253,7 @@ LifecycleConfigArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#lifecycle_config_arn SagemakerUserProfile#lifecycle_config_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#lifecycle_config_arn SagemakerUserProfile#lifecycle_config_arn}.
 
 ---
 
@@ -3265,7 +3265,7 @@ SagemakerImageArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#sagemaker_image_arn SagemakerUserProfile#sagemaker_image_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#sagemaker_image_arn SagemakerUserProfile#sagemaker_image_arn}.
 
 ---
 
@@ -3277,7 +3277,7 @@ SagemakerImageVersionAlias *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#sagemaker_image_version_alias SagemakerUserProfile#sagemaker_image_version_alias}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#sagemaker_image_version_alias SagemakerUserProfile#sagemaker_image_version_alias}.
 
 ---
 
@@ -3289,7 +3289,7 @@ SagemakerImageVersionArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#sagemaker_image_version_arn SagemakerUserProfile#sagemaker_image_version_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#sagemaker_image_version_arn SagemakerUserProfile#sagemaker_image_version_arn}.
 
 ---
 
@@ -3298,11 +3298,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsRSessionAppSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakeruserprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/sagemakeruserprofile"
 
 &sagemakeruserprofile.SagemakerUserProfileUserSettingsRSessionAppSettings {
 	CustomImage: interface{},
-	DefaultResourceSpec: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.sagemakerUserProfile.SagemakerUserProfileUserSettingsRSessionAppSettingsDefaultResourceSpec,
+	DefaultResourceSpec: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.sagemakerUserProfile.SagemakerUserProfileUserSettingsRSessionAppSettingsDefaultResourceSpec,
 }
 ```
 
@@ -3325,7 +3325,7 @@ CustomImage interface{}
 
 custom_image block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#custom_image SagemakerUserProfile#custom_image}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#custom_image SagemakerUserProfile#custom_image}
 
 ---
 
@@ -3339,7 +3339,7 @@ DefaultResourceSpec SagemakerUserProfileUserSettingsRSessionAppSettingsDefaultRe
 
 default_resource_spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#default_resource_spec SagemakerUserProfile#default_resource_spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#default_resource_spec SagemakerUserProfile#default_resource_spec}
 
 ---
 
@@ -3348,7 +3348,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsRSessionAppSettingsCustomImage.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakeruserprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/sagemakeruserprofile"
 
 &sagemakeruserprofile.SagemakerUserProfileUserSettingsRSessionAppSettingsCustomImage {
 	AppImageConfigName: *string,
@@ -3361,9 +3361,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakeruserprofile"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsRSessionAppSettingsCustomImage.property.appImageConfigName">AppImageConfigName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#app_image_config_name SagemakerUserProfile#app_image_config_name}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsRSessionAppSettingsCustomImage.property.imageName">ImageName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#image_name SagemakerUserProfile#image_name}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsRSessionAppSettingsCustomImage.property.imageVersionNumber">ImageVersionNumber</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#image_version_number SagemakerUserProfile#image_version_number}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsRSessionAppSettingsCustomImage.property.appImageConfigName">AppImageConfigName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#app_image_config_name SagemakerUserProfile#app_image_config_name}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsRSessionAppSettingsCustomImage.property.imageName">ImageName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#image_name SagemakerUserProfile#image_name}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsRSessionAppSettingsCustomImage.property.imageVersionNumber">ImageVersionNumber</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#image_version_number SagemakerUserProfile#image_version_number}. |
 
 ---
 
@@ -3375,7 +3375,7 @@ AppImageConfigName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#app_image_config_name SagemakerUserProfile#app_image_config_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#app_image_config_name SagemakerUserProfile#app_image_config_name}.
 
 ---
 
@@ -3387,7 +3387,7 @@ ImageName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#image_name SagemakerUserProfile#image_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#image_name SagemakerUserProfile#image_name}.
 
 ---
 
@@ -3399,7 +3399,7 @@ ImageVersionNumber *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#image_version_number SagemakerUserProfile#image_version_number}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#image_version_number SagemakerUserProfile#image_version_number}.
 
 ---
 
@@ -3408,7 +3408,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsRSessionAppSettingsDefaultResourceSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakeruserprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/sagemakeruserprofile"
 
 &sagemakeruserprofile.SagemakerUserProfileUserSettingsRSessionAppSettingsDefaultResourceSpec {
 	InstanceType: *string,
@@ -3423,11 +3423,11 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakeruserprofile"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsRSessionAppSettingsDefaultResourceSpec.property.instanceType">InstanceType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#instance_type SagemakerUserProfile#instance_type}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsRSessionAppSettingsDefaultResourceSpec.property.lifecycleConfigArn">LifecycleConfigArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#lifecycle_config_arn SagemakerUserProfile#lifecycle_config_arn}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsRSessionAppSettingsDefaultResourceSpec.property.sagemakerImageArn">SagemakerImageArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#sagemaker_image_arn SagemakerUserProfile#sagemaker_image_arn}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsRSessionAppSettingsDefaultResourceSpec.property.sagemakerImageVersionAlias">SagemakerImageVersionAlias</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#sagemaker_image_version_alias SagemakerUserProfile#sagemaker_image_version_alias}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsRSessionAppSettingsDefaultResourceSpec.property.sagemakerImageVersionArn">SagemakerImageVersionArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#sagemaker_image_version_arn SagemakerUserProfile#sagemaker_image_version_arn}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsRSessionAppSettingsDefaultResourceSpec.property.instanceType">InstanceType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#instance_type SagemakerUserProfile#instance_type}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsRSessionAppSettingsDefaultResourceSpec.property.lifecycleConfigArn">LifecycleConfigArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#lifecycle_config_arn SagemakerUserProfile#lifecycle_config_arn}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsRSessionAppSettingsDefaultResourceSpec.property.sagemakerImageArn">SagemakerImageArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#sagemaker_image_arn SagemakerUserProfile#sagemaker_image_arn}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsRSessionAppSettingsDefaultResourceSpec.property.sagemakerImageVersionAlias">SagemakerImageVersionAlias</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#sagemaker_image_version_alias SagemakerUserProfile#sagemaker_image_version_alias}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsRSessionAppSettingsDefaultResourceSpec.property.sagemakerImageVersionArn">SagemakerImageVersionArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#sagemaker_image_version_arn SagemakerUserProfile#sagemaker_image_version_arn}. |
 
 ---
 
@@ -3439,7 +3439,7 @@ InstanceType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#instance_type SagemakerUserProfile#instance_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#instance_type SagemakerUserProfile#instance_type}.
 
 ---
 
@@ -3451,7 +3451,7 @@ LifecycleConfigArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#lifecycle_config_arn SagemakerUserProfile#lifecycle_config_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#lifecycle_config_arn SagemakerUserProfile#lifecycle_config_arn}.
 
 ---
 
@@ -3463,7 +3463,7 @@ SagemakerImageArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#sagemaker_image_arn SagemakerUserProfile#sagemaker_image_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#sagemaker_image_arn SagemakerUserProfile#sagemaker_image_arn}.
 
 ---
 
@@ -3475,7 +3475,7 @@ SagemakerImageVersionAlias *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#sagemaker_image_version_alias SagemakerUserProfile#sagemaker_image_version_alias}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#sagemaker_image_version_alias SagemakerUserProfile#sagemaker_image_version_alias}.
 
 ---
 
@@ -3487,7 +3487,7 @@ SagemakerImageVersionArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#sagemaker_image_version_arn SagemakerUserProfile#sagemaker_image_version_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#sagemaker_image_version_arn SagemakerUserProfile#sagemaker_image_version_arn}.
 
 ---
 
@@ -3496,7 +3496,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsRStudioServerProAppSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakeruserprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/sagemakeruserprofile"
 
 &sagemakeruserprofile.SagemakerUserProfileUserSettingsRStudioServerProAppSettings {
 	AccessStatus: *string,
@@ -3508,8 +3508,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakeruserprofile"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsRStudioServerProAppSettings.property.accessStatus">AccessStatus</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#access_status SagemakerUserProfile#access_status}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsRStudioServerProAppSettings.property.userGroup">UserGroup</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#user_group SagemakerUserProfile#user_group}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsRStudioServerProAppSettings.property.accessStatus">AccessStatus</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#access_status SagemakerUserProfile#access_status}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsRStudioServerProAppSettings.property.userGroup">UserGroup</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#user_group SagemakerUserProfile#user_group}. |
 
 ---
 
@@ -3521,7 +3521,7 @@ AccessStatus *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#access_status SagemakerUserProfile#access_status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#access_status SagemakerUserProfile#access_status}.
 
 ---
 
@@ -3533,7 +3533,7 @@ UserGroup *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#user_group SagemakerUserProfile#user_group}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#user_group SagemakerUserProfile#user_group}.
 
 ---
 
@@ -3542,7 +3542,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsSharingSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakeruserprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/sagemakeruserprofile"
 
 &sagemakeruserprofile.SagemakerUserProfileUserSettingsSharingSettings {
 	NotebookOutputOption: *string,
@@ -3555,9 +3555,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakeruserprofile"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsSharingSettings.property.notebookOutputOption">NotebookOutputOption</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#notebook_output_option SagemakerUserProfile#notebook_output_option}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsSharingSettings.property.s3KmsKeyId">S3KmsKeyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#s3_kms_key_id SagemakerUserProfile#s3_kms_key_id}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsSharingSettings.property.s3OutputPath">S3OutputPath</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#s3_output_path SagemakerUserProfile#s3_output_path}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsSharingSettings.property.notebookOutputOption">NotebookOutputOption</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#notebook_output_option SagemakerUserProfile#notebook_output_option}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsSharingSettings.property.s3KmsKeyId">S3KmsKeyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#s3_kms_key_id SagemakerUserProfile#s3_kms_key_id}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsSharingSettings.property.s3OutputPath">S3OutputPath</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#s3_output_path SagemakerUserProfile#s3_output_path}. |
 
 ---
 
@@ -3569,7 +3569,7 @@ NotebookOutputOption *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#notebook_output_option SagemakerUserProfile#notebook_output_option}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#notebook_output_option SagemakerUserProfile#notebook_output_option}.
 
 ---
 
@@ -3581,7 +3581,7 @@ S3KmsKeyId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#s3_kms_key_id SagemakerUserProfile#s3_kms_key_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#s3_kms_key_id SagemakerUserProfile#s3_kms_key_id}.
 
 ---
 
@@ -3593,7 +3593,7 @@ S3OutputPath *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#s3_output_path SagemakerUserProfile#s3_output_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#s3_output_path SagemakerUserProfile#s3_output_path}.
 
 ---
 
@@ -3602,10 +3602,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsSpaceStorageSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakeruserprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/sagemakeruserprofile"
 
 &sagemakeruserprofile.SagemakerUserProfileUserSettingsSpaceStorageSettings {
-	DefaultEbsStorageSettings: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.sagemakerUserProfile.SagemakerUserProfileUserSettingsSpaceStorageSettingsDefaultEbsStorageSettings,
+	DefaultEbsStorageSettings: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.sagemakerUserProfile.SagemakerUserProfileUserSettingsSpaceStorageSettingsDefaultEbsStorageSettings,
 }
 ```
 
@@ -3627,7 +3627,7 @@ DefaultEbsStorageSettings SagemakerUserProfileUserSettingsSpaceStorageSettingsDe
 
 default_ebs_storage_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#default_ebs_storage_settings SagemakerUserProfile#default_ebs_storage_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#default_ebs_storage_settings SagemakerUserProfile#default_ebs_storage_settings}
 
 ---
 
@@ -3636,7 +3636,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsSpaceStorageSettingsDefaultEbsStorageSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakeruserprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/sagemakeruserprofile"
 
 &sagemakeruserprofile.SagemakerUserProfileUserSettingsSpaceStorageSettingsDefaultEbsStorageSettings {
 	DefaultEbsVolumeSizeInGb: *f64,
@@ -3648,8 +3648,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakeruserprofile"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsSpaceStorageSettingsDefaultEbsStorageSettings.property.defaultEbsVolumeSizeInGb">DefaultEbsVolumeSizeInGb</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#default_ebs_volume_size_in_gb SagemakerUserProfile#default_ebs_volume_size_in_gb}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsSpaceStorageSettingsDefaultEbsStorageSettings.property.maximumEbsVolumeSizeInGb">MaximumEbsVolumeSizeInGb</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#maximum_ebs_volume_size_in_gb SagemakerUserProfile#maximum_ebs_volume_size_in_gb}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsSpaceStorageSettingsDefaultEbsStorageSettings.property.defaultEbsVolumeSizeInGb">DefaultEbsVolumeSizeInGb</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#default_ebs_volume_size_in_gb SagemakerUserProfile#default_ebs_volume_size_in_gb}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsSpaceStorageSettingsDefaultEbsStorageSettings.property.maximumEbsVolumeSizeInGb">MaximumEbsVolumeSizeInGb</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#maximum_ebs_volume_size_in_gb SagemakerUserProfile#maximum_ebs_volume_size_in_gb}. |
 
 ---
 
@@ -3661,7 +3661,7 @@ DefaultEbsVolumeSizeInGb *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#default_ebs_volume_size_in_gb SagemakerUserProfile#default_ebs_volume_size_in_gb}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#default_ebs_volume_size_in_gb SagemakerUserProfile#default_ebs_volume_size_in_gb}.
 
 ---
 
@@ -3673,7 +3673,7 @@ MaximumEbsVolumeSizeInGb *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#maximum_ebs_volume_size_in_gb SagemakerUserProfile#maximum_ebs_volume_size_in_gb}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#maximum_ebs_volume_size_in_gb SagemakerUserProfile#maximum_ebs_volume_size_in_gb}.
 
 ---
 
@@ -3682,7 +3682,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsStudioWebPortalSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakeruserprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/sagemakeruserprofile"
 
 &sagemakeruserprofile.SagemakerUserProfileUserSettingsStudioWebPortalSettings {
 	HiddenAppTypes: *[]*string,
@@ -3695,9 +3695,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakeruserprofile"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsStudioWebPortalSettings.property.hiddenAppTypes">HiddenAppTypes</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#hidden_app_types SagemakerUserProfile#hidden_app_types}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsStudioWebPortalSettings.property.hiddenInstanceTypes">HiddenInstanceTypes</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#hidden_instance_types SagemakerUserProfile#hidden_instance_types}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsStudioWebPortalSettings.property.hiddenMlTools">HiddenMlTools</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#hidden_ml_tools SagemakerUserProfile#hidden_ml_tools}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsStudioWebPortalSettings.property.hiddenAppTypes">HiddenAppTypes</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#hidden_app_types SagemakerUserProfile#hidden_app_types}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsStudioWebPortalSettings.property.hiddenInstanceTypes">HiddenInstanceTypes</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#hidden_instance_types SagemakerUserProfile#hidden_instance_types}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsStudioWebPortalSettings.property.hiddenMlTools">HiddenMlTools</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#hidden_ml_tools SagemakerUserProfile#hidden_ml_tools}. |
 
 ---
 
@@ -3709,7 +3709,7 @@ HiddenAppTypes *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#hidden_app_types SagemakerUserProfile#hidden_app_types}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#hidden_app_types SagemakerUserProfile#hidden_app_types}.
 
 ---
 
@@ -3721,7 +3721,7 @@ HiddenInstanceTypes *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#hidden_instance_types SagemakerUserProfile#hidden_instance_types}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#hidden_instance_types SagemakerUserProfile#hidden_instance_types}.
 
 ---
 
@@ -3733,7 +3733,7 @@ HiddenMlTools *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#hidden_ml_tools SagemakerUserProfile#hidden_ml_tools}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#hidden_ml_tools SagemakerUserProfile#hidden_ml_tools}.
 
 ---
 
@@ -3742,10 +3742,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsTensorBoardAppSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakeruserprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/sagemakeruserprofile"
 
 &sagemakeruserprofile.SagemakerUserProfileUserSettingsTensorBoardAppSettings {
-	DefaultResourceSpec: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.sagemakerUserProfile.SagemakerUserProfileUserSettingsTensorBoardAppSettingsDefaultResourceSpec,
+	DefaultResourceSpec: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.sagemakerUserProfile.SagemakerUserProfileUserSettingsTensorBoardAppSettingsDefaultResourceSpec,
 }
 ```
 
@@ -3767,7 +3767,7 @@ DefaultResourceSpec SagemakerUserProfileUserSettingsTensorBoardAppSettingsDefaul
 
 default_resource_spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#default_resource_spec SagemakerUserProfile#default_resource_spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#default_resource_spec SagemakerUserProfile#default_resource_spec}
 
 ---
 
@@ -3776,7 +3776,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsTensorBoardAppSettingsDefaultResourceSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakeruserprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/sagemakeruserprofile"
 
 &sagemakeruserprofile.SagemakerUserProfileUserSettingsTensorBoardAppSettingsDefaultResourceSpec {
 	InstanceType: *string,
@@ -3791,11 +3791,11 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakeruserprofile"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsTensorBoardAppSettingsDefaultResourceSpec.property.instanceType">InstanceType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#instance_type SagemakerUserProfile#instance_type}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsTensorBoardAppSettingsDefaultResourceSpec.property.lifecycleConfigArn">LifecycleConfigArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#lifecycle_config_arn SagemakerUserProfile#lifecycle_config_arn}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsTensorBoardAppSettingsDefaultResourceSpec.property.sagemakerImageArn">SagemakerImageArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#sagemaker_image_arn SagemakerUserProfile#sagemaker_image_arn}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsTensorBoardAppSettingsDefaultResourceSpec.property.sagemakerImageVersionAlias">SagemakerImageVersionAlias</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#sagemaker_image_version_alias SagemakerUserProfile#sagemaker_image_version_alias}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsTensorBoardAppSettingsDefaultResourceSpec.property.sagemakerImageVersionArn">SagemakerImageVersionArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#sagemaker_image_version_arn SagemakerUserProfile#sagemaker_image_version_arn}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsTensorBoardAppSettingsDefaultResourceSpec.property.instanceType">InstanceType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#instance_type SagemakerUserProfile#instance_type}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsTensorBoardAppSettingsDefaultResourceSpec.property.lifecycleConfigArn">LifecycleConfigArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#lifecycle_config_arn SagemakerUserProfile#lifecycle_config_arn}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsTensorBoardAppSettingsDefaultResourceSpec.property.sagemakerImageArn">SagemakerImageArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#sagemaker_image_arn SagemakerUserProfile#sagemaker_image_arn}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsTensorBoardAppSettingsDefaultResourceSpec.property.sagemakerImageVersionAlias">SagemakerImageVersionAlias</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#sagemaker_image_version_alias SagemakerUserProfile#sagemaker_image_version_alias}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsTensorBoardAppSettingsDefaultResourceSpec.property.sagemakerImageVersionArn">SagemakerImageVersionArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#sagemaker_image_version_arn SagemakerUserProfile#sagemaker_image_version_arn}. |
 
 ---
 
@@ -3807,7 +3807,7 @@ InstanceType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#instance_type SagemakerUserProfile#instance_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#instance_type SagemakerUserProfile#instance_type}.
 
 ---
 
@@ -3819,7 +3819,7 @@ LifecycleConfigArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#lifecycle_config_arn SagemakerUserProfile#lifecycle_config_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#lifecycle_config_arn SagemakerUserProfile#lifecycle_config_arn}.
 
 ---
 
@@ -3831,7 +3831,7 @@ SagemakerImageArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#sagemaker_image_arn SagemakerUserProfile#sagemaker_image_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#sagemaker_image_arn SagemakerUserProfile#sagemaker_image_arn}.
 
 ---
 
@@ -3843,7 +3843,7 @@ SagemakerImageVersionAlias *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#sagemaker_image_version_alias SagemakerUserProfile#sagemaker_image_version_alias}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#sagemaker_image_version_alias SagemakerUserProfile#sagemaker_image_version_alias}.
 
 ---
 
@@ -3855,7 +3855,7 @@ SagemakerImageVersionArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_user_profile#sagemaker_image_version_arn SagemakerUserProfile#sagemaker_image_version_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_user_profile#sagemaker_image_version_arn SagemakerUserProfile#sagemaker_image_version_arn}.
 
 ---
 
@@ -3866,7 +3866,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsCanvasAppSettingsDirectDeploySettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakeruserprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/sagemakeruserprofile"
 
 sagemakeruserprofile.NewSagemakerUserProfileUserSettingsCanvasAppSettingsDirectDeploySettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerUserProfileUserSettingsCanvasAppSettingsDirectDeploySettingsOutputReference
 ```
@@ -4144,7 +4144,7 @@ func InternalValue() SagemakerUserProfileUserSettingsCanvasAppSettingsDirectDepl
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsCanvasAppSettingsEmrServerlessSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakeruserprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/sagemakeruserprofile"
 
 sagemakeruserprofile.NewSagemakerUserProfileUserSettingsCanvasAppSettingsEmrServerlessSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerUserProfileUserSettingsCanvasAppSettingsEmrServerlessSettingsOutputReference
 ```
@@ -4451,7 +4451,7 @@ func InternalValue() SagemakerUserProfileUserSettingsCanvasAppSettingsEmrServerl
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsCanvasAppSettingsGenerativeAiSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakeruserprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/sagemakeruserprofile"
 
 sagemakeruserprofile.NewSagemakerUserProfileUserSettingsCanvasAppSettingsGenerativeAiSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerUserProfileUserSettingsCanvasAppSettingsGenerativeAiSettingsOutputReference
 ```
@@ -4729,7 +4729,7 @@ func InternalValue() SagemakerUserProfileUserSettingsCanvasAppSettingsGenerative
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsCanvasAppSettingsIdentityProviderOauthSettingsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakeruserprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/sagemakeruserprofile"
 
 sagemakeruserprofile.NewSagemakerUserProfileUserSettingsCanvasAppSettingsIdentityProviderOauthSettingsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SagemakerUserProfileUserSettingsCanvasAppSettingsIdentityProviderOauthSettingsList
 ```
@@ -4889,7 +4889,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsCanvasAppSettingsIdentityProviderOauthSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakeruserprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/sagemakeruserprofile"
 
 sagemakeruserprofile.NewSagemakerUserProfileUserSettingsCanvasAppSettingsIdentityProviderOauthSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SagemakerUserProfileUserSettingsCanvasAppSettingsIdentityProviderOauthSettingsOutputReference
 ```
@@ -5236,7 +5236,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsCanvasAppSettingsKendraSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakeruserprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/sagemakeruserprofile"
 
 sagemakeruserprofile.NewSagemakerUserProfileUserSettingsCanvasAppSettingsKendraSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerUserProfileUserSettingsCanvasAppSettingsKendraSettingsOutputReference
 ```
@@ -5514,7 +5514,7 @@ func InternalValue() SagemakerUserProfileUserSettingsCanvasAppSettingsKendraSett
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsCanvasAppSettingsModelRegisterSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakeruserprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/sagemakeruserprofile"
 
 sagemakeruserprofile.NewSagemakerUserProfileUserSettingsCanvasAppSettingsModelRegisterSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerUserProfileUserSettingsCanvasAppSettingsModelRegisterSettingsOutputReference
 ```
@@ -5821,7 +5821,7 @@ func InternalValue() SagemakerUserProfileUserSettingsCanvasAppSettingsModelRegis
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsCanvasAppSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakeruserprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/sagemakeruserprofile"
 
 sagemakeruserprofile.NewSagemakerUserProfileUserSettingsCanvasAppSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerUserProfileUserSettingsCanvasAppSettingsOutputReference
 ```
@@ -6406,7 +6406,7 @@ func InternalValue() SagemakerUserProfileUserSettingsCanvasAppSettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsCanvasAppSettingsTimeSeriesForecastingSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakeruserprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/sagemakeruserprofile"
 
 sagemakeruserprofile.NewSagemakerUserProfileUserSettingsCanvasAppSettingsTimeSeriesForecastingSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerUserProfileUserSettingsCanvasAppSettingsTimeSeriesForecastingSettingsOutputReference
 ```
@@ -6713,7 +6713,7 @@ func InternalValue() SagemakerUserProfileUserSettingsCanvasAppSettingsTimeSeries
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsCanvasAppSettingsWorkspaceSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakeruserprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/sagemakeruserprofile"
 
 sagemakeruserprofile.NewSagemakerUserProfileUserSettingsCanvasAppSettingsWorkspaceSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerUserProfileUserSettingsCanvasAppSettingsWorkspaceSettingsOutputReference
 ```
@@ -7020,7 +7020,7 @@ func InternalValue() SagemakerUserProfileUserSettingsCanvasAppSettingsWorkspaceS
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsCodeEditorAppSettingsAppLifecycleManagementIdleSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakeruserprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/sagemakeruserprofile"
 
 sagemakeruserprofile.NewSagemakerUserProfileUserSettingsCodeEditorAppSettingsAppLifecycleManagementIdleSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerUserProfileUserSettingsCodeEditorAppSettingsAppLifecycleManagementIdleSettingsOutputReference
 ```
@@ -7385,7 +7385,7 @@ func InternalValue() SagemakerUserProfileUserSettingsCodeEditorAppSettingsAppLif
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsCodeEditorAppSettingsAppLifecycleManagementOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakeruserprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/sagemakeruserprofile"
 
 sagemakeruserprofile.NewSagemakerUserProfileUserSettingsCodeEditorAppSettingsAppLifecycleManagementOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerUserProfileUserSettingsCodeEditorAppSettingsAppLifecycleManagementOutputReference
 ```
@@ -7676,7 +7676,7 @@ func InternalValue() SagemakerUserProfileUserSettingsCodeEditorAppSettingsAppLif
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsCodeEditorAppSettingsCustomImageList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakeruserprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/sagemakeruserprofile"
 
 sagemakeruserprofile.NewSagemakerUserProfileUserSettingsCodeEditorAppSettingsCustomImageList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SagemakerUserProfileUserSettingsCodeEditorAppSettingsCustomImageList
 ```
@@ -7836,7 +7836,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsCodeEditorAppSettingsCustomImageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakeruserprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/sagemakeruserprofile"
 
 sagemakeruserprofile.NewSagemakerUserProfileUserSettingsCodeEditorAppSettingsCustomImageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SagemakerUserProfileUserSettingsCodeEditorAppSettingsCustomImageOutputReference
 ```
@@ -8176,7 +8176,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsCodeEditorAppSettingsDefaultResourceSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakeruserprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/sagemakeruserprofile"
 
 sagemakeruserprofile.NewSagemakerUserProfileUserSettingsCodeEditorAppSettingsDefaultResourceSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerUserProfileUserSettingsCodeEditorAppSettingsDefaultResourceSpecOutputReference
 ```
@@ -8570,7 +8570,7 @@ func InternalValue() SagemakerUserProfileUserSettingsCodeEditorAppSettingsDefaul
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsCodeEditorAppSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakeruserprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/sagemakeruserprofile"
 
 sagemakeruserprofile.NewSagemakerUserProfileUserSettingsCodeEditorAppSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerUserProfileUserSettingsCodeEditorAppSettingsOutputReference
 ```
@@ -9003,7 +9003,7 @@ func InternalValue() SagemakerUserProfileUserSettingsCodeEditorAppSettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsCustomFileSystemConfigEfsFileSystemConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakeruserprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/sagemakeruserprofile"
 
 sagemakeruserprofile.NewSagemakerUserProfileUserSettingsCustomFileSystemConfigEfsFileSystemConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SagemakerUserProfileUserSettingsCustomFileSystemConfigEfsFileSystemConfigList
 ```
@@ -9163,7 +9163,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsCustomFileSystemConfigEfsFileSystemConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakeruserprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/sagemakeruserprofile"
 
 sagemakeruserprofile.NewSagemakerUserProfileUserSettingsCustomFileSystemConfigEfsFileSystemConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SagemakerUserProfileUserSettingsCustomFileSystemConfigEfsFileSystemConfigOutputReference
 ```
@@ -9481,7 +9481,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsCustomFileSystemConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakeruserprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/sagemakeruserprofile"
 
 sagemakeruserprofile.NewSagemakerUserProfileUserSettingsCustomFileSystemConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SagemakerUserProfileUserSettingsCustomFileSystemConfigList
 ```
@@ -9641,7 +9641,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsCustomFileSystemConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakeruserprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/sagemakeruserprofile"
 
 sagemakeruserprofile.NewSagemakerUserProfileUserSettingsCustomFileSystemConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SagemakerUserProfileUserSettingsCustomFileSystemConfigOutputReference
 ```
@@ -9950,7 +9950,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsCustomPosixUserConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakeruserprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/sagemakeruserprofile"
 
 sagemakeruserprofile.NewSagemakerUserProfileUserSettingsCustomPosixUserConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerUserProfileUserSettingsCustomPosixUserConfigOutputReference
 ```
@@ -10243,7 +10243,7 @@ func InternalValue() SagemakerUserProfileUserSettingsCustomPosixUserConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsJupyterLabAppSettingsAppLifecycleManagementIdleSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakeruserprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/sagemakeruserprofile"
 
 sagemakeruserprofile.NewSagemakerUserProfileUserSettingsJupyterLabAppSettingsAppLifecycleManagementIdleSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerUserProfileUserSettingsJupyterLabAppSettingsAppLifecycleManagementIdleSettingsOutputReference
 ```
@@ -10608,7 +10608,7 @@ func InternalValue() SagemakerUserProfileUserSettingsJupyterLabAppSettingsAppLif
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsJupyterLabAppSettingsAppLifecycleManagementOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakeruserprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/sagemakeruserprofile"
 
 sagemakeruserprofile.NewSagemakerUserProfileUserSettingsJupyterLabAppSettingsAppLifecycleManagementOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerUserProfileUserSettingsJupyterLabAppSettingsAppLifecycleManagementOutputReference
 ```
@@ -10899,7 +10899,7 @@ func InternalValue() SagemakerUserProfileUserSettingsJupyterLabAppSettingsAppLif
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsJupyterLabAppSettingsCodeRepositoryList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakeruserprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/sagemakeruserprofile"
 
 sagemakeruserprofile.NewSagemakerUserProfileUserSettingsJupyterLabAppSettingsCodeRepositoryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SagemakerUserProfileUserSettingsJupyterLabAppSettingsCodeRepositoryList
 ```
@@ -11059,7 +11059,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsJupyterLabAppSettingsCodeRepositoryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakeruserprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/sagemakeruserprofile"
 
 sagemakeruserprofile.NewSagemakerUserProfileUserSettingsJupyterLabAppSettingsCodeRepositoryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SagemakerUserProfileUserSettingsJupyterLabAppSettingsCodeRepositoryOutputReference
 ```
@@ -11348,7 +11348,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsJupyterLabAppSettingsCustomImageList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakeruserprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/sagemakeruserprofile"
 
 sagemakeruserprofile.NewSagemakerUserProfileUserSettingsJupyterLabAppSettingsCustomImageList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SagemakerUserProfileUserSettingsJupyterLabAppSettingsCustomImageList
 ```
@@ -11508,7 +11508,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsJupyterLabAppSettingsCustomImageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakeruserprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/sagemakeruserprofile"
 
 sagemakeruserprofile.NewSagemakerUserProfileUserSettingsJupyterLabAppSettingsCustomImageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SagemakerUserProfileUserSettingsJupyterLabAppSettingsCustomImageOutputReference
 ```
@@ -11848,7 +11848,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsJupyterLabAppSettingsDefaultResourceSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakeruserprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/sagemakeruserprofile"
 
 sagemakeruserprofile.NewSagemakerUserProfileUserSettingsJupyterLabAppSettingsDefaultResourceSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerUserProfileUserSettingsJupyterLabAppSettingsDefaultResourceSpecOutputReference
 ```
@@ -12242,7 +12242,7 @@ func InternalValue() SagemakerUserProfileUserSettingsJupyterLabAppSettingsDefaul
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsJupyterLabAppSettingsEmrSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakeruserprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/sagemakeruserprofile"
 
 sagemakeruserprofile.NewSagemakerUserProfileUserSettingsJupyterLabAppSettingsEmrSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerUserProfileUserSettingsJupyterLabAppSettingsEmrSettingsOutputReference
 ```
@@ -12549,7 +12549,7 @@ func InternalValue() SagemakerUserProfileUserSettingsJupyterLabAppSettingsEmrSet
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsJupyterLabAppSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakeruserprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/sagemakeruserprofile"
 
 sagemakeruserprofile.NewSagemakerUserProfileUserSettingsJupyterLabAppSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerUserProfileUserSettingsJupyterLabAppSettingsOutputReference
 ```
@@ -13066,7 +13066,7 @@ func InternalValue() SagemakerUserProfileUserSettingsJupyterLabAppSettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsJupyterServerAppSettingsCodeRepositoryList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakeruserprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/sagemakeruserprofile"
 
 sagemakeruserprofile.NewSagemakerUserProfileUserSettingsJupyterServerAppSettingsCodeRepositoryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SagemakerUserProfileUserSettingsJupyterServerAppSettingsCodeRepositoryList
 ```
@@ -13226,7 +13226,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsJupyterServerAppSettingsCodeRepositoryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakeruserprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/sagemakeruserprofile"
 
 sagemakeruserprofile.NewSagemakerUserProfileUserSettingsJupyterServerAppSettingsCodeRepositoryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SagemakerUserProfileUserSettingsJupyterServerAppSettingsCodeRepositoryOutputReference
 ```
@@ -13515,7 +13515,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsJupyterServerAppSettingsDefaultResourceSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakeruserprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/sagemakeruserprofile"
 
 sagemakeruserprofile.NewSagemakerUserProfileUserSettingsJupyterServerAppSettingsDefaultResourceSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerUserProfileUserSettingsJupyterServerAppSettingsDefaultResourceSpecOutputReference
 ```
@@ -13909,7 +13909,7 @@ func InternalValue() SagemakerUserProfileUserSettingsJupyterServerAppSettingsDef
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsJupyterServerAppSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakeruserprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/sagemakeruserprofile"
 
 sagemakeruserprofile.NewSagemakerUserProfileUserSettingsJupyterServerAppSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerUserProfileUserSettingsJupyterServerAppSettingsOutputReference
 ```
@@ -14271,7 +14271,7 @@ func InternalValue() SagemakerUserProfileUserSettingsJupyterServerAppSettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsKernelGatewayAppSettingsCustomImageList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakeruserprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/sagemakeruserprofile"
 
 sagemakeruserprofile.NewSagemakerUserProfileUserSettingsKernelGatewayAppSettingsCustomImageList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SagemakerUserProfileUserSettingsKernelGatewayAppSettingsCustomImageList
 ```
@@ -14431,7 +14431,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsKernelGatewayAppSettingsCustomImageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakeruserprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/sagemakeruserprofile"
 
 sagemakeruserprofile.NewSagemakerUserProfileUserSettingsKernelGatewayAppSettingsCustomImageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SagemakerUserProfileUserSettingsKernelGatewayAppSettingsCustomImageOutputReference
 ```
@@ -14771,7 +14771,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsKernelGatewayAppSettingsDefaultResourceSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakeruserprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/sagemakeruserprofile"
 
 sagemakeruserprofile.NewSagemakerUserProfileUserSettingsKernelGatewayAppSettingsDefaultResourceSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerUserProfileUserSettingsKernelGatewayAppSettingsDefaultResourceSpecOutputReference
 ```
@@ -15165,7 +15165,7 @@ func InternalValue() SagemakerUserProfileUserSettingsKernelGatewayAppSettingsDef
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsKernelGatewayAppSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakeruserprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/sagemakeruserprofile"
 
 sagemakeruserprofile.NewSagemakerUserProfileUserSettingsKernelGatewayAppSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerUserProfileUserSettingsKernelGatewayAppSettingsOutputReference
 ```
@@ -15527,7 +15527,7 @@ func InternalValue() SagemakerUserProfileUserSettingsKernelGatewayAppSettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakeruserprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/sagemakeruserprofile"
 
 sagemakeruserprofile.NewSagemakerUserProfileUserSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerUserProfileUserSettingsOutputReference
 ```
@@ -16460,7 +16460,7 @@ func InternalValue() SagemakerUserProfileUserSettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsRSessionAppSettingsCustomImageList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakeruserprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/sagemakeruserprofile"
 
 sagemakeruserprofile.NewSagemakerUserProfileUserSettingsRSessionAppSettingsCustomImageList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SagemakerUserProfileUserSettingsRSessionAppSettingsCustomImageList
 ```
@@ -16620,7 +16620,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsRSessionAppSettingsCustomImageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakeruserprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/sagemakeruserprofile"
 
 sagemakeruserprofile.NewSagemakerUserProfileUserSettingsRSessionAppSettingsCustomImageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SagemakerUserProfileUserSettingsRSessionAppSettingsCustomImageOutputReference
 ```
@@ -16960,7 +16960,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsRSessionAppSettingsDefaultResourceSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakeruserprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/sagemakeruserprofile"
 
 sagemakeruserprofile.NewSagemakerUserProfileUserSettingsRSessionAppSettingsDefaultResourceSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerUserProfileUserSettingsRSessionAppSettingsDefaultResourceSpecOutputReference
 ```
@@ -17354,7 +17354,7 @@ func InternalValue() SagemakerUserProfileUserSettingsRSessionAppSettingsDefaultR
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsRSessionAppSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakeruserprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/sagemakeruserprofile"
 
 sagemakeruserprofile.NewSagemakerUserProfileUserSettingsRSessionAppSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerUserProfileUserSettingsRSessionAppSettingsOutputReference
 ```
@@ -17687,7 +17687,7 @@ func InternalValue() SagemakerUserProfileUserSettingsRSessionAppSettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsRStudioServerProAppSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakeruserprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/sagemakeruserprofile"
 
 sagemakeruserprofile.NewSagemakerUserProfileUserSettingsRStudioServerProAppSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerUserProfileUserSettingsRStudioServerProAppSettingsOutputReference
 ```
@@ -17994,7 +17994,7 @@ func InternalValue() SagemakerUserProfileUserSettingsRStudioServerProAppSettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsSharingSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakeruserprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/sagemakeruserprofile"
 
 sagemakeruserprofile.NewSagemakerUserProfileUserSettingsSharingSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerUserProfileUserSettingsSharingSettingsOutputReference
 ```
@@ -18330,7 +18330,7 @@ func InternalValue() SagemakerUserProfileUserSettingsSharingSettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsSpaceStorageSettingsDefaultEbsStorageSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakeruserprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/sagemakeruserprofile"
 
 sagemakeruserprofile.NewSagemakerUserProfileUserSettingsSpaceStorageSettingsDefaultEbsStorageSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerUserProfileUserSettingsSpaceStorageSettingsDefaultEbsStorageSettingsOutputReference
 ```
@@ -18623,7 +18623,7 @@ func InternalValue() SagemakerUserProfileUserSettingsSpaceStorageSettingsDefault
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsSpaceStorageSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakeruserprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/sagemakeruserprofile"
 
 sagemakeruserprofile.NewSagemakerUserProfileUserSettingsSpaceStorageSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerUserProfileUserSettingsSpaceStorageSettingsOutputReference
 ```
@@ -18914,7 +18914,7 @@ func InternalValue() SagemakerUserProfileUserSettingsSpaceStorageSettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsStudioWebPortalSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakeruserprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/sagemakeruserprofile"
 
 sagemakeruserprofile.NewSagemakerUserProfileUserSettingsStudioWebPortalSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerUserProfileUserSettingsStudioWebPortalSettingsOutputReference
 ```
@@ -19250,7 +19250,7 @@ func InternalValue() SagemakerUserProfileUserSettingsStudioWebPortalSettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsTensorBoardAppSettingsDefaultResourceSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakeruserprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/sagemakeruserprofile"
 
 sagemakeruserprofile.NewSagemakerUserProfileUserSettingsTensorBoardAppSettingsDefaultResourceSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerUserProfileUserSettingsTensorBoardAppSettingsDefaultResourceSpecOutputReference
 ```
@@ -19644,7 +19644,7 @@ func InternalValue() SagemakerUserProfileUserSettingsTensorBoardAppSettingsDefau
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsTensorBoardAppSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakeruserprofile"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/sagemakeruserprofile"
 
 sagemakeruserprofile.NewSagemakerUserProfileUserSettingsTensorBoardAppSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerUserProfileUserSettingsTensorBoardAppSettingsOutputReference
 ```

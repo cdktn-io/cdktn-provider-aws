@@ -4,7 +4,7 @@
 
 ### DataAwsBatchJobDefinition <a name="DataAwsBatchJobDefinition" id="@cdktn/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinition"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/batch_job_definition aws_batch_job_definition}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/batch_job_definition aws_batch_job_definition}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinition.Initializer"></a>
 
@@ -40,11 +40,11 @@ dataAwsBatchJobDefinition.DataAwsBatchJobDefinition(
 | <code><a href="#@cdktn/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinition.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinition.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinition.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinition.Initializer.parameter.arn">arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/batch_job_definition#arn DataAwsBatchJobDefinition#arn}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinition.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/batch_job_definition#name DataAwsBatchJobDefinition#name}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinition.Initializer.parameter.arn">arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/batch_job_definition#arn DataAwsBatchJobDefinition#arn}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinition.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/batch_job_definition#name DataAwsBatchJobDefinition#name}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinition.Initializer.parameter.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinition.Initializer.parameter.revision">revision</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/batch_job_definition#revision DataAwsBatchJobDefinition#revision}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinition.Initializer.parameter.status">status</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/batch_job_definition#status DataAwsBatchJobDefinition#status}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinition.Initializer.parameter.revision">revision</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/batch_job_definition#revision DataAwsBatchJobDefinition#revision}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinition.Initializer.parameter.status">status</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/batch_job_definition#status DataAwsBatchJobDefinition#status}. |
 
 ---
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/batch_job_definition#arn DataAwsBatchJobDefinition#arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/batch_job_definition#arn DataAwsBatchJobDefinition#arn}.
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/batch_job_definition#name DataAwsBatchJobDefinition#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/batch_job_definition#name DataAwsBatchJobDefinition#name}.
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/batch_job_definition#region DataAwsBatchJobDefinition#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/batch_job_definition#region DataAwsBatchJobDefinition#region}
 
 ---
 
@@ -138,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/batch_job_definition#revision DataAwsBatchJobDefinition#revision}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/batch_job_definition#revision DataAwsBatchJobDefinition#revision}.
 
 ---
 
@@ -146,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/batch_job_definition#status DataAwsBatchJobDefinition#status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/batch_job_definition#status DataAwsBatchJobDefinition#status}.
 
 ---
 
@@ -540,7 +540,7 @@ The construct id used in the generated config for the DataAwsBatchJobDefinition 
 
 The id of the existing DataAwsBatchJobDefinition that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/batch_job_definition#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/batch_job_definition#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -967,11 +967,11 @@ dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionConfig(
 | <code><a href="#@cdktn/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionConfig.property.arn">arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/batch_job_definition#arn DataAwsBatchJobDefinition#arn}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/batch_job_definition#name DataAwsBatchJobDefinition#name}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionConfig.property.arn">arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/batch_job_definition#arn DataAwsBatchJobDefinition#arn}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/batch_job_definition#name DataAwsBatchJobDefinition#name}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionConfig.property.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionConfig.property.revision">revision</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/batch_job_definition#revision DataAwsBatchJobDefinition#revision}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionConfig.property.status">status</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/batch_job_definition#status DataAwsBatchJobDefinition#status}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionConfig.property.revision">revision</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/batch_job_definition#revision DataAwsBatchJobDefinition#revision}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionConfig.property.status">status</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/batch_job_definition#status DataAwsBatchJobDefinition#status}. |
 
 ---
 
@@ -1053,7 +1053,7 @@ arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/batch_job_definition#arn DataAwsBatchJobDefinition#arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/batch_job_definition#arn DataAwsBatchJobDefinition#arn}.
 
 ---
 
@@ -1065,7 +1065,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/batch_job_definition#name DataAwsBatchJobDefinition#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/batch_job_definition#name DataAwsBatchJobDefinition#name}.
 
 ---
 
@@ -1079,7 +1079,7 @@ region: str
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/batch_job_definition#region DataAwsBatchJobDefinition#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/batch_job_definition#region DataAwsBatchJobDefinition#region}
 
 ---
 
@@ -1091,7 +1091,7 @@ revision: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/batch_job_definition#revision DataAwsBatchJobDefinition#revision}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/batch_job_definition#revision DataAwsBatchJobDefinition#revision}.
 
 ---
 
@@ -1103,7 +1103,7 @@ status: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/batch_job_definition#status DataAwsBatchJobDefinition#status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/batch_job_definition#status DataAwsBatchJobDefinition#status}.
 
 ---
 
@@ -3951,6 +3951,7 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionEksPropertiesPodPropertiesContainersSecurityContextOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionEksPropertiesPodPropertiesContainersSecurityContextOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionEksPropertiesPodPropertiesContainersSecurityContextOutputReference.property.allowPrivilegeEscalation">allow_privilege_escalation</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionEksPropertiesPodPropertiesContainersSecurityContextOutputReference.property.privileged">privileged</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionEksPropertiesPodPropertiesContainersSecurityContextOutputReference.property.readOnlyRootFileSystem">read_only_root_file_system</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionEksPropertiesPodPropertiesContainersSecurityContextOutputReference.property.runAsGroup">run_as_group</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
@@ -3981,6 +3982,16 @@ fqn: str
 ```
 
 - *Type:* str
+
+---
+
+##### `allow_privilege_escalation`<sup>Required</sup> <a name="allow_privilege_escalation" id="@cdktn/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionEksPropertiesPodPropertiesContainersSecurityContextOutputReference.property.allowPrivilegeEscalation"></a>
+
+```python
+allow_privilege_escalation: IResolvable
+```
+
+- *Type:* cdktf.IResolvable
 
 ---
 
@@ -6911,6 +6922,7 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionEksPropertiesPodPropertiesInitContainersSecurityContextOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionEksPropertiesPodPropertiesInitContainersSecurityContextOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionEksPropertiesPodPropertiesInitContainersSecurityContextOutputReference.property.allowPrivilegeEscalation">allow_privilege_escalation</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionEksPropertiesPodPropertiesInitContainersSecurityContextOutputReference.property.privileged">privileged</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionEksPropertiesPodPropertiesInitContainersSecurityContextOutputReference.property.readOnlyRootFileSystem">read_only_root_file_system</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionEksPropertiesPodPropertiesInitContainersSecurityContextOutputReference.property.runAsGroup">run_as_group</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
@@ -6941,6 +6953,16 @@ fqn: str
 ```
 
 - *Type:* str
+
+---
+
+##### `allow_privilege_escalation`<sup>Required</sup> <a name="allow_privilege_escalation" id="@cdktn/provider-aws.dataAwsBatchJobDefinition.DataAwsBatchJobDefinitionEksPropertiesPodPropertiesInitContainersSecurityContextOutputReference.property.allowPrivilegeEscalation"></a>
+
+```python
+allow_privilege_escalation: IResolvable
+```
+
+- *Type:* cdktf.IResolvable
 
 ---
 

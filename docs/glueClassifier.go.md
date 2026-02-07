@@ -4,12 +4,12 @@
 
 ### GlueClassifier <a name="GlueClassifier" id="@cdktn/provider-aws.glueClassifier.GlueClassifier"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/glue_classifier aws_glue_classifier}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/glue_classifier aws_glue_classifier}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.glueClassifier.GlueClassifier.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/glueclassifier"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/glueclassifier"
 
 glueclassifier.NewGlueClassifier(scope Construct, id *string, config GlueClassifierConfig) GlueClassifier
 ```
@@ -472,7 +472,7 @@ func ResetXmlClassifier()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.glueClassifier.GlueClassifier.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/glueclassifier"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/glueclassifier"
 
 glueclassifier.GlueClassifier_IsConstruct(x interface{}) *bool
 ```
@@ -504,7 +504,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.glueClassifier.GlueClassifier.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/glueclassifier"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/glueclassifier"
 
 glueclassifier.GlueClassifier_IsTerraformElement(x interface{}) *bool
 ```
@@ -518,7 +518,7 @@ glueclassifier.GlueClassifier_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.glueClassifier.GlueClassifier.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/glueclassifier"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/glueclassifier"
 
 glueclassifier.GlueClassifier_IsTerraformResource(x interface{}) *bool
 ```
@@ -532,7 +532,7 @@ glueclassifier.GlueClassifier_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.glueClassifier.GlueClassifier.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/glueclassifier"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/glueclassifier"
 
 glueclassifier.GlueClassifier_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -561,7 +561,7 @@ The construct id used in the generated config for the GlueClassifier to import.
 
 The id of the existing GlueClassifier that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/glue_classifier#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/glue_classifier#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -915,7 +915,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.glueClassifier.GlueClassifierConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/glueclassifier"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/glueclassifier"
 
 &glueclassifier.GlueClassifierConfig {
 	Connection: interface{},
@@ -926,12 +926,12 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/glueclassifier"
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	Name: *string,
-	CsvClassifier: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.glueClassifier.GlueClassifierCsvClassifier,
-	GrokClassifier: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.glueClassifier.GlueClassifierGrokClassifier,
+	CsvClassifier: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.glueClassifier.GlueClassifierCsvClassifier,
+	GrokClassifier: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.glueClassifier.GlueClassifierGrokClassifier,
 	Id: *string,
-	JsonClassifier: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.glueClassifier.GlueClassifierJsonClassifier,
+	JsonClassifier: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.glueClassifier.GlueClassifierJsonClassifier,
 	Region: *string,
-	XmlClassifier: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.glueClassifier.GlueClassifierXmlClassifier,
+	XmlClassifier: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.glueClassifier.GlueClassifierXmlClassifier,
 }
 ```
 
@@ -946,10 +946,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/glueclassifier"
 | <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/glue_classifier#name GlueClassifier#name}. |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/glue_classifier#name GlueClassifier#name}. |
 | <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierConfig.property.csvClassifier">CsvClassifier</a></code> | <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifier">GlueClassifierCsvClassifier</a></code> | csv_classifier block. |
 | <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierConfig.property.grokClassifier">GrokClassifier</a></code> | <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierGrokClassifier">GlueClassifierGrokClassifier</a></code> | grok_classifier block. |
-| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/glue_classifier#id GlueClassifier#id}. |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/glue_classifier#id GlueClassifier#id}. |
 | <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierConfig.property.jsonClassifier">JsonClassifier</a></code> | <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierJsonClassifier">GlueClassifierJsonClassifier</a></code> | json_classifier block. |
 | <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierConfig.property.xmlClassifier">XmlClassifier</a></code> | <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierXmlClassifier">GlueClassifierXmlClassifier</a></code> | xml_classifier block. |
@@ -1034,7 +1034,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/glue_classifier#name GlueClassifier#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/glue_classifier#name GlueClassifier#name}.
 
 ---
 
@@ -1048,7 +1048,7 @@ CsvClassifier GlueClassifierCsvClassifier
 
 csv_classifier block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/glue_classifier#csv_classifier GlueClassifier#csv_classifier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/glue_classifier#csv_classifier GlueClassifier#csv_classifier}
 
 ---
 
@@ -1062,7 +1062,7 @@ GrokClassifier GlueClassifierGrokClassifier
 
 grok_classifier block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/glue_classifier#grok_classifier GlueClassifier#grok_classifier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/glue_classifier#grok_classifier GlueClassifier#grok_classifier}
 
 ---
 
@@ -1074,7 +1074,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/glue_classifier#id GlueClassifier#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/glue_classifier#id GlueClassifier#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1091,7 +1091,7 @@ JsonClassifier GlueClassifierJsonClassifier
 
 json_classifier block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/glue_classifier#json_classifier GlueClassifier#json_classifier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/glue_classifier#json_classifier GlueClassifier#json_classifier}
 
 ---
 
@@ -1105,7 +1105,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/glue_classifier#region GlueClassifier#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/glue_classifier#region GlueClassifier#region}
 
 ---
 
@@ -1119,7 +1119,7 @@ XmlClassifier GlueClassifierXmlClassifier
 
 xml_classifier block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/glue_classifier#xml_classifier GlueClassifier#xml_classifier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/glue_classifier#xml_classifier GlueClassifier#xml_classifier}
 
 ---
 
@@ -1128,7 +1128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifier.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/glueclassifier"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/glueclassifier"
 
 &glueclassifier.GlueClassifierCsvClassifier {
 	AllowSingleColumn: interface{},
@@ -1147,15 +1147,15 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/glueclassifier"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifier.property.allowSingleColumn">AllowSingleColumn</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/glue_classifier#allow_single_column GlueClassifier#allow_single_column}. |
-| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifier.property.containsHeader">ContainsHeader</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/glue_classifier#contains_header GlueClassifier#contains_header}. |
-| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifier.property.customDatatypeConfigured">CustomDatatypeConfigured</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/glue_classifier#custom_datatype_configured GlueClassifier#custom_datatype_configured}. |
-| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifier.property.customDatatypes">CustomDatatypes</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/glue_classifier#custom_datatypes GlueClassifier#custom_datatypes}. |
-| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifier.property.delimiter">Delimiter</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/glue_classifier#delimiter GlueClassifier#delimiter}. |
-| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifier.property.disableValueTrimming">DisableValueTrimming</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/glue_classifier#disable_value_trimming GlueClassifier#disable_value_trimming}. |
-| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifier.property.header">Header</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/glue_classifier#header GlueClassifier#header}. |
-| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifier.property.quoteSymbol">QuoteSymbol</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/glue_classifier#quote_symbol GlueClassifier#quote_symbol}. |
-| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifier.property.serde">Serde</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/glue_classifier#serde GlueClassifier#serde}. |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifier.property.allowSingleColumn">AllowSingleColumn</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/glue_classifier#allow_single_column GlueClassifier#allow_single_column}. |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifier.property.containsHeader">ContainsHeader</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/glue_classifier#contains_header GlueClassifier#contains_header}. |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifier.property.customDatatypeConfigured">CustomDatatypeConfigured</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/glue_classifier#custom_datatype_configured GlueClassifier#custom_datatype_configured}. |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifier.property.customDatatypes">CustomDatatypes</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/glue_classifier#custom_datatypes GlueClassifier#custom_datatypes}. |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifier.property.delimiter">Delimiter</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/glue_classifier#delimiter GlueClassifier#delimiter}. |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifier.property.disableValueTrimming">DisableValueTrimming</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/glue_classifier#disable_value_trimming GlueClassifier#disable_value_trimming}. |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifier.property.header">Header</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/glue_classifier#header GlueClassifier#header}. |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifier.property.quoteSymbol">QuoteSymbol</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/glue_classifier#quote_symbol GlueClassifier#quote_symbol}. |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifier.property.serde">Serde</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/glue_classifier#serde GlueClassifier#serde}. |
 
 ---
 
@@ -1167,7 +1167,7 @@ AllowSingleColumn interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/glue_classifier#allow_single_column GlueClassifier#allow_single_column}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/glue_classifier#allow_single_column GlueClassifier#allow_single_column}.
 
 ---
 
@@ -1179,7 +1179,7 @@ ContainsHeader *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/glue_classifier#contains_header GlueClassifier#contains_header}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/glue_classifier#contains_header GlueClassifier#contains_header}.
 
 ---
 
@@ -1191,7 +1191,7 @@ CustomDatatypeConfigured interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/glue_classifier#custom_datatype_configured GlueClassifier#custom_datatype_configured}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/glue_classifier#custom_datatype_configured GlueClassifier#custom_datatype_configured}.
 
 ---
 
@@ -1203,7 +1203,7 @@ CustomDatatypes *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/glue_classifier#custom_datatypes GlueClassifier#custom_datatypes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/glue_classifier#custom_datatypes GlueClassifier#custom_datatypes}.
 
 ---
 
@@ -1215,7 +1215,7 @@ Delimiter *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/glue_classifier#delimiter GlueClassifier#delimiter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/glue_classifier#delimiter GlueClassifier#delimiter}.
 
 ---
 
@@ -1227,7 +1227,7 @@ DisableValueTrimming interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/glue_classifier#disable_value_trimming GlueClassifier#disable_value_trimming}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/glue_classifier#disable_value_trimming GlueClassifier#disable_value_trimming}.
 
 ---
 
@@ -1239,7 +1239,7 @@ Header *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/glue_classifier#header GlueClassifier#header}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/glue_classifier#header GlueClassifier#header}.
 
 ---
 
@@ -1251,7 +1251,7 @@ QuoteSymbol *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/glue_classifier#quote_symbol GlueClassifier#quote_symbol}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/glue_classifier#quote_symbol GlueClassifier#quote_symbol}.
 
 ---
 
@@ -1263,7 +1263,7 @@ Serde *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/glue_classifier#serde GlueClassifier#serde}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/glue_classifier#serde GlueClassifier#serde}.
 
 ---
 
@@ -1272,7 +1272,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.glueClassifier.GlueClassifierGrokClassifier.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/glueclassifier"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/glueclassifier"
 
 &glueclassifier.GlueClassifierGrokClassifier {
 	Classification: *string,
@@ -1285,9 +1285,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/glueclassifier"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierGrokClassifier.property.classification">Classification</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/glue_classifier#classification GlueClassifier#classification}. |
-| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierGrokClassifier.property.grokPattern">GrokPattern</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/glue_classifier#grok_pattern GlueClassifier#grok_pattern}. |
-| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierGrokClassifier.property.customPatterns">CustomPatterns</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/glue_classifier#custom_patterns GlueClassifier#custom_patterns}. |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierGrokClassifier.property.classification">Classification</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/glue_classifier#classification GlueClassifier#classification}. |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierGrokClassifier.property.grokPattern">GrokPattern</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/glue_classifier#grok_pattern GlueClassifier#grok_pattern}. |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierGrokClassifier.property.customPatterns">CustomPatterns</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/glue_classifier#custom_patterns GlueClassifier#custom_patterns}. |
 
 ---
 
@@ -1299,7 +1299,7 @@ Classification *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/glue_classifier#classification GlueClassifier#classification}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/glue_classifier#classification GlueClassifier#classification}.
 
 ---
 
@@ -1311,7 +1311,7 @@ GrokPattern *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/glue_classifier#grok_pattern GlueClassifier#grok_pattern}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/glue_classifier#grok_pattern GlueClassifier#grok_pattern}.
 
 ---
 
@@ -1323,7 +1323,7 @@ CustomPatterns *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/glue_classifier#custom_patterns GlueClassifier#custom_patterns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/glue_classifier#custom_patterns GlueClassifier#custom_patterns}.
 
 ---
 
@@ -1332,7 +1332,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.glueClassifier.GlueClassifierJsonClassifier.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/glueclassifier"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/glueclassifier"
 
 &glueclassifier.GlueClassifierJsonClassifier {
 	JsonPath: *string,
@@ -1343,7 +1343,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/glueclassifier"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierJsonClassifier.property.jsonPath">JsonPath</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/glue_classifier#json_path GlueClassifier#json_path}. |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierJsonClassifier.property.jsonPath">JsonPath</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/glue_classifier#json_path GlueClassifier#json_path}. |
 
 ---
 
@@ -1355,7 +1355,7 @@ JsonPath *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/glue_classifier#json_path GlueClassifier#json_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/glue_classifier#json_path GlueClassifier#json_path}.
 
 ---
 
@@ -1364,7 +1364,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.glueClassifier.GlueClassifierXmlClassifier.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/glueclassifier"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/glueclassifier"
 
 &glueclassifier.GlueClassifierXmlClassifier {
 	Classification: *string,
@@ -1376,8 +1376,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/glueclassifier"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierXmlClassifier.property.classification">Classification</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/glue_classifier#classification GlueClassifier#classification}. |
-| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierXmlClassifier.property.rowTag">RowTag</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/glue_classifier#row_tag GlueClassifier#row_tag}. |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierXmlClassifier.property.classification">Classification</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/glue_classifier#classification GlueClassifier#classification}. |
+| <code><a href="#@cdktn/provider-aws.glueClassifier.GlueClassifierXmlClassifier.property.rowTag">RowTag</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/glue_classifier#row_tag GlueClassifier#row_tag}. |
 
 ---
 
@@ -1389,7 +1389,7 @@ Classification *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/glue_classifier#classification GlueClassifier#classification}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/glue_classifier#classification GlueClassifier#classification}.
 
 ---
 
@@ -1401,7 +1401,7 @@ RowTag *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/glue_classifier#row_tag GlueClassifier#row_tag}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/glue_classifier#row_tag GlueClassifier#row_tag}.
 
 ---
 
@@ -1412,7 +1412,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/glueclassifier"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/glueclassifier"
 
 glueclassifier.NewGlueClassifierCsvClassifierOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GlueClassifierCsvClassifierOutputReference
 ```
@@ -1922,7 +1922,7 @@ func InternalValue() GlueClassifierCsvClassifier
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/glueclassifier"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/glueclassifier"
 
 glueclassifier.NewGlueClassifierGrokClassifierOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GlueClassifierGrokClassifierOutputReference
 ```
@@ -2244,7 +2244,7 @@ func InternalValue() GlueClassifierGrokClassifier
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.glueClassifier.GlueClassifierJsonClassifierOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/glueclassifier"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/glueclassifier"
 
 glueclassifier.NewGlueClassifierJsonClassifierOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GlueClassifierJsonClassifierOutputReference
 ```
@@ -2515,7 +2515,7 @@ func InternalValue() GlueClassifierJsonClassifier
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.glueClassifier.GlueClassifierXmlClassifierOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/glueclassifier"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/glueclassifier"
 
 glueclassifier.NewGlueClassifierXmlClassifierOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GlueClassifierXmlClassifierOutputReference
 ```

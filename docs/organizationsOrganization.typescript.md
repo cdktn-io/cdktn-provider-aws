@@ -4,7 +4,7 @@
 
 ### OrganizationsOrganization <a name="OrganizationsOrganization" id="@cdktn/provider-aws.organizationsOrganization.OrganizationsOrganization"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/organizations_organization aws_organizations_organization}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/organizations_organization aws_organizations_organization}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.organizationsOrganization.OrganizationsOrganization.Initializer"></a>
 
@@ -77,6 +77,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-aws.organizationsOrganization.OrganizationsOrganization.resetEnabledPolicyTypes">resetEnabledPolicyTypes</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.organizationsOrganization.OrganizationsOrganization.resetFeatureSet">resetFeatureSet</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.organizationsOrganization.OrganizationsOrganization.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.organizationsOrganization.OrganizationsOrganization.resetReturnOrganizationOnly">resetReturnOrganizationOnly</a></code> | *No description.* |
 
 ---
 
@@ -392,6 +393,12 @@ public resetFeatureSet(): void
 public resetId(): void
 ```
 
+##### `resetReturnOrganizationOnly` <a name="resetReturnOrganizationOnly" id="@cdktn/provider-aws.organizationsOrganization.OrganizationsOrganization.resetReturnOrganizationOnly"></a>
+
+```typescript
+public resetReturnOrganizationOnly(): void
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -495,7 +502,7 @@ The construct id used in the generated config for the OrganizationsOrganization 
 
 The id of the existing OrganizationsOrganization that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/organizations_organization#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/organizations_organization#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -537,10 +544,12 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 | <code><a href="#@cdktn/provider-aws.organizationsOrganization.OrganizationsOrganization.property.enabledPolicyTypesInput">enabledPolicyTypesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.organizationsOrganization.OrganizationsOrganization.property.featureSetInput">featureSetInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.organizationsOrganization.OrganizationsOrganization.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.organizationsOrganization.OrganizationsOrganization.property.returnOrganizationOnlyInput">returnOrganizationOnlyInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.organizationsOrganization.OrganizationsOrganization.property.awsServiceAccessPrincipals">awsServiceAccessPrincipals</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.organizationsOrganization.OrganizationsOrganization.property.enabledPolicyTypes">enabledPolicyTypes</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.organizationsOrganization.OrganizationsOrganization.property.featureSet">featureSet</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.organizationsOrganization.OrganizationsOrganization.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.organizationsOrganization.OrganizationsOrganization.property.returnOrganizationOnly">returnOrganizationOnly</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 
 ---
 
@@ -806,6 +815,16 @@ public readonly idInput: string;
 
 ---
 
+##### `returnOrganizationOnlyInput`<sup>Optional</sup> <a name="returnOrganizationOnlyInput" id="@cdktn/provider-aws.organizationsOrganization.OrganizationsOrganization.property.returnOrganizationOnlyInput"></a>
+
+```typescript
+public readonly returnOrganizationOnlyInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
 ##### `awsServiceAccessPrincipals`<sup>Required</sup> <a name="awsServiceAccessPrincipals" id="@cdktn/provider-aws.organizationsOrganization.OrganizationsOrganization.property.awsServiceAccessPrincipals"></a>
 
 ```typescript
@@ -843,6 +862,16 @@ public readonly id: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `returnOrganizationOnly`<sup>Required</sup> <a name="returnOrganizationOnly" id="@cdktn/provider-aws.organizationsOrganization.OrganizationsOrganization.property.returnOrganizationOnly"></a>
+
+```typescript
+public readonly returnOrganizationOnly: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
 
 ---
 
@@ -898,10 +927,11 @@ const organizationsOrganizationConfig: organizationsOrganization.OrganizationsOr
 | <code><a href="#@cdktn/provider-aws.organizationsOrganization.OrganizationsOrganizationConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.organizationsOrganization.OrganizationsOrganizationConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.organizationsOrganization.OrganizationsOrganizationConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.organizationsOrganization.OrganizationsOrganizationConfig.property.awsServiceAccessPrincipals">awsServiceAccessPrincipals</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/organizations_organization#aws_service_access_principals OrganizationsOrganization#aws_service_access_principals}. |
-| <code><a href="#@cdktn/provider-aws.organizationsOrganization.OrganizationsOrganizationConfig.property.enabledPolicyTypes">enabledPolicyTypes</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/organizations_organization#enabled_policy_types OrganizationsOrganization#enabled_policy_types}. |
-| <code><a href="#@cdktn/provider-aws.organizationsOrganization.OrganizationsOrganizationConfig.property.featureSet">featureSet</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/organizations_organization#feature_set OrganizationsOrganization#feature_set}. |
-| <code><a href="#@cdktn/provider-aws.organizationsOrganization.OrganizationsOrganizationConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/organizations_organization#id OrganizationsOrganization#id}. |
+| <code><a href="#@cdktn/provider-aws.organizationsOrganization.OrganizationsOrganizationConfig.property.awsServiceAccessPrincipals">awsServiceAccessPrincipals</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/organizations_organization#aws_service_access_principals OrganizationsOrganization#aws_service_access_principals}. |
+| <code><a href="#@cdktn/provider-aws.organizationsOrganization.OrganizationsOrganizationConfig.property.enabledPolicyTypes">enabledPolicyTypes</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/organizations_organization#enabled_policy_types OrganizationsOrganization#enabled_policy_types}. |
+| <code><a href="#@cdktn/provider-aws.organizationsOrganization.OrganizationsOrganizationConfig.property.featureSet">featureSet</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/organizations_organization#feature_set OrganizationsOrganization#feature_set}. |
+| <code><a href="#@cdktn/provider-aws.organizationsOrganization.OrganizationsOrganizationConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/organizations_organization#id OrganizationsOrganization#id}. |
+| <code><a href="#@cdktn/provider-aws.organizationsOrganization.OrganizationsOrganizationConfig.property.returnOrganizationOnly">returnOrganizationOnly</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/organizations_organization#return_organization_only OrganizationsOrganization#return_organization_only}. |
 
 ---
 
@@ -983,7 +1013,7 @@ public readonly awsServiceAccessPrincipals: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/organizations_organization#aws_service_access_principals OrganizationsOrganization#aws_service_access_principals}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/organizations_organization#aws_service_access_principals OrganizationsOrganization#aws_service_access_principals}.
 
 ---
 
@@ -995,7 +1025,7 @@ public readonly enabledPolicyTypes: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/organizations_organization#enabled_policy_types OrganizationsOrganization#enabled_policy_types}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/organizations_organization#enabled_policy_types OrganizationsOrganization#enabled_policy_types}.
 
 ---
 
@@ -1007,7 +1037,7 @@ public readonly featureSet: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/organizations_organization#feature_set OrganizationsOrganization#feature_set}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/organizations_organization#feature_set OrganizationsOrganization#feature_set}.
 
 ---
 
@@ -1019,10 +1049,22 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/organizations_organization#id OrganizationsOrganization#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/organizations_organization#id OrganizationsOrganization#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `returnOrganizationOnly`<sup>Optional</sup> <a name="returnOrganizationOnly" id="@cdktn/provider-aws.organizationsOrganization.OrganizationsOrganizationConfig.property.returnOrganizationOnly"></a>
+
+```typescript
+public readonly returnOrganizationOnly: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/organizations_organization#return_organization_only OrganizationsOrganization#return_organization_only}.
 
 ---
 

@@ -4,12 +4,12 @@
 
 ### WafregionalRuleGroup <a name="WafregionalRuleGroup" id="@cdktn/provider-aws.wafregionalRuleGroup.WafregionalRuleGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/wafregional_rule_group aws_wafregional_rule_group}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/wafregional_rule_group aws_wafregional_rule_group}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafregionalRuleGroup.WafregionalRuleGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/wafregionalrulegroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/wafregionalrulegroup"
 
 wafregionalrulegroup.NewWafregionalRuleGroup(scope Construct, id *string, config WafregionalRuleGroupConfig) WafregionalRuleGroup
 ```
@@ -426,7 +426,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.wafregionalRuleGroup.WafregionalRuleGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/wafregionalrulegroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/wafregionalrulegroup"
 
 wafregionalrulegroup.WafregionalRuleGroup_IsConstruct(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.wafregionalRuleGroup.WafregionalRuleGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/wafregionalrulegroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/wafregionalrulegroup"
 
 wafregionalrulegroup.WafregionalRuleGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ wafregionalrulegroup.WafregionalRuleGroup_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.wafregionalRuleGroup.WafregionalRuleGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/wafregionalrulegroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/wafregionalrulegroup"
 
 wafregionalrulegroup.WafregionalRuleGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ wafregionalrulegroup.WafregionalRuleGroup_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.wafregionalRuleGroup.WafregionalRuleGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/wafregionalrulegroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/wafregionalrulegroup"
 
 wafregionalrulegroup.WafregionalRuleGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -515,7 +515,7 @@ The construct id used in the generated config for the WafregionalRuleGroup to im
 
 The id of the existing WafregionalRuleGroup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/wafregional_rule_group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/wafregional_rule_group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -880,10 +880,10 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafregionalRuleGroup.WafregionalRuleGroupActivatedRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/wafregionalrulegroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/wafregionalrulegroup"
 
 &wafregionalrulegroup.WafregionalRuleGroupActivatedRule {
-	Action: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.wafregionalRuleGroup.WafregionalRuleGroupActivatedRuleAction,
+	Action: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.wafregionalRuleGroup.WafregionalRuleGroupActivatedRuleAction,
 	Priority: *f64,
 	RuleId: *string,
 	Type: *string,
@@ -895,9 +895,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/wafregionalrulegroup"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.wafregionalRuleGroup.WafregionalRuleGroupActivatedRule.property.action">Action</a></code> | <code><a href="#@cdktn/provider-aws.wafregionalRuleGroup.WafregionalRuleGroupActivatedRuleAction">WafregionalRuleGroupActivatedRuleAction</a></code> | action block. |
-| <code><a href="#@cdktn/provider-aws.wafregionalRuleGroup.WafregionalRuleGroupActivatedRule.property.priority">Priority</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/wafregional_rule_group#priority WafregionalRuleGroup#priority}. |
-| <code><a href="#@cdktn/provider-aws.wafregionalRuleGroup.WafregionalRuleGroupActivatedRule.property.ruleId">RuleId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/wafregional_rule_group#rule_id WafregionalRuleGroup#rule_id}. |
-| <code><a href="#@cdktn/provider-aws.wafregionalRuleGroup.WafregionalRuleGroupActivatedRule.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/wafregional_rule_group#type WafregionalRuleGroup#type}. |
+| <code><a href="#@cdktn/provider-aws.wafregionalRuleGroup.WafregionalRuleGroupActivatedRule.property.priority">Priority</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/wafregional_rule_group#priority WafregionalRuleGroup#priority}. |
+| <code><a href="#@cdktn/provider-aws.wafregionalRuleGroup.WafregionalRuleGroupActivatedRule.property.ruleId">RuleId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/wafregional_rule_group#rule_id WafregionalRuleGroup#rule_id}. |
+| <code><a href="#@cdktn/provider-aws.wafregionalRuleGroup.WafregionalRuleGroupActivatedRule.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/wafregional_rule_group#type WafregionalRuleGroup#type}. |
 
 ---
 
@@ -911,7 +911,7 @@ Action WafregionalRuleGroupActivatedRuleAction
 
 action block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/wafregional_rule_group#action WafregionalRuleGroup#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/wafregional_rule_group#action WafregionalRuleGroup#action}
 
 ---
 
@@ -923,7 +923,7 @@ Priority *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/wafregional_rule_group#priority WafregionalRuleGroup#priority}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/wafregional_rule_group#priority WafregionalRuleGroup#priority}.
 
 ---
 
@@ -935,7 +935,7 @@ RuleId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/wafregional_rule_group#rule_id WafregionalRuleGroup#rule_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/wafregional_rule_group#rule_id WafregionalRuleGroup#rule_id}.
 
 ---
 
@@ -947,7 +947,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/wafregional_rule_group#type WafregionalRuleGroup#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/wafregional_rule_group#type WafregionalRuleGroup#type}.
 
 ---
 
@@ -956,7 +956,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafregionalRuleGroup.WafregionalRuleGroupActivatedRuleAction.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/wafregionalrulegroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/wafregionalrulegroup"
 
 &wafregionalrulegroup.WafregionalRuleGroupActivatedRuleAction {
 	Type: *string,
@@ -967,7 +967,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/wafregionalrulegroup"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.wafregionalRuleGroup.WafregionalRuleGroupActivatedRuleAction.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/wafregional_rule_group#type WafregionalRuleGroup#type}. |
+| <code><a href="#@cdktn/provider-aws.wafregionalRuleGroup.WafregionalRuleGroupActivatedRuleAction.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/wafregional_rule_group#type WafregionalRuleGroup#type}. |
 
 ---
 
@@ -979,7 +979,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/wafregional_rule_group#type WafregionalRuleGroup#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/wafregional_rule_group#type WafregionalRuleGroup#type}.
 
 ---
 
@@ -988,7 +988,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafregionalRuleGroup.WafregionalRuleGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/wafregionalrulegroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/wafregionalrulegroup"
 
 &wafregionalrulegroup.WafregionalRuleGroupConfig {
 	Connection: interface{},
@@ -1019,13 +1019,13 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/wafregionalrulegroup"
 | <code><a href="#@cdktn/provider-aws.wafregionalRuleGroup.WafregionalRuleGroupConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.wafregionalRuleGroup.WafregionalRuleGroupConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.wafregionalRuleGroup.WafregionalRuleGroupConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.wafregionalRuleGroup.WafregionalRuleGroupConfig.property.metricName">MetricName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/wafregional_rule_group#metric_name WafregionalRuleGroup#metric_name}. |
-| <code><a href="#@cdktn/provider-aws.wafregionalRuleGroup.WafregionalRuleGroupConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/wafregional_rule_group#name WafregionalRuleGroup#name}. |
+| <code><a href="#@cdktn/provider-aws.wafregionalRuleGroup.WafregionalRuleGroupConfig.property.metricName">MetricName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/wafregional_rule_group#metric_name WafregionalRuleGroup#metric_name}. |
+| <code><a href="#@cdktn/provider-aws.wafregionalRuleGroup.WafregionalRuleGroupConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/wafregional_rule_group#name WafregionalRuleGroup#name}. |
 | <code><a href="#@cdktn/provider-aws.wafregionalRuleGroup.WafregionalRuleGroupConfig.property.activatedRule">ActivatedRule</a></code> | <code>interface{}</code> | activated_rule block. |
-| <code><a href="#@cdktn/provider-aws.wafregionalRuleGroup.WafregionalRuleGroupConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/wafregional_rule_group#id WafregionalRuleGroup#id}. |
+| <code><a href="#@cdktn/provider-aws.wafregionalRuleGroup.WafregionalRuleGroupConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/wafregional_rule_group#id WafregionalRuleGroup#id}. |
 | <code><a href="#@cdktn/provider-aws.wafregionalRuleGroup.WafregionalRuleGroupConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.wafregionalRuleGroup.WafregionalRuleGroupConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/wafregional_rule_group#tags WafregionalRuleGroup#tags}. |
-| <code><a href="#@cdktn/provider-aws.wafregionalRuleGroup.WafregionalRuleGroupConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/wafregional_rule_group#tags_all WafregionalRuleGroup#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.wafregionalRuleGroup.WafregionalRuleGroupConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/wafregional_rule_group#tags WafregionalRuleGroup#tags}. |
+| <code><a href="#@cdktn/provider-aws.wafregionalRuleGroup.WafregionalRuleGroupConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/wafregional_rule_group#tags_all WafregionalRuleGroup#tags_all}. |
 
 ---
 
@@ -1107,7 +1107,7 @@ MetricName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/wafregional_rule_group#metric_name WafregionalRuleGroup#metric_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/wafregional_rule_group#metric_name WafregionalRuleGroup#metric_name}.
 
 ---
 
@@ -1119,7 +1119,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/wafregional_rule_group#name WafregionalRuleGroup#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/wafregional_rule_group#name WafregionalRuleGroup#name}.
 
 ---
 
@@ -1133,7 +1133,7 @@ ActivatedRule interface{}
 
 activated_rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/wafregional_rule_group#activated_rule WafregionalRuleGroup#activated_rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/wafregional_rule_group#activated_rule WafregionalRuleGroup#activated_rule}
 
 ---
 
@@ -1145,7 +1145,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/wafregional_rule_group#id WafregionalRuleGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/wafregional_rule_group#id WafregionalRuleGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1162,7 +1162,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/wafregional_rule_group#region WafregionalRuleGroup#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/wafregional_rule_group#region WafregionalRuleGroup#region}
 
 ---
 
@@ -1174,7 +1174,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/wafregional_rule_group#tags WafregionalRuleGroup#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/wafregional_rule_group#tags WafregionalRuleGroup#tags}.
 
 ---
 
@@ -1186,7 +1186,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/wafregional_rule_group#tags_all WafregionalRuleGroup#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/wafregional_rule_group#tags_all WafregionalRuleGroup#tags_all}.
 
 ---
 
@@ -1197,7 +1197,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafregionalRuleGroup.WafregionalRuleGroupActivatedRuleActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/wafregionalrulegroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/wafregionalrulegroup"
 
 wafregionalrulegroup.NewWafregionalRuleGroupActivatedRuleActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WafregionalRuleGroupActivatedRuleActionOutputReference
 ```
@@ -1468,7 +1468,7 @@ func InternalValue() WafregionalRuleGroupActivatedRuleAction
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafregionalRuleGroup.WafregionalRuleGroupActivatedRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/wafregionalrulegroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/wafregionalrulegroup"
 
 wafregionalrulegroup.NewWafregionalRuleGroupActivatedRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WafregionalRuleGroupActivatedRuleList
 ```
@@ -1628,7 +1628,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafregionalRuleGroup.WafregionalRuleGroupActivatedRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/wafregionalrulegroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/wafregionalrulegroup"
 
 wafregionalrulegroup.NewWafregionalRuleGroupActivatedRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WafregionalRuleGroupActivatedRuleOutputReference
 ```

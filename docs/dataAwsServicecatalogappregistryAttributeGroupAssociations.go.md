@@ -4,12 +4,12 @@
 
 ### DataAwsServicecatalogappregistryAttributeGroupAssociations <a name="DataAwsServicecatalogappregistryAttributeGroupAssociations" id="@cdktn/provider-aws.dataAwsServicecatalogappregistryAttributeGroupAssociations.DataAwsServicecatalogappregistryAttributeGroupAssociations"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/servicecatalogappregistry_attribute_group_associations aws_servicecatalogappregistry_attribute_group_associations}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/servicecatalogappregistry_attribute_group_associations aws_servicecatalogappregistry_attribute_group_associations}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsServicecatalogappregistryAttributeGroupAssociations.DataAwsServicecatalogappregistryAttributeGroupAssociations.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsservicecatalogappregistryattributegroupassociations"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsservicecatalogappregistryattributegroupassociations"
 
 dataawsservicecatalogappregistryattributegroupassociations.NewDataAwsServicecatalogappregistryAttributeGroupAssociations(scope Construct, id *string, config DataAwsServicecatalogappregistryAttributeGroupAssociationsConfig) DataAwsServicecatalogappregistryAttributeGroupAssociations
 ```
@@ -297,7 +297,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsServicecatalogappregistryAttributeGroupAssociations.DataAwsServicecatalogappregistryAttributeGroupAssociations.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsservicecatalogappregistryattributegroupassociations"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsservicecatalogappregistryattributegroupassociations"
 
 dataawsservicecatalogappregistryattributegroupassociations.DataAwsServicecatalogappregistryAttributeGroupAssociations_IsConstruct(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsServicecatalogappregistryAttributeGroupAssociations.DataAwsServicecatalogappregistryAttributeGroupAssociations.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsservicecatalogappregistryattributegroupassociations"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsservicecatalogappregistryattributegroupassociations"
 
 dataawsservicecatalogappregistryattributegroupassociations.DataAwsServicecatalogappregistryAttributeGroupAssociations_IsTerraformElement(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ dataawsservicecatalogappregistryattributegroupassociations.DataAwsServicecatalog
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsServicecatalogappregistryAttributeGroupAssociations.DataAwsServicecatalogappregistryAttributeGroupAssociations.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsservicecatalogappregistryattributegroupassociations"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsservicecatalogappregistryattributegroupassociations"
 
 dataawsservicecatalogappregistryattributegroupassociations.DataAwsServicecatalogappregistryAttributeGroupAssociations_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ dataawsservicecatalogappregistryattributegroupassociations.DataAwsServicecatalog
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsServicecatalogappregistryAttributeGroupAssociations.DataAwsServicecatalogappregistryAttributeGroupAssociations.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsservicecatalogappregistryattributegroupassociations"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsservicecatalogappregistryattributegroupassociations"
 
 dataawsservicecatalogappregistryattributegroupassociations.DataAwsServicecatalogappregistryAttributeGroupAssociations_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -386,7 +386,7 @@ The construct id used in the generated config for the DataAwsServicecatalogappre
 
 The id of the existing DataAwsServicecatalogappregistryAttributeGroupAssociations that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/servicecatalogappregistry_attribute_group_associations#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/servicecatalogappregistry_attribute_group_associations#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -641,7 +641,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsServicecatalogappregistryAttributeGroupAssociations.DataAwsServicecatalogappregistryAttributeGroupAssociationsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsservicecatalogappregistryattributegroupassociations"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsservicecatalogappregistryattributegroupassociations"
 
 &dataawsservicecatalogappregistryattributegroupassociations.DataAwsServicecatalogappregistryAttributeGroupAssociationsConfig {
 	Connection: interface{},
@@ -668,8 +668,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsservicecataloga
 | <code><a href="#@cdktn/provider-aws.dataAwsServicecatalogappregistryAttributeGroupAssociations.DataAwsServicecatalogappregistryAttributeGroupAssociationsConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsServicecatalogappregistryAttributeGroupAssociations.DataAwsServicecatalogappregistryAttributeGroupAssociationsConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsServicecatalogappregistryAttributeGroupAssociations.DataAwsServicecatalogappregistryAttributeGroupAssociationsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsServicecatalogappregistryAttributeGroupAssociations.DataAwsServicecatalogappregistryAttributeGroupAssociationsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/servicecatalogappregistry_attribute_group_associations#id DataAwsServicecatalogappregistryAttributeGroupAssociations#id}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsServicecatalogappregistryAttributeGroupAssociations.DataAwsServicecatalogappregistryAttributeGroupAssociationsConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/servicecatalogappregistry_attribute_group_associations#name DataAwsServicecatalogappregistryAttributeGroupAssociations#name}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsServicecatalogappregistryAttributeGroupAssociations.DataAwsServicecatalogappregistryAttributeGroupAssociationsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/servicecatalogappregistry_attribute_group_associations#id DataAwsServicecatalogappregistryAttributeGroupAssociations#id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsServicecatalogappregistryAttributeGroupAssociations.DataAwsServicecatalogappregistryAttributeGroupAssociationsConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/servicecatalogappregistry_attribute_group_associations#name DataAwsServicecatalogappregistryAttributeGroupAssociations#name}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsServicecatalogappregistryAttributeGroupAssociations.DataAwsServicecatalogappregistryAttributeGroupAssociationsConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -752,7 +752,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/servicecatalogappregistry_attribute_group_associations#id DataAwsServicecatalogappregistryAttributeGroupAssociations#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/servicecatalogappregistry_attribute_group_associations#id DataAwsServicecatalogappregistryAttributeGroupAssociations#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -767,7 +767,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/servicecatalogappregistry_attribute_group_associations#name DataAwsServicecatalogappregistryAttributeGroupAssociations#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/servicecatalogappregistry_attribute_group_associations#name DataAwsServicecatalogappregistryAttributeGroupAssociations#name}.
 
 ---
 
@@ -781,7 +781,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/servicecatalogappregistry_attribute_group_associations#region DataAwsServicecatalogappregistryAttributeGroupAssociations#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/servicecatalogappregistry_attribute_group_associations#region DataAwsServicecatalogappregistryAttributeGroupAssociations#region}
 
 ---
 

@@ -4,12 +4,12 @@
 
 ### KmsKeyPolicy <a name="KmsKeyPolicy" id="@cdktn/provider-aws.kmsKeyPolicy.KmsKeyPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/kms_key_policy aws_kms_key_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/kms_key_policy aws_kms_key_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.kmsKeyPolicy.KmsKeyPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/kmskeypolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/kmskeypolicy"
 
 kmskeypolicy.NewKmsKeyPolicy(scope Construct, id *string, config KmsKeyPolicyConfig) KmsKeyPolicy
 ```
@@ -399,7 +399,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.kmsKeyPolicy.KmsKeyPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/kmskeypolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/kmskeypolicy"
 
 kmskeypolicy.KmsKeyPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.kmsKeyPolicy.KmsKeyPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/kmskeypolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/kmskeypolicy"
 
 kmskeypolicy.KmsKeyPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ kmskeypolicy.KmsKeyPolicy_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.kmsKeyPolicy.KmsKeyPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/kmskeypolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/kmskeypolicy"
 
 kmskeypolicy.KmsKeyPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ kmskeypolicy.KmsKeyPolicy_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.kmsKeyPolicy.KmsKeyPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/kmskeypolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/kmskeypolicy"
 
 kmskeypolicy.KmsKeyPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -488,7 +488,7 @@ The construct id used in the generated config for the KmsKeyPolicy to import.
 
 The id of the existing KmsKeyPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/kms_key_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/kms_key_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -798,7 +798,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.kmsKeyPolicy.KmsKeyPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/kmskeypolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/kmskeypolicy"
 
 &kmskeypolicy.KmsKeyPolicyConfig {
 	Connection: interface{},
@@ -827,10 +827,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/kmskeypolicy"
 | <code><a href="#@cdktn/provider-aws.kmsKeyPolicy.KmsKeyPolicyConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.kmsKeyPolicy.KmsKeyPolicyConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.kmsKeyPolicy.KmsKeyPolicyConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.kmsKeyPolicy.KmsKeyPolicyConfig.property.keyId">KeyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/kms_key_policy#key_id KmsKeyPolicy#key_id}. |
-| <code><a href="#@cdktn/provider-aws.kmsKeyPolicy.KmsKeyPolicyConfig.property.policy">Policy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/kms_key_policy#policy KmsKeyPolicy#policy}. |
-| <code><a href="#@cdktn/provider-aws.kmsKeyPolicy.KmsKeyPolicyConfig.property.bypassPolicyLockoutSafetyCheck">BypassPolicyLockoutSafetyCheck</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/kms_key_policy#bypass_policy_lockout_safety_check KmsKeyPolicy#bypass_policy_lockout_safety_check}. |
-| <code><a href="#@cdktn/provider-aws.kmsKeyPolicy.KmsKeyPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/kms_key_policy#id KmsKeyPolicy#id}. |
+| <code><a href="#@cdktn/provider-aws.kmsKeyPolicy.KmsKeyPolicyConfig.property.keyId">KeyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/kms_key_policy#key_id KmsKeyPolicy#key_id}. |
+| <code><a href="#@cdktn/provider-aws.kmsKeyPolicy.KmsKeyPolicyConfig.property.policy">Policy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/kms_key_policy#policy KmsKeyPolicy#policy}. |
+| <code><a href="#@cdktn/provider-aws.kmsKeyPolicy.KmsKeyPolicyConfig.property.bypassPolicyLockoutSafetyCheck">BypassPolicyLockoutSafetyCheck</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/kms_key_policy#bypass_policy_lockout_safety_check KmsKeyPolicy#bypass_policy_lockout_safety_check}. |
+| <code><a href="#@cdktn/provider-aws.kmsKeyPolicy.KmsKeyPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/kms_key_policy#id KmsKeyPolicy#id}. |
 | <code><a href="#@cdktn/provider-aws.kmsKeyPolicy.KmsKeyPolicyConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -913,7 +913,7 @@ KeyId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/kms_key_policy#key_id KmsKeyPolicy#key_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/kms_key_policy#key_id KmsKeyPolicy#key_id}.
 
 ---
 
@@ -925,7 +925,7 @@ Policy *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/kms_key_policy#policy KmsKeyPolicy#policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/kms_key_policy#policy KmsKeyPolicy#policy}.
 
 ---
 
@@ -937,7 +937,7 @@ BypassPolicyLockoutSafetyCheck interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/kms_key_policy#bypass_policy_lockout_safety_check KmsKeyPolicy#bypass_policy_lockout_safety_check}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/kms_key_policy#bypass_policy_lockout_safety_check KmsKeyPolicy#bypass_policy_lockout_safety_check}.
 
 ---
 
@@ -949,7 +949,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/kms_key_policy#id KmsKeyPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/kms_key_policy#id KmsKeyPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -966,7 +966,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/kms_key_policy#region KmsKeyPolicy#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/kms_key_policy#region KmsKeyPolicy#region}
 
 ---
 

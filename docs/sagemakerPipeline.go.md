@@ -4,12 +4,12 @@
 
 ### SagemakerPipeline <a name="SagemakerPipeline" id="@cdktn/provider-aws.sagemakerPipeline.SagemakerPipeline"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_pipeline aws_sagemaker_pipeline}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_pipeline aws_sagemaker_pipeline}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerPipeline.SagemakerPipeline.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakerpipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/sagemakerpipeline"
 
 sagemakerpipeline.NewSagemakerPipeline(scope Construct, id *string, config SagemakerPipelineConfig) SagemakerPipeline
 ```
@@ -467,7 +467,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.sagemakerPipeline.SagemakerPipeline.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakerpipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/sagemakerpipeline"
 
 sagemakerpipeline.SagemakerPipeline_IsConstruct(x interface{}) *bool
 ```
@@ -499,7 +499,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.sagemakerPipeline.SagemakerPipeline.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakerpipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/sagemakerpipeline"
 
 sagemakerpipeline.SagemakerPipeline_IsTerraformElement(x interface{}) *bool
 ```
@@ -513,7 +513,7 @@ sagemakerpipeline.SagemakerPipeline_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.sagemakerPipeline.SagemakerPipeline.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakerpipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/sagemakerpipeline"
 
 sagemakerpipeline.SagemakerPipeline_IsTerraformResource(x interface{}) *bool
 ```
@@ -527,7 +527,7 @@ sagemakerpipeline.SagemakerPipeline_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.sagemakerPipeline.SagemakerPipeline.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakerpipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/sagemakerpipeline"
 
 sagemakerpipeline.SagemakerPipeline_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -556,7 +556,7 @@ The construct id used in the generated config for the SagemakerPipeline to impor
 
 The id of the existing SagemakerPipeline that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_pipeline#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_pipeline#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1009,7 +1009,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerPipeline.SagemakerPipelineConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakerpipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/sagemakerpipeline"
 
 &sagemakerpipeline.SagemakerPipelineConfig {
 	Connection: interface{},
@@ -1022,9 +1022,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakerpipeline"
 	PipelineDisplayName: *string,
 	PipelineName: *string,
 	Id: *string,
-	ParallelismConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.sagemakerPipeline.SagemakerPipelineParallelismConfiguration,
+	ParallelismConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.sagemakerPipeline.SagemakerPipelineParallelismConfiguration,
 	PipelineDefinition: *string,
-	PipelineDefinitionS3Location: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.sagemakerPipeline.SagemakerPipelinePipelineDefinitionS3Location,
+	PipelineDefinitionS3Location: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.sagemakerPipeline.SagemakerPipelinePipelineDefinitionS3Location,
 	PipelineDescription: *string,
 	Region: *string,
 	RoleArn: *string,
@@ -1044,17 +1044,17 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakerpipeline"
 | <code><a href="#@cdktn/provider-aws.sagemakerPipeline.SagemakerPipelineConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.sagemakerPipeline.SagemakerPipelineConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.sagemakerPipeline.SagemakerPipelineConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.sagemakerPipeline.SagemakerPipelineConfig.property.pipelineDisplayName">PipelineDisplayName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_pipeline#pipeline_display_name SagemakerPipeline#pipeline_display_name}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerPipeline.SagemakerPipelineConfig.property.pipelineName">PipelineName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_pipeline#pipeline_name SagemakerPipeline#pipeline_name}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerPipeline.SagemakerPipelineConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_pipeline#id SagemakerPipeline#id}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerPipeline.SagemakerPipelineConfig.property.pipelineDisplayName">PipelineDisplayName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_pipeline#pipeline_display_name SagemakerPipeline#pipeline_display_name}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerPipeline.SagemakerPipelineConfig.property.pipelineName">PipelineName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_pipeline#pipeline_name SagemakerPipeline#pipeline_name}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerPipeline.SagemakerPipelineConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_pipeline#id SagemakerPipeline#id}. |
 | <code><a href="#@cdktn/provider-aws.sagemakerPipeline.SagemakerPipelineConfig.property.parallelismConfiguration">ParallelismConfiguration</a></code> | <code><a href="#@cdktn/provider-aws.sagemakerPipeline.SagemakerPipelineParallelismConfiguration">SagemakerPipelineParallelismConfiguration</a></code> | parallelism_configuration block. |
-| <code><a href="#@cdktn/provider-aws.sagemakerPipeline.SagemakerPipelineConfig.property.pipelineDefinition">PipelineDefinition</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_pipeline#pipeline_definition SagemakerPipeline#pipeline_definition}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerPipeline.SagemakerPipelineConfig.property.pipelineDefinition">PipelineDefinition</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_pipeline#pipeline_definition SagemakerPipeline#pipeline_definition}. |
 | <code><a href="#@cdktn/provider-aws.sagemakerPipeline.SagemakerPipelineConfig.property.pipelineDefinitionS3Location">PipelineDefinitionS3Location</a></code> | <code><a href="#@cdktn/provider-aws.sagemakerPipeline.SagemakerPipelinePipelineDefinitionS3Location">SagemakerPipelinePipelineDefinitionS3Location</a></code> | pipeline_definition_s3_location block. |
-| <code><a href="#@cdktn/provider-aws.sagemakerPipeline.SagemakerPipelineConfig.property.pipelineDescription">PipelineDescription</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_pipeline#pipeline_description SagemakerPipeline#pipeline_description}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerPipeline.SagemakerPipelineConfig.property.pipelineDescription">PipelineDescription</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_pipeline#pipeline_description SagemakerPipeline#pipeline_description}. |
 | <code><a href="#@cdktn/provider-aws.sagemakerPipeline.SagemakerPipelineConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.sagemakerPipeline.SagemakerPipelineConfig.property.roleArn">RoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_pipeline#role_arn SagemakerPipeline#role_arn}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerPipeline.SagemakerPipelineConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_pipeline#tags SagemakerPipeline#tags}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerPipeline.SagemakerPipelineConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_pipeline#tags_all SagemakerPipeline#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerPipeline.SagemakerPipelineConfig.property.roleArn">RoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_pipeline#role_arn SagemakerPipeline#role_arn}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerPipeline.SagemakerPipelineConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_pipeline#tags SagemakerPipeline#tags}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerPipeline.SagemakerPipelineConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_pipeline#tags_all SagemakerPipeline#tags_all}. |
 
 ---
 
@@ -1136,7 +1136,7 @@ PipelineDisplayName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_pipeline#pipeline_display_name SagemakerPipeline#pipeline_display_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_pipeline#pipeline_display_name SagemakerPipeline#pipeline_display_name}.
 
 ---
 
@@ -1148,7 +1148,7 @@ PipelineName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_pipeline#pipeline_name SagemakerPipeline#pipeline_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_pipeline#pipeline_name SagemakerPipeline#pipeline_name}.
 
 ---
 
@@ -1160,7 +1160,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_pipeline#id SagemakerPipeline#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_pipeline#id SagemakerPipeline#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1177,7 +1177,7 @@ ParallelismConfiguration SagemakerPipelineParallelismConfiguration
 
 parallelism_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_pipeline#parallelism_configuration SagemakerPipeline#parallelism_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_pipeline#parallelism_configuration SagemakerPipeline#parallelism_configuration}
 
 ---
 
@@ -1189,7 +1189,7 @@ PipelineDefinition *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_pipeline#pipeline_definition SagemakerPipeline#pipeline_definition}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_pipeline#pipeline_definition SagemakerPipeline#pipeline_definition}.
 
 ---
 
@@ -1203,7 +1203,7 @@ PipelineDefinitionS3Location SagemakerPipelinePipelineDefinitionS3Location
 
 pipeline_definition_s3_location block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_pipeline#pipeline_definition_s3_location SagemakerPipeline#pipeline_definition_s3_location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_pipeline#pipeline_definition_s3_location SagemakerPipeline#pipeline_definition_s3_location}
 
 ---
 
@@ -1215,7 +1215,7 @@ PipelineDescription *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_pipeline#pipeline_description SagemakerPipeline#pipeline_description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_pipeline#pipeline_description SagemakerPipeline#pipeline_description}.
 
 ---
 
@@ -1229,7 +1229,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_pipeline#region SagemakerPipeline#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_pipeline#region SagemakerPipeline#region}
 
 ---
 
@@ -1241,7 +1241,7 @@ RoleArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_pipeline#role_arn SagemakerPipeline#role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_pipeline#role_arn SagemakerPipeline#role_arn}.
 
 ---
 
@@ -1253,7 +1253,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_pipeline#tags SagemakerPipeline#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_pipeline#tags SagemakerPipeline#tags}.
 
 ---
 
@@ -1265,7 +1265,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_pipeline#tags_all SagemakerPipeline#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_pipeline#tags_all SagemakerPipeline#tags_all}.
 
 ---
 
@@ -1274,7 +1274,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerPipeline.SagemakerPipelineParallelismConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakerpipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/sagemakerpipeline"
 
 &sagemakerpipeline.SagemakerPipelineParallelismConfiguration {
 	MaxParallelExecutionSteps: *f64,
@@ -1285,7 +1285,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakerpipeline"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.sagemakerPipeline.SagemakerPipelineParallelismConfiguration.property.maxParallelExecutionSteps">MaxParallelExecutionSteps</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_pipeline#max_parallel_execution_steps SagemakerPipeline#max_parallel_execution_steps}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerPipeline.SagemakerPipelineParallelismConfiguration.property.maxParallelExecutionSteps">MaxParallelExecutionSteps</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_pipeline#max_parallel_execution_steps SagemakerPipeline#max_parallel_execution_steps}. |
 
 ---
 
@@ -1297,7 +1297,7 @@ MaxParallelExecutionSteps *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_pipeline#max_parallel_execution_steps SagemakerPipeline#max_parallel_execution_steps}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_pipeline#max_parallel_execution_steps SagemakerPipeline#max_parallel_execution_steps}.
 
 ---
 
@@ -1306,7 +1306,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.sagemakerPipeline.SagemakerPipelinePipelineDefinitionS3Location.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakerpipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/sagemakerpipeline"
 
 &sagemakerpipeline.SagemakerPipelinePipelineDefinitionS3Location {
 	Bucket: *string,
@@ -1319,9 +1319,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakerpipeline"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.sagemakerPipeline.SagemakerPipelinePipelineDefinitionS3Location.property.bucket">Bucket</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_pipeline#bucket SagemakerPipeline#bucket}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerPipeline.SagemakerPipelinePipelineDefinitionS3Location.property.objectKey">ObjectKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_pipeline#object_key SagemakerPipeline#object_key}. |
-| <code><a href="#@cdktn/provider-aws.sagemakerPipeline.SagemakerPipelinePipelineDefinitionS3Location.property.versionId">VersionId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_pipeline#version_id SagemakerPipeline#version_id}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerPipeline.SagemakerPipelinePipelineDefinitionS3Location.property.bucket">Bucket</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_pipeline#bucket SagemakerPipeline#bucket}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerPipeline.SagemakerPipelinePipelineDefinitionS3Location.property.objectKey">ObjectKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_pipeline#object_key SagemakerPipeline#object_key}. |
+| <code><a href="#@cdktn/provider-aws.sagemakerPipeline.SagemakerPipelinePipelineDefinitionS3Location.property.versionId">VersionId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_pipeline#version_id SagemakerPipeline#version_id}. |
 
 ---
 
@@ -1333,7 +1333,7 @@ Bucket *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_pipeline#bucket SagemakerPipeline#bucket}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_pipeline#bucket SagemakerPipeline#bucket}.
 
 ---
 
@@ -1345,7 +1345,7 @@ ObjectKey *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_pipeline#object_key SagemakerPipeline#object_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_pipeline#object_key SagemakerPipeline#object_key}.
 
 ---
 
@@ -1357,7 +1357,7 @@ VersionId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sagemaker_pipeline#version_id SagemakerPipeline#version_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sagemaker_pipeline#version_id SagemakerPipeline#version_id}.
 
 ---
 
@@ -1368,7 +1368,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerPipeline.SagemakerPipelineParallelismConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakerpipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/sagemakerpipeline"
 
 sagemakerpipeline.NewSagemakerPipelineParallelismConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerPipelineParallelismConfigurationOutputReference
 ```
@@ -1639,7 +1639,7 @@ func InternalValue() SagemakerPipelineParallelismConfiguration
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sagemakerPipeline.SagemakerPipelinePipelineDefinitionS3LocationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/sagemakerpipeline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/sagemakerpipeline"
 
 sagemakerpipeline.NewSagemakerPipelinePipelineDefinitionS3LocationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SagemakerPipelinePipelineDefinitionS3LocationOutputReference
 ```

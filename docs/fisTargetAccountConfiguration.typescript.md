@@ -4,7 +4,7 @@
 
 ### FisTargetAccountConfiguration <a name="FisTargetAccountConfiguration" id="@cdktn/provider-aws.fisTargetAccountConfiguration.FisTargetAccountConfiguration"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/fis_target_account_configuration aws_fis_target_account_configuration}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/fis_target_account_configuration aws_fis_target_account_configuration}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.fisTargetAccountConfiguration.FisTargetAccountConfiguration.Initializer"></a>
 
@@ -488,7 +488,7 @@ The construct id used in the generated config for the FisTargetAccountConfigurat
 
 The id of the existing FisTargetAccountConfiguration that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/fis_target_account_configuration#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/fis_target_account_configuration#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -814,11 +814,11 @@ const fisTargetAccountConfigurationConfig: fisTargetAccountConfiguration.FisTarg
 | <code><a href="#@cdktn/provider-aws.fisTargetAccountConfiguration.FisTargetAccountConfigurationConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.fisTargetAccountConfiguration.FisTargetAccountConfigurationConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.fisTargetAccountConfiguration.FisTargetAccountConfigurationConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.fisTargetAccountConfiguration.FisTargetAccountConfigurationConfig.property.accountId">accountId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/fis_target_account_configuration#account_id FisTargetAccountConfiguration#account_id}. |
-| <code><a href="#@cdktn/provider-aws.fisTargetAccountConfiguration.FisTargetAccountConfigurationConfig.property.experimentTemplateId">experimentTemplateId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/fis_target_account_configuration#experiment_template_id FisTargetAccountConfiguration#experiment_template_id}. |
-| <code><a href="#@cdktn/provider-aws.fisTargetAccountConfiguration.FisTargetAccountConfigurationConfig.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/fis_target_account_configuration#description FisTargetAccountConfiguration#description}. |
+| <code><a href="#@cdktn/provider-aws.fisTargetAccountConfiguration.FisTargetAccountConfigurationConfig.property.accountId">accountId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/fis_target_account_configuration#account_id FisTargetAccountConfiguration#account_id}. |
+| <code><a href="#@cdktn/provider-aws.fisTargetAccountConfiguration.FisTargetAccountConfigurationConfig.property.experimentTemplateId">experimentTemplateId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/fis_target_account_configuration#experiment_template_id FisTargetAccountConfiguration#experiment_template_id}. |
+| <code><a href="#@cdktn/provider-aws.fisTargetAccountConfiguration.FisTargetAccountConfigurationConfig.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/fis_target_account_configuration#description FisTargetAccountConfiguration#description}. |
 | <code><a href="#@cdktn/provider-aws.fisTargetAccountConfiguration.FisTargetAccountConfigurationConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.fisTargetAccountConfiguration.FisTargetAccountConfigurationConfig.property.roleArn">roleArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/fis_target_account_configuration#role_arn FisTargetAccountConfiguration#role_arn}. |
+| <code><a href="#@cdktn/provider-aws.fisTargetAccountConfiguration.FisTargetAccountConfigurationConfig.property.roleArn">roleArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/fis_target_account_configuration#role_arn FisTargetAccountConfiguration#role_arn}. |
 
 ---
 
@@ -900,7 +900,7 @@ public readonly accountId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/fis_target_account_configuration#account_id FisTargetAccountConfiguration#account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/fis_target_account_configuration#account_id FisTargetAccountConfiguration#account_id}.
 
 ---
 
@@ -912,7 +912,7 @@ public readonly experimentTemplateId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/fis_target_account_configuration#experiment_template_id FisTargetAccountConfiguration#experiment_template_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/fis_target_account_configuration#experiment_template_id FisTargetAccountConfiguration#experiment_template_id}.
 
 ---
 
@@ -924,7 +924,7 @@ public readonly description: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/fis_target_account_configuration#description FisTargetAccountConfiguration#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/fis_target_account_configuration#description FisTargetAccountConfiguration#description}.
 
 ---
 
@@ -938,7 +938,7 @@ public readonly region: string;
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/fis_target_account_configuration#region FisTargetAccountConfiguration#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/fis_target_account_configuration#region FisTargetAccountConfiguration#region}
 
 ---
 
@@ -950,7 +950,7 @@ public readonly roleArn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/fis_target_account_configuration#role_arn FisTargetAccountConfiguration#role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/fis_target_account_configuration#role_arn FisTargetAccountConfiguration#role_arn}.
 
 ---
 

@@ -4,12 +4,12 @@
 
 ### DataAwsLexBot <a name="DataAwsLexBot" id="@cdktn/provider-aws.dataAwsLexBot.DataAwsLexBot"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/lex_bot aws_lex_bot}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/lex_bot aws_lex_bot}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLexBot.DataAwsLexBot.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawslexbot"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawslexbot"
 
 dataawslexbot.NewDataAwsLexBot(scope Construct, id *string, config DataAwsLexBotConfig) DataAwsLexBot
 ```
@@ -297,7 +297,7 @@ func ResetVersion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsLexBot.DataAwsLexBot.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawslexbot"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawslexbot"
 
 dataawslexbot.DataAwsLexBot_IsConstruct(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsLexBot.DataAwsLexBot.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawslexbot"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawslexbot"
 
 dataawslexbot.DataAwsLexBot_IsTerraformElement(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ dataawslexbot.DataAwsLexBot_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsLexBot.DataAwsLexBot.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawslexbot"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawslexbot"
 
 dataawslexbot.DataAwsLexBot_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ dataawslexbot.DataAwsLexBot_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsLexBot.DataAwsLexBot.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawslexbot"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawslexbot"
 
 dataawslexbot.DataAwsLexBot_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -386,7 +386,7 @@ The construct id used in the generated config for the DataAwsLexBot to import.
 
 The id of the existing DataAwsLexBot that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/lex_bot#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/lex_bot#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -806,7 +806,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsLexBot.DataAwsLexBotConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawslexbot"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawslexbot"
 
 &dataawslexbot.DataAwsLexBotConfig {
 	Connection: interface{},
@@ -834,10 +834,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawslexbot"
 | <code><a href="#@cdktn/provider-aws.dataAwsLexBot.DataAwsLexBotConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsLexBot.DataAwsLexBotConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsLexBot.DataAwsLexBotConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsLexBot.DataAwsLexBotConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/lex_bot#name DataAwsLexBot#name}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsLexBot.DataAwsLexBotConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/lex_bot#id DataAwsLexBot#id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsLexBot.DataAwsLexBotConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/lex_bot#name DataAwsLexBot#name}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsLexBot.DataAwsLexBotConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/lex_bot#id DataAwsLexBot#id}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsLexBot.DataAwsLexBotConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.dataAwsLexBot.DataAwsLexBotConfig.property.version">Version</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/lex_bot#version DataAwsLexBot#version}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsLexBot.DataAwsLexBotConfig.property.version">Version</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/lex_bot#version DataAwsLexBot#version}. |
 
 ---
 
@@ -919,7 +919,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/lex_bot#name DataAwsLexBot#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/lex_bot#name DataAwsLexBot#name}.
 
 ---
 
@@ -931,7 +931,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/lex_bot#id DataAwsLexBot#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/lex_bot#id DataAwsLexBot#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -948,7 +948,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/lex_bot#region DataAwsLexBot#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/lex_bot#region DataAwsLexBot#region}
 
 ---
 
@@ -960,7 +960,7 @@ Version *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/lex_bot#version DataAwsLexBot#version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/lex_bot#version DataAwsLexBot#version}.
 
 ---
 

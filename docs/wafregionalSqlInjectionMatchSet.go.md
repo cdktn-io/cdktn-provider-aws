@@ -4,12 +4,12 @@
 
 ### WafregionalSqlInjectionMatchSet <a name="WafregionalSqlInjectionMatchSet" id="@cdktn/provider-aws.wafregionalSqlInjectionMatchSet.WafregionalSqlInjectionMatchSet"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/wafregional_sql_injection_match_set aws_wafregional_sql_injection_match_set}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/wafregional_sql_injection_match_set aws_wafregional_sql_injection_match_set}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafregionalSqlInjectionMatchSet.WafregionalSqlInjectionMatchSet.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/wafregionalsqlinjectionmatchset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/wafregionalsqlinjectionmatchset"
 
 wafregionalsqlinjectionmatchset.NewWafregionalSqlInjectionMatchSet(scope Construct, id *string, config WafregionalSqlInjectionMatchSetConfig) WafregionalSqlInjectionMatchSet
 ```
@@ -412,7 +412,7 @@ func ResetSqlInjectionMatchTuple()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.wafregionalSqlInjectionMatchSet.WafregionalSqlInjectionMatchSet.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/wafregionalsqlinjectionmatchset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/wafregionalsqlinjectionmatchset"
 
 wafregionalsqlinjectionmatchset.WafregionalSqlInjectionMatchSet_IsConstruct(x interface{}) *bool
 ```
@@ -444,7 +444,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.wafregionalSqlInjectionMatchSet.WafregionalSqlInjectionMatchSet.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/wafregionalsqlinjectionmatchset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/wafregionalsqlinjectionmatchset"
 
 wafregionalsqlinjectionmatchset.WafregionalSqlInjectionMatchSet_IsTerraformElement(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ wafregionalsqlinjectionmatchset.WafregionalSqlInjectionMatchSet_IsTerraformEleme
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.wafregionalSqlInjectionMatchSet.WafregionalSqlInjectionMatchSet.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/wafregionalsqlinjectionmatchset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/wafregionalsqlinjectionmatchset"
 
 wafregionalsqlinjectionmatchset.WafregionalSqlInjectionMatchSet_IsTerraformResource(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ wafregionalsqlinjectionmatchset.WafregionalSqlInjectionMatchSet_IsTerraformResou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.wafregionalSqlInjectionMatchSet.WafregionalSqlInjectionMatchSet.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/wafregionalsqlinjectionmatchset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/wafregionalsqlinjectionmatchset"
 
 wafregionalsqlinjectionmatchset.WafregionalSqlInjectionMatchSet_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -501,7 +501,7 @@ The construct id used in the generated config for the WafregionalSqlInjectionMat
 
 The id of the existing WafregionalSqlInjectionMatchSet that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/wafregional_sql_injection_match_set#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/wafregional_sql_injection_match_set#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -789,7 +789,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafregionalSqlInjectionMatchSet.WafregionalSqlInjectionMatchSetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/wafregionalsqlinjectionmatchset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/wafregionalsqlinjectionmatchset"
 
 &wafregionalsqlinjectionmatchset.WafregionalSqlInjectionMatchSetConfig {
 	Connection: interface{},
@@ -817,8 +817,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/wafregionalsqlinjectio
 | <code><a href="#@cdktn/provider-aws.wafregionalSqlInjectionMatchSet.WafregionalSqlInjectionMatchSetConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.wafregionalSqlInjectionMatchSet.WafregionalSqlInjectionMatchSetConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.wafregionalSqlInjectionMatchSet.WafregionalSqlInjectionMatchSetConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.wafregionalSqlInjectionMatchSet.WafregionalSqlInjectionMatchSetConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/wafregional_sql_injection_match_set#name WafregionalSqlInjectionMatchSet#name}. |
-| <code><a href="#@cdktn/provider-aws.wafregionalSqlInjectionMatchSet.WafregionalSqlInjectionMatchSetConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/wafregional_sql_injection_match_set#id WafregionalSqlInjectionMatchSet#id}. |
+| <code><a href="#@cdktn/provider-aws.wafregionalSqlInjectionMatchSet.WafregionalSqlInjectionMatchSetConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/wafregional_sql_injection_match_set#name WafregionalSqlInjectionMatchSet#name}. |
+| <code><a href="#@cdktn/provider-aws.wafregionalSqlInjectionMatchSet.WafregionalSqlInjectionMatchSetConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/wafregional_sql_injection_match_set#id WafregionalSqlInjectionMatchSet#id}. |
 | <code><a href="#@cdktn/provider-aws.wafregionalSqlInjectionMatchSet.WafregionalSqlInjectionMatchSetConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktn/provider-aws.wafregionalSqlInjectionMatchSet.WafregionalSqlInjectionMatchSetConfig.property.sqlInjectionMatchTuple">SqlInjectionMatchTuple</a></code> | <code>interface{}</code> | sql_injection_match_tuple block. |
 
@@ -902,7 +902,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/wafregional_sql_injection_match_set#name WafregionalSqlInjectionMatchSet#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/wafregional_sql_injection_match_set#name WafregionalSqlInjectionMatchSet#name}.
 
 ---
 
@@ -914,7 +914,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/wafregional_sql_injection_match_set#id WafregionalSqlInjectionMatchSet#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/wafregional_sql_injection_match_set#id WafregionalSqlInjectionMatchSet#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -931,7 +931,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/wafregional_sql_injection_match_set#region WafregionalSqlInjectionMatchSet#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/wafregional_sql_injection_match_set#region WafregionalSqlInjectionMatchSet#region}
 
 ---
 
@@ -945,7 +945,7 @@ SqlInjectionMatchTuple interface{}
 
 sql_injection_match_tuple block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/wafregional_sql_injection_match_set#sql_injection_match_tuple WafregionalSqlInjectionMatchSet#sql_injection_match_tuple}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/wafregional_sql_injection_match_set#sql_injection_match_tuple WafregionalSqlInjectionMatchSet#sql_injection_match_tuple}
 
 ---
 
@@ -954,10 +954,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafregionalSqlInjectionMatchSet.WafregionalSqlInjectionMatchSetSqlInjectionMatchTuple.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/wafregionalsqlinjectionmatchset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/wafregionalsqlinjectionmatchset"
 
 &wafregionalsqlinjectionmatchset.WafregionalSqlInjectionMatchSetSqlInjectionMatchTuple {
-	FieldToMatch: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.wafregionalSqlInjectionMatchSet.WafregionalSqlInjectionMatchSetSqlInjectionMatchTupleFieldToMatch,
+	FieldToMatch: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.wafregionalSqlInjectionMatchSet.WafregionalSqlInjectionMatchSetSqlInjectionMatchTupleFieldToMatch,
 	TextTransformation: *string,
 }
 ```
@@ -967,7 +967,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/wafregionalsqlinjectio
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.wafregionalSqlInjectionMatchSet.WafregionalSqlInjectionMatchSetSqlInjectionMatchTuple.property.fieldToMatch">FieldToMatch</a></code> | <code><a href="#@cdktn/provider-aws.wafregionalSqlInjectionMatchSet.WafregionalSqlInjectionMatchSetSqlInjectionMatchTupleFieldToMatch">WafregionalSqlInjectionMatchSetSqlInjectionMatchTupleFieldToMatch</a></code> | field_to_match block. |
-| <code><a href="#@cdktn/provider-aws.wafregionalSqlInjectionMatchSet.WafregionalSqlInjectionMatchSetSqlInjectionMatchTuple.property.textTransformation">TextTransformation</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/wafregional_sql_injection_match_set#text_transformation WafregionalSqlInjectionMatchSet#text_transformation}. |
+| <code><a href="#@cdktn/provider-aws.wafregionalSqlInjectionMatchSet.WafregionalSqlInjectionMatchSetSqlInjectionMatchTuple.property.textTransformation">TextTransformation</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/wafregional_sql_injection_match_set#text_transformation WafregionalSqlInjectionMatchSet#text_transformation}. |
 
 ---
 
@@ -981,7 +981,7 @@ FieldToMatch WafregionalSqlInjectionMatchSetSqlInjectionMatchTupleFieldToMatch
 
 field_to_match block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/wafregional_sql_injection_match_set#field_to_match WafregionalSqlInjectionMatchSet#field_to_match}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/wafregional_sql_injection_match_set#field_to_match WafregionalSqlInjectionMatchSet#field_to_match}
 
 ---
 
@@ -993,7 +993,7 @@ TextTransformation *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/wafregional_sql_injection_match_set#text_transformation WafregionalSqlInjectionMatchSet#text_transformation}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/wafregional_sql_injection_match_set#text_transformation WafregionalSqlInjectionMatchSet#text_transformation}.
 
 ---
 
@@ -1002,7 +1002,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafregionalSqlInjectionMatchSet.WafregionalSqlInjectionMatchSetSqlInjectionMatchTupleFieldToMatch.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/wafregionalsqlinjectionmatchset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/wafregionalsqlinjectionmatchset"
 
 &wafregionalsqlinjectionmatchset.WafregionalSqlInjectionMatchSetSqlInjectionMatchTupleFieldToMatch {
 	Type: *string,
@@ -1014,8 +1014,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/wafregionalsqlinjectio
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.wafregionalSqlInjectionMatchSet.WafregionalSqlInjectionMatchSetSqlInjectionMatchTupleFieldToMatch.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/wafregional_sql_injection_match_set#type WafregionalSqlInjectionMatchSet#type}. |
-| <code><a href="#@cdktn/provider-aws.wafregionalSqlInjectionMatchSet.WafregionalSqlInjectionMatchSetSqlInjectionMatchTupleFieldToMatch.property.data">Data</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/wafregional_sql_injection_match_set#data WafregionalSqlInjectionMatchSet#data}. |
+| <code><a href="#@cdktn/provider-aws.wafregionalSqlInjectionMatchSet.WafregionalSqlInjectionMatchSetSqlInjectionMatchTupleFieldToMatch.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/wafregional_sql_injection_match_set#type WafregionalSqlInjectionMatchSet#type}. |
+| <code><a href="#@cdktn/provider-aws.wafregionalSqlInjectionMatchSet.WafregionalSqlInjectionMatchSetSqlInjectionMatchTupleFieldToMatch.property.data">Data</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/wafregional_sql_injection_match_set#data WafregionalSqlInjectionMatchSet#data}. |
 
 ---
 
@@ -1027,7 +1027,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/wafregional_sql_injection_match_set#type WafregionalSqlInjectionMatchSet#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/wafregional_sql_injection_match_set#type WafregionalSqlInjectionMatchSet#type}.
 
 ---
 
@@ -1039,7 +1039,7 @@ Data *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/wafregional_sql_injection_match_set#data WafregionalSqlInjectionMatchSet#data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/wafregional_sql_injection_match_set#data WafregionalSqlInjectionMatchSet#data}.
 
 ---
 
@@ -1050,7 +1050,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafregionalSqlInjectionMatchSet.WafregionalSqlInjectionMatchSetSqlInjectionMatchTupleFieldToMatchOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/wafregionalsqlinjectionmatchset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/wafregionalsqlinjectionmatchset"
 
 wafregionalsqlinjectionmatchset.NewWafregionalSqlInjectionMatchSetSqlInjectionMatchTupleFieldToMatchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WafregionalSqlInjectionMatchSetSqlInjectionMatchTupleFieldToMatchOutputReference
 ```
@@ -1350,7 +1350,7 @@ func InternalValue() WafregionalSqlInjectionMatchSetSqlInjectionMatchTupleFieldT
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafregionalSqlInjectionMatchSet.WafregionalSqlInjectionMatchSetSqlInjectionMatchTupleList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/wafregionalsqlinjectionmatchset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/wafregionalsqlinjectionmatchset"
 
 wafregionalsqlinjectionmatchset.NewWafregionalSqlInjectionMatchSetSqlInjectionMatchTupleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WafregionalSqlInjectionMatchSetSqlInjectionMatchTupleList
 ```
@@ -1510,7 +1510,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafregionalSqlInjectionMatchSet.WafregionalSqlInjectionMatchSetSqlInjectionMatchTupleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/wafregionalsqlinjectionmatchset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/wafregionalsqlinjectionmatchset"
 
 wafregionalsqlinjectionmatchset.NewWafregionalSqlInjectionMatchSetSqlInjectionMatchTupleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WafregionalSqlInjectionMatchSetSqlInjectionMatchTupleOutputReference
 ```

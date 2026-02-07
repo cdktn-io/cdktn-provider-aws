@@ -4,12 +4,12 @@
 
 ### BedrockGuardrailVersion <a name="BedrockGuardrailVersion" id="@cdktn/provider-aws.bedrockGuardrailVersion.BedrockGuardrailVersion"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/bedrock_guardrail_version aws_bedrock_guardrail_version}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/bedrock_guardrail_version aws_bedrock_guardrail_version}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockGuardrailVersion.BedrockGuardrailVersion.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockguardrailversion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/bedrockguardrailversion"
 
 bedrockguardrailversion.NewBedrockGuardrailVersion(scope Construct, id *string, config BedrockGuardrailVersionConfig) BedrockGuardrailVersion
 ```
@@ -419,7 +419,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.bedrockGuardrailVersion.BedrockGuardrailVersion.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockguardrailversion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/bedrockguardrailversion"
 
 bedrockguardrailversion.BedrockGuardrailVersion_IsConstruct(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.bedrockGuardrailVersion.BedrockGuardrailVersion.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockguardrailversion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/bedrockguardrailversion"
 
 bedrockguardrailversion.BedrockGuardrailVersion_IsTerraformElement(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ bedrockguardrailversion.BedrockGuardrailVersion_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.bedrockGuardrailVersion.BedrockGuardrailVersion.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockguardrailversion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/bedrockguardrailversion"
 
 bedrockguardrailversion.BedrockGuardrailVersion_IsTerraformResource(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ bedrockguardrailversion.BedrockGuardrailVersion_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.bedrockGuardrailVersion.BedrockGuardrailVersion.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockguardrailversion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/bedrockguardrailversion"
 
 bedrockguardrailversion.BedrockGuardrailVersion_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -508,7 +508,7 @@ The construct id used in the generated config for the BedrockGuardrailVersion to
 
 The id of the existing BedrockGuardrailVersion that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/bedrock_guardrail_version#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/bedrock_guardrail_version#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -829,7 +829,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockGuardrailVersion.BedrockGuardrailVersionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockguardrailversion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/bedrockguardrailversion"
 
 &bedrockguardrailversion.BedrockGuardrailVersionConfig {
 	Connection: interface{},
@@ -843,7 +843,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockguardrailversio
 	Description: *string,
 	Region: *string,
 	SkipDestroy: interface{},
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.bedrockGuardrailVersion.BedrockGuardrailVersionTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.bedrockGuardrailVersion.BedrockGuardrailVersionTimeouts,
 }
 ```
 
@@ -858,10 +858,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockguardrailversio
 | <code><a href="#@cdktn/provider-aws.bedrockGuardrailVersion.BedrockGuardrailVersionConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.bedrockGuardrailVersion.BedrockGuardrailVersionConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.bedrockGuardrailVersion.BedrockGuardrailVersionConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.bedrockGuardrailVersion.BedrockGuardrailVersionConfig.property.guardrailArn">GuardrailArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/bedrock_guardrail_version#guardrail_arn BedrockGuardrailVersion#guardrail_arn}. |
-| <code><a href="#@cdktn/provider-aws.bedrockGuardrailVersion.BedrockGuardrailVersionConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/bedrock_guardrail_version#description BedrockGuardrailVersion#description}. |
+| <code><a href="#@cdktn/provider-aws.bedrockGuardrailVersion.BedrockGuardrailVersionConfig.property.guardrailArn">GuardrailArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/bedrock_guardrail_version#guardrail_arn BedrockGuardrailVersion#guardrail_arn}. |
+| <code><a href="#@cdktn/provider-aws.bedrockGuardrailVersion.BedrockGuardrailVersionConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/bedrock_guardrail_version#description BedrockGuardrailVersion#description}. |
 | <code><a href="#@cdktn/provider-aws.bedrockGuardrailVersion.BedrockGuardrailVersionConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.bedrockGuardrailVersion.BedrockGuardrailVersionConfig.property.skipDestroy">SkipDestroy</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/bedrock_guardrail_version#skip_destroy BedrockGuardrailVersion#skip_destroy}. |
+| <code><a href="#@cdktn/provider-aws.bedrockGuardrailVersion.BedrockGuardrailVersionConfig.property.skipDestroy">SkipDestroy</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/bedrock_guardrail_version#skip_destroy BedrockGuardrailVersion#skip_destroy}. |
 | <code><a href="#@cdktn/provider-aws.bedrockGuardrailVersion.BedrockGuardrailVersionConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.bedrockGuardrailVersion.BedrockGuardrailVersionTimeouts">BedrockGuardrailVersionTimeouts</a></code> | timeouts block. |
 
 ---
@@ -944,7 +944,7 @@ GuardrailArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/bedrock_guardrail_version#guardrail_arn BedrockGuardrailVersion#guardrail_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/bedrock_guardrail_version#guardrail_arn BedrockGuardrailVersion#guardrail_arn}.
 
 ---
 
@@ -956,7 +956,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/bedrock_guardrail_version#description BedrockGuardrailVersion#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/bedrock_guardrail_version#description BedrockGuardrailVersion#description}.
 
 ---
 
@@ -970,7 +970,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/bedrock_guardrail_version#region BedrockGuardrailVersion#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/bedrock_guardrail_version#region BedrockGuardrailVersion#region}
 
 ---
 
@@ -982,7 +982,7 @@ SkipDestroy interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/bedrock_guardrail_version#skip_destroy BedrockGuardrailVersion#skip_destroy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/bedrock_guardrail_version#skip_destroy BedrockGuardrailVersion#skip_destroy}.
 
 ---
 
@@ -996,7 +996,7 @@ Timeouts BedrockGuardrailVersionTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/bedrock_guardrail_version#timeouts BedrockGuardrailVersion#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/bedrock_guardrail_version#timeouts BedrockGuardrailVersion#timeouts}
 
 ---
 
@@ -1005,7 +1005,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.bedrockGuardrailVersion.BedrockGuardrailVersionTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockguardrailversion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/bedrockguardrailversion"
 
 &bedrockguardrailversion.BedrockGuardrailVersionTimeouts {
 	Create: *string,
@@ -1032,7 +1032,7 @@ Create *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/bedrock_guardrail_version#create BedrockGuardrailVersion#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/bedrock_guardrail_version#create BedrockGuardrailVersion#create}
 
 ---
 
@@ -1046,7 +1046,7 @@ Delete *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/bedrock_guardrail_version#delete BedrockGuardrailVersion#delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/bedrock_guardrail_version#delete BedrockGuardrailVersion#delete}
 
 ---
 
@@ -1057,7 +1057,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.bedrockGuardrailVersion.BedrockGuardrailVersionTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/bedrockguardrailversion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/bedrockguardrailversion"
 
 bedrockguardrailversion.NewBedrockGuardrailVersionTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BedrockGuardrailVersionTimeoutsOutputReference
 ```

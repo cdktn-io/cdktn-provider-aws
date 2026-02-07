@@ -4,12 +4,12 @@
 
 ### DevopsguruNotificationChannel <a name="DevopsguruNotificationChannel" id="@cdktn/provider-aws.devopsguruNotificationChannel.DevopsguruNotificationChannel"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/devopsguru_notification_channel aws_devopsguru_notification_channel}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/devopsguru_notification_channel aws_devopsguru_notification_channel}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.devopsguruNotificationChannel.DevopsguruNotificationChannel.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/devopsgurunotificationchannel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/devopsgurunotificationchannel"
 
 devopsgurunotificationchannel.NewDevopsguruNotificationChannel(scope Construct, id *string, config DevopsguruNotificationChannelConfig) DevopsguruNotificationChannel
 ```
@@ -425,7 +425,7 @@ func ResetSns()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.devopsguruNotificationChannel.DevopsguruNotificationChannel.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/devopsgurunotificationchannel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/devopsgurunotificationchannel"
 
 devopsgurunotificationchannel.DevopsguruNotificationChannel_IsConstruct(x interface{}) *bool
 ```
@@ -457,7 +457,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.devopsguruNotificationChannel.DevopsguruNotificationChannel.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/devopsgurunotificationchannel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/devopsgurunotificationchannel"
 
 devopsgurunotificationchannel.DevopsguruNotificationChannel_IsTerraformElement(x interface{}) *bool
 ```
@@ -471,7 +471,7 @@ devopsgurunotificationchannel.DevopsguruNotificationChannel_IsTerraformElement(x
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.devopsguruNotificationChannel.DevopsguruNotificationChannel.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/devopsgurunotificationchannel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/devopsgurunotificationchannel"
 
 devopsgurunotificationchannel.DevopsguruNotificationChannel_IsTerraformResource(x interface{}) *bool
 ```
@@ -485,7 +485,7 @@ devopsgurunotificationchannel.DevopsguruNotificationChannel_IsTerraformResource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.devopsguruNotificationChannel.DevopsguruNotificationChannel.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/devopsgurunotificationchannel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/devopsgurunotificationchannel"
 
 devopsgurunotificationchannel.DevopsguruNotificationChannel_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -514,7 +514,7 @@ The construct id used in the generated config for the DevopsguruNotificationChan
 
 The id of the existing DevopsguruNotificationChannel that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/devopsguru_notification_channel#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/devopsguru_notification_channel#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -791,7 +791,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.devopsguruNotificationChannel.DevopsguruNotificationChannelConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/devopsgurunotificationchannel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/devopsgurunotificationchannel"
 
 &devopsgurunotificationchannel.DevopsguruNotificationChannelConfig {
 	Connection: interface{},
@@ -904,7 +904,7 @@ Filters interface{}
 
 filters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/devopsguru_notification_channel#filters DevopsguruNotificationChannel#filters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/devopsguru_notification_channel#filters DevopsguruNotificationChannel#filters}
 
 ---
 
@@ -918,7 +918,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/devopsguru_notification_channel#region DevopsguruNotificationChannel#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/devopsguru_notification_channel#region DevopsguruNotificationChannel#region}
 
 ---
 
@@ -932,7 +932,7 @@ Sns interface{}
 
 sns block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/devopsguru_notification_channel#sns DevopsguruNotificationChannel#sns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/devopsguru_notification_channel#sns DevopsguruNotificationChannel#sns}
 
 ---
 
@@ -941,7 +941,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.devopsguruNotificationChannel.DevopsguruNotificationChannelFilters.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/devopsgurunotificationchannel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/devopsgurunotificationchannel"
 
 &devopsgurunotificationchannel.DevopsguruNotificationChannelFilters {
 	MessageTypes: *[]*string,
@@ -953,8 +953,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/devopsgurunotification
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.devopsguruNotificationChannel.DevopsguruNotificationChannelFilters.property.messageTypes">MessageTypes</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/devopsguru_notification_channel#message_types DevopsguruNotificationChannel#message_types}. |
-| <code><a href="#@cdktn/provider-aws.devopsguruNotificationChannel.DevopsguruNotificationChannelFilters.property.severities">Severities</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/devopsguru_notification_channel#severities DevopsguruNotificationChannel#severities}. |
+| <code><a href="#@cdktn/provider-aws.devopsguruNotificationChannel.DevopsguruNotificationChannelFilters.property.messageTypes">MessageTypes</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/devopsguru_notification_channel#message_types DevopsguruNotificationChannel#message_types}. |
+| <code><a href="#@cdktn/provider-aws.devopsguruNotificationChannel.DevopsguruNotificationChannelFilters.property.severities">Severities</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/devopsguru_notification_channel#severities DevopsguruNotificationChannel#severities}. |
 
 ---
 
@@ -966,7 +966,7 @@ MessageTypes *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/devopsguru_notification_channel#message_types DevopsguruNotificationChannel#message_types}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/devopsguru_notification_channel#message_types DevopsguruNotificationChannel#message_types}.
 
 ---
 
@@ -978,7 +978,7 @@ Severities *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/devopsguru_notification_channel#severities DevopsguruNotificationChannel#severities}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/devopsguru_notification_channel#severities DevopsguruNotificationChannel#severities}.
 
 ---
 
@@ -987,7 +987,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.devopsguruNotificationChannel.DevopsguruNotificationChannelSns.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/devopsgurunotificationchannel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/devopsgurunotificationchannel"
 
 &devopsgurunotificationchannel.DevopsguruNotificationChannelSns {
 	TopicArn: *string,
@@ -998,7 +998,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/devopsgurunotification
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.devopsguruNotificationChannel.DevopsguruNotificationChannelSns.property.topicArn">TopicArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/devopsguru_notification_channel#topic_arn DevopsguruNotificationChannel#topic_arn}. |
+| <code><a href="#@cdktn/provider-aws.devopsguruNotificationChannel.DevopsguruNotificationChannelSns.property.topicArn">TopicArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/devopsguru_notification_channel#topic_arn DevopsguruNotificationChannel#topic_arn}. |
 
 ---
 
@@ -1010,7 +1010,7 @@ TopicArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/devopsguru_notification_channel#topic_arn DevopsguruNotificationChannel#topic_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/devopsguru_notification_channel#topic_arn DevopsguruNotificationChannel#topic_arn}.
 
 ---
 
@@ -1021,7 +1021,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.devopsguruNotificationChannel.DevopsguruNotificationChannelFiltersList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/devopsgurunotificationchannel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/devopsgurunotificationchannel"
 
 devopsgurunotificationchannel.NewDevopsguruNotificationChannelFiltersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DevopsguruNotificationChannelFiltersList
 ```
@@ -1181,7 +1181,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.devopsguruNotificationChannel.DevopsguruNotificationChannelFiltersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/devopsgurunotificationchannel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/devopsgurunotificationchannel"
 
 devopsgurunotificationchannel.NewDevopsguruNotificationChannelFiltersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DevopsguruNotificationChannelFiltersOutputReference
 ```
@@ -1506,7 +1506,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.devopsguruNotificationChannel.DevopsguruNotificationChannelSnsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/devopsgurunotificationchannel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/devopsgurunotificationchannel"
 
 devopsgurunotificationchannel.NewDevopsguruNotificationChannelSnsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DevopsguruNotificationChannelSnsList
 ```
@@ -1666,7 +1666,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.devopsguruNotificationChannel.DevopsguruNotificationChannelSnsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/devopsgurunotificationchannel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/devopsgurunotificationchannel"
 
 devopsgurunotificationchannel.NewDevopsguruNotificationChannelSnsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DevopsguruNotificationChannelSnsOutputReference
 ```

@@ -4,12 +4,12 @@
 
 ### DataAwsLocationPlaceIndex <a name="DataAwsLocationPlaceIndex" id="@cdktn/provider-aws.dataAwsLocationPlaceIndex.DataAwsLocationPlaceIndex"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/location_place_index aws_location_place_index}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/location_place_index aws_location_place_index}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLocationPlaceIndex.DataAwsLocationPlaceIndex.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawslocationplaceindex"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawslocationplaceindex"
 
 dataawslocationplaceindex.NewDataAwsLocationPlaceIndex(scope Construct, id *string, config DataAwsLocationPlaceIndexConfig) DataAwsLocationPlaceIndex
 ```
@@ -297,7 +297,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsLocationPlaceIndex.DataAwsLocationPlaceIndex.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawslocationplaceindex"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawslocationplaceindex"
 
 dataawslocationplaceindex.DataAwsLocationPlaceIndex_IsConstruct(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsLocationPlaceIndex.DataAwsLocationPlaceIndex.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawslocationplaceindex"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawslocationplaceindex"
 
 dataawslocationplaceindex.DataAwsLocationPlaceIndex_IsTerraformElement(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ dataawslocationplaceindex.DataAwsLocationPlaceIndex_IsTerraformElement(x interfa
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsLocationPlaceIndex.DataAwsLocationPlaceIndex.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawslocationplaceindex"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawslocationplaceindex"
 
 dataawslocationplaceindex.DataAwsLocationPlaceIndex_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ dataawslocationplaceindex.DataAwsLocationPlaceIndex_IsTerraformDataSource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsLocationPlaceIndex.DataAwsLocationPlaceIndex.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawslocationplaceindex"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawslocationplaceindex"
 
 dataawslocationplaceindex.DataAwsLocationPlaceIndex_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -386,7 +386,7 @@ The construct id used in the generated config for the DataAwsLocationPlaceIndex 
 
 The id of the existing DataAwsLocationPlaceIndex that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/location_place_index#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/location_place_index#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -718,7 +718,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsLocationPlaceIndex.DataAwsLocationPlaceIndexConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawslocationplaceindex"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawslocationplaceindex"
 
 &dataawslocationplaceindex.DataAwsLocationPlaceIndexConfig {
 	Connection: interface{},
@@ -746,10 +746,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawslocationplacein
 | <code><a href="#@cdktn/provider-aws.dataAwsLocationPlaceIndex.DataAwsLocationPlaceIndexConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsLocationPlaceIndex.DataAwsLocationPlaceIndexConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsLocationPlaceIndex.DataAwsLocationPlaceIndexConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsLocationPlaceIndex.DataAwsLocationPlaceIndexConfig.property.indexName">IndexName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/location_place_index#index_name DataAwsLocationPlaceIndex#index_name}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsLocationPlaceIndex.DataAwsLocationPlaceIndexConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/location_place_index#id DataAwsLocationPlaceIndex#id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsLocationPlaceIndex.DataAwsLocationPlaceIndexConfig.property.indexName">IndexName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/location_place_index#index_name DataAwsLocationPlaceIndex#index_name}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsLocationPlaceIndex.DataAwsLocationPlaceIndexConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/location_place_index#id DataAwsLocationPlaceIndex#id}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsLocationPlaceIndex.DataAwsLocationPlaceIndexConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.dataAwsLocationPlaceIndex.DataAwsLocationPlaceIndexConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/location_place_index#tags DataAwsLocationPlaceIndex#tags}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsLocationPlaceIndex.DataAwsLocationPlaceIndexConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/location_place_index#tags DataAwsLocationPlaceIndex#tags}. |
 
 ---
 
@@ -831,7 +831,7 @@ IndexName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/location_place_index#index_name DataAwsLocationPlaceIndex#index_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/location_place_index#index_name DataAwsLocationPlaceIndex#index_name}.
 
 ---
 
@@ -843,7 +843,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/location_place_index#id DataAwsLocationPlaceIndex#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/location_place_index#id DataAwsLocationPlaceIndex#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -860,7 +860,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/location_place_index#region DataAwsLocationPlaceIndex#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/location_place_index#region DataAwsLocationPlaceIndex#region}
 
 ---
 
@@ -872,7 +872,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/location_place_index#tags DataAwsLocationPlaceIndex#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/location_place_index#tags DataAwsLocationPlaceIndex#tags}.
 
 ---
 
@@ -881,7 +881,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsLocationPlaceIndex.DataAwsLocationPlaceIndexDataSourceConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawslocationplaceindex"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawslocationplaceindex"
 
 &dataawslocationplaceindex.DataAwsLocationPlaceIndexDataSourceConfiguration {
 
@@ -896,7 +896,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawslocationplacein
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLocationPlaceIndex.DataAwsLocationPlaceIndexDataSourceConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawslocationplaceindex"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawslocationplaceindex"
 
 dataawslocationplaceindex.NewDataAwsLocationPlaceIndexDataSourceConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsLocationPlaceIndexDataSourceConfigurationList
 ```
@@ -1045,7 +1045,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLocationPlaceIndex.DataAwsLocationPlaceIndexDataSourceConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawslocationplaceindex"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawslocationplaceindex"
 
 dataawslocationplaceindex.NewDataAwsLocationPlaceIndexDataSourceConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsLocationPlaceIndexDataSourceConfigurationOutputReference
 ```

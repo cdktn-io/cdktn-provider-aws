@@ -4,12 +4,12 @@
 
 ### DataAwsElasticacheServerlessCache <a name="DataAwsElasticacheServerlessCache" id="@cdktn/provider-aws.dataAwsElasticacheServerlessCache.DataAwsElasticacheServerlessCache"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/elasticache_serverless_cache aws_elasticache_serverless_cache}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/elasticache_serverless_cache aws_elasticache_serverless_cache}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsElasticacheServerlessCache.DataAwsElasticacheServerlessCache.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawselasticacheserverlesscache"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawselasticacheserverlesscache"
 
 dataawselasticacheserverlesscache.NewDataAwsElasticacheServerlessCache(scope Construct, id *string, config DataAwsElasticacheServerlessCacheConfig) DataAwsElasticacheServerlessCache
 ```
@@ -283,7 +283,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsElasticacheServerlessCache.DataAwsElasticacheServerlessCache.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawselasticacheserverlesscache"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawselasticacheserverlesscache"
 
 dataawselasticacheserverlesscache.DataAwsElasticacheServerlessCache_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsElasticacheServerlessCache.DataAwsElasticacheServerlessCache.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawselasticacheserverlesscache"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawselasticacheserverlesscache"
 
 dataawselasticacheserverlesscache.DataAwsElasticacheServerlessCache_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ dataawselasticacheserverlesscache.DataAwsElasticacheServerlessCache_IsTerraformE
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsElasticacheServerlessCache.DataAwsElasticacheServerlessCache.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawselasticacheserverlesscache"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawselasticacheserverlesscache"
 
 dataawselasticacheserverlesscache.DataAwsElasticacheServerlessCache_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ dataawselasticacheserverlesscache.DataAwsElasticacheServerlessCache_IsTerraformD
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsElasticacheServerlessCache.DataAwsElasticacheServerlessCache.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawselasticacheserverlesscache"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawselasticacheserverlesscache"
 
 dataawselasticacheserverlesscache.DataAwsElasticacheServerlessCache_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -372,7 +372,7 @@ The construct id used in the generated config for the DataAwsElasticacheServerle
 
 The id of the existing DataAwsElasticacheServerlessCache that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/elasticache_serverless_cache#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/elasticache_serverless_cache#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -770,7 +770,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsElasticacheServerlessCache.DataAwsElasticacheServerlessCacheCacheUsageLimits.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawselasticacheserverlesscache"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawselasticacheserverlesscache"
 
 &dataawselasticacheserverlesscache.DataAwsElasticacheServerlessCacheCacheUsageLimits {
 
@@ -783,7 +783,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawselasticacheserv
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsElasticacheServerlessCache.DataAwsElasticacheServerlessCacheCacheUsageLimitsDataStorage.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawselasticacheserverlesscache"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawselasticacheserverlesscache"
 
 &dataawselasticacheserverlesscache.DataAwsElasticacheServerlessCacheCacheUsageLimitsDataStorage {
 
@@ -796,7 +796,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawselasticacheserv
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsElasticacheServerlessCache.DataAwsElasticacheServerlessCacheCacheUsageLimitsEcpuPerSecond.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawselasticacheserverlesscache"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawselasticacheserverlesscache"
 
 &dataawselasticacheserverlesscache.DataAwsElasticacheServerlessCacheCacheUsageLimitsEcpuPerSecond {
 
@@ -809,7 +809,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawselasticacheserv
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsElasticacheServerlessCache.DataAwsElasticacheServerlessCacheConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawselasticacheserverlesscache"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawselasticacheserverlesscache"
 
 &dataawselasticacheserverlesscache.DataAwsElasticacheServerlessCacheConfig {
 	Connection: interface{},
@@ -835,7 +835,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawselasticacheserv
 | <code><a href="#@cdktn/provider-aws.dataAwsElasticacheServerlessCache.DataAwsElasticacheServerlessCacheConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsElasticacheServerlessCache.DataAwsElasticacheServerlessCacheConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsElasticacheServerlessCache.DataAwsElasticacheServerlessCacheConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsElasticacheServerlessCache.DataAwsElasticacheServerlessCacheConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/elasticache_serverless_cache#name DataAwsElasticacheServerlessCache#name}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsElasticacheServerlessCache.DataAwsElasticacheServerlessCacheConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/elasticache_serverless_cache#name DataAwsElasticacheServerlessCache#name}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsElasticacheServerlessCache.DataAwsElasticacheServerlessCacheConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -918,7 +918,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/elasticache_serverless_cache#name DataAwsElasticacheServerlessCache#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/elasticache_serverless_cache#name DataAwsElasticacheServerlessCache#name}.
 
 ---
 
@@ -932,7 +932,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/elasticache_serverless_cache#region DataAwsElasticacheServerlessCache#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/elasticache_serverless_cache#region DataAwsElasticacheServerlessCache#region}
 
 ---
 
@@ -941,7 +941,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsElasticacheServerlessCache.DataAwsElasticacheServerlessCacheEndpoint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawselasticacheserverlesscache"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawselasticacheserverlesscache"
 
 &dataawselasticacheserverlesscache.DataAwsElasticacheServerlessCacheEndpoint {
 
@@ -954,7 +954,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawselasticacheserv
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsElasticacheServerlessCache.DataAwsElasticacheServerlessCacheReaderEndpoint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawselasticacheserverlesscache"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawselasticacheserverlesscache"
 
 &dataawselasticacheserverlesscache.DataAwsElasticacheServerlessCacheReaderEndpoint {
 
@@ -969,7 +969,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawselasticacheserv
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsElasticacheServerlessCache.DataAwsElasticacheServerlessCacheCacheUsageLimitsDataStorageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawselasticacheserverlesscache"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawselasticacheserverlesscache"
 
 dataawselasticacheserverlesscache.NewDataAwsElasticacheServerlessCacheCacheUsageLimitsDataStorageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAwsElasticacheServerlessCacheCacheUsageLimitsDataStorageOutputReference
 ```
@@ -1251,7 +1251,7 @@ func InternalValue() DataAwsElasticacheServerlessCacheCacheUsageLimitsDataStorag
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsElasticacheServerlessCache.DataAwsElasticacheServerlessCacheCacheUsageLimitsEcpuPerSecondOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawselasticacheserverlesscache"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawselasticacheserverlesscache"
 
 dataawselasticacheserverlesscache.NewDataAwsElasticacheServerlessCacheCacheUsageLimitsEcpuPerSecondOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAwsElasticacheServerlessCacheCacheUsageLimitsEcpuPerSecondOutputReference
 ```
@@ -1522,7 +1522,7 @@ func InternalValue() DataAwsElasticacheServerlessCacheCacheUsageLimitsEcpuPerSec
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsElasticacheServerlessCache.DataAwsElasticacheServerlessCacheCacheUsageLimitsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawselasticacheserverlesscache"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawselasticacheserverlesscache"
 
 dataawselasticacheserverlesscache.NewDataAwsElasticacheServerlessCacheCacheUsageLimitsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAwsElasticacheServerlessCacheCacheUsageLimitsOutputReference
 ```
@@ -1793,7 +1793,7 @@ func InternalValue() DataAwsElasticacheServerlessCacheCacheUsageLimits
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsElasticacheServerlessCache.DataAwsElasticacheServerlessCacheEndpointOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawselasticacheserverlesscache"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawselasticacheserverlesscache"
 
 dataawselasticacheserverlesscache.NewDataAwsElasticacheServerlessCacheEndpointOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAwsElasticacheServerlessCacheEndpointOutputReference
 ```
@@ -2064,7 +2064,7 @@ func InternalValue() DataAwsElasticacheServerlessCacheEndpoint
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsElasticacheServerlessCache.DataAwsElasticacheServerlessCacheReaderEndpointOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawselasticacheserverlesscache"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawselasticacheserverlesscache"
 
 dataawselasticacheserverlesscache.NewDataAwsElasticacheServerlessCacheReaderEndpointOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAwsElasticacheServerlessCacheReaderEndpointOutputReference
 ```

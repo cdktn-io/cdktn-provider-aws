@@ -4,12 +4,12 @@
 
 ### DataAwsAlbTargetGroup <a name="DataAwsAlbTargetGroup" id="@cdktn/provider-aws.dataAwsAlbTargetGroup.DataAwsAlbTargetGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/alb_target_group aws_alb_target_group}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/alb_target_group aws_alb_target_group}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAlbTargetGroup.DataAwsAlbTargetGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsalbtargetgroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsalbtargetgroup"
 
 dataawsalbtargetgroup.NewDataAwsAlbTargetGroup(scope Construct, id *string, config DataAwsAlbTargetGroupConfig) DataAwsAlbTargetGroup
 ```
@@ -338,7 +338,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsAlbTargetGroup.DataAwsAlbTargetGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsalbtargetgroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsalbtargetgroup"
 
 dataawsalbtargetgroup.DataAwsAlbTargetGroup_IsConstruct(x interface{}) *bool
 ```
@@ -370,7 +370,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsAlbTargetGroup.DataAwsAlbTargetGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsalbtargetgroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsalbtargetgroup"
 
 dataawsalbtargetgroup.DataAwsAlbTargetGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -384,7 +384,7 @@ dataawsalbtargetgroup.DataAwsAlbTargetGroup_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsAlbTargetGroup.DataAwsAlbTargetGroup.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsalbtargetgroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsalbtargetgroup"
 
 dataawsalbtargetgroup.DataAwsAlbTargetGroup_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -398,7 +398,7 @@ dataawsalbtargetgroup.DataAwsAlbTargetGroup_IsTerraformDataSource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsAlbTargetGroup.DataAwsAlbTargetGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsalbtargetgroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsalbtargetgroup"
 
 dataawsalbtargetgroup.DataAwsAlbTargetGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -427,7 +427,7 @@ The construct id used in the generated config for the DataAwsAlbTargetGroup to i
 
 The id of the existing DataAwsAlbTargetGroup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/alb_target_group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/alb_target_group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -957,7 +957,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsAlbTargetGroup.DataAwsAlbTargetGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsalbtargetgroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsalbtargetgroup"
 
 &dataawsalbtargetgroup.DataAwsAlbTargetGroupConfig {
 	Connection: interface{},
@@ -973,7 +973,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsalbtargetgroup"
 	Name: *string,
 	Region: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.dataAwsAlbTargetGroup.DataAwsAlbTargetGroupTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.dataAwsAlbTargetGroup.DataAwsAlbTargetGroupTimeouts,
 }
 ```
 
@@ -988,12 +988,12 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsalbtargetgroup"
 | <code><a href="#@cdktn/provider-aws.dataAwsAlbTargetGroup.DataAwsAlbTargetGroupConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsAlbTargetGroup.DataAwsAlbTargetGroupConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsAlbTargetGroup.DataAwsAlbTargetGroupConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsAlbTargetGroup.DataAwsAlbTargetGroupConfig.property.arn">Arn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/alb_target_group#arn DataAwsAlbTargetGroup#arn}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsAlbTargetGroup.DataAwsAlbTargetGroupConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/alb_target_group#id DataAwsAlbTargetGroup#id}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsAlbTargetGroup.DataAwsAlbTargetGroupConfig.property.loadBalancingAnomalyMitigation">LoadBalancingAnomalyMitigation</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/alb_target_group#load_balancing_anomaly_mitigation DataAwsAlbTargetGroup#load_balancing_anomaly_mitigation}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsAlbTargetGroup.DataAwsAlbTargetGroupConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/alb_target_group#name DataAwsAlbTargetGroup#name}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsAlbTargetGroup.DataAwsAlbTargetGroupConfig.property.arn">Arn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/alb_target_group#arn DataAwsAlbTargetGroup#arn}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsAlbTargetGroup.DataAwsAlbTargetGroupConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/alb_target_group#id DataAwsAlbTargetGroup#id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsAlbTargetGroup.DataAwsAlbTargetGroupConfig.property.loadBalancingAnomalyMitigation">LoadBalancingAnomalyMitigation</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/alb_target_group#load_balancing_anomaly_mitigation DataAwsAlbTargetGroup#load_balancing_anomaly_mitigation}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsAlbTargetGroup.DataAwsAlbTargetGroupConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/alb_target_group#name DataAwsAlbTargetGroup#name}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsAlbTargetGroup.DataAwsAlbTargetGroupConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.dataAwsAlbTargetGroup.DataAwsAlbTargetGroupConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/alb_target_group#tags DataAwsAlbTargetGroup#tags}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsAlbTargetGroup.DataAwsAlbTargetGroupConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/alb_target_group#tags DataAwsAlbTargetGroup#tags}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsAlbTargetGroup.DataAwsAlbTargetGroupConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.dataAwsAlbTargetGroup.DataAwsAlbTargetGroupTimeouts">DataAwsAlbTargetGroupTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1076,7 +1076,7 @@ Arn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/alb_target_group#arn DataAwsAlbTargetGroup#arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/alb_target_group#arn DataAwsAlbTargetGroup#arn}.
 
 ---
 
@@ -1088,7 +1088,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/alb_target_group#id DataAwsAlbTargetGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/alb_target_group#id DataAwsAlbTargetGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1103,7 +1103,7 @@ LoadBalancingAnomalyMitigation *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/alb_target_group#load_balancing_anomaly_mitigation DataAwsAlbTargetGroup#load_balancing_anomaly_mitigation}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/alb_target_group#load_balancing_anomaly_mitigation DataAwsAlbTargetGroup#load_balancing_anomaly_mitigation}.
 
 ---
 
@@ -1115,7 +1115,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/alb_target_group#name DataAwsAlbTargetGroup#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/alb_target_group#name DataAwsAlbTargetGroup#name}.
 
 ---
 
@@ -1129,7 +1129,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/alb_target_group#region DataAwsAlbTargetGroup#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/alb_target_group#region DataAwsAlbTargetGroup#region}
 
 ---
 
@@ -1141,7 +1141,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/alb_target_group#tags DataAwsAlbTargetGroup#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/alb_target_group#tags DataAwsAlbTargetGroup#tags}.
 
 ---
 
@@ -1155,7 +1155,7 @@ Timeouts DataAwsAlbTargetGroupTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/alb_target_group#timeouts DataAwsAlbTargetGroup#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/alb_target_group#timeouts DataAwsAlbTargetGroup#timeouts}
 
 ---
 
@@ -1164,7 +1164,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsAlbTargetGroup.DataAwsAlbTargetGroupHealthCheck.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsalbtargetgroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsalbtargetgroup"
 
 &dataawsalbtargetgroup.DataAwsAlbTargetGroupHealthCheck {
 
@@ -1177,7 +1177,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsalbtargetgroup"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsAlbTargetGroup.DataAwsAlbTargetGroupStickiness.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsalbtargetgroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsalbtargetgroup"
 
 &dataawsalbtargetgroup.DataAwsAlbTargetGroupStickiness {
 
@@ -1190,7 +1190,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsalbtargetgroup"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsAlbTargetGroup.DataAwsAlbTargetGroupTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsalbtargetgroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsalbtargetgroup"
 
 &dataawsalbtargetgroup.DataAwsAlbTargetGroupTimeouts {
 	Read: *string,
@@ -1201,7 +1201,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsalbtargetgroup"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.dataAwsAlbTargetGroup.DataAwsAlbTargetGroupTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/alb_target_group#read DataAwsAlbTargetGroup#read}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsAlbTargetGroup.DataAwsAlbTargetGroupTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/alb_target_group#read DataAwsAlbTargetGroup#read}. |
 
 ---
 
@@ -1213,7 +1213,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/alb_target_group#read DataAwsAlbTargetGroup#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/alb_target_group#read DataAwsAlbTargetGroup#read}.
 
 ---
 
@@ -1224,7 +1224,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAlbTargetGroup.DataAwsAlbTargetGroupHealthCheckList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsalbtargetgroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsalbtargetgroup"
 
 dataawsalbtargetgroup.NewDataAwsAlbTargetGroupHealthCheckList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAlbTargetGroupHealthCheckList
 ```
@@ -1373,7 +1373,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAlbTargetGroup.DataAwsAlbTargetGroupHealthCheckOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsalbtargetgroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsalbtargetgroup"
 
 dataawsalbtargetgroup.NewDataAwsAlbTargetGroupHealthCheckOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAlbTargetGroupHealthCheckOutputReference
 ```
@@ -1739,7 +1739,7 @@ func InternalValue() DataAwsAlbTargetGroupHealthCheck
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAlbTargetGroup.DataAwsAlbTargetGroupStickinessList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsalbtargetgroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsalbtargetgroup"
 
 dataawsalbtargetgroup.NewDataAwsAlbTargetGroupStickinessList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAlbTargetGroupStickinessList
 ```
@@ -1888,7 +1888,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAlbTargetGroup.DataAwsAlbTargetGroupStickinessOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsalbtargetgroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsalbtargetgroup"
 
 dataawsalbtargetgroup.NewDataAwsAlbTargetGroupStickinessOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsAlbTargetGroupStickinessOutputReference
 ```
@@ -2199,7 +2199,7 @@ func InternalValue() DataAwsAlbTargetGroupStickiness
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsAlbTargetGroup.DataAwsAlbTargetGroupTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsalbtargetgroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsalbtargetgroup"
 
 dataawsalbtargetgroup.NewDataAwsAlbTargetGroupTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAwsAlbTargetGroupTimeoutsOutputReference
 ```

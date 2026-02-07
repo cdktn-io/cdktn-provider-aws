@@ -4,12 +4,12 @@
 
 ### OpensearchserverlessSecurityPolicy <a name="OpensearchserverlessSecurityPolicy" id="@cdktn/provider-aws.opensearchserverlessSecurityPolicy.OpensearchserverlessSecurityPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/opensearchserverless_security_policy aws_opensearchserverless_security_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/opensearchserverless_security_policy aws_opensearchserverless_security_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.opensearchserverlessSecurityPolicy.OpensearchserverlessSecurityPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/opensearchserverlesssecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/opensearchserverlesssecuritypolicy"
 
 opensearchserverlesssecuritypolicy.NewOpensearchserverlessSecurityPolicy(scope Construct, id *string, config OpensearchserverlessSecurityPolicyConfig) OpensearchserverlessSecurityPolicy
 ```
@@ -392,7 +392,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.opensearchserverlessSecurityPolicy.OpensearchserverlessSecurityPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/opensearchserverlesssecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/opensearchserverlesssecuritypolicy"
 
 opensearchserverlesssecuritypolicy.OpensearchserverlessSecurityPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.opensearchserverlessSecurityPolicy.OpensearchserverlessSecurityPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/opensearchserverlesssecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/opensearchserverlesssecuritypolicy"
 
 opensearchserverlesssecuritypolicy.OpensearchserverlessSecurityPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ opensearchserverlesssecuritypolicy.OpensearchserverlessSecurityPolicy_IsTerrafor
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.opensearchserverlessSecurityPolicy.OpensearchserverlessSecurityPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/opensearchserverlesssecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/opensearchserverlesssecuritypolicy"
 
 opensearchserverlesssecuritypolicy.OpensearchserverlessSecurityPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ opensearchserverlesssecuritypolicy.OpensearchserverlessSecurityPolicy_IsTerrafor
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.opensearchserverlessSecurityPolicy.OpensearchserverlessSecurityPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/opensearchserverlesssecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/opensearchserverlesssecuritypolicy"
 
 opensearchserverlesssecuritypolicy.OpensearchserverlessSecurityPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -481,7 +481,7 @@ The construct id used in the generated config for the OpensearchserverlessSecuri
 
 The id of the existing OpensearchserverlessSecurityPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/opensearchserverless_security_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/opensearchserverless_security_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -813,7 +813,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.opensearchserverlessSecurityPolicy.OpensearchserverlessSecurityPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/opensearchserverlesssecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/opensearchserverlesssecuritypolicy"
 
 &opensearchserverlesssecuritypolicy.OpensearchserverlessSecurityPolicyConfig {
 	Connection: interface{},
@@ -930,7 +930,7 @@ Name *string
 
 Name of the policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/opensearchserverless_security_policy#name OpensearchserverlessSecurityPolicy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/opensearchserverless_security_policy#name OpensearchserverlessSecurityPolicy#name}
 
 ---
 
@@ -944,7 +944,7 @@ Policy *string
 
 JSON policy document to use as the content for the new policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/opensearchserverless_security_policy#policy OpensearchserverlessSecurityPolicy#policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/opensearchserverless_security_policy#policy OpensearchserverlessSecurityPolicy#policy}
 
 ---
 
@@ -958,7 +958,7 @@ Type *string
 
 Type of security policy. One of `encryption` or `network`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/opensearchserverless_security_policy#type OpensearchserverlessSecurityPolicy#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/opensearchserverless_security_policy#type OpensearchserverlessSecurityPolicy#type}
 
 ---
 
@@ -972,7 +972,7 @@ Description *string
 
 Description of the policy. Typically used to store information about the permissions defined in the policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/opensearchserverless_security_policy#description OpensearchserverlessSecurityPolicy#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/opensearchserverless_security_policy#description OpensearchserverlessSecurityPolicy#description}
 
 ---
 
@@ -986,7 +986,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/opensearchserverless_security_policy#region OpensearchserverlessSecurityPolicy#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/opensearchserverless_security_policy#region OpensearchserverlessSecurityPolicy#region}
 
 ---
 

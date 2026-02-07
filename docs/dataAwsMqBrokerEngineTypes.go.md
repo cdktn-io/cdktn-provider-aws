@@ -4,12 +4,12 @@
 
 ### DataAwsMqBrokerEngineTypes <a name="DataAwsMqBrokerEngineTypes" id="@cdktn/provider-aws.dataAwsMqBrokerEngineTypes.DataAwsMqBrokerEngineTypes"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/mq_broker_engine_types aws_mq_broker_engine_types}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/mq_broker_engine_types aws_mq_broker_engine_types}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsMqBrokerEngineTypes.DataAwsMqBrokerEngineTypes.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsmqbrokerenginetypes"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsmqbrokerenginetypes"
 
 dataawsmqbrokerenginetypes.NewDataAwsMqBrokerEngineTypes(scope Construct, id *string, config DataAwsMqBrokerEngineTypesConfig) DataAwsMqBrokerEngineTypes
 ```
@@ -297,7 +297,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsMqBrokerEngineTypes.DataAwsMqBrokerEngineTypes.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsmqbrokerenginetypes"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsmqbrokerenginetypes"
 
 dataawsmqbrokerenginetypes.DataAwsMqBrokerEngineTypes_IsConstruct(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsMqBrokerEngineTypes.DataAwsMqBrokerEngineTypes.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsmqbrokerenginetypes"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsmqbrokerenginetypes"
 
 dataawsmqbrokerenginetypes.DataAwsMqBrokerEngineTypes_IsTerraformElement(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ dataawsmqbrokerenginetypes.DataAwsMqBrokerEngineTypes_IsTerraformElement(x inter
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsMqBrokerEngineTypes.DataAwsMqBrokerEngineTypes.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsmqbrokerenginetypes"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsmqbrokerenginetypes"
 
 dataawsmqbrokerenginetypes.DataAwsMqBrokerEngineTypes_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ dataawsmqbrokerenginetypes.DataAwsMqBrokerEngineTypes_IsTerraformDataSource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsMqBrokerEngineTypes.DataAwsMqBrokerEngineTypes.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsmqbrokerenginetypes"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsmqbrokerenginetypes"
 
 dataawsmqbrokerenginetypes.DataAwsMqBrokerEngineTypes_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -386,7 +386,7 @@ The construct id used in the generated config for the DataAwsMqBrokerEngineTypes
 
 The id of the existing DataAwsMqBrokerEngineTypes that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/mq_broker_engine_types#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/mq_broker_engine_types#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -641,7 +641,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsMqBrokerEngineTypes.DataAwsMqBrokerEngineTypesBrokerEngineTypes.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsmqbrokerenginetypes"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsmqbrokerenginetypes"
 
 &dataawsmqbrokerenginetypes.DataAwsMqBrokerEngineTypesBrokerEngineTypes {
 
@@ -654,7 +654,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsmqbrokerenginet
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsMqBrokerEngineTypes.DataAwsMqBrokerEngineTypesBrokerEngineTypesEngineVersions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsmqbrokerenginetypes"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsmqbrokerenginetypes"
 
 &dataawsmqbrokerenginetypes.DataAwsMqBrokerEngineTypesBrokerEngineTypesEngineVersions {
 
@@ -667,7 +667,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsmqbrokerenginet
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsMqBrokerEngineTypes.DataAwsMqBrokerEngineTypesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsmqbrokerenginetypes"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsmqbrokerenginetypes"
 
 &dataawsmqbrokerenginetypes.DataAwsMqBrokerEngineTypesConfig {
 	Connection: interface{},
@@ -694,8 +694,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsmqbrokerenginet
 | <code><a href="#@cdktn/provider-aws.dataAwsMqBrokerEngineTypes.DataAwsMqBrokerEngineTypesConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsMqBrokerEngineTypes.DataAwsMqBrokerEngineTypesConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsMqBrokerEngineTypes.DataAwsMqBrokerEngineTypesConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsMqBrokerEngineTypes.DataAwsMqBrokerEngineTypesConfig.property.engineType">EngineType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/mq_broker_engine_types#engine_type DataAwsMqBrokerEngineTypes#engine_type}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsMqBrokerEngineTypes.DataAwsMqBrokerEngineTypesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/mq_broker_engine_types#id DataAwsMqBrokerEngineTypes#id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsMqBrokerEngineTypes.DataAwsMqBrokerEngineTypesConfig.property.engineType">EngineType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/mq_broker_engine_types#engine_type DataAwsMqBrokerEngineTypes#engine_type}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsMqBrokerEngineTypes.DataAwsMqBrokerEngineTypesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/mq_broker_engine_types#id DataAwsMqBrokerEngineTypes#id}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsMqBrokerEngineTypes.DataAwsMqBrokerEngineTypesConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -778,7 +778,7 @@ EngineType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/mq_broker_engine_types#engine_type DataAwsMqBrokerEngineTypes#engine_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/mq_broker_engine_types#engine_type DataAwsMqBrokerEngineTypes#engine_type}.
 
 ---
 
@@ -790,7 +790,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/mq_broker_engine_types#id DataAwsMqBrokerEngineTypes#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/mq_broker_engine_types#id DataAwsMqBrokerEngineTypes#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -807,7 +807,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/mq_broker_engine_types#region DataAwsMqBrokerEngineTypes#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/mq_broker_engine_types#region DataAwsMqBrokerEngineTypes#region}
 
 ---
 
@@ -818,7 +818,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsMqBrokerEngineTypes.DataAwsMqBrokerEngineTypesBrokerEngineTypesEngineVersionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsmqbrokerenginetypes"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsmqbrokerenginetypes"
 
 dataawsmqbrokerenginetypes.NewDataAwsMqBrokerEngineTypesBrokerEngineTypesEngineVersionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsMqBrokerEngineTypesBrokerEngineTypesEngineVersionsList
 ```
@@ -967,7 +967,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsMqBrokerEngineTypes.DataAwsMqBrokerEngineTypesBrokerEngineTypesEngineVersionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsmqbrokerenginetypes"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsmqbrokerenginetypes"
 
 dataawsmqbrokerenginetypes.NewDataAwsMqBrokerEngineTypesBrokerEngineTypesEngineVersionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsMqBrokerEngineTypesBrokerEngineTypesEngineVersionsOutputReference
 ```
@@ -1245,7 +1245,7 @@ func InternalValue() DataAwsMqBrokerEngineTypesBrokerEngineTypesEngineVersions
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsMqBrokerEngineTypes.DataAwsMqBrokerEngineTypesBrokerEngineTypesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsmqbrokerenginetypes"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsmqbrokerenginetypes"
 
 dataawsmqbrokerenginetypes.NewDataAwsMqBrokerEngineTypesBrokerEngineTypesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsMqBrokerEngineTypesBrokerEngineTypesList
 ```
@@ -1394,7 +1394,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsMqBrokerEngineTypes.DataAwsMqBrokerEngineTypesBrokerEngineTypesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsmqbrokerenginetypes"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsmqbrokerenginetypes"
 
 dataawsmqbrokerenginetypes.NewDataAwsMqBrokerEngineTypesBrokerEngineTypesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsMqBrokerEngineTypesBrokerEngineTypesOutputReference
 ```

@@ -4,12 +4,12 @@
 
 ### FinspaceKxCluster <a name="FinspaceKxCluster" id="@cdktn/provider-aws.finspaceKxCluster.FinspaceKxCluster"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/finspace_kx_cluster aws_finspace_kx_cluster}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/finspace_kx_cluster aws_finspace_kx_cluster}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.finspaceKxCluster.FinspaceKxCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/finspacekxcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/finspacekxcluster"
 
 finspacekxcluster.NewFinspaceKxCluster(scope Construct, id *string, config FinspaceKxClusterConfig) FinspaceKxCluster
 ```
@@ -634,7 +634,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.finspaceKxCluster.FinspaceKxCluster.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/finspacekxcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/finspacekxcluster"
 
 finspacekxcluster.FinspaceKxCluster_IsConstruct(x interface{}) *bool
 ```
@@ -666,7 +666,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.finspaceKxCluster.FinspaceKxCluster.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/finspacekxcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/finspacekxcluster"
 
 finspacekxcluster.FinspaceKxCluster_IsTerraformElement(x interface{}) *bool
 ```
@@ -680,7 +680,7 @@ finspacekxcluster.FinspaceKxCluster_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.finspaceKxCluster.FinspaceKxCluster.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/finspacekxcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/finspacekxcluster"
 
 finspacekxcluster.FinspaceKxCluster_IsTerraformResource(x interface{}) *bool
 ```
@@ -694,7 +694,7 @@ finspacekxcluster.FinspaceKxCluster_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.finspaceKxCluster.FinspaceKxCluster.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/finspacekxcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/finspacekxcluster"
 
 finspacekxcluster.FinspaceKxCluster_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -723,7 +723,7 @@ The construct id used in the generated config for the FinspaceKxCluster to impor
 
 The id of the existing FinspaceKxCluster that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/finspace_kx_cluster#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/finspace_kx_cluster#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1506,7 +1506,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterAutoScalingConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/finspacekxcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/finspacekxcluster"
 
 &finspacekxcluster.FinspaceKxClusterAutoScalingConfiguration {
 	AutoScalingMetric: *string,
@@ -1522,12 +1522,12 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/finspacekxcluster"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterAutoScalingConfiguration.property.autoScalingMetric">AutoScalingMetric</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/finspace_kx_cluster#auto_scaling_metric FinspaceKxCluster#auto_scaling_metric}. |
-| <code><a href="#@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterAutoScalingConfiguration.property.maxNodeCount">MaxNodeCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/finspace_kx_cluster#max_node_count FinspaceKxCluster#max_node_count}. |
-| <code><a href="#@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterAutoScalingConfiguration.property.metricTarget">MetricTarget</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/finspace_kx_cluster#metric_target FinspaceKxCluster#metric_target}. |
-| <code><a href="#@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterAutoScalingConfiguration.property.minNodeCount">MinNodeCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/finspace_kx_cluster#min_node_count FinspaceKxCluster#min_node_count}. |
-| <code><a href="#@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterAutoScalingConfiguration.property.scaleInCooldownSeconds">ScaleInCooldownSeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/finspace_kx_cluster#scale_in_cooldown_seconds FinspaceKxCluster#scale_in_cooldown_seconds}. |
-| <code><a href="#@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterAutoScalingConfiguration.property.scaleOutCooldownSeconds">ScaleOutCooldownSeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/finspace_kx_cluster#scale_out_cooldown_seconds FinspaceKxCluster#scale_out_cooldown_seconds}. |
+| <code><a href="#@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterAutoScalingConfiguration.property.autoScalingMetric">AutoScalingMetric</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/finspace_kx_cluster#auto_scaling_metric FinspaceKxCluster#auto_scaling_metric}. |
+| <code><a href="#@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterAutoScalingConfiguration.property.maxNodeCount">MaxNodeCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/finspace_kx_cluster#max_node_count FinspaceKxCluster#max_node_count}. |
+| <code><a href="#@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterAutoScalingConfiguration.property.metricTarget">MetricTarget</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/finspace_kx_cluster#metric_target FinspaceKxCluster#metric_target}. |
+| <code><a href="#@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterAutoScalingConfiguration.property.minNodeCount">MinNodeCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/finspace_kx_cluster#min_node_count FinspaceKxCluster#min_node_count}. |
+| <code><a href="#@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterAutoScalingConfiguration.property.scaleInCooldownSeconds">ScaleInCooldownSeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/finspace_kx_cluster#scale_in_cooldown_seconds FinspaceKxCluster#scale_in_cooldown_seconds}. |
+| <code><a href="#@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterAutoScalingConfiguration.property.scaleOutCooldownSeconds">ScaleOutCooldownSeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/finspace_kx_cluster#scale_out_cooldown_seconds FinspaceKxCluster#scale_out_cooldown_seconds}. |
 
 ---
 
@@ -1539,7 +1539,7 @@ AutoScalingMetric *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/finspace_kx_cluster#auto_scaling_metric FinspaceKxCluster#auto_scaling_metric}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/finspace_kx_cluster#auto_scaling_metric FinspaceKxCluster#auto_scaling_metric}.
 
 ---
 
@@ -1551,7 +1551,7 @@ MaxNodeCount *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/finspace_kx_cluster#max_node_count FinspaceKxCluster#max_node_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/finspace_kx_cluster#max_node_count FinspaceKxCluster#max_node_count}.
 
 ---
 
@@ -1563,7 +1563,7 @@ MetricTarget *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/finspace_kx_cluster#metric_target FinspaceKxCluster#metric_target}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/finspace_kx_cluster#metric_target FinspaceKxCluster#metric_target}.
 
 ---
 
@@ -1575,7 +1575,7 @@ MinNodeCount *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/finspace_kx_cluster#min_node_count FinspaceKxCluster#min_node_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/finspace_kx_cluster#min_node_count FinspaceKxCluster#min_node_count}.
 
 ---
 
@@ -1587,7 +1587,7 @@ ScaleInCooldownSeconds *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/finspace_kx_cluster#scale_in_cooldown_seconds FinspaceKxCluster#scale_in_cooldown_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/finspace_kx_cluster#scale_in_cooldown_seconds FinspaceKxCluster#scale_in_cooldown_seconds}.
 
 ---
 
@@ -1599,7 +1599,7 @@ ScaleOutCooldownSeconds *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/finspace_kx_cluster#scale_out_cooldown_seconds FinspaceKxCluster#scale_out_cooldown_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/finspace_kx_cluster#scale_out_cooldown_seconds FinspaceKxCluster#scale_out_cooldown_seconds}.
 
 ---
 
@@ -1608,7 +1608,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterCacheStorageConfigurations.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/finspacekxcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/finspacekxcluster"
 
 &finspacekxcluster.FinspaceKxClusterCacheStorageConfigurations {
 	Size: *f64,
@@ -1620,8 +1620,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/finspacekxcluster"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterCacheStorageConfigurations.property.size">Size</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/finspace_kx_cluster#size FinspaceKxCluster#size}. |
-| <code><a href="#@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterCacheStorageConfigurations.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/finspace_kx_cluster#type FinspaceKxCluster#type}. |
+| <code><a href="#@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterCacheStorageConfigurations.property.size">Size</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/finspace_kx_cluster#size FinspaceKxCluster#size}. |
+| <code><a href="#@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterCacheStorageConfigurations.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/finspace_kx_cluster#type FinspaceKxCluster#type}. |
 
 ---
 
@@ -1633,7 +1633,7 @@ Size *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/finspace_kx_cluster#size FinspaceKxCluster#size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/finspace_kx_cluster#size FinspaceKxCluster#size}.
 
 ---
 
@@ -1645,7 +1645,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/finspace_kx_cluster#type FinspaceKxCluster#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/finspace_kx_cluster#type FinspaceKxCluster#type}.
 
 ---
 
@@ -1654,7 +1654,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterCapacityConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/finspacekxcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/finspacekxcluster"
 
 &finspacekxcluster.FinspaceKxClusterCapacityConfiguration {
 	NodeCount: *f64,
@@ -1666,8 +1666,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/finspacekxcluster"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterCapacityConfiguration.property.nodeCount">NodeCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/finspace_kx_cluster#node_count FinspaceKxCluster#node_count}. |
-| <code><a href="#@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterCapacityConfiguration.property.nodeType">NodeType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/finspace_kx_cluster#node_type FinspaceKxCluster#node_type}. |
+| <code><a href="#@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterCapacityConfiguration.property.nodeCount">NodeCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/finspace_kx_cluster#node_count FinspaceKxCluster#node_count}. |
+| <code><a href="#@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterCapacityConfiguration.property.nodeType">NodeType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/finspace_kx_cluster#node_type FinspaceKxCluster#node_type}. |
 
 ---
 
@@ -1679,7 +1679,7 @@ NodeCount *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/finspace_kx_cluster#node_count FinspaceKxCluster#node_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/finspace_kx_cluster#node_count FinspaceKxCluster#node_count}.
 
 ---
 
@@ -1691,7 +1691,7 @@ NodeType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/finspace_kx_cluster#node_type FinspaceKxCluster#node_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/finspace_kx_cluster#node_type FinspaceKxCluster#node_type}.
 
 ---
 
@@ -1700,7 +1700,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterCode.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/finspacekxcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/finspacekxcluster"
 
 &finspacekxcluster.FinspaceKxClusterCode {
 	S3Bucket: *string,
@@ -1713,9 +1713,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/finspacekxcluster"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterCode.property.s3Bucket">S3Bucket</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/finspace_kx_cluster#s3_bucket FinspaceKxCluster#s3_bucket}. |
-| <code><a href="#@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterCode.property.s3Key">S3Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/finspace_kx_cluster#s3_key FinspaceKxCluster#s3_key}. |
-| <code><a href="#@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterCode.property.s3ObjectVersion">S3ObjectVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/finspace_kx_cluster#s3_object_version FinspaceKxCluster#s3_object_version}. |
+| <code><a href="#@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterCode.property.s3Bucket">S3Bucket</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/finspace_kx_cluster#s3_bucket FinspaceKxCluster#s3_bucket}. |
+| <code><a href="#@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterCode.property.s3Key">S3Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/finspace_kx_cluster#s3_key FinspaceKxCluster#s3_key}. |
+| <code><a href="#@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterCode.property.s3ObjectVersion">S3ObjectVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/finspace_kx_cluster#s3_object_version FinspaceKxCluster#s3_object_version}. |
 
 ---
 
@@ -1727,7 +1727,7 @@ S3Bucket *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/finspace_kx_cluster#s3_bucket FinspaceKxCluster#s3_bucket}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/finspace_kx_cluster#s3_bucket FinspaceKxCluster#s3_bucket}.
 
 ---
 
@@ -1739,7 +1739,7 @@ S3Key *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/finspace_kx_cluster#s3_key FinspaceKxCluster#s3_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/finspace_kx_cluster#s3_key FinspaceKxCluster#s3_key}.
 
 ---
 
@@ -1751,7 +1751,7 @@ S3ObjectVersion *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/finspace_kx_cluster#s3_object_version FinspaceKxCluster#s3_object_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/finspace_kx_cluster#s3_object_version FinspaceKxCluster#s3_object_version}.
 
 ---
 
@@ -1760,7 +1760,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/finspacekxcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/finspacekxcluster"
 
 &finspacekxcluster.FinspaceKxClusterConfig {
 	Connection: interface{},
@@ -1775,12 +1775,12 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/finspacekxcluster"
 	Name: *string,
 	ReleaseLabel: *string,
 	Type: *string,
-	VpcConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.finspaceKxCluster.FinspaceKxClusterVpcConfiguration,
-	AutoScalingConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.finspaceKxCluster.FinspaceKxClusterAutoScalingConfiguration,
+	VpcConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.finspaceKxCluster.FinspaceKxClusterVpcConfiguration,
+	AutoScalingConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.finspaceKxCluster.FinspaceKxClusterAutoScalingConfiguration,
 	AvailabilityZoneId: *string,
 	CacheStorageConfigurations: interface{},
-	CapacityConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.finspaceKxCluster.FinspaceKxClusterCapacityConfiguration,
-	Code: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.finspaceKxCluster.FinspaceKxClusterCode,
+	CapacityConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.finspaceKxCluster.FinspaceKxClusterCapacityConfiguration,
+	Code: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.finspaceKxCluster.FinspaceKxClusterCode,
 	CommandLineArguments: *map[string]*string,
 	Database: interface{},
 	Description: *string,
@@ -1788,12 +1788,12 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/finspacekxcluster"
 	Id: *string,
 	InitializationScript: *string,
 	Region: *string,
-	SavedownStorageConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.finspaceKxCluster.FinspaceKxClusterSavedownStorageConfiguration,
-	ScalingGroupConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.finspaceKxCluster.FinspaceKxClusterScalingGroupConfiguration,
+	SavedownStorageConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.finspaceKxCluster.FinspaceKxClusterSavedownStorageConfiguration,
+	ScalingGroupConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.finspaceKxCluster.FinspaceKxClusterScalingGroupConfiguration,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
 	TickerplantLogConfiguration: interface{},
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.finspaceKxCluster.FinspaceKxClusterTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.finspaceKxCluster.FinspaceKxClusterTimeouts,
 }
 ```
 
@@ -1808,28 +1808,28 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/finspacekxcluster"
 | <code><a href="#@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterConfig.property.azMode">AzMode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/finspace_kx_cluster#az_mode FinspaceKxCluster#az_mode}. |
-| <code><a href="#@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterConfig.property.environmentId">EnvironmentId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/finspace_kx_cluster#environment_id FinspaceKxCluster#environment_id}. |
-| <code><a href="#@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/finspace_kx_cluster#name FinspaceKxCluster#name}. |
-| <code><a href="#@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterConfig.property.releaseLabel">ReleaseLabel</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/finspace_kx_cluster#release_label FinspaceKxCluster#release_label}. |
-| <code><a href="#@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterConfig.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/finspace_kx_cluster#type FinspaceKxCluster#type}. |
+| <code><a href="#@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterConfig.property.azMode">AzMode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/finspace_kx_cluster#az_mode FinspaceKxCluster#az_mode}. |
+| <code><a href="#@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterConfig.property.environmentId">EnvironmentId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/finspace_kx_cluster#environment_id FinspaceKxCluster#environment_id}. |
+| <code><a href="#@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/finspace_kx_cluster#name FinspaceKxCluster#name}. |
+| <code><a href="#@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterConfig.property.releaseLabel">ReleaseLabel</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/finspace_kx_cluster#release_label FinspaceKxCluster#release_label}. |
+| <code><a href="#@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterConfig.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/finspace_kx_cluster#type FinspaceKxCluster#type}. |
 | <code><a href="#@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterConfig.property.vpcConfiguration">VpcConfiguration</a></code> | <code><a href="#@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterVpcConfiguration">FinspaceKxClusterVpcConfiguration</a></code> | vpc_configuration block. |
 | <code><a href="#@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterConfig.property.autoScalingConfiguration">AutoScalingConfiguration</a></code> | <code><a href="#@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterAutoScalingConfiguration">FinspaceKxClusterAutoScalingConfiguration</a></code> | auto_scaling_configuration block. |
-| <code><a href="#@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterConfig.property.availabilityZoneId">AvailabilityZoneId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/finspace_kx_cluster#availability_zone_id FinspaceKxCluster#availability_zone_id}. |
+| <code><a href="#@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterConfig.property.availabilityZoneId">AvailabilityZoneId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/finspace_kx_cluster#availability_zone_id FinspaceKxCluster#availability_zone_id}. |
 | <code><a href="#@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterConfig.property.cacheStorageConfigurations">CacheStorageConfigurations</a></code> | <code>interface{}</code> | cache_storage_configurations block. |
 | <code><a href="#@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterConfig.property.capacityConfiguration">CapacityConfiguration</a></code> | <code><a href="#@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterCapacityConfiguration">FinspaceKxClusterCapacityConfiguration</a></code> | capacity_configuration block. |
 | <code><a href="#@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterConfig.property.code">Code</a></code> | <code><a href="#@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterCode">FinspaceKxClusterCode</a></code> | code block. |
-| <code><a href="#@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterConfig.property.commandLineArguments">CommandLineArguments</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/finspace_kx_cluster#command_line_arguments FinspaceKxCluster#command_line_arguments}. |
+| <code><a href="#@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterConfig.property.commandLineArguments">CommandLineArguments</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/finspace_kx_cluster#command_line_arguments FinspaceKxCluster#command_line_arguments}. |
 | <code><a href="#@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterConfig.property.database">Database</a></code> | <code>interface{}</code> | database block. |
-| <code><a href="#@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/finspace_kx_cluster#description FinspaceKxCluster#description}. |
-| <code><a href="#@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterConfig.property.executionRole">ExecutionRole</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/finspace_kx_cluster#execution_role FinspaceKxCluster#execution_role}. |
-| <code><a href="#@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/finspace_kx_cluster#id FinspaceKxCluster#id}. |
-| <code><a href="#@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterConfig.property.initializationScript">InitializationScript</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/finspace_kx_cluster#initialization_script FinspaceKxCluster#initialization_script}. |
+| <code><a href="#@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/finspace_kx_cluster#description FinspaceKxCluster#description}. |
+| <code><a href="#@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterConfig.property.executionRole">ExecutionRole</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/finspace_kx_cluster#execution_role FinspaceKxCluster#execution_role}. |
+| <code><a href="#@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/finspace_kx_cluster#id FinspaceKxCluster#id}. |
+| <code><a href="#@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterConfig.property.initializationScript">InitializationScript</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/finspace_kx_cluster#initialization_script FinspaceKxCluster#initialization_script}. |
 | <code><a href="#@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterConfig.property.savedownStorageConfiguration">SavedownStorageConfiguration</a></code> | <code><a href="#@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterSavedownStorageConfiguration">FinspaceKxClusterSavedownStorageConfiguration</a></code> | savedown_storage_configuration block. |
 | <code><a href="#@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterConfig.property.scalingGroupConfiguration">ScalingGroupConfiguration</a></code> | <code><a href="#@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterScalingGroupConfiguration">FinspaceKxClusterScalingGroupConfiguration</a></code> | scaling_group_configuration block. |
-| <code><a href="#@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/finspace_kx_cluster#tags FinspaceKxCluster#tags}. |
-| <code><a href="#@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/finspace_kx_cluster#tags_all FinspaceKxCluster#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/finspace_kx_cluster#tags FinspaceKxCluster#tags}. |
+| <code><a href="#@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/finspace_kx_cluster#tags_all FinspaceKxCluster#tags_all}. |
 | <code><a href="#@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterConfig.property.tickerplantLogConfiguration">TickerplantLogConfiguration</a></code> | <code>interface{}</code> | tickerplant_log_configuration block. |
 | <code><a href="#@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterTimeouts">FinspaceKxClusterTimeouts</a></code> | timeouts block. |
 
@@ -1913,7 +1913,7 @@ AzMode *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/finspace_kx_cluster#az_mode FinspaceKxCluster#az_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/finspace_kx_cluster#az_mode FinspaceKxCluster#az_mode}.
 
 ---
 
@@ -1925,7 +1925,7 @@ EnvironmentId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/finspace_kx_cluster#environment_id FinspaceKxCluster#environment_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/finspace_kx_cluster#environment_id FinspaceKxCluster#environment_id}.
 
 ---
 
@@ -1937,7 +1937,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/finspace_kx_cluster#name FinspaceKxCluster#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/finspace_kx_cluster#name FinspaceKxCluster#name}.
 
 ---
 
@@ -1949,7 +1949,7 @@ ReleaseLabel *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/finspace_kx_cluster#release_label FinspaceKxCluster#release_label}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/finspace_kx_cluster#release_label FinspaceKxCluster#release_label}.
 
 ---
 
@@ -1961,7 +1961,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/finspace_kx_cluster#type FinspaceKxCluster#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/finspace_kx_cluster#type FinspaceKxCluster#type}.
 
 ---
 
@@ -1975,7 +1975,7 @@ VpcConfiguration FinspaceKxClusterVpcConfiguration
 
 vpc_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/finspace_kx_cluster#vpc_configuration FinspaceKxCluster#vpc_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/finspace_kx_cluster#vpc_configuration FinspaceKxCluster#vpc_configuration}
 
 ---
 
@@ -1989,7 +1989,7 @@ AutoScalingConfiguration FinspaceKxClusterAutoScalingConfiguration
 
 auto_scaling_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/finspace_kx_cluster#auto_scaling_configuration FinspaceKxCluster#auto_scaling_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/finspace_kx_cluster#auto_scaling_configuration FinspaceKxCluster#auto_scaling_configuration}
 
 ---
 
@@ -2001,7 +2001,7 @@ AvailabilityZoneId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/finspace_kx_cluster#availability_zone_id FinspaceKxCluster#availability_zone_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/finspace_kx_cluster#availability_zone_id FinspaceKxCluster#availability_zone_id}.
 
 ---
 
@@ -2015,7 +2015,7 @@ CacheStorageConfigurations interface{}
 
 cache_storage_configurations block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/finspace_kx_cluster#cache_storage_configurations FinspaceKxCluster#cache_storage_configurations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/finspace_kx_cluster#cache_storage_configurations FinspaceKxCluster#cache_storage_configurations}
 
 ---
 
@@ -2029,7 +2029,7 @@ CapacityConfiguration FinspaceKxClusterCapacityConfiguration
 
 capacity_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/finspace_kx_cluster#capacity_configuration FinspaceKxCluster#capacity_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/finspace_kx_cluster#capacity_configuration FinspaceKxCluster#capacity_configuration}
 
 ---
 
@@ -2043,7 +2043,7 @@ Code FinspaceKxClusterCode
 
 code block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/finspace_kx_cluster#code FinspaceKxCluster#code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/finspace_kx_cluster#code FinspaceKxCluster#code}
 
 ---
 
@@ -2055,7 +2055,7 @@ CommandLineArguments *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/finspace_kx_cluster#command_line_arguments FinspaceKxCluster#command_line_arguments}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/finspace_kx_cluster#command_line_arguments FinspaceKxCluster#command_line_arguments}.
 
 ---
 
@@ -2069,7 +2069,7 @@ Database interface{}
 
 database block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/finspace_kx_cluster#database FinspaceKxCluster#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/finspace_kx_cluster#database FinspaceKxCluster#database}
 
 ---
 
@@ -2081,7 +2081,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/finspace_kx_cluster#description FinspaceKxCluster#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/finspace_kx_cluster#description FinspaceKxCluster#description}.
 
 ---
 
@@ -2093,7 +2093,7 @@ ExecutionRole *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/finspace_kx_cluster#execution_role FinspaceKxCluster#execution_role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/finspace_kx_cluster#execution_role FinspaceKxCluster#execution_role}.
 
 ---
 
@@ -2105,7 +2105,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/finspace_kx_cluster#id FinspaceKxCluster#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/finspace_kx_cluster#id FinspaceKxCluster#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2120,7 +2120,7 @@ InitializationScript *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/finspace_kx_cluster#initialization_script FinspaceKxCluster#initialization_script}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/finspace_kx_cluster#initialization_script FinspaceKxCluster#initialization_script}.
 
 ---
 
@@ -2134,7 +2134,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/finspace_kx_cluster#region FinspaceKxCluster#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/finspace_kx_cluster#region FinspaceKxCluster#region}
 
 ---
 
@@ -2148,7 +2148,7 @@ SavedownStorageConfiguration FinspaceKxClusterSavedownStorageConfiguration
 
 savedown_storage_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/finspace_kx_cluster#savedown_storage_configuration FinspaceKxCluster#savedown_storage_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/finspace_kx_cluster#savedown_storage_configuration FinspaceKxCluster#savedown_storage_configuration}
 
 ---
 
@@ -2162,7 +2162,7 @@ ScalingGroupConfiguration FinspaceKxClusterScalingGroupConfiguration
 
 scaling_group_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/finspace_kx_cluster#scaling_group_configuration FinspaceKxCluster#scaling_group_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/finspace_kx_cluster#scaling_group_configuration FinspaceKxCluster#scaling_group_configuration}
 
 ---
 
@@ -2174,7 +2174,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/finspace_kx_cluster#tags FinspaceKxCluster#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/finspace_kx_cluster#tags FinspaceKxCluster#tags}.
 
 ---
 
@@ -2186,7 +2186,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/finspace_kx_cluster#tags_all FinspaceKxCluster#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/finspace_kx_cluster#tags_all FinspaceKxCluster#tags_all}.
 
 ---
 
@@ -2200,7 +2200,7 @@ TickerplantLogConfiguration interface{}
 
 tickerplant_log_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/finspace_kx_cluster#tickerplant_log_configuration FinspaceKxCluster#tickerplant_log_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/finspace_kx_cluster#tickerplant_log_configuration FinspaceKxCluster#tickerplant_log_configuration}
 
 ---
 
@@ -2214,7 +2214,7 @@ Timeouts FinspaceKxClusterTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/finspace_kx_cluster#timeouts FinspaceKxCluster#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/finspace_kx_cluster#timeouts FinspaceKxCluster#timeouts}
 
 ---
 
@@ -2223,7 +2223,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterDatabase.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/finspacekxcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/finspacekxcluster"
 
 &finspacekxcluster.FinspaceKxClusterDatabase {
 	DatabaseName: *string,
@@ -2237,10 +2237,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/finspacekxcluster"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterDatabase.property.databaseName">DatabaseName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/finspace_kx_cluster#database_name FinspaceKxCluster#database_name}. |
+| <code><a href="#@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterDatabase.property.databaseName">DatabaseName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/finspace_kx_cluster#database_name FinspaceKxCluster#database_name}. |
 | <code><a href="#@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterDatabase.property.cacheConfigurations">CacheConfigurations</a></code> | <code>interface{}</code> | cache_configurations block. |
-| <code><a href="#@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterDatabase.property.changesetId">ChangesetId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/finspace_kx_cluster#changeset_id FinspaceKxCluster#changeset_id}. |
-| <code><a href="#@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterDatabase.property.dataviewName">DataviewName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/finspace_kx_cluster#dataview_name FinspaceKxCluster#dataview_name}. |
+| <code><a href="#@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterDatabase.property.changesetId">ChangesetId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/finspace_kx_cluster#changeset_id FinspaceKxCluster#changeset_id}. |
+| <code><a href="#@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterDatabase.property.dataviewName">DataviewName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/finspace_kx_cluster#dataview_name FinspaceKxCluster#dataview_name}. |
 
 ---
 
@@ -2252,7 +2252,7 @@ DatabaseName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/finspace_kx_cluster#database_name FinspaceKxCluster#database_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/finspace_kx_cluster#database_name FinspaceKxCluster#database_name}.
 
 ---
 
@@ -2266,7 +2266,7 @@ CacheConfigurations interface{}
 
 cache_configurations block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/finspace_kx_cluster#cache_configurations FinspaceKxCluster#cache_configurations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/finspace_kx_cluster#cache_configurations FinspaceKxCluster#cache_configurations}
 
 ---
 
@@ -2278,7 +2278,7 @@ ChangesetId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/finspace_kx_cluster#changeset_id FinspaceKxCluster#changeset_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/finspace_kx_cluster#changeset_id FinspaceKxCluster#changeset_id}.
 
 ---
 
@@ -2290,7 +2290,7 @@ DataviewName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/finspace_kx_cluster#dataview_name FinspaceKxCluster#dataview_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/finspace_kx_cluster#dataview_name FinspaceKxCluster#dataview_name}.
 
 ---
 
@@ -2299,7 +2299,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterDatabaseCacheConfigurations.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/finspacekxcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/finspacekxcluster"
 
 &finspacekxcluster.FinspaceKxClusterDatabaseCacheConfigurations {
 	CacheType: *string,
@@ -2311,8 +2311,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/finspacekxcluster"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterDatabaseCacheConfigurations.property.cacheType">CacheType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/finspace_kx_cluster#cache_type FinspaceKxCluster#cache_type}. |
-| <code><a href="#@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterDatabaseCacheConfigurations.property.dbPaths">DbPaths</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/finspace_kx_cluster#db_paths FinspaceKxCluster#db_paths}. |
+| <code><a href="#@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterDatabaseCacheConfigurations.property.cacheType">CacheType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/finspace_kx_cluster#cache_type FinspaceKxCluster#cache_type}. |
+| <code><a href="#@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterDatabaseCacheConfigurations.property.dbPaths">DbPaths</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/finspace_kx_cluster#db_paths FinspaceKxCluster#db_paths}. |
 
 ---
 
@@ -2324,7 +2324,7 @@ CacheType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/finspace_kx_cluster#cache_type FinspaceKxCluster#cache_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/finspace_kx_cluster#cache_type FinspaceKxCluster#cache_type}.
 
 ---
 
@@ -2336,7 +2336,7 @@ DbPaths *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/finspace_kx_cluster#db_paths FinspaceKxCluster#db_paths}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/finspace_kx_cluster#db_paths FinspaceKxCluster#db_paths}.
 
 ---
 
@@ -2345,7 +2345,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterSavedownStorageConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/finspacekxcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/finspacekxcluster"
 
 &finspacekxcluster.FinspaceKxClusterSavedownStorageConfiguration {
 	Size: *f64,
@@ -2358,9 +2358,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/finspacekxcluster"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterSavedownStorageConfiguration.property.size">Size</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/finspace_kx_cluster#size FinspaceKxCluster#size}. |
-| <code><a href="#@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterSavedownStorageConfiguration.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/finspace_kx_cluster#type FinspaceKxCluster#type}. |
-| <code><a href="#@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterSavedownStorageConfiguration.property.volumeName">VolumeName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/finspace_kx_cluster#volume_name FinspaceKxCluster#volume_name}. |
+| <code><a href="#@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterSavedownStorageConfiguration.property.size">Size</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/finspace_kx_cluster#size FinspaceKxCluster#size}. |
+| <code><a href="#@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterSavedownStorageConfiguration.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/finspace_kx_cluster#type FinspaceKxCluster#type}. |
+| <code><a href="#@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterSavedownStorageConfiguration.property.volumeName">VolumeName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/finspace_kx_cluster#volume_name FinspaceKxCluster#volume_name}. |
 
 ---
 
@@ -2372,7 +2372,7 @@ Size *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/finspace_kx_cluster#size FinspaceKxCluster#size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/finspace_kx_cluster#size FinspaceKxCluster#size}.
 
 ---
 
@@ -2384,7 +2384,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/finspace_kx_cluster#type FinspaceKxCluster#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/finspace_kx_cluster#type FinspaceKxCluster#type}.
 
 ---
 
@@ -2396,7 +2396,7 @@ VolumeName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/finspace_kx_cluster#volume_name FinspaceKxCluster#volume_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/finspace_kx_cluster#volume_name FinspaceKxCluster#volume_name}.
 
 ---
 
@@ -2405,7 +2405,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterScalingGroupConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/finspacekxcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/finspacekxcluster"
 
 &finspacekxcluster.FinspaceKxClusterScalingGroupConfiguration {
 	MemoryReservation: *f64,
@@ -2420,11 +2420,11 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/finspacekxcluster"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterScalingGroupConfiguration.property.memoryReservation">MemoryReservation</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/finspace_kx_cluster#memory_reservation FinspaceKxCluster#memory_reservation}. |
-| <code><a href="#@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterScalingGroupConfiguration.property.nodeCount">NodeCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/finspace_kx_cluster#node_count FinspaceKxCluster#node_count}. |
-| <code><a href="#@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterScalingGroupConfiguration.property.scalingGroupName">ScalingGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/finspace_kx_cluster#scaling_group_name FinspaceKxCluster#scaling_group_name}. |
-| <code><a href="#@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterScalingGroupConfiguration.property.cpu">Cpu</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/finspace_kx_cluster#cpu FinspaceKxCluster#cpu}. |
-| <code><a href="#@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterScalingGroupConfiguration.property.memoryLimit">MemoryLimit</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/finspace_kx_cluster#memory_limit FinspaceKxCluster#memory_limit}. |
+| <code><a href="#@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterScalingGroupConfiguration.property.memoryReservation">MemoryReservation</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/finspace_kx_cluster#memory_reservation FinspaceKxCluster#memory_reservation}. |
+| <code><a href="#@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterScalingGroupConfiguration.property.nodeCount">NodeCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/finspace_kx_cluster#node_count FinspaceKxCluster#node_count}. |
+| <code><a href="#@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterScalingGroupConfiguration.property.scalingGroupName">ScalingGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/finspace_kx_cluster#scaling_group_name FinspaceKxCluster#scaling_group_name}. |
+| <code><a href="#@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterScalingGroupConfiguration.property.cpu">Cpu</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/finspace_kx_cluster#cpu FinspaceKxCluster#cpu}. |
+| <code><a href="#@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterScalingGroupConfiguration.property.memoryLimit">MemoryLimit</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/finspace_kx_cluster#memory_limit FinspaceKxCluster#memory_limit}. |
 
 ---
 
@@ -2436,7 +2436,7 @@ MemoryReservation *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/finspace_kx_cluster#memory_reservation FinspaceKxCluster#memory_reservation}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/finspace_kx_cluster#memory_reservation FinspaceKxCluster#memory_reservation}.
 
 ---
 
@@ -2448,7 +2448,7 @@ NodeCount *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/finspace_kx_cluster#node_count FinspaceKxCluster#node_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/finspace_kx_cluster#node_count FinspaceKxCluster#node_count}.
 
 ---
 
@@ -2460,7 +2460,7 @@ ScalingGroupName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/finspace_kx_cluster#scaling_group_name FinspaceKxCluster#scaling_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/finspace_kx_cluster#scaling_group_name FinspaceKxCluster#scaling_group_name}.
 
 ---
 
@@ -2472,7 +2472,7 @@ Cpu *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/finspace_kx_cluster#cpu FinspaceKxCluster#cpu}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/finspace_kx_cluster#cpu FinspaceKxCluster#cpu}.
 
 ---
 
@@ -2484,7 +2484,7 @@ MemoryLimit *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/finspace_kx_cluster#memory_limit FinspaceKxCluster#memory_limit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/finspace_kx_cluster#memory_limit FinspaceKxCluster#memory_limit}.
 
 ---
 
@@ -2493,7 +2493,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterTickerplantLogConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/finspacekxcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/finspacekxcluster"
 
 &finspacekxcluster.FinspaceKxClusterTickerplantLogConfiguration {
 	TickerplantLogVolumes: *[]*string,
@@ -2504,7 +2504,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/finspacekxcluster"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterTickerplantLogConfiguration.property.tickerplantLogVolumes">TickerplantLogVolumes</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/finspace_kx_cluster#tickerplant_log_volumes FinspaceKxCluster#tickerplant_log_volumes}. |
+| <code><a href="#@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterTickerplantLogConfiguration.property.tickerplantLogVolumes">TickerplantLogVolumes</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/finspace_kx_cluster#tickerplant_log_volumes FinspaceKxCluster#tickerplant_log_volumes}. |
 
 ---
 
@@ -2516,7 +2516,7 @@ TickerplantLogVolumes *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/finspace_kx_cluster#tickerplant_log_volumes FinspaceKxCluster#tickerplant_log_volumes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/finspace_kx_cluster#tickerplant_log_volumes FinspaceKxCluster#tickerplant_log_volumes}.
 
 ---
 
@@ -2525,7 +2525,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/finspacekxcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/finspacekxcluster"
 
 &finspacekxcluster.FinspaceKxClusterTimeouts {
 	Create: *string,
@@ -2538,9 +2538,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/finspacekxcluster"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/finspace_kx_cluster#create FinspaceKxCluster#create}. |
-| <code><a href="#@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/finspace_kx_cluster#delete FinspaceKxCluster#delete}. |
-| <code><a href="#@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/finspace_kx_cluster#update FinspaceKxCluster#update}. |
+| <code><a href="#@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/finspace_kx_cluster#create FinspaceKxCluster#create}. |
+| <code><a href="#@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/finspace_kx_cluster#delete FinspaceKxCluster#delete}. |
+| <code><a href="#@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/finspace_kx_cluster#update FinspaceKxCluster#update}. |
 
 ---
 
@@ -2552,7 +2552,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/finspace_kx_cluster#create FinspaceKxCluster#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/finspace_kx_cluster#create FinspaceKxCluster#create}.
 
 ---
 
@@ -2564,7 +2564,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/finspace_kx_cluster#delete FinspaceKxCluster#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/finspace_kx_cluster#delete FinspaceKxCluster#delete}.
 
 ---
 
@@ -2576,7 +2576,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/finspace_kx_cluster#update FinspaceKxCluster#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/finspace_kx_cluster#update FinspaceKxCluster#update}.
 
 ---
 
@@ -2585,7 +2585,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterVpcConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/finspacekxcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/finspacekxcluster"
 
 &finspacekxcluster.FinspaceKxClusterVpcConfiguration {
 	IpAddressType: *string,
@@ -2599,10 +2599,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/finspacekxcluster"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterVpcConfiguration.property.ipAddressType">IpAddressType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/finspace_kx_cluster#ip_address_type FinspaceKxCluster#ip_address_type}. |
-| <code><a href="#@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterVpcConfiguration.property.securityGroupIds">SecurityGroupIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/finspace_kx_cluster#security_group_ids FinspaceKxCluster#security_group_ids}. |
-| <code><a href="#@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterVpcConfiguration.property.subnetIds">SubnetIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/finspace_kx_cluster#subnet_ids FinspaceKxCluster#subnet_ids}. |
-| <code><a href="#@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterVpcConfiguration.property.vpcId">VpcId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/finspace_kx_cluster#vpc_id FinspaceKxCluster#vpc_id}. |
+| <code><a href="#@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterVpcConfiguration.property.ipAddressType">IpAddressType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/finspace_kx_cluster#ip_address_type FinspaceKxCluster#ip_address_type}. |
+| <code><a href="#@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterVpcConfiguration.property.securityGroupIds">SecurityGroupIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/finspace_kx_cluster#security_group_ids FinspaceKxCluster#security_group_ids}. |
+| <code><a href="#@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterVpcConfiguration.property.subnetIds">SubnetIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/finspace_kx_cluster#subnet_ids FinspaceKxCluster#subnet_ids}. |
+| <code><a href="#@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterVpcConfiguration.property.vpcId">VpcId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/finspace_kx_cluster#vpc_id FinspaceKxCluster#vpc_id}. |
 
 ---
 
@@ -2614,7 +2614,7 @@ IpAddressType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/finspace_kx_cluster#ip_address_type FinspaceKxCluster#ip_address_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/finspace_kx_cluster#ip_address_type FinspaceKxCluster#ip_address_type}.
 
 ---
 
@@ -2626,7 +2626,7 @@ SecurityGroupIds *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/finspace_kx_cluster#security_group_ids FinspaceKxCluster#security_group_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/finspace_kx_cluster#security_group_ids FinspaceKxCluster#security_group_ids}.
 
 ---
 
@@ -2638,7 +2638,7 @@ SubnetIds *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/finspace_kx_cluster#subnet_ids FinspaceKxCluster#subnet_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/finspace_kx_cluster#subnet_ids FinspaceKxCluster#subnet_ids}.
 
 ---
 
@@ -2650,7 +2650,7 @@ VpcId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/finspace_kx_cluster#vpc_id FinspaceKxCluster#vpc_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/finspace_kx_cluster#vpc_id FinspaceKxCluster#vpc_id}.
 
 ---
 
@@ -2661,7 +2661,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterAutoScalingConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/finspacekxcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/finspacekxcluster"
 
 finspacekxcluster.NewFinspaceKxClusterAutoScalingConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FinspaceKxClusterAutoScalingConfigurationOutputReference
 ```
@@ -3042,7 +3042,7 @@ func InternalValue() FinspaceKxClusterAutoScalingConfiguration
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterCacheStorageConfigurationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/finspacekxcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/finspacekxcluster"
 
 finspacekxcluster.NewFinspaceKxClusterCacheStorageConfigurationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FinspaceKxClusterCacheStorageConfigurationsList
 ```
@@ -3202,7 +3202,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterCacheStorageConfigurationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/finspacekxcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/finspacekxcluster"
 
 finspacekxcluster.NewFinspaceKxClusterCacheStorageConfigurationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FinspaceKxClusterCacheStorageConfigurationsOutputReference
 ```
@@ -3513,7 +3513,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterCapacityConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/finspacekxcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/finspacekxcluster"
 
 finspacekxcluster.NewFinspaceKxClusterCapacityConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FinspaceKxClusterCapacityConfigurationOutputReference
 ```
@@ -3806,7 +3806,7 @@ func InternalValue() FinspaceKxClusterCapacityConfiguration
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterCodeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/finspacekxcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/finspacekxcluster"
 
 finspacekxcluster.NewFinspaceKxClusterCodeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FinspaceKxClusterCodeOutputReference
 ```
@@ -4128,7 +4128,7 @@ func InternalValue() FinspaceKxClusterCode
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterDatabaseCacheConfigurationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/finspacekxcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/finspacekxcluster"
 
 finspacekxcluster.NewFinspaceKxClusterDatabaseCacheConfigurationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FinspaceKxClusterDatabaseCacheConfigurationsList
 ```
@@ -4288,7 +4288,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterDatabaseCacheConfigurationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/finspacekxcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/finspacekxcluster"
 
 finspacekxcluster.NewFinspaceKxClusterDatabaseCacheConfigurationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FinspaceKxClusterDatabaseCacheConfigurationsOutputReference
 ```
@@ -4606,7 +4606,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterDatabaseList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/finspacekxcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/finspacekxcluster"
 
 finspacekxcluster.NewFinspaceKxClusterDatabaseList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FinspaceKxClusterDatabaseList
 ```
@@ -4766,7 +4766,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterDatabaseOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/finspacekxcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/finspacekxcluster"
 
 finspacekxcluster.NewFinspaceKxClusterDatabaseOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FinspaceKxClusterDatabaseOutputReference
 ```
@@ -5155,7 +5155,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterSavedownStorageConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/finspacekxcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/finspacekxcluster"
 
 finspacekxcluster.NewFinspaceKxClusterSavedownStorageConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FinspaceKxClusterSavedownStorageConfigurationOutputReference
 ```
@@ -5491,7 +5491,7 @@ func InternalValue() FinspaceKxClusterSavedownStorageConfiguration
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterScalingGroupConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/finspacekxcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/finspacekxcluster"
 
 finspacekxcluster.NewFinspaceKxClusterScalingGroupConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FinspaceKxClusterScalingGroupConfigurationOutputReference
 ```
@@ -5864,7 +5864,7 @@ func InternalValue() FinspaceKxClusterScalingGroupConfiguration
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterTickerplantLogConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/finspacekxcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/finspacekxcluster"
 
 finspacekxcluster.NewFinspaceKxClusterTickerplantLogConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FinspaceKxClusterTickerplantLogConfigurationList
 ```
@@ -6024,7 +6024,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterTickerplantLogConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/finspacekxcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/finspacekxcluster"
 
 finspacekxcluster.NewFinspaceKxClusterTickerplantLogConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FinspaceKxClusterTickerplantLogConfigurationOutputReference
 ```
@@ -6313,7 +6313,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/finspacekxcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/finspacekxcluster"
 
 finspacekxcluster.NewFinspaceKxClusterTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FinspaceKxClusterTimeoutsOutputReference
 ```
@@ -6649,7 +6649,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.finspaceKxCluster.FinspaceKxClusterVpcConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/finspacekxcluster"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/finspacekxcluster"
 
 finspacekxcluster.NewFinspaceKxClusterVpcConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FinspaceKxClusterVpcConfigurationOutputReference
 ```

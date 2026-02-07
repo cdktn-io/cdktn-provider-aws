@@ -4,12 +4,12 @@
 
 ### TransferUser <a name="TransferUser" id="@cdktn/provider-aws.transferUser.TransferUser"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/transfer_user aws_transfer_user}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/transfer_user aws_transfer_user}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.transferUser.TransferUser.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/transferuser"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/transferuser"
 
 transferuser.NewTransferUser(scope Construct, id *string, config TransferUserConfig) TransferUser
 ```
@@ -487,7 +487,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.transferUser.TransferUser.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/transferuser"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/transferuser"
 
 transferuser.TransferUser_IsConstruct(x interface{}) *bool
 ```
@@ -519,7 +519,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.transferUser.TransferUser.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/transferuser"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/transferuser"
 
 transferuser.TransferUser_IsTerraformElement(x interface{}) *bool
 ```
@@ -533,7 +533,7 @@ transferuser.TransferUser_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.transferUser.TransferUser.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/transferuser"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/transferuser"
 
 transferuser.TransferUser_IsTerraformResource(x interface{}) *bool
 ```
@@ -547,7 +547,7 @@ transferuser.TransferUser_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.transferUser.TransferUser.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/transferuser"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/transferuser"
 
 transferuser.TransferUser_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -576,7 +576,7 @@ The construct id used in the generated config for the TransferUser to import.
 
 The id of the existing TransferUser that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/transfer_user#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/transfer_user#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1073,7 +1073,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.transferUser.TransferUserConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/transferuser"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/transferuser"
 
 &transferuser.TransferUserConfig {
 	Connection: interface{},
@@ -1091,11 +1091,11 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/transferuser"
 	HomeDirectoryType: *string,
 	Id: *string,
 	Policy: *string,
-	PosixProfile: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.transferUser.TransferUserPosixProfile,
+	PosixProfile: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.transferUser.TransferUserPosixProfile,
 	Region: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.transferUser.TransferUserTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.transferUser.TransferUserTimeouts,
 }
 ```
 
@@ -1110,18 +1110,18 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/transferuser"
 | <code><a href="#@cdktn/provider-aws.transferUser.TransferUserConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.transferUser.TransferUserConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.transferUser.TransferUserConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.transferUser.TransferUserConfig.property.role">Role</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/transfer_user#role TransferUser#role}. |
-| <code><a href="#@cdktn/provider-aws.transferUser.TransferUserConfig.property.serverId">ServerId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/transfer_user#server_id TransferUser#server_id}. |
-| <code><a href="#@cdktn/provider-aws.transferUser.TransferUserConfig.property.userName">UserName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/transfer_user#user_name TransferUser#user_name}. |
-| <code><a href="#@cdktn/provider-aws.transferUser.TransferUserConfig.property.homeDirectory">HomeDirectory</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/transfer_user#home_directory TransferUser#home_directory}. |
+| <code><a href="#@cdktn/provider-aws.transferUser.TransferUserConfig.property.role">Role</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/transfer_user#role TransferUser#role}. |
+| <code><a href="#@cdktn/provider-aws.transferUser.TransferUserConfig.property.serverId">ServerId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/transfer_user#server_id TransferUser#server_id}. |
+| <code><a href="#@cdktn/provider-aws.transferUser.TransferUserConfig.property.userName">UserName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/transfer_user#user_name TransferUser#user_name}. |
+| <code><a href="#@cdktn/provider-aws.transferUser.TransferUserConfig.property.homeDirectory">HomeDirectory</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/transfer_user#home_directory TransferUser#home_directory}. |
 | <code><a href="#@cdktn/provider-aws.transferUser.TransferUserConfig.property.homeDirectoryMappings">HomeDirectoryMappings</a></code> | <code>interface{}</code> | home_directory_mappings block. |
-| <code><a href="#@cdktn/provider-aws.transferUser.TransferUserConfig.property.homeDirectoryType">HomeDirectoryType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/transfer_user#home_directory_type TransferUser#home_directory_type}. |
-| <code><a href="#@cdktn/provider-aws.transferUser.TransferUserConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/transfer_user#id TransferUser#id}. |
-| <code><a href="#@cdktn/provider-aws.transferUser.TransferUserConfig.property.policy">Policy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/transfer_user#policy TransferUser#policy}. |
+| <code><a href="#@cdktn/provider-aws.transferUser.TransferUserConfig.property.homeDirectoryType">HomeDirectoryType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/transfer_user#home_directory_type TransferUser#home_directory_type}. |
+| <code><a href="#@cdktn/provider-aws.transferUser.TransferUserConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/transfer_user#id TransferUser#id}. |
+| <code><a href="#@cdktn/provider-aws.transferUser.TransferUserConfig.property.policy">Policy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/transfer_user#policy TransferUser#policy}. |
 | <code><a href="#@cdktn/provider-aws.transferUser.TransferUserConfig.property.posixProfile">PosixProfile</a></code> | <code><a href="#@cdktn/provider-aws.transferUser.TransferUserPosixProfile">TransferUserPosixProfile</a></code> | posix_profile block. |
 | <code><a href="#@cdktn/provider-aws.transferUser.TransferUserConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.transferUser.TransferUserConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/transfer_user#tags TransferUser#tags}. |
-| <code><a href="#@cdktn/provider-aws.transferUser.TransferUserConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/transfer_user#tags_all TransferUser#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.transferUser.TransferUserConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/transfer_user#tags TransferUser#tags}. |
+| <code><a href="#@cdktn/provider-aws.transferUser.TransferUserConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/transfer_user#tags_all TransferUser#tags_all}. |
 | <code><a href="#@cdktn/provider-aws.transferUser.TransferUserConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.transferUser.TransferUserTimeouts">TransferUserTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1204,7 +1204,7 @@ Role *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/transfer_user#role TransferUser#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/transfer_user#role TransferUser#role}.
 
 ---
 
@@ -1216,7 +1216,7 @@ ServerId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/transfer_user#server_id TransferUser#server_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/transfer_user#server_id TransferUser#server_id}.
 
 ---
 
@@ -1228,7 +1228,7 @@ UserName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/transfer_user#user_name TransferUser#user_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/transfer_user#user_name TransferUser#user_name}.
 
 ---
 
@@ -1240,7 +1240,7 @@ HomeDirectory *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/transfer_user#home_directory TransferUser#home_directory}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/transfer_user#home_directory TransferUser#home_directory}.
 
 ---
 
@@ -1254,7 +1254,7 @@ HomeDirectoryMappings interface{}
 
 home_directory_mappings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/transfer_user#home_directory_mappings TransferUser#home_directory_mappings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/transfer_user#home_directory_mappings TransferUser#home_directory_mappings}
 
 ---
 
@@ -1266,7 +1266,7 @@ HomeDirectoryType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/transfer_user#home_directory_type TransferUser#home_directory_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/transfer_user#home_directory_type TransferUser#home_directory_type}.
 
 ---
 
@@ -1278,7 +1278,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/transfer_user#id TransferUser#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/transfer_user#id TransferUser#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1293,7 +1293,7 @@ Policy *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/transfer_user#policy TransferUser#policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/transfer_user#policy TransferUser#policy}.
 
 ---
 
@@ -1307,7 +1307,7 @@ PosixProfile TransferUserPosixProfile
 
 posix_profile block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/transfer_user#posix_profile TransferUser#posix_profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/transfer_user#posix_profile TransferUser#posix_profile}
 
 ---
 
@@ -1321,7 +1321,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/transfer_user#region TransferUser#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/transfer_user#region TransferUser#region}
 
 ---
 
@@ -1333,7 +1333,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/transfer_user#tags TransferUser#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/transfer_user#tags TransferUser#tags}.
 
 ---
 
@@ -1345,7 +1345,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/transfer_user#tags_all TransferUser#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/transfer_user#tags_all TransferUser#tags_all}.
 
 ---
 
@@ -1359,7 +1359,7 @@ Timeouts TransferUserTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/transfer_user#timeouts TransferUser#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/transfer_user#timeouts TransferUser#timeouts}
 
 ---
 
@@ -1368,7 +1368,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.transferUser.TransferUserHomeDirectoryMappings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/transferuser"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/transferuser"
 
 &transferuser.TransferUserHomeDirectoryMappings {
 	Entry: *string,
@@ -1380,8 +1380,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/transferuser"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.transferUser.TransferUserHomeDirectoryMappings.property.entry">Entry</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/transfer_user#entry TransferUser#entry}. |
-| <code><a href="#@cdktn/provider-aws.transferUser.TransferUserHomeDirectoryMappings.property.target">Target</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/transfer_user#target TransferUser#target}. |
+| <code><a href="#@cdktn/provider-aws.transferUser.TransferUserHomeDirectoryMappings.property.entry">Entry</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/transfer_user#entry TransferUser#entry}. |
+| <code><a href="#@cdktn/provider-aws.transferUser.TransferUserHomeDirectoryMappings.property.target">Target</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/transfer_user#target TransferUser#target}. |
 
 ---
 
@@ -1393,7 +1393,7 @@ Entry *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/transfer_user#entry TransferUser#entry}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/transfer_user#entry TransferUser#entry}.
 
 ---
 
@@ -1405,7 +1405,7 @@ Target *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/transfer_user#target TransferUser#target}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/transfer_user#target TransferUser#target}.
 
 ---
 
@@ -1414,7 +1414,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.transferUser.TransferUserPosixProfile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/transferuser"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/transferuser"
 
 &transferuser.TransferUserPosixProfile {
 	Gid: *f64,
@@ -1427,9 +1427,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/transferuser"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.transferUser.TransferUserPosixProfile.property.gid">Gid</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/transfer_user#gid TransferUser#gid}. |
-| <code><a href="#@cdktn/provider-aws.transferUser.TransferUserPosixProfile.property.uid">Uid</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/transfer_user#uid TransferUser#uid}. |
-| <code><a href="#@cdktn/provider-aws.transferUser.TransferUserPosixProfile.property.secondaryGids">SecondaryGids</a></code> | <code>*[]*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/transfer_user#secondary_gids TransferUser#secondary_gids}. |
+| <code><a href="#@cdktn/provider-aws.transferUser.TransferUserPosixProfile.property.gid">Gid</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/transfer_user#gid TransferUser#gid}. |
+| <code><a href="#@cdktn/provider-aws.transferUser.TransferUserPosixProfile.property.uid">Uid</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/transfer_user#uid TransferUser#uid}. |
+| <code><a href="#@cdktn/provider-aws.transferUser.TransferUserPosixProfile.property.secondaryGids">SecondaryGids</a></code> | <code>*[]*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/transfer_user#secondary_gids TransferUser#secondary_gids}. |
 
 ---
 
@@ -1441,7 +1441,7 @@ Gid *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/transfer_user#gid TransferUser#gid}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/transfer_user#gid TransferUser#gid}.
 
 ---
 
@@ -1453,7 +1453,7 @@ Uid *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/transfer_user#uid TransferUser#uid}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/transfer_user#uid TransferUser#uid}.
 
 ---
 
@@ -1465,7 +1465,7 @@ SecondaryGids *[]*f64
 
 - *Type:* *[]*f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/transfer_user#secondary_gids TransferUser#secondary_gids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/transfer_user#secondary_gids TransferUser#secondary_gids}.
 
 ---
 
@@ -1474,7 +1474,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.transferUser.TransferUserTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/transferuser"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/transferuser"
 
 &transferuser.TransferUserTimeouts {
 	Delete: *string,
@@ -1485,7 +1485,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/transferuser"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.transferUser.TransferUserTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/transfer_user#delete TransferUser#delete}. |
+| <code><a href="#@cdktn/provider-aws.transferUser.TransferUserTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/transfer_user#delete TransferUser#delete}. |
 
 ---
 
@@ -1497,7 +1497,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/transfer_user#delete TransferUser#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/transfer_user#delete TransferUser#delete}.
 
 ---
 
@@ -1508,7 +1508,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.transferUser.TransferUserHomeDirectoryMappingsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/transferuser"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/transferuser"
 
 transferuser.NewTransferUserHomeDirectoryMappingsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) TransferUserHomeDirectoryMappingsList
 ```
@@ -1668,7 +1668,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.transferUser.TransferUserHomeDirectoryMappingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/transferuser"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/transferuser"
 
 transferuser.NewTransferUserHomeDirectoryMappingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) TransferUserHomeDirectoryMappingsOutputReference
 ```
@@ -1979,7 +1979,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.transferUser.TransferUserPosixProfileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/transferuser"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/transferuser"
 
 transferuser.NewTransferUserPosixProfileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TransferUserPosixProfileOutputReference
 ```
@@ -2301,7 +2301,7 @@ func InternalValue() TransferUserPosixProfile
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.transferUser.TransferUserTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/transferuser"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/transferuser"
 
 transferuser.NewTransferUserTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TransferUserTimeoutsOutputReference
 ```

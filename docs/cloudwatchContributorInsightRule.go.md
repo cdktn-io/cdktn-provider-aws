@@ -4,12 +4,12 @@
 
 ### CloudwatchContributorInsightRule <a name="CloudwatchContributorInsightRule" id="@cdktn/provider-aws.cloudwatchContributorInsightRule.CloudwatchContributorInsightRule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_contributor_insight_rule aws_cloudwatch_contributor_insight_rule}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_contributor_insight_rule aws_cloudwatch_contributor_insight_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudwatchContributorInsightRule.CloudwatchContributorInsightRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatchcontributorinsightrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatchcontributorinsightrule"
 
 cloudwatchcontributorinsightrule.NewCloudwatchContributorInsightRule(scope Construct, id *string, config CloudwatchContributorInsightRuleConfig) CloudwatchContributorInsightRule
 ```
@@ -399,7 +399,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.cloudwatchContributorInsightRule.CloudwatchContributorInsightRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatchcontributorinsightrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatchcontributorinsightrule"
 
 cloudwatchcontributorinsightrule.CloudwatchContributorInsightRule_IsConstruct(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.cloudwatchContributorInsightRule.CloudwatchContributorInsightRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatchcontributorinsightrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatchcontributorinsightrule"
 
 cloudwatchcontributorinsightrule.CloudwatchContributorInsightRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ cloudwatchcontributorinsightrule.CloudwatchContributorInsightRule_IsTerraformEle
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.cloudwatchContributorInsightRule.CloudwatchContributorInsightRule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatchcontributorinsightrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatchcontributorinsightrule"
 
 cloudwatchcontributorinsightrule.CloudwatchContributorInsightRule_IsTerraformResource(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ cloudwatchcontributorinsightrule.CloudwatchContributorInsightRule_IsTerraformRes
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.cloudwatchContributorInsightRule.CloudwatchContributorInsightRule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatchcontributorinsightrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatchcontributorinsightrule"
 
 cloudwatchcontributorinsightrule.CloudwatchContributorInsightRule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -488,7 +488,7 @@ The construct id used in the generated config for the CloudwatchContributorInsig
 
 The id of the existing CloudwatchContributorInsightRule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_contributor_insight_rule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_contributor_insight_rule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -820,7 +820,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudwatchContributorInsightRule.CloudwatchContributorInsightRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatchcontributorinsightrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatchcontributorinsightrule"
 
 &cloudwatchcontributorinsightrule.CloudwatchContributorInsightRuleConfig {
 	Connection: interface{},
@@ -849,11 +849,11 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatchcontributori
 | <code><a href="#@cdktn/provider-aws.cloudwatchContributorInsightRule.CloudwatchContributorInsightRuleConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchContributorInsightRule.CloudwatchContributorInsightRuleConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchContributorInsightRule.CloudwatchContributorInsightRuleConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudwatchContributorInsightRule.CloudwatchContributorInsightRuleConfig.property.ruleDefinition">RuleDefinition</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_contributor_insight_rule#rule_definition CloudwatchContributorInsightRule#rule_definition}. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchContributorInsightRule.CloudwatchContributorInsightRuleConfig.property.ruleName">RuleName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_contributor_insight_rule#rule_name CloudwatchContributorInsightRule#rule_name}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchContributorInsightRule.CloudwatchContributorInsightRuleConfig.property.ruleDefinition">RuleDefinition</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_contributor_insight_rule#rule_definition CloudwatchContributorInsightRule#rule_definition}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchContributorInsightRule.CloudwatchContributorInsightRuleConfig.property.ruleName">RuleName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_contributor_insight_rule#rule_name CloudwatchContributorInsightRule#rule_name}. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchContributorInsightRule.CloudwatchContributorInsightRuleConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.cloudwatchContributorInsightRule.CloudwatchContributorInsightRuleConfig.property.ruleState">RuleState</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_contributor_insight_rule#rule_state CloudwatchContributorInsightRule#rule_state}. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchContributorInsightRule.CloudwatchContributorInsightRuleConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_contributor_insight_rule#tags CloudwatchContributorInsightRule#tags}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchContributorInsightRule.CloudwatchContributorInsightRuleConfig.property.ruleState">RuleState</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_contributor_insight_rule#rule_state CloudwatchContributorInsightRule#rule_state}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchContributorInsightRule.CloudwatchContributorInsightRuleConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_contributor_insight_rule#tags CloudwatchContributorInsightRule#tags}. |
 
 ---
 
@@ -935,7 +935,7 @@ RuleDefinition *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_contributor_insight_rule#rule_definition CloudwatchContributorInsightRule#rule_definition}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_contributor_insight_rule#rule_definition CloudwatchContributorInsightRule#rule_definition}.
 
 ---
 
@@ -947,7 +947,7 @@ RuleName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_contributor_insight_rule#rule_name CloudwatchContributorInsightRule#rule_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_contributor_insight_rule#rule_name CloudwatchContributorInsightRule#rule_name}.
 
 ---
 
@@ -961,7 +961,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_contributor_insight_rule#region CloudwatchContributorInsightRule#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_contributor_insight_rule#region CloudwatchContributorInsightRule#region}
 
 ---
 
@@ -973,7 +973,7 @@ RuleState *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_contributor_insight_rule#rule_state CloudwatchContributorInsightRule#rule_state}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_contributor_insight_rule#rule_state CloudwatchContributorInsightRule#rule_state}.
 
 ---
 
@@ -985,7 +985,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_contributor_insight_rule#tags CloudwatchContributorInsightRule#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_contributor_insight_rule#tags CloudwatchContributorInsightRule#tags}.
 
 ---
 

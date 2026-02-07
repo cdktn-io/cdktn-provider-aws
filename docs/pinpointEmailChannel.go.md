@@ -4,12 +4,12 @@
 
 ### PinpointEmailChannel <a name="PinpointEmailChannel" id="@cdktn/provider-aws.pinpointEmailChannel.PinpointEmailChannel"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/pinpoint_email_channel aws_pinpoint_email_channel}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/pinpoint_email_channel aws_pinpoint_email_channel}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.pinpointEmailChannel.PinpointEmailChannel.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/pinpointemailchannel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/pinpointemailchannel"
 
 pinpointemailchannel.NewPinpointEmailChannel(scope Construct, id *string, config PinpointEmailChannelConfig) PinpointEmailChannel
 ```
@@ -420,7 +420,7 @@ func ResetRoleArn()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.pinpointEmailChannel.PinpointEmailChannel.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/pinpointemailchannel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/pinpointemailchannel"
 
 pinpointemailchannel.PinpointEmailChannel_IsConstruct(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.pinpointEmailChannel.PinpointEmailChannel.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/pinpointemailchannel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/pinpointemailchannel"
 
 pinpointemailchannel.PinpointEmailChannel_IsTerraformElement(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ pinpointemailchannel.PinpointEmailChannel_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.pinpointEmailChannel.PinpointEmailChannel.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/pinpointemailchannel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/pinpointemailchannel"
 
 pinpointemailchannel.PinpointEmailChannel_IsTerraformResource(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ pinpointemailchannel.PinpointEmailChannel_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.pinpointEmailChannel.PinpointEmailChannel.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/pinpointemailchannel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/pinpointemailchannel"
 
 pinpointemailchannel.PinpointEmailChannel_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -509,7 +509,7 @@ The construct id used in the generated config for the PinpointEmailChannel to im
 
 The id of the existing PinpointEmailChannel that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/pinpoint_email_channel#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/pinpoint_email_channel#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -918,7 +918,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.pinpointEmailChannel.PinpointEmailChannelConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/pinpointemailchannel"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/pinpointemailchannel"
 
 &pinpointemailchannel.PinpointEmailChannelConfig {
 	Connection: interface{},
@@ -951,15 +951,15 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/pinpointemailchannel"
 | <code><a href="#@cdktn/provider-aws.pinpointEmailChannel.PinpointEmailChannelConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.pinpointEmailChannel.PinpointEmailChannelConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.pinpointEmailChannel.PinpointEmailChannelConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.pinpointEmailChannel.PinpointEmailChannelConfig.property.applicationId">ApplicationId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/pinpoint_email_channel#application_id PinpointEmailChannel#application_id}. |
-| <code><a href="#@cdktn/provider-aws.pinpointEmailChannel.PinpointEmailChannelConfig.property.fromAddress">FromAddress</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/pinpoint_email_channel#from_address PinpointEmailChannel#from_address}. |
-| <code><a href="#@cdktn/provider-aws.pinpointEmailChannel.PinpointEmailChannelConfig.property.identity">Identity</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/pinpoint_email_channel#identity PinpointEmailChannel#identity}. |
-| <code><a href="#@cdktn/provider-aws.pinpointEmailChannel.PinpointEmailChannelConfig.property.configurationSet">ConfigurationSet</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/pinpoint_email_channel#configuration_set PinpointEmailChannel#configuration_set}. |
-| <code><a href="#@cdktn/provider-aws.pinpointEmailChannel.PinpointEmailChannelConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/pinpoint_email_channel#enabled PinpointEmailChannel#enabled}. |
-| <code><a href="#@cdktn/provider-aws.pinpointEmailChannel.PinpointEmailChannelConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/pinpoint_email_channel#id PinpointEmailChannel#id}. |
-| <code><a href="#@cdktn/provider-aws.pinpointEmailChannel.PinpointEmailChannelConfig.property.orchestrationSendingRoleArn">OrchestrationSendingRoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/pinpoint_email_channel#orchestration_sending_role_arn PinpointEmailChannel#orchestration_sending_role_arn}. |
+| <code><a href="#@cdktn/provider-aws.pinpointEmailChannel.PinpointEmailChannelConfig.property.applicationId">ApplicationId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/pinpoint_email_channel#application_id PinpointEmailChannel#application_id}. |
+| <code><a href="#@cdktn/provider-aws.pinpointEmailChannel.PinpointEmailChannelConfig.property.fromAddress">FromAddress</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/pinpoint_email_channel#from_address PinpointEmailChannel#from_address}. |
+| <code><a href="#@cdktn/provider-aws.pinpointEmailChannel.PinpointEmailChannelConfig.property.identity">Identity</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/pinpoint_email_channel#identity PinpointEmailChannel#identity}. |
+| <code><a href="#@cdktn/provider-aws.pinpointEmailChannel.PinpointEmailChannelConfig.property.configurationSet">ConfigurationSet</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/pinpoint_email_channel#configuration_set PinpointEmailChannel#configuration_set}. |
+| <code><a href="#@cdktn/provider-aws.pinpointEmailChannel.PinpointEmailChannelConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/pinpoint_email_channel#enabled PinpointEmailChannel#enabled}. |
+| <code><a href="#@cdktn/provider-aws.pinpointEmailChannel.PinpointEmailChannelConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/pinpoint_email_channel#id PinpointEmailChannel#id}. |
+| <code><a href="#@cdktn/provider-aws.pinpointEmailChannel.PinpointEmailChannelConfig.property.orchestrationSendingRoleArn">OrchestrationSendingRoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/pinpoint_email_channel#orchestration_sending_role_arn PinpointEmailChannel#orchestration_sending_role_arn}. |
 | <code><a href="#@cdktn/provider-aws.pinpointEmailChannel.PinpointEmailChannelConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.pinpointEmailChannel.PinpointEmailChannelConfig.property.roleArn">RoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/pinpoint_email_channel#role_arn PinpointEmailChannel#role_arn}. |
+| <code><a href="#@cdktn/provider-aws.pinpointEmailChannel.PinpointEmailChannelConfig.property.roleArn">RoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/pinpoint_email_channel#role_arn PinpointEmailChannel#role_arn}. |
 
 ---
 
@@ -1041,7 +1041,7 @@ ApplicationId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/pinpoint_email_channel#application_id PinpointEmailChannel#application_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/pinpoint_email_channel#application_id PinpointEmailChannel#application_id}.
 
 ---
 
@@ -1053,7 +1053,7 @@ FromAddress *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/pinpoint_email_channel#from_address PinpointEmailChannel#from_address}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/pinpoint_email_channel#from_address PinpointEmailChannel#from_address}.
 
 ---
 
@@ -1065,7 +1065,7 @@ Identity *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/pinpoint_email_channel#identity PinpointEmailChannel#identity}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/pinpoint_email_channel#identity PinpointEmailChannel#identity}.
 
 ---
 
@@ -1077,7 +1077,7 @@ ConfigurationSet *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/pinpoint_email_channel#configuration_set PinpointEmailChannel#configuration_set}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/pinpoint_email_channel#configuration_set PinpointEmailChannel#configuration_set}.
 
 ---
 
@@ -1089,7 +1089,7 @@ Enabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/pinpoint_email_channel#enabled PinpointEmailChannel#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/pinpoint_email_channel#enabled PinpointEmailChannel#enabled}.
 
 ---
 
@@ -1101,7 +1101,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/pinpoint_email_channel#id PinpointEmailChannel#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/pinpoint_email_channel#id PinpointEmailChannel#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1116,7 +1116,7 @@ OrchestrationSendingRoleArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/pinpoint_email_channel#orchestration_sending_role_arn PinpointEmailChannel#orchestration_sending_role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/pinpoint_email_channel#orchestration_sending_role_arn PinpointEmailChannel#orchestration_sending_role_arn}.
 
 ---
 
@@ -1130,7 +1130,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/pinpoint_email_channel#region PinpointEmailChannel#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/pinpoint_email_channel#region PinpointEmailChannel#region}
 
 ---
 
@@ -1142,7 +1142,7 @@ RoleArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/pinpoint_email_channel#role_arn PinpointEmailChannel#role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/pinpoint_email_channel#role_arn PinpointEmailChannel#role_arn}.
 
 ---
 

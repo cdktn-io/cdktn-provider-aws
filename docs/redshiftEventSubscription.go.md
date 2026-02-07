@@ -4,12 +4,12 @@
 
 ### RedshiftEventSubscription <a name="RedshiftEventSubscription" id="@cdktn/provider-aws.redshiftEventSubscription.RedshiftEventSubscription"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_event_subscription aws_redshift_event_subscription}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_event_subscription aws_redshift_event_subscription}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.redshiftEventSubscription.RedshiftEventSubscription.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/redshifteventsubscription"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/redshifteventsubscription"
 
 redshifteventsubscription.NewRedshiftEventSubscription(scope Construct, id *string, config RedshiftEventSubscriptionConfig) RedshiftEventSubscription
 ```
@@ -461,7 +461,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.redshiftEventSubscription.RedshiftEventSubscription.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/redshifteventsubscription"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/redshifteventsubscription"
 
 redshifteventsubscription.RedshiftEventSubscription_IsConstruct(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.redshiftEventSubscription.RedshiftEventSubscription.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/redshifteventsubscription"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/redshifteventsubscription"
 
 redshifteventsubscription.RedshiftEventSubscription_IsTerraformElement(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ redshifteventsubscription.RedshiftEventSubscription_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.redshiftEventSubscription.RedshiftEventSubscription.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/redshifteventsubscription"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/redshifteventsubscription"
 
 redshifteventsubscription.RedshiftEventSubscription_IsTerraformResource(x interface{}) *bool
 ```
@@ -521,7 +521,7 @@ redshifteventsubscription.RedshiftEventSubscription_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.redshiftEventSubscription.RedshiftEventSubscription.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/redshifteventsubscription"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/redshifteventsubscription"
 
 redshifteventsubscription.RedshiftEventSubscription_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -550,7 +550,7 @@ The construct id used in the generated config for the RedshiftEventSubscription 
 
 The id of the existing RedshiftEventSubscription that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_event_subscription#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_event_subscription#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1047,7 +1047,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.redshiftEventSubscription.RedshiftEventSubscriptionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/redshifteventsubscription"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/redshifteventsubscription"
 
 &redshifteventsubscription.RedshiftEventSubscriptionConfig {
 	Connection: interface{},
@@ -1068,7 +1068,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/redshifteventsubscript
 	SourceType: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.redshiftEventSubscription.RedshiftEventSubscriptionTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.redshiftEventSubscription.RedshiftEventSubscriptionTimeouts,
 }
 ```
 
@@ -1083,17 +1083,17 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/redshifteventsubscript
 | <code><a href="#@cdktn/provider-aws.redshiftEventSubscription.RedshiftEventSubscriptionConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.redshiftEventSubscription.RedshiftEventSubscriptionConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.redshiftEventSubscription.RedshiftEventSubscriptionConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.redshiftEventSubscription.RedshiftEventSubscriptionConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_event_subscription#name RedshiftEventSubscription#name}. |
-| <code><a href="#@cdktn/provider-aws.redshiftEventSubscription.RedshiftEventSubscriptionConfig.property.snsTopicArn">SnsTopicArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_event_subscription#sns_topic_arn RedshiftEventSubscription#sns_topic_arn}. |
-| <code><a href="#@cdktn/provider-aws.redshiftEventSubscription.RedshiftEventSubscriptionConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_event_subscription#enabled RedshiftEventSubscription#enabled}. |
-| <code><a href="#@cdktn/provider-aws.redshiftEventSubscription.RedshiftEventSubscriptionConfig.property.eventCategories">EventCategories</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_event_subscription#event_categories RedshiftEventSubscription#event_categories}. |
-| <code><a href="#@cdktn/provider-aws.redshiftEventSubscription.RedshiftEventSubscriptionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_event_subscription#id RedshiftEventSubscription#id}. |
+| <code><a href="#@cdktn/provider-aws.redshiftEventSubscription.RedshiftEventSubscriptionConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_event_subscription#name RedshiftEventSubscription#name}. |
+| <code><a href="#@cdktn/provider-aws.redshiftEventSubscription.RedshiftEventSubscriptionConfig.property.snsTopicArn">SnsTopicArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_event_subscription#sns_topic_arn RedshiftEventSubscription#sns_topic_arn}. |
+| <code><a href="#@cdktn/provider-aws.redshiftEventSubscription.RedshiftEventSubscriptionConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_event_subscription#enabled RedshiftEventSubscription#enabled}. |
+| <code><a href="#@cdktn/provider-aws.redshiftEventSubscription.RedshiftEventSubscriptionConfig.property.eventCategories">EventCategories</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_event_subscription#event_categories RedshiftEventSubscription#event_categories}. |
+| <code><a href="#@cdktn/provider-aws.redshiftEventSubscription.RedshiftEventSubscriptionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_event_subscription#id RedshiftEventSubscription#id}. |
 | <code><a href="#@cdktn/provider-aws.redshiftEventSubscription.RedshiftEventSubscriptionConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.redshiftEventSubscription.RedshiftEventSubscriptionConfig.property.severity">Severity</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_event_subscription#severity RedshiftEventSubscription#severity}. |
-| <code><a href="#@cdktn/provider-aws.redshiftEventSubscription.RedshiftEventSubscriptionConfig.property.sourceIds">SourceIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_event_subscription#source_ids RedshiftEventSubscription#source_ids}. |
-| <code><a href="#@cdktn/provider-aws.redshiftEventSubscription.RedshiftEventSubscriptionConfig.property.sourceType">SourceType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_event_subscription#source_type RedshiftEventSubscription#source_type}. |
-| <code><a href="#@cdktn/provider-aws.redshiftEventSubscription.RedshiftEventSubscriptionConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_event_subscription#tags RedshiftEventSubscription#tags}. |
-| <code><a href="#@cdktn/provider-aws.redshiftEventSubscription.RedshiftEventSubscriptionConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_event_subscription#tags_all RedshiftEventSubscription#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.redshiftEventSubscription.RedshiftEventSubscriptionConfig.property.severity">Severity</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_event_subscription#severity RedshiftEventSubscription#severity}. |
+| <code><a href="#@cdktn/provider-aws.redshiftEventSubscription.RedshiftEventSubscriptionConfig.property.sourceIds">SourceIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_event_subscription#source_ids RedshiftEventSubscription#source_ids}. |
+| <code><a href="#@cdktn/provider-aws.redshiftEventSubscription.RedshiftEventSubscriptionConfig.property.sourceType">SourceType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_event_subscription#source_type RedshiftEventSubscription#source_type}. |
+| <code><a href="#@cdktn/provider-aws.redshiftEventSubscription.RedshiftEventSubscriptionConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_event_subscription#tags RedshiftEventSubscription#tags}. |
+| <code><a href="#@cdktn/provider-aws.redshiftEventSubscription.RedshiftEventSubscriptionConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_event_subscription#tags_all RedshiftEventSubscription#tags_all}. |
 | <code><a href="#@cdktn/provider-aws.redshiftEventSubscription.RedshiftEventSubscriptionConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.redshiftEventSubscription.RedshiftEventSubscriptionTimeouts">RedshiftEventSubscriptionTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1176,7 +1176,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_event_subscription#name RedshiftEventSubscription#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_event_subscription#name RedshiftEventSubscription#name}.
 
 ---
 
@@ -1188,7 +1188,7 @@ SnsTopicArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_event_subscription#sns_topic_arn RedshiftEventSubscription#sns_topic_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_event_subscription#sns_topic_arn RedshiftEventSubscription#sns_topic_arn}.
 
 ---
 
@@ -1200,7 +1200,7 @@ Enabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_event_subscription#enabled RedshiftEventSubscription#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_event_subscription#enabled RedshiftEventSubscription#enabled}.
 
 ---
 
@@ -1212,7 +1212,7 @@ EventCategories *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_event_subscription#event_categories RedshiftEventSubscription#event_categories}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_event_subscription#event_categories RedshiftEventSubscription#event_categories}.
 
 ---
 
@@ -1224,7 +1224,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_event_subscription#id RedshiftEventSubscription#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_event_subscription#id RedshiftEventSubscription#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1241,7 +1241,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_event_subscription#region RedshiftEventSubscription#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_event_subscription#region RedshiftEventSubscription#region}
 
 ---
 
@@ -1253,7 +1253,7 @@ Severity *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_event_subscription#severity RedshiftEventSubscription#severity}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_event_subscription#severity RedshiftEventSubscription#severity}.
 
 ---
 
@@ -1265,7 +1265,7 @@ SourceIds *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_event_subscription#source_ids RedshiftEventSubscription#source_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_event_subscription#source_ids RedshiftEventSubscription#source_ids}.
 
 ---
 
@@ -1277,7 +1277,7 @@ SourceType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_event_subscription#source_type RedshiftEventSubscription#source_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_event_subscription#source_type RedshiftEventSubscription#source_type}.
 
 ---
 
@@ -1289,7 +1289,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_event_subscription#tags RedshiftEventSubscription#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_event_subscription#tags RedshiftEventSubscription#tags}.
 
 ---
 
@@ -1301,7 +1301,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_event_subscription#tags_all RedshiftEventSubscription#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_event_subscription#tags_all RedshiftEventSubscription#tags_all}.
 
 ---
 
@@ -1315,7 +1315,7 @@ Timeouts RedshiftEventSubscriptionTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_event_subscription#timeouts RedshiftEventSubscription#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_event_subscription#timeouts RedshiftEventSubscription#timeouts}
 
 ---
 
@@ -1324,7 +1324,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.redshiftEventSubscription.RedshiftEventSubscriptionTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/redshifteventsubscription"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/redshifteventsubscription"
 
 &redshifteventsubscription.RedshiftEventSubscriptionTimeouts {
 	Create: *string,
@@ -1337,9 +1337,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/redshifteventsubscript
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.redshiftEventSubscription.RedshiftEventSubscriptionTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_event_subscription#create RedshiftEventSubscription#create}. |
-| <code><a href="#@cdktn/provider-aws.redshiftEventSubscription.RedshiftEventSubscriptionTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_event_subscription#delete RedshiftEventSubscription#delete}. |
-| <code><a href="#@cdktn/provider-aws.redshiftEventSubscription.RedshiftEventSubscriptionTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_event_subscription#update RedshiftEventSubscription#update}. |
+| <code><a href="#@cdktn/provider-aws.redshiftEventSubscription.RedshiftEventSubscriptionTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_event_subscription#create RedshiftEventSubscription#create}. |
+| <code><a href="#@cdktn/provider-aws.redshiftEventSubscription.RedshiftEventSubscriptionTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_event_subscription#delete RedshiftEventSubscription#delete}. |
+| <code><a href="#@cdktn/provider-aws.redshiftEventSubscription.RedshiftEventSubscriptionTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_event_subscription#update RedshiftEventSubscription#update}. |
 
 ---
 
@@ -1351,7 +1351,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_event_subscription#create RedshiftEventSubscription#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_event_subscription#create RedshiftEventSubscription#create}.
 
 ---
 
@@ -1363,7 +1363,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_event_subscription#delete RedshiftEventSubscription#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_event_subscription#delete RedshiftEventSubscription#delete}.
 
 ---
 
@@ -1375,7 +1375,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_event_subscription#update RedshiftEventSubscription#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_event_subscription#update RedshiftEventSubscription#update}.
 
 ---
 
@@ -1386,7 +1386,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.redshiftEventSubscription.RedshiftEventSubscriptionTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/redshifteventsubscription"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/redshifteventsubscription"
 
 redshifteventsubscription.NewRedshiftEventSubscriptionTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RedshiftEventSubscriptionTimeoutsOutputReference
 ```

@@ -4,12 +4,12 @@
 
 ### CodeguruprofilerProfilingGroup <a name="CodeguruprofilerProfilingGroup" id="@cdktn/provider-aws.codeguruprofilerProfilingGroup.CodeguruprofilerProfilingGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/codeguruprofiler_profiling_group aws_codeguruprofiler_profiling_group}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/codeguruprofiler_profiling_group aws_codeguruprofiler_profiling_group}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.codeguruprofilerProfilingGroup.CodeguruprofilerProfilingGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/codeguruprofilerprofilinggroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/codeguruprofilerprofilinggroup"
 
 codeguruprofilerprofilinggroup.NewCodeguruprofilerProfilingGroup(scope Construct, id *string, config CodeguruprofilerProfilingGroupConfig) CodeguruprofilerProfilingGroup
 ```
@@ -419,7 +419,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.codeguruprofilerProfilingGroup.CodeguruprofilerProfilingGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/codeguruprofilerprofilinggroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/codeguruprofilerprofilinggroup"
 
 codeguruprofilerprofilinggroup.CodeguruprofilerProfilingGroup_IsConstruct(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.codeguruprofilerProfilingGroup.CodeguruprofilerProfilingGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/codeguruprofilerprofilinggroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/codeguruprofilerprofilinggroup"
 
 codeguruprofilerprofilinggroup.CodeguruprofilerProfilingGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ codeguruprofilerprofilinggroup.CodeguruprofilerProfilingGroup_IsTerraformElement
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.codeguruprofilerProfilingGroup.CodeguruprofilerProfilingGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/codeguruprofilerprofilinggroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/codeguruprofilerprofilinggroup"
 
 codeguruprofilerprofilinggroup.CodeguruprofilerProfilingGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ codeguruprofilerprofilinggroup.CodeguruprofilerProfilingGroup_IsTerraformResourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.codeguruprofilerProfilingGroup.CodeguruprofilerProfilingGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/codeguruprofilerprofilinggroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/codeguruprofilerprofilinggroup"
 
 codeguruprofilerprofilinggroup.CodeguruprofilerProfilingGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -508,7 +508,7 @@ The construct id used in the generated config for the CodeguruprofilerProfilingG
 
 The id of the existing CodeguruprofilerProfilingGroup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/codeguruprofiler_profiling_group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/codeguruprofiler_profiling_group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -851,7 +851,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.codeguruprofilerProfilingGroup.CodeguruprofilerProfilingGroupAgentOrchestrationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/codeguruprofilerprofilinggroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/codeguruprofilerprofilinggroup"
 
 &codeguruprofilerprofilinggroup.CodeguruprofilerProfilingGroupAgentOrchestrationConfig {
 	ProfilingEnabled: interface{},
@@ -862,7 +862,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/codeguruprofilerprofil
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.codeguruprofilerProfilingGroup.CodeguruprofilerProfilingGroupAgentOrchestrationConfig.property.profilingEnabled">ProfilingEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/codeguruprofiler_profiling_group#profiling_enabled CodeguruprofilerProfilingGroup#profiling_enabled}. |
+| <code><a href="#@cdktn/provider-aws.codeguruprofilerProfilingGroup.CodeguruprofilerProfilingGroupAgentOrchestrationConfig.property.profilingEnabled">ProfilingEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/codeguruprofiler_profiling_group#profiling_enabled CodeguruprofilerProfilingGroup#profiling_enabled}. |
 
 ---
 
@@ -874,7 +874,7 @@ ProfilingEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/codeguruprofiler_profiling_group#profiling_enabled CodeguruprofilerProfilingGroup#profiling_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/codeguruprofiler_profiling_group#profiling_enabled CodeguruprofilerProfilingGroup#profiling_enabled}.
 
 ---
 
@@ -883,7 +883,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.codeguruprofilerProfilingGroup.CodeguruprofilerProfilingGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/codeguruprofilerprofilinggroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/codeguruprofilerprofilinggroup"
 
 &codeguruprofilerprofilinggroup.CodeguruprofilerProfilingGroupConfig {
 	Connection: interface{},
@@ -912,11 +912,11 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/codeguruprofilerprofil
 | <code><a href="#@cdktn/provider-aws.codeguruprofilerProfilingGroup.CodeguruprofilerProfilingGroupConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.codeguruprofilerProfilingGroup.CodeguruprofilerProfilingGroupConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.codeguruprofilerProfilingGroup.CodeguruprofilerProfilingGroupConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.codeguruprofilerProfilingGroup.CodeguruprofilerProfilingGroupConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/codeguruprofiler_profiling_group#name CodeguruprofilerProfilingGroup#name}. |
+| <code><a href="#@cdktn/provider-aws.codeguruprofilerProfilingGroup.CodeguruprofilerProfilingGroupConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/codeguruprofiler_profiling_group#name CodeguruprofilerProfilingGroup#name}. |
 | <code><a href="#@cdktn/provider-aws.codeguruprofilerProfilingGroup.CodeguruprofilerProfilingGroupConfig.property.agentOrchestrationConfig">AgentOrchestrationConfig</a></code> | <code>interface{}</code> | agent_orchestration_config block. |
-| <code><a href="#@cdktn/provider-aws.codeguruprofilerProfilingGroup.CodeguruprofilerProfilingGroupConfig.property.computePlatform">ComputePlatform</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/codeguruprofiler_profiling_group#compute_platform CodeguruprofilerProfilingGroup#compute_platform}. |
+| <code><a href="#@cdktn/provider-aws.codeguruprofilerProfilingGroup.CodeguruprofilerProfilingGroupConfig.property.computePlatform">ComputePlatform</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/codeguruprofiler_profiling_group#compute_platform CodeguruprofilerProfilingGroup#compute_platform}. |
 | <code><a href="#@cdktn/provider-aws.codeguruprofilerProfilingGroup.CodeguruprofilerProfilingGroupConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.codeguruprofilerProfilingGroup.CodeguruprofilerProfilingGroupConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/codeguruprofiler_profiling_group#tags CodeguruprofilerProfilingGroup#tags}. |
+| <code><a href="#@cdktn/provider-aws.codeguruprofilerProfilingGroup.CodeguruprofilerProfilingGroupConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/codeguruprofiler_profiling_group#tags CodeguruprofilerProfilingGroup#tags}. |
 
 ---
 
@@ -998,7 +998,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/codeguruprofiler_profiling_group#name CodeguruprofilerProfilingGroup#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/codeguruprofiler_profiling_group#name CodeguruprofilerProfilingGroup#name}.
 
 ---
 
@@ -1012,7 +1012,7 @@ AgentOrchestrationConfig interface{}
 
 agent_orchestration_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/codeguruprofiler_profiling_group#agent_orchestration_config CodeguruprofilerProfilingGroup#agent_orchestration_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/codeguruprofiler_profiling_group#agent_orchestration_config CodeguruprofilerProfilingGroup#agent_orchestration_config}
 
 ---
 
@@ -1024,7 +1024,7 @@ ComputePlatform *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/codeguruprofiler_profiling_group#compute_platform CodeguruprofilerProfilingGroup#compute_platform}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/codeguruprofiler_profiling_group#compute_platform CodeguruprofilerProfilingGroup#compute_platform}.
 
 ---
 
@@ -1038,7 +1038,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/codeguruprofiler_profiling_group#region CodeguruprofilerProfilingGroup#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/codeguruprofiler_profiling_group#region CodeguruprofilerProfilingGroup#region}
 
 ---
 
@@ -1050,7 +1050,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/codeguruprofiler_profiling_group#tags CodeguruprofilerProfilingGroup#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/codeguruprofiler_profiling_group#tags CodeguruprofilerProfilingGroup#tags}.
 
 ---
 
@@ -1061,7 +1061,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.codeguruprofilerProfilingGroup.CodeguruprofilerProfilingGroupAgentOrchestrationConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/codeguruprofilerprofilinggroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/codeguruprofilerprofilinggroup"
 
 codeguruprofilerprofilinggroup.NewCodeguruprofilerProfilingGroupAgentOrchestrationConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CodeguruprofilerProfilingGroupAgentOrchestrationConfigList
 ```
@@ -1221,7 +1221,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.codeguruprofilerProfilingGroup.CodeguruprofilerProfilingGroupAgentOrchestrationConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/codeguruprofilerprofilinggroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/codeguruprofilerprofilinggroup"
 
 codeguruprofilerprofilinggroup.NewCodeguruprofilerProfilingGroupAgentOrchestrationConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CodeguruprofilerProfilingGroupAgentOrchestrationConfigOutputReference
 ```

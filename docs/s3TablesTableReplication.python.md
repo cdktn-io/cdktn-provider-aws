@@ -4,7 +4,7 @@
 
 ### S3TablesTableReplication <a name="S3TablesTableReplication" id="@cdktn/provider-aws.s3TablesTableReplication.S3TablesTableReplication"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3tables_table_replication aws_s3tables_table_replication}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3tables_table_replication aws_s3tables_table_replication}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3TablesTableReplication.S3TablesTableReplication.Initializer"></a>
 
@@ -39,8 +39,8 @@ s3TablesTableReplication.S3TablesTableReplication(
 | <code><a href="#@cdktn/provider-aws.s3TablesTableReplication.S3TablesTableReplication.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.s3TablesTableReplication.S3TablesTableReplication.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.s3TablesTableReplication.S3TablesTableReplication.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.s3TablesTableReplication.S3TablesTableReplication.Initializer.parameter.role">role</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3tables_table_replication#role S3TablesTableReplication#role}. |
-| <code><a href="#@cdktn/provider-aws.s3TablesTableReplication.S3TablesTableReplication.Initializer.parameter.tableArn">table_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3tables_table_replication#table_arn S3TablesTableReplication#table_arn}. |
+| <code><a href="#@cdktn/provider-aws.s3TablesTableReplication.S3TablesTableReplication.Initializer.parameter.role">role</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3tables_table_replication#role S3TablesTableReplication#role}. |
+| <code><a href="#@cdktn/provider-aws.s3TablesTableReplication.S3TablesTableReplication.Initializer.parameter.tableArn">table_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3tables_table_replication#table_arn S3TablesTableReplication#table_arn}. |
 | <code><a href="#@cdktn/provider-aws.s3TablesTableReplication.S3TablesTableReplication.Initializer.parameter.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktn/provider-aws.s3TablesTableReplication.S3TablesTableReplication.Initializer.parameter.rule">rule</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.s3TablesTableReplication.S3TablesTableReplicationRule">S3TablesTableReplicationRule</a>]</code> | rule block. |
 
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3tables_table_replication#role S3TablesTableReplication#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3tables_table_replication#role S3TablesTableReplication#role}.
 
 ---
 
@@ -118,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3tables_table_replication#table_arn S3TablesTableReplication#table_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3tables_table_replication#table_arn S3TablesTableReplication#table_arn}.
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3tables_table_replication#region S3TablesTableReplication#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3tables_table_replication#region S3TablesTableReplication#region}
 
 ---
 
@@ -138,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3tables_table_replication#rule S3TablesTableReplication#rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3tables_table_replication#rule S3TablesTableReplication#rule}
 
 ---
 
@@ -640,7 +640,7 @@ The construct id used in the generated config for the S3TablesTableReplication t
 
 The id of the existing S3TablesTableReplication that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3tables_table_replication#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3tables_table_replication#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -967,8 +967,8 @@ s3TablesTableReplication.S3TablesTableReplicationConfig(
 | <code><a href="#@cdktn/provider-aws.s3TablesTableReplication.S3TablesTableReplicationConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.s3TablesTableReplication.S3TablesTableReplicationConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.s3TablesTableReplication.S3TablesTableReplicationConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.s3TablesTableReplication.S3TablesTableReplicationConfig.property.role">role</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3tables_table_replication#role S3TablesTableReplication#role}. |
-| <code><a href="#@cdktn/provider-aws.s3TablesTableReplication.S3TablesTableReplicationConfig.property.tableArn">table_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3tables_table_replication#table_arn S3TablesTableReplication#table_arn}. |
+| <code><a href="#@cdktn/provider-aws.s3TablesTableReplication.S3TablesTableReplicationConfig.property.role">role</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3tables_table_replication#role S3TablesTableReplication#role}. |
+| <code><a href="#@cdktn/provider-aws.s3TablesTableReplication.S3TablesTableReplicationConfig.property.tableArn">table_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3tables_table_replication#table_arn S3TablesTableReplication#table_arn}. |
 | <code><a href="#@cdktn/provider-aws.s3TablesTableReplication.S3TablesTableReplicationConfig.property.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktn/provider-aws.s3TablesTableReplication.S3TablesTableReplicationConfig.property.rule">rule</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-aws.s3TablesTableReplication.S3TablesTableReplicationRule">S3TablesTableReplicationRule</a>]</code> | rule block. |
 
@@ -1052,7 +1052,7 @@ role: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3tables_table_replication#role S3TablesTableReplication#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3tables_table_replication#role S3TablesTableReplication#role}.
 
 ---
 
@@ -1064,7 +1064,7 @@ table_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3tables_table_replication#table_arn S3TablesTableReplication#table_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3tables_table_replication#table_arn S3TablesTableReplication#table_arn}.
 
 ---
 
@@ -1078,7 +1078,7 @@ region: str
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3tables_table_replication#region S3TablesTableReplication#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3tables_table_replication#region S3TablesTableReplication#region}
 
 ---
 
@@ -1092,7 +1092,7 @@ rule: IResolvable | typing.List[S3TablesTableReplicationRule]
 
 rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3tables_table_replication#rule S3TablesTableReplication#rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3tables_table_replication#rule S3TablesTableReplication#rule}
 
 ---
 
@@ -1126,7 +1126,7 @@ destination: IResolvable | typing.List[S3TablesTableReplicationRuleDestination]
 
 destination block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3tables_table_replication#destination S3TablesTableReplication#destination}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3tables_table_replication#destination S3TablesTableReplication#destination}
 
 ---
 
@@ -1146,7 +1146,7 @@ s3TablesTableReplication.S3TablesTableReplicationRuleDestination(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.s3TablesTableReplication.S3TablesTableReplicationRuleDestination.property.destinationTableBucketArn">destination_table_bucket_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3tables_table_replication#destination_table_bucket_arn S3TablesTableReplication#destination_table_bucket_arn}. |
+| <code><a href="#@cdktn/provider-aws.s3TablesTableReplication.S3TablesTableReplicationRuleDestination.property.destinationTableBucketArn">destination_table_bucket_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3tables_table_replication#destination_table_bucket_arn S3TablesTableReplication#destination_table_bucket_arn}. |
 
 ---
 
@@ -1158,7 +1158,7 @@ destination_table_bucket_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3tables_table_replication#destination_table_bucket_arn S3TablesTableReplication#destination_table_bucket_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3tables_table_replication#destination_table_bucket_arn S3TablesTableReplication#destination_table_bucket_arn}.
 
 ---
 

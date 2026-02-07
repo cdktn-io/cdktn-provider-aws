@@ -4,12 +4,12 @@
 
 ### GuarddutyMember <a name="GuarddutyMember" id="@cdktn/provider-aws.guarddutyMember.GuarddutyMember"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/guardduty_member aws_guardduty_member}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/guardduty_member aws_guardduty_member}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.guarddutyMember.GuarddutyMember.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/guarddutymember"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/guarddutymember"
 
 guarddutymember.NewGuarddutyMember(scope Construct, id *string, config GuarddutyMemberConfig) GuarddutyMember
 ```
@@ -433,7 +433,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.guarddutyMember.GuarddutyMember.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/guarddutymember"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/guarddutymember"
 
 guarddutymember.GuarddutyMember_IsConstruct(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.guarddutyMember.GuarddutyMember.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/guarddutymember"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/guarddutymember"
 
 guarddutymember.GuarddutyMember_IsTerraformElement(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ guarddutymember.GuarddutyMember_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.guarddutyMember.GuarddutyMember.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/guarddutymember"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/guarddutymember"
 
 guarddutymember.GuarddutyMember_IsTerraformResource(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ guarddutymember.GuarddutyMember_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.guarddutyMember.GuarddutyMember.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/guarddutymember"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/guarddutymember"
 
 guarddutymember.GuarddutyMember_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -522,7 +522,7 @@ The construct id used in the generated config for the GuarddutyMember to import.
 
 The id of the existing GuarddutyMember that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/guardduty_member#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/guardduty_member#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -931,7 +931,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.guarddutyMember.GuarddutyMemberConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/guarddutymember"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/guarddutymember"
 
 &guarddutymember.GuarddutyMemberConfig {
 	Connection: interface{},
@@ -949,7 +949,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/guarddutymember"
 	InvitationMessage: *string,
 	Invite: interface{},
 	Region: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.guarddutyMember.GuarddutyMemberTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.guarddutyMember.GuarddutyMemberTimeouts,
 }
 ```
 
@@ -964,13 +964,13 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/guarddutymember"
 | <code><a href="#@cdktn/provider-aws.guarddutyMember.GuarddutyMemberConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.guarddutyMember.GuarddutyMemberConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.guarddutyMember.GuarddutyMemberConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.guarddutyMember.GuarddutyMemberConfig.property.accountId">AccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/guardduty_member#account_id GuarddutyMember#account_id}. |
-| <code><a href="#@cdktn/provider-aws.guarddutyMember.GuarddutyMemberConfig.property.detectorId">DetectorId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/guardduty_member#detector_id GuarddutyMember#detector_id}. |
-| <code><a href="#@cdktn/provider-aws.guarddutyMember.GuarddutyMemberConfig.property.email">Email</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/guardduty_member#email GuarddutyMember#email}. |
-| <code><a href="#@cdktn/provider-aws.guarddutyMember.GuarddutyMemberConfig.property.disableEmailNotification">DisableEmailNotification</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/guardduty_member#disable_email_notification GuarddutyMember#disable_email_notification}. |
-| <code><a href="#@cdktn/provider-aws.guarddutyMember.GuarddutyMemberConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/guardduty_member#id GuarddutyMember#id}. |
-| <code><a href="#@cdktn/provider-aws.guarddutyMember.GuarddutyMemberConfig.property.invitationMessage">InvitationMessage</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/guardduty_member#invitation_message GuarddutyMember#invitation_message}. |
-| <code><a href="#@cdktn/provider-aws.guarddutyMember.GuarddutyMemberConfig.property.invite">Invite</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/guardduty_member#invite GuarddutyMember#invite}. |
+| <code><a href="#@cdktn/provider-aws.guarddutyMember.GuarddutyMemberConfig.property.accountId">AccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/guardduty_member#account_id GuarddutyMember#account_id}. |
+| <code><a href="#@cdktn/provider-aws.guarddutyMember.GuarddutyMemberConfig.property.detectorId">DetectorId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/guardduty_member#detector_id GuarddutyMember#detector_id}. |
+| <code><a href="#@cdktn/provider-aws.guarddutyMember.GuarddutyMemberConfig.property.email">Email</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/guardduty_member#email GuarddutyMember#email}. |
+| <code><a href="#@cdktn/provider-aws.guarddutyMember.GuarddutyMemberConfig.property.disableEmailNotification">DisableEmailNotification</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/guardduty_member#disable_email_notification GuarddutyMember#disable_email_notification}. |
+| <code><a href="#@cdktn/provider-aws.guarddutyMember.GuarddutyMemberConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/guardduty_member#id GuarddutyMember#id}. |
+| <code><a href="#@cdktn/provider-aws.guarddutyMember.GuarddutyMemberConfig.property.invitationMessage">InvitationMessage</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/guardduty_member#invitation_message GuarddutyMember#invitation_message}. |
+| <code><a href="#@cdktn/provider-aws.guarddutyMember.GuarddutyMemberConfig.property.invite">Invite</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/guardduty_member#invite GuarddutyMember#invite}. |
 | <code><a href="#@cdktn/provider-aws.guarddutyMember.GuarddutyMemberConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktn/provider-aws.guarddutyMember.GuarddutyMemberConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.guarddutyMember.GuarddutyMemberTimeouts">GuarddutyMemberTimeouts</a></code> | timeouts block. |
 
@@ -1054,7 +1054,7 @@ AccountId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/guardduty_member#account_id GuarddutyMember#account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/guardduty_member#account_id GuarddutyMember#account_id}.
 
 ---
 
@@ -1066,7 +1066,7 @@ DetectorId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/guardduty_member#detector_id GuarddutyMember#detector_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/guardduty_member#detector_id GuarddutyMember#detector_id}.
 
 ---
 
@@ -1078,7 +1078,7 @@ Email *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/guardduty_member#email GuarddutyMember#email}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/guardduty_member#email GuarddutyMember#email}.
 
 ---
 
@@ -1090,7 +1090,7 @@ DisableEmailNotification interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/guardduty_member#disable_email_notification GuarddutyMember#disable_email_notification}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/guardduty_member#disable_email_notification GuarddutyMember#disable_email_notification}.
 
 ---
 
@@ -1102,7 +1102,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/guardduty_member#id GuarddutyMember#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/guardduty_member#id GuarddutyMember#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1117,7 +1117,7 @@ InvitationMessage *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/guardduty_member#invitation_message GuarddutyMember#invitation_message}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/guardduty_member#invitation_message GuarddutyMember#invitation_message}.
 
 ---
 
@@ -1129,7 +1129,7 @@ Invite interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/guardduty_member#invite GuarddutyMember#invite}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/guardduty_member#invite GuarddutyMember#invite}.
 
 ---
 
@@ -1143,7 +1143,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/guardduty_member#region GuarddutyMember#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/guardduty_member#region GuarddutyMember#region}
 
 ---
 
@@ -1157,7 +1157,7 @@ Timeouts GuarddutyMemberTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/guardduty_member#timeouts GuarddutyMember#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/guardduty_member#timeouts GuarddutyMember#timeouts}
 
 ---
 
@@ -1166,7 +1166,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.guarddutyMember.GuarddutyMemberTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/guarddutymember"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/guarddutymember"
 
 &guarddutymember.GuarddutyMemberTimeouts {
 	Create: *string,
@@ -1178,8 +1178,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/guarddutymember"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.guarddutyMember.GuarddutyMemberTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/guardduty_member#create GuarddutyMember#create}. |
-| <code><a href="#@cdktn/provider-aws.guarddutyMember.GuarddutyMemberTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/guardduty_member#update GuarddutyMember#update}. |
+| <code><a href="#@cdktn/provider-aws.guarddutyMember.GuarddutyMemberTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/guardduty_member#create GuarddutyMember#create}. |
+| <code><a href="#@cdktn/provider-aws.guarddutyMember.GuarddutyMemberTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/guardduty_member#update GuarddutyMember#update}. |
 
 ---
 
@@ -1191,7 +1191,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/guardduty_member#create GuarddutyMember#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/guardduty_member#create GuarddutyMember#create}.
 
 ---
 
@@ -1203,7 +1203,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/guardduty_member#update GuarddutyMember#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/guardduty_member#update GuarddutyMember#update}.
 
 ---
 
@@ -1214,7 +1214,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.guarddutyMember.GuarddutyMemberTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/guarddutymember"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/guarddutymember"
 
 guarddutymember.NewGuarddutyMemberTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GuarddutyMemberTimeoutsOutputReference
 ```

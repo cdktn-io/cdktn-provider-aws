@@ -4,7 +4,7 @@
 
 ### VpclatticeDomainVerification <a name="VpclatticeDomainVerification" id="@cdktn/provider-aws.vpclatticeDomainVerification.VpclatticeDomainVerification"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpclattice_domain_verification aws_vpclattice_domain_verification}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/vpclattice_domain_verification aws_vpclattice_domain_verification}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.vpclatticeDomainVerification.VpclatticeDomainVerification.Initializer"></a>
 
@@ -38,9 +38,9 @@ vpclatticeDomainVerification.VpclatticeDomainVerification(
 | <code><a href="#@cdktn/provider-aws.vpclatticeDomainVerification.VpclatticeDomainVerification.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.vpclatticeDomainVerification.VpclatticeDomainVerification.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.vpclatticeDomainVerification.VpclatticeDomainVerification.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.vpclatticeDomainVerification.VpclatticeDomainVerification.Initializer.parameter.domainName">domain_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpclattice_domain_verification#domain_name VpclatticeDomainVerification#domain_name}. |
+| <code><a href="#@cdktn/provider-aws.vpclatticeDomainVerification.VpclatticeDomainVerification.Initializer.parameter.domainName">domain_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/vpclattice_domain_verification#domain_name VpclatticeDomainVerification#domain_name}. |
 | <code><a href="#@cdktn/provider-aws.vpclatticeDomainVerification.VpclatticeDomainVerification.Initializer.parameter.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.vpclatticeDomainVerification.VpclatticeDomainVerification.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpclattice_domain_verification#tags VpclatticeDomainVerification#tags}. |
+| <code><a href="#@cdktn/provider-aws.vpclatticeDomainVerification.VpclatticeDomainVerification.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/vpclattice_domain_verification#tags VpclatticeDomainVerification#tags}. |
 
 ---
 
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpclattice_domain_verification#domain_name VpclatticeDomainVerification#domain_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/vpclattice_domain_verification#domain_name VpclatticeDomainVerification#domain_name}.
 
 ---
 
@@ -118,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpclattice_domain_verification#region VpclatticeDomainVerification#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/vpclattice_domain_verification#region VpclatticeDomainVerification#region}
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpclattice_domain_verification#tags VpclatticeDomainVerification#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/vpclattice_domain_verification#tags VpclatticeDomainVerification#tags}.
 
 ---
 
@@ -613,7 +613,7 @@ The construct id used in the generated config for the VpclatticeDomainVerificati
 
 The id of the existing VpclatticeDomainVerification that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpclattice_domain_verification#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/vpclattice_domain_verification#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -994,9 +994,9 @@ vpclatticeDomainVerification.VpclatticeDomainVerificationConfig(
 | <code><a href="#@cdktn/provider-aws.vpclatticeDomainVerification.VpclatticeDomainVerificationConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.vpclatticeDomainVerification.VpclatticeDomainVerificationConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.vpclatticeDomainVerification.VpclatticeDomainVerificationConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.vpclatticeDomainVerification.VpclatticeDomainVerificationConfig.property.domainName">domain_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpclattice_domain_verification#domain_name VpclatticeDomainVerification#domain_name}. |
+| <code><a href="#@cdktn/provider-aws.vpclatticeDomainVerification.VpclatticeDomainVerificationConfig.property.domainName">domain_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/vpclattice_domain_verification#domain_name VpclatticeDomainVerification#domain_name}. |
 | <code><a href="#@cdktn/provider-aws.vpclatticeDomainVerification.VpclatticeDomainVerificationConfig.property.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.vpclatticeDomainVerification.VpclatticeDomainVerificationConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpclattice_domain_verification#tags VpclatticeDomainVerification#tags}. |
+| <code><a href="#@cdktn/provider-aws.vpclatticeDomainVerification.VpclatticeDomainVerificationConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/vpclattice_domain_verification#tags VpclatticeDomainVerification#tags}. |
 
 ---
 
@@ -1078,7 +1078,7 @@ domain_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpclattice_domain_verification#domain_name VpclatticeDomainVerification#domain_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/vpclattice_domain_verification#domain_name VpclatticeDomainVerification#domain_name}.
 
 ---
 
@@ -1092,7 +1092,7 @@ region: str
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpclattice_domain_verification#region VpclatticeDomainVerification#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/vpclattice_domain_verification#region VpclatticeDomainVerification#region}
 
 ---
 
@@ -1104,7 +1104,7 @@ tags: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpclattice_domain_verification#tags VpclatticeDomainVerification#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/vpclattice_domain_verification#tags VpclatticeDomainVerification#tags}.
 
 ---
 

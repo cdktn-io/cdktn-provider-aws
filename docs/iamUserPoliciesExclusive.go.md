@@ -4,12 +4,12 @@
 
 ### IamUserPoliciesExclusive <a name="IamUserPoliciesExclusive" id="@cdktn/provider-aws.iamUserPoliciesExclusive.IamUserPoliciesExclusive"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/iam_user_policies_exclusive aws_iam_user_policies_exclusive}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/iam_user_policies_exclusive aws_iam_user_policies_exclusive}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.iamUserPoliciesExclusive.IamUserPoliciesExclusive.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/iamuserpoliciesexclusive"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/iamuserpoliciesexclusive"
 
 iamuserpoliciesexclusive.NewIamUserPoliciesExclusive(scope Construct, id *string, config IamUserPoliciesExclusiveConfig) IamUserPoliciesExclusive
 ```
@@ -378,7 +378,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.iamUserPoliciesExclusive.IamUserPoliciesExclusive.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/iamuserpoliciesexclusive"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/iamuserpoliciesexclusive"
 
 iamuserpoliciesexclusive.IamUserPoliciesExclusive_IsConstruct(x interface{}) *bool
 ```
@@ -410,7 +410,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.iamUserPoliciesExclusive.IamUserPoliciesExclusive.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/iamuserpoliciesexclusive"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/iamuserpoliciesexclusive"
 
 iamuserpoliciesexclusive.IamUserPoliciesExclusive_IsTerraformElement(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ iamuserpoliciesexclusive.IamUserPoliciesExclusive_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.iamUserPoliciesExclusive.IamUserPoliciesExclusive.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/iamuserpoliciesexclusive"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/iamuserpoliciesexclusive"
 
 iamuserpoliciesexclusive.IamUserPoliciesExclusive_IsTerraformResource(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ iamuserpoliciesexclusive.IamUserPoliciesExclusive_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.iamUserPoliciesExclusive.IamUserPoliciesExclusive.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/iamuserpoliciesexclusive"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/iamuserpoliciesexclusive"
 
 iamuserpoliciesexclusive.IamUserPoliciesExclusive_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -467,7 +467,7 @@ The construct id used in the generated config for the IamUserPoliciesExclusive t
 
 The id of the existing IamUserPoliciesExclusive that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/iam_user_policies_exclusive#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/iam_user_policies_exclusive#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -711,7 +711,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.iamUserPoliciesExclusive.IamUserPoliciesExclusiveConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/iamuserpoliciesexclusive"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/iamuserpoliciesexclusive"
 
 &iamuserpoliciesexclusive.IamUserPoliciesExclusiveConfig {
 	Connection: interface{},
@@ -737,8 +737,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/iamuserpoliciesexclusi
 | <code><a href="#@cdktn/provider-aws.iamUserPoliciesExclusive.IamUserPoliciesExclusiveConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iamUserPoliciesExclusive.IamUserPoliciesExclusiveConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.iamUserPoliciesExclusive.IamUserPoliciesExclusiveConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.iamUserPoliciesExclusive.IamUserPoliciesExclusiveConfig.property.policyNames">PolicyNames</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/iam_user_policies_exclusive#policy_names IamUserPoliciesExclusive#policy_names}. |
-| <code><a href="#@cdktn/provider-aws.iamUserPoliciesExclusive.IamUserPoliciesExclusiveConfig.property.userName">UserName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/iam_user_policies_exclusive#user_name IamUserPoliciesExclusive#user_name}. |
+| <code><a href="#@cdktn/provider-aws.iamUserPoliciesExclusive.IamUserPoliciesExclusiveConfig.property.policyNames">PolicyNames</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/iam_user_policies_exclusive#policy_names IamUserPoliciesExclusive#policy_names}. |
+| <code><a href="#@cdktn/provider-aws.iamUserPoliciesExclusive.IamUserPoliciesExclusiveConfig.property.userName">UserName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/iam_user_policies_exclusive#user_name IamUserPoliciesExclusive#user_name}. |
 
 ---
 
@@ -820,7 +820,7 @@ PolicyNames *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/iam_user_policies_exclusive#policy_names IamUserPoliciesExclusive#policy_names}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/iam_user_policies_exclusive#policy_names IamUserPoliciesExclusive#policy_names}.
 
 ---
 
@@ -832,7 +832,7 @@ UserName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/iam_user_policies_exclusive#user_name IamUserPoliciesExclusive#user_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/iam_user_policies_exclusive#user_name IamUserPoliciesExclusive#user_name}.
 
 ---
 

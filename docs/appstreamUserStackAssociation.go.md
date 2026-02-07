@@ -4,12 +4,12 @@
 
 ### AppstreamUserStackAssociation <a name="AppstreamUserStackAssociation" id="@cdktn/provider-aws.appstreamUserStackAssociation.AppstreamUserStackAssociation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/appstream_user_stack_association aws_appstream_user_stack_association}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/appstream_user_stack_association aws_appstream_user_stack_association}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appstreamUserStackAssociation.AppstreamUserStackAssociation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/appstreamuserstackassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/appstreamuserstackassociation"
 
 appstreamuserstackassociation.NewAppstreamUserStackAssociation(scope Construct, id *string, config AppstreamUserStackAssociationConfig) AppstreamUserStackAssociation
 ```
@@ -399,7 +399,7 @@ func ResetSendEmailNotification()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.appstreamUserStackAssociation.AppstreamUserStackAssociation.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/appstreamuserstackassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/appstreamuserstackassociation"
 
 appstreamuserstackassociation.AppstreamUserStackAssociation_IsConstruct(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.appstreamUserStackAssociation.AppstreamUserStackAssociation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/appstreamuserstackassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/appstreamuserstackassociation"
 
 appstreamuserstackassociation.AppstreamUserStackAssociation_IsTerraformElement(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ appstreamuserstackassociation.AppstreamUserStackAssociation_IsTerraformElement(x
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.appstreamUserStackAssociation.AppstreamUserStackAssociation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/appstreamuserstackassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/appstreamuserstackassociation"
 
 appstreamuserstackassociation.AppstreamUserStackAssociation_IsTerraformResource(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ appstreamuserstackassociation.AppstreamUserStackAssociation_IsTerraformResource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.appstreamUserStackAssociation.AppstreamUserStackAssociation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/appstreamuserstackassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/appstreamuserstackassociation"
 
 appstreamuserstackassociation.AppstreamUserStackAssociation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -488,7 +488,7 @@ The construct id used in the generated config for the AppstreamUserStackAssociat
 
 The id of the existing AppstreamUserStackAssociation that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/appstream_user_stack_association#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/appstream_user_stack_association#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -820,7 +820,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appstreamUserStackAssociation.AppstreamUserStackAssociationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/appstreamuserstackassociation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/appstreamuserstackassociation"
 
 &appstreamuserstackassociation.AppstreamUserStackAssociationConfig {
 	Connection: interface{},
@@ -850,12 +850,12 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/appstreamuserstackasso
 | <code><a href="#@cdktn/provider-aws.appstreamUserStackAssociation.AppstreamUserStackAssociationConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.appstreamUserStackAssociation.AppstreamUserStackAssociationConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.appstreamUserStackAssociation.AppstreamUserStackAssociationConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.appstreamUserStackAssociation.AppstreamUserStackAssociationConfig.property.authenticationType">AuthenticationType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/appstream_user_stack_association#authentication_type AppstreamUserStackAssociation#authentication_type}. |
-| <code><a href="#@cdktn/provider-aws.appstreamUserStackAssociation.AppstreamUserStackAssociationConfig.property.stackName">StackName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/appstream_user_stack_association#stack_name AppstreamUserStackAssociation#stack_name}. |
-| <code><a href="#@cdktn/provider-aws.appstreamUserStackAssociation.AppstreamUserStackAssociationConfig.property.userName">UserName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/appstream_user_stack_association#user_name AppstreamUserStackAssociation#user_name}. |
-| <code><a href="#@cdktn/provider-aws.appstreamUserStackAssociation.AppstreamUserStackAssociationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/appstream_user_stack_association#id AppstreamUserStackAssociation#id}. |
+| <code><a href="#@cdktn/provider-aws.appstreamUserStackAssociation.AppstreamUserStackAssociationConfig.property.authenticationType">AuthenticationType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/appstream_user_stack_association#authentication_type AppstreamUserStackAssociation#authentication_type}. |
+| <code><a href="#@cdktn/provider-aws.appstreamUserStackAssociation.AppstreamUserStackAssociationConfig.property.stackName">StackName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/appstream_user_stack_association#stack_name AppstreamUserStackAssociation#stack_name}. |
+| <code><a href="#@cdktn/provider-aws.appstreamUserStackAssociation.AppstreamUserStackAssociationConfig.property.userName">UserName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/appstream_user_stack_association#user_name AppstreamUserStackAssociation#user_name}. |
+| <code><a href="#@cdktn/provider-aws.appstreamUserStackAssociation.AppstreamUserStackAssociationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/appstream_user_stack_association#id AppstreamUserStackAssociation#id}. |
 | <code><a href="#@cdktn/provider-aws.appstreamUserStackAssociation.AppstreamUserStackAssociationConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.appstreamUserStackAssociation.AppstreamUserStackAssociationConfig.property.sendEmailNotification">SendEmailNotification</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/appstream_user_stack_association#send_email_notification AppstreamUserStackAssociation#send_email_notification}. |
+| <code><a href="#@cdktn/provider-aws.appstreamUserStackAssociation.AppstreamUserStackAssociationConfig.property.sendEmailNotification">SendEmailNotification</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/appstream_user_stack_association#send_email_notification AppstreamUserStackAssociation#send_email_notification}. |
 
 ---
 
@@ -937,7 +937,7 @@ AuthenticationType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/appstream_user_stack_association#authentication_type AppstreamUserStackAssociation#authentication_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/appstream_user_stack_association#authentication_type AppstreamUserStackAssociation#authentication_type}.
 
 ---
 
@@ -949,7 +949,7 @@ StackName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/appstream_user_stack_association#stack_name AppstreamUserStackAssociation#stack_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/appstream_user_stack_association#stack_name AppstreamUserStackAssociation#stack_name}.
 
 ---
 
@@ -961,7 +961,7 @@ UserName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/appstream_user_stack_association#user_name AppstreamUserStackAssociation#user_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/appstream_user_stack_association#user_name AppstreamUserStackAssociation#user_name}.
 
 ---
 
@@ -973,7 +973,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/appstream_user_stack_association#id AppstreamUserStackAssociation#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/appstream_user_stack_association#id AppstreamUserStackAssociation#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -990,7 +990,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/appstream_user_stack_association#region AppstreamUserStackAssociation#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/appstream_user_stack_association#region AppstreamUserStackAssociation#region}
 
 ---
 
@@ -1002,7 +1002,7 @@ SendEmailNotification interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/appstream_user_stack_association#send_email_notification AppstreamUserStackAssociation#send_email_notification}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/appstream_user_stack_association#send_email_notification AppstreamUserStackAssociation#send_email_notification}.
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### DataAwsVpcIpamPool <a name="DataAwsVpcIpamPool" id="@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPool"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/vpc_ipam_pool aws_vpc_ipam_pool}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/vpc_ipam_pool aws_vpc_ipam_pool}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPool.Initializer"></a>
 
@@ -440,7 +440,7 @@ The construct id used in the generated config for the DataAwsVpcIpamPool to impo
 
 The id of the existing DataAwsVpcIpamPool that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/vpc_ipam_pool#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/vpc_ipam_pool#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -483,6 +483,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 | <code><a href="#@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPool.property.poolDepth">poolDepth</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPool.property.publiclyAdvertisable">publiclyAdvertisable</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPool.property.sourceIpamPoolId">sourceIpamPoolId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPool.property.sourceResource">sourceResource</a></code> | <code><a href="#@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolSourceResourceList">DataAwsVpcIpamPoolSourceResourceList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPool.property.state">state</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPool.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolTimeoutsOutputReference">DataAwsVpcIpamPoolTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPool.property.allocationResourceTagsInput">allocationResourceTagsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
@@ -772,6 +773,16 @@ public readonly sourceIpamPoolId: string;
 
 ---
 
+##### `sourceResource`<sup>Required</sup> <a name="sourceResource" id="@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPool.property.sourceResource"></a>
+
+```typescript
+public readonly sourceResource: DataAwsVpcIpamPoolSourceResourceList;
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolSourceResourceList">DataAwsVpcIpamPoolSourceResourceList</a>
+
+---
+
 ##### `state`<sup>Required</sup> <a name="state" id="@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPool.property.state"></a>
 
 ```typescript
@@ -953,12 +964,12 @@ const dataAwsVpcIpamPoolConfig: dataAwsVpcIpamPool.DataAwsVpcIpamPoolConfig = { 
 | <code><a href="#@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolConfig.property.allocationResourceTags">allocationResourceTags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/vpc_ipam_pool#allocation_resource_tags DataAwsVpcIpamPool#allocation_resource_tags}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolConfig.property.allocationResourceTags">allocationResourceTags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/vpc_ipam_pool#allocation_resource_tags DataAwsVpcIpamPool#allocation_resource_tags}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolConfig.property.filter">filter</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolFilter">DataAwsVpcIpamPoolFilter</a>[]</code> | filter block. |
-| <code><a href="#@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/vpc_ipam_pool#id DataAwsVpcIpamPool#id}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolConfig.property.ipamPoolId">ipamPoolId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/vpc_ipam_pool#ipam_pool_id DataAwsVpcIpamPool#ipam_pool_id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/vpc_ipam_pool#id DataAwsVpcIpamPool#id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolConfig.property.ipamPoolId">ipamPoolId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/vpc_ipam_pool#ipam_pool_id DataAwsVpcIpamPool#ipam_pool_id}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/vpc_ipam_pool#tags DataAwsVpcIpamPool#tags}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/vpc_ipam_pool#tags DataAwsVpcIpamPool#tags}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolTimeouts">DataAwsVpcIpamPoolTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1041,7 +1052,7 @@ public readonly allocationResourceTags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/vpc_ipam_pool#allocation_resource_tags DataAwsVpcIpamPool#allocation_resource_tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/vpc_ipam_pool#allocation_resource_tags DataAwsVpcIpamPool#allocation_resource_tags}.
 
 ---
 
@@ -1055,7 +1066,7 @@ public readonly filter: IResolvable | DataAwsVpcIpamPoolFilter[];
 
 filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/vpc_ipam_pool#filter DataAwsVpcIpamPool#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/vpc_ipam_pool#filter DataAwsVpcIpamPool#filter}
 
 ---
 
@@ -1067,7 +1078,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/vpc_ipam_pool#id DataAwsVpcIpamPool#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/vpc_ipam_pool#id DataAwsVpcIpamPool#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1082,7 +1093,7 @@ public readonly ipamPoolId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/vpc_ipam_pool#ipam_pool_id DataAwsVpcIpamPool#ipam_pool_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/vpc_ipam_pool#ipam_pool_id DataAwsVpcIpamPool#ipam_pool_id}.
 
 ---
 
@@ -1096,7 +1107,7 @@ public readonly region: string;
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/vpc_ipam_pool#region DataAwsVpcIpamPool#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/vpc_ipam_pool#region DataAwsVpcIpamPool#region}
 
 ---
 
@@ -1108,7 +1119,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/vpc_ipam_pool#tags DataAwsVpcIpamPool#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/vpc_ipam_pool#tags DataAwsVpcIpamPool#tags}.
 
 ---
 
@@ -1122,7 +1133,7 @@ public readonly timeouts: DataAwsVpcIpamPoolTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/vpc_ipam_pool#timeouts DataAwsVpcIpamPool#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/vpc_ipam_pool#timeouts DataAwsVpcIpamPool#timeouts}
 
 ---
 
@@ -1140,8 +1151,8 @@ const dataAwsVpcIpamPoolFilter: dataAwsVpcIpamPool.DataAwsVpcIpamPoolFilter = { 
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolFilter.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/vpc_ipam_pool#name DataAwsVpcIpamPool#name}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolFilter.property.values">values</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/vpc_ipam_pool#values DataAwsVpcIpamPool#values}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolFilter.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/vpc_ipam_pool#name DataAwsVpcIpamPool#name}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolFilter.property.values">values</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/vpc_ipam_pool#values DataAwsVpcIpamPool#values}. |
 
 ---
 
@@ -1153,7 +1164,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/vpc_ipam_pool#name DataAwsVpcIpamPool#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/vpc_ipam_pool#name DataAwsVpcIpamPool#name}.
 
 ---
 
@@ -1165,9 +1176,20 @@ public readonly values: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/vpc_ipam_pool#values DataAwsVpcIpamPool#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/vpc_ipam_pool#values DataAwsVpcIpamPool#values}.
 
 ---
+
+### DataAwsVpcIpamPoolSourceResource <a name="DataAwsVpcIpamPoolSourceResource" id="@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolSourceResource"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolSourceResource.Initializer"></a>
+
+```typescript
+import { dataAwsVpcIpamPool } from '@cdktn/provider-aws'
+
+const dataAwsVpcIpamPoolSourceResource: dataAwsVpcIpamPool.DataAwsVpcIpamPoolSourceResource = { ... }
+```
+
 
 ### DataAwsVpcIpamPoolTimeouts <a name="DataAwsVpcIpamPoolTimeouts" id="@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolTimeouts"></a>
 
@@ -1183,7 +1205,7 @@ const dataAwsVpcIpamPoolTimeouts: dataAwsVpcIpamPool.DataAwsVpcIpamPoolTimeouts 
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/vpc_ipam_pool#read DataAwsVpcIpamPool#read}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/vpc_ipam_pool#read DataAwsVpcIpamPool#read}. |
 
 ---
 
@@ -1195,7 +1217,7 @@ public readonly read: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/vpc_ipam_pool#read DataAwsVpcIpamPool#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/vpc_ipam_pool#read DataAwsVpcIpamPool#read}.
 
 ---
 
@@ -1668,6 +1690,466 @@ public readonly internalValue: IResolvable | DataAwsVpcIpamPoolFilter;
 ```
 
 - *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolFilter">DataAwsVpcIpamPoolFilter</a>
+
+---
+
+
+### DataAwsVpcIpamPoolSourceResourceList <a name="DataAwsVpcIpamPoolSourceResourceList" id="@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolSourceResourceList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolSourceResourceList.Initializer"></a>
+
+```typescript
+import { dataAwsVpcIpamPool } from '@cdktn/provider-aws'
+
+new dataAwsVpcIpamPool.DataAwsVpcIpamPoolSourceResourceList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolSourceResourceList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolSourceResourceList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolSourceResourceList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolSourceResourceList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolSourceResourceList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolSourceResourceList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolSourceResourceList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolSourceResourceList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolSourceResourceList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolSourceResourceList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolSourceResourceList.get">get</a></code> | *No description.* |
+
+---
+
+##### `allWithMapKey` <a name="allWithMapKey" id="@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolSourceResourceList.allWithMapKey"></a>
+
+```typescript
+public allWithMapKey(mapKeyAttributeName: string): DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolSourceResourceList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolSourceResourceList.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolSourceResourceList.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolSourceResourceList.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolSourceResourceList.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolSourceResourceList.get"></a>
+
+```typescript
+public get(index: number): DataAwsVpcIpamPoolSourceResourceOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolSourceResourceList.get.parameter.index"></a>
+
+- *Type:* number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolSourceResourceList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolSourceResourceList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolSourceResourceList.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolSourceResourceList.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+
+### DataAwsVpcIpamPoolSourceResourceOutputReference <a name="DataAwsVpcIpamPoolSourceResourceOutputReference" id="@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolSourceResourceOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolSourceResourceOutputReference.Initializer"></a>
+
+```typescript
+import { dataAwsVpcIpamPool } from '@cdktn/provider-aws'
+
+new dataAwsVpcIpamPool.DataAwsVpcIpamPoolSourceResourceOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolSourceResourceOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolSourceResourceOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolSourceResourceOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolSourceResourceOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolSourceResourceOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolSourceResourceOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolSourceResourceOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolSourceResourceOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolSourceResourceOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolSourceResourceOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolSourceResourceOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolSourceResourceOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolSourceResourceOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolSourceResourceOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolSourceResourceOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolSourceResourceOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolSourceResourceOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolSourceResourceOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolSourceResourceOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolSourceResourceOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolSourceResourceOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolSourceResourceOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolSourceResourceOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolSourceResourceOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolSourceResourceOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolSourceResourceOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolSourceResourceOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolSourceResourceOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolSourceResourceOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolSourceResourceOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolSourceResourceOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolSourceResourceOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolSourceResourceOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolSourceResourceOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolSourceResourceOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolSourceResourceOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolSourceResourceOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolSourceResourceOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolSourceResourceOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolSourceResourceOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolSourceResourceOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolSourceResourceOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolSourceResourceOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolSourceResourceOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolSourceResourceOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolSourceResourceOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolSourceResourceOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolSourceResourceOutputReference.property.resourceId">resourceId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolSourceResourceOutputReference.property.resourceOwner">resourceOwner</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolSourceResourceOutputReference.property.resourceRegion">resourceRegion</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolSourceResourceOutputReference.property.resourceType">resourceType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolSourceResourceOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolSourceResource">DataAwsVpcIpamPoolSourceResource</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolSourceResourceOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolSourceResourceOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `resourceId`<sup>Required</sup> <a name="resourceId" id="@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolSourceResourceOutputReference.property.resourceId"></a>
+
+```typescript
+public readonly resourceId: string;
+```
+
+- *Type:* string
+
+---
+
+##### `resourceOwner`<sup>Required</sup> <a name="resourceOwner" id="@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolSourceResourceOutputReference.property.resourceOwner"></a>
+
+```typescript
+public readonly resourceOwner: string;
+```
+
+- *Type:* string
+
+---
+
+##### `resourceRegion`<sup>Required</sup> <a name="resourceRegion" id="@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolSourceResourceOutputReference.property.resourceRegion"></a>
+
+```typescript
+public readonly resourceRegion: string;
+```
+
+- *Type:* string
+
+---
+
+##### `resourceType`<sup>Required</sup> <a name="resourceType" id="@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolSourceResourceOutputReference.property.resourceType"></a>
+
+```typescript
+public readonly resourceType: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolSourceResourceOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: DataAwsVpcIpamPoolSourceResource;
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPoolSourceResource">DataAwsVpcIpamPoolSourceResource</a>
 
 ---
 

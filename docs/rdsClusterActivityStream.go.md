@@ -4,12 +4,12 @@
 
 ### RdsClusterActivityStream <a name="RdsClusterActivityStream" id="@cdktn/provider-aws.rdsClusterActivityStream.RdsClusterActivityStream"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/rds_cluster_activity_stream aws_rds_cluster_activity_stream}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/rds_cluster_activity_stream aws_rds_cluster_activity_stream}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.rdsClusterActivityStream.RdsClusterActivityStream.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/rdsclusteractivitystream"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/rdsclusteractivitystream"
 
 rdsclusteractivitystream.NewRdsClusterActivityStream(scope Construct, id *string, config RdsClusterActivityStreamConfig) RdsClusterActivityStream
 ```
@@ -399,7 +399,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.rdsClusterActivityStream.RdsClusterActivityStream.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/rdsclusteractivitystream"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/rdsclusteractivitystream"
 
 rdsclusteractivitystream.RdsClusterActivityStream_IsConstruct(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.rdsClusterActivityStream.RdsClusterActivityStream.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/rdsclusteractivitystream"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/rdsclusteractivitystream"
 
 rdsclusteractivitystream.RdsClusterActivityStream_IsTerraformElement(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ rdsclusteractivitystream.RdsClusterActivityStream_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.rdsClusterActivityStream.RdsClusterActivityStream.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/rdsclusteractivitystream"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/rdsclusteractivitystream"
 
 rdsclusteractivitystream.RdsClusterActivityStream_IsTerraformResource(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ rdsclusteractivitystream.RdsClusterActivityStream_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.rdsClusterActivityStream.RdsClusterActivityStream.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/rdsclusteractivitystream"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/rdsclusteractivitystream"
 
 rdsclusteractivitystream.RdsClusterActivityStream_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -488,7 +488,7 @@ The construct id used in the generated config for the RdsClusterActivityStream t
 
 The id of the existing RdsClusterActivityStream that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/rds_cluster_activity_stream#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/rds_cluster_activity_stream#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -831,7 +831,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.rdsClusterActivityStream.RdsClusterActivityStreamConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/rdsclusteractivitystream"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/rdsclusteractivitystream"
 
 &rdsclusteractivitystream.RdsClusterActivityStreamConfig {
 	Connection: interface{},
@@ -861,11 +861,11 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/rdsclusteractivitystre
 | <code><a href="#@cdktn/provider-aws.rdsClusterActivityStream.RdsClusterActivityStreamConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.rdsClusterActivityStream.RdsClusterActivityStreamConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.rdsClusterActivityStream.RdsClusterActivityStreamConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.rdsClusterActivityStream.RdsClusterActivityStreamConfig.property.kmsKeyId">KmsKeyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/rds_cluster_activity_stream#kms_key_id RdsClusterActivityStream#kms_key_id}. |
-| <code><a href="#@cdktn/provider-aws.rdsClusterActivityStream.RdsClusterActivityStreamConfig.property.mode">Mode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/rds_cluster_activity_stream#mode RdsClusterActivityStream#mode}. |
-| <code><a href="#@cdktn/provider-aws.rdsClusterActivityStream.RdsClusterActivityStreamConfig.property.resourceArn">ResourceArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/rds_cluster_activity_stream#resource_arn RdsClusterActivityStream#resource_arn}. |
-| <code><a href="#@cdktn/provider-aws.rdsClusterActivityStream.RdsClusterActivityStreamConfig.property.engineNativeAuditFieldsIncluded">EngineNativeAuditFieldsIncluded</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/rds_cluster_activity_stream#engine_native_audit_fields_included RdsClusterActivityStream#engine_native_audit_fields_included}. |
-| <code><a href="#@cdktn/provider-aws.rdsClusterActivityStream.RdsClusterActivityStreamConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/rds_cluster_activity_stream#id RdsClusterActivityStream#id}. |
+| <code><a href="#@cdktn/provider-aws.rdsClusterActivityStream.RdsClusterActivityStreamConfig.property.kmsKeyId">KmsKeyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/rds_cluster_activity_stream#kms_key_id RdsClusterActivityStream#kms_key_id}. |
+| <code><a href="#@cdktn/provider-aws.rdsClusterActivityStream.RdsClusterActivityStreamConfig.property.mode">Mode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/rds_cluster_activity_stream#mode RdsClusterActivityStream#mode}. |
+| <code><a href="#@cdktn/provider-aws.rdsClusterActivityStream.RdsClusterActivityStreamConfig.property.resourceArn">ResourceArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/rds_cluster_activity_stream#resource_arn RdsClusterActivityStream#resource_arn}. |
+| <code><a href="#@cdktn/provider-aws.rdsClusterActivityStream.RdsClusterActivityStreamConfig.property.engineNativeAuditFieldsIncluded">EngineNativeAuditFieldsIncluded</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/rds_cluster_activity_stream#engine_native_audit_fields_included RdsClusterActivityStream#engine_native_audit_fields_included}. |
+| <code><a href="#@cdktn/provider-aws.rdsClusterActivityStream.RdsClusterActivityStreamConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/rds_cluster_activity_stream#id RdsClusterActivityStream#id}. |
 | <code><a href="#@cdktn/provider-aws.rdsClusterActivityStream.RdsClusterActivityStreamConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -948,7 +948,7 @@ KmsKeyId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/rds_cluster_activity_stream#kms_key_id RdsClusterActivityStream#kms_key_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/rds_cluster_activity_stream#kms_key_id RdsClusterActivityStream#kms_key_id}.
 
 ---
 
@@ -960,7 +960,7 @@ Mode *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/rds_cluster_activity_stream#mode RdsClusterActivityStream#mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/rds_cluster_activity_stream#mode RdsClusterActivityStream#mode}.
 
 ---
 
@@ -972,7 +972,7 @@ ResourceArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/rds_cluster_activity_stream#resource_arn RdsClusterActivityStream#resource_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/rds_cluster_activity_stream#resource_arn RdsClusterActivityStream#resource_arn}.
 
 ---
 
@@ -984,7 +984,7 @@ EngineNativeAuditFieldsIncluded interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/rds_cluster_activity_stream#engine_native_audit_fields_included RdsClusterActivityStream#engine_native_audit_fields_included}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/rds_cluster_activity_stream#engine_native_audit_fields_included RdsClusterActivityStream#engine_native_audit_fields_included}.
 
 ---
 
@@ -996,7 +996,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/rds_cluster_activity_stream#id RdsClusterActivityStream#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/rds_cluster_activity_stream#id RdsClusterActivityStream#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1013,7 +1013,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/rds_cluster_activity_stream#region RdsClusterActivityStream#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/rds_cluster_activity_stream#region RdsClusterActivityStream#region}
 
 ---
 

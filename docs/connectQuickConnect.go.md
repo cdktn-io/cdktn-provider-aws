@@ -4,12 +4,12 @@
 
 ### ConnectQuickConnect <a name="ConnectQuickConnect" id="@cdktn/provider-aws.connectQuickConnect.ConnectQuickConnect"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/connect_quick_connect aws_connect_quick_connect}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/connect_quick_connect aws_connect_quick_connect}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.connectQuickConnect.ConnectQuickConnect.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/connectquickconnect"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/connectquickconnect"
 
 connectquickconnect.NewConnectQuickConnect(scope Construct, id *string, config ConnectQuickConnectConfig) ConnectQuickConnect
 ```
@@ -426,7 +426,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.connectQuickConnect.ConnectQuickConnect.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/connectquickconnect"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/connectquickconnect"
 
 connectquickconnect.ConnectQuickConnect_IsConstruct(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.connectQuickConnect.ConnectQuickConnect.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/connectquickconnect"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/connectquickconnect"
 
 connectquickconnect.ConnectQuickConnect_IsTerraformElement(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ connectquickconnect.ConnectQuickConnect_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.connectQuickConnect.ConnectQuickConnect.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/connectquickconnect"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/connectquickconnect"
 
 connectquickconnect.ConnectQuickConnect_IsTerraformResource(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ connectquickconnect.ConnectQuickConnect_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.connectQuickConnect.ConnectQuickConnect.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/connectquickconnect"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/connectquickconnect"
 
 connectquickconnect.ConnectQuickConnect_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -515,7 +515,7 @@ The construct id used in the generated config for the ConnectQuickConnect to imp
 
 The id of the existing ConnectQuickConnect that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/connect_quick_connect#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/connect_quick_connect#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -913,7 +913,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.connectQuickConnect.ConnectQuickConnectConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/connectquickconnect"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/connectquickconnect"
 
 &connectquickconnect.ConnectQuickConnectConfig {
 	Connection: interface{},
@@ -925,7 +925,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/connectquickconnect"
 	Provisioners: *[]interface{},
 	InstanceId: *string,
 	Name: *string,
-	QuickConnectConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.connectQuickConnect.ConnectQuickConnectQuickConnectConfig,
+	QuickConnectConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.connectQuickConnect.ConnectQuickConnectQuickConnectConfig,
 	Description: *string,
 	Id: *string,
 	Region: *string,
@@ -945,14 +945,14 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/connectquickconnect"
 | <code><a href="#@cdktn/provider-aws.connectQuickConnect.ConnectQuickConnectConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.connectQuickConnect.ConnectQuickConnectConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.connectQuickConnect.ConnectQuickConnectConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.connectQuickConnect.ConnectQuickConnectConfig.property.instanceId">InstanceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/connect_quick_connect#instance_id ConnectQuickConnect#instance_id}. |
-| <code><a href="#@cdktn/provider-aws.connectQuickConnect.ConnectQuickConnectConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/connect_quick_connect#name ConnectQuickConnect#name}. |
+| <code><a href="#@cdktn/provider-aws.connectQuickConnect.ConnectQuickConnectConfig.property.instanceId">InstanceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/connect_quick_connect#instance_id ConnectQuickConnect#instance_id}. |
+| <code><a href="#@cdktn/provider-aws.connectQuickConnect.ConnectQuickConnectConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/connect_quick_connect#name ConnectQuickConnect#name}. |
 | <code><a href="#@cdktn/provider-aws.connectQuickConnect.ConnectQuickConnectConfig.property.quickConnectConfig">QuickConnectConfig</a></code> | <code><a href="#@cdktn/provider-aws.connectQuickConnect.ConnectQuickConnectQuickConnectConfig">ConnectQuickConnectQuickConnectConfig</a></code> | quick_connect_config block. |
-| <code><a href="#@cdktn/provider-aws.connectQuickConnect.ConnectQuickConnectConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/connect_quick_connect#description ConnectQuickConnect#description}. |
-| <code><a href="#@cdktn/provider-aws.connectQuickConnect.ConnectQuickConnectConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/connect_quick_connect#id ConnectQuickConnect#id}. |
+| <code><a href="#@cdktn/provider-aws.connectQuickConnect.ConnectQuickConnectConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/connect_quick_connect#description ConnectQuickConnect#description}. |
+| <code><a href="#@cdktn/provider-aws.connectQuickConnect.ConnectQuickConnectConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/connect_quick_connect#id ConnectQuickConnect#id}. |
 | <code><a href="#@cdktn/provider-aws.connectQuickConnect.ConnectQuickConnectConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.connectQuickConnect.ConnectQuickConnectConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/connect_quick_connect#tags ConnectQuickConnect#tags}. |
-| <code><a href="#@cdktn/provider-aws.connectQuickConnect.ConnectQuickConnectConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/connect_quick_connect#tags_all ConnectQuickConnect#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.connectQuickConnect.ConnectQuickConnectConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/connect_quick_connect#tags ConnectQuickConnect#tags}. |
+| <code><a href="#@cdktn/provider-aws.connectQuickConnect.ConnectQuickConnectConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/connect_quick_connect#tags_all ConnectQuickConnect#tags_all}. |
 
 ---
 
@@ -1034,7 +1034,7 @@ InstanceId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/connect_quick_connect#instance_id ConnectQuickConnect#instance_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/connect_quick_connect#instance_id ConnectQuickConnect#instance_id}.
 
 ---
 
@@ -1046,7 +1046,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/connect_quick_connect#name ConnectQuickConnect#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/connect_quick_connect#name ConnectQuickConnect#name}.
 
 ---
 
@@ -1060,7 +1060,7 @@ QuickConnectConfig ConnectQuickConnectQuickConnectConfig
 
 quick_connect_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/connect_quick_connect#quick_connect_config ConnectQuickConnect#quick_connect_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/connect_quick_connect#quick_connect_config ConnectQuickConnect#quick_connect_config}
 
 ---
 
@@ -1072,7 +1072,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/connect_quick_connect#description ConnectQuickConnect#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/connect_quick_connect#description ConnectQuickConnect#description}.
 
 ---
 
@@ -1084,7 +1084,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/connect_quick_connect#id ConnectQuickConnect#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/connect_quick_connect#id ConnectQuickConnect#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1101,7 +1101,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/connect_quick_connect#region ConnectQuickConnect#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/connect_quick_connect#region ConnectQuickConnect#region}
 
 ---
 
@@ -1113,7 +1113,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/connect_quick_connect#tags ConnectQuickConnect#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/connect_quick_connect#tags ConnectQuickConnect#tags}.
 
 ---
 
@@ -1125,7 +1125,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/connect_quick_connect#tags_all ConnectQuickConnect#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/connect_quick_connect#tags_all ConnectQuickConnect#tags_all}.
 
 ---
 
@@ -1134,7 +1134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.connectQuickConnect.ConnectQuickConnectQuickConnectConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/connectquickconnect"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/connectquickconnect"
 
 &connectquickconnect.ConnectQuickConnectQuickConnectConfig {
 	QuickConnectType: *string,
@@ -1148,7 +1148,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/connectquickconnect"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.connectQuickConnect.ConnectQuickConnectQuickConnectConfig.property.quickConnectType">QuickConnectType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/connect_quick_connect#quick_connect_type ConnectQuickConnect#quick_connect_type}. |
+| <code><a href="#@cdktn/provider-aws.connectQuickConnect.ConnectQuickConnectQuickConnectConfig.property.quickConnectType">QuickConnectType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/connect_quick_connect#quick_connect_type ConnectQuickConnect#quick_connect_type}. |
 | <code><a href="#@cdktn/provider-aws.connectQuickConnect.ConnectQuickConnectQuickConnectConfig.property.phoneConfig">PhoneConfig</a></code> | <code>interface{}</code> | phone_config block. |
 | <code><a href="#@cdktn/provider-aws.connectQuickConnect.ConnectQuickConnectQuickConnectConfig.property.queueConfig">QueueConfig</a></code> | <code>interface{}</code> | queue_config block. |
 | <code><a href="#@cdktn/provider-aws.connectQuickConnect.ConnectQuickConnectQuickConnectConfig.property.userConfig">UserConfig</a></code> | <code>interface{}</code> | user_config block. |
@@ -1163,7 +1163,7 @@ QuickConnectType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/connect_quick_connect#quick_connect_type ConnectQuickConnect#quick_connect_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/connect_quick_connect#quick_connect_type ConnectQuickConnect#quick_connect_type}.
 
 ---
 
@@ -1177,7 +1177,7 @@ PhoneConfig interface{}
 
 phone_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/connect_quick_connect#phone_config ConnectQuickConnect#phone_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/connect_quick_connect#phone_config ConnectQuickConnect#phone_config}
 
 ---
 
@@ -1191,7 +1191,7 @@ QueueConfig interface{}
 
 queue_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/connect_quick_connect#queue_config ConnectQuickConnect#queue_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/connect_quick_connect#queue_config ConnectQuickConnect#queue_config}
 
 ---
 
@@ -1205,7 +1205,7 @@ UserConfig interface{}
 
 user_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/connect_quick_connect#user_config ConnectQuickConnect#user_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/connect_quick_connect#user_config ConnectQuickConnect#user_config}
 
 ---
 
@@ -1214,7 +1214,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.connectQuickConnect.ConnectQuickConnectQuickConnectConfigPhoneConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/connectquickconnect"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/connectquickconnect"
 
 &connectquickconnect.ConnectQuickConnectQuickConnectConfigPhoneConfig {
 	PhoneNumber: *string,
@@ -1225,7 +1225,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/connectquickconnect"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.connectQuickConnect.ConnectQuickConnectQuickConnectConfigPhoneConfig.property.phoneNumber">PhoneNumber</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/connect_quick_connect#phone_number ConnectQuickConnect#phone_number}. |
+| <code><a href="#@cdktn/provider-aws.connectQuickConnect.ConnectQuickConnectQuickConnectConfigPhoneConfig.property.phoneNumber">PhoneNumber</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/connect_quick_connect#phone_number ConnectQuickConnect#phone_number}. |
 
 ---
 
@@ -1237,7 +1237,7 @@ PhoneNumber *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/connect_quick_connect#phone_number ConnectQuickConnect#phone_number}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/connect_quick_connect#phone_number ConnectQuickConnect#phone_number}.
 
 ---
 
@@ -1246,7 +1246,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.connectQuickConnect.ConnectQuickConnectQuickConnectConfigQueueConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/connectquickconnect"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/connectquickconnect"
 
 &connectquickconnect.ConnectQuickConnectQuickConnectConfigQueueConfig {
 	ContactFlowId: *string,
@@ -1258,8 +1258,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/connectquickconnect"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.connectQuickConnect.ConnectQuickConnectQuickConnectConfigQueueConfig.property.contactFlowId">ContactFlowId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/connect_quick_connect#contact_flow_id ConnectQuickConnect#contact_flow_id}. |
-| <code><a href="#@cdktn/provider-aws.connectQuickConnect.ConnectQuickConnectQuickConnectConfigQueueConfig.property.queueId">QueueId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/connect_quick_connect#queue_id ConnectQuickConnect#queue_id}. |
+| <code><a href="#@cdktn/provider-aws.connectQuickConnect.ConnectQuickConnectQuickConnectConfigQueueConfig.property.contactFlowId">ContactFlowId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/connect_quick_connect#contact_flow_id ConnectQuickConnect#contact_flow_id}. |
+| <code><a href="#@cdktn/provider-aws.connectQuickConnect.ConnectQuickConnectQuickConnectConfigQueueConfig.property.queueId">QueueId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/connect_quick_connect#queue_id ConnectQuickConnect#queue_id}. |
 
 ---
 
@@ -1271,7 +1271,7 @@ ContactFlowId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/connect_quick_connect#contact_flow_id ConnectQuickConnect#contact_flow_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/connect_quick_connect#contact_flow_id ConnectQuickConnect#contact_flow_id}.
 
 ---
 
@@ -1283,7 +1283,7 @@ QueueId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/connect_quick_connect#queue_id ConnectQuickConnect#queue_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/connect_quick_connect#queue_id ConnectQuickConnect#queue_id}.
 
 ---
 
@@ -1292,7 +1292,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.connectQuickConnect.ConnectQuickConnectQuickConnectConfigUserConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/connectquickconnect"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/connectquickconnect"
 
 &connectquickconnect.ConnectQuickConnectQuickConnectConfigUserConfig {
 	ContactFlowId: *string,
@@ -1304,8 +1304,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/connectquickconnect"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.connectQuickConnect.ConnectQuickConnectQuickConnectConfigUserConfig.property.contactFlowId">ContactFlowId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/connect_quick_connect#contact_flow_id ConnectQuickConnect#contact_flow_id}. |
-| <code><a href="#@cdktn/provider-aws.connectQuickConnect.ConnectQuickConnectQuickConnectConfigUserConfig.property.userId">UserId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/connect_quick_connect#user_id ConnectQuickConnect#user_id}. |
+| <code><a href="#@cdktn/provider-aws.connectQuickConnect.ConnectQuickConnectQuickConnectConfigUserConfig.property.contactFlowId">ContactFlowId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/connect_quick_connect#contact_flow_id ConnectQuickConnect#contact_flow_id}. |
+| <code><a href="#@cdktn/provider-aws.connectQuickConnect.ConnectQuickConnectQuickConnectConfigUserConfig.property.userId">UserId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/connect_quick_connect#user_id ConnectQuickConnect#user_id}. |
 
 ---
 
@@ -1317,7 +1317,7 @@ ContactFlowId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/connect_quick_connect#contact_flow_id ConnectQuickConnect#contact_flow_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/connect_quick_connect#contact_flow_id ConnectQuickConnect#contact_flow_id}.
 
 ---
 
@@ -1329,7 +1329,7 @@ UserId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/connect_quick_connect#user_id ConnectQuickConnect#user_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/connect_quick_connect#user_id ConnectQuickConnect#user_id}.
 
 ---
 
@@ -1340,7 +1340,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.connectQuickConnect.ConnectQuickConnectQuickConnectConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/connectquickconnect"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/connectquickconnect"
 
 connectquickconnect.NewConnectQuickConnectQuickConnectConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ConnectQuickConnectQuickConnectConfigOutputReference
 ```
@@ -1737,7 +1737,7 @@ func InternalValue() ConnectQuickConnectQuickConnectConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.connectQuickConnect.ConnectQuickConnectQuickConnectConfigPhoneConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/connectquickconnect"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/connectquickconnect"
 
 connectquickconnect.NewConnectQuickConnectQuickConnectConfigPhoneConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ConnectQuickConnectQuickConnectConfigPhoneConfigList
 ```
@@ -1897,7 +1897,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.connectQuickConnect.ConnectQuickConnectQuickConnectConfigPhoneConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/connectquickconnect"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/connectquickconnect"
 
 connectquickconnect.NewConnectQuickConnectQuickConnectConfigPhoneConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ConnectQuickConnectQuickConnectConfigPhoneConfigOutputReference
 ```
@@ -2186,7 +2186,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.connectQuickConnect.ConnectQuickConnectQuickConnectConfigQueueConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/connectquickconnect"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/connectquickconnect"
 
 connectquickconnect.NewConnectQuickConnectQuickConnectConfigQueueConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ConnectQuickConnectQuickConnectConfigQueueConfigList
 ```
@@ -2346,7 +2346,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.connectQuickConnect.ConnectQuickConnectQuickConnectConfigQueueConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/connectquickconnect"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/connectquickconnect"
 
 connectquickconnect.NewConnectQuickConnectQuickConnectConfigQueueConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ConnectQuickConnectQuickConnectConfigQueueConfigOutputReference
 ```
@@ -2657,7 +2657,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.connectQuickConnect.ConnectQuickConnectQuickConnectConfigUserConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/connectquickconnect"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/connectquickconnect"
 
 connectquickconnect.NewConnectQuickConnectQuickConnectConfigUserConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ConnectQuickConnectQuickConnectConfigUserConfigList
 ```
@@ -2817,7 +2817,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.connectQuickConnect.ConnectQuickConnectQuickConnectConfigUserConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/connectquickconnect"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/connectquickconnect"
 
 connectquickconnect.NewConnectQuickConnectQuickConnectConfigUserConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ConnectQuickConnectQuickConnectConfigUserConfigOutputReference
 ```

@@ -4,12 +4,12 @@
 
 ### CloudwatchLogTransformer <a name="CloudwatchLogTransformer" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformer"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer aws_cloudwatch_log_transformer}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer aws_cloudwatch_log_transformer}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformer.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatchlogtransformer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatchlogtransformer"
 
 cloudwatchlogtransformer.NewCloudwatchLogTransformer(scope Construct, id *string, config CloudwatchLogTransformerConfig) CloudwatchLogTransformer
 ```
@@ -405,7 +405,7 @@ func ResetTransformerConfig()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformer.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatchlogtransformer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatchlogtransformer"
 
 cloudwatchlogtransformer.CloudwatchLogTransformer_IsConstruct(x interface{}) *bool
 ```
@@ -437,7 +437,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformer.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatchlogtransformer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatchlogtransformer"
 
 cloudwatchlogtransformer.CloudwatchLogTransformer_IsTerraformElement(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ cloudwatchlogtransformer.CloudwatchLogTransformer_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformer.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatchlogtransformer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatchlogtransformer"
 
 cloudwatchlogtransformer.CloudwatchLogTransformer_IsTerraformResource(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ cloudwatchlogtransformer.CloudwatchLogTransformer_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformer.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatchlogtransformer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatchlogtransformer"
 
 cloudwatchlogtransformer.CloudwatchLogTransformer_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -494,7 +494,7 @@ The construct id used in the generated config for the CloudwatchLogTransformer t
 
 The id of the existing CloudwatchLogTransformer that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -760,7 +760,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatchlogtransformer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatchlogtransformer"
 
 &cloudwatchlogtransformer.CloudwatchLogTransformerConfig {
 	Connection: interface{},
@@ -787,7 +787,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatchlogtransform
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerConfig.property.logGroupArn">LogGroupArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#log_group_arn CloudwatchLogTransformer#log_group_arn}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerConfig.property.logGroupArn">LogGroupArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#log_group_arn CloudwatchLogTransformer#log_group_arn}. |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerConfig.property.transformerConfig">TransformerConfig</a></code> | <code>interface{}</code> | transformer_config block. |
 
@@ -871,7 +871,7 @@ LogGroupArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#log_group_arn CloudwatchLogTransformer#log_group_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#log_group_arn CloudwatchLogTransformer#log_group_arn}.
 
 ---
 
@@ -885,7 +885,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#region CloudwatchLogTransformer#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#region CloudwatchLogTransformer#region}
 
 ---
 
@@ -899,7 +899,7 @@ TransformerConfig interface{}
 
 transformer_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#transformer_config CloudwatchLogTransformer#transformer_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#transformer_config CloudwatchLogTransformer#transformer_config}
 
 ---
 
@@ -908,7 +908,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatchlogtransformer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatchlogtransformer"
 
 &cloudwatchlogtransformer.CloudwatchLogTransformerTransformerConfig {
 	AddKeys: interface{},
@@ -977,7 +977,7 @@ AddKeys interface{}
 
 add_keys block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#add_keys CloudwatchLogTransformer#add_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#add_keys CloudwatchLogTransformer#add_keys}
 
 ---
 
@@ -991,7 +991,7 @@ CopyValue interface{}
 
 copy_value block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#copy_value CloudwatchLogTransformer#copy_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#copy_value CloudwatchLogTransformer#copy_value}
 
 ---
 
@@ -1005,7 +1005,7 @@ Csv interface{}
 
 csv block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#csv CloudwatchLogTransformer#csv}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#csv CloudwatchLogTransformer#csv}
 
 ---
 
@@ -1019,7 +1019,7 @@ DateTimeConverter interface{}
 
 date_time_converter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#date_time_converter CloudwatchLogTransformer#date_time_converter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#date_time_converter CloudwatchLogTransformer#date_time_converter}
 
 ---
 
@@ -1033,7 +1033,7 @@ DeleteKeys interface{}
 
 delete_keys block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#delete_keys CloudwatchLogTransformer#delete_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#delete_keys CloudwatchLogTransformer#delete_keys}
 
 ---
 
@@ -1047,7 +1047,7 @@ Grok interface{}
 
 grok block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#grok CloudwatchLogTransformer#grok}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#grok CloudwatchLogTransformer#grok}
 
 ---
 
@@ -1061,7 +1061,7 @@ ListToMap interface{}
 
 list_to_map block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#list_to_map CloudwatchLogTransformer#list_to_map}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#list_to_map CloudwatchLogTransformer#list_to_map}
 
 ---
 
@@ -1075,7 +1075,7 @@ LowerCaseString interface{}
 
 lower_case_string block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#lower_case_string CloudwatchLogTransformer#lower_case_string}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#lower_case_string CloudwatchLogTransformer#lower_case_string}
 
 ---
 
@@ -1089,7 +1089,7 @@ MoveKeys interface{}
 
 move_keys block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#move_keys CloudwatchLogTransformer#move_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#move_keys CloudwatchLogTransformer#move_keys}
 
 ---
 
@@ -1103,7 +1103,7 @@ ParseCloudfront interface{}
 
 parse_cloudfront block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#parse_cloudfront CloudwatchLogTransformer#parse_cloudfront}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#parse_cloudfront CloudwatchLogTransformer#parse_cloudfront}
 
 ---
 
@@ -1117,7 +1117,7 @@ ParseJson interface{}
 
 parse_json block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#parse_json CloudwatchLogTransformer#parse_json}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#parse_json CloudwatchLogTransformer#parse_json}
 
 ---
 
@@ -1131,7 +1131,7 @@ ParseKeyValue interface{}
 
 parse_key_value block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#parse_key_value CloudwatchLogTransformer#parse_key_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#parse_key_value CloudwatchLogTransformer#parse_key_value}
 
 ---
 
@@ -1145,7 +1145,7 @@ ParsePostgres interface{}
 
 parse_postgres block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#parse_postgres CloudwatchLogTransformer#parse_postgres}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#parse_postgres CloudwatchLogTransformer#parse_postgres}
 
 ---
 
@@ -1159,7 +1159,7 @@ ParseRoute53 interface{}
 
 parse_route53 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#parse_route53 CloudwatchLogTransformer#parse_route53}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#parse_route53 CloudwatchLogTransformer#parse_route53}
 
 ---
 
@@ -1173,7 +1173,7 @@ ParseToOcsf interface{}
 
 parse_to_ocsf block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#parse_to_ocsf CloudwatchLogTransformer#parse_to_ocsf}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#parse_to_ocsf CloudwatchLogTransformer#parse_to_ocsf}
 
 ---
 
@@ -1187,7 +1187,7 @@ ParseVpc interface{}
 
 parse_vpc block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#parse_vpc CloudwatchLogTransformer#parse_vpc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#parse_vpc CloudwatchLogTransformer#parse_vpc}
 
 ---
 
@@ -1201,7 +1201,7 @@ ParseWaf interface{}
 
 parse_waf block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#parse_waf CloudwatchLogTransformer#parse_waf}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#parse_waf CloudwatchLogTransformer#parse_waf}
 
 ---
 
@@ -1215,7 +1215,7 @@ RenameKeys interface{}
 
 rename_keys block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#rename_keys CloudwatchLogTransformer#rename_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#rename_keys CloudwatchLogTransformer#rename_keys}
 
 ---
 
@@ -1229,7 +1229,7 @@ SplitString interface{}
 
 split_string block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#split_string CloudwatchLogTransformer#split_string}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#split_string CloudwatchLogTransformer#split_string}
 
 ---
 
@@ -1243,7 +1243,7 @@ SubstituteString interface{}
 
 substitute_string block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#substitute_string CloudwatchLogTransformer#substitute_string}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#substitute_string CloudwatchLogTransformer#substitute_string}
 
 ---
 
@@ -1257,7 +1257,7 @@ TrimString interface{}
 
 trim_string block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#trim_string CloudwatchLogTransformer#trim_string}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#trim_string CloudwatchLogTransformer#trim_string}
 
 ---
 
@@ -1271,7 +1271,7 @@ TypeConverter interface{}
 
 type_converter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#type_converter CloudwatchLogTransformer#type_converter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#type_converter CloudwatchLogTransformer#type_converter}
 
 ---
 
@@ -1285,7 +1285,7 @@ UpperCaseString interface{}
 
 upper_case_string block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#upper_case_string CloudwatchLogTransformer#upper_case_string}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#upper_case_string CloudwatchLogTransformer#upper_case_string}
 
 ---
 
@@ -1294,7 +1294,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigAddKeys.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatchlogtransformer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatchlogtransformer"
 
 &cloudwatchlogtransformer.CloudwatchLogTransformerTransformerConfigAddKeys {
 	Entry: interface{},
@@ -1319,7 +1319,7 @@ Entry interface{}
 
 entry block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#entry CloudwatchLogTransformer#entry}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#entry CloudwatchLogTransformer#entry}
 
 ---
 
@@ -1328,7 +1328,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigAddKeysEntry.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatchlogtransformer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatchlogtransformer"
 
 &cloudwatchlogtransformer.CloudwatchLogTransformerTransformerConfigAddKeysEntry {
 	Key: *string,
@@ -1341,9 +1341,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatchlogtransform
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigAddKeysEntry.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#key CloudwatchLogTransformer#key}. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigAddKeysEntry.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#value CloudwatchLogTransformer#value}. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigAddKeysEntry.property.overwriteIfExists">OverwriteIfExists</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#overwrite_if_exists CloudwatchLogTransformer#overwrite_if_exists}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigAddKeysEntry.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#key CloudwatchLogTransformer#key}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigAddKeysEntry.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#value CloudwatchLogTransformer#value}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigAddKeysEntry.property.overwriteIfExists">OverwriteIfExists</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#overwrite_if_exists CloudwatchLogTransformer#overwrite_if_exists}. |
 
 ---
 
@@ -1355,7 +1355,7 @@ Key *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#key CloudwatchLogTransformer#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#key CloudwatchLogTransformer#key}.
 
 ---
 
@@ -1367,7 +1367,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#value CloudwatchLogTransformer#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#value CloudwatchLogTransformer#value}.
 
 ---
 
@@ -1379,7 +1379,7 @@ OverwriteIfExists interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#overwrite_if_exists CloudwatchLogTransformer#overwrite_if_exists}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#overwrite_if_exists CloudwatchLogTransformer#overwrite_if_exists}.
 
 ---
 
@@ -1388,7 +1388,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCopyValue.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatchlogtransformer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatchlogtransformer"
 
 &cloudwatchlogtransformer.CloudwatchLogTransformerTransformerConfigCopyValue {
 	Entry: interface{},
@@ -1413,7 +1413,7 @@ Entry interface{}
 
 entry block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#entry CloudwatchLogTransformer#entry}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#entry CloudwatchLogTransformer#entry}
 
 ---
 
@@ -1422,7 +1422,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCopyValueEntry.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatchlogtransformer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatchlogtransformer"
 
 &cloudwatchlogtransformer.CloudwatchLogTransformerTransformerConfigCopyValueEntry {
 	Source: *string,
@@ -1435,9 +1435,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatchlogtransform
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCopyValueEntry.property.source">Source</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#source CloudwatchLogTransformer#source}. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCopyValueEntry.property.target">Target</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#target CloudwatchLogTransformer#target}. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCopyValueEntry.property.overwriteIfExists">OverwriteIfExists</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#overwrite_if_exists CloudwatchLogTransformer#overwrite_if_exists}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCopyValueEntry.property.source">Source</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#source CloudwatchLogTransformer#source}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCopyValueEntry.property.target">Target</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#target CloudwatchLogTransformer#target}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCopyValueEntry.property.overwriteIfExists">OverwriteIfExists</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#overwrite_if_exists CloudwatchLogTransformer#overwrite_if_exists}. |
 
 ---
 
@@ -1449,7 +1449,7 @@ Source *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#source CloudwatchLogTransformer#source}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#source CloudwatchLogTransformer#source}.
 
 ---
 
@@ -1461,7 +1461,7 @@ Target *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#target CloudwatchLogTransformer#target}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#target CloudwatchLogTransformer#target}.
 
 ---
 
@@ -1473,7 +1473,7 @@ OverwriteIfExists interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#overwrite_if_exists CloudwatchLogTransformer#overwrite_if_exists}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#overwrite_if_exists CloudwatchLogTransformer#overwrite_if_exists}.
 
 ---
 
@@ -1482,7 +1482,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCsv.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatchlogtransformer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatchlogtransformer"
 
 &cloudwatchlogtransformer.CloudwatchLogTransformerTransformerConfigCsv {
 	Columns: *[]*string,
@@ -1496,10 +1496,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatchlogtransform
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCsv.property.columns">Columns</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#columns CloudwatchLogTransformer#columns}. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCsv.property.delimiter">Delimiter</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#delimiter CloudwatchLogTransformer#delimiter}. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCsv.property.quoteCharacter">QuoteCharacter</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#quote_character CloudwatchLogTransformer#quote_character}. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCsv.property.source">Source</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#source CloudwatchLogTransformer#source}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCsv.property.columns">Columns</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#columns CloudwatchLogTransformer#columns}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCsv.property.delimiter">Delimiter</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#delimiter CloudwatchLogTransformer#delimiter}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCsv.property.quoteCharacter">QuoteCharacter</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#quote_character CloudwatchLogTransformer#quote_character}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCsv.property.source">Source</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#source CloudwatchLogTransformer#source}. |
 
 ---
 
@@ -1511,7 +1511,7 @@ Columns *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#columns CloudwatchLogTransformer#columns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#columns CloudwatchLogTransformer#columns}.
 
 ---
 
@@ -1523,7 +1523,7 @@ Delimiter *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#delimiter CloudwatchLogTransformer#delimiter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#delimiter CloudwatchLogTransformer#delimiter}.
 
 ---
 
@@ -1535,7 +1535,7 @@ QuoteCharacter *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#quote_character CloudwatchLogTransformer#quote_character}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#quote_character CloudwatchLogTransformer#quote_character}.
 
 ---
 
@@ -1547,7 +1547,7 @@ Source *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#source CloudwatchLogTransformer#source}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#source CloudwatchLogTransformer#source}.
 
 ---
 
@@ -1556,7 +1556,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigDateTimeConverter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatchlogtransformer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatchlogtransformer"
 
 &cloudwatchlogtransformer.CloudwatchLogTransformerTransformerConfigDateTimeConverter {
 	MatchPatterns: *[]*string,
@@ -1573,13 +1573,13 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatchlogtransform
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigDateTimeConverter.property.matchPatterns">MatchPatterns</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#match_patterns CloudwatchLogTransformer#match_patterns}. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigDateTimeConverter.property.source">Source</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#source CloudwatchLogTransformer#source}. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigDateTimeConverter.property.target">Target</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#target CloudwatchLogTransformer#target}. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigDateTimeConverter.property.locale">Locale</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#locale CloudwatchLogTransformer#locale}. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigDateTimeConverter.property.sourceTimezone">SourceTimezone</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#source_timezone CloudwatchLogTransformer#source_timezone}. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigDateTimeConverter.property.targetFormat">TargetFormat</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#target_format CloudwatchLogTransformer#target_format}. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigDateTimeConverter.property.targetTimezone">TargetTimezone</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#target_timezone CloudwatchLogTransformer#target_timezone}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigDateTimeConverter.property.matchPatterns">MatchPatterns</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#match_patterns CloudwatchLogTransformer#match_patterns}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigDateTimeConverter.property.source">Source</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#source CloudwatchLogTransformer#source}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigDateTimeConverter.property.target">Target</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#target CloudwatchLogTransformer#target}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigDateTimeConverter.property.locale">Locale</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#locale CloudwatchLogTransformer#locale}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigDateTimeConverter.property.sourceTimezone">SourceTimezone</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#source_timezone CloudwatchLogTransformer#source_timezone}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigDateTimeConverter.property.targetFormat">TargetFormat</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#target_format CloudwatchLogTransformer#target_format}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigDateTimeConverter.property.targetTimezone">TargetTimezone</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#target_timezone CloudwatchLogTransformer#target_timezone}. |
 
 ---
 
@@ -1591,7 +1591,7 @@ MatchPatterns *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#match_patterns CloudwatchLogTransformer#match_patterns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#match_patterns CloudwatchLogTransformer#match_patterns}.
 
 ---
 
@@ -1603,7 +1603,7 @@ Source *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#source CloudwatchLogTransformer#source}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#source CloudwatchLogTransformer#source}.
 
 ---
 
@@ -1615,7 +1615,7 @@ Target *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#target CloudwatchLogTransformer#target}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#target CloudwatchLogTransformer#target}.
 
 ---
 
@@ -1627,7 +1627,7 @@ Locale *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#locale CloudwatchLogTransformer#locale}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#locale CloudwatchLogTransformer#locale}.
 
 ---
 
@@ -1639,7 +1639,7 @@ SourceTimezone *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#source_timezone CloudwatchLogTransformer#source_timezone}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#source_timezone CloudwatchLogTransformer#source_timezone}.
 
 ---
 
@@ -1651,7 +1651,7 @@ TargetFormat *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#target_format CloudwatchLogTransformer#target_format}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#target_format CloudwatchLogTransformer#target_format}.
 
 ---
 
@@ -1663,7 +1663,7 @@ TargetTimezone *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#target_timezone CloudwatchLogTransformer#target_timezone}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#target_timezone CloudwatchLogTransformer#target_timezone}.
 
 ---
 
@@ -1672,7 +1672,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigDeleteKeys.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatchlogtransformer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatchlogtransformer"
 
 &cloudwatchlogtransformer.CloudwatchLogTransformerTransformerConfigDeleteKeys {
 	WithKeys: *[]*string,
@@ -1683,7 +1683,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatchlogtransform
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigDeleteKeys.property.withKeys">WithKeys</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#with_keys CloudwatchLogTransformer#with_keys}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigDeleteKeys.property.withKeys">WithKeys</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#with_keys CloudwatchLogTransformer#with_keys}. |
 
 ---
 
@@ -1695,7 +1695,7 @@ WithKeys *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#with_keys CloudwatchLogTransformer#with_keys}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#with_keys CloudwatchLogTransformer#with_keys}.
 
 ---
 
@@ -1704,7 +1704,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigGrok.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatchlogtransformer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatchlogtransformer"
 
 &cloudwatchlogtransformer.CloudwatchLogTransformerTransformerConfigGrok {
 	Match: *string,
@@ -1716,8 +1716,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatchlogtransform
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigGrok.property.match">Match</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#match CloudwatchLogTransformer#match}. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigGrok.property.source">Source</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#source CloudwatchLogTransformer#source}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigGrok.property.match">Match</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#match CloudwatchLogTransformer#match}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigGrok.property.source">Source</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#source CloudwatchLogTransformer#source}. |
 
 ---
 
@@ -1729,7 +1729,7 @@ Match *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#match CloudwatchLogTransformer#match}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#match CloudwatchLogTransformer#match}.
 
 ---
 
@@ -1741,7 +1741,7 @@ Source *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#source CloudwatchLogTransformer#source}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#source CloudwatchLogTransformer#source}.
 
 ---
 
@@ -1750,7 +1750,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigListToMap.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatchlogtransformer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatchlogtransformer"
 
 &cloudwatchlogtransformer.CloudwatchLogTransformerTransformerConfigListToMap {
 	Key: *string,
@@ -1766,12 +1766,12 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatchlogtransform
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigListToMap.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#key CloudwatchLogTransformer#key}. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigListToMap.property.source">Source</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#source CloudwatchLogTransformer#source}. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigListToMap.property.flatten">Flatten</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#flatten CloudwatchLogTransformer#flatten}. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigListToMap.property.flattenedElement">FlattenedElement</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#flattened_element CloudwatchLogTransformer#flattened_element}. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigListToMap.property.target">Target</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#target CloudwatchLogTransformer#target}. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigListToMap.property.valueKey">ValueKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#value_key CloudwatchLogTransformer#value_key}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigListToMap.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#key CloudwatchLogTransformer#key}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigListToMap.property.source">Source</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#source CloudwatchLogTransformer#source}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigListToMap.property.flatten">Flatten</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#flatten CloudwatchLogTransformer#flatten}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigListToMap.property.flattenedElement">FlattenedElement</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#flattened_element CloudwatchLogTransformer#flattened_element}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigListToMap.property.target">Target</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#target CloudwatchLogTransformer#target}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigListToMap.property.valueKey">ValueKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#value_key CloudwatchLogTransformer#value_key}. |
 
 ---
 
@@ -1783,7 +1783,7 @@ Key *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#key CloudwatchLogTransformer#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#key CloudwatchLogTransformer#key}.
 
 ---
 
@@ -1795,7 +1795,7 @@ Source *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#source CloudwatchLogTransformer#source}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#source CloudwatchLogTransformer#source}.
 
 ---
 
@@ -1807,7 +1807,7 @@ Flatten interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#flatten CloudwatchLogTransformer#flatten}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#flatten CloudwatchLogTransformer#flatten}.
 
 ---
 
@@ -1819,7 +1819,7 @@ FlattenedElement *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#flattened_element CloudwatchLogTransformer#flattened_element}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#flattened_element CloudwatchLogTransformer#flattened_element}.
 
 ---
 
@@ -1831,7 +1831,7 @@ Target *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#target CloudwatchLogTransformer#target}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#target CloudwatchLogTransformer#target}.
 
 ---
 
@@ -1843,7 +1843,7 @@ ValueKey *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#value_key CloudwatchLogTransformer#value_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#value_key CloudwatchLogTransformer#value_key}.
 
 ---
 
@@ -1852,7 +1852,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigLowerCaseString.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatchlogtransformer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatchlogtransformer"
 
 &cloudwatchlogtransformer.CloudwatchLogTransformerTransformerConfigLowerCaseString {
 	WithKeys: *[]*string,
@@ -1863,7 +1863,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatchlogtransform
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigLowerCaseString.property.withKeys">WithKeys</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#with_keys CloudwatchLogTransformer#with_keys}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigLowerCaseString.property.withKeys">WithKeys</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#with_keys CloudwatchLogTransformer#with_keys}. |
 
 ---
 
@@ -1875,7 +1875,7 @@ WithKeys *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#with_keys CloudwatchLogTransformer#with_keys}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#with_keys CloudwatchLogTransformer#with_keys}.
 
 ---
 
@@ -1884,7 +1884,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigMoveKeys.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatchlogtransformer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatchlogtransformer"
 
 &cloudwatchlogtransformer.CloudwatchLogTransformerTransformerConfigMoveKeys {
 	Entry: interface{},
@@ -1909,7 +1909,7 @@ Entry interface{}
 
 entry block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#entry CloudwatchLogTransformer#entry}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#entry CloudwatchLogTransformer#entry}
 
 ---
 
@@ -1918,7 +1918,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigMoveKeysEntry.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatchlogtransformer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatchlogtransformer"
 
 &cloudwatchlogtransformer.CloudwatchLogTransformerTransformerConfigMoveKeysEntry {
 	Source: *string,
@@ -1931,9 +1931,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatchlogtransform
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigMoveKeysEntry.property.source">Source</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#source CloudwatchLogTransformer#source}. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigMoveKeysEntry.property.target">Target</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#target CloudwatchLogTransformer#target}. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigMoveKeysEntry.property.overwriteIfExists">OverwriteIfExists</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#overwrite_if_exists CloudwatchLogTransformer#overwrite_if_exists}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigMoveKeysEntry.property.source">Source</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#source CloudwatchLogTransformer#source}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigMoveKeysEntry.property.target">Target</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#target CloudwatchLogTransformer#target}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigMoveKeysEntry.property.overwriteIfExists">OverwriteIfExists</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#overwrite_if_exists CloudwatchLogTransformer#overwrite_if_exists}. |
 
 ---
 
@@ -1945,7 +1945,7 @@ Source *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#source CloudwatchLogTransformer#source}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#source CloudwatchLogTransformer#source}.
 
 ---
 
@@ -1957,7 +1957,7 @@ Target *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#target CloudwatchLogTransformer#target}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#target CloudwatchLogTransformer#target}.
 
 ---
 
@@ -1969,7 +1969,7 @@ OverwriteIfExists interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#overwrite_if_exists CloudwatchLogTransformer#overwrite_if_exists}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#overwrite_if_exists CloudwatchLogTransformer#overwrite_if_exists}.
 
 ---
 
@@ -1978,7 +1978,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseCloudfront.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatchlogtransformer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatchlogtransformer"
 
 &cloudwatchlogtransformer.CloudwatchLogTransformerTransformerConfigParseCloudfront {
 	Source: *string,
@@ -1989,7 +1989,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatchlogtransform
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseCloudfront.property.source">Source</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#source CloudwatchLogTransformer#source}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseCloudfront.property.source">Source</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#source CloudwatchLogTransformer#source}. |
 
 ---
 
@@ -2001,7 +2001,7 @@ Source *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#source CloudwatchLogTransformer#source}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#source CloudwatchLogTransformer#source}.
 
 ---
 
@@ -2010,7 +2010,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseJson.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatchlogtransformer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatchlogtransformer"
 
 &cloudwatchlogtransformer.CloudwatchLogTransformerTransformerConfigParseJson {
 	Destination: *string,
@@ -2022,8 +2022,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatchlogtransform
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseJson.property.destination">Destination</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#destination CloudwatchLogTransformer#destination}. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseJson.property.source">Source</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#source CloudwatchLogTransformer#source}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseJson.property.destination">Destination</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#destination CloudwatchLogTransformer#destination}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseJson.property.source">Source</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#source CloudwatchLogTransformer#source}. |
 
 ---
 
@@ -2035,7 +2035,7 @@ Destination *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#destination CloudwatchLogTransformer#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#destination CloudwatchLogTransformer#destination}.
 
 ---
 
@@ -2047,7 +2047,7 @@ Source *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#source CloudwatchLogTransformer#source}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#source CloudwatchLogTransformer#source}.
 
 ---
 
@@ -2056,7 +2056,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseKeyValue.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatchlogtransformer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatchlogtransformer"
 
 &cloudwatchlogtransformer.CloudwatchLogTransformerTransformerConfigParseKeyValue {
 	Destination: *string,
@@ -2073,13 +2073,13 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatchlogtransform
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseKeyValue.property.destination">Destination</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#destination CloudwatchLogTransformer#destination}. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseKeyValue.property.fieldDelimiter">FieldDelimiter</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#field_delimiter CloudwatchLogTransformer#field_delimiter}. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseKeyValue.property.keyPrefix">KeyPrefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#key_prefix CloudwatchLogTransformer#key_prefix}. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseKeyValue.property.keyValueDelimiter">KeyValueDelimiter</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#key_value_delimiter CloudwatchLogTransformer#key_value_delimiter}. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseKeyValue.property.nonMatchValue">NonMatchValue</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#non_match_value CloudwatchLogTransformer#non_match_value}. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseKeyValue.property.overwriteIfExists">OverwriteIfExists</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#overwrite_if_exists CloudwatchLogTransformer#overwrite_if_exists}. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseKeyValue.property.source">Source</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#source CloudwatchLogTransformer#source}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseKeyValue.property.destination">Destination</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#destination CloudwatchLogTransformer#destination}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseKeyValue.property.fieldDelimiter">FieldDelimiter</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#field_delimiter CloudwatchLogTransformer#field_delimiter}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseKeyValue.property.keyPrefix">KeyPrefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#key_prefix CloudwatchLogTransformer#key_prefix}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseKeyValue.property.keyValueDelimiter">KeyValueDelimiter</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#key_value_delimiter CloudwatchLogTransformer#key_value_delimiter}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseKeyValue.property.nonMatchValue">NonMatchValue</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#non_match_value CloudwatchLogTransformer#non_match_value}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseKeyValue.property.overwriteIfExists">OverwriteIfExists</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#overwrite_if_exists CloudwatchLogTransformer#overwrite_if_exists}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseKeyValue.property.source">Source</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#source CloudwatchLogTransformer#source}. |
 
 ---
 
@@ -2091,7 +2091,7 @@ Destination *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#destination CloudwatchLogTransformer#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#destination CloudwatchLogTransformer#destination}.
 
 ---
 
@@ -2103,7 +2103,7 @@ FieldDelimiter *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#field_delimiter CloudwatchLogTransformer#field_delimiter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#field_delimiter CloudwatchLogTransformer#field_delimiter}.
 
 ---
 
@@ -2115,7 +2115,7 @@ KeyPrefix *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#key_prefix CloudwatchLogTransformer#key_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#key_prefix CloudwatchLogTransformer#key_prefix}.
 
 ---
 
@@ -2127,7 +2127,7 @@ KeyValueDelimiter *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#key_value_delimiter CloudwatchLogTransformer#key_value_delimiter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#key_value_delimiter CloudwatchLogTransformer#key_value_delimiter}.
 
 ---
 
@@ -2139,7 +2139,7 @@ NonMatchValue *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#non_match_value CloudwatchLogTransformer#non_match_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#non_match_value CloudwatchLogTransformer#non_match_value}.
 
 ---
 
@@ -2151,7 +2151,7 @@ OverwriteIfExists interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#overwrite_if_exists CloudwatchLogTransformer#overwrite_if_exists}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#overwrite_if_exists CloudwatchLogTransformer#overwrite_if_exists}.
 
 ---
 
@@ -2163,7 +2163,7 @@ Source *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#source CloudwatchLogTransformer#source}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#source CloudwatchLogTransformer#source}.
 
 ---
 
@@ -2172,7 +2172,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParsePostgres.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatchlogtransformer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatchlogtransformer"
 
 &cloudwatchlogtransformer.CloudwatchLogTransformerTransformerConfigParsePostgres {
 	Source: *string,
@@ -2183,7 +2183,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatchlogtransform
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParsePostgres.property.source">Source</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#source CloudwatchLogTransformer#source}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParsePostgres.property.source">Source</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#source CloudwatchLogTransformer#source}. |
 
 ---
 
@@ -2195,7 +2195,7 @@ Source *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#source CloudwatchLogTransformer#source}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#source CloudwatchLogTransformer#source}.
 
 ---
 
@@ -2204,7 +2204,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseRoute53.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatchlogtransformer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatchlogtransformer"
 
 &cloudwatchlogtransformer.CloudwatchLogTransformerTransformerConfigParseRoute53 {
 	Source: *string,
@@ -2215,7 +2215,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatchlogtransform
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseRoute53.property.source">Source</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#source CloudwatchLogTransformer#source}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseRoute53.property.source">Source</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#source CloudwatchLogTransformer#source}. |
 
 ---
 
@@ -2227,7 +2227,7 @@ Source *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#source CloudwatchLogTransformer#source}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#source CloudwatchLogTransformer#source}.
 
 ---
 
@@ -2236,7 +2236,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseToOcsf.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatchlogtransformer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatchlogtransformer"
 
 &cloudwatchlogtransformer.CloudwatchLogTransformerTransformerConfigParseToOcsf {
 	EventSource: *string,
@@ -2249,9 +2249,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatchlogtransform
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseToOcsf.property.eventSource">EventSource</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#event_source CloudwatchLogTransformer#event_source}. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseToOcsf.property.ocsfVersion">OcsfVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#ocsf_version CloudwatchLogTransformer#ocsf_version}. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseToOcsf.property.source">Source</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#source CloudwatchLogTransformer#source}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseToOcsf.property.eventSource">EventSource</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#event_source CloudwatchLogTransformer#event_source}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseToOcsf.property.ocsfVersion">OcsfVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#ocsf_version CloudwatchLogTransformer#ocsf_version}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseToOcsf.property.source">Source</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#source CloudwatchLogTransformer#source}. |
 
 ---
 
@@ -2263,7 +2263,7 @@ EventSource *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#event_source CloudwatchLogTransformer#event_source}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#event_source CloudwatchLogTransformer#event_source}.
 
 ---
 
@@ -2275,7 +2275,7 @@ OcsfVersion *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#ocsf_version CloudwatchLogTransformer#ocsf_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#ocsf_version CloudwatchLogTransformer#ocsf_version}.
 
 ---
 
@@ -2287,7 +2287,7 @@ Source *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#source CloudwatchLogTransformer#source}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#source CloudwatchLogTransformer#source}.
 
 ---
 
@@ -2296,7 +2296,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseVpc.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatchlogtransformer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatchlogtransformer"
 
 &cloudwatchlogtransformer.CloudwatchLogTransformerTransformerConfigParseVpc {
 	Source: *string,
@@ -2307,7 +2307,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatchlogtransform
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseVpc.property.source">Source</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#source CloudwatchLogTransformer#source}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseVpc.property.source">Source</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#source CloudwatchLogTransformer#source}. |
 
 ---
 
@@ -2319,7 +2319,7 @@ Source *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#source CloudwatchLogTransformer#source}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#source CloudwatchLogTransformer#source}.
 
 ---
 
@@ -2328,7 +2328,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseWaf.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatchlogtransformer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatchlogtransformer"
 
 &cloudwatchlogtransformer.CloudwatchLogTransformerTransformerConfigParseWaf {
 	Source: *string,
@@ -2339,7 +2339,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatchlogtransform
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseWaf.property.source">Source</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#source CloudwatchLogTransformer#source}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseWaf.property.source">Source</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#source CloudwatchLogTransformer#source}. |
 
 ---
 
@@ -2351,7 +2351,7 @@ Source *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#source CloudwatchLogTransformer#source}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#source CloudwatchLogTransformer#source}.
 
 ---
 
@@ -2360,7 +2360,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigRenameKeys.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatchlogtransformer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatchlogtransformer"
 
 &cloudwatchlogtransformer.CloudwatchLogTransformerTransformerConfigRenameKeys {
 	Entry: interface{},
@@ -2385,7 +2385,7 @@ Entry interface{}
 
 entry block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#entry CloudwatchLogTransformer#entry}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#entry CloudwatchLogTransformer#entry}
 
 ---
 
@@ -2394,7 +2394,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigRenameKeysEntry.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatchlogtransformer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatchlogtransformer"
 
 &cloudwatchlogtransformer.CloudwatchLogTransformerTransformerConfigRenameKeysEntry {
 	Key: *string,
@@ -2407,9 +2407,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatchlogtransform
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigRenameKeysEntry.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#key CloudwatchLogTransformer#key}. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigRenameKeysEntry.property.renameTo">RenameTo</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#rename_to CloudwatchLogTransformer#rename_to}. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigRenameKeysEntry.property.overwriteIfExists">OverwriteIfExists</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#overwrite_if_exists CloudwatchLogTransformer#overwrite_if_exists}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigRenameKeysEntry.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#key CloudwatchLogTransformer#key}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigRenameKeysEntry.property.renameTo">RenameTo</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#rename_to CloudwatchLogTransformer#rename_to}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigRenameKeysEntry.property.overwriteIfExists">OverwriteIfExists</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#overwrite_if_exists CloudwatchLogTransformer#overwrite_if_exists}. |
 
 ---
 
@@ -2421,7 +2421,7 @@ Key *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#key CloudwatchLogTransformer#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#key CloudwatchLogTransformer#key}.
 
 ---
 
@@ -2433,7 +2433,7 @@ RenameTo *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#rename_to CloudwatchLogTransformer#rename_to}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#rename_to CloudwatchLogTransformer#rename_to}.
 
 ---
 
@@ -2445,7 +2445,7 @@ OverwriteIfExists interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#overwrite_if_exists CloudwatchLogTransformer#overwrite_if_exists}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#overwrite_if_exists CloudwatchLogTransformer#overwrite_if_exists}.
 
 ---
 
@@ -2454,7 +2454,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSplitString.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatchlogtransformer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatchlogtransformer"
 
 &cloudwatchlogtransformer.CloudwatchLogTransformerTransformerConfigSplitString {
 	Entry: interface{},
@@ -2479,7 +2479,7 @@ Entry interface{}
 
 entry block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#entry CloudwatchLogTransformer#entry}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#entry CloudwatchLogTransformer#entry}
 
 ---
 
@@ -2488,7 +2488,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSplitStringEntry.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatchlogtransformer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatchlogtransformer"
 
 &cloudwatchlogtransformer.CloudwatchLogTransformerTransformerConfigSplitStringEntry {
 	Delimiter: *string,
@@ -2500,8 +2500,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatchlogtransform
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSplitStringEntry.property.delimiter">Delimiter</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#delimiter CloudwatchLogTransformer#delimiter}. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSplitStringEntry.property.source">Source</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#source CloudwatchLogTransformer#source}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSplitStringEntry.property.delimiter">Delimiter</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#delimiter CloudwatchLogTransformer#delimiter}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSplitStringEntry.property.source">Source</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#source CloudwatchLogTransformer#source}. |
 
 ---
 
@@ -2513,7 +2513,7 @@ Delimiter *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#delimiter CloudwatchLogTransformer#delimiter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#delimiter CloudwatchLogTransformer#delimiter}.
 
 ---
 
@@ -2525,7 +2525,7 @@ Source *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#source CloudwatchLogTransformer#source}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#source CloudwatchLogTransformer#source}.
 
 ---
 
@@ -2534,7 +2534,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSubstituteString.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatchlogtransformer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatchlogtransformer"
 
 &cloudwatchlogtransformer.CloudwatchLogTransformerTransformerConfigSubstituteString {
 	Entry: interface{},
@@ -2559,7 +2559,7 @@ Entry interface{}
 
 entry block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#entry CloudwatchLogTransformer#entry}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#entry CloudwatchLogTransformer#entry}
 
 ---
 
@@ -2568,7 +2568,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSubstituteStringEntry.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatchlogtransformer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatchlogtransformer"
 
 &cloudwatchlogtransformer.CloudwatchLogTransformerTransformerConfigSubstituteStringEntry {
 	From: *string,
@@ -2581,9 +2581,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatchlogtransform
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSubstituteStringEntry.property.from">From</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#from CloudwatchLogTransformer#from}. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSubstituteStringEntry.property.source">Source</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#source CloudwatchLogTransformer#source}. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSubstituteStringEntry.property.to">To</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#to CloudwatchLogTransformer#to}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSubstituteStringEntry.property.from">From</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#from CloudwatchLogTransformer#from}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSubstituteStringEntry.property.source">Source</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#source CloudwatchLogTransformer#source}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSubstituteStringEntry.property.to">To</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#to CloudwatchLogTransformer#to}. |
 
 ---
 
@@ -2595,7 +2595,7 @@ From *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#from CloudwatchLogTransformer#from}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#from CloudwatchLogTransformer#from}.
 
 ---
 
@@ -2607,7 +2607,7 @@ Source *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#source CloudwatchLogTransformer#source}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#source CloudwatchLogTransformer#source}.
 
 ---
 
@@ -2619,7 +2619,7 @@ To *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#to CloudwatchLogTransformer#to}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#to CloudwatchLogTransformer#to}.
 
 ---
 
@@ -2628,7 +2628,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTrimString.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatchlogtransformer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatchlogtransformer"
 
 &cloudwatchlogtransformer.CloudwatchLogTransformerTransformerConfigTrimString {
 	WithKeys: *[]*string,
@@ -2639,7 +2639,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatchlogtransform
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTrimString.property.withKeys">WithKeys</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#with_keys CloudwatchLogTransformer#with_keys}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTrimString.property.withKeys">WithKeys</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#with_keys CloudwatchLogTransformer#with_keys}. |
 
 ---
 
@@ -2651,7 +2651,7 @@ WithKeys *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#with_keys CloudwatchLogTransformer#with_keys}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#with_keys CloudwatchLogTransformer#with_keys}.
 
 ---
 
@@ -2660,7 +2660,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTypeConverter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatchlogtransformer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatchlogtransformer"
 
 &cloudwatchlogtransformer.CloudwatchLogTransformerTransformerConfigTypeConverter {
 	Entry: interface{},
@@ -2685,7 +2685,7 @@ Entry interface{}
 
 entry block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#entry CloudwatchLogTransformer#entry}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#entry CloudwatchLogTransformer#entry}
 
 ---
 
@@ -2694,7 +2694,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTypeConverterEntry.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatchlogtransformer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatchlogtransformer"
 
 &cloudwatchlogtransformer.CloudwatchLogTransformerTransformerConfigTypeConverterEntry {
 	Key: *string,
@@ -2706,8 +2706,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatchlogtransform
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTypeConverterEntry.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#key CloudwatchLogTransformer#key}. |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTypeConverterEntry.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#type CloudwatchLogTransformer#type}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTypeConverterEntry.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#key CloudwatchLogTransformer#key}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTypeConverterEntry.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#type CloudwatchLogTransformer#type}. |
 
 ---
 
@@ -2719,7 +2719,7 @@ Key *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#key CloudwatchLogTransformer#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#key CloudwatchLogTransformer#key}.
 
 ---
 
@@ -2731,7 +2731,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#type CloudwatchLogTransformer#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#type CloudwatchLogTransformer#type}.
 
 ---
 
@@ -2740,7 +2740,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigUpperCaseString.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatchlogtransformer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatchlogtransformer"
 
 &cloudwatchlogtransformer.CloudwatchLogTransformerTransformerConfigUpperCaseString {
 	WithKeys: *[]*string,
@@ -2751,7 +2751,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatchlogtransform
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigUpperCaseString.property.withKeys">WithKeys</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#with_keys CloudwatchLogTransformer#with_keys}. |
+| <code><a href="#@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigUpperCaseString.property.withKeys">WithKeys</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#with_keys CloudwatchLogTransformer#with_keys}. |
 
 ---
 
@@ -2763,7 +2763,7 @@ WithKeys *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudwatch_log_transformer#with_keys CloudwatchLogTransformer#with_keys}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudwatch_log_transformer#with_keys CloudwatchLogTransformer#with_keys}.
 
 ---
 
@@ -2774,7 +2774,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigAddKeysEntryList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatchlogtransformer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatchlogtransformer"
 
 cloudwatchlogtransformer.NewCloudwatchLogTransformerTransformerConfigAddKeysEntryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudwatchLogTransformerTransformerConfigAddKeysEntryList
 ```
@@ -2934,7 +2934,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigAddKeysEntryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatchlogtransformer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatchlogtransformer"
 
 cloudwatchlogtransformer.NewCloudwatchLogTransformerTransformerConfigAddKeysEntryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudwatchLogTransformerTransformerConfigAddKeysEntryOutputReference
 ```
@@ -3274,7 +3274,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigAddKeysList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatchlogtransformer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatchlogtransformer"
 
 cloudwatchlogtransformer.NewCloudwatchLogTransformerTransformerConfigAddKeysList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudwatchLogTransformerTransformerConfigAddKeysList
 ```
@@ -3434,7 +3434,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigAddKeysOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatchlogtransformer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatchlogtransformer"
 
 cloudwatchlogtransformer.NewCloudwatchLogTransformerTransformerConfigAddKeysOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudwatchLogTransformerTransformerConfigAddKeysOutputReference
 ```
@@ -3743,7 +3743,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCopyValueEntryList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatchlogtransformer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatchlogtransformer"
 
 cloudwatchlogtransformer.NewCloudwatchLogTransformerTransformerConfigCopyValueEntryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudwatchLogTransformerTransformerConfigCopyValueEntryList
 ```
@@ -3903,7 +3903,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCopyValueEntryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatchlogtransformer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatchlogtransformer"
 
 cloudwatchlogtransformer.NewCloudwatchLogTransformerTransformerConfigCopyValueEntryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudwatchLogTransformerTransformerConfigCopyValueEntryOutputReference
 ```
@@ -4243,7 +4243,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCopyValueList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatchlogtransformer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatchlogtransformer"
 
 cloudwatchlogtransformer.NewCloudwatchLogTransformerTransformerConfigCopyValueList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudwatchLogTransformerTransformerConfigCopyValueList
 ```
@@ -4403,7 +4403,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCopyValueOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatchlogtransformer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatchlogtransformer"
 
 cloudwatchlogtransformer.NewCloudwatchLogTransformerTransformerConfigCopyValueOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudwatchLogTransformerTransformerConfigCopyValueOutputReference
 ```
@@ -4712,7 +4712,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCsvList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatchlogtransformer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatchlogtransformer"
 
 cloudwatchlogtransformer.NewCloudwatchLogTransformerTransformerConfigCsvList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudwatchLogTransformerTransformerConfigCsvList
 ```
@@ -4872,7 +4872,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigCsvOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatchlogtransformer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatchlogtransformer"
 
 cloudwatchlogtransformer.NewCloudwatchLogTransformerTransformerConfigCsvOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudwatchLogTransformerTransformerConfigCsvOutputReference
 ```
@@ -5255,7 +5255,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigDateTimeConverterList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatchlogtransformer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatchlogtransformer"
 
 cloudwatchlogtransformer.NewCloudwatchLogTransformerTransformerConfigDateTimeConverterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudwatchLogTransformerTransformerConfigDateTimeConverterList
 ```
@@ -5415,7 +5415,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigDateTimeConverterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatchlogtransformer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatchlogtransformer"
 
 cloudwatchlogtransformer.NewCloudwatchLogTransformerTransformerConfigDateTimeConverterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudwatchLogTransformerTransformerConfigDateTimeConverterOutputReference
 ```
@@ -5864,7 +5864,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigDeleteKeysList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatchlogtransformer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatchlogtransformer"
 
 cloudwatchlogtransformer.NewCloudwatchLogTransformerTransformerConfigDeleteKeysList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudwatchLogTransformerTransformerConfigDeleteKeysList
 ```
@@ -6024,7 +6024,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigDeleteKeysOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatchlogtransformer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatchlogtransformer"
 
 cloudwatchlogtransformer.NewCloudwatchLogTransformerTransformerConfigDeleteKeysOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudwatchLogTransformerTransformerConfigDeleteKeysOutputReference
 ```
@@ -6313,7 +6313,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigGrokList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatchlogtransformer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatchlogtransformer"
 
 cloudwatchlogtransformer.NewCloudwatchLogTransformerTransformerConfigGrokList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudwatchLogTransformerTransformerConfigGrokList
 ```
@@ -6473,7 +6473,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigGrokOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatchlogtransformer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatchlogtransformer"
 
 cloudwatchlogtransformer.NewCloudwatchLogTransformerTransformerConfigGrokOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudwatchLogTransformerTransformerConfigGrokOutputReference
 ```
@@ -6791,7 +6791,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatchlogtransformer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatchlogtransformer"
 
 cloudwatchlogtransformer.NewCloudwatchLogTransformerTransformerConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudwatchLogTransformerTransformerConfigList
 ```
@@ -6951,7 +6951,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigListToMapList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatchlogtransformer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatchlogtransformer"
 
 cloudwatchlogtransformer.NewCloudwatchLogTransformerTransformerConfigListToMapList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudwatchLogTransformerTransformerConfigListToMapList
 ```
@@ -7111,7 +7111,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigListToMapOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatchlogtransformer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatchlogtransformer"
 
 cloudwatchlogtransformer.NewCloudwatchLogTransformerTransformerConfigListToMapOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudwatchLogTransformerTransformerConfigListToMapOutputReference
 ```
@@ -7538,7 +7538,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigLowerCaseStringList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatchlogtransformer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatchlogtransformer"
 
 cloudwatchlogtransformer.NewCloudwatchLogTransformerTransformerConfigLowerCaseStringList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudwatchLogTransformerTransformerConfigLowerCaseStringList
 ```
@@ -7698,7 +7698,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigLowerCaseStringOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatchlogtransformer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatchlogtransformer"
 
 cloudwatchlogtransformer.NewCloudwatchLogTransformerTransformerConfigLowerCaseStringOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudwatchLogTransformerTransformerConfigLowerCaseStringOutputReference
 ```
@@ -7987,7 +7987,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigMoveKeysEntryList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatchlogtransformer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatchlogtransformer"
 
 cloudwatchlogtransformer.NewCloudwatchLogTransformerTransformerConfigMoveKeysEntryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudwatchLogTransformerTransformerConfigMoveKeysEntryList
 ```
@@ -8147,7 +8147,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigMoveKeysEntryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatchlogtransformer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatchlogtransformer"
 
 cloudwatchlogtransformer.NewCloudwatchLogTransformerTransformerConfigMoveKeysEntryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudwatchLogTransformerTransformerConfigMoveKeysEntryOutputReference
 ```
@@ -8487,7 +8487,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigMoveKeysList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatchlogtransformer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatchlogtransformer"
 
 cloudwatchlogtransformer.NewCloudwatchLogTransformerTransformerConfigMoveKeysList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudwatchLogTransformerTransformerConfigMoveKeysList
 ```
@@ -8647,7 +8647,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigMoveKeysOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatchlogtransformer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatchlogtransformer"
 
 cloudwatchlogtransformer.NewCloudwatchLogTransformerTransformerConfigMoveKeysOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudwatchLogTransformerTransformerConfigMoveKeysOutputReference
 ```
@@ -8956,7 +8956,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatchlogtransformer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatchlogtransformer"
 
 cloudwatchlogtransformer.NewCloudwatchLogTransformerTransformerConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudwatchLogTransformerTransformerConfigOutputReference
 ```
@@ -10189,7 +10189,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseCloudfrontList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatchlogtransformer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatchlogtransformer"
 
 cloudwatchlogtransformer.NewCloudwatchLogTransformerTransformerConfigParseCloudfrontList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudwatchLogTransformerTransformerConfigParseCloudfrontList
 ```
@@ -10349,7 +10349,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseCloudfrontOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatchlogtransformer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatchlogtransformer"
 
 cloudwatchlogtransformer.NewCloudwatchLogTransformerTransformerConfigParseCloudfrontOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudwatchLogTransformerTransformerConfigParseCloudfrontOutputReference
 ```
@@ -10645,7 +10645,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseJsonList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatchlogtransformer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatchlogtransformer"
 
 cloudwatchlogtransformer.NewCloudwatchLogTransformerTransformerConfigParseJsonList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudwatchLogTransformerTransformerConfigParseJsonList
 ```
@@ -10805,7 +10805,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseJsonOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatchlogtransformer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatchlogtransformer"
 
 cloudwatchlogtransformer.NewCloudwatchLogTransformerTransformerConfigParseJsonOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudwatchLogTransformerTransformerConfigParseJsonOutputReference
 ```
@@ -11130,7 +11130,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseKeyValueList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatchlogtransformer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatchlogtransformer"
 
 cloudwatchlogtransformer.NewCloudwatchLogTransformerTransformerConfigParseKeyValueList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudwatchLogTransformerTransformerConfigParseKeyValueList
 ```
@@ -11290,7 +11290,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseKeyValueOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatchlogtransformer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatchlogtransformer"
 
 cloudwatchlogtransformer.NewCloudwatchLogTransformerTransformerConfigParseKeyValueOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudwatchLogTransformerTransformerConfigParseKeyValueOutputReference
 ```
@@ -11760,7 +11760,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParsePostgresList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatchlogtransformer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatchlogtransformer"
 
 cloudwatchlogtransformer.NewCloudwatchLogTransformerTransformerConfigParsePostgresList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudwatchLogTransformerTransformerConfigParsePostgresList
 ```
@@ -11920,7 +11920,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParsePostgresOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatchlogtransformer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatchlogtransformer"
 
 cloudwatchlogtransformer.NewCloudwatchLogTransformerTransformerConfigParsePostgresOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudwatchLogTransformerTransformerConfigParsePostgresOutputReference
 ```
@@ -12216,7 +12216,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseRoute53List.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatchlogtransformer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatchlogtransformer"
 
 cloudwatchlogtransformer.NewCloudwatchLogTransformerTransformerConfigParseRoute53List(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudwatchLogTransformerTransformerConfigParseRoute53List
 ```
@@ -12376,7 +12376,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseRoute53OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatchlogtransformer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatchlogtransformer"
 
 cloudwatchlogtransformer.NewCloudwatchLogTransformerTransformerConfigParseRoute53OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudwatchLogTransformerTransformerConfigParseRoute53OutputReference
 ```
@@ -12672,7 +12672,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseToOcsfList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatchlogtransformer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatchlogtransformer"
 
 cloudwatchlogtransformer.NewCloudwatchLogTransformerTransformerConfigParseToOcsfList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudwatchLogTransformerTransformerConfigParseToOcsfList
 ```
@@ -12832,7 +12832,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseToOcsfOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatchlogtransformer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatchlogtransformer"
 
 cloudwatchlogtransformer.NewCloudwatchLogTransformerTransformerConfigParseToOcsfOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudwatchLogTransformerTransformerConfigParseToOcsfOutputReference
 ```
@@ -13172,7 +13172,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseVpcList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatchlogtransformer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatchlogtransformer"
 
 cloudwatchlogtransformer.NewCloudwatchLogTransformerTransformerConfigParseVpcList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudwatchLogTransformerTransformerConfigParseVpcList
 ```
@@ -13332,7 +13332,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseVpcOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatchlogtransformer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatchlogtransformer"
 
 cloudwatchlogtransformer.NewCloudwatchLogTransformerTransformerConfigParseVpcOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudwatchLogTransformerTransformerConfigParseVpcOutputReference
 ```
@@ -13628,7 +13628,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseWafList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatchlogtransformer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatchlogtransformer"
 
 cloudwatchlogtransformer.NewCloudwatchLogTransformerTransformerConfigParseWafList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudwatchLogTransformerTransformerConfigParseWafList
 ```
@@ -13788,7 +13788,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigParseWafOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatchlogtransformer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatchlogtransformer"
 
 cloudwatchlogtransformer.NewCloudwatchLogTransformerTransformerConfigParseWafOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudwatchLogTransformerTransformerConfigParseWafOutputReference
 ```
@@ -14084,7 +14084,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigRenameKeysEntryList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatchlogtransformer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatchlogtransformer"
 
 cloudwatchlogtransformer.NewCloudwatchLogTransformerTransformerConfigRenameKeysEntryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudwatchLogTransformerTransformerConfigRenameKeysEntryList
 ```
@@ -14244,7 +14244,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigRenameKeysEntryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatchlogtransformer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatchlogtransformer"
 
 cloudwatchlogtransformer.NewCloudwatchLogTransformerTransformerConfigRenameKeysEntryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudwatchLogTransformerTransformerConfigRenameKeysEntryOutputReference
 ```
@@ -14584,7 +14584,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigRenameKeysList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatchlogtransformer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatchlogtransformer"
 
 cloudwatchlogtransformer.NewCloudwatchLogTransformerTransformerConfigRenameKeysList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudwatchLogTransformerTransformerConfigRenameKeysList
 ```
@@ -14744,7 +14744,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigRenameKeysOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatchlogtransformer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatchlogtransformer"
 
 cloudwatchlogtransformer.NewCloudwatchLogTransformerTransformerConfigRenameKeysOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudwatchLogTransformerTransformerConfigRenameKeysOutputReference
 ```
@@ -15053,7 +15053,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSplitStringEntryList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatchlogtransformer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatchlogtransformer"
 
 cloudwatchlogtransformer.NewCloudwatchLogTransformerTransformerConfigSplitStringEntryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudwatchLogTransformerTransformerConfigSplitStringEntryList
 ```
@@ -15213,7 +15213,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSplitStringEntryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatchlogtransformer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatchlogtransformer"
 
 cloudwatchlogtransformer.NewCloudwatchLogTransformerTransformerConfigSplitStringEntryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudwatchLogTransformerTransformerConfigSplitStringEntryOutputReference
 ```
@@ -15524,7 +15524,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSplitStringList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatchlogtransformer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatchlogtransformer"
 
 cloudwatchlogtransformer.NewCloudwatchLogTransformerTransformerConfigSplitStringList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudwatchLogTransformerTransformerConfigSplitStringList
 ```
@@ -15684,7 +15684,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSplitStringOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatchlogtransformer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatchlogtransformer"
 
 cloudwatchlogtransformer.NewCloudwatchLogTransformerTransformerConfigSplitStringOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudwatchLogTransformerTransformerConfigSplitStringOutputReference
 ```
@@ -15993,7 +15993,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSubstituteStringEntryList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatchlogtransformer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatchlogtransformer"
 
 cloudwatchlogtransformer.NewCloudwatchLogTransformerTransformerConfigSubstituteStringEntryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudwatchLogTransformerTransformerConfigSubstituteStringEntryList
 ```
@@ -16153,7 +16153,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSubstituteStringEntryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatchlogtransformer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatchlogtransformer"
 
 cloudwatchlogtransformer.NewCloudwatchLogTransformerTransformerConfigSubstituteStringEntryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudwatchLogTransformerTransformerConfigSubstituteStringEntryOutputReference
 ```
@@ -16486,7 +16486,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSubstituteStringList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatchlogtransformer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatchlogtransformer"
 
 cloudwatchlogtransformer.NewCloudwatchLogTransformerTransformerConfigSubstituteStringList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudwatchLogTransformerTransformerConfigSubstituteStringList
 ```
@@ -16646,7 +16646,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigSubstituteStringOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatchlogtransformer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatchlogtransformer"
 
 cloudwatchlogtransformer.NewCloudwatchLogTransformerTransformerConfigSubstituteStringOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudwatchLogTransformerTransformerConfigSubstituteStringOutputReference
 ```
@@ -16955,7 +16955,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTrimStringList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatchlogtransformer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatchlogtransformer"
 
 cloudwatchlogtransformer.NewCloudwatchLogTransformerTransformerConfigTrimStringList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudwatchLogTransformerTransformerConfigTrimStringList
 ```
@@ -17115,7 +17115,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTrimStringOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatchlogtransformer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatchlogtransformer"
 
 cloudwatchlogtransformer.NewCloudwatchLogTransformerTransformerConfigTrimStringOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudwatchLogTransformerTransformerConfigTrimStringOutputReference
 ```
@@ -17404,7 +17404,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTypeConverterEntryList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatchlogtransformer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatchlogtransformer"
 
 cloudwatchlogtransformer.NewCloudwatchLogTransformerTransformerConfigTypeConverterEntryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudwatchLogTransformerTransformerConfigTypeConverterEntryList
 ```
@@ -17564,7 +17564,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTypeConverterEntryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatchlogtransformer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatchlogtransformer"
 
 cloudwatchlogtransformer.NewCloudwatchLogTransformerTransformerConfigTypeConverterEntryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudwatchLogTransformerTransformerConfigTypeConverterEntryOutputReference
 ```
@@ -17875,7 +17875,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTypeConverterList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatchlogtransformer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatchlogtransformer"
 
 cloudwatchlogtransformer.NewCloudwatchLogTransformerTransformerConfigTypeConverterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudwatchLogTransformerTransformerConfigTypeConverterList
 ```
@@ -18035,7 +18035,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigTypeConverterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatchlogtransformer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatchlogtransformer"
 
 cloudwatchlogtransformer.NewCloudwatchLogTransformerTransformerConfigTypeConverterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudwatchLogTransformerTransformerConfigTypeConverterOutputReference
 ```
@@ -18344,7 +18344,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigUpperCaseStringList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatchlogtransformer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatchlogtransformer"
 
 cloudwatchlogtransformer.NewCloudwatchLogTransformerTransformerConfigUpperCaseStringList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudwatchLogTransformerTransformerConfigUpperCaseStringList
 ```
@@ -18504,7 +18504,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudwatchLogTransformer.CloudwatchLogTransformerTransformerConfigUpperCaseStringOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudwatchlogtransformer"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudwatchlogtransformer"
 
 cloudwatchlogtransformer.NewCloudwatchLogTransformerTransformerConfigUpperCaseStringOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudwatchLogTransformerTransformerConfigUpperCaseStringOutputReference
 ```
