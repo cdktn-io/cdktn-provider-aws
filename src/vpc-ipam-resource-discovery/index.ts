@@ -1,9 +1,9 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpc_ipam_resource_discovery
+// https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/vpc_ipam_resource_discovery
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,11 +13,11 @@ import * as cdktf from 'cdktf';
 
 export interface VpcIpamResourceDiscoveryConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpc_ipam_resource_discovery#description VpcIpamResourceDiscovery#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/vpc_ipam_resource_discovery#description VpcIpamResourceDiscovery#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpc_ipam_resource_discovery#id VpcIpamResourceDiscovery#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/vpc_ipam_resource_discovery#id VpcIpamResourceDiscovery#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -26,33 +26,39 @@ export interface VpcIpamResourceDiscoveryConfig extends cdktf.TerraformMetaArgum
   /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpc_ipam_resource_discovery#region VpcIpamResourceDiscovery#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/vpc_ipam_resource_discovery#region VpcIpamResourceDiscovery#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpc_ipam_resource_discovery#tags VpcIpamResourceDiscovery#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/vpc_ipam_resource_discovery#tags VpcIpamResourceDiscovery#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpc_ipam_resource_discovery#tags_all VpcIpamResourceDiscovery#tags_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/vpc_ipam_resource_discovery#tags_all VpcIpamResourceDiscovery#tags_all}
   */
   readonly tagsAll?: { [key: string]: string };
   /**
   * operating_regions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpc_ipam_resource_discovery#operating_regions VpcIpamResourceDiscovery#operating_regions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/vpc_ipam_resource_discovery#operating_regions VpcIpamResourceDiscovery#operating_regions}
   */
   readonly operatingRegions: VpcIpamResourceDiscoveryOperatingRegions[] | cdktf.IResolvable;
   /**
+  * organizational_unit_exclusion block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/vpc_ipam_resource_discovery#organizational_unit_exclusion VpcIpamResourceDiscovery#organizational_unit_exclusion}
+  */
+  readonly organizationalUnitExclusion?: VpcIpamResourceDiscoveryOrganizationalUnitExclusion[] | cdktf.IResolvable;
+  /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpc_ipam_resource_discovery#timeouts VpcIpamResourceDiscovery#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/vpc_ipam_resource_discovery#timeouts VpcIpamResourceDiscovery#timeouts}
   */
   readonly timeouts?: VpcIpamResourceDiscoveryTimeouts;
 }
 export interface VpcIpamResourceDiscoveryOperatingRegions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpc_ipam_resource_discovery#region_name VpcIpamResourceDiscovery#region_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/vpc_ipam_resource_discovery#region_name VpcIpamResourceDiscovery#region_name}
   */
   readonly regionName: string;
 }
@@ -163,17 +169,130 @@ export class VpcIpamResourceDiscoveryOperatingRegionsList extends cdktf.ComplexL
     return new VpcIpamResourceDiscoveryOperatingRegionsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface VpcIpamResourceDiscoveryOrganizationalUnitExclusion {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/vpc_ipam_resource_discovery#organizations_entity_path VpcIpamResourceDiscovery#organizations_entity_path}
+  */
+  readonly organizationsEntityPath: string;
+}
+
+export function vpcIpamResourceDiscoveryOrganizationalUnitExclusionToTerraform(struct?: VpcIpamResourceDiscoveryOrganizationalUnitExclusion | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    organizations_entity_path: cdktf.stringToTerraform(struct!.organizationsEntityPath),
+  }
+}
+
+
+export function vpcIpamResourceDiscoveryOrganizationalUnitExclusionToHclTerraform(struct?: VpcIpamResourceDiscoveryOrganizationalUnitExclusion | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    organizations_entity_path: {
+      value: cdktf.stringToHclTerraform(struct!.organizationsEntityPath),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class VpcIpamResourceDiscoveryOrganizationalUnitExclusionOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): VpcIpamResourceDiscoveryOrganizationalUnitExclusion | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._organizationsEntityPath !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.organizationsEntityPath = this._organizationsEntityPath;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: VpcIpamResourceDiscoveryOrganizationalUnitExclusion | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._organizationsEntityPath = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._organizationsEntityPath = value.organizationsEntityPath;
+    }
+  }
+
+  // organizations_entity_path - computed: false, optional: false, required: true
+  private _organizationsEntityPath?: string; 
+  public get organizationsEntityPath() {
+    return this.getStringAttribute('organizations_entity_path');
+  }
+  public set organizationsEntityPath(value: string) {
+    this._organizationsEntityPath = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get organizationsEntityPathInput() {
+    return this._organizationsEntityPath;
+  }
+}
+
+export class VpcIpamResourceDiscoveryOrganizationalUnitExclusionList extends cdktf.ComplexList {
+  public internalValue? : VpcIpamResourceDiscoveryOrganizationalUnitExclusion[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): VpcIpamResourceDiscoveryOrganizationalUnitExclusionOutputReference {
+    return new VpcIpamResourceDiscoveryOrganizationalUnitExclusionOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface VpcIpamResourceDiscoveryTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpc_ipam_resource_discovery#create VpcIpamResourceDiscovery#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/vpc_ipam_resource_discovery#create VpcIpamResourceDiscovery#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpc_ipam_resource_discovery#delete VpcIpamResourceDiscovery#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/vpc_ipam_resource_discovery#delete VpcIpamResourceDiscovery#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpc_ipam_resource_discovery#update VpcIpamResourceDiscovery#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/vpc_ipam_resource_discovery#update VpcIpamResourceDiscovery#update}
   */
   readonly update?: string;
 }
@@ -325,7 +444,7 @@ export class VpcIpamResourceDiscoveryTimeoutsOutputReference extends cdktf.Compl
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpc_ipam_resource_discovery aws_vpc_ipam_resource_discovery}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/vpc_ipam_resource_discovery aws_vpc_ipam_resource_discovery}
 */
 export class VpcIpamResourceDiscovery extends cdktf.TerraformResource {
 
@@ -341,7 +460,7 @@ export class VpcIpamResourceDiscovery extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a VpcIpamResourceDiscovery resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VpcIpamResourceDiscovery to import
-  * @param importFromId The id of the existing VpcIpamResourceDiscovery that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpc_ipam_resource_discovery#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing VpcIpamResourceDiscovery that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/vpc_ipam_resource_discovery#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VpcIpamResourceDiscovery to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -353,7 +472,7 @@ export class VpcIpamResourceDiscovery extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/vpc_ipam_resource_discovery aws_vpc_ipam_resource_discovery} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/vpc_ipam_resource_discovery aws_vpc_ipam_resource_discovery} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -364,7 +483,7 @@ export class VpcIpamResourceDiscovery extends cdktf.TerraformResource {
       terraformResourceType: 'aws_vpc_ipam_resource_discovery',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.28.0',
+        providerVersion: '6.31.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
@@ -381,6 +500,7 @@ export class VpcIpamResourceDiscovery extends cdktf.TerraformResource {
     this._tags = config.tags;
     this._tagsAll = config.tagsAll;
     this._operatingRegions.internalValue = config.operatingRegions;
+    this._organizationalUnitExclusion.internalValue = config.organizationalUnitExclusion;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -501,6 +621,22 @@ export class VpcIpamResourceDiscovery extends cdktf.TerraformResource {
     return this._operatingRegions.internalValue;
   }
 
+  // organizational_unit_exclusion - computed: false, optional: true, required: false
+  private _organizationalUnitExclusion = new VpcIpamResourceDiscoveryOrganizationalUnitExclusionList(this, "organizational_unit_exclusion", true);
+  public get organizationalUnitExclusion() {
+    return this._organizationalUnitExclusion;
+  }
+  public putOrganizationalUnitExclusion(value: VpcIpamResourceDiscoveryOrganizationalUnitExclusion[] | cdktf.IResolvable) {
+    this._organizationalUnitExclusion.internalValue = value;
+  }
+  public resetOrganizationalUnitExclusion() {
+    this._organizationalUnitExclusion.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get organizationalUnitExclusionInput() {
+    return this._organizationalUnitExclusion.internalValue;
+  }
+
   // timeouts - computed: false, optional: true, required: false
   private _timeouts = new VpcIpamResourceDiscoveryTimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
@@ -529,6 +665,7 @@ export class VpcIpamResourceDiscovery extends cdktf.TerraformResource {
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tags_all: cdktf.hashMapper(cdktf.stringToTerraform)(this._tagsAll),
       operating_regions: cdktf.listMapper(vpcIpamResourceDiscoveryOperatingRegionsToTerraform, true)(this._operatingRegions.internalValue),
+      organizational_unit_exclusion: cdktf.listMapper(vpcIpamResourceDiscoveryOrganizationalUnitExclusionToTerraform, true)(this._organizationalUnitExclusion.internalValue),
       timeouts: vpcIpamResourceDiscoveryTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -570,6 +707,12 @@ export class VpcIpamResourceDiscovery extends cdktf.TerraformResource {
         isBlock: true,
         type: "set",
         storageClassType: "VpcIpamResourceDiscoveryOperatingRegionsList",
+      },
+      organizational_unit_exclusion: {
+        value: cdktf.listMapperHcl(vpcIpamResourceDiscoveryOrganizationalUnitExclusionToHclTerraform, true)(this._organizationalUnitExclusion.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "VpcIpamResourceDiscoveryOrganizationalUnitExclusionList",
       },
       timeouts: {
         value: vpcIpamResourceDiscoveryTimeoutsToHclTerraform(this._timeouts.internalValue),

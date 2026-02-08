@@ -256,9 +256,9 @@
     fs-extra "11.3.0"
 
 "@cdktn/provider-project@^0.7.0":
-  version "0.7.28"
-  resolved "https://registry.yarnpkg.com/@cdktn/provider-project/-/provider-project-0.7.28.tgz#b7885ba51a724a460cb789f9d47297bf8eda882c"
-  integrity sha512-OgHyMigBYGYn/yRB6LTYvMzN4jOUcj9ZpIk1LzHt6W3R8HXAPPnisKuzHztxg9ZPRKi8SnVHsY2UvEydSdQ40Q==
+  version "0.7.29"
+  resolved "https://registry.yarnpkg.com/@cdktn/provider-project/-/provider-project-0.7.29.tgz#d3258afa7959522d1d423483b270d45964c71f65"
+  integrity sha512-VHX8W+YRvLT7tH7UPW9vJrkzOnSai8RWXeO0sRWcldZCMvThv2pMs/7X+8EZk61jANJ0K0BEFoxvS+H2wKHlxA==
   dependencies:
     change-case "^4.1.2"
     fs-extra "^10.1.0"

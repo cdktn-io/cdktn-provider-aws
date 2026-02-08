@@ -1,9 +1,9 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/iam_outbound_web_identity_federation
+// https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/iam_outbound_web_identity_federation
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +15,7 @@ export interface IamOutboundWebIdentityFederationConfig extends cdktf.TerraformM
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/iam_outbound_web_identity_federation aws_iam_outbound_web_identity_federation}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/iam_outbound_web_identity_federation aws_iam_outbound_web_identity_federation}
 */
 export class IamOutboundWebIdentityFederation extends cdktf.TerraformResource {
 
@@ -31,7 +31,7 @@ export class IamOutboundWebIdentityFederation extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a IamOutboundWebIdentityFederation resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the IamOutboundWebIdentityFederation to import
-  * @param importFromId The id of the existing IamOutboundWebIdentityFederation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/iam_outbound_web_identity_federation#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing IamOutboundWebIdentityFederation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/iam_outbound_web_identity_federation#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the IamOutboundWebIdentityFederation to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -43,7 +43,7 @@ export class IamOutboundWebIdentityFederation extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/iam_outbound_web_identity_federation aws_iam_outbound_web_identity_federation} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/iam_outbound_web_identity_federation aws_iam_outbound_web_identity_federation} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -54,7 +54,7 @@ export class IamOutboundWebIdentityFederation extends cdktf.TerraformResource {
       terraformResourceType: 'aws_iam_outbound_web_identity_federation',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.28.0',
+        providerVersion: '6.31.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

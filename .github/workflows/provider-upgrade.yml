@@ -14,6 +14,8 @@ jobs:
       contents: write
       statuses: write
     env:
+      PROJEN_APP_ID: ${{ secrets.PROJEN_APP_ID }}
+      PROJEN_APP_PRIVATE_KEY: ${{ secrets.PROJEN_APP_PRIVATE_KEY }}
       NODE_OPTIONS: --max-old-space-size=31744
     steps:
       - name: Checkout
@@ -25,7 +27,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@cdca7365b2dadb8aad0a33bc7601856ffabcc48e
         with:
-          node-version: 20.9.0
+          node-version: 20.16.0
       - name: Setup Copywrite tool
         uses: hashicorp/setup-copywrite@32638da2d4e81d56a0764aa1547882fc4d209636
       - run: yarn install
@@ -69,8 +71,8 @@ jobs:
       - name: Get GitHub App User ID
         id: get_user_id
         env:
-          GH_TOKEN: ${{ steps.app-token.outputs.token }}
-        run: echo "id=$(gh api "/users/${{ steps.app-token.outputs.app-slug }}[bot]" --jq .id)" >> "$GITHUB_OUTPUT"
+          GH_TOKEN: ${{ steps.generate_token.outputs.token }}
+        run: echo "id=$(gh api "/users/${{ steps.generate_token.outputs.app-slug }}[bot]" --jq .id)" >> "$GITHUB_OUTPUT"
       - name: Create Pull Request
         if: ${{ steps.check_version.outputs.new_version == 'available' }}
         uses: peter-evans/create-pull-request@271a8d0340265f705b14b6d32b9829c1cb33d45e
@@ -82,6 +84,6 @@ jobs:
           labels: automerge,auto-approve
           delete-branch: true
           token: ${{ steps.generate_token.outputs.token }}
-          author: ${{ steps.app-token.outputs.app-slug }}[bot] <${{ steps.get_user_id.outputs.id }}+${{ steps.app-token.outputs.app-slug }}[bot]@users.noreply.github.com>
-          committer: ${{ steps.app-token.outputs.app-slug }}[bot] <${{ steps.get_user_id.outputs.id }}+${{ steps.app-token.outputs.app-slug }}[bot]@users.noreply.github.com>
+          author: ${{ steps.generate_token.outputs.app-slug }}[bot] <${{ steps.get_user_id.outputs.id }}+${{ steps.generate_token.outputs.app-slug }}[bot]@users.noreply.github.com>
+          committer: ${{ steps.generate_token.outputs.app-slug }}[bot] <${{ steps.get_user_id.outputs.id }}+${{ steps.generate_token.outputs.app-slug }}[bot]@users.noreply.github.com>
           signoff: true

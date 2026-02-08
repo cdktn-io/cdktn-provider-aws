@@ -1,7 +1,7 @@
 
-# CDKTF prebuilt bindings for hashicorp/aws provider version 6.28.0
+# CDKTF prebuilt bindings for hashicorp/aws provider version 6.31.0
 
-This repo builds and publishes the [Terraform aws provider](https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs) bindings for [CDK for Terraform](https://cdk.tf).
+This repo builds and publishes the [Terraform aws provider](https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs) bindings for [CDK for Terraform](https://cdk.tf).
 
 ## Available Packages
 
@@ -19,17 +19,17 @@ The PyPI package is available at [https://pypi.org/project/cdktn-provider-aws](h
 
 ### Nuget
 
-The Nuget package is available at [https://www.nuget.org/packages/Io.Cdktn.Cdktn.Providers.Aws](https://www.nuget.org/packages/Io.Cdktn.Cdktn.Providers.Aws).
+The Nuget package is available at [https://www.nuget.org/packages/Io.Cdktn.Providers.Aws](https://www.nuget.org/packages/Io.Cdktn.Providers.Aws).
 
-`dotnet add package Io.Cdktn.Cdktn.Providers.Aws`
+`dotnet add package Io.Cdktn.Providers.Aws`
 
 ### Maven
 
-The Maven package is available at [https://mvnrepository.com/artifact/com.Io.Cdktn/cdktn-provider-aws](https://mvnrepository.com/artifact/com.Io.Cdktn/cdktn-provider-aws).
+The Maven package is available at [https://mvnrepository.com/artifact/io.cdktn/cdktn-provider-aws](https://mvnrepository.com/artifact/io.cdktn/cdktn-provider-aws).
 
 ```
 <dependency>
-    <groupId>com.Io.Cdktn</groupId>
+    <groupId>io.cdktn</groupId>
     <artifactId>cdktn-provider-aws</artifactId>
     <version>[REPLACE WITH DESIRED VERSION]</version>
 </dependency>
@@ -63,7 +63,7 @@ This project is explicitly not tracking the Terraform aws provider version 1:1. 
 These are the upstream dependencies:
 
 - [CDK for Terraform](https://cdk.tf) - Last official release
-- [Terraform aws provider](https://registry.terraform.io/providers/hashicorp/aws/6.28.0)
+- [Terraform aws provider](https://registry.terraform.io/providers/hashicorp/aws/6.31.0)
 - [Terraform Engine](https://terraform.io)
 
 If there are breaking changes (backward incompatible) in any of the above, the major version of this project will be bumped.
