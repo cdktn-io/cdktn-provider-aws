@@ -4,12 +4,12 @@
 
 ### NotificationsNotificationConfiguration <a name="NotificationsNotificationConfiguration" id="@cdktn/provider-aws.notificationsNotificationConfiguration.NotificationsNotificationConfiguration"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/notifications_notification_configuration aws_notifications_notification_configuration}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/notifications_notification_configuration aws_notifications_notification_configuration}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.notificationsNotificationConfiguration.NotificationsNotificationConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/notificationsnotificationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/notificationsnotificationconfiguration"
 
 notificationsnotificationconfiguration.NewNotificationsNotificationConfiguration(scope Construct, id *string, config NotificationsNotificationConfigurationConfig) NotificationsNotificationConfiguration
 ```
@@ -392,7 +392,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.notificationsNotificationConfiguration.NotificationsNotificationConfiguration.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/notificationsnotificationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/notificationsnotificationconfiguration"
 
 notificationsnotificationconfiguration.NotificationsNotificationConfiguration_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.notificationsNotificationConfiguration.NotificationsNotificationConfiguration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/notificationsnotificationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/notificationsnotificationconfiguration"
 
 notificationsnotificationconfiguration.NotificationsNotificationConfiguration_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ notificationsnotificationconfiguration.NotificationsNotificationConfiguration_Is
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.notificationsNotificationConfiguration.NotificationsNotificationConfiguration.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/notificationsnotificationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/notificationsnotificationconfiguration"
 
 notificationsnotificationconfiguration.NotificationsNotificationConfiguration_IsTerraformResource(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ notificationsnotificationconfiguration.NotificationsNotificationConfiguration_Is
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.notificationsNotificationConfiguration.NotificationsNotificationConfiguration.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/notificationsnotificationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/notificationsnotificationconfiguration"
 
 notificationsnotificationconfiguration.NotificationsNotificationConfiguration_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -481,7 +481,7 @@ The construct id used in the generated config for the NotificationsNotificationC
 
 The id of the existing NotificationsNotificationConfiguration that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/notifications_notification_configuration#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/notifications_notification_configuration#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -791,7 +791,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.notificationsNotificationConfiguration.NotificationsNotificationConfigurationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/notificationsnotificationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/notificationsnotificationconfiguration"
 
 &notificationsnotificationconfiguration.NotificationsNotificationConfigurationConfig {
 	Connection: interface{},
@@ -819,10 +819,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/notificationsnotificat
 | <code><a href="#@cdktn/provider-aws.notificationsNotificationConfiguration.NotificationsNotificationConfigurationConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.notificationsNotificationConfiguration.NotificationsNotificationConfigurationConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.notificationsNotificationConfiguration.NotificationsNotificationConfigurationConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.notificationsNotificationConfiguration.NotificationsNotificationConfigurationConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/notifications_notification_configuration#description NotificationsNotificationConfiguration#description}. |
-| <code><a href="#@cdktn/provider-aws.notificationsNotificationConfiguration.NotificationsNotificationConfigurationConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/notifications_notification_configuration#name NotificationsNotificationConfiguration#name}. |
-| <code><a href="#@cdktn/provider-aws.notificationsNotificationConfiguration.NotificationsNotificationConfigurationConfig.property.aggregationDuration">AggregationDuration</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/notifications_notification_configuration#aggregation_duration NotificationsNotificationConfiguration#aggregation_duration}. |
-| <code><a href="#@cdktn/provider-aws.notificationsNotificationConfiguration.NotificationsNotificationConfigurationConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/notifications_notification_configuration#tags NotificationsNotificationConfiguration#tags}. |
+| <code><a href="#@cdktn/provider-aws.notificationsNotificationConfiguration.NotificationsNotificationConfigurationConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/notifications_notification_configuration#description NotificationsNotificationConfiguration#description}. |
+| <code><a href="#@cdktn/provider-aws.notificationsNotificationConfiguration.NotificationsNotificationConfigurationConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/notifications_notification_configuration#name NotificationsNotificationConfiguration#name}. |
+| <code><a href="#@cdktn/provider-aws.notificationsNotificationConfiguration.NotificationsNotificationConfigurationConfig.property.aggregationDuration">AggregationDuration</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/notifications_notification_configuration#aggregation_duration NotificationsNotificationConfiguration#aggregation_duration}. |
+| <code><a href="#@cdktn/provider-aws.notificationsNotificationConfiguration.NotificationsNotificationConfigurationConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/notifications_notification_configuration#tags NotificationsNotificationConfiguration#tags}. |
 
 ---
 
@@ -904,7 +904,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/notifications_notification_configuration#description NotificationsNotificationConfiguration#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/notifications_notification_configuration#description NotificationsNotificationConfiguration#description}.
 
 ---
 
@@ -916,7 +916,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/notifications_notification_configuration#name NotificationsNotificationConfiguration#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/notifications_notification_configuration#name NotificationsNotificationConfiguration#name}.
 
 ---
 
@@ -928,7 +928,7 @@ AggregationDuration *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/notifications_notification_configuration#aggregation_duration NotificationsNotificationConfiguration#aggregation_duration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/notifications_notification_configuration#aggregation_duration NotificationsNotificationConfiguration#aggregation_duration}.
 
 ---
 
@@ -940,7 +940,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/notifications_notification_configuration#tags NotificationsNotificationConfiguration#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/notifications_notification_configuration#tags NotificationsNotificationConfiguration#tags}.
 
 ---
 

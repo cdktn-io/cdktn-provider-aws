@@ -4,12 +4,12 @@
 
 ### DatasyncLocationEfs <a name="DatasyncLocationEfs" id="@cdktn/provider-aws.datasyncLocationEfs.DatasyncLocationEfs"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/datasync_location_efs aws_datasync_location_efs}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/datasync_location_efs aws_datasync_location_efs}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.datasyncLocationEfs.DatasyncLocationEfs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/datasynclocationefs"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/datasynclocationefs"
 
 datasynclocationefs.NewDatasyncLocationEfs(scope Construct, id *string, config DatasyncLocationEfsConfig) DatasyncLocationEfs
 ```
@@ -447,7 +447,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.datasyncLocationEfs.DatasyncLocationEfs.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/datasynclocationefs"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/datasynclocationefs"
 
 datasynclocationefs.DatasyncLocationEfs_IsConstruct(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.datasyncLocationEfs.DatasyncLocationEfs.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/datasynclocationefs"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/datasynclocationefs"
 
 datasynclocationefs.DatasyncLocationEfs_IsTerraformElement(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ datasynclocationefs.DatasyncLocationEfs_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.datasyncLocationEfs.DatasyncLocationEfs.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/datasynclocationefs"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/datasynclocationefs"
 
 datasynclocationefs.DatasyncLocationEfs_IsTerraformResource(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ datasynclocationefs.DatasyncLocationEfs_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.datasyncLocationEfs.DatasyncLocationEfs.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/datasynclocationefs"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/datasynclocationefs"
 
 datasynclocationefs.DatasyncLocationEfs_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -536,7 +536,7 @@ The construct id used in the generated config for the DatasyncLocationEfs to imp
 
 The id of the existing DatasyncLocationEfs that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/datasync_location_efs#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/datasync_location_efs#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -978,7 +978,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.datasyncLocationEfs.DatasyncLocationEfsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/datasynclocationefs"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/datasynclocationefs"
 
 &datasynclocationefs.DatasyncLocationEfsConfig {
 	Connection: interface{},
@@ -988,7 +988,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/datasynclocationefs"
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	Ec2Config: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.datasyncLocationEfs.DatasyncLocationEfsEc2Config,
+	Ec2Config: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.datasyncLocationEfs.DatasyncLocationEfsEc2Config,
 	EfsFileSystemArn: *string,
 	AccessPointArn: *string,
 	FileSystemAccessRoleArn: *string,
@@ -1013,15 +1013,15 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/datasynclocationefs"
 | <code><a href="#@cdktn/provider-aws.datasyncLocationEfs.DatasyncLocationEfsConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.datasyncLocationEfs.DatasyncLocationEfsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.datasyncLocationEfs.DatasyncLocationEfsConfig.property.ec2Config">Ec2Config</a></code> | <code><a href="#@cdktn/provider-aws.datasyncLocationEfs.DatasyncLocationEfsEc2Config">DatasyncLocationEfsEc2Config</a></code> | ec2_config block. |
-| <code><a href="#@cdktn/provider-aws.datasyncLocationEfs.DatasyncLocationEfsConfig.property.efsFileSystemArn">EfsFileSystemArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/datasync_location_efs#efs_file_system_arn DatasyncLocationEfs#efs_file_system_arn}. |
-| <code><a href="#@cdktn/provider-aws.datasyncLocationEfs.DatasyncLocationEfsConfig.property.accessPointArn">AccessPointArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/datasync_location_efs#access_point_arn DatasyncLocationEfs#access_point_arn}. |
-| <code><a href="#@cdktn/provider-aws.datasyncLocationEfs.DatasyncLocationEfsConfig.property.fileSystemAccessRoleArn">FileSystemAccessRoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/datasync_location_efs#file_system_access_role_arn DatasyncLocationEfs#file_system_access_role_arn}. |
-| <code><a href="#@cdktn/provider-aws.datasyncLocationEfs.DatasyncLocationEfsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/datasync_location_efs#id DatasyncLocationEfs#id}. |
-| <code><a href="#@cdktn/provider-aws.datasyncLocationEfs.DatasyncLocationEfsConfig.property.inTransitEncryption">InTransitEncryption</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/datasync_location_efs#in_transit_encryption DatasyncLocationEfs#in_transit_encryption}. |
+| <code><a href="#@cdktn/provider-aws.datasyncLocationEfs.DatasyncLocationEfsConfig.property.efsFileSystemArn">EfsFileSystemArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/datasync_location_efs#efs_file_system_arn DatasyncLocationEfs#efs_file_system_arn}. |
+| <code><a href="#@cdktn/provider-aws.datasyncLocationEfs.DatasyncLocationEfsConfig.property.accessPointArn">AccessPointArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/datasync_location_efs#access_point_arn DatasyncLocationEfs#access_point_arn}. |
+| <code><a href="#@cdktn/provider-aws.datasyncLocationEfs.DatasyncLocationEfsConfig.property.fileSystemAccessRoleArn">FileSystemAccessRoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/datasync_location_efs#file_system_access_role_arn DatasyncLocationEfs#file_system_access_role_arn}. |
+| <code><a href="#@cdktn/provider-aws.datasyncLocationEfs.DatasyncLocationEfsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/datasync_location_efs#id DatasyncLocationEfs#id}. |
+| <code><a href="#@cdktn/provider-aws.datasyncLocationEfs.DatasyncLocationEfsConfig.property.inTransitEncryption">InTransitEncryption</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/datasync_location_efs#in_transit_encryption DatasyncLocationEfs#in_transit_encryption}. |
 | <code><a href="#@cdktn/provider-aws.datasyncLocationEfs.DatasyncLocationEfsConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.datasyncLocationEfs.DatasyncLocationEfsConfig.property.subdirectory">Subdirectory</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/datasync_location_efs#subdirectory DatasyncLocationEfs#subdirectory}. |
-| <code><a href="#@cdktn/provider-aws.datasyncLocationEfs.DatasyncLocationEfsConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/datasync_location_efs#tags DatasyncLocationEfs#tags}. |
-| <code><a href="#@cdktn/provider-aws.datasyncLocationEfs.DatasyncLocationEfsConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/datasync_location_efs#tags_all DatasyncLocationEfs#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.datasyncLocationEfs.DatasyncLocationEfsConfig.property.subdirectory">Subdirectory</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/datasync_location_efs#subdirectory DatasyncLocationEfs#subdirectory}. |
+| <code><a href="#@cdktn/provider-aws.datasyncLocationEfs.DatasyncLocationEfsConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/datasync_location_efs#tags DatasyncLocationEfs#tags}. |
+| <code><a href="#@cdktn/provider-aws.datasyncLocationEfs.DatasyncLocationEfsConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/datasync_location_efs#tags_all DatasyncLocationEfs#tags_all}. |
 
 ---
 
@@ -1105,7 +1105,7 @@ Ec2Config DatasyncLocationEfsEc2Config
 
 ec2_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/datasync_location_efs#ec2_config DatasyncLocationEfs#ec2_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/datasync_location_efs#ec2_config DatasyncLocationEfs#ec2_config}
 
 ---
 
@@ -1117,7 +1117,7 @@ EfsFileSystemArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/datasync_location_efs#efs_file_system_arn DatasyncLocationEfs#efs_file_system_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/datasync_location_efs#efs_file_system_arn DatasyncLocationEfs#efs_file_system_arn}.
 
 ---
 
@@ -1129,7 +1129,7 @@ AccessPointArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/datasync_location_efs#access_point_arn DatasyncLocationEfs#access_point_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/datasync_location_efs#access_point_arn DatasyncLocationEfs#access_point_arn}.
 
 ---
 
@@ -1141,7 +1141,7 @@ FileSystemAccessRoleArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/datasync_location_efs#file_system_access_role_arn DatasyncLocationEfs#file_system_access_role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/datasync_location_efs#file_system_access_role_arn DatasyncLocationEfs#file_system_access_role_arn}.
 
 ---
 
@@ -1153,7 +1153,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/datasync_location_efs#id DatasyncLocationEfs#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/datasync_location_efs#id DatasyncLocationEfs#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1168,7 +1168,7 @@ InTransitEncryption *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/datasync_location_efs#in_transit_encryption DatasyncLocationEfs#in_transit_encryption}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/datasync_location_efs#in_transit_encryption DatasyncLocationEfs#in_transit_encryption}.
 
 ---
 
@@ -1182,7 +1182,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/datasync_location_efs#region DatasyncLocationEfs#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/datasync_location_efs#region DatasyncLocationEfs#region}
 
 ---
 
@@ -1194,7 +1194,7 @@ Subdirectory *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/datasync_location_efs#subdirectory DatasyncLocationEfs#subdirectory}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/datasync_location_efs#subdirectory DatasyncLocationEfs#subdirectory}.
 
 ---
 
@@ -1206,7 +1206,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/datasync_location_efs#tags DatasyncLocationEfs#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/datasync_location_efs#tags DatasyncLocationEfs#tags}.
 
 ---
 
@@ -1218,7 +1218,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/datasync_location_efs#tags_all DatasyncLocationEfs#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/datasync_location_efs#tags_all DatasyncLocationEfs#tags_all}.
 
 ---
 
@@ -1227,7 +1227,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.datasyncLocationEfs.DatasyncLocationEfsEc2Config.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/datasynclocationefs"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/datasynclocationefs"
 
 &datasynclocationefs.DatasyncLocationEfsEc2Config {
 	SecurityGroupArns: *[]*string,
@@ -1239,8 +1239,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/datasynclocationefs"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.datasyncLocationEfs.DatasyncLocationEfsEc2Config.property.securityGroupArns">SecurityGroupArns</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/datasync_location_efs#security_group_arns DatasyncLocationEfs#security_group_arns}. |
-| <code><a href="#@cdktn/provider-aws.datasyncLocationEfs.DatasyncLocationEfsEc2Config.property.subnetArn">SubnetArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/datasync_location_efs#subnet_arn DatasyncLocationEfs#subnet_arn}. |
+| <code><a href="#@cdktn/provider-aws.datasyncLocationEfs.DatasyncLocationEfsEc2Config.property.securityGroupArns">SecurityGroupArns</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/datasync_location_efs#security_group_arns DatasyncLocationEfs#security_group_arns}. |
+| <code><a href="#@cdktn/provider-aws.datasyncLocationEfs.DatasyncLocationEfsEc2Config.property.subnetArn">SubnetArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/datasync_location_efs#subnet_arn DatasyncLocationEfs#subnet_arn}. |
 
 ---
 
@@ -1252,7 +1252,7 @@ SecurityGroupArns *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/datasync_location_efs#security_group_arns DatasyncLocationEfs#security_group_arns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/datasync_location_efs#security_group_arns DatasyncLocationEfs#security_group_arns}.
 
 ---
 
@@ -1264,7 +1264,7 @@ SubnetArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/datasync_location_efs#subnet_arn DatasyncLocationEfs#subnet_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/datasync_location_efs#subnet_arn DatasyncLocationEfs#subnet_arn}.
 
 ---
 
@@ -1275,7 +1275,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.datasyncLocationEfs.DatasyncLocationEfsEc2ConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/datasynclocationefs"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/datasynclocationefs"
 
 datasynclocationefs.NewDatasyncLocationEfsEc2ConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DatasyncLocationEfsEc2ConfigOutputReference
 ```

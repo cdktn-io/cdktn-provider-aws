@@ -4,12 +4,12 @@
 
 ### ApiGatewayVpcLink <a name="ApiGatewayVpcLink" id="@cdktn/provider-aws.apiGatewayVpcLink.ApiGatewayVpcLink"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/api_gateway_vpc_link aws_api_gateway_vpc_link}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/api_gateway_vpc_link aws_api_gateway_vpc_link}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.apiGatewayVpcLink.ApiGatewayVpcLink.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/apigatewayvpclink"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/apigatewayvpclink"
 
 apigatewayvpclink.NewApiGatewayVpcLink(scope Construct, id *string, config ApiGatewayVpcLinkConfig) ApiGatewayVpcLink
 ```
@@ -413,7 +413,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.apiGatewayVpcLink.ApiGatewayVpcLink.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/apigatewayvpclink"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/apigatewayvpclink"
 
 apigatewayvpclink.ApiGatewayVpcLink_IsConstruct(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.apiGatewayVpcLink.ApiGatewayVpcLink.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/apigatewayvpclink"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/apigatewayvpclink"
 
 apigatewayvpclink.ApiGatewayVpcLink_IsTerraformElement(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ apigatewayvpclink.ApiGatewayVpcLink_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.apiGatewayVpcLink.ApiGatewayVpcLink.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/apigatewayvpclink"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/apigatewayvpclink"
 
 apigatewayvpclink.ApiGatewayVpcLink_IsTerraformResource(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ apigatewayvpclink.ApiGatewayVpcLink_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.apiGatewayVpcLink.ApiGatewayVpcLink.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/apigatewayvpclink"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/apigatewayvpclink"
 
 apigatewayvpclink.ApiGatewayVpcLink_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -502,7 +502,7 @@ The construct id used in the generated config for the ApiGatewayVpcLink to impor
 
 The id of the existing ApiGatewayVpcLink that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/api_gateway_vpc_link#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/api_gateway_vpc_link#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -867,7 +867,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.apiGatewayVpcLink.ApiGatewayVpcLinkConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/apigatewayvpclink"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/apigatewayvpclink"
 
 &apigatewayvpclink.ApiGatewayVpcLinkConfig {
 	Connection: interface{},
@@ -898,13 +898,13 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/apigatewayvpclink"
 | <code><a href="#@cdktn/provider-aws.apiGatewayVpcLink.ApiGatewayVpcLinkConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.apiGatewayVpcLink.ApiGatewayVpcLinkConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.apiGatewayVpcLink.ApiGatewayVpcLinkConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.apiGatewayVpcLink.ApiGatewayVpcLinkConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/api_gateway_vpc_link#name ApiGatewayVpcLink#name}. |
-| <code><a href="#@cdktn/provider-aws.apiGatewayVpcLink.ApiGatewayVpcLinkConfig.property.targetArns">TargetArns</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/api_gateway_vpc_link#target_arns ApiGatewayVpcLink#target_arns}. |
-| <code><a href="#@cdktn/provider-aws.apiGatewayVpcLink.ApiGatewayVpcLinkConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/api_gateway_vpc_link#description ApiGatewayVpcLink#description}. |
-| <code><a href="#@cdktn/provider-aws.apiGatewayVpcLink.ApiGatewayVpcLinkConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/api_gateway_vpc_link#id ApiGatewayVpcLink#id}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayVpcLink.ApiGatewayVpcLinkConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/api_gateway_vpc_link#name ApiGatewayVpcLink#name}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayVpcLink.ApiGatewayVpcLinkConfig.property.targetArns">TargetArns</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/api_gateway_vpc_link#target_arns ApiGatewayVpcLink#target_arns}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayVpcLink.ApiGatewayVpcLinkConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/api_gateway_vpc_link#description ApiGatewayVpcLink#description}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayVpcLink.ApiGatewayVpcLinkConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/api_gateway_vpc_link#id ApiGatewayVpcLink#id}. |
 | <code><a href="#@cdktn/provider-aws.apiGatewayVpcLink.ApiGatewayVpcLinkConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.apiGatewayVpcLink.ApiGatewayVpcLinkConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/api_gateway_vpc_link#tags ApiGatewayVpcLink#tags}. |
-| <code><a href="#@cdktn/provider-aws.apiGatewayVpcLink.ApiGatewayVpcLinkConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/api_gateway_vpc_link#tags_all ApiGatewayVpcLink#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayVpcLink.ApiGatewayVpcLinkConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/api_gateway_vpc_link#tags ApiGatewayVpcLink#tags}. |
+| <code><a href="#@cdktn/provider-aws.apiGatewayVpcLink.ApiGatewayVpcLinkConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/api_gateway_vpc_link#tags_all ApiGatewayVpcLink#tags_all}. |
 
 ---
 
@@ -986,7 +986,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/api_gateway_vpc_link#name ApiGatewayVpcLink#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/api_gateway_vpc_link#name ApiGatewayVpcLink#name}.
 
 ---
 
@@ -998,7 +998,7 @@ TargetArns *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/api_gateway_vpc_link#target_arns ApiGatewayVpcLink#target_arns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/api_gateway_vpc_link#target_arns ApiGatewayVpcLink#target_arns}.
 
 ---
 
@@ -1010,7 +1010,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/api_gateway_vpc_link#description ApiGatewayVpcLink#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/api_gateway_vpc_link#description ApiGatewayVpcLink#description}.
 
 ---
 
@@ -1022,7 +1022,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/api_gateway_vpc_link#id ApiGatewayVpcLink#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/api_gateway_vpc_link#id ApiGatewayVpcLink#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1039,7 +1039,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/api_gateway_vpc_link#region ApiGatewayVpcLink#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/api_gateway_vpc_link#region ApiGatewayVpcLink#region}
 
 ---
 
@@ -1051,7 +1051,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/api_gateway_vpc_link#tags ApiGatewayVpcLink#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/api_gateway_vpc_link#tags ApiGatewayVpcLink#tags}.
 
 ---
 
@@ -1063,7 +1063,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/api_gateway_vpc_link#tags_all ApiGatewayVpcLink#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/api_gateway_vpc_link#tags_all ApiGatewayVpcLink#tags_all}.
 
 ---
 

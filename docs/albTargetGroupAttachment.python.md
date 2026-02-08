@@ -4,7 +4,7 @@
 
 ### AlbTargetGroupAttachment <a name="AlbTargetGroupAttachment" id="@cdktn/provider-aws.albTargetGroupAttachment.AlbTargetGroupAttachment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/alb_target_group_attachment aws_alb_target_group_attachment}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/alb_target_group_attachment aws_alb_target_group_attachment}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.albTargetGroupAttachment.AlbTargetGroupAttachment.Initializer"></a>
 
@@ -42,12 +42,12 @@ albTargetGroupAttachment.AlbTargetGroupAttachment(
 | <code><a href="#@cdktn/provider-aws.albTargetGroupAttachment.AlbTargetGroupAttachment.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.albTargetGroupAttachment.AlbTargetGroupAttachment.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.albTargetGroupAttachment.AlbTargetGroupAttachment.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.albTargetGroupAttachment.AlbTargetGroupAttachment.Initializer.parameter.targetGroupArn">target_group_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/alb_target_group_attachment#target_group_arn AlbTargetGroupAttachment#target_group_arn}. |
-| <code><a href="#@cdktn/provider-aws.albTargetGroupAttachment.AlbTargetGroupAttachment.Initializer.parameter.targetId">target_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/alb_target_group_attachment#target_id AlbTargetGroupAttachment#target_id}. |
-| <code><a href="#@cdktn/provider-aws.albTargetGroupAttachment.AlbTargetGroupAttachment.Initializer.parameter.availabilityZone">availability_zone</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/alb_target_group_attachment#availability_zone AlbTargetGroupAttachment#availability_zone}. |
-| <code><a href="#@cdktn/provider-aws.albTargetGroupAttachment.AlbTargetGroupAttachment.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/alb_target_group_attachment#id AlbTargetGroupAttachment#id}. |
-| <code><a href="#@cdktn/provider-aws.albTargetGroupAttachment.AlbTargetGroupAttachment.Initializer.parameter.port">port</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/alb_target_group_attachment#port AlbTargetGroupAttachment#port}. |
-| <code><a href="#@cdktn/provider-aws.albTargetGroupAttachment.AlbTargetGroupAttachment.Initializer.parameter.quicServerId">quic_server_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/alb_target_group_attachment#quic_server_id AlbTargetGroupAttachment#quic_server_id}. |
+| <code><a href="#@cdktn/provider-aws.albTargetGroupAttachment.AlbTargetGroupAttachment.Initializer.parameter.targetGroupArn">target_group_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/alb_target_group_attachment#target_group_arn AlbTargetGroupAttachment#target_group_arn}. |
+| <code><a href="#@cdktn/provider-aws.albTargetGroupAttachment.AlbTargetGroupAttachment.Initializer.parameter.targetId">target_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/alb_target_group_attachment#target_id AlbTargetGroupAttachment#target_id}. |
+| <code><a href="#@cdktn/provider-aws.albTargetGroupAttachment.AlbTargetGroupAttachment.Initializer.parameter.availabilityZone">availability_zone</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/alb_target_group_attachment#availability_zone AlbTargetGroupAttachment#availability_zone}. |
+| <code><a href="#@cdktn/provider-aws.albTargetGroupAttachment.AlbTargetGroupAttachment.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/alb_target_group_attachment#id AlbTargetGroupAttachment#id}. |
+| <code><a href="#@cdktn/provider-aws.albTargetGroupAttachment.AlbTargetGroupAttachment.Initializer.parameter.port">port</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/alb_target_group_attachment#port AlbTargetGroupAttachment#port}. |
+| <code><a href="#@cdktn/provider-aws.albTargetGroupAttachment.AlbTargetGroupAttachment.Initializer.parameter.quicServerId">quic_server_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/alb_target_group_attachment#quic_server_id AlbTargetGroupAttachment#quic_server_id}. |
 | <code><a href="#@cdktn/provider-aws.albTargetGroupAttachment.AlbTargetGroupAttachment.Initializer.parameter.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -116,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/alb_target_group_attachment#target_group_arn AlbTargetGroupAttachment#target_group_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/alb_target_group_attachment#target_group_arn AlbTargetGroupAttachment#target_group_arn}.
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/alb_target_group_attachment#target_id AlbTargetGroupAttachment#target_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/alb_target_group_attachment#target_id AlbTargetGroupAttachment#target_id}.
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/alb_target_group_attachment#availability_zone AlbTargetGroupAttachment#availability_zone}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/alb_target_group_attachment#availability_zone AlbTargetGroupAttachment#availability_zone}.
 
 ---
 
@@ -140,7 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/alb_target_group_attachment#id AlbTargetGroupAttachment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/alb_target_group_attachment#id AlbTargetGroupAttachment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -151,7 +151,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/alb_target_group_attachment#port AlbTargetGroupAttachment#port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/alb_target_group_attachment#port AlbTargetGroupAttachment#port}.
 
 ---
 
@@ -159,7 +159,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/alb_target_group_attachment#quic_server_id AlbTargetGroupAttachment#quic_server_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/alb_target_group_attachment#quic_server_id AlbTargetGroupAttachment#quic_server_id}.
 
 ---
 
@@ -169,7 +169,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/alb_target_group_attachment#region AlbTargetGroupAttachment#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/alb_target_group_attachment#region AlbTargetGroupAttachment#region}
 
 ---
 
@@ -677,7 +677,7 @@ The construct id used in the generated config for the AlbTargetGroupAttachment t
 
 The id of the existing AlbTargetGroupAttachment that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/alb_target_group_attachment#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/alb_target_group_attachment#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1062,12 +1062,12 @@ albTargetGroupAttachment.AlbTargetGroupAttachmentConfig(
 | <code><a href="#@cdktn/provider-aws.albTargetGroupAttachment.AlbTargetGroupAttachmentConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.albTargetGroupAttachment.AlbTargetGroupAttachmentConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.albTargetGroupAttachment.AlbTargetGroupAttachmentConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.albTargetGroupAttachment.AlbTargetGroupAttachmentConfig.property.targetGroupArn">target_group_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/alb_target_group_attachment#target_group_arn AlbTargetGroupAttachment#target_group_arn}. |
-| <code><a href="#@cdktn/provider-aws.albTargetGroupAttachment.AlbTargetGroupAttachmentConfig.property.targetId">target_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/alb_target_group_attachment#target_id AlbTargetGroupAttachment#target_id}. |
-| <code><a href="#@cdktn/provider-aws.albTargetGroupAttachment.AlbTargetGroupAttachmentConfig.property.availabilityZone">availability_zone</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/alb_target_group_attachment#availability_zone AlbTargetGroupAttachment#availability_zone}. |
-| <code><a href="#@cdktn/provider-aws.albTargetGroupAttachment.AlbTargetGroupAttachmentConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/alb_target_group_attachment#id AlbTargetGroupAttachment#id}. |
-| <code><a href="#@cdktn/provider-aws.albTargetGroupAttachment.AlbTargetGroupAttachmentConfig.property.port">port</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/alb_target_group_attachment#port AlbTargetGroupAttachment#port}. |
-| <code><a href="#@cdktn/provider-aws.albTargetGroupAttachment.AlbTargetGroupAttachmentConfig.property.quicServerId">quic_server_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/alb_target_group_attachment#quic_server_id AlbTargetGroupAttachment#quic_server_id}. |
+| <code><a href="#@cdktn/provider-aws.albTargetGroupAttachment.AlbTargetGroupAttachmentConfig.property.targetGroupArn">target_group_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/alb_target_group_attachment#target_group_arn AlbTargetGroupAttachment#target_group_arn}. |
+| <code><a href="#@cdktn/provider-aws.albTargetGroupAttachment.AlbTargetGroupAttachmentConfig.property.targetId">target_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/alb_target_group_attachment#target_id AlbTargetGroupAttachment#target_id}. |
+| <code><a href="#@cdktn/provider-aws.albTargetGroupAttachment.AlbTargetGroupAttachmentConfig.property.availabilityZone">availability_zone</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/alb_target_group_attachment#availability_zone AlbTargetGroupAttachment#availability_zone}. |
+| <code><a href="#@cdktn/provider-aws.albTargetGroupAttachment.AlbTargetGroupAttachmentConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/alb_target_group_attachment#id AlbTargetGroupAttachment#id}. |
+| <code><a href="#@cdktn/provider-aws.albTargetGroupAttachment.AlbTargetGroupAttachmentConfig.property.port">port</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/alb_target_group_attachment#port AlbTargetGroupAttachment#port}. |
+| <code><a href="#@cdktn/provider-aws.albTargetGroupAttachment.AlbTargetGroupAttachmentConfig.property.quicServerId">quic_server_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/alb_target_group_attachment#quic_server_id AlbTargetGroupAttachment#quic_server_id}. |
 | <code><a href="#@cdktn/provider-aws.albTargetGroupAttachment.AlbTargetGroupAttachmentConfig.property.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -1150,7 +1150,7 @@ target_group_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/alb_target_group_attachment#target_group_arn AlbTargetGroupAttachment#target_group_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/alb_target_group_attachment#target_group_arn AlbTargetGroupAttachment#target_group_arn}.
 
 ---
 
@@ -1162,7 +1162,7 @@ target_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/alb_target_group_attachment#target_id AlbTargetGroupAttachment#target_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/alb_target_group_attachment#target_id AlbTargetGroupAttachment#target_id}.
 
 ---
 
@@ -1174,7 +1174,7 @@ availability_zone: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/alb_target_group_attachment#availability_zone AlbTargetGroupAttachment#availability_zone}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/alb_target_group_attachment#availability_zone AlbTargetGroupAttachment#availability_zone}.
 
 ---
 
@@ -1186,7 +1186,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/alb_target_group_attachment#id AlbTargetGroupAttachment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/alb_target_group_attachment#id AlbTargetGroupAttachment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1201,7 +1201,7 @@ port: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/alb_target_group_attachment#port AlbTargetGroupAttachment#port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/alb_target_group_attachment#port AlbTargetGroupAttachment#port}.
 
 ---
 
@@ -1213,7 +1213,7 @@ quic_server_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/alb_target_group_attachment#quic_server_id AlbTargetGroupAttachment#quic_server_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/alb_target_group_attachment#quic_server_id AlbTargetGroupAttachment#quic_server_id}.
 
 ---
 
@@ -1227,7 +1227,7 @@ region: str
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/alb_target_group_attachment#region AlbTargetGroupAttachment#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/alb_target_group_attachment#region AlbTargetGroupAttachment#region}
 
 ---
 

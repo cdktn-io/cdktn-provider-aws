@@ -4,12 +4,12 @@
 
 ### InspectorAssessmentTarget <a name="InspectorAssessmentTarget" id="@cdktn/provider-aws.inspectorAssessmentTarget.InspectorAssessmentTarget"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/inspector_assessment_target aws_inspector_assessment_target}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/inspector_assessment_target aws_inspector_assessment_target}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.inspectorAssessmentTarget.InspectorAssessmentTarget.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/inspectorassessmenttarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/inspectorassessmenttarget"
 
 inspectorassessmenttarget.NewInspectorAssessmentTarget(scope Construct, id *string, config InspectorAssessmentTargetConfig) InspectorAssessmentTarget
 ```
@@ -399,7 +399,7 @@ func ResetResourceGroupArn()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.inspectorAssessmentTarget.InspectorAssessmentTarget.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/inspectorassessmenttarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/inspectorassessmenttarget"
 
 inspectorassessmenttarget.InspectorAssessmentTarget_IsConstruct(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.inspectorAssessmentTarget.InspectorAssessmentTarget.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/inspectorassessmenttarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/inspectorassessmenttarget"
 
 inspectorassessmenttarget.InspectorAssessmentTarget_IsTerraformElement(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ inspectorassessmenttarget.InspectorAssessmentTarget_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.inspectorAssessmentTarget.InspectorAssessmentTarget.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/inspectorassessmenttarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/inspectorassessmenttarget"
 
 inspectorassessmenttarget.InspectorAssessmentTarget_IsTerraformResource(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ inspectorassessmenttarget.InspectorAssessmentTarget_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.inspectorAssessmentTarget.InspectorAssessmentTarget.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/inspectorassessmenttarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/inspectorassessmenttarget"
 
 inspectorassessmenttarget.InspectorAssessmentTarget_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -488,7 +488,7 @@ The construct id used in the generated config for the InspectorAssessmentTarget 
 
 The id of the existing InspectorAssessmentTarget that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/inspector_assessment_target#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/inspector_assessment_target#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -787,7 +787,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.inspectorAssessmentTarget.InspectorAssessmentTargetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/inspectorassessmenttarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/inspectorassessmenttarget"
 
 &inspectorassessmenttarget.InspectorAssessmentTargetConfig {
 	Connection: interface{},
@@ -815,10 +815,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/inspectorassessmenttar
 | <code><a href="#@cdktn/provider-aws.inspectorAssessmentTarget.InspectorAssessmentTargetConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.inspectorAssessmentTarget.InspectorAssessmentTargetConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.inspectorAssessmentTarget.InspectorAssessmentTargetConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.inspectorAssessmentTarget.InspectorAssessmentTargetConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/inspector_assessment_target#name InspectorAssessmentTarget#name}. |
-| <code><a href="#@cdktn/provider-aws.inspectorAssessmentTarget.InspectorAssessmentTargetConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/inspector_assessment_target#id InspectorAssessmentTarget#id}. |
+| <code><a href="#@cdktn/provider-aws.inspectorAssessmentTarget.InspectorAssessmentTargetConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/inspector_assessment_target#name InspectorAssessmentTarget#name}. |
+| <code><a href="#@cdktn/provider-aws.inspectorAssessmentTarget.InspectorAssessmentTargetConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/inspector_assessment_target#id InspectorAssessmentTarget#id}. |
 | <code><a href="#@cdktn/provider-aws.inspectorAssessmentTarget.InspectorAssessmentTargetConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.inspectorAssessmentTarget.InspectorAssessmentTargetConfig.property.resourceGroupArn">ResourceGroupArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/inspector_assessment_target#resource_group_arn InspectorAssessmentTarget#resource_group_arn}. |
+| <code><a href="#@cdktn/provider-aws.inspectorAssessmentTarget.InspectorAssessmentTargetConfig.property.resourceGroupArn">ResourceGroupArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/inspector_assessment_target#resource_group_arn InspectorAssessmentTarget#resource_group_arn}. |
 
 ---
 
@@ -900,7 +900,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/inspector_assessment_target#name InspectorAssessmentTarget#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/inspector_assessment_target#name InspectorAssessmentTarget#name}.
 
 ---
 
@@ -912,7 +912,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/inspector_assessment_target#id InspectorAssessmentTarget#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/inspector_assessment_target#id InspectorAssessmentTarget#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -929,7 +929,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/inspector_assessment_target#region InspectorAssessmentTarget#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/inspector_assessment_target#region InspectorAssessmentTarget#region}
 
 ---
 
@@ -941,7 +941,7 @@ ResourceGroupArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/inspector_assessment_target#resource_group_arn InspectorAssessmentTarget#resource_group_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/inspector_assessment_target#resource_group_arn InspectorAssessmentTarget#resource_group_arn}.
 
 ---
 

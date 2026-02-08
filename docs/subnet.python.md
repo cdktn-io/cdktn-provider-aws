@@ -4,7 +4,7 @@
 
 ### Subnet <a name="Subnet" id="@cdktn/provider-aws.subnet.Subnet"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet aws_subnet}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/subnet aws_subnet}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.subnet.Subnet.Initializer"></a>
 
@@ -32,8 +32,12 @@ subnet.Subnet(
   enable_resource_name_dns_aaaa_record_on_launch: bool | IResolvable = None,
   enable_resource_name_dns_a_record_on_launch: bool | IResolvable = None,
   id: str = None,
+  ipv4_ipam_pool_id: str = None,
+  ipv4_netmask_length: typing.Union[int, float] = None,
   ipv6_cidr_block: str = None,
+  ipv6_ipam_pool_id: str = None,
   ipv6_native: bool | IResolvable = None,
+  ipv6_netmask_length: typing.Union[int, float] = None,
   map_customer_owned_ip_on_launch: bool | IResolvable = None,
   map_public_ip_on_launch: bool | IResolvable = None,
   outpost_arn: str = None,
@@ -56,26 +60,30 @@ subnet.Subnet(
 | <code><a href="#@cdktn/provider-aws.subnet.Subnet.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.subnet.Subnet.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.subnet.Subnet.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.subnet.Subnet.Initializer.parameter.vpcId">vpc_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#vpc_id Subnet#vpc_id}. |
-| <code><a href="#@cdktn/provider-aws.subnet.Subnet.Initializer.parameter.assignIpv6AddressOnCreation">assign_ipv6_address_on_creation</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#assign_ipv6_address_on_creation Subnet#assign_ipv6_address_on_creation}. |
-| <code><a href="#@cdktn/provider-aws.subnet.Subnet.Initializer.parameter.availabilityZone">availability_zone</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#availability_zone Subnet#availability_zone}. |
-| <code><a href="#@cdktn/provider-aws.subnet.Subnet.Initializer.parameter.availabilityZoneId">availability_zone_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#availability_zone_id Subnet#availability_zone_id}. |
-| <code><a href="#@cdktn/provider-aws.subnet.Subnet.Initializer.parameter.cidrBlock">cidr_block</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#cidr_block Subnet#cidr_block}. |
-| <code><a href="#@cdktn/provider-aws.subnet.Subnet.Initializer.parameter.customerOwnedIpv4Pool">customer_owned_ipv4_pool</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#customer_owned_ipv4_pool Subnet#customer_owned_ipv4_pool}. |
-| <code><a href="#@cdktn/provider-aws.subnet.Subnet.Initializer.parameter.enableDns64">enable_dns64</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#enable_dns64 Subnet#enable_dns64}. |
-| <code><a href="#@cdktn/provider-aws.subnet.Subnet.Initializer.parameter.enableLniAtDeviceIndex">enable_lni_at_device_index</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#enable_lni_at_device_index Subnet#enable_lni_at_device_index}. |
-| <code><a href="#@cdktn/provider-aws.subnet.Subnet.Initializer.parameter.enableResourceNameDnsAaaaRecordOnLaunch">enable_resource_name_dns_aaaa_record_on_launch</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#enable_resource_name_dns_aaaa_record_on_launch Subnet#enable_resource_name_dns_aaaa_record_on_launch}. |
-| <code><a href="#@cdktn/provider-aws.subnet.Subnet.Initializer.parameter.enableResourceNameDnsARecordOnLaunch">enable_resource_name_dns_a_record_on_launch</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#enable_resource_name_dns_a_record_on_launch Subnet#enable_resource_name_dns_a_record_on_launch}. |
-| <code><a href="#@cdktn/provider-aws.subnet.Subnet.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#id Subnet#id}. |
-| <code><a href="#@cdktn/provider-aws.subnet.Subnet.Initializer.parameter.ipv6CidrBlock">ipv6_cidr_block</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#ipv6_cidr_block Subnet#ipv6_cidr_block}. |
-| <code><a href="#@cdktn/provider-aws.subnet.Subnet.Initializer.parameter.ipv6Native">ipv6_native</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#ipv6_native Subnet#ipv6_native}. |
-| <code><a href="#@cdktn/provider-aws.subnet.Subnet.Initializer.parameter.mapCustomerOwnedIpOnLaunch">map_customer_owned_ip_on_launch</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#map_customer_owned_ip_on_launch Subnet#map_customer_owned_ip_on_launch}. |
-| <code><a href="#@cdktn/provider-aws.subnet.Subnet.Initializer.parameter.mapPublicIpOnLaunch">map_public_ip_on_launch</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#map_public_ip_on_launch Subnet#map_public_ip_on_launch}. |
-| <code><a href="#@cdktn/provider-aws.subnet.Subnet.Initializer.parameter.outpostArn">outpost_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#outpost_arn Subnet#outpost_arn}. |
-| <code><a href="#@cdktn/provider-aws.subnet.Subnet.Initializer.parameter.privateDnsHostnameTypeOnLaunch">private_dns_hostname_type_on_launch</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#private_dns_hostname_type_on_launch Subnet#private_dns_hostname_type_on_launch}. |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.Initializer.parameter.vpcId">vpc_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/subnet#vpc_id Subnet#vpc_id}. |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.Initializer.parameter.assignIpv6AddressOnCreation">assign_ipv6_address_on_creation</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/subnet#assign_ipv6_address_on_creation Subnet#assign_ipv6_address_on_creation}. |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.Initializer.parameter.availabilityZone">availability_zone</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/subnet#availability_zone Subnet#availability_zone}. |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.Initializer.parameter.availabilityZoneId">availability_zone_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/subnet#availability_zone_id Subnet#availability_zone_id}. |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.Initializer.parameter.cidrBlock">cidr_block</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/subnet#cidr_block Subnet#cidr_block}. |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.Initializer.parameter.customerOwnedIpv4Pool">customer_owned_ipv4_pool</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/subnet#customer_owned_ipv4_pool Subnet#customer_owned_ipv4_pool}. |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.Initializer.parameter.enableDns64">enable_dns64</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/subnet#enable_dns64 Subnet#enable_dns64}. |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.Initializer.parameter.enableLniAtDeviceIndex">enable_lni_at_device_index</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/subnet#enable_lni_at_device_index Subnet#enable_lni_at_device_index}. |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.Initializer.parameter.enableResourceNameDnsAaaaRecordOnLaunch">enable_resource_name_dns_aaaa_record_on_launch</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/subnet#enable_resource_name_dns_aaaa_record_on_launch Subnet#enable_resource_name_dns_aaaa_record_on_launch}. |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.Initializer.parameter.enableResourceNameDnsARecordOnLaunch">enable_resource_name_dns_a_record_on_launch</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/subnet#enable_resource_name_dns_a_record_on_launch Subnet#enable_resource_name_dns_a_record_on_launch}. |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/subnet#id Subnet#id}. |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.Initializer.parameter.ipv4IpamPoolId">ipv4_ipam_pool_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/subnet#ipv4_ipam_pool_id Subnet#ipv4_ipam_pool_id}. |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.Initializer.parameter.ipv4NetmaskLength">ipv4_netmask_length</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/subnet#ipv4_netmask_length Subnet#ipv4_netmask_length}. |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.Initializer.parameter.ipv6CidrBlock">ipv6_cidr_block</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/subnet#ipv6_cidr_block Subnet#ipv6_cidr_block}. |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.Initializer.parameter.ipv6IpamPoolId">ipv6_ipam_pool_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/subnet#ipv6_ipam_pool_id Subnet#ipv6_ipam_pool_id}. |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.Initializer.parameter.ipv6Native">ipv6_native</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/subnet#ipv6_native Subnet#ipv6_native}. |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.Initializer.parameter.ipv6NetmaskLength">ipv6_netmask_length</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/subnet#ipv6_netmask_length Subnet#ipv6_netmask_length}. |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.Initializer.parameter.mapCustomerOwnedIpOnLaunch">map_customer_owned_ip_on_launch</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/subnet#map_customer_owned_ip_on_launch Subnet#map_customer_owned_ip_on_launch}. |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.Initializer.parameter.mapPublicIpOnLaunch">map_public_ip_on_launch</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/subnet#map_public_ip_on_launch Subnet#map_public_ip_on_launch}. |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.Initializer.parameter.outpostArn">outpost_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/subnet#outpost_arn Subnet#outpost_arn}. |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.Initializer.parameter.privateDnsHostnameTypeOnLaunch">private_dns_hostname_type_on_launch</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/subnet#private_dns_hostname_type_on_launch Subnet#private_dns_hostname_type_on_launch}. |
 | <code><a href="#@cdktn/provider-aws.subnet.Subnet.Initializer.parameter.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.subnet.Subnet.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#tags Subnet#tags}. |
-| <code><a href="#@cdktn/provider-aws.subnet.Subnet.Initializer.parameter.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#tags_all Subnet#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/subnet#tags Subnet#tags}. |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.Initializer.parameter.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/subnet#tags_all Subnet#tags_all}. |
 | <code><a href="#@cdktn/provider-aws.subnet.Subnet.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.subnet.SubnetTimeouts">SubnetTimeouts</a></code> | timeouts block. |
 
 ---
@@ -144,7 +152,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#vpc_id Subnet#vpc_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/subnet#vpc_id Subnet#vpc_id}.
 
 ---
 
@@ -152,7 +160,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#assign_ipv6_address_on_creation Subnet#assign_ipv6_address_on_creation}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/subnet#assign_ipv6_address_on_creation Subnet#assign_ipv6_address_on_creation}.
 
 ---
 
@@ -160,7 +168,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#availability_zone Subnet#availability_zone}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/subnet#availability_zone Subnet#availability_zone}.
 
 ---
 
@@ -168,7 +176,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#availability_zone_id Subnet#availability_zone_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/subnet#availability_zone_id Subnet#availability_zone_id}.
 
 ---
 
@@ -176,7 +184,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#cidr_block Subnet#cidr_block}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/subnet#cidr_block Subnet#cidr_block}.
 
 ---
 
@@ -184,7 +192,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#customer_owned_ipv4_pool Subnet#customer_owned_ipv4_pool}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/subnet#customer_owned_ipv4_pool Subnet#customer_owned_ipv4_pool}.
 
 ---
 
@@ -192,7 +200,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#enable_dns64 Subnet#enable_dns64}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/subnet#enable_dns64 Subnet#enable_dns64}.
 
 ---
 
@@ -200,7 +208,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#enable_lni_at_device_index Subnet#enable_lni_at_device_index}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/subnet#enable_lni_at_device_index Subnet#enable_lni_at_device_index}.
 
 ---
 
@@ -208,7 +216,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#enable_resource_name_dns_aaaa_record_on_launch Subnet#enable_resource_name_dns_aaaa_record_on_launch}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/subnet#enable_resource_name_dns_aaaa_record_on_launch Subnet#enable_resource_name_dns_aaaa_record_on_launch}.
 
 ---
 
@@ -216,7 +224,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#enable_resource_name_dns_a_record_on_launch Subnet#enable_resource_name_dns_a_record_on_launch}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/subnet#enable_resource_name_dns_a_record_on_launch Subnet#enable_resource_name_dns_a_record_on_launch}.
 
 ---
 
@@ -224,10 +232,26 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#id Subnet#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/subnet#id Subnet#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `ipv4_ipam_pool_id`<sup>Optional</sup> <a name="ipv4_ipam_pool_id" id="@cdktn/provider-aws.subnet.Subnet.Initializer.parameter.ipv4IpamPoolId"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/subnet#ipv4_ipam_pool_id Subnet#ipv4_ipam_pool_id}.
+
+---
+
+##### `ipv4_netmask_length`<sup>Optional</sup> <a name="ipv4_netmask_length" id="@cdktn/provider-aws.subnet.Subnet.Initializer.parameter.ipv4NetmaskLength"></a>
+
+- *Type:* typing.Union[int, float]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/subnet#ipv4_netmask_length Subnet#ipv4_netmask_length}.
 
 ---
 
@@ -235,7 +259,15 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#ipv6_cidr_block Subnet#ipv6_cidr_block}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/subnet#ipv6_cidr_block Subnet#ipv6_cidr_block}.
+
+---
+
+##### `ipv6_ipam_pool_id`<sup>Optional</sup> <a name="ipv6_ipam_pool_id" id="@cdktn/provider-aws.subnet.Subnet.Initializer.parameter.ipv6IpamPoolId"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/subnet#ipv6_ipam_pool_id Subnet#ipv6_ipam_pool_id}.
 
 ---
 
@@ -243,7 +275,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#ipv6_native Subnet#ipv6_native}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/subnet#ipv6_native Subnet#ipv6_native}.
+
+---
+
+##### `ipv6_netmask_length`<sup>Optional</sup> <a name="ipv6_netmask_length" id="@cdktn/provider-aws.subnet.Subnet.Initializer.parameter.ipv6NetmaskLength"></a>
+
+- *Type:* typing.Union[int, float]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/subnet#ipv6_netmask_length Subnet#ipv6_netmask_length}.
 
 ---
 
@@ -251,7 +291,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#map_customer_owned_ip_on_launch Subnet#map_customer_owned_ip_on_launch}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/subnet#map_customer_owned_ip_on_launch Subnet#map_customer_owned_ip_on_launch}.
 
 ---
 
@@ -259,7 +299,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#map_public_ip_on_launch Subnet#map_public_ip_on_launch}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/subnet#map_public_ip_on_launch Subnet#map_public_ip_on_launch}.
 
 ---
 
@@ -267,7 +307,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#outpost_arn Subnet#outpost_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/subnet#outpost_arn Subnet#outpost_arn}.
 
 ---
 
@@ -275,7 +315,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#private_dns_hostname_type_on_launch Subnet#private_dns_hostname_type_on_launch}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/subnet#private_dns_hostname_type_on_launch Subnet#private_dns_hostname_type_on_launch}.
 
 ---
 
@@ -285,7 +325,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#region Subnet#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/subnet#region Subnet#region}
 
 ---
 
@@ -293,7 +333,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#tags Subnet#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/subnet#tags Subnet#tags}.
 
 ---
 
@@ -301,7 +341,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#tags_all Subnet#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/subnet#tags_all Subnet#tags_all}.
 
 ---
 
@@ -311,7 +351,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#timeouts Subnet#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/subnet#timeouts Subnet#timeouts}
 
 ---
 
@@ -353,8 +393,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-aws.subnet.Subnet.resetEnableResourceNameDnsAaaaRecordOnLaunch">reset_enable_resource_name_dns_aaaa_record_on_launch</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.subnet.Subnet.resetEnableResourceNameDnsARecordOnLaunch">reset_enable_resource_name_dns_a_record_on_launch</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.subnet.Subnet.resetId">reset_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.resetIpv4IpamPoolId">reset_ipv4_ipam_pool_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.resetIpv4NetmaskLength">reset_ipv4_netmask_length</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.subnet.Subnet.resetIpv6CidrBlock">reset_ipv6_cidr_block</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.resetIpv6IpamPoolId">reset_ipv6_ipam_pool_id</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.subnet.Subnet.resetIpv6Native">reset_ipv6_native</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.resetIpv6NetmaskLength">reset_ipv6_netmask_length</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.subnet.Subnet.resetMapCustomerOwnedIpOnLaunch">reset_map_customer_owned_ip_on_launch</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.subnet.Subnet.resetMapPublicIpOnLaunch">reset_map_public_ip_on_launch</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.subnet.Subnet.resetOutpostArn">reset_outpost_arn</a></code> | *No description.* |
@@ -704,7 +748,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#create Subnet#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/subnet#create Subnet#create}.
 
 ---
 
@@ -712,7 +756,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#delete Subnet#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/subnet#delete Subnet#delete}.
 
 ---
 
@@ -776,16 +820,40 @@ def reset_enable_resource_name_dns_a_record_on_launch() -> None
 def reset_id() -> None
 ```
 
+##### `reset_ipv4_ipam_pool_id` <a name="reset_ipv4_ipam_pool_id" id="@cdktn/provider-aws.subnet.Subnet.resetIpv4IpamPoolId"></a>
+
+```python
+def reset_ipv4_ipam_pool_id() -> None
+```
+
+##### `reset_ipv4_netmask_length` <a name="reset_ipv4_netmask_length" id="@cdktn/provider-aws.subnet.Subnet.resetIpv4NetmaskLength"></a>
+
+```python
+def reset_ipv4_netmask_length() -> None
+```
+
 ##### `reset_ipv6_cidr_block` <a name="reset_ipv6_cidr_block" id="@cdktn/provider-aws.subnet.Subnet.resetIpv6CidrBlock"></a>
 
 ```python
 def reset_ipv6_cidr_block() -> None
 ```
 
+##### `reset_ipv6_ipam_pool_id` <a name="reset_ipv6_ipam_pool_id" id="@cdktn/provider-aws.subnet.Subnet.resetIpv6IpamPoolId"></a>
+
+```python
+def reset_ipv6_ipam_pool_id() -> None
+```
+
 ##### `reset_ipv6_native` <a name="reset_ipv6_native" id="@cdktn/provider-aws.subnet.Subnet.resetIpv6Native"></a>
 
 ```python
 def reset_ipv6_native() -> None
+```
+
+##### `reset_ipv6_netmask_length` <a name="reset_ipv6_netmask_length" id="@cdktn/provider-aws.subnet.Subnet.resetIpv6NetmaskLength"></a>
+
+```python
+def reset_ipv6_netmask_length() -> None
 ```
 
 ##### `reset_map_customer_owned_ip_on_launch` <a name="reset_map_customer_owned_ip_on_launch" id="@cdktn/provider-aws.subnet.Subnet.resetMapCustomerOwnedIpOnLaunch"></a>
@@ -950,7 +1018,7 @@ The construct id used in the generated config for the Subnet to import.
 
 The id of the existing Subnet that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/subnet#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -994,8 +1062,12 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 | <code><a href="#@cdktn/provider-aws.subnet.Subnet.property.enableResourceNameDnsAaaaRecordOnLaunchInput">enable_resource_name_dns_aaaa_record_on_launch_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.subnet.Subnet.property.enableResourceNameDnsARecordOnLaunchInput">enable_resource_name_dns_a_record_on_launch_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.subnet.Subnet.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.property.ipv4IpamPoolIdInput">ipv4_ipam_pool_id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.property.ipv4NetmaskLengthInput">ipv4_netmask_length_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.subnet.Subnet.property.ipv6CidrBlockInput">ipv6_cidr_block_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.property.ipv6IpamPoolIdInput">ipv6_ipam_pool_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.subnet.Subnet.property.ipv6NativeInput">ipv6_native_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.property.ipv6NetmaskLengthInput">ipv6_netmask_length_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.subnet.Subnet.property.mapCustomerOwnedIpOnLaunchInput">map_customer_owned_ip_on_launch_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.subnet.Subnet.property.mapPublicIpOnLaunchInput">map_public_ip_on_launch_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.subnet.Subnet.property.outpostArnInput">outpost_arn_input</a></code> | <code>str</code> | *No description.* |
@@ -1015,8 +1087,12 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 | <code><a href="#@cdktn/provider-aws.subnet.Subnet.property.enableResourceNameDnsAaaaRecordOnLaunch">enable_resource_name_dns_aaaa_record_on_launch</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.subnet.Subnet.property.enableResourceNameDnsARecordOnLaunch">enable_resource_name_dns_a_record_on_launch</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.subnet.Subnet.property.id">id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.property.ipv4IpamPoolId">ipv4_ipam_pool_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.property.ipv4NetmaskLength">ipv4_netmask_length</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.subnet.Subnet.property.ipv6CidrBlock">ipv6_cidr_block</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.property.ipv6IpamPoolId">ipv6_ipam_pool_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.subnet.Subnet.property.ipv6Native">ipv6_native</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.subnet.Subnet.property.ipv6NetmaskLength">ipv6_netmask_length</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.subnet.Subnet.property.mapCustomerOwnedIpOnLaunch">map_customer_owned_ip_on_launch</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.subnet.Subnet.property.mapPublicIpOnLaunch">map_public_ip_on_launch</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.subnet.Subnet.property.outpostArn">outpost_arn</a></code> | <code>str</code> | *No description.* |
@@ -1310,10 +1386,40 @@ id_input: str
 
 ---
 
+##### `ipv4_ipam_pool_id_input`<sup>Optional</sup> <a name="ipv4_ipam_pool_id_input" id="@cdktn/provider-aws.subnet.Subnet.property.ipv4IpamPoolIdInput"></a>
+
+```python
+ipv4_ipam_pool_id_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `ipv4_netmask_length_input`<sup>Optional</sup> <a name="ipv4_netmask_length_input" id="@cdktn/provider-aws.subnet.Subnet.property.ipv4NetmaskLengthInput"></a>
+
+```python
+ipv4_netmask_length_input: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
 ##### `ipv6_cidr_block_input`<sup>Optional</sup> <a name="ipv6_cidr_block_input" id="@cdktn/provider-aws.subnet.Subnet.property.ipv6CidrBlockInput"></a>
 
 ```python
 ipv6_cidr_block_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `ipv6_ipam_pool_id_input`<sup>Optional</sup> <a name="ipv6_ipam_pool_id_input" id="@cdktn/provider-aws.subnet.Subnet.property.ipv6IpamPoolIdInput"></a>
+
+```python
+ipv6_ipam_pool_id_input: str
 ```
 
 - *Type:* str
@@ -1327,6 +1433,16 @@ ipv6_native_input: bool | IResolvable
 ```
 
 - *Type:* bool | cdktf.IResolvable
+
+---
+
+##### `ipv6_netmask_length_input`<sup>Optional</sup> <a name="ipv6_netmask_length_input" id="@cdktn/provider-aws.subnet.Subnet.property.ipv6NetmaskLengthInput"></a>
+
+```python
+ipv6_netmask_length_input: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
 
 ---
 
@@ -1520,10 +1636,40 @@ id: str
 
 ---
 
+##### `ipv4_ipam_pool_id`<sup>Required</sup> <a name="ipv4_ipam_pool_id" id="@cdktn/provider-aws.subnet.Subnet.property.ipv4IpamPoolId"></a>
+
+```python
+ipv4_ipam_pool_id: str
+```
+
+- *Type:* str
+
+---
+
+##### `ipv4_netmask_length`<sup>Required</sup> <a name="ipv4_netmask_length" id="@cdktn/provider-aws.subnet.Subnet.property.ipv4NetmaskLength"></a>
+
+```python
+ipv4_netmask_length: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
 ##### `ipv6_cidr_block`<sup>Required</sup> <a name="ipv6_cidr_block" id="@cdktn/provider-aws.subnet.Subnet.property.ipv6CidrBlock"></a>
 
 ```python
 ipv6_cidr_block: str
+```
+
+- *Type:* str
+
+---
+
+##### `ipv6_ipam_pool_id`<sup>Required</sup> <a name="ipv6_ipam_pool_id" id="@cdktn/provider-aws.subnet.Subnet.property.ipv6IpamPoolId"></a>
+
+```python
+ipv6_ipam_pool_id: str
 ```
 
 - *Type:* str
@@ -1537,6 +1683,16 @@ ipv6_native: bool | IResolvable
 ```
 
 - *Type:* bool | cdktf.IResolvable
+
+---
+
+##### `ipv6_netmask_length`<sup>Required</sup> <a name="ipv6_netmask_length" id="@cdktn/provider-aws.subnet.Subnet.property.ipv6NetmaskLength"></a>
+
+```python
+ipv6_netmask_length: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
 
 ---
 
@@ -1666,8 +1822,12 @@ subnet.SubnetConfig(
   enable_resource_name_dns_aaaa_record_on_launch: bool | IResolvable = None,
   enable_resource_name_dns_a_record_on_launch: bool | IResolvable = None,
   id: str = None,
+  ipv4_ipam_pool_id: str = None,
+  ipv4_netmask_length: typing.Union[int, float] = None,
   ipv6_cidr_block: str = None,
+  ipv6_ipam_pool_id: str = None,
   ipv6_native: bool | IResolvable = None,
+  ipv6_netmask_length: typing.Union[int, float] = None,
   map_customer_owned_ip_on_launch: bool | IResolvable = None,
   map_public_ip_on_launch: bool | IResolvable = None,
   outpost_arn: str = None,
@@ -1690,26 +1850,30 @@ subnet.SubnetConfig(
 | <code><a href="#@cdktn/provider-aws.subnet.SubnetConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.subnet.SubnetConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.subnet.SubnetConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.subnet.SubnetConfig.property.vpcId">vpc_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#vpc_id Subnet#vpc_id}. |
-| <code><a href="#@cdktn/provider-aws.subnet.SubnetConfig.property.assignIpv6AddressOnCreation">assign_ipv6_address_on_creation</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#assign_ipv6_address_on_creation Subnet#assign_ipv6_address_on_creation}. |
-| <code><a href="#@cdktn/provider-aws.subnet.SubnetConfig.property.availabilityZone">availability_zone</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#availability_zone Subnet#availability_zone}. |
-| <code><a href="#@cdktn/provider-aws.subnet.SubnetConfig.property.availabilityZoneId">availability_zone_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#availability_zone_id Subnet#availability_zone_id}. |
-| <code><a href="#@cdktn/provider-aws.subnet.SubnetConfig.property.cidrBlock">cidr_block</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#cidr_block Subnet#cidr_block}. |
-| <code><a href="#@cdktn/provider-aws.subnet.SubnetConfig.property.customerOwnedIpv4Pool">customer_owned_ipv4_pool</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#customer_owned_ipv4_pool Subnet#customer_owned_ipv4_pool}. |
-| <code><a href="#@cdktn/provider-aws.subnet.SubnetConfig.property.enableDns64">enable_dns64</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#enable_dns64 Subnet#enable_dns64}. |
-| <code><a href="#@cdktn/provider-aws.subnet.SubnetConfig.property.enableLniAtDeviceIndex">enable_lni_at_device_index</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#enable_lni_at_device_index Subnet#enable_lni_at_device_index}. |
-| <code><a href="#@cdktn/provider-aws.subnet.SubnetConfig.property.enableResourceNameDnsAaaaRecordOnLaunch">enable_resource_name_dns_aaaa_record_on_launch</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#enable_resource_name_dns_aaaa_record_on_launch Subnet#enable_resource_name_dns_aaaa_record_on_launch}. |
-| <code><a href="#@cdktn/provider-aws.subnet.SubnetConfig.property.enableResourceNameDnsARecordOnLaunch">enable_resource_name_dns_a_record_on_launch</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#enable_resource_name_dns_a_record_on_launch Subnet#enable_resource_name_dns_a_record_on_launch}. |
-| <code><a href="#@cdktn/provider-aws.subnet.SubnetConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#id Subnet#id}. |
-| <code><a href="#@cdktn/provider-aws.subnet.SubnetConfig.property.ipv6CidrBlock">ipv6_cidr_block</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#ipv6_cidr_block Subnet#ipv6_cidr_block}. |
-| <code><a href="#@cdktn/provider-aws.subnet.SubnetConfig.property.ipv6Native">ipv6_native</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#ipv6_native Subnet#ipv6_native}. |
-| <code><a href="#@cdktn/provider-aws.subnet.SubnetConfig.property.mapCustomerOwnedIpOnLaunch">map_customer_owned_ip_on_launch</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#map_customer_owned_ip_on_launch Subnet#map_customer_owned_ip_on_launch}. |
-| <code><a href="#@cdktn/provider-aws.subnet.SubnetConfig.property.mapPublicIpOnLaunch">map_public_ip_on_launch</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#map_public_ip_on_launch Subnet#map_public_ip_on_launch}. |
-| <code><a href="#@cdktn/provider-aws.subnet.SubnetConfig.property.outpostArn">outpost_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#outpost_arn Subnet#outpost_arn}. |
-| <code><a href="#@cdktn/provider-aws.subnet.SubnetConfig.property.privateDnsHostnameTypeOnLaunch">private_dns_hostname_type_on_launch</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#private_dns_hostname_type_on_launch Subnet#private_dns_hostname_type_on_launch}. |
+| <code><a href="#@cdktn/provider-aws.subnet.SubnetConfig.property.vpcId">vpc_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/subnet#vpc_id Subnet#vpc_id}. |
+| <code><a href="#@cdktn/provider-aws.subnet.SubnetConfig.property.assignIpv6AddressOnCreation">assign_ipv6_address_on_creation</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/subnet#assign_ipv6_address_on_creation Subnet#assign_ipv6_address_on_creation}. |
+| <code><a href="#@cdktn/provider-aws.subnet.SubnetConfig.property.availabilityZone">availability_zone</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/subnet#availability_zone Subnet#availability_zone}. |
+| <code><a href="#@cdktn/provider-aws.subnet.SubnetConfig.property.availabilityZoneId">availability_zone_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/subnet#availability_zone_id Subnet#availability_zone_id}. |
+| <code><a href="#@cdktn/provider-aws.subnet.SubnetConfig.property.cidrBlock">cidr_block</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/subnet#cidr_block Subnet#cidr_block}. |
+| <code><a href="#@cdktn/provider-aws.subnet.SubnetConfig.property.customerOwnedIpv4Pool">customer_owned_ipv4_pool</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/subnet#customer_owned_ipv4_pool Subnet#customer_owned_ipv4_pool}. |
+| <code><a href="#@cdktn/provider-aws.subnet.SubnetConfig.property.enableDns64">enable_dns64</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/subnet#enable_dns64 Subnet#enable_dns64}. |
+| <code><a href="#@cdktn/provider-aws.subnet.SubnetConfig.property.enableLniAtDeviceIndex">enable_lni_at_device_index</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/subnet#enable_lni_at_device_index Subnet#enable_lni_at_device_index}. |
+| <code><a href="#@cdktn/provider-aws.subnet.SubnetConfig.property.enableResourceNameDnsAaaaRecordOnLaunch">enable_resource_name_dns_aaaa_record_on_launch</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/subnet#enable_resource_name_dns_aaaa_record_on_launch Subnet#enable_resource_name_dns_aaaa_record_on_launch}. |
+| <code><a href="#@cdktn/provider-aws.subnet.SubnetConfig.property.enableResourceNameDnsARecordOnLaunch">enable_resource_name_dns_a_record_on_launch</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/subnet#enable_resource_name_dns_a_record_on_launch Subnet#enable_resource_name_dns_a_record_on_launch}. |
+| <code><a href="#@cdktn/provider-aws.subnet.SubnetConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/subnet#id Subnet#id}. |
+| <code><a href="#@cdktn/provider-aws.subnet.SubnetConfig.property.ipv4IpamPoolId">ipv4_ipam_pool_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/subnet#ipv4_ipam_pool_id Subnet#ipv4_ipam_pool_id}. |
+| <code><a href="#@cdktn/provider-aws.subnet.SubnetConfig.property.ipv4NetmaskLength">ipv4_netmask_length</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/subnet#ipv4_netmask_length Subnet#ipv4_netmask_length}. |
+| <code><a href="#@cdktn/provider-aws.subnet.SubnetConfig.property.ipv6CidrBlock">ipv6_cidr_block</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/subnet#ipv6_cidr_block Subnet#ipv6_cidr_block}. |
+| <code><a href="#@cdktn/provider-aws.subnet.SubnetConfig.property.ipv6IpamPoolId">ipv6_ipam_pool_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/subnet#ipv6_ipam_pool_id Subnet#ipv6_ipam_pool_id}. |
+| <code><a href="#@cdktn/provider-aws.subnet.SubnetConfig.property.ipv6Native">ipv6_native</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/subnet#ipv6_native Subnet#ipv6_native}. |
+| <code><a href="#@cdktn/provider-aws.subnet.SubnetConfig.property.ipv6NetmaskLength">ipv6_netmask_length</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/subnet#ipv6_netmask_length Subnet#ipv6_netmask_length}. |
+| <code><a href="#@cdktn/provider-aws.subnet.SubnetConfig.property.mapCustomerOwnedIpOnLaunch">map_customer_owned_ip_on_launch</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/subnet#map_customer_owned_ip_on_launch Subnet#map_customer_owned_ip_on_launch}. |
+| <code><a href="#@cdktn/provider-aws.subnet.SubnetConfig.property.mapPublicIpOnLaunch">map_public_ip_on_launch</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/subnet#map_public_ip_on_launch Subnet#map_public_ip_on_launch}. |
+| <code><a href="#@cdktn/provider-aws.subnet.SubnetConfig.property.outpostArn">outpost_arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/subnet#outpost_arn Subnet#outpost_arn}. |
+| <code><a href="#@cdktn/provider-aws.subnet.SubnetConfig.property.privateDnsHostnameTypeOnLaunch">private_dns_hostname_type_on_launch</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/subnet#private_dns_hostname_type_on_launch Subnet#private_dns_hostname_type_on_launch}. |
 | <code><a href="#@cdktn/provider-aws.subnet.SubnetConfig.property.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.subnet.SubnetConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#tags Subnet#tags}. |
-| <code><a href="#@cdktn/provider-aws.subnet.SubnetConfig.property.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#tags_all Subnet#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.subnet.SubnetConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/subnet#tags Subnet#tags}. |
+| <code><a href="#@cdktn/provider-aws.subnet.SubnetConfig.property.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/subnet#tags_all Subnet#tags_all}. |
 | <code><a href="#@cdktn/provider-aws.subnet.SubnetConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.subnet.SubnetTimeouts">SubnetTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1792,7 +1956,7 @@ vpc_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#vpc_id Subnet#vpc_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/subnet#vpc_id Subnet#vpc_id}.
 
 ---
 
@@ -1804,7 +1968,7 @@ assign_ipv6_address_on_creation: bool | IResolvable
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#assign_ipv6_address_on_creation Subnet#assign_ipv6_address_on_creation}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/subnet#assign_ipv6_address_on_creation Subnet#assign_ipv6_address_on_creation}.
 
 ---
 
@@ -1816,7 +1980,7 @@ availability_zone: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#availability_zone Subnet#availability_zone}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/subnet#availability_zone Subnet#availability_zone}.
 
 ---
 
@@ -1828,7 +1992,7 @@ availability_zone_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#availability_zone_id Subnet#availability_zone_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/subnet#availability_zone_id Subnet#availability_zone_id}.
 
 ---
 
@@ -1840,7 +2004,7 @@ cidr_block: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#cidr_block Subnet#cidr_block}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/subnet#cidr_block Subnet#cidr_block}.
 
 ---
 
@@ -1852,7 +2016,7 @@ customer_owned_ipv4_pool: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#customer_owned_ipv4_pool Subnet#customer_owned_ipv4_pool}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/subnet#customer_owned_ipv4_pool Subnet#customer_owned_ipv4_pool}.
 
 ---
 
@@ -1864,7 +2028,7 @@ enable_dns64: bool | IResolvable
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#enable_dns64 Subnet#enable_dns64}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/subnet#enable_dns64 Subnet#enable_dns64}.
 
 ---
 
@@ -1876,7 +2040,7 @@ enable_lni_at_device_index: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#enable_lni_at_device_index Subnet#enable_lni_at_device_index}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/subnet#enable_lni_at_device_index Subnet#enable_lni_at_device_index}.
 
 ---
 
@@ -1888,7 +2052,7 @@ enable_resource_name_dns_aaaa_record_on_launch: bool | IResolvable
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#enable_resource_name_dns_aaaa_record_on_launch Subnet#enable_resource_name_dns_aaaa_record_on_launch}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/subnet#enable_resource_name_dns_aaaa_record_on_launch Subnet#enable_resource_name_dns_aaaa_record_on_launch}.
 
 ---
 
@@ -1900,7 +2064,7 @@ enable_resource_name_dns_a_record_on_launch: bool | IResolvable
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#enable_resource_name_dns_a_record_on_launch Subnet#enable_resource_name_dns_a_record_on_launch}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/subnet#enable_resource_name_dns_a_record_on_launch Subnet#enable_resource_name_dns_a_record_on_launch}.
 
 ---
 
@@ -1912,10 +2076,34 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#id Subnet#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/subnet#id Subnet#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `ipv4_ipam_pool_id`<sup>Optional</sup> <a name="ipv4_ipam_pool_id" id="@cdktn/provider-aws.subnet.SubnetConfig.property.ipv4IpamPoolId"></a>
+
+```python
+ipv4_ipam_pool_id: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/subnet#ipv4_ipam_pool_id Subnet#ipv4_ipam_pool_id}.
+
+---
+
+##### `ipv4_netmask_length`<sup>Optional</sup> <a name="ipv4_netmask_length" id="@cdktn/provider-aws.subnet.SubnetConfig.property.ipv4NetmaskLength"></a>
+
+```python
+ipv4_netmask_length: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/subnet#ipv4_netmask_length Subnet#ipv4_netmask_length}.
 
 ---
 
@@ -1927,7 +2115,19 @@ ipv6_cidr_block: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#ipv6_cidr_block Subnet#ipv6_cidr_block}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/subnet#ipv6_cidr_block Subnet#ipv6_cidr_block}.
+
+---
+
+##### `ipv6_ipam_pool_id`<sup>Optional</sup> <a name="ipv6_ipam_pool_id" id="@cdktn/provider-aws.subnet.SubnetConfig.property.ipv6IpamPoolId"></a>
+
+```python
+ipv6_ipam_pool_id: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/subnet#ipv6_ipam_pool_id Subnet#ipv6_ipam_pool_id}.
 
 ---
 
@@ -1939,7 +2139,19 @@ ipv6_native: bool | IResolvable
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#ipv6_native Subnet#ipv6_native}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/subnet#ipv6_native Subnet#ipv6_native}.
+
+---
+
+##### `ipv6_netmask_length`<sup>Optional</sup> <a name="ipv6_netmask_length" id="@cdktn/provider-aws.subnet.SubnetConfig.property.ipv6NetmaskLength"></a>
+
+```python
+ipv6_netmask_length: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/subnet#ipv6_netmask_length Subnet#ipv6_netmask_length}.
 
 ---
 
@@ -1951,7 +2163,7 @@ map_customer_owned_ip_on_launch: bool | IResolvable
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#map_customer_owned_ip_on_launch Subnet#map_customer_owned_ip_on_launch}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/subnet#map_customer_owned_ip_on_launch Subnet#map_customer_owned_ip_on_launch}.
 
 ---
 
@@ -1963,7 +2175,7 @@ map_public_ip_on_launch: bool | IResolvable
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#map_public_ip_on_launch Subnet#map_public_ip_on_launch}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/subnet#map_public_ip_on_launch Subnet#map_public_ip_on_launch}.
 
 ---
 
@@ -1975,7 +2187,7 @@ outpost_arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#outpost_arn Subnet#outpost_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/subnet#outpost_arn Subnet#outpost_arn}.
 
 ---
 
@@ -1987,7 +2199,7 @@ private_dns_hostname_type_on_launch: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#private_dns_hostname_type_on_launch Subnet#private_dns_hostname_type_on_launch}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/subnet#private_dns_hostname_type_on_launch Subnet#private_dns_hostname_type_on_launch}.
 
 ---
 
@@ -2001,7 +2213,7 @@ region: str
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#region Subnet#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/subnet#region Subnet#region}
 
 ---
 
@@ -2013,7 +2225,7 @@ tags: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#tags Subnet#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/subnet#tags Subnet#tags}.
 
 ---
 
@@ -2025,7 +2237,7 @@ tags_all: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#tags_all Subnet#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/subnet#tags_all Subnet#tags_all}.
 
 ---
 
@@ -2039,7 +2251,7 @@ timeouts: SubnetTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#timeouts Subnet#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/subnet#timeouts Subnet#timeouts}
 
 ---
 
@@ -2060,8 +2272,8 @@ subnet.SubnetTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.subnet.SubnetTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#create Subnet#create}. |
-| <code><a href="#@cdktn/provider-aws.subnet.SubnetTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#delete Subnet#delete}. |
+| <code><a href="#@cdktn/provider-aws.subnet.SubnetTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/subnet#create Subnet#create}. |
+| <code><a href="#@cdktn/provider-aws.subnet.SubnetTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/subnet#delete Subnet#delete}. |
 
 ---
 
@@ -2073,7 +2285,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#create Subnet#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/subnet#create Subnet#create}.
 
 ---
 
@@ -2085,7 +2297,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/subnet#delete Subnet#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/subnet#delete Subnet#delete}.
 
 ---
 

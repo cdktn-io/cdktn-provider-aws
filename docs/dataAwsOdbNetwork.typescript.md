@@ -4,7 +4,7 @@
 
 ### DataAwsOdbNetwork <a name="DataAwsOdbNetwork" id="@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetwork"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/odb_network aws_odb_network}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/odb_network aws_odb_network}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetwork.Initializer"></a>
 
@@ -372,7 +372,7 @@ The construct id used in the generated config for the DataAwsOdbNetwork to impor
 
 The id of the existing DataAwsOdbNetwork that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/odb_network#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/odb_network#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -841,7 +841,7 @@ const dataAwsOdbNetworkConfig: dataAwsOdbNetwork.DataAwsOdbNetworkConfig = { ...
 | <code><a href="#@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/odb_network#id DataAwsOdbNetwork#id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/odb_network#id DataAwsOdbNetwork#id}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -924,7 +924,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/odb_network#id DataAwsOdbNetwork#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/odb_network#id DataAwsOdbNetwork#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -941,7 +941,7 @@ public readonly region: string;
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/odb_network#region DataAwsOdbNetwork#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/odb_network#region DataAwsOdbNetwork#region}
 
 ---
 
@@ -953,6 +953,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 import { dataAwsOdbNetwork } from '@cdktn/provider-aws'
 
 const dataAwsOdbNetworkManagedServices: dataAwsOdbNetwork.DataAwsOdbNetworkManagedServices = { ... }
+```
+
+
+### DataAwsOdbNetworkManagedServicesKmsAccess <a name="DataAwsOdbNetworkManagedServicesKmsAccess" id="@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesKmsAccess"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesKmsAccess.Initializer"></a>
+
+```typescript
+import { dataAwsOdbNetwork } from '@cdktn/provider-aws'
+
+const dataAwsOdbNetworkManagedServicesKmsAccess: dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesKmsAccess = { ... }
 ```
 
 
@@ -989,6 +1000,17 @@ const dataAwsOdbNetworkManagedServicesServiceNetworkEndpoint: dataAwsOdbNetwork.
 ```
 
 
+### DataAwsOdbNetworkManagedServicesStsAccess <a name="DataAwsOdbNetworkManagedServicesStsAccess" id="@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesStsAccess"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesStsAccess.Initializer"></a>
+
+```typescript
+import { dataAwsOdbNetwork } from '@cdktn/provider-aws'
+
+const dataAwsOdbNetworkManagedServicesStsAccess: dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesStsAccess = { ... }
+```
+
+
 ### DataAwsOdbNetworkManagedServicesZeroTlAccess <a name="DataAwsOdbNetworkManagedServicesZeroTlAccess" id="@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesZeroTlAccess"></a>
 
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesZeroTlAccess.Initializer"></a>
@@ -1012,6 +1034,466 @@ const dataAwsOdbNetworkOciDnsForwardingConfigs: dataAwsOdbNetwork.DataAwsOdbNetw
 
 
 ## Classes <a name="Classes" id="Classes"></a>
+
+### DataAwsOdbNetworkManagedServicesKmsAccessList <a name="DataAwsOdbNetworkManagedServicesKmsAccessList" id="@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesKmsAccessList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesKmsAccessList.Initializer"></a>
+
+```typescript
+import { dataAwsOdbNetwork } from '@cdktn/provider-aws'
+
+new dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesKmsAccessList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesKmsAccessList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesKmsAccessList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesKmsAccessList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesKmsAccessList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesKmsAccessList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesKmsAccessList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesKmsAccessList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesKmsAccessList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesKmsAccessList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesKmsAccessList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesKmsAccessList.get">get</a></code> | *No description.* |
+
+---
+
+##### `allWithMapKey` <a name="allWithMapKey" id="@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesKmsAccessList.allWithMapKey"></a>
+
+```typescript
+public allWithMapKey(mapKeyAttributeName: string): DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesKmsAccessList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesKmsAccessList.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesKmsAccessList.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesKmsAccessList.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesKmsAccessList.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesKmsAccessList.get"></a>
+
+```typescript
+public get(index: number): DataAwsOdbNetworkManagedServicesKmsAccessOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesKmsAccessList.get.parameter.index"></a>
+
+- *Type:* number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesKmsAccessList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesKmsAccessList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesKmsAccessList.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesKmsAccessList.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+
+### DataAwsOdbNetworkManagedServicesKmsAccessOutputReference <a name="DataAwsOdbNetworkManagedServicesKmsAccessOutputReference" id="@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesKmsAccessOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesKmsAccessOutputReference.Initializer"></a>
+
+```typescript
+import { dataAwsOdbNetwork } from '@cdktn/provider-aws'
+
+new dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesKmsAccessOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesKmsAccessOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesKmsAccessOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesKmsAccessOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesKmsAccessOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesKmsAccessOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesKmsAccessOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesKmsAccessOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesKmsAccessOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesKmsAccessOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesKmsAccessOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesKmsAccessOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesKmsAccessOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesKmsAccessOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesKmsAccessOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesKmsAccessOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesKmsAccessOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesKmsAccessOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesKmsAccessOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesKmsAccessOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesKmsAccessOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesKmsAccessOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesKmsAccessOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesKmsAccessOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesKmsAccessOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesKmsAccessOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesKmsAccessOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesKmsAccessOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesKmsAccessOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesKmsAccessOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesKmsAccessOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesKmsAccessOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesKmsAccessOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesKmsAccessOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesKmsAccessOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesKmsAccessOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesKmsAccessOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesKmsAccessOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesKmsAccessOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesKmsAccessOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesKmsAccessOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesKmsAccessOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesKmsAccessOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesKmsAccessOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesKmsAccessOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesKmsAccessOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesKmsAccessOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesKmsAccessOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesKmsAccessOutputReference.property.domainName">domainName</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesKmsAccessOutputReference.property.ipv4Addresses">ipv4Addresses</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesKmsAccessOutputReference.property.kmsPolicyDocument">kmsPolicyDocument</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesKmsAccessOutputReference.property.status">status</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesKmsAccessOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesKmsAccess">DataAwsOdbNetworkManagedServicesKmsAccess</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesKmsAccessOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesKmsAccessOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `domainName`<sup>Required</sup> <a name="domainName" id="@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesKmsAccessOutputReference.property.domainName"></a>
+
+```typescript
+public readonly domainName: string;
+```
+
+- *Type:* string
+
+---
+
+##### `ipv4Addresses`<sup>Required</sup> <a name="ipv4Addresses" id="@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesKmsAccessOutputReference.property.ipv4Addresses"></a>
+
+```typescript
+public readonly ipv4Addresses: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `kmsPolicyDocument`<sup>Required</sup> <a name="kmsPolicyDocument" id="@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesKmsAccessOutputReference.property.kmsPolicyDocument"></a>
+
+```typescript
+public readonly kmsPolicyDocument: string;
+```
+
+- *Type:* string
+
+---
+
+##### `status`<sup>Required</sup> <a name="status" id="@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesKmsAccessOutputReference.property.status"></a>
+
+```typescript
+public readonly status: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesKmsAccessOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: DataAwsOdbNetworkManagedServicesKmsAccess;
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesKmsAccess">DataAwsOdbNetworkManagedServicesKmsAccess</a>
+
+---
+
 
 ### DataAwsOdbNetworkManagedServicesList <a name="DataAwsOdbNetworkManagedServicesList" id="@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesList"></a>
 
@@ -1828,12 +2310,14 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesOutputReference.property.kmsAccess">kmsAccess</a></code> | <code><a href="#@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesKmsAccessList">DataAwsOdbNetworkManagedServicesKmsAccessList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesOutputReference.property.managedS3BackupAccess">managedS3BackupAccess</a></code> | <code><a href="#@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesManagedS3BackupAccessList">DataAwsOdbNetworkManagedServicesManagedS3BackupAccessList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesOutputReference.property.managedServiceIpv4Cidrs">managedServiceIpv4Cidrs</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesOutputReference.property.resourceGatewayArn">resourceGatewayArn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesOutputReference.property.s3Access">s3Access</a></code> | <code><a href="#@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesS3AccessList">DataAwsOdbNetworkManagedServicesS3AccessList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesOutputReference.property.serviceNetworkArn">serviceNetworkArn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesOutputReference.property.serviceNetworkEndpoint">serviceNetworkEndpoint</a></code> | <code><a href="#@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesServiceNetworkEndpointList">DataAwsOdbNetworkManagedServicesServiceNetworkEndpointList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesOutputReference.property.stsAccess">stsAccess</a></code> | <code><a href="#@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesStsAccessList">DataAwsOdbNetworkManagedServicesStsAccessList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesOutputReference.property.zeroTlAccess">zeroTlAccess</a></code> | <code><a href="#@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesZeroTlAccessList">DataAwsOdbNetworkManagedServicesZeroTlAccessList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServices">DataAwsOdbNetworkManagedServices</a></code> | *No description.* |
 
@@ -1860,6 +2344,16 @@ public readonly fqn: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `kmsAccess`<sup>Required</sup> <a name="kmsAccess" id="@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesOutputReference.property.kmsAccess"></a>
+
+```typescript
+public readonly kmsAccess: DataAwsOdbNetworkManagedServicesKmsAccessList;
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesKmsAccessList">DataAwsOdbNetworkManagedServicesKmsAccessList</a>
 
 ---
 
@@ -1920,6 +2414,16 @@ public readonly serviceNetworkEndpoint: DataAwsOdbNetworkManagedServicesServiceN
 ```
 
 - *Type:* <a href="#@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesServiceNetworkEndpointList">DataAwsOdbNetworkManagedServicesServiceNetworkEndpointList</a>
+
+---
+
+##### `stsAccess`<sup>Required</sup> <a name="stsAccess" id="@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesOutputReference.property.stsAccess"></a>
+
+```typescript
+public readonly stsAccess: DataAwsOdbNetworkManagedServicesStsAccessList;
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesStsAccessList">DataAwsOdbNetworkManagedServicesStsAccessList</a>
 
 ---
 
@@ -2838,6 +3342,466 @@ public readonly internalValue: DataAwsOdbNetworkManagedServicesServiceNetworkEnd
 ```
 
 - *Type:* <a href="#@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesServiceNetworkEndpoint">DataAwsOdbNetworkManagedServicesServiceNetworkEndpoint</a>
+
+---
+
+
+### DataAwsOdbNetworkManagedServicesStsAccessList <a name="DataAwsOdbNetworkManagedServicesStsAccessList" id="@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesStsAccessList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesStsAccessList.Initializer"></a>
+
+```typescript
+import { dataAwsOdbNetwork } from '@cdktn/provider-aws'
+
+new dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesStsAccessList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesStsAccessList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesStsAccessList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesStsAccessList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesStsAccessList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesStsAccessList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesStsAccessList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesStsAccessList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesStsAccessList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesStsAccessList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesStsAccessList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesStsAccessList.get">get</a></code> | *No description.* |
+
+---
+
+##### `allWithMapKey` <a name="allWithMapKey" id="@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesStsAccessList.allWithMapKey"></a>
+
+```typescript
+public allWithMapKey(mapKeyAttributeName: string): DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesStsAccessList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesStsAccessList.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesStsAccessList.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesStsAccessList.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesStsAccessList.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesStsAccessList.get"></a>
+
+```typescript
+public get(index: number): DataAwsOdbNetworkManagedServicesStsAccessOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesStsAccessList.get.parameter.index"></a>
+
+- *Type:* number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesStsAccessList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesStsAccessList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesStsAccessList.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesStsAccessList.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+
+### DataAwsOdbNetworkManagedServicesStsAccessOutputReference <a name="DataAwsOdbNetworkManagedServicesStsAccessOutputReference" id="@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesStsAccessOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesStsAccessOutputReference.Initializer"></a>
+
+```typescript
+import { dataAwsOdbNetwork } from '@cdktn/provider-aws'
+
+new dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesStsAccessOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesStsAccessOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesStsAccessOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesStsAccessOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesStsAccessOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesStsAccessOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesStsAccessOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesStsAccessOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesStsAccessOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesStsAccessOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesStsAccessOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesStsAccessOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesStsAccessOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesStsAccessOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesStsAccessOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesStsAccessOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesStsAccessOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesStsAccessOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesStsAccessOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesStsAccessOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesStsAccessOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesStsAccessOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesStsAccessOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesStsAccessOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesStsAccessOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesStsAccessOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesStsAccessOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesStsAccessOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesStsAccessOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesStsAccessOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesStsAccessOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesStsAccessOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesStsAccessOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesStsAccessOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesStsAccessOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesStsAccessOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesStsAccessOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesStsAccessOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesStsAccessOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesStsAccessOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesStsAccessOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesStsAccessOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesStsAccessOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesStsAccessOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesStsAccessOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesStsAccessOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesStsAccessOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesStsAccessOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesStsAccessOutputReference.property.domainName">domainName</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesStsAccessOutputReference.property.ipv4Addresses">ipv4Addresses</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesStsAccessOutputReference.property.status">status</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesStsAccessOutputReference.property.stsPolicyDocument">stsPolicyDocument</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesStsAccessOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesStsAccess">DataAwsOdbNetworkManagedServicesStsAccess</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesStsAccessOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesStsAccessOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `domainName`<sup>Required</sup> <a name="domainName" id="@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesStsAccessOutputReference.property.domainName"></a>
+
+```typescript
+public readonly domainName: string;
+```
+
+- *Type:* string
+
+---
+
+##### `ipv4Addresses`<sup>Required</sup> <a name="ipv4Addresses" id="@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesStsAccessOutputReference.property.ipv4Addresses"></a>
+
+```typescript
+public readonly ipv4Addresses: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `status`<sup>Required</sup> <a name="status" id="@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesStsAccessOutputReference.property.status"></a>
+
+```typescript
+public readonly status: string;
+```
+
+- *Type:* string
+
+---
+
+##### `stsPolicyDocument`<sup>Required</sup> <a name="stsPolicyDocument" id="@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesStsAccessOutputReference.property.stsPolicyDocument"></a>
+
+```typescript
+public readonly stsPolicyDocument: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesStsAccessOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: DataAwsOdbNetworkManagedServicesStsAccess;
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.dataAwsOdbNetwork.DataAwsOdbNetworkManagedServicesStsAccess">DataAwsOdbNetworkManagedServicesStsAccess</a>
 
 ---
 

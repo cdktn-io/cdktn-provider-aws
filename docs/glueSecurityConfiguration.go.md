@@ -4,12 +4,12 @@
 
 ### GlueSecurityConfiguration <a name="GlueSecurityConfiguration" id="@cdktn/provider-aws.glueSecurityConfiguration.GlueSecurityConfiguration"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/glue_security_configuration aws_glue_security_configuration}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/glue_security_configuration aws_glue_security_configuration}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.glueSecurityConfiguration.GlueSecurityConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/gluesecurityconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/gluesecurityconfiguration"
 
 gluesecurityconfiguration.NewGlueSecurityConfiguration(scope Construct, id *string, config GlueSecurityConfigurationConfig) GlueSecurityConfiguration
 ```
@@ -405,7 +405,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.glueSecurityConfiguration.GlueSecurityConfiguration.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/gluesecurityconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/gluesecurityconfiguration"
 
 gluesecurityconfiguration.GlueSecurityConfiguration_IsConstruct(x interface{}) *bool
 ```
@@ -437,7 +437,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.glueSecurityConfiguration.GlueSecurityConfiguration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/gluesecurityconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/gluesecurityconfiguration"
 
 gluesecurityconfiguration.GlueSecurityConfiguration_IsTerraformElement(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ gluesecurityconfiguration.GlueSecurityConfiguration_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.glueSecurityConfiguration.GlueSecurityConfiguration.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/gluesecurityconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/gluesecurityconfiguration"
 
 gluesecurityconfiguration.GlueSecurityConfiguration_IsTerraformResource(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ gluesecurityconfiguration.GlueSecurityConfiguration_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.glueSecurityConfiguration.GlueSecurityConfiguration.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/gluesecurityconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/gluesecurityconfiguration"
 
 gluesecurityconfiguration.GlueSecurityConfiguration_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -494,7 +494,7 @@ The construct id used in the generated config for the GlueSecurityConfiguration 
 
 The id of the existing GlueSecurityConfiguration that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/glue_security_configuration#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/glue_security_configuration#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -782,7 +782,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.glueSecurityConfiguration.GlueSecurityConfigurationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/gluesecurityconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/gluesecurityconfiguration"
 
 &gluesecurityconfiguration.GlueSecurityConfigurationConfig {
 	Connection: interface{},
@@ -792,7 +792,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/gluesecurityconfigurat
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	EncryptionConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.glueSecurityConfiguration.GlueSecurityConfigurationEncryptionConfiguration,
+	EncryptionConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.glueSecurityConfiguration.GlueSecurityConfigurationEncryptionConfiguration,
 	Name: *string,
 	Id: *string,
 	Region: *string,
@@ -811,8 +811,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/gluesecurityconfigurat
 | <code><a href="#@cdktn/provider-aws.glueSecurityConfiguration.GlueSecurityConfigurationConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.glueSecurityConfiguration.GlueSecurityConfigurationConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.glueSecurityConfiguration.GlueSecurityConfigurationConfig.property.encryptionConfiguration">EncryptionConfiguration</a></code> | <code><a href="#@cdktn/provider-aws.glueSecurityConfiguration.GlueSecurityConfigurationEncryptionConfiguration">GlueSecurityConfigurationEncryptionConfiguration</a></code> | encryption_configuration block. |
-| <code><a href="#@cdktn/provider-aws.glueSecurityConfiguration.GlueSecurityConfigurationConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/glue_security_configuration#name GlueSecurityConfiguration#name}. |
-| <code><a href="#@cdktn/provider-aws.glueSecurityConfiguration.GlueSecurityConfigurationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/glue_security_configuration#id GlueSecurityConfiguration#id}. |
+| <code><a href="#@cdktn/provider-aws.glueSecurityConfiguration.GlueSecurityConfigurationConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/glue_security_configuration#name GlueSecurityConfiguration#name}. |
+| <code><a href="#@cdktn/provider-aws.glueSecurityConfiguration.GlueSecurityConfigurationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/glue_security_configuration#id GlueSecurityConfiguration#id}. |
 | <code><a href="#@cdktn/provider-aws.glueSecurityConfiguration.GlueSecurityConfigurationConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -897,7 +897,7 @@ EncryptionConfiguration GlueSecurityConfigurationEncryptionConfiguration
 
 encryption_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/glue_security_configuration#encryption_configuration GlueSecurityConfiguration#encryption_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/glue_security_configuration#encryption_configuration GlueSecurityConfiguration#encryption_configuration}
 
 ---
 
@@ -909,7 +909,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/glue_security_configuration#name GlueSecurityConfiguration#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/glue_security_configuration#name GlueSecurityConfiguration#name}.
 
 ---
 
@@ -921,7 +921,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/glue_security_configuration#id GlueSecurityConfiguration#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/glue_security_configuration#id GlueSecurityConfiguration#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -938,7 +938,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/glue_security_configuration#region GlueSecurityConfiguration#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/glue_security_configuration#region GlueSecurityConfiguration#region}
 
 ---
 
@@ -947,12 +947,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.glueSecurityConfiguration.GlueSecurityConfigurationEncryptionConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/gluesecurityconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/gluesecurityconfiguration"
 
 &gluesecurityconfiguration.GlueSecurityConfigurationEncryptionConfiguration {
-	CloudwatchEncryption: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.glueSecurityConfiguration.GlueSecurityConfigurationEncryptionConfigurationCloudwatchEncryption,
-	JobBookmarksEncryption: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.glueSecurityConfiguration.GlueSecurityConfigurationEncryptionConfigurationJobBookmarksEncryption,
-	S3Encryption: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.glueSecurityConfiguration.GlueSecurityConfigurationEncryptionConfigurationS3Encryption,
+	CloudwatchEncryption: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.glueSecurityConfiguration.GlueSecurityConfigurationEncryptionConfigurationCloudwatchEncryption,
+	JobBookmarksEncryption: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.glueSecurityConfiguration.GlueSecurityConfigurationEncryptionConfigurationJobBookmarksEncryption,
+	S3Encryption: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.glueSecurityConfiguration.GlueSecurityConfigurationEncryptionConfigurationS3Encryption,
 }
 ```
 
@@ -976,7 +976,7 @@ CloudwatchEncryption GlueSecurityConfigurationEncryptionConfigurationCloudwatchE
 
 cloudwatch_encryption block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/glue_security_configuration#cloudwatch_encryption GlueSecurityConfiguration#cloudwatch_encryption}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/glue_security_configuration#cloudwatch_encryption GlueSecurityConfiguration#cloudwatch_encryption}
 
 ---
 
@@ -990,7 +990,7 @@ JobBookmarksEncryption GlueSecurityConfigurationEncryptionConfigurationJobBookma
 
 job_bookmarks_encryption block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/glue_security_configuration#job_bookmarks_encryption GlueSecurityConfiguration#job_bookmarks_encryption}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/glue_security_configuration#job_bookmarks_encryption GlueSecurityConfiguration#job_bookmarks_encryption}
 
 ---
 
@@ -1004,7 +1004,7 @@ S3Encryption GlueSecurityConfigurationEncryptionConfigurationS3Encryption
 
 s3_encryption block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/glue_security_configuration#s3_encryption GlueSecurityConfiguration#s3_encryption}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/glue_security_configuration#s3_encryption GlueSecurityConfiguration#s3_encryption}
 
 ---
 
@@ -1013,7 +1013,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.glueSecurityConfiguration.GlueSecurityConfigurationEncryptionConfigurationCloudwatchEncryption.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/gluesecurityconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/gluesecurityconfiguration"
 
 &gluesecurityconfiguration.GlueSecurityConfigurationEncryptionConfigurationCloudwatchEncryption {
 	CloudwatchEncryptionMode: *string,
@@ -1025,8 +1025,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/gluesecurityconfigurat
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.glueSecurityConfiguration.GlueSecurityConfigurationEncryptionConfigurationCloudwatchEncryption.property.cloudwatchEncryptionMode">CloudwatchEncryptionMode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/glue_security_configuration#cloudwatch_encryption_mode GlueSecurityConfiguration#cloudwatch_encryption_mode}. |
-| <code><a href="#@cdktn/provider-aws.glueSecurityConfiguration.GlueSecurityConfigurationEncryptionConfigurationCloudwatchEncryption.property.kmsKeyArn">KmsKeyArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/glue_security_configuration#kms_key_arn GlueSecurityConfiguration#kms_key_arn}. |
+| <code><a href="#@cdktn/provider-aws.glueSecurityConfiguration.GlueSecurityConfigurationEncryptionConfigurationCloudwatchEncryption.property.cloudwatchEncryptionMode">CloudwatchEncryptionMode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/glue_security_configuration#cloudwatch_encryption_mode GlueSecurityConfiguration#cloudwatch_encryption_mode}. |
+| <code><a href="#@cdktn/provider-aws.glueSecurityConfiguration.GlueSecurityConfigurationEncryptionConfigurationCloudwatchEncryption.property.kmsKeyArn">KmsKeyArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/glue_security_configuration#kms_key_arn GlueSecurityConfiguration#kms_key_arn}. |
 
 ---
 
@@ -1038,7 +1038,7 @@ CloudwatchEncryptionMode *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/glue_security_configuration#cloudwatch_encryption_mode GlueSecurityConfiguration#cloudwatch_encryption_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/glue_security_configuration#cloudwatch_encryption_mode GlueSecurityConfiguration#cloudwatch_encryption_mode}.
 
 ---
 
@@ -1050,7 +1050,7 @@ KmsKeyArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/glue_security_configuration#kms_key_arn GlueSecurityConfiguration#kms_key_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/glue_security_configuration#kms_key_arn GlueSecurityConfiguration#kms_key_arn}.
 
 ---
 
@@ -1059,7 +1059,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.glueSecurityConfiguration.GlueSecurityConfigurationEncryptionConfigurationJobBookmarksEncryption.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/gluesecurityconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/gluesecurityconfiguration"
 
 &gluesecurityconfiguration.GlueSecurityConfigurationEncryptionConfigurationJobBookmarksEncryption {
 	JobBookmarksEncryptionMode: *string,
@@ -1071,8 +1071,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/gluesecurityconfigurat
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.glueSecurityConfiguration.GlueSecurityConfigurationEncryptionConfigurationJobBookmarksEncryption.property.jobBookmarksEncryptionMode">JobBookmarksEncryptionMode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/glue_security_configuration#job_bookmarks_encryption_mode GlueSecurityConfiguration#job_bookmarks_encryption_mode}. |
-| <code><a href="#@cdktn/provider-aws.glueSecurityConfiguration.GlueSecurityConfigurationEncryptionConfigurationJobBookmarksEncryption.property.kmsKeyArn">KmsKeyArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/glue_security_configuration#kms_key_arn GlueSecurityConfiguration#kms_key_arn}. |
+| <code><a href="#@cdktn/provider-aws.glueSecurityConfiguration.GlueSecurityConfigurationEncryptionConfigurationJobBookmarksEncryption.property.jobBookmarksEncryptionMode">JobBookmarksEncryptionMode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/glue_security_configuration#job_bookmarks_encryption_mode GlueSecurityConfiguration#job_bookmarks_encryption_mode}. |
+| <code><a href="#@cdktn/provider-aws.glueSecurityConfiguration.GlueSecurityConfigurationEncryptionConfigurationJobBookmarksEncryption.property.kmsKeyArn">KmsKeyArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/glue_security_configuration#kms_key_arn GlueSecurityConfiguration#kms_key_arn}. |
 
 ---
 
@@ -1084,7 +1084,7 @@ JobBookmarksEncryptionMode *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/glue_security_configuration#job_bookmarks_encryption_mode GlueSecurityConfiguration#job_bookmarks_encryption_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/glue_security_configuration#job_bookmarks_encryption_mode GlueSecurityConfiguration#job_bookmarks_encryption_mode}.
 
 ---
 
@@ -1096,7 +1096,7 @@ KmsKeyArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/glue_security_configuration#kms_key_arn GlueSecurityConfiguration#kms_key_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/glue_security_configuration#kms_key_arn GlueSecurityConfiguration#kms_key_arn}.
 
 ---
 
@@ -1105,7 +1105,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.glueSecurityConfiguration.GlueSecurityConfigurationEncryptionConfigurationS3Encryption.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/gluesecurityconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/gluesecurityconfiguration"
 
 &gluesecurityconfiguration.GlueSecurityConfigurationEncryptionConfigurationS3Encryption {
 	KmsKeyArn: *string,
@@ -1117,8 +1117,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/gluesecurityconfigurat
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.glueSecurityConfiguration.GlueSecurityConfigurationEncryptionConfigurationS3Encryption.property.kmsKeyArn">KmsKeyArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/glue_security_configuration#kms_key_arn GlueSecurityConfiguration#kms_key_arn}. |
-| <code><a href="#@cdktn/provider-aws.glueSecurityConfiguration.GlueSecurityConfigurationEncryptionConfigurationS3Encryption.property.s3EncryptionMode">S3EncryptionMode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/glue_security_configuration#s3_encryption_mode GlueSecurityConfiguration#s3_encryption_mode}. |
+| <code><a href="#@cdktn/provider-aws.glueSecurityConfiguration.GlueSecurityConfigurationEncryptionConfigurationS3Encryption.property.kmsKeyArn">KmsKeyArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/glue_security_configuration#kms_key_arn GlueSecurityConfiguration#kms_key_arn}. |
+| <code><a href="#@cdktn/provider-aws.glueSecurityConfiguration.GlueSecurityConfigurationEncryptionConfigurationS3Encryption.property.s3EncryptionMode">S3EncryptionMode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/glue_security_configuration#s3_encryption_mode GlueSecurityConfiguration#s3_encryption_mode}. |
 
 ---
 
@@ -1130,7 +1130,7 @@ KmsKeyArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/glue_security_configuration#kms_key_arn GlueSecurityConfiguration#kms_key_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/glue_security_configuration#kms_key_arn GlueSecurityConfiguration#kms_key_arn}.
 
 ---
 
@@ -1142,7 +1142,7 @@ S3EncryptionMode *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/glue_security_configuration#s3_encryption_mode GlueSecurityConfiguration#s3_encryption_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/glue_security_configuration#s3_encryption_mode GlueSecurityConfiguration#s3_encryption_mode}.
 
 ---
 
@@ -1153,7 +1153,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.glueSecurityConfiguration.GlueSecurityConfigurationEncryptionConfigurationCloudwatchEncryptionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/gluesecurityconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/gluesecurityconfiguration"
 
 gluesecurityconfiguration.NewGlueSecurityConfigurationEncryptionConfigurationCloudwatchEncryptionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GlueSecurityConfigurationEncryptionConfigurationCloudwatchEncryptionOutputReference
 ```
@@ -1460,7 +1460,7 @@ func InternalValue() GlueSecurityConfigurationEncryptionConfigurationCloudwatchE
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.glueSecurityConfiguration.GlueSecurityConfigurationEncryptionConfigurationJobBookmarksEncryptionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/gluesecurityconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/gluesecurityconfiguration"
 
 gluesecurityconfiguration.NewGlueSecurityConfigurationEncryptionConfigurationJobBookmarksEncryptionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GlueSecurityConfigurationEncryptionConfigurationJobBookmarksEncryptionOutputReference
 ```
@@ -1767,7 +1767,7 @@ func InternalValue() GlueSecurityConfigurationEncryptionConfigurationJobBookmark
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.glueSecurityConfiguration.GlueSecurityConfigurationEncryptionConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/gluesecurityconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/gluesecurityconfiguration"
 
 gluesecurityconfiguration.NewGlueSecurityConfigurationEncryptionConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GlueSecurityConfigurationEncryptionConfigurationOutputReference
 ```
@@ -2121,7 +2121,7 @@ func InternalValue() GlueSecurityConfigurationEncryptionConfiguration
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.glueSecurityConfiguration.GlueSecurityConfigurationEncryptionConfigurationS3EncryptionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/gluesecurityconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/gluesecurityconfiguration"
 
 gluesecurityconfiguration.NewGlueSecurityConfigurationEncryptionConfigurationS3EncryptionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GlueSecurityConfigurationEncryptionConfigurationS3EncryptionOutputReference
 ```

@@ -4,7 +4,7 @@
 
 ### DataAwsDynamodbTable <a name="DataAwsDynamodbTable" id="@cdktn/provider-aws.dataAwsDynamodbTable.DataAwsDynamodbTable"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/dynamodb_table aws_dynamodb_table}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/dynamodb_table aws_dynamodb_table}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsDynamodbTable.DataAwsDynamodbTable.Initializer"></a>
 
@@ -406,7 +406,7 @@ The construct id used in the generated config for the DataAwsDynamodbTable to im
 
 The id of the existing DataAwsDynamodbTable that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/dynamodb_table#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/dynamodb_table#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -941,11 +941,11 @@ const dataAwsDynamodbTableConfig: dataAwsDynamodbTable.DataAwsDynamodbTableConfi
 | <code><a href="#@cdktn/provider-aws.dataAwsDynamodbTable.DataAwsDynamodbTableConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsDynamodbTable.DataAwsDynamodbTableConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsDynamodbTable.DataAwsDynamodbTableConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsDynamodbTable.DataAwsDynamodbTableConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/dynamodb_table#name DataAwsDynamodbTable#name}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsDynamodbTable.DataAwsDynamodbTableConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/dynamodb_table#id DataAwsDynamodbTable#id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsDynamodbTable.DataAwsDynamodbTableConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/dynamodb_table#name DataAwsDynamodbTable#name}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsDynamodbTable.DataAwsDynamodbTableConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/dynamodb_table#id DataAwsDynamodbTable#id}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsDynamodbTable.DataAwsDynamodbTableConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktn/provider-aws.dataAwsDynamodbTable.DataAwsDynamodbTableConfig.property.serverSideEncryption">serverSideEncryption</a></code> | <code><a href="#@cdktn/provider-aws.dataAwsDynamodbTable.DataAwsDynamodbTableServerSideEncryption">DataAwsDynamodbTableServerSideEncryption</a></code> | server_side_encryption block. |
-| <code><a href="#@cdktn/provider-aws.dataAwsDynamodbTable.DataAwsDynamodbTableConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/dynamodb_table#tags DataAwsDynamodbTable#tags}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsDynamodbTable.DataAwsDynamodbTableConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/dynamodb_table#tags DataAwsDynamodbTable#tags}. |
 
 ---
 
@@ -1027,7 +1027,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/dynamodb_table#name DataAwsDynamodbTable#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/dynamodb_table#name DataAwsDynamodbTable#name}.
 
 ---
 
@@ -1039,7 +1039,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/dynamodb_table#id DataAwsDynamodbTable#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/dynamodb_table#id DataAwsDynamodbTable#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1056,7 +1056,7 @@ public readonly region: string;
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/dynamodb_table#region DataAwsDynamodbTable#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/dynamodb_table#region DataAwsDynamodbTable#region}
 
 ---
 
@@ -1070,7 +1070,7 @@ public readonly serverSideEncryption: DataAwsDynamodbTableServerSideEncryption;
 
 server_side_encryption block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/dynamodb_table#server_side_encryption DataAwsDynamodbTable#server_side_encryption}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/dynamodb_table#server_side_encryption DataAwsDynamodbTable#server_side_encryption}
 
 ---
 
@@ -1082,7 +1082,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/dynamodb_table#tags DataAwsDynamodbTable#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/dynamodb_table#tags DataAwsDynamodbTable#tags}.
 
 ---
 
@@ -1094,6 +1094,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 import { dataAwsDynamodbTable } from '@cdktn/provider-aws'
 
 const dataAwsDynamodbTableGlobalSecondaryIndex: dataAwsDynamodbTable.DataAwsDynamodbTableGlobalSecondaryIndex = { ... }
+```
+
+
+### DataAwsDynamodbTableGlobalSecondaryIndexKeySchema <a name="DataAwsDynamodbTableGlobalSecondaryIndexKeySchema" id="@cdktn/provider-aws.dataAwsDynamodbTable.DataAwsDynamodbTableGlobalSecondaryIndexKeySchema"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsDynamodbTable.DataAwsDynamodbTableGlobalSecondaryIndexKeySchema.Initializer"></a>
+
+```typescript
+import { dataAwsDynamodbTable } from '@cdktn/provider-aws'
+
+const dataAwsDynamodbTableGlobalSecondaryIndexKeySchema: dataAwsDynamodbTable.DataAwsDynamodbTableGlobalSecondaryIndexKeySchema = { ... }
 ```
 
 
@@ -1632,6 +1643,444 @@ public readonly internalValue: DataAwsDynamodbTableAttribute;
 ```
 
 - *Type:* <a href="#@cdktn/provider-aws.dataAwsDynamodbTable.DataAwsDynamodbTableAttribute">DataAwsDynamodbTableAttribute</a>
+
+---
+
+
+### DataAwsDynamodbTableGlobalSecondaryIndexKeySchemaList <a name="DataAwsDynamodbTableGlobalSecondaryIndexKeySchemaList" id="@cdktn/provider-aws.dataAwsDynamodbTable.DataAwsDynamodbTableGlobalSecondaryIndexKeySchemaList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsDynamodbTable.DataAwsDynamodbTableGlobalSecondaryIndexKeySchemaList.Initializer"></a>
+
+```typescript
+import { dataAwsDynamodbTable } from '@cdktn/provider-aws'
+
+new dataAwsDynamodbTable.DataAwsDynamodbTableGlobalSecondaryIndexKeySchemaList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.dataAwsDynamodbTable.DataAwsDynamodbTableGlobalSecondaryIndexKeySchemaList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.dataAwsDynamodbTable.DataAwsDynamodbTableGlobalSecondaryIndexKeySchemaList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.dataAwsDynamodbTable.DataAwsDynamodbTableGlobalSecondaryIndexKeySchemaList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.dataAwsDynamodbTable.DataAwsDynamodbTableGlobalSecondaryIndexKeySchemaList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsDynamodbTable.DataAwsDynamodbTableGlobalSecondaryIndexKeySchemaList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-aws.dataAwsDynamodbTable.DataAwsDynamodbTableGlobalSecondaryIndexKeySchemaList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-aws.dataAwsDynamodbTable.DataAwsDynamodbTableGlobalSecondaryIndexKeySchemaList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-aws.dataAwsDynamodbTable.DataAwsDynamodbTableGlobalSecondaryIndexKeySchemaList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsDynamodbTable.DataAwsDynamodbTableGlobalSecondaryIndexKeySchemaList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.dataAwsDynamodbTable.DataAwsDynamodbTableGlobalSecondaryIndexKeySchemaList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-aws.dataAwsDynamodbTable.DataAwsDynamodbTableGlobalSecondaryIndexKeySchemaList.get">get</a></code> | *No description.* |
+
+---
+
+##### `allWithMapKey` <a name="allWithMapKey" id="@cdktn/provider-aws.dataAwsDynamodbTable.DataAwsDynamodbTableGlobalSecondaryIndexKeySchemaList.allWithMapKey"></a>
+
+```typescript
+public allWithMapKey(mapKeyAttributeName: string): DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-aws.dataAwsDynamodbTable.DataAwsDynamodbTableGlobalSecondaryIndexKeySchemaList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-aws.dataAwsDynamodbTable.DataAwsDynamodbTableGlobalSecondaryIndexKeySchemaList.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.dataAwsDynamodbTable.DataAwsDynamodbTableGlobalSecondaryIndexKeySchemaList.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.dataAwsDynamodbTable.DataAwsDynamodbTableGlobalSecondaryIndexKeySchemaList.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-aws.dataAwsDynamodbTable.DataAwsDynamodbTableGlobalSecondaryIndexKeySchemaList.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-aws.dataAwsDynamodbTable.DataAwsDynamodbTableGlobalSecondaryIndexKeySchemaList.get"></a>
+
+```typescript
+public get(index: number): DataAwsDynamodbTableGlobalSecondaryIndexKeySchemaOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-aws.dataAwsDynamodbTable.DataAwsDynamodbTableGlobalSecondaryIndexKeySchemaList.get.parameter.index"></a>
+
+- *Type:* number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.dataAwsDynamodbTable.DataAwsDynamodbTableGlobalSecondaryIndexKeySchemaList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.dataAwsDynamodbTable.DataAwsDynamodbTableGlobalSecondaryIndexKeySchemaList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-aws.dataAwsDynamodbTable.DataAwsDynamodbTableGlobalSecondaryIndexKeySchemaList.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.dataAwsDynamodbTable.DataAwsDynamodbTableGlobalSecondaryIndexKeySchemaList.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+
+### DataAwsDynamodbTableGlobalSecondaryIndexKeySchemaOutputReference <a name="DataAwsDynamodbTableGlobalSecondaryIndexKeySchemaOutputReference" id="@cdktn/provider-aws.dataAwsDynamodbTable.DataAwsDynamodbTableGlobalSecondaryIndexKeySchemaOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsDynamodbTable.DataAwsDynamodbTableGlobalSecondaryIndexKeySchemaOutputReference.Initializer"></a>
+
+```typescript
+import { dataAwsDynamodbTable } from '@cdktn/provider-aws'
+
+new dataAwsDynamodbTable.DataAwsDynamodbTableGlobalSecondaryIndexKeySchemaOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.dataAwsDynamodbTable.DataAwsDynamodbTableGlobalSecondaryIndexKeySchemaOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-aws.dataAwsDynamodbTable.DataAwsDynamodbTableGlobalSecondaryIndexKeySchemaOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-aws.dataAwsDynamodbTable.DataAwsDynamodbTableGlobalSecondaryIndexKeySchemaOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-aws.dataAwsDynamodbTable.DataAwsDynamodbTableGlobalSecondaryIndexKeySchemaOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-aws.dataAwsDynamodbTable.DataAwsDynamodbTableGlobalSecondaryIndexKeySchemaOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsDynamodbTable.DataAwsDynamodbTableGlobalSecondaryIndexKeySchemaOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-aws.dataAwsDynamodbTable.DataAwsDynamodbTableGlobalSecondaryIndexKeySchemaOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-aws.dataAwsDynamodbTable.DataAwsDynamodbTableGlobalSecondaryIndexKeySchemaOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-aws.dataAwsDynamodbTable.DataAwsDynamodbTableGlobalSecondaryIndexKeySchemaOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsDynamodbTable.DataAwsDynamodbTableGlobalSecondaryIndexKeySchemaOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsDynamodbTable.DataAwsDynamodbTableGlobalSecondaryIndexKeySchemaOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsDynamodbTable.DataAwsDynamodbTableGlobalSecondaryIndexKeySchemaOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsDynamodbTable.DataAwsDynamodbTableGlobalSecondaryIndexKeySchemaOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsDynamodbTable.DataAwsDynamodbTableGlobalSecondaryIndexKeySchemaOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsDynamodbTable.DataAwsDynamodbTableGlobalSecondaryIndexKeySchemaOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsDynamodbTable.DataAwsDynamodbTableGlobalSecondaryIndexKeySchemaOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsDynamodbTable.DataAwsDynamodbTableGlobalSecondaryIndexKeySchemaOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsDynamodbTable.DataAwsDynamodbTableGlobalSecondaryIndexKeySchemaOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsDynamodbTable.DataAwsDynamodbTableGlobalSecondaryIndexKeySchemaOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsDynamodbTable.DataAwsDynamodbTableGlobalSecondaryIndexKeySchemaOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-aws.dataAwsDynamodbTable.DataAwsDynamodbTableGlobalSecondaryIndexKeySchemaOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-aws.dataAwsDynamodbTable.DataAwsDynamodbTableGlobalSecondaryIndexKeySchemaOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-aws.dataAwsDynamodbTable.DataAwsDynamodbTableGlobalSecondaryIndexKeySchemaOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsDynamodbTable.DataAwsDynamodbTableGlobalSecondaryIndexKeySchemaOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-aws.dataAwsDynamodbTable.DataAwsDynamodbTableGlobalSecondaryIndexKeySchemaOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsDynamodbTable.DataAwsDynamodbTableGlobalSecondaryIndexKeySchemaOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-aws.dataAwsDynamodbTable.DataAwsDynamodbTableGlobalSecondaryIndexKeySchemaOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsDynamodbTable.DataAwsDynamodbTableGlobalSecondaryIndexKeySchemaOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-aws.dataAwsDynamodbTable.DataAwsDynamodbTableGlobalSecondaryIndexKeySchemaOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsDynamodbTable.DataAwsDynamodbTableGlobalSecondaryIndexKeySchemaOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-aws.dataAwsDynamodbTable.DataAwsDynamodbTableGlobalSecondaryIndexKeySchemaOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsDynamodbTable.DataAwsDynamodbTableGlobalSecondaryIndexKeySchemaOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-aws.dataAwsDynamodbTable.DataAwsDynamodbTableGlobalSecondaryIndexKeySchemaOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsDynamodbTable.DataAwsDynamodbTableGlobalSecondaryIndexKeySchemaOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-aws.dataAwsDynamodbTable.DataAwsDynamodbTableGlobalSecondaryIndexKeySchemaOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsDynamodbTable.DataAwsDynamodbTableGlobalSecondaryIndexKeySchemaOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-aws.dataAwsDynamodbTable.DataAwsDynamodbTableGlobalSecondaryIndexKeySchemaOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsDynamodbTable.DataAwsDynamodbTableGlobalSecondaryIndexKeySchemaOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-aws.dataAwsDynamodbTable.DataAwsDynamodbTableGlobalSecondaryIndexKeySchemaOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-aws.dataAwsDynamodbTable.DataAwsDynamodbTableGlobalSecondaryIndexKeySchemaOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-aws.dataAwsDynamodbTable.DataAwsDynamodbTableGlobalSecondaryIndexKeySchemaOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-aws.dataAwsDynamodbTable.DataAwsDynamodbTableGlobalSecondaryIndexKeySchemaOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-aws.dataAwsDynamodbTable.DataAwsDynamodbTableGlobalSecondaryIndexKeySchemaOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-aws.dataAwsDynamodbTable.DataAwsDynamodbTableGlobalSecondaryIndexKeySchemaOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-aws.dataAwsDynamodbTable.DataAwsDynamodbTableGlobalSecondaryIndexKeySchemaOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-aws.dataAwsDynamodbTable.DataAwsDynamodbTableGlobalSecondaryIndexKeySchemaOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-aws.dataAwsDynamodbTable.DataAwsDynamodbTableGlobalSecondaryIndexKeySchemaOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsDynamodbTable.DataAwsDynamodbTableGlobalSecondaryIndexKeySchemaOutputReference.property.attributeName">attributeName</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsDynamodbTable.DataAwsDynamodbTableGlobalSecondaryIndexKeySchemaOutputReference.property.keyType">keyType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsDynamodbTable.DataAwsDynamodbTableGlobalSecondaryIndexKeySchemaOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-aws.dataAwsDynamodbTable.DataAwsDynamodbTableGlobalSecondaryIndexKeySchema">DataAwsDynamodbTableGlobalSecondaryIndexKeySchema</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-aws.dataAwsDynamodbTable.DataAwsDynamodbTableGlobalSecondaryIndexKeySchemaOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-aws.dataAwsDynamodbTable.DataAwsDynamodbTableGlobalSecondaryIndexKeySchemaOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `attributeName`<sup>Required</sup> <a name="attributeName" id="@cdktn/provider-aws.dataAwsDynamodbTable.DataAwsDynamodbTableGlobalSecondaryIndexKeySchemaOutputReference.property.attributeName"></a>
+
+```typescript
+public readonly attributeName: string;
+```
+
+- *Type:* string
+
+---
+
+##### `keyType`<sup>Required</sup> <a name="keyType" id="@cdktn/provider-aws.dataAwsDynamodbTable.DataAwsDynamodbTableGlobalSecondaryIndexKeySchemaOutputReference.property.keyType"></a>
+
+```typescript
+public readonly keyType: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-aws.dataAwsDynamodbTable.DataAwsDynamodbTableGlobalSecondaryIndexKeySchemaOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: DataAwsDynamodbTableGlobalSecondaryIndexKeySchema;
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.dataAwsDynamodbTable.DataAwsDynamodbTableGlobalSecondaryIndexKeySchema">DataAwsDynamodbTableGlobalSecondaryIndexKeySchema</a>
 
 ---
 
@@ -2452,6 +2901,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-aws.dataAwsDynamodbTable.DataAwsDynamodbTableGlobalSecondaryIndexOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-aws.dataAwsDynamodbTable.DataAwsDynamodbTableGlobalSecondaryIndexOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsDynamodbTable.DataAwsDynamodbTableGlobalSecondaryIndexOutputReference.property.hashKey">hashKey</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsDynamodbTable.DataAwsDynamodbTableGlobalSecondaryIndexOutputReference.property.keySchema">keySchema</a></code> | <code><a href="#@cdktn/provider-aws.dataAwsDynamodbTable.DataAwsDynamodbTableGlobalSecondaryIndexKeySchemaList">DataAwsDynamodbTableGlobalSecondaryIndexKeySchemaList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsDynamodbTable.DataAwsDynamodbTableGlobalSecondaryIndexOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsDynamodbTable.DataAwsDynamodbTableGlobalSecondaryIndexOutputReference.property.nonKeyAttributes">nonKeyAttributes</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsDynamodbTable.DataAwsDynamodbTableGlobalSecondaryIndexOutputReference.property.onDemandThroughput">onDemandThroughput</a></code> | <code><a href="#@cdktn/provider-aws.dataAwsDynamodbTable.DataAwsDynamodbTableGlobalSecondaryIndexOnDemandThroughputList">DataAwsDynamodbTableGlobalSecondaryIndexOnDemandThroughputList</a></code> | *No description.* |
@@ -2495,6 +2945,16 @@ public readonly hashKey: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `keySchema`<sup>Required</sup> <a name="keySchema" id="@cdktn/provider-aws.dataAwsDynamodbTable.DataAwsDynamodbTableGlobalSecondaryIndexOutputReference.property.keySchema"></a>
+
+```typescript
+public readonly keySchema: DataAwsDynamodbTableGlobalSecondaryIndexKeySchemaList;
+```
+
+- *Type:* <a href="#@cdktn/provider-aws.dataAwsDynamodbTable.DataAwsDynamodbTableGlobalSecondaryIndexKeySchemaList">DataAwsDynamodbTableGlobalSecondaryIndexKeySchemaList</a>
 
 ---
 

@@ -4,12 +4,12 @@
 
 ### LightsailBucketAccessKey <a name="LightsailBucketAccessKey" id="@cdktn/provider-aws.lightsailBucketAccessKey.LightsailBucketAccessKey"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lightsail_bucket_access_key aws_lightsail_bucket_access_key}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lightsail_bucket_access_key aws_lightsail_bucket_access_key}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lightsailBucketAccessKey.LightsailBucketAccessKey.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lightsailbucketaccesskey"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/lightsailbucketaccesskey"
 
 lightsailbucketaccesskey.NewLightsailBucketAccessKey(scope Construct, id *string, config LightsailBucketAccessKeyConfig) LightsailBucketAccessKey
 ```
@@ -392,7 +392,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.lightsailBucketAccessKey.LightsailBucketAccessKey.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lightsailbucketaccesskey"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/lightsailbucketaccesskey"
 
 lightsailbucketaccesskey.LightsailBucketAccessKey_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.lightsailBucketAccessKey.LightsailBucketAccessKey.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lightsailbucketaccesskey"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/lightsailbucketaccesskey"
 
 lightsailbucketaccesskey.LightsailBucketAccessKey_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ lightsailbucketaccesskey.LightsailBucketAccessKey_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.lightsailBucketAccessKey.LightsailBucketAccessKey.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lightsailbucketaccesskey"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/lightsailbucketaccesskey"
 
 lightsailbucketaccesskey.LightsailBucketAccessKey_IsTerraformResource(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ lightsailbucketaccesskey.LightsailBucketAccessKey_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.lightsailBucketAccessKey.LightsailBucketAccessKey.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lightsailbucketaccesskey"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/lightsailbucketaccesskey"
 
 lightsailbucketaccesskey.LightsailBucketAccessKey_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -481,7 +481,7 @@ The construct id used in the generated config for the LightsailBucketAccessKey t
 
 The id of the existing LightsailBucketAccessKey that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lightsail_bucket_access_key#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lightsail_bucket_access_key#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -791,7 +791,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.lightsailBucketAccessKey.LightsailBucketAccessKeyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lightsailbucketaccesskey"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/lightsailbucketaccesskey"
 
 &lightsailbucketaccesskey.LightsailBucketAccessKeyConfig {
 	Connection: interface{},
@@ -818,8 +818,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lightsailbucketaccessk
 | <code><a href="#@cdktn/provider-aws.lightsailBucketAccessKey.LightsailBucketAccessKeyConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.lightsailBucketAccessKey.LightsailBucketAccessKeyConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.lightsailBucketAccessKey.LightsailBucketAccessKeyConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.lightsailBucketAccessKey.LightsailBucketAccessKeyConfig.property.bucketName">BucketName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lightsail_bucket_access_key#bucket_name LightsailBucketAccessKey#bucket_name}. |
-| <code><a href="#@cdktn/provider-aws.lightsailBucketAccessKey.LightsailBucketAccessKeyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lightsail_bucket_access_key#id LightsailBucketAccessKey#id}. |
+| <code><a href="#@cdktn/provider-aws.lightsailBucketAccessKey.LightsailBucketAccessKeyConfig.property.bucketName">BucketName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lightsail_bucket_access_key#bucket_name LightsailBucketAccessKey#bucket_name}. |
+| <code><a href="#@cdktn/provider-aws.lightsailBucketAccessKey.LightsailBucketAccessKeyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lightsail_bucket_access_key#id LightsailBucketAccessKey#id}. |
 | <code><a href="#@cdktn/provider-aws.lightsailBucketAccessKey.LightsailBucketAccessKeyConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -902,7 +902,7 @@ BucketName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lightsail_bucket_access_key#bucket_name LightsailBucketAccessKey#bucket_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lightsail_bucket_access_key#bucket_name LightsailBucketAccessKey#bucket_name}.
 
 ---
 
@@ -914,7 +914,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lightsail_bucket_access_key#id LightsailBucketAccessKey#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lightsail_bucket_access_key#id LightsailBucketAccessKey#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -931,7 +931,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lightsail_bucket_access_key#region LightsailBucketAccessKey#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lightsail_bucket_access_key#region LightsailBucketAccessKey#region}
 
 ---
 

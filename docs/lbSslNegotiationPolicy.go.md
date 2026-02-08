@@ -4,12 +4,12 @@
 
 ### LbSslNegotiationPolicy <a name="LbSslNegotiationPolicy" id="@cdktn/provider-aws.lbSslNegotiationPolicy.LbSslNegotiationPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lb_ssl_negotiation_policy aws_lb_ssl_negotiation_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lb_ssl_negotiation_policy aws_lb_ssl_negotiation_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lbSslNegotiationPolicy.LbSslNegotiationPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lbsslnegotiationpolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/lbsslnegotiationpolicy"
 
 lbsslnegotiationpolicy.NewLbSslNegotiationPolicy(scope Construct, id *string, config LbSslNegotiationPolicyConfig) LbSslNegotiationPolicy
 ```
@@ -419,7 +419,7 @@ func ResetTriggers()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.lbSslNegotiationPolicy.LbSslNegotiationPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lbsslnegotiationpolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/lbsslnegotiationpolicy"
 
 lbsslnegotiationpolicy.LbSslNegotiationPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.lbSslNegotiationPolicy.LbSslNegotiationPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lbsslnegotiationpolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/lbsslnegotiationpolicy"
 
 lbsslnegotiationpolicy.LbSslNegotiationPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ lbsslnegotiationpolicy.LbSslNegotiationPolicy_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.lbSslNegotiationPolicy.LbSslNegotiationPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lbsslnegotiationpolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/lbsslnegotiationpolicy"
 
 lbsslnegotiationpolicy.LbSslNegotiationPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ lbsslnegotiationpolicy.LbSslNegotiationPolicy_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.lbSslNegotiationPolicy.LbSslNegotiationPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lbsslnegotiationpolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/lbsslnegotiationpolicy"
 
 lbsslnegotiationpolicy.LbSslNegotiationPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -508,7 +508,7 @@ The construct id used in the generated config for the LbSslNegotiationPolicy to 
 
 The id of the existing LbSslNegotiationPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lb_ssl_negotiation_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lb_ssl_negotiation_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -862,7 +862,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.lbSslNegotiationPolicy.LbSslNegotiationPolicyAttribute.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lbsslnegotiationpolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/lbsslnegotiationpolicy"
 
 &lbsslnegotiationpolicy.LbSslNegotiationPolicyAttribute {
 	Name: *string,
@@ -874,8 +874,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lbsslnegotiationpolicy
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lbSslNegotiationPolicy.LbSslNegotiationPolicyAttribute.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lb_ssl_negotiation_policy#name LbSslNegotiationPolicy#name}. |
-| <code><a href="#@cdktn/provider-aws.lbSslNegotiationPolicy.LbSslNegotiationPolicyAttribute.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lb_ssl_negotiation_policy#value LbSslNegotiationPolicy#value}. |
+| <code><a href="#@cdktn/provider-aws.lbSslNegotiationPolicy.LbSslNegotiationPolicyAttribute.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lb_ssl_negotiation_policy#name LbSslNegotiationPolicy#name}. |
+| <code><a href="#@cdktn/provider-aws.lbSslNegotiationPolicy.LbSslNegotiationPolicyAttribute.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lb_ssl_negotiation_policy#value LbSslNegotiationPolicy#value}. |
 
 ---
 
@@ -887,7 +887,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lb_ssl_negotiation_policy#name LbSslNegotiationPolicy#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lb_ssl_negotiation_policy#name LbSslNegotiationPolicy#name}.
 
 ---
 
@@ -899,7 +899,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lb_ssl_negotiation_policy#value LbSslNegotiationPolicy#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lb_ssl_negotiation_policy#value LbSslNegotiationPolicy#value}.
 
 ---
 
@@ -908,7 +908,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.lbSslNegotiationPolicy.LbSslNegotiationPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lbsslnegotiationpolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/lbsslnegotiationpolicy"
 
 &lbsslnegotiationpolicy.LbSslNegotiationPolicyConfig {
 	Connection: interface{},
@@ -939,13 +939,13 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lbsslnegotiationpolicy
 | <code><a href="#@cdktn/provider-aws.lbSslNegotiationPolicy.LbSslNegotiationPolicyConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.lbSslNegotiationPolicy.LbSslNegotiationPolicyConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.lbSslNegotiationPolicy.LbSslNegotiationPolicyConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.lbSslNegotiationPolicy.LbSslNegotiationPolicyConfig.property.lbPort">LbPort</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lb_ssl_negotiation_policy#lb_port LbSslNegotiationPolicy#lb_port}. |
-| <code><a href="#@cdktn/provider-aws.lbSslNegotiationPolicy.LbSslNegotiationPolicyConfig.property.loadBalancer">LoadBalancer</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lb_ssl_negotiation_policy#load_balancer LbSslNegotiationPolicy#load_balancer}. |
-| <code><a href="#@cdktn/provider-aws.lbSslNegotiationPolicy.LbSslNegotiationPolicyConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lb_ssl_negotiation_policy#name LbSslNegotiationPolicy#name}. |
+| <code><a href="#@cdktn/provider-aws.lbSslNegotiationPolicy.LbSslNegotiationPolicyConfig.property.lbPort">LbPort</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lb_ssl_negotiation_policy#lb_port LbSslNegotiationPolicy#lb_port}. |
+| <code><a href="#@cdktn/provider-aws.lbSslNegotiationPolicy.LbSslNegotiationPolicyConfig.property.loadBalancer">LoadBalancer</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lb_ssl_negotiation_policy#load_balancer LbSslNegotiationPolicy#load_balancer}. |
+| <code><a href="#@cdktn/provider-aws.lbSslNegotiationPolicy.LbSslNegotiationPolicyConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lb_ssl_negotiation_policy#name LbSslNegotiationPolicy#name}. |
 | <code><a href="#@cdktn/provider-aws.lbSslNegotiationPolicy.LbSslNegotiationPolicyConfig.property.attribute">Attribute</a></code> | <code>interface{}</code> | attribute block. |
-| <code><a href="#@cdktn/provider-aws.lbSslNegotiationPolicy.LbSslNegotiationPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lb_ssl_negotiation_policy#id LbSslNegotiationPolicy#id}. |
+| <code><a href="#@cdktn/provider-aws.lbSslNegotiationPolicy.LbSslNegotiationPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lb_ssl_negotiation_policy#id LbSslNegotiationPolicy#id}. |
 | <code><a href="#@cdktn/provider-aws.lbSslNegotiationPolicy.LbSslNegotiationPolicyConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.lbSslNegotiationPolicy.LbSslNegotiationPolicyConfig.property.triggers">Triggers</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lb_ssl_negotiation_policy#triggers LbSslNegotiationPolicy#triggers}. |
+| <code><a href="#@cdktn/provider-aws.lbSslNegotiationPolicy.LbSslNegotiationPolicyConfig.property.triggers">Triggers</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lb_ssl_negotiation_policy#triggers LbSslNegotiationPolicy#triggers}. |
 
 ---
 
@@ -1027,7 +1027,7 @@ LbPort *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lb_ssl_negotiation_policy#lb_port LbSslNegotiationPolicy#lb_port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lb_ssl_negotiation_policy#lb_port LbSslNegotiationPolicy#lb_port}.
 
 ---
 
@@ -1039,7 +1039,7 @@ LoadBalancer *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lb_ssl_negotiation_policy#load_balancer LbSslNegotiationPolicy#load_balancer}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lb_ssl_negotiation_policy#load_balancer LbSslNegotiationPolicy#load_balancer}.
 
 ---
 
@@ -1051,7 +1051,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lb_ssl_negotiation_policy#name LbSslNegotiationPolicy#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lb_ssl_negotiation_policy#name LbSslNegotiationPolicy#name}.
 
 ---
 
@@ -1065,7 +1065,7 @@ Attribute interface{}
 
 attribute block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lb_ssl_negotiation_policy#attribute LbSslNegotiationPolicy#attribute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lb_ssl_negotiation_policy#attribute LbSslNegotiationPolicy#attribute}
 
 ---
 
@@ -1077,7 +1077,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lb_ssl_negotiation_policy#id LbSslNegotiationPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lb_ssl_negotiation_policy#id LbSslNegotiationPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1094,7 +1094,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lb_ssl_negotiation_policy#region LbSslNegotiationPolicy#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lb_ssl_negotiation_policy#region LbSslNegotiationPolicy#region}
 
 ---
 
@@ -1106,7 +1106,7 @@ Triggers *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lb_ssl_negotiation_policy#triggers LbSslNegotiationPolicy#triggers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lb_ssl_negotiation_policy#triggers LbSslNegotiationPolicy#triggers}.
 
 ---
 
@@ -1117,7 +1117,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lbSslNegotiationPolicy.LbSslNegotiationPolicyAttributeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lbsslnegotiationpolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/lbsslnegotiationpolicy"
 
 lbsslnegotiationpolicy.NewLbSslNegotiationPolicyAttributeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LbSslNegotiationPolicyAttributeList
 ```
@@ -1277,7 +1277,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lbSslNegotiationPolicy.LbSslNegotiationPolicyAttributeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lbsslnegotiationpolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/lbsslnegotiationpolicy"
 
 lbsslnegotiationpolicy.NewLbSslNegotiationPolicyAttributeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LbSslNegotiationPolicyAttributeOutputReference
 ```

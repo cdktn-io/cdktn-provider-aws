@@ -4,12 +4,12 @@
 
 ### XrayGroup <a name="XrayGroup" id="@cdktn/provider-aws.xrayGroup.XrayGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/xray_group aws_xray_group}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/xray_group aws_xray_group}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.xrayGroup.XrayGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/xraygroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/xraygroup"
 
 xraygroup.NewXrayGroup(scope Construct, id *string, config XrayGroupConfig) XrayGroup
 ```
@@ -426,7 +426,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.xrayGroup.XrayGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/xraygroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/xraygroup"
 
 xraygroup.XrayGroup_IsConstruct(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.xrayGroup.XrayGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/xraygroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/xraygroup"
 
 xraygroup.XrayGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ xraygroup.XrayGroup_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.xrayGroup.XrayGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/xraygroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/xraygroup"
 
 xraygroup.XrayGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ xraygroup.XrayGroup_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.xrayGroup.XrayGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/xraygroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/xraygroup"
 
 xraygroup.XrayGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -515,7 +515,7 @@ The construct id used in the generated config for the XrayGroup to import.
 
 The id of the existing XrayGroup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/xray_group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/xray_group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -880,7 +880,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.xrayGroup.XrayGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/xraygroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/xraygroup"
 
 &xraygroup.XrayGroupConfig {
 	Connection: interface{},
@@ -893,7 +893,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/xraygroup"
 	FilterExpression: *string,
 	GroupName: *string,
 	Id: *string,
-	InsightsConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.xrayGroup.XrayGroupInsightsConfiguration,
+	InsightsConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.xrayGroup.XrayGroupInsightsConfiguration,
 	Region: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
@@ -911,13 +911,13 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/xraygroup"
 | <code><a href="#@cdktn/provider-aws.xrayGroup.XrayGroupConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.xrayGroup.XrayGroupConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.xrayGroup.XrayGroupConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.xrayGroup.XrayGroupConfig.property.filterExpression">FilterExpression</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/xray_group#filter_expression XrayGroup#filter_expression}. |
-| <code><a href="#@cdktn/provider-aws.xrayGroup.XrayGroupConfig.property.groupName">GroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/xray_group#group_name XrayGroup#group_name}. |
-| <code><a href="#@cdktn/provider-aws.xrayGroup.XrayGroupConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/xray_group#id XrayGroup#id}. |
+| <code><a href="#@cdktn/provider-aws.xrayGroup.XrayGroupConfig.property.filterExpression">FilterExpression</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/xray_group#filter_expression XrayGroup#filter_expression}. |
+| <code><a href="#@cdktn/provider-aws.xrayGroup.XrayGroupConfig.property.groupName">GroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/xray_group#group_name XrayGroup#group_name}. |
+| <code><a href="#@cdktn/provider-aws.xrayGroup.XrayGroupConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/xray_group#id XrayGroup#id}. |
 | <code><a href="#@cdktn/provider-aws.xrayGroup.XrayGroupConfig.property.insightsConfiguration">InsightsConfiguration</a></code> | <code><a href="#@cdktn/provider-aws.xrayGroup.XrayGroupInsightsConfiguration">XrayGroupInsightsConfiguration</a></code> | insights_configuration block. |
 | <code><a href="#@cdktn/provider-aws.xrayGroup.XrayGroupConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.xrayGroup.XrayGroupConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/xray_group#tags XrayGroup#tags}. |
-| <code><a href="#@cdktn/provider-aws.xrayGroup.XrayGroupConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/xray_group#tags_all XrayGroup#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.xrayGroup.XrayGroupConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/xray_group#tags XrayGroup#tags}. |
+| <code><a href="#@cdktn/provider-aws.xrayGroup.XrayGroupConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/xray_group#tags_all XrayGroup#tags_all}. |
 
 ---
 
@@ -999,7 +999,7 @@ FilterExpression *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/xray_group#filter_expression XrayGroup#filter_expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/xray_group#filter_expression XrayGroup#filter_expression}.
 
 ---
 
@@ -1011,7 +1011,7 @@ GroupName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/xray_group#group_name XrayGroup#group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/xray_group#group_name XrayGroup#group_name}.
 
 ---
 
@@ -1023,7 +1023,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/xray_group#id XrayGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/xray_group#id XrayGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1040,7 +1040,7 @@ InsightsConfiguration XrayGroupInsightsConfiguration
 
 insights_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/xray_group#insights_configuration XrayGroup#insights_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/xray_group#insights_configuration XrayGroup#insights_configuration}
 
 ---
 
@@ -1054,7 +1054,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/xray_group#region XrayGroup#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/xray_group#region XrayGroup#region}
 
 ---
 
@@ -1066,7 +1066,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/xray_group#tags XrayGroup#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/xray_group#tags XrayGroup#tags}.
 
 ---
 
@@ -1078,7 +1078,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/xray_group#tags_all XrayGroup#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/xray_group#tags_all XrayGroup#tags_all}.
 
 ---
 
@@ -1087,7 +1087,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.xrayGroup.XrayGroupInsightsConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/xraygroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/xraygroup"
 
 &xraygroup.XrayGroupInsightsConfiguration {
 	InsightsEnabled: interface{},
@@ -1099,8 +1099,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/xraygroup"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.xrayGroup.XrayGroupInsightsConfiguration.property.insightsEnabled">InsightsEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/xray_group#insights_enabled XrayGroup#insights_enabled}. |
-| <code><a href="#@cdktn/provider-aws.xrayGroup.XrayGroupInsightsConfiguration.property.notificationsEnabled">NotificationsEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/xray_group#notifications_enabled XrayGroup#notifications_enabled}. |
+| <code><a href="#@cdktn/provider-aws.xrayGroup.XrayGroupInsightsConfiguration.property.insightsEnabled">InsightsEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/xray_group#insights_enabled XrayGroup#insights_enabled}. |
+| <code><a href="#@cdktn/provider-aws.xrayGroup.XrayGroupInsightsConfiguration.property.notificationsEnabled">NotificationsEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/xray_group#notifications_enabled XrayGroup#notifications_enabled}. |
 
 ---
 
@@ -1112,7 +1112,7 @@ InsightsEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/xray_group#insights_enabled XrayGroup#insights_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/xray_group#insights_enabled XrayGroup#insights_enabled}.
 
 ---
 
@@ -1124,7 +1124,7 @@ NotificationsEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/xray_group#notifications_enabled XrayGroup#notifications_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/xray_group#notifications_enabled XrayGroup#notifications_enabled}.
 
 ---
 
@@ -1135,7 +1135,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.xrayGroup.XrayGroupInsightsConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/xraygroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/xraygroup"
 
 xraygroup.NewXrayGroupInsightsConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) XrayGroupInsightsConfigurationOutputReference
 ```

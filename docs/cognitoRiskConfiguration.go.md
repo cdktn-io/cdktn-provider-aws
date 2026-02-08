@@ -4,12 +4,12 @@
 
 ### CognitoRiskConfiguration <a name="CognitoRiskConfiguration" id="@cdktn/provider-aws.cognitoRiskConfiguration.CognitoRiskConfiguration"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cognito_risk_configuration aws_cognito_risk_configuration}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cognito_risk_configuration aws_cognito_risk_configuration}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cognitoRiskConfiguration.CognitoRiskConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cognitoriskconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cognitoriskconfiguration"
 
 cognitoriskconfiguration.NewCognitoRiskConfiguration(scope Construct, id *string, config CognitoRiskConfigurationConfig) CognitoRiskConfiguration
 ```
@@ -459,7 +459,7 @@ func ResetRiskExceptionConfiguration()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.cognitoRiskConfiguration.CognitoRiskConfiguration.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cognitoriskconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cognitoriskconfiguration"
 
 cognitoriskconfiguration.CognitoRiskConfiguration_IsConstruct(x interface{}) *bool
 ```
@@ -491,7 +491,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.cognitoRiskConfiguration.CognitoRiskConfiguration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cognitoriskconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cognitoriskconfiguration"
 
 cognitoriskconfiguration.CognitoRiskConfiguration_IsTerraformElement(x interface{}) *bool
 ```
@@ -505,7 +505,7 @@ cognitoriskconfiguration.CognitoRiskConfiguration_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.cognitoRiskConfiguration.CognitoRiskConfiguration.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cognitoriskconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cognitoriskconfiguration"
 
 cognitoriskconfiguration.CognitoRiskConfiguration_IsTerraformResource(x interface{}) *bool
 ```
@@ -519,7 +519,7 @@ cognitoriskconfiguration.CognitoRiskConfiguration_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.cognitoRiskConfiguration.CognitoRiskConfiguration.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cognitoriskconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cognitoriskconfiguration"
 
 cognitoriskconfiguration.CognitoRiskConfiguration_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -548,7 +548,7 @@ The construct id used in the generated config for the CognitoRiskConfiguration t
 
 The id of the existing CognitoRiskConfiguration that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cognito_risk_configuration#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cognito_risk_configuration#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -902,11 +902,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cognitoriskconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cognitoriskconfiguration"
 
 &cognitoriskconfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfiguration {
-	Actions: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationActions,
-	NotifyConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfiguration,
+	Actions: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationActions,
+	NotifyConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfiguration,
 }
 ```
 
@@ -929,7 +929,7 @@ Actions CognitoRiskConfigurationAccountTakeoverRiskConfigurationActions
 
 actions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cognito_risk_configuration#actions CognitoRiskConfiguration#actions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cognito_risk_configuration#actions CognitoRiskConfiguration#actions}
 
 ---
 
@@ -943,7 +943,7 @@ NotifyConfiguration CognitoRiskConfigurationAccountTakeoverRiskConfigurationNoti
 
 notify_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cognito_risk_configuration#notify_configuration CognitoRiskConfiguration#notify_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cognito_risk_configuration#notify_configuration CognitoRiskConfiguration#notify_configuration}
 
 ---
 
@@ -952,12 +952,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationActions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cognitoriskconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cognitoriskconfiguration"
 
 &cognitoriskconfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationActions {
-	HighAction: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsHighAction,
-	LowAction: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsLowAction,
-	MediumAction: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsMediumAction,
+	HighAction: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsHighAction,
+	LowAction: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsLowAction,
+	MediumAction: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsMediumAction,
 }
 ```
 
@@ -981,7 +981,7 @@ HighAction CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsHighAc
 
 high_action block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cognito_risk_configuration#high_action CognitoRiskConfiguration#high_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cognito_risk_configuration#high_action CognitoRiskConfiguration#high_action}
 
 ---
 
@@ -995,7 +995,7 @@ LowAction CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsLowActi
 
 low_action block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cognito_risk_configuration#low_action CognitoRiskConfiguration#low_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cognito_risk_configuration#low_action CognitoRiskConfiguration#low_action}
 
 ---
 
@@ -1009,7 +1009,7 @@ MediumAction CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsMedi
 
 medium_action block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cognito_risk_configuration#medium_action CognitoRiskConfiguration#medium_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cognito_risk_configuration#medium_action CognitoRiskConfiguration#medium_action}
 
 ---
 
@@ -1018,7 +1018,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsHighAction.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cognitoriskconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cognitoriskconfiguration"
 
 &cognitoriskconfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsHighAction {
 	EventAction: *string,
@@ -1030,8 +1030,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cognitoriskconfigurati
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsHighAction.property.eventAction">EventAction</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cognito_risk_configuration#event_action CognitoRiskConfiguration#event_action}. |
-| <code><a href="#@cdktn/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsHighAction.property.notify">Notify</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cognito_risk_configuration#notify CognitoRiskConfiguration#notify}. |
+| <code><a href="#@cdktn/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsHighAction.property.eventAction">EventAction</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cognito_risk_configuration#event_action CognitoRiskConfiguration#event_action}. |
+| <code><a href="#@cdktn/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsHighAction.property.notify">Notify</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cognito_risk_configuration#notify CognitoRiskConfiguration#notify}. |
 
 ---
 
@@ -1043,7 +1043,7 @@ EventAction *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cognito_risk_configuration#event_action CognitoRiskConfiguration#event_action}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cognito_risk_configuration#event_action CognitoRiskConfiguration#event_action}.
 
 ---
 
@@ -1055,7 +1055,7 @@ Notify interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cognito_risk_configuration#notify CognitoRiskConfiguration#notify}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cognito_risk_configuration#notify CognitoRiskConfiguration#notify}.
 
 ---
 
@@ -1064,7 +1064,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsLowAction.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cognitoriskconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cognitoriskconfiguration"
 
 &cognitoriskconfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsLowAction {
 	EventAction: *string,
@@ -1076,8 +1076,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cognitoriskconfigurati
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsLowAction.property.eventAction">EventAction</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cognito_risk_configuration#event_action CognitoRiskConfiguration#event_action}. |
-| <code><a href="#@cdktn/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsLowAction.property.notify">Notify</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cognito_risk_configuration#notify CognitoRiskConfiguration#notify}. |
+| <code><a href="#@cdktn/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsLowAction.property.eventAction">EventAction</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cognito_risk_configuration#event_action CognitoRiskConfiguration#event_action}. |
+| <code><a href="#@cdktn/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsLowAction.property.notify">Notify</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cognito_risk_configuration#notify CognitoRiskConfiguration#notify}. |
 
 ---
 
@@ -1089,7 +1089,7 @@ EventAction *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cognito_risk_configuration#event_action CognitoRiskConfiguration#event_action}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cognito_risk_configuration#event_action CognitoRiskConfiguration#event_action}.
 
 ---
 
@@ -1101,7 +1101,7 @@ Notify interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cognito_risk_configuration#notify CognitoRiskConfiguration#notify}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cognito_risk_configuration#notify CognitoRiskConfiguration#notify}.
 
 ---
 
@@ -1110,7 +1110,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsMediumAction.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cognitoriskconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cognitoriskconfiguration"
 
 &cognitoriskconfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsMediumAction {
 	EventAction: *string,
@@ -1122,8 +1122,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cognitoriskconfigurati
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsMediumAction.property.eventAction">EventAction</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cognito_risk_configuration#event_action CognitoRiskConfiguration#event_action}. |
-| <code><a href="#@cdktn/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsMediumAction.property.notify">Notify</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cognito_risk_configuration#notify CognitoRiskConfiguration#notify}. |
+| <code><a href="#@cdktn/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsMediumAction.property.eventAction">EventAction</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cognito_risk_configuration#event_action CognitoRiskConfiguration#event_action}. |
+| <code><a href="#@cdktn/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsMediumAction.property.notify">Notify</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cognito_risk_configuration#notify CognitoRiskConfiguration#notify}. |
 
 ---
 
@@ -1135,7 +1135,7 @@ EventAction *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cognito_risk_configuration#event_action CognitoRiskConfiguration#event_action}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cognito_risk_configuration#event_action CognitoRiskConfiguration#event_action}.
 
 ---
 
@@ -1147,7 +1147,7 @@ Notify interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cognito_risk_configuration#notify CognitoRiskConfiguration#notify}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cognito_risk_configuration#notify CognitoRiskConfiguration#notify}.
 
 ---
 
@@ -1156,14 +1156,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cognitoriskconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cognitoriskconfiguration"
 
 &cognitoriskconfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfiguration {
 	SourceArn: *string,
-	BlockEmail: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationBlockEmail,
+	BlockEmail: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationBlockEmail,
 	From: *string,
-	MfaEmail: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationMfaEmail,
-	NoActionEmail: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationNoActionEmail,
+	MfaEmail: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationMfaEmail,
+	NoActionEmail: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationNoActionEmail,
 	ReplyTo: *string,
 }
 ```
@@ -1172,12 +1172,12 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cognitoriskconfigurati
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfiguration.property.sourceArn">SourceArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cognito_risk_configuration#source_arn CognitoRiskConfiguration#source_arn}. |
+| <code><a href="#@cdktn/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfiguration.property.sourceArn">SourceArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cognito_risk_configuration#source_arn CognitoRiskConfiguration#source_arn}. |
 | <code><a href="#@cdktn/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfiguration.property.blockEmail">BlockEmail</a></code> | <code><a href="#@cdktn/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationBlockEmail">CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationBlockEmail</a></code> | block_email block. |
-| <code><a href="#@cdktn/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfiguration.property.from">From</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cognito_risk_configuration#from CognitoRiskConfiguration#from}. |
+| <code><a href="#@cdktn/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfiguration.property.from">From</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cognito_risk_configuration#from CognitoRiskConfiguration#from}. |
 | <code><a href="#@cdktn/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfiguration.property.mfaEmail">MfaEmail</a></code> | <code><a href="#@cdktn/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationMfaEmail">CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationMfaEmail</a></code> | mfa_email block. |
 | <code><a href="#@cdktn/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfiguration.property.noActionEmail">NoActionEmail</a></code> | <code><a href="#@cdktn/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationNoActionEmail">CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationNoActionEmail</a></code> | no_action_email block. |
-| <code><a href="#@cdktn/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfiguration.property.replyTo">ReplyTo</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cognito_risk_configuration#reply_to CognitoRiskConfiguration#reply_to}. |
+| <code><a href="#@cdktn/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfiguration.property.replyTo">ReplyTo</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cognito_risk_configuration#reply_to CognitoRiskConfiguration#reply_to}. |
 
 ---
 
@@ -1189,7 +1189,7 @@ SourceArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cognito_risk_configuration#source_arn CognitoRiskConfiguration#source_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cognito_risk_configuration#source_arn CognitoRiskConfiguration#source_arn}.
 
 ---
 
@@ -1203,7 +1203,7 @@ BlockEmail CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigu
 
 block_email block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cognito_risk_configuration#block_email CognitoRiskConfiguration#block_email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cognito_risk_configuration#block_email CognitoRiskConfiguration#block_email}
 
 ---
 
@@ -1215,7 +1215,7 @@ From *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cognito_risk_configuration#from CognitoRiskConfiguration#from}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cognito_risk_configuration#from CognitoRiskConfiguration#from}.
 
 ---
 
@@ -1229,7 +1229,7 @@ MfaEmail CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigura
 
 mfa_email block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cognito_risk_configuration#mfa_email CognitoRiskConfiguration#mfa_email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cognito_risk_configuration#mfa_email CognitoRiskConfiguration#mfa_email}
 
 ---
 
@@ -1243,7 +1243,7 @@ NoActionEmail CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConf
 
 no_action_email block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cognito_risk_configuration#no_action_email CognitoRiskConfiguration#no_action_email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cognito_risk_configuration#no_action_email CognitoRiskConfiguration#no_action_email}
 
 ---
 
@@ -1255,7 +1255,7 @@ ReplyTo *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cognito_risk_configuration#reply_to CognitoRiskConfiguration#reply_to}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cognito_risk_configuration#reply_to CognitoRiskConfiguration#reply_to}.
 
 ---
 
@@ -1264,7 +1264,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationBlockEmail.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cognitoriskconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cognitoriskconfiguration"
 
 &cognitoriskconfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationBlockEmail {
 	HtmlBody: *string,
@@ -1277,9 +1277,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cognitoriskconfigurati
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationBlockEmail.property.htmlBody">HtmlBody</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cognito_risk_configuration#html_body CognitoRiskConfiguration#html_body}. |
-| <code><a href="#@cdktn/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationBlockEmail.property.subject">Subject</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cognito_risk_configuration#subject CognitoRiskConfiguration#subject}. |
-| <code><a href="#@cdktn/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationBlockEmail.property.textBody">TextBody</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cognito_risk_configuration#text_body CognitoRiskConfiguration#text_body}. |
+| <code><a href="#@cdktn/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationBlockEmail.property.htmlBody">HtmlBody</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cognito_risk_configuration#html_body CognitoRiskConfiguration#html_body}. |
+| <code><a href="#@cdktn/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationBlockEmail.property.subject">Subject</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cognito_risk_configuration#subject CognitoRiskConfiguration#subject}. |
+| <code><a href="#@cdktn/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationBlockEmail.property.textBody">TextBody</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cognito_risk_configuration#text_body CognitoRiskConfiguration#text_body}. |
 
 ---
 
@@ -1291,7 +1291,7 @@ HtmlBody *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cognito_risk_configuration#html_body CognitoRiskConfiguration#html_body}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cognito_risk_configuration#html_body CognitoRiskConfiguration#html_body}.
 
 ---
 
@@ -1303,7 +1303,7 @@ Subject *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cognito_risk_configuration#subject CognitoRiskConfiguration#subject}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cognito_risk_configuration#subject CognitoRiskConfiguration#subject}.
 
 ---
 
@@ -1315,7 +1315,7 @@ TextBody *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cognito_risk_configuration#text_body CognitoRiskConfiguration#text_body}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cognito_risk_configuration#text_body CognitoRiskConfiguration#text_body}.
 
 ---
 
@@ -1324,7 +1324,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationMfaEmail.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cognitoriskconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cognitoriskconfiguration"
 
 &cognitoriskconfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationMfaEmail {
 	HtmlBody: *string,
@@ -1337,9 +1337,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cognitoriskconfigurati
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationMfaEmail.property.htmlBody">HtmlBody</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cognito_risk_configuration#html_body CognitoRiskConfiguration#html_body}. |
-| <code><a href="#@cdktn/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationMfaEmail.property.subject">Subject</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cognito_risk_configuration#subject CognitoRiskConfiguration#subject}. |
-| <code><a href="#@cdktn/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationMfaEmail.property.textBody">TextBody</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cognito_risk_configuration#text_body CognitoRiskConfiguration#text_body}. |
+| <code><a href="#@cdktn/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationMfaEmail.property.htmlBody">HtmlBody</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cognito_risk_configuration#html_body CognitoRiskConfiguration#html_body}. |
+| <code><a href="#@cdktn/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationMfaEmail.property.subject">Subject</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cognito_risk_configuration#subject CognitoRiskConfiguration#subject}. |
+| <code><a href="#@cdktn/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationMfaEmail.property.textBody">TextBody</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cognito_risk_configuration#text_body CognitoRiskConfiguration#text_body}. |
 
 ---
 
@@ -1351,7 +1351,7 @@ HtmlBody *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cognito_risk_configuration#html_body CognitoRiskConfiguration#html_body}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cognito_risk_configuration#html_body CognitoRiskConfiguration#html_body}.
 
 ---
 
@@ -1363,7 +1363,7 @@ Subject *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cognito_risk_configuration#subject CognitoRiskConfiguration#subject}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cognito_risk_configuration#subject CognitoRiskConfiguration#subject}.
 
 ---
 
@@ -1375,7 +1375,7 @@ TextBody *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cognito_risk_configuration#text_body CognitoRiskConfiguration#text_body}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cognito_risk_configuration#text_body CognitoRiskConfiguration#text_body}.
 
 ---
 
@@ -1384,7 +1384,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationNoActionEmail.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cognitoriskconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cognitoriskconfiguration"
 
 &cognitoriskconfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationNoActionEmail {
 	HtmlBody: *string,
@@ -1397,9 +1397,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cognitoriskconfigurati
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationNoActionEmail.property.htmlBody">HtmlBody</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cognito_risk_configuration#html_body CognitoRiskConfiguration#html_body}. |
-| <code><a href="#@cdktn/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationNoActionEmail.property.subject">Subject</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cognito_risk_configuration#subject CognitoRiskConfiguration#subject}. |
-| <code><a href="#@cdktn/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationNoActionEmail.property.textBody">TextBody</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cognito_risk_configuration#text_body CognitoRiskConfiguration#text_body}. |
+| <code><a href="#@cdktn/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationNoActionEmail.property.htmlBody">HtmlBody</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cognito_risk_configuration#html_body CognitoRiskConfiguration#html_body}. |
+| <code><a href="#@cdktn/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationNoActionEmail.property.subject">Subject</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cognito_risk_configuration#subject CognitoRiskConfiguration#subject}. |
+| <code><a href="#@cdktn/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationNoActionEmail.property.textBody">TextBody</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cognito_risk_configuration#text_body CognitoRiskConfiguration#text_body}. |
 
 ---
 
@@ -1411,7 +1411,7 @@ HtmlBody *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cognito_risk_configuration#html_body CognitoRiskConfiguration#html_body}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cognito_risk_configuration#html_body CognitoRiskConfiguration#html_body}.
 
 ---
 
@@ -1423,7 +1423,7 @@ Subject *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cognito_risk_configuration#subject CognitoRiskConfiguration#subject}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cognito_risk_configuration#subject CognitoRiskConfiguration#subject}.
 
 ---
 
@@ -1435,7 +1435,7 @@ TextBody *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cognito_risk_configuration#text_body CognitoRiskConfiguration#text_body}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cognito_risk_configuration#text_body CognitoRiskConfiguration#text_body}.
 
 ---
 
@@ -1444,10 +1444,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationCompromisedCredentialsRiskConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cognitoriskconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cognitoriskconfiguration"
 
 &cognitoriskconfiguration.CognitoRiskConfigurationCompromisedCredentialsRiskConfiguration {
-	Actions: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.cognitoRiskConfiguration.CognitoRiskConfigurationCompromisedCredentialsRiskConfigurationActions,
+	Actions: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.cognitoRiskConfiguration.CognitoRiskConfigurationCompromisedCredentialsRiskConfigurationActions,
 	EventFilter: *[]*string,
 }
 ```
@@ -1457,7 +1457,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cognitoriskconfigurati
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationCompromisedCredentialsRiskConfiguration.property.actions">Actions</a></code> | <code><a href="#@cdktn/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationCompromisedCredentialsRiskConfigurationActions">CognitoRiskConfigurationCompromisedCredentialsRiskConfigurationActions</a></code> | actions block. |
-| <code><a href="#@cdktn/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationCompromisedCredentialsRiskConfiguration.property.eventFilter">EventFilter</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cognito_risk_configuration#event_filter CognitoRiskConfiguration#event_filter}. |
+| <code><a href="#@cdktn/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationCompromisedCredentialsRiskConfiguration.property.eventFilter">EventFilter</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cognito_risk_configuration#event_filter CognitoRiskConfiguration#event_filter}. |
 
 ---
 
@@ -1471,7 +1471,7 @@ Actions CognitoRiskConfigurationCompromisedCredentialsRiskConfigurationActions
 
 actions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cognito_risk_configuration#actions CognitoRiskConfiguration#actions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cognito_risk_configuration#actions CognitoRiskConfiguration#actions}
 
 ---
 
@@ -1483,7 +1483,7 @@ EventFilter *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cognito_risk_configuration#event_filter CognitoRiskConfiguration#event_filter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cognito_risk_configuration#event_filter CognitoRiskConfiguration#event_filter}.
 
 ---
 
@@ -1492,7 +1492,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationCompromisedCredentialsRiskConfigurationActions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cognitoriskconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cognitoriskconfiguration"
 
 &cognitoriskconfiguration.CognitoRiskConfigurationCompromisedCredentialsRiskConfigurationActions {
 	EventAction: *string,
@@ -1503,7 +1503,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cognitoriskconfigurati
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationCompromisedCredentialsRiskConfigurationActions.property.eventAction">EventAction</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cognito_risk_configuration#event_action CognitoRiskConfiguration#event_action}. |
+| <code><a href="#@cdktn/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationCompromisedCredentialsRiskConfigurationActions.property.eventAction">EventAction</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cognito_risk_configuration#event_action CognitoRiskConfiguration#event_action}. |
 
 ---
 
@@ -1515,7 +1515,7 @@ EventAction *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cognito_risk_configuration#event_action CognitoRiskConfiguration#event_action}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cognito_risk_configuration#event_action CognitoRiskConfiguration#event_action}.
 
 ---
 
@@ -1524,7 +1524,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cognitoriskconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cognitoriskconfiguration"
 
 &cognitoriskconfiguration.CognitoRiskConfigurationConfig {
 	Connection: interface{},
@@ -1535,12 +1535,12 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cognitoriskconfigurati
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	UserPoolId: *string,
-	AccountTakeoverRiskConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfiguration,
+	AccountTakeoverRiskConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfiguration,
 	ClientId: *string,
-	CompromisedCredentialsRiskConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.cognitoRiskConfiguration.CognitoRiskConfigurationCompromisedCredentialsRiskConfiguration,
+	CompromisedCredentialsRiskConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.cognitoRiskConfiguration.CognitoRiskConfigurationCompromisedCredentialsRiskConfiguration,
 	Id: *string,
 	Region: *string,
-	RiskExceptionConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.cognitoRiskConfiguration.CognitoRiskConfigurationRiskExceptionConfiguration,
+	RiskExceptionConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.cognitoRiskConfiguration.CognitoRiskConfigurationRiskExceptionConfiguration,
 }
 ```
 
@@ -1555,11 +1555,11 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cognitoriskconfigurati
 | <code><a href="#@cdktn/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationConfig.property.userPoolId">UserPoolId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cognito_risk_configuration#user_pool_id CognitoRiskConfiguration#user_pool_id}. |
+| <code><a href="#@cdktn/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationConfig.property.userPoolId">UserPoolId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cognito_risk_configuration#user_pool_id CognitoRiskConfiguration#user_pool_id}. |
 | <code><a href="#@cdktn/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationConfig.property.accountTakeoverRiskConfiguration">AccountTakeoverRiskConfiguration</a></code> | <code><a href="#@cdktn/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfiguration">CognitoRiskConfigurationAccountTakeoverRiskConfiguration</a></code> | account_takeover_risk_configuration block. |
-| <code><a href="#@cdktn/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationConfig.property.clientId">ClientId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cognito_risk_configuration#client_id CognitoRiskConfiguration#client_id}. |
+| <code><a href="#@cdktn/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationConfig.property.clientId">ClientId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cognito_risk_configuration#client_id CognitoRiskConfiguration#client_id}. |
 | <code><a href="#@cdktn/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationConfig.property.compromisedCredentialsRiskConfiguration">CompromisedCredentialsRiskConfiguration</a></code> | <code><a href="#@cdktn/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationCompromisedCredentialsRiskConfiguration">CognitoRiskConfigurationCompromisedCredentialsRiskConfiguration</a></code> | compromised_credentials_risk_configuration block. |
-| <code><a href="#@cdktn/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cognito_risk_configuration#id CognitoRiskConfiguration#id}. |
+| <code><a href="#@cdktn/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cognito_risk_configuration#id CognitoRiskConfiguration#id}. |
 | <code><a href="#@cdktn/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktn/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationConfig.property.riskExceptionConfiguration">RiskExceptionConfiguration</a></code> | <code><a href="#@cdktn/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationRiskExceptionConfiguration">CognitoRiskConfigurationRiskExceptionConfiguration</a></code> | risk_exception_configuration block. |
 
@@ -1643,7 +1643,7 @@ UserPoolId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cognito_risk_configuration#user_pool_id CognitoRiskConfiguration#user_pool_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cognito_risk_configuration#user_pool_id CognitoRiskConfiguration#user_pool_id}.
 
 ---
 
@@ -1657,7 +1657,7 @@ AccountTakeoverRiskConfiguration CognitoRiskConfigurationAccountTakeoverRiskConf
 
 account_takeover_risk_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cognito_risk_configuration#account_takeover_risk_configuration CognitoRiskConfiguration#account_takeover_risk_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cognito_risk_configuration#account_takeover_risk_configuration CognitoRiskConfiguration#account_takeover_risk_configuration}
 
 ---
 
@@ -1669,7 +1669,7 @@ ClientId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cognito_risk_configuration#client_id CognitoRiskConfiguration#client_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cognito_risk_configuration#client_id CognitoRiskConfiguration#client_id}.
 
 ---
 
@@ -1683,7 +1683,7 @@ CompromisedCredentialsRiskConfiguration CognitoRiskConfigurationCompromisedCrede
 
 compromised_credentials_risk_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cognito_risk_configuration#compromised_credentials_risk_configuration CognitoRiskConfiguration#compromised_credentials_risk_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cognito_risk_configuration#compromised_credentials_risk_configuration CognitoRiskConfiguration#compromised_credentials_risk_configuration}
 
 ---
 
@@ -1695,7 +1695,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cognito_risk_configuration#id CognitoRiskConfiguration#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cognito_risk_configuration#id CognitoRiskConfiguration#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1712,7 +1712,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cognito_risk_configuration#region CognitoRiskConfiguration#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cognito_risk_configuration#region CognitoRiskConfiguration#region}
 
 ---
 
@@ -1726,7 +1726,7 @@ RiskExceptionConfiguration CognitoRiskConfigurationRiskExceptionConfiguration
 
 risk_exception_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cognito_risk_configuration#risk_exception_configuration CognitoRiskConfiguration#risk_exception_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cognito_risk_configuration#risk_exception_configuration CognitoRiskConfiguration#risk_exception_configuration}
 
 ---
 
@@ -1735,7 +1735,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationRiskExceptionConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cognitoriskconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cognitoriskconfiguration"
 
 &cognitoriskconfiguration.CognitoRiskConfigurationRiskExceptionConfiguration {
 	BlockedIpRangeList: *[]*string,
@@ -1747,8 +1747,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cognitoriskconfigurati
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationRiskExceptionConfiguration.property.blockedIpRangeList">BlockedIpRangeList</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cognito_risk_configuration#blocked_ip_range_list CognitoRiskConfiguration#blocked_ip_range_list}. |
-| <code><a href="#@cdktn/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationRiskExceptionConfiguration.property.skippedIpRangeList">SkippedIpRangeList</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cognito_risk_configuration#skipped_ip_range_list CognitoRiskConfiguration#skipped_ip_range_list}. |
+| <code><a href="#@cdktn/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationRiskExceptionConfiguration.property.blockedIpRangeList">BlockedIpRangeList</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cognito_risk_configuration#blocked_ip_range_list CognitoRiskConfiguration#blocked_ip_range_list}. |
+| <code><a href="#@cdktn/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationRiskExceptionConfiguration.property.skippedIpRangeList">SkippedIpRangeList</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cognito_risk_configuration#skipped_ip_range_list CognitoRiskConfiguration#skipped_ip_range_list}. |
 
 ---
 
@@ -1760,7 +1760,7 @@ BlockedIpRangeList *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cognito_risk_configuration#blocked_ip_range_list CognitoRiskConfiguration#blocked_ip_range_list}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cognito_risk_configuration#blocked_ip_range_list CognitoRiskConfiguration#blocked_ip_range_list}.
 
 ---
 
@@ -1772,7 +1772,7 @@ SkippedIpRangeList *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cognito_risk_configuration#skipped_ip_range_list CognitoRiskConfiguration#skipped_ip_range_list}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cognito_risk_configuration#skipped_ip_range_list CognitoRiskConfiguration#skipped_ip_range_list}.
 
 ---
 
@@ -1783,7 +1783,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsHighActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cognitoriskconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cognitoriskconfiguration"
 
 cognitoriskconfiguration.NewCognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsHighActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsHighActionOutputReference
 ```
@@ -2076,7 +2076,7 @@ func InternalValue() CognitoRiskConfigurationAccountTakeoverRiskConfigurationAct
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsLowActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cognitoriskconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cognitoriskconfiguration"
 
 cognitoriskconfiguration.NewCognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsLowActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsLowActionOutputReference
 ```
@@ -2369,7 +2369,7 @@ func InternalValue() CognitoRiskConfigurationAccountTakeoverRiskConfigurationAct
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsMediumActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cognitoriskconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cognitoriskconfiguration"
 
 cognitoriskconfiguration.NewCognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsMediumActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsMediumActionOutputReference
 ```
@@ -2662,7 +2662,7 @@ func InternalValue() CognitoRiskConfigurationAccountTakeoverRiskConfigurationAct
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cognitoriskconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cognitoriskconfiguration"
 
 cognitoriskconfiguration.NewCognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsOutputReference
 ```
@@ -3037,7 +3037,7 @@ func InternalValue() CognitoRiskConfigurationAccountTakeoverRiskConfigurationAct
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationBlockEmailOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cognitoriskconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cognitoriskconfiguration"
 
 cognitoriskconfiguration.NewCognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationBlockEmailOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationBlockEmailOutputReference
 ```
@@ -3352,7 +3352,7 @@ func InternalValue() CognitoRiskConfigurationAccountTakeoverRiskConfigurationNot
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationMfaEmailOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cognitoriskconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cognitoriskconfiguration"
 
 cognitoriskconfiguration.NewCognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationMfaEmailOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationMfaEmailOutputReference
 ```
@@ -3667,7 +3667,7 @@ func InternalValue() CognitoRiskConfigurationAccountTakeoverRiskConfigurationNot
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationNoActionEmailOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cognitoriskconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cognitoriskconfiguration"
 
 cognitoriskconfiguration.NewCognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationNoActionEmailOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationNoActionEmailOutputReference
 ```
@@ -3982,7 +3982,7 @@ func InternalValue() CognitoRiskConfigurationAccountTakeoverRiskConfigurationNot
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cognitoriskconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cognitoriskconfiguration"
 
 cognitoriskconfiguration.NewCognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationOutputReference
 ```
@@ -4437,7 +4437,7 @@ func InternalValue() CognitoRiskConfigurationAccountTakeoverRiskConfigurationNot
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cognitoriskconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cognitoriskconfiguration"
 
 cognitoriskconfiguration.NewCognitoRiskConfigurationAccountTakeoverRiskConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CognitoRiskConfigurationAccountTakeoverRiskConfigurationOutputReference
 ```
@@ -4763,7 +4763,7 @@ func InternalValue() CognitoRiskConfigurationAccountTakeoverRiskConfiguration
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationCompromisedCredentialsRiskConfigurationActionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cognitoriskconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cognitoriskconfiguration"
 
 cognitoriskconfiguration.NewCognitoRiskConfigurationCompromisedCredentialsRiskConfigurationActionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CognitoRiskConfigurationCompromisedCredentialsRiskConfigurationActionsOutputReference
 ```
@@ -5034,7 +5034,7 @@ func InternalValue() CognitoRiskConfigurationCompromisedCredentialsRiskConfigura
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationCompromisedCredentialsRiskConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cognitoriskconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cognitoriskconfiguration"
 
 cognitoriskconfiguration.NewCognitoRiskConfigurationCompromisedCredentialsRiskConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CognitoRiskConfigurationCompromisedCredentialsRiskConfigurationOutputReference
 ```
@@ -5347,7 +5347,7 @@ func InternalValue() CognitoRiskConfigurationCompromisedCredentialsRiskConfigura
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationRiskExceptionConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cognitoriskconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cognitoriskconfiguration"
 
 cognitoriskconfiguration.NewCognitoRiskConfigurationRiskExceptionConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CognitoRiskConfigurationRiskExceptionConfigurationOutputReference
 ```

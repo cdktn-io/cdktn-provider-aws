@@ -4,12 +4,12 @@
 
 ### ServicequotasTemplate <a name="ServicequotasTemplate" id="@cdktn/provider-aws.servicequotasTemplate.ServicequotasTemplate"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/servicequotas_template aws_servicequotas_template}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/servicequotas_template aws_servicequotas_template}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.servicequotasTemplate.ServicequotasTemplate.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/servicequotastemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/servicequotastemplate"
 
 servicequotastemplate.NewServicequotasTemplate(scope Construct, id *string, config ServicequotasTemplateConfig) ServicequotasTemplate
 ```
@@ -392,7 +392,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.servicequotasTemplate.ServicequotasTemplate.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/servicequotastemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/servicequotastemplate"
 
 servicequotastemplate.ServicequotasTemplate_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.servicequotasTemplate.ServicequotasTemplate.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/servicequotastemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/servicequotastemplate"
 
 servicequotastemplate.ServicequotasTemplate_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ servicequotastemplate.ServicequotasTemplate_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.servicequotasTemplate.ServicequotasTemplate.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/servicequotastemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/servicequotastemplate"
 
 servicequotastemplate.ServicequotasTemplate_IsTerraformResource(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ servicequotastemplate.ServicequotasTemplate_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.servicequotasTemplate.ServicequotasTemplate.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/servicequotastemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/servicequotastemplate"
 
 servicequotastemplate.ServicequotasTemplate_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -481,7 +481,7 @@ The construct id used in the generated config for the ServicequotasTemplate to i
 
 The id of the existing ServicequotasTemplate that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/servicequotas_template#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/servicequotas_template#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -846,7 +846,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.servicequotasTemplate.ServicequotasTemplateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/servicequotastemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/servicequotastemplate"
 
 &servicequotastemplate.ServicequotasTemplateConfig {
 	Connection: interface{},
@@ -875,11 +875,11 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/servicequotastemplate"
 | <code><a href="#@cdktn/provider-aws.servicequotasTemplate.ServicequotasTemplateConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.servicequotasTemplate.ServicequotasTemplateConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.servicequotasTemplate.ServicequotasTemplateConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.servicequotasTemplate.ServicequotasTemplateConfig.property.quotaCode">QuotaCode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/servicequotas_template#quota_code ServicequotasTemplate#quota_code}. |
-| <code><a href="#@cdktn/provider-aws.servicequotasTemplate.ServicequotasTemplateConfig.property.serviceCode">ServiceCode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/servicequotas_template#service_code ServicequotasTemplate#service_code}. |
-| <code><a href="#@cdktn/provider-aws.servicequotasTemplate.ServicequotasTemplateConfig.property.value">Value</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/servicequotas_template#value ServicequotasTemplate#value}. |
-| <code><a href="#@cdktn/provider-aws.servicequotasTemplate.ServicequotasTemplateConfig.property.awsRegion">AwsRegion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/servicequotas_template#aws_region ServicequotasTemplate#aws_region}. |
-| <code><a href="#@cdktn/provider-aws.servicequotasTemplate.ServicequotasTemplateConfig.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/servicequotas_template#region ServicequotasTemplate#region}. |
+| <code><a href="#@cdktn/provider-aws.servicequotasTemplate.ServicequotasTemplateConfig.property.quotaCode">QuotaCode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/servicequotas_template#quota_code ServicequotasTemplate#quota_code}. |
+| <code><a href="#@cdktn/provider-aws.servicequotasTemplate.ServicequotasTemplateConfig.property.serviceCode">ServiceCode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/servicequotas_template#service_code ServicequotasTemplate#service_code}. |
+| <code><a href="#@cdktn/provider-aws.servicequotasTemplate.ServicequotasTemplateConfig.property.value">Value</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/servicequotas_template#value ServicequotasTemplate#value}. |
+| <code><a href="#@cdktn/provider-aws.servicequotasTemplate.ServicequotasTemplateConfig.property.awsRegion">AwsRegion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/servicequotas_template#aws_region ServicequotasTemplate#aws_region}. |
+| <code><a href="#@cdktn/provider-aws.servicequotasTemplate.ServicequotasTemplateConfig.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/servicequotas_template#region ServicequotasTemplate#region}. |
 
 ---
 
@@ -961,7 +961,7 @@ QuotaCode *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/servicequotas_template#quota_code ServicequotasTemplate#quota_code}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/servicequotas_template#quota_code ServicequotasTemplate#quota_code}.
 
 ---
 
@@ -973,7 +973,7 @@ ServiceCode *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/servicequotas_template#service_code ServicequotasTemplate#service_code}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/servicequotas_template#service_code ServicequotasTemplate#service_code}.
 
 ---
 
@@ -985,7 +985,7 @@ Value *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/servicequotas_template#value ServicequotasTemplate#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/servicequotas_template#value ServicequotasTemplate#value}.
 
 ---
 
@@ -997,7 +997,7 @@ AwsRegion *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/servicequotas_template#aws_region ServicequotasTemplate#aws_region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/servicequotas_template#aws_region ServicequotasTemplate#aws_region}.
 
 ---
 
@@ -1009,7 +1009,7 @@ Region *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/servicequotas_template#region ServicequotasTemplate#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/servicequotas_template#region ServicequotasTemplate#region}.
 
 ---
 

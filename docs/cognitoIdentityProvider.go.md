@@ -4,12 +4,12 @@
 
 ### CognitoIdentityProvider <a name="CognitoIdentityProvider" id="@cdktn/provider-aws.cognitoIdentityProvider.CognitoIdentityProvider"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cognito_identity_provider aws_cognito_identity_provider}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cognito_identity_provider aws_cognito_identity_provider}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cognitoIdentityProvider.CognitoIdentityProvider.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cognitoidentityprovider"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cognitoidentityprovider"
 
 cognitoidentityprovider.NewCognitoIdentityProvider(scope Construct, id *string, config CognitoIdentityProviderConfig) CognitoIdentityProvider
 ```
@@ -406,7 +406,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.cognitoIdentityProvider.CognitoIdentityProvider.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cognitoidentityprovider"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cognitoidentityprovider"
 
 cognitoidentityprovider.CognitoIdentityProvider_IsConstruct(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.cognitoIdentityProvider.CognitoIdentityProvider.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cognitoidentityprovider"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cognitoidentityprovider"
 
 cognitoidentityprovider.CognitoIdentityProvider_IsTerraformElement(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ cognitoidentityprovider.CognitoIdentityProvider_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.cognitoIdentityProvider.CognitoIdentityProvider.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cognitoidentityprovider"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cognitoidentityprovider"
 
 cognitoidentityprovider.CognitoIdentityProvider_IsTerraformResource(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ cognitoidentityprovider.CognitoIdentityProvider_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.cognitoIdentityProvider.CognitoIdentityProvider.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cognitoidentityprovider"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cognitoidentityprovider"
 
 cognitoidentityprovider.CognitoIdentityProvider_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -495,7 +495,7 @@ The construct id used in the generated config for the CognitoIdentityProvider to
 
 The id of the existing CognitoIdentityProvider that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cognito_identity_provider#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cognito_identity_provider#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -871,7 +871,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cognitoIdentityProvider.CognitoIdentityProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cognitoidentityprovider"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cognitoidentityprovider"
 
 &cognitoidentityprovider.CognitoIdentityProviderConfig {
 	Connection: interface{},
@@ -903,13 +903,13 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cognitoidentityprovide
 | <code><a href="#@cdktn/provider-aws.cognitoIdentityProvider.CognitoIdentityProviderConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cognitoIdentityProvider.CognitoIdentityProviderConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cognitoIdentityProvider.CognitoIdentityProviderConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cognitoIdentityProvider.CognitoIdentityProviderConfig.property.providerDetails">ProviderDetails</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cognito_identity_provider#provider_details CognitoIdentityProvider#provider_details}. |
-| <code><a href="#@cdktn/provider-aws.cognitoIdentityProvider.CognitoIdentityProviderConfig.property.providerName">ProviderName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cognito_identity_provider#provider_name CognitoIdentityProvider#provider_name}. |
-| <code><a href="#@cdktn/provider-aws.cognitoIdentityProvider.CognitoIdentityProviderConfig.property.providerType">ProviderType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cognito_identity_provider#provider_type CognitoIdentityProvider#provider_type}. |
-| <code><a href="#@cdktn/provider-aws.cognitoIdentityProvider.CognitoIdentityProviderConfig.property.userPoolId">UserPoolId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cognito_identity_provider#user_pool_id CognitoIdentityProvider#user_pool_id}. |
-| <code><a href="#@cdktn/provider-aws.cognitoIdentityProvider.CognitoIdentityProviderConfig.property.attributeMapping">AttributeMapping</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cognito_identity_provider#attribute_mapping CognitoIdentityProvider#attribute_mapping}. |
-| <code><a href="#@cdktn/provider-aws.cognitoIdentityProvider.CognitoIdentityProviderConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cognito_identity_provider#id CognitoIdentityProvider#id}. |
-| <code><a href="#@cdktn/provider-aws.cognitoIdentityProvider.CognitoIdentityProviderConfig.property.idpIdentifiers">IdpIdentifiers</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cognito_identity_provider#idp_identifiers CognitoIdentityProvider#idp_identifiers}. |
+| <code><a href="#@cdktn/provider-aws.cognitoIdentityProvider.CognitoIdentityProviderConfig.property.providerDetails">ProviderDetails</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cognito_identity_provider#provider_details CognitoIdentityProvider#provider_details}. |
+| <code><a href="#@cdktn/provider-aws.cognitoIdentityProvider.CognitoIdentityProviderConfig.property.providerName">ProviderName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cognito_identity_provider#provider_name CognitoIdentityProvider#provider_name}. |
+| <code><a href="#@cdktn/provider-aws.cognitoIdentityProvider.CognitoIdentityProviderConfig.property.providerType">ProviderType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cognito_identity_provider#provider_type CognitoIdentityProvider#provider_type}. |
+| <code><a href="#@cdktn/provider-aws.cognitoIdentityProvider.CognitoIdentityProviderConfig.property.userPoolId">UserPoolId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cognito_identity_provider#user_pool_id CognitoIdentityProvider#user_pool_id}. |
+| <code><a href="#@cdktn/provider-aws.cognitoIdentityProvider.CognitoIdentityProviderConfig.property.attributeMapping">AttributeMapping</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cognito_identity_provider#attribute_mapping CognitoIdentityProvider#attribute_mapping}. |
+| <code><a href="#@cdktn/provider-aws.cognitoIdentityProvider.CognitoIdentityProviderConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cognito_identity_provider#id CognitoIdentityProvider#id}. |
+| <code><a href="#@cdktn/provider-aws.cognitoIdentityProvider.CognitoIdentityProviderConfig.property.idpIdentifiers">IdpIdentifiers</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cognito_identity_provider#idp_identifiers CognitoIdentityProvider#idp_identifiers}. |
 | <code><a href="#@cdktn/provider-aws.cognitoIdentityProvider.CognitoIdentityProviderConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -992,7 +992,7 @@ ProviderDetails *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cognito_identity_provider#provider_details CognitoIdentityProvider#provider_details}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cognito_identity_provider#provider_details CognitoIdentityProvider#provider_details}.
 
 ---
 
@@ -1004,7 +1004,7 @@ ProviderName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cognito_identity_provider#provider_name CognitoIdentityProvider#provider_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cognito_identity_provider#provider_name CognitoIdentityProvider#provider_name}.
 
 ---
 
@@ -1016,7 +1016,7 @@ ProviderType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cognito_identity_provider#provider_type CognitoIdentityProvider#provider_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cognito_identity_provider#provider_type CognitoIdentityProvider#provider_type}.
 
 ---
 
@@ -1028,7 +1028,7 @@ UserPoolId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cognito_identity_provider#user_pool_id CognitoIdentityProvider#user_pool_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cognito_identity_provider#user_pool_id CognitoIdentityProvider#user_pool_id}.
 
 ---
 
@@ -1040,7 +1040,7 @@ AttributeMapping *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cognito_identity_provider#attribute_mapping CognitoIdentityProvider#attribute_mapping}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cognito_identity_provider#attribute_mapping CognitoIdentityProvider#attribute_mapping}.
 
 ---
 
@@ -1052,7 +1052,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cognito_identity_provider#id CognitoIdentityProvider#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cognito_identity_provider#id CognitoIdentityProvider#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1067,7 +1067,7 @@ IdpIdentifiers *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cognito_identity_provider#idp_identifiers CognitoIdentityProvider#idp_identifiers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cognito_identity_provider#idp_identifiers CognitoIdentityProvider#idp_identifiers}.
 
 ---
 
@@ -1081,7 +1081,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cognito_identity_provider#region CognitoIdentityProvider#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cognito_identity_provider#region CognitoIdentityProvider#region}
 
 ---
 

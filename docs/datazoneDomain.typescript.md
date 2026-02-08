@@ -4,7 +4,7 @@
 
 ### DatazoneDomain <a name="DatazoneDomain" id="@cdktn/provider-aws.datazoneDomain.DatazoneDomain"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/datazone_domain aws_datazone_domain}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/datazone_domain aws_datazone_domain}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.datazoneDomain.DatazoneDomain.Initializer"></a>
 
@@ -556,7 +556,7 @@ The construct id used in the generated config for the DatazoneDomain to import.
 
 The id of the existing DatazoneDomain that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/datazone_domain#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/datazone_domain#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1069,16 +1069,16 @@ const datazoneDomainConfig: datazoneDomain.DatazoneDomainConfig = { ... }
 | <code><a href="#@cdktn/provider-aws.datazoneDomain.DatazoneDomainConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.datazoneDomain.DatazoneDomainConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.datazoneDomain.DatazoneDomainConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.datazoneDomain.DatazoneDomainConfig.property.domainExecutionRole">domainExecutionRole</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/datazone_domain#domain_execution_role DatazoneDomain#domain_execution_role}. |
-| <code><a href="#@cdktn/provider-aws.datazoneDomain.DatazoneDomainConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/datazone_domain#name DatazoneDomain#name}. |
-| <code><a href="#@cdktn/provider-aws.datazoneDomain.DatazoneDomainConfig.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/datazone_domain#description DatazoneDomain#description}. |
-| <code><a href="#@cdktn/provider-aws.datazoneDomain.DatazoneDomainConfig.property.domainVersion">domainVersion</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/datazone_domain#domain_version DatazoneDomain#domain_version}. |
-| <code><a href="#@cdktn/provider-aws.datazoneDomain.DatazoneDomainConfig.property.kmsKeyIdentifier">kmsKeyIdentifier</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/datazone_domain#kms_key_identifier DatazoneDomain#kms_key_identifier}. |
+| <code><a href="#@cdktn/provider-aws.datazoneDomain.DatazoneDomainConfig.property.domainExecutionRole">domainExecutionRole</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/datazone_domain#domain_execution_role DatazoneDomain#domain_execution_role}. |
+| <code><a href="#@cdktn/provider-aws.datazoneDomain.DatazoneDomainConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/datazone_domain#name DatazoneDomain#name}. |
+| <code><a href="#@cdktn/provider-aws.datazoneDomain.DatazoneDomainConfig.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/datazone_domain#description DatazoneDomain#description}. |
+| <code><a href="#@cdktn/provider-aws.datazoneDomain.DatazoneDomainConfig.property.domainVersion">domainVersion</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/datazone_domain#domain_version DatazoneDomain#domain_version}. |
+| <code><a href="#@cdktn/provider-aws.datazoneDomain.DatazoneDomainConfig.property.kmsKeyIdentifier">kmsKeyIdentifier</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/datazone_domain#kms_key_identifier DatazoneDomain#kms_key_identifier}. |
 | <code><a href="#@cdktn/provider-aws.datazoneDomain.DatazoneDomainConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.datazoneDomain.DatazoneDomainConfig.property.serviceRole">serviceRole</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/datazone_domain#service_role DatazoneDomain#service_role}. |
+| <code><a href="#@cdktn/provider-aws.datazoneDomain.DatazoneDomainConfig.property.serviceRole">serviceRole</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/datazone_domain#service_role DatazoneDomain#service_role}. |
 | <code><a href="#@cdktn/provider-aws.datazoneDomain.DatazoneDomainConfig.property.singleSignOn">singleSignOn</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-aws.datazoneDomain.DatazoneDomainSingleSignOn">DatazoneDomainSingleSignOn</a>[]</code> | single_sign_on block. |
-| <code><a href="#@cdktn/provider-aws.datazoneDomain.DatazoneDomainConfig.property.skipDeletionCheck">skipDeletionCheck</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/datazone_domain#skip_deletion_check DatazoneDomain#skip_deletion_check}. |
-| <code><a href="#@cdktn/provider-aws.datazoneDomain.DatazoneDomainConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/datazone_domain#tags DatazoneDomain#tags}. |
+| <code><a href="#@cdktn/provider-aws.datazoneDomain.DatazoneDomainConfig.property.skipDeletionCheck">skipDeletionCheck</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/datazone_domain#skip_deletion_check DatazoneDomain#skip_deletion_check}. |
+| <code><a href="#@cdktn/provider-aws.datazoneDomain.DatazoneDomainConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/datazone_domain#tags DatazoneDomain#tags}. |
 | <code><a href="#@cdktn/provider-aws.datazoneDomain.DatazoneDomainConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.datazoneDomain.DatazoneDomainTimeouts">DatazoneDomainTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1161,7 +1161,7 @@ public readonly domainExecutionRole: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/datazone_domain#domain_execution_role DatazoneDomain#domain_execution_role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/datazone_domain#domain_execution_role DatazoneDomain#domain_execution_role}.
 
 ---
 
@@ -1173,7 +1173,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/datazone_domain#name DatazoneDomain#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/datazone_domain#name DatazoneDomain#name}.
 
 ---
 
@@ -1185,7 +1185,7 @@ public readonly description: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/datazone_domain#description DatazoneDomain#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/datazone_domain#description DatazoneDomain#description}.
 
 ---
 
@@ -1197,7 +1197,7 @@ public readonly domainVersion: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/datazone_domain#domain_version DatazoneDomain#domain_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/datazone_domain#domain_version DatazoneDomain#domain_version}.
 
 ---
 
@@ -1209,7 +1209,7 @@ public readonly kmsKeyIdentifier: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/datazone_domain#kms_key_identifier DatazoneDomain#kms_key_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/datazone_domain#kms_key_identifier DatazoneDomain#kms_key_identifier}.
 
 ---
 
@@ -1223,7 +1223,7 @@ public readonly region: string;
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/datazone_domain#region DatazoneDomain#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/datazone_domain#region DatazoneDomain#region}
 
 ---
 
@@ -1235,7 +1235,7 @@ public readonly serviceRole: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/datazone_domain#service_role DatazoneDomain#service_role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/datazone_domain#service_role DatazoneDomain#service_role}.
 
 ---
 
@@ -1249,7 +1249,7 @@ public readonly singleSignOn: IResolvable | DatazoneDomainSingleSignOn[];
 
 single_sign_on block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/datazone_domain#single_sign_on DatazoneDomain#single_sign_on}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/datazone_domain#single_sign_on DatazoneDomain#single_sign_on}
 
 ---
 
@@ -1261,7 +1261,7 @@ public readonly skipDeletionCheck: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/datazone_domain#skip_deletion_check DatazoneDomain#skip_deletion_check}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/datazone_domain#skip_deletion_check DatazoneDomain#skip_deletion_check}.
 
 ---
 
@@ -1273,7 +1273,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/datazone_domain#tags DatazoneDomain#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/datazone_domain#tags DatazoneDomain#tags}.
 
 ---
 
@@ -1287,7 +1287,7 @@ public readonly timeouts: DatazoneDomainTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/datazone_domain#timeouts DatazoneDomain#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/datazone_domain#timeouts DatazoneDomain#timeouts}
 
 ---
 
@@ -1305,8 +1305,8 @@ const datazoneDomainSingleSignOn: datazoneDomain.DatazoneDomainSingleSignOn = { 
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.datazoneDomain.DatazoneDomainSingleSignOn.property.type">type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/datazone_domain#type DatazoneDomain#type}. |
-| <code><a href="#@cdktn/provider-aws.datazoneDomain.DatazoneDomainSingleSignOn.property.userAssignment">userAssignment</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/datazone_domain#user_assignment DatazoneDomain#user_assignment}. |
+| <code><a href="#@cdktn/provider-aws.datazoneDomain.DatazoneDomainSingleSignOn.property.type">type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/datazone_domain#type DatazoneDomain#type}. |
+| <code><a href="#@cdktn/provider-aws.datazoneDomain.DatazoneDomainSingleSignOn.property.userAssignment">userAssignment</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/datazone_domain#user_assignment DatazoneDomain#user_assignment}. |
 
 ---
 
@@ -1318,7 +1318,7 @@ public readonly type: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/datazone_domain#type DatazoneDomain#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/datazone_domain#type DatazoneDomain#type}.
 
 ---
 
@@ -1330,7 +1330,7 @@ public readonly userAssignment: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/datazone_domain#user_assignment DatazoneDomain#user_assignment}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/datazone_domain#user_assignment DatazoneDomain#user_assignment}.
 
 ---
 
@@ -1363,7 +1363,7 @@ public readonly create: string;
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/datazone_domain#create DatazoneDomain#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/datazone_domain#create DatazoneDomain#create}
 
 ---
 
@@ -1377,7 +1377,7 @@ public readonly delete: string;
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/datazone_domain#delete DatazoneDomain#delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/datazone_domain#delete DatazoneDomain#delete}
 
 ---
 

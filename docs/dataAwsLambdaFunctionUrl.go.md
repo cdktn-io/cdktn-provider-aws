@@ -4,12 +4,12 @@
 
 ### DataAwsLambdaFunctionUrl <a name="DataAwsLambdaFunctionUrl" id="@cdktn/provider-aws.dataAwsLambdaFunctionUrl.DataAwsLambdaFunctionUrl"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/lambda_function_url aws_lambda_function_url}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/lambda_function_url aws_lambda_function_url}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLambdaFunctionUrl.DataAwsLambdaFunctionUrl.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawslambdafunctionurl"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawslambdafunctionurl"
 
 dataawslambdafunctionurl.NewDataAwsLambdaFunctionUrl(scope Construct, id *string, config DataAwsLambdaFunctionUrlConfig) DataAwsLambdaFunctionUrl
 ```
@@ -297,7 +297,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsLambdaFunctionUrl.DataAwsLambdaFunctionUrl.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawslambdafunctionurl"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawslambdafunctionurl"
 
 dataawslambdafunctionurl.DataAwsLambdaFunctionUrl_IsConstruct(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsLambdaFunctionUrl.DataAwsLambdaFunctionUrl.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawslambdafunctionurl"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawslambdafunctionurl"
 
 dataawslambdafunctionurl.DataAwsLambdaFunctionUrl_IsTerraformElement(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ dataawslambdafunctionurl.DataAwsLambdaFunctionUrl_IsTerraformElement(x interface
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsLambdaFunctionUrl.DataAwsLambdaFunctionUrl.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawslambdafunctionurl"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawslambdafunctionurl"
 
 dataawslambdafunctionurl.DataAwsLambdaFunctionUrl_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ dataawslambdafunctionurl.DataAwsLambdaFunctionUrl_IsTerraformDataSource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsLambdaFunctionUrl.DataAwsLambdaFunctionUrl.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawslambdafunctionurl"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawslambdafunctionurl"
 
 dataawslambdafunctionurl.DataAwsLambdaFunctionUrl_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -386,7 +386,7 @@ The construct id used in the generated config for the DataAwsLambdaFunctionUrl t
 
 The id of the existing DataAwsLambdaFunctionUrl that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/lambda_function_url#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/lambda_function_url#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -740,7 +740,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsLambdaFunctionUrl.DataAwsLambdaFunctionUrlConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawslambdafunctionurl"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawslambdafunctionurl"
 
 &dataawslambdafunctionurl.DataAwsLambdaFunctionUrlConfig {
 	Connection: interface{},
@@ -768,9 +768,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawslambdafunctionu
 | <code><a href="#@cdktn/provider-aws.dataAwsLambdaFunctionUrl.DataAwsLambdaFunctionUrlConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsLambdaFunctionUrl.DataAwsLambdaFunctionUrlConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsLambdaFunctionUrl.DataAwsLambdaFunctionUrlConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsLambdaFunctionUrl.DataAwsLambdaFunctionUrlConfig.property.functionName">FunctionName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/lambda_function_url#function_name DataAwsLambdaFunctionUrl#function_name}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsLambdaFunctionUrl.DataAwsLambdaFunctionUrlConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/lambda_function_url#id DataAwsLambdaFunctionUrl#id}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsLambdaFunctionUrl.DataAwsLambdaFunctionUrlConfig.property.qualifier">Qualifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/lambda_function_url#qualifier DataAwsLambdaFunctionUrl#qualifier}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsLambdaFunctionUrl.DataAwsLambdaFunctionUrlConfig.property.functionName">FunctionName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/lambda_function_url#function_name DataAwsLambdaFunctionUrl#function_name}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsLambdaFunctionUrl.DataAwsLambdaFunctionUrlConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/lambda_function_url#id DataAwsLambdaFunctionUrl#id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsLambdaFunctionUrl.DataAwsLambdaFunctionUrlConfig.property.qualifier">Qualifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/lambda_function_url#qualifier DataAwsLambdaFunctionUrl#qualifier}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsLambdaFunctionUrl.DataAwsLambdaFunctionUrlConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -853,7 +853,7 @@ FunctionName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/lambda_function_url#function_name DataAwsLambdaFunctionUrl#function_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/lambda_function_url#function_name DataAwsLambdaFunctionUrl#function_name}.
 
 ---
 
@@ -865,7 +865,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/lambda_function_url#id DataAwsLambdaFunctionUrl#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/lambda_function_url#id DataAwsLambdaFunctionUrl#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -880,7 +880,7 @@ Qualifier *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/lambda_function_url#qualifier DataAwsLambdaFunctionUrl#qualifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/lambda_function_url#qualifier DataAwsLambdaFunctionUrl#qualifier}.
 
 ---
 
@@ -894,7 +894,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/lambda_function_url#region DataAwsLambdaFunctionUrl#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/lambda_function_url#region DataAwsLambdaFunctionUrl#region}
 
 ---
 
@@ -903,7 +903,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsLambdaFunctionUrl.DataAwsLambdaFunctionUrlCors.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawslambdafunctionurl"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawslambdafunctionurl"
 
 &dataawslambdafunctionurl.DataAwsLambdaFunctionUrlCors {
 
@@ -918,7 +918,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawslambdafunctionu
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLambdaFunctionUrl.DataAwsLambdaFunctionUrlCorsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawslambdafunctionurl"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawslambdafunctionurl"
 
 dataawslambdafunctionurl.NewDataAwsLambdaFunctionUrlCorsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsLambdaFunctionUrlCorsList
 ```
@@ -1067,7 +1067,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLambdaFunctionUrl.DataAwsLambdaFunctionUrlCorsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawslambdafunctionurl"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawslambdafunctionurl"
 
 dataawslambdafunctionurl.NewDataAwsLambdaFunctionUrlCorsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsLambdaFunctionUrlCorsOutputReference
 ```

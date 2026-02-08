@@ -4,12 +4,12 @@
 
 ### RedshiftScheduledAction <a name="RedshiftScheduledAction" id="@cdktn/provider-aws.redshiftScheduledAction.RedshiftScheduledAction"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_scheduled_action aws_redshift_scheduled_action}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_scheduled_action aws_redshift_scheduled_action}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.redshiftScheduledAction.RedshiftScheduledAction.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/redshiftscheduledaction"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/redshiftscheduledaction"
 
 redshiftscheduledaction.NewRedshiftScheduledAction(scope Construct, id *string, config RedshiftScheduledActionConfig) RedshiftScheduledAction
 ```
@@ -433,7 +433,7 @@ func ResetStartTime()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.redshiftScheduledAction.RedshiftScheduledAction.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/redshiftscheduledaction"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/redshiftscheduledaction"
 
 redshiftscheduledaction.RedshiftScheduledAction_IsConstruct(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.redshiftScheduledAction.RedshiftScheduledAction.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/redshiftscheduledaction"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/redshiftscheduledaction"
 
 redshiftscheduledaction.RedshiftScheduledAction_IsTerraformElement(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ redshiftscheduledaction.RedshiftScheduledAction_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.redshiftScheduledAction.RedshiftScheduledAction.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/redshiftscheduledaction"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/redshiftscheduledaction"
 
 redshiftscheduledaction.RedshiftScheduledAction_IsTerraformResource(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ redshiftscheduledaction.RedshiftScheduledAction_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.redshiftScheduledAction.RedshiftScheduledAction.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/redshiftscheduledaction"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/redshiftscheduledaction"
 
 redshiftscheduledaction.RedshiftScheduledAction_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -522,7 +522,7 @@ The construct id used in the generated config for the RedshiftScheduledAction to
 
 The id of the existing RedshiftScheduledAction that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_scheduled_action#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_scheduled_action#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -942,7 +942,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.redshiftScheduledAction.RedshiftScheduledActionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/redshiftscheduledaction"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/redshiftscheduledaction"
 
 &redshiftscheduledaction.RedshiftScheduledActionConfig {
 	Connection: interface{},
@@ -955,7 +955,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/redshiftscheduledactio
 	IamRole: *string,
 	Name: *string,
 	Schedule: *string,
-	TargetAction: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.redshiftScheduledAction.RedshiftScheduledActionTargetAction,
+	TargetAction: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.redshiftScheduledAction.RedshiftScheduledActionTargetAction,
 	Description: *string,
 	Enable: interface{},
 	EndTime: *string,
@@ -976,16 +976,16 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/redshiftscheduledactio
 | <code><a href="#@cdktn/provider-aws.redshiftScheduledAction.RedshiftScheduledActionConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.redshiftScheduledAction.RedshiftScheduledActionConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.redshiftScheduledAction.RedshiftScheduledActionConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.redshiftScheduledAction.RedshiftScheduledActionConfig.property.iamRole">IamRole</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_scheduled_action#iam_role RedshiftScheduledAction#iam_role}. |
-| <code><a href="#@cdktn/provider-aws.redshiftScheduledAction.RedshiftScheduledActionConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_scheduled_action#name RedshiftScheduledAction#name}. |
-| <code><a href="#@cdktn/provider-aws.redshiftScheduledAction.RedshiftScheduledActionConfig.property.schedule">Schedule</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_scheduled_action#schedule RedshiftScheduledAction#schedule}. |
+| <code><a href="#@cdktn/provider-aws.redshiftScheduledAction.RedshiftScheduledActionConfig.property.iamRole">IamRole</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_scheduled_action#iam_role RedshiftScheduledAction#iam_role}. |
+| <code><a href="#@cdktn/provider-aws.redshiftScheduledAction.RedshiftScheduledActionConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_scheduled_action#name RedshiftScheduledAction#name}. |
+| <code><a href="#@cdktn/provider-aws.redshiftScheduledAction.RedshiftScheduledActionConfig.property.schedule">Schedule</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_scheduled_action#schedule RedshiftScheduledAction#schedule}. |
 | <code><a href="#@cdktn/provider-aws.redshiftScheduledAction.RedshiftScheduledActionConfig.property.targetAction">TargetAction</a></code> | <code><a href="#@cdktn/provider-aws.redshiftScheduledAction.RedshiftScheduledActionTargetAction">RedshiftScheduledActionTargetAction</a></code> | target_action block. |
-| <code><a href="#@cdktn/provider-aws.redshiftScheduledAction.RedshiftScheduledActionConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_scheduled_action#description RedshiftScheduledAction#description}. |
-| <code><a href="#@cdktn/provider-aws.redshiftScheduledAction.RedshiftScheduledActionConfig.property.enable">Enable</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_scheduled_action#enable RedshiftScheduledAction#enable}. |
-| <code><a href="#@cdktn/provider-aws.redshiftScheduledAction.RedshiftScheduledActionConfig.property.endTime">EndTime</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_scheduled_action#end_time RedshiftScheduledAction#end_time}. |
-| <code><a href="#@cdktn/provider-aws.redshiftScheduledAction.RedshiftScheduledActionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_scheduled_action#id RedshiftScheduledAction#id}. |
+| <code><a href="#@cdktn/provider-aws.redshiftScheduledAction.RedshiftScheduledActionConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_scheduled_action#description RedshiftScheduledAction#description}. |
+| <code><a href="#@cdktn/provider-aws.redshiftScheduledAction.RedshiftScheduledActionConfig.property.enable">Enable</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_scheduled_action#enable RedshiftScheduledAction#enable}. |
+| <code><a href="#@cdktn/provider-aws.redshiftScheduledAction.RedshiftScheduledActionConfig.property.endTime">EndTime</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_scheduled_action#end_time RedshiftScheduledAction#end_time}. |
+| <code><a href="#@cdktn/provider-aws.redshiftScheduledAction.RedshiftScheduledActionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_scheduled_action#id RedshiftScheduledAction#id}. |
 | <code><a href="#@cdktn/provider-aws.redshiftScheduledAction.RedshiftScheduledActionConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.redshiftScheduledAction.RedshiftScheduledActionConfig.property.startTime">StartTime</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_scheduled_action#start_time RedshiftScheduledAction#start_time}. |
+| <code><a href="#@cdktn/provider-aws.redshiftScheduledAction.RedshiftScheduledActionConfig.property.startTime">StartTime</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_scheduled_action#start_time RedshiftScheduledAction#start_time}. |
 
 ---
 
@@ -1067,7 +1067,7 @@ IamRole *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_scheduled_action#iam_role RedshiftScheduledAction#iam_role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_scheduled_action#iam_role RedshiftScheduledAction#iam_role}.
 
 ---
 
@@ -1079,7 +1079,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_scheduled_action#name RedshiftScheduledAction#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_scheduled_action#name RedshiftScheduledAction#name}.
 
 ---
 
@@ -1091,7 +1091,7 @@ Schedule *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_scheduled_action#schedule RedshiftScheduledAction#schedule}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_scheduled_action#schedule RedshiftScheduledAction#schedule}.
 
 ---
 
@@ -1105,7 +1105,7 @@ TargetAction RedshiftScheduledActionTargetAction
 
 target_action block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_scheduled_action#target_action RedshiftScheduledAction#target_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_scheduled_action#target_action RedshiftScheduledAction#target_action}
 
 ---
 
@@ -1117,7 +1117,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_scheduled_action#description RedshiftScheduledAction#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_scheduled_action#description RedshiftScheduledAction#description}.
 
 ---
 
@@ -1129,7 +1129,7 @@ Enable interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_scheduled_action#enable RedshiftScheduledAction#enable}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_scheduled_action#enable RedshiftScheduledAction#enable}.
 
 ---
 
@@ -1141,7 +1141,7 @@ EndTime *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_scheduled_action#end_time RedshiftScheduledAction#end_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_scheduled_action#end_time RedshiftScheduledAction#end_time}.
 
 ---
 
@@ -1153,7 +1153,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_scheduled_action#id RedshiftScheduledAction#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_scheduled_action#id RedshiftScheduledAction#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1170,7 +1170,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_scheduled_action#region RedshiftScheduledAction#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_scheduled_action#region RedshiftScheduledAction#region}
 
 ---
 
@@ -1182,7 +1182,7 @@ StartTime *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_scheduled_action#start_time RedshiftScheduledAction#start_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_scheduled_action#start_time RedshiftScheduledAction#start_time}.
 
 ---
 
@@ -1191,12 +1191,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.redshiftScheduledAction.RedshiftScheduledActionTargetAction.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/redshiftscheduledaction"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/redshiftscheduledaction"
 
 &redshiftscheduledaction.RedshiftScheduledActionTargetAction {
-	PauseCluster: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.redshiftScheduledAction.RedshiftScheduledActionTargetActionPauseCluster,
-	ResizeCluster: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.redshiftScheduledAction.RedshiftScheduledActionTargetActionResizeCluster,
-	ResumeCluster: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.redshiftScheduledAction.RedshiftScheduledActionTargetActionResumeCluster,
+	PauseCluster: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.redshiftScheduledAction.RedshiftScheduledActionTargetActionPauseCluster,
+	ResizeCluster: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.redshiftScheduledAction.RedshiftScheduledActionTargetActionResizeCluster,
+	ResumeCluster: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.redshiftScheduledAction.RedshiftScheduledActionTargetActionResumeCluster,
 }
 ```
 
@@ -1220,7 +1220,7 @@ PauseCluster RedshiftScheduledActionTargetActionPauseCluster
 
 pause_cluster block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_scheduled_action#pause_cluster RedshiftScheduledAction#pause_cluster}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_scheduled_action#pause_cluster RedshiftScheduledAction#pause_cluster}
 
 ---
 
@@ -1234,7 +1234,7 @@ ResizeCluster RedshiftScheduledActionTargetActionResizeCluster
 
 resize_cluster block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_scheduled_action#resize_cluster RedshiftScheduledAction#resize_cluster}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_scheduled_action#resize_cluster RedshiftScheduledAction#resize_cluster}
 
 ---
 
@@ -1248,7 +1248,7 @@ ResumeCluster RedshiftScheduledActionTargetActionResumeCluster
 
 resume_cluster block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_scheduled_action#resume_cluster RedshiftScheduledAction#resume_cluster}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_scheduled_action#resume_cluster RedshiftScheduledAction#resume_cluster}
 
 ---
 
@@ -1257,7 +1257,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.redshiftScheduledAction.RedshiftScheduledActionTargetActionPauseCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/redshiftscheduledaction"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/redshiftscheduledaction"
 
 &redshiftscheduledaction.RedshiftScheduledActionTargetActionPauseCluster {
 	ClusterIdentifier: *string,
@@ -1268,7 +1268,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/redshiftscheduledactio
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.redshiftScheduledAction.RedshiftScheduledActionTargetActionPauseCluster.property.clusterIdentifier">ClusterIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_scheduled_action#cluster_identifier RedshiftScheduledAction#cluster_identifier}. |
+| <code><a href="#@cdktn/provider-aws.redshiftScheduledAction.RedshiftScheduledActionTargetActionPauseCluster.property.clusterIdentifier">ClusterIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_scheduled_action#cluster_identifier RedshiftScheduledAction#cluster_identifier}. |
 
 ---
 
@@ -1280,7 +1280,7 @@ ClusterIdentifier *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_scheduled_action#cluster_identifier RedshiftScheduledAction#cluster_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_scheduled_action#cluster_identifier RedshiftScheduledAction#cluster_identifier}.
 
 ---
 
@@ -1289,7 +1289,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.redshiftScheduledAction.RedshiftScheduledActionTargetActionResizeCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/redshiftscheduledaction"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/redshiftscheduledaction"
 
 &redshiftscheduledaction.RedshiftScheduledActionTargetActionResizeCluster {
 	ClusterIdentifier: *string,
@@ -1304,11 +1304,11 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/redshiftscheduledactio
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.redshiftScheduledAction.RedshiftScheduledActionTargetActionResizeCluster.property.clusterIdentifier">ClusterIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_scheduled_action#cluster_identifier RedshiftScheduledAction#cluster_identifier}. |
-| <code><a href="#@cdktn/provider-aws.redshiftScheduledAction.RedshiftScheduledActionTargetActionResizeCluster.property.classic">Classic</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_scheduled_action#classic RedshiftScheduledAction#classic}. |
-| <code><a href="#@cdktn/provider-aws.redshiftScheduledAction.RedshiftScheduledActionTargetActionResizeCluster.property.clusterType">ClusterType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_scheduled_action#cluster_type RedshiftScheduledAction#cluster_type}. |
-| <code><a href="#@cdktn/provider-aws.redshiftScheduledAction.RedshiftScheduledActionTargetActionResizeCluster.property.nodeType">NodeType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_scheduled_action#node_type RedshiftScheduledAction#node_type}. |
-| <code><a href="#@cdktn/provider-aws.redshiftScheduledAction.RedshiftScheduledActionTargetActionResizeCluster.property.numberOfNodes">NumberOfNodes</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_scheduled_action#number_of_nodes RedshiftScheduledAction#number_of_nodes}. |
+| <code><a href="#@cdktn/provider-aws.redshiftScheduledAction.RedshiftScheduledActionTargetActionResizeCluster.property.clusterIdentifier">ClusterIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_scheduled_action#cluster_identifier RedshiftScheduledAction#cluster_identifier}. |
+| <code><a href="#@cdktn/provider-aws.redshiftScheduledAction.RedshiftScheduledActionTargetActionResizeCluster.property.classic">Classic</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_scheduled_action#classic RedshiftScheduledAction#classic}. |
+| <code><a href="#@cdktn/provider-aws.redshiftScheduledAction.RedshiftScheduledActionTargetActionResizeCluster.property.clusterType">ClusterType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_scheduled_action#cluster_type RedshiftScheduledAction#cluster_type}. |
+| <code><a href="#@cdktn/provider-aws.redshiftScheduledAction.RedshiftScheduledActionTargetActionResizeCluster.property.nodeType">NodeType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_scheduled_action#node_type RedshiftScheduledAction#node_type}. |
+| <code><a href="#@cdktn/provider-aws.redshiftScheduledAction.RedshiftScheduledActionTargetActionResizeCluster.property.numberOfNodes">NumberOfNodes</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_scheduled_action#number_of_nodes RedshiftScheduledAction#number_of_nodes}. |
 
 ---
 
@@ -1320,7 +1320,7 @@ ClusterIdentifier *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_scheduled_action#cluster_identifier RedshiftScheduledAction#cluster_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_scheduled_action#cluster_identifier RedshiftScheduledAction#cluster_identifier}.
 
 ---
 
@@ -1332,7 +1332,7 @@ Classic interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_scheduled_action#classic RedshiftScheduledAction#classic}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_scheduled_action#classic RedshiftScheduledAction#classic}.
 
 ---
 
@@ -1344,7 +1344,7 @@ ClusterType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_scheduled_action#cluster_type RedshiftScheduledAction#cluster_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_scheduled_action#cluster_type RedshiftScheduledAction#cluster_type}.
 
 ---
 
@@ -1356,7 +1356,7 @@ NodeType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_scheduled_action#node_type RedshiftScheduledAction#node_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_scheduled_action#node_type RedshiftScheduledAction#node_type}.
 
 ---
 
@@ -1368,7 +1368,7 @@ NumberOfNodes *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_scheduled_action#number_of_nodes RedshiftScheduledAction#number_of_nodes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_scheduled_action#number_of_nodes RedshiftScheduledAction#number_of_nodes}.
 
 ---
 
@@ -1377,7 +1377,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.redshiftScheduledAction.RedshiftScheduledActionTargetActionResumeCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/redshiftscheduledaction"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/redshiftscheduledaction"
 
 &redshiftscheduledaction.RedshiftScheduledActionTargetActionResumeCluster {
 	ClusterIdentifier: *string,
@@ -1388,7 +1388,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/redshiftscheduledactio
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.redshiftScheduledAction.RedshiftScheduledActionTargetActionResumeCluster.property.clusterIdentifier">ClusterIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_scheduled_action#cluster_identifier RedshiftScheduledAction#cluster_identifier}. |
+| <code><a href="#@cdktn/provider-aws.redshiftScheduledAction.RedshiftScheduledActionTargetActionResumeCluster.property.clusterIdentifier">ClusterIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_scheduled_action#cluster_identifier RedshiftScheduledAction#cluster_identifier}. |
 
 ---
 
@@ -1400,7 +1400,7 @@ ClusterIdentifier *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/redshift_scheduled_action#cluster_identifier RedshiftScheduledAction#cluster_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/redshift_scheduled_action#cluster_identifier RedshiftScheduledAction#cluster_identifier}.
 
 ---
 
@@ -1411,7 +1411,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.redshiftScheduledAction.RedshiftScheduledActionTargetActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/redshiftscheduledaction"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/redshiftscheduledaction"
 
 redshiftscheduledaction.NewRedshiftScheduledActionTargetActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RedshiftScheduledActionTargetActionOutputReference
 ```
@@ -1786,7 +1786,7 @@ func InternalValue() RedshiftScheduledActionTargetAction
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.redshiftScheduledAction.RedshiftScheduledActionTargetActionPauseClusterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/redshiftscheduledaction"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/redshiftscheduledaction"
 
 redshiftscheduledaction.NewRedshiftScheduledActionTargetActionPauseClusterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RedshiftScheduledActionTargetActionPauseClusterOutputReference
 ```
@@ -2057,7 +2057,7 @@ func InternalValue() RedshiftScheduledActionTargetActionPauseCluster
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.redshiftScheduledAction.RedshiftScheduledActionTargetActionResizeClusterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/redshiftscheduledaction"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/redshiftscheduledaction"
 
 redshiftscheduledaction.NewRedshiftScheduledActionTargetActionResizeClusterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RedshiftScheduledActionTargetActionResizeClusterOutputReference
 ```
@@ -2444,7 +2444,7 @@ func InternalValue() RedshiftScheduledActionTargetActionResizeCluster
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.redshiftScheduledAction.RedshiftScheduledActionTargetActionResumeClusterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/redshiftscheduledaction"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/redshiftscheduledaction"
 
 redshiftscheduledaction.NewRedshiftScheduledActionTargetActionResumeClusterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RedshiftScheduledActionTargetActionResumeClusterOutputReference
 ```

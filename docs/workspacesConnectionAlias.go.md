@@ -4,12 +4,12 @@
 
 ### WorkspacesConnectionAlias <a name="WorkspacesConnectionAlias" id="@cdktn/provider-aws.workspacesConnectionAlias.WorkspacesConnectionAlias"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/workspaces_connection_alias aws_workspaces_connection_alias}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/workspaces_connection_alias aws_workspaces_connection_alias}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.workspacesConnectionAlias.WorkspacesConnectionAlias.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/workspacesconnectionalias"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/workspacesconnectionalias"
 
 workspacesconnectionalias.NewWorkspacesConnectionAlias(scope Construct, id *string, config WorkspacesConnectionAliasConfig) WorkspacesConnectionAlias
 ```
@@ -412,7 +412,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.workspacesConnectionAlias.WorkspacesConnectionAlias.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/workspacesconnectionalias"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/workspacesconnectionalias"
 
 workspacesconnectionalias.WorkspacesConnectionAlias_IsConstruct(x interface{}) *bool
 ```
@@ -444,7 +444,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.workspacesConnectionAlias.WorkspacesConnectionAlias.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/workspacesconnectionalias"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/workspacesconnectionalias"
 
 workspacesconnectionalias.WorkspacesConnectionAlias_IsTerraformElement(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ workspacesconnectionalias.WorkspacesConnectionAlias_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.workspacesConnectionAlias.WorkspacesConnectionAlias.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/workspacesconnectionalias"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/workspacesconnectionalias"
 
 workspacesconnectionalias.WorkspacesConnectionAlias_IsTerraformResource(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ workspacesconnectionalias.WorkspacesConnectionAlias_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.workspacesConnectionAlias.WorkspacesConnectionAlias.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/workspacesconnectionalias"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/workspacesconnectionalias"
 
 workspacesconnectionalias.WorkspacesConnectionAlias_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -501,7 +501,7 @@ The construct id used in the generated config for the WorkspacesConnectionAlias 
 
 The id of the existing WorkspacesConnectionAlias that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/workspaces_connection_alias#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/workspaces_connection_alias#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -833,7 +833,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.workspacesConnectionAlias.WorkspacesConnectionAliasConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/workspacesconnectionalias"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/workspacesconnectionalias"
 
 &workspacesconnectionalias.WorkspacesConnectionAliasConfig {
 	Connection: interface{},
@@ -846,7 +846,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/workspacesconnectional
 	ConnectionString: *string,
 	Region: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.workspacesConnectionAlias.WorkspacesConnectionAliasTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.workspacesConnectionAlias.WorkspacesConnectionAliasTimeouts,
 }
 ```
 
@@ -863,7 +863,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/workspacesconnectional
 | <code><a href="#@cdktn/provider-aws.workspacesConnectionAlias.WorkspacesConnectionAliasConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.workspacesConnectionAlias.WorkspacesConnectionAliasConfig.property.connectionString">ConnectionString</a></code> | <code>*string</code> | The connection string specified for the connection alias. |
 | <code><a href="#@cdktn/provider-aws.workspacesConnectionAlias.WorkspacesConnectionAliasConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.workspacesConnectionAlias.WorkspacesConnectionAliasConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/workspaces_connection_alias#tags WorkspacesConnectionAlias#tags}. |
+| <code><a href="#@cdktn/provider-aws.workspacesConnectionAlias.WorkspacesConnectionAliasConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/workspaces_connection_alias#tags WorkspacesConnectionAlias#tags}. |
 | <code><a href="#@cdktn/provider-aws.workspacesConnectionAlias.WorkspacesConnectionAliasConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.workspacesConnectionAlias.WorkspacesConnectionAliasTimeouts">WorkspacesConnectionAliasTimeouts</a></code> | timeouts block. |
 
 ---
@@ -950,7 +950,7 @@ The connection string specified for the connection alias.
 
 The connection string must be in the form of a fully qualified domain name (FQDN), such as www.example.com.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/workspaces_connection_alias#connection_string WorkspacesConnectionAlias#connection_string}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/workspaces_connection_alias#connection_string WorkspacesConnectionAlias#connection_string}
 
 ---
 
@@ -964,7 +964,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/workspaces_connection_alias#region WorkspacesConnectionAlias#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/workspaces_connection_alias#region WorkspacesConnectionAlias#region}
 
 ---
 
@@ -976,7 +976,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/workspaces_connection_alias#tags WorkspacesConnectionAlias#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/workspaces_connection_alias#tags WorkspacesConnectionAlias#tags}.
 
 ---
 
@@ -990,7 +990,7 @@ Timeouts WorkspacesConnectionAliasTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/workspaces_connection_alias#timeouts WorkspacesConnectionAlias#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/workspaces_connection_alias#timeouts WorkspacesConnectionAlias#timeouts}
 
 ---
 
@@ -999,7 +999,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.workspacesConnectionAlias.WorkspacesConnectionAliasTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/workspacesconnectionalias"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/workspacesconnectionalias"
 
 &workspacesconnectionalias.WorkspacesConnectionAliasTimeouts {
 	Create: *string,
@@ -1026,7 +1026,7 @@ Create *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/workspaces_connection_alias#create WorkspacesConnectionAlias#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/workspaces_connection_alias#create WorkspacesConnectionAlias#create}
 
 ---
 
@@ -1040,7 +1040,7 @@ Delete *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/workspaces_connection_alias#delete WorkspacesConnectionAlias#delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/workspaces_connection_alias#delete WorkspacesConnectionAlias#delete}
 
 ---
 
@@ -1051,7 +1051,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.workspacesConnectionAlias.WorkspacesConnectionAliasTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/workspacesconnectionalias"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/workspacesconnectionalias"
 
 workspacesconnectionalias.NewWorkspacesConnectionAliasTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkspacesConnectionAliasTimeoutsOutputReference
 ```

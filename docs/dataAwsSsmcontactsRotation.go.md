@@ -4,12 +4,12 @@
 
 ### DataAwsSsmcontactsRotation <a name="DataAwsSsmcontactsRotation" id="@cdktn/provider-aws.dataAwsSsmcontactsRotation.DataAwsSsmcontactsRotation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/ssmcontacts_rotation aws_ssmcontacts_rotation}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/ssmcontacts_rotation aws_ssmcontacts_rotation}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsSsmcontactsRotation.DataAwsSsmcontactsRotation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsssmcontactsrotation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsssmcontactsrotation"
 
 dataawsssmcontactsrotation.NewDataAwsSsmcontactsRotation(scope Construct, id *string, config DataAwsSsmcontactsRotationConfig) DataAwsSsmcontactsRotation
 ```
@@ -283,7 +283,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsSsmcontactsRotation.DataAwsSsmcontactsRotation.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsssmcontactsrotation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsssmcontactsrotation"
 
 dataawsssmcontactsrotation.DataAwsSsmcontactsRotation_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsSsmcontactsRotation.DataAwsSsmcontactsRotation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsssmcontactsrotation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsssmcontactsrotation"
 
 dataawsssmcontactsrotation.DataAwsSsmcontactsRotation_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ dataawsssmcontactsrotation.DataAwsSsmcontactsRotation_IsTerraformElement(x inter
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsSsmcontactsRotation.DataAwsSsmcontactsRotation.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsssmcontactsrotation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsssmcontactsrotation"
 
 dataawsssmcontactsrotation.DataAwsSsmcontactsRotation_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ dataawsssmcontactsrotation.DataAwsSsmcontactsRotation_IsTerraformDataSource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsSsmcontactsRotation.DataAwsSsmcontactsRotation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsssmcontactsrotation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsssmcontactsrotation"
 
 dataawsssmcontactsrotation.DataAwsSsmcontactsRotation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -372,7 +372,7 @@ The construct id used in the generated config for the DataAwsSsmcontactsRotation
 
 The id of the existing DataAwsSsmcontactsRotation that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/ssmcontacts_rotation#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/ssmcontacts_rotation#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -671,7 +671,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsSsmcontactsRotation.DataAwsSsmcontactsRotationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsssmcontactsrotation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsssmcontactsrotation"
 
 &dataawsssmcontactsrotation.DataAwsSsmcontactsRotationConfig {
 	Connection: interface{},
@@ -697,7 +697,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsssmcontactsrota
 | <code><a href="#@cdktn/provider-aws.dataAwsSsmcontactsRotation.DataAwsSsmcontactsRotationConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsSsmcontactsRotation.DataAwsSsmcontactsRotationConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsSsmcontactsRotation.DataAwsSsmcontactsRotationConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsSsmcontactsRotation.DataAwsSsmcontactsRotationConfig.property.arn">Arn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/ssmcontacts_rotation#arn DataAwsSsmcontactsRotation#arn}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsSsmcontactsRotation.DataAwsSsmcontactsRotationConfig.property.arn">Arn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/ssmcontacts_rotation#arn DataAwsSsmcontactsRotation#arn}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsSsmcontactsRotation.DataAwsSsmcontactsRotationConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -780,7 +780,7 @@ Arn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/ssmcontacts_rotation#arn DataAwsSsmcontactsRotation#arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/ssmcontacts_rotation#arn DataAwsSsmcontactsRotation#arn}.
 
 ---
 
@@ -794,7 +794,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/ssmcontacts_rotation#region DataAwsSsmcontactsRotation#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/ssmcontacts_rotation#region DataAwsSsmcontactsRotation#region}
 
 ---
 
@@ -803,7 +803,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsSsmcontactsRotation.DataAwsSsmcontactsRotationRecurrence.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsssmcontactsrotation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsssmcontactsrotation"
 
 &dataawsssmcontactsrotation.DataAwsSsmcontactsRotationRecurrence {
 
@@ -816,7 +816,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsssmcontactsrota
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsSsmcontactsRotation.DataAwsSsmcontactsRotationRecurrenceDailySettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsssmcontactsrotation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsssmcontactsrotation"
 
 &dataawsssmcontactsrotation.DataAwsSsmcontactsRotationRecurrenceDailySettings {
 
@@ -829,7 +829,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsssmcontactsrota
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsSsmcontactsRotation.DataAwsSsmcontactsRotationRecurrenceMonthlySettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsssmcontactsrotation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsssmcontactsrotation"
 
 &dataawsssmcontactsrotation.DataAwsSsmcontactsRotationRecurrenceMonthlySettings {
 
@@ -842,7 +842,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsssmcontactsrota
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsSsmcontactsRotation.DataAwsSsmcontactsRotationRecurrenceMonthlySettingsHandOffTime.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsssmcontactsrotation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsssmcontactsrotation"
 
 &dataawsssmcontactsrotation.DataAwsSsmcontactsRotationRecurrenceMonthlySettingsHandOffTime {
 
@@ -855,7 +855,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsssmcontactsrota
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsSsmcontactsRotation.DataAwsSsmcontactsRotationRecurrenceShiftCoverages.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsssmcontactsrotation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsssmcontactsrotation"
 
 &dataawsssmcontactsrotation.DataAwsSsmcontactsRotationRecurrenceShiftCoverages {
 
@@ -868,7 +868,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsssmcontactsrota
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsSsmcontactsRotation.DataAwsSsmcontactsRotationRecurrenceShiftCoveragesCoverageTimes.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsssmcontactsrotation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsssmcontactsrotation"
 
 &dataawsssmcontactsrotation.DataAwsSsmcontactsRotationRecurrenceShiftCoveragesCoverageTimes {
 
@@ -881,7 +881,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsssmcontactsrota
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsSsmcontactsRotation.DataAwsSsmcontactsRotationRecurrenceShiftCoveragesCoverageTimesEnd.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsssmcontactsrotation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsssmcontactsrotation"
 
 &dataawsssmcontactsrotation.DataAwsSsmcontactsRotationRecurrenceShiftCoveragesCoverageTimesEnd {
 
@@ -894,7 +894,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsssmcontactsrota
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsSsmcontactsRotation.DataAwsSsmcontactsRotationRecurrenceShiftCoveragesCoverageTimesStart.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsssmcontactsrotation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsssmcontactsrotation"
 
 &dataawsssmcontactsrotation.DataAwsSsmcontactsRotationRecurrenceShiftCoveragesCoverageTimesStart {
 
@@ -907,7 +907,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsssmcontactsrota
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsSsmcontactsRotation.DataAwsSsmcontactsRotationRecurrenceWeeklySettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsssmcontactsrotation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsssmcontactsrotation"
 
 &dataawsssmcontactsrotation.DataAwsSsmcontactsRotationRecurrenceWeeklySettings {
 
@@ -920,7 +920,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsssmcontactsrota
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsSsmcontactsRotation.DataAwsSsmcontactsRotationRecurrenceWeeklySettingsHandOffTime.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsssmcontactsrotation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsssmcontactsrotation"
 
 &dataawsssmcontactsrotation.DataAwsSsmcontactsRotationRecurrenceWeeklySettingsHandOffTime {
 
@@ -935,7 +935,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsssmcontactsrota
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsSsmcontactsRotation.DataAwsSsmcontactsRotationRecurrenceDailySettingsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsssmcontactsrotation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsssmcontactsrotation"
 
 dataawsssmcontactsrotation.NewDataAwsSsmcontactsRotationRecurrenceDailySettingsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsSsmcontactsRotationRecurrenceDailySettingsList
 ```
@@ -1084,7 +1084,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsSsmcontactsRotation.DataAwsSsmcontactsRotationRecurrenceDailySettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsssmcontactsrotation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsssmcontactsrotation"
 
 dataawsssmcontactsrotation.NewDataAwsSsmcontactsRotationRecurrenceDailySettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsSsmcontactsRotationRecurrenceDailySettingsOutputReference
 ```
@@ -1373,7 +1373,7 @@ func InternalValue() DataAwsSsmcontactsRotationRecurrenceDailySettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsSsmcontactsRotation.DataAwsSsmcontactsRotationRecurrenceList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsssmcontactsrotation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsssmcontactsrotation"
 
 dataawsssmcontactsrotation.NewDataAwsSsmcontactsRotationRecurrenceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsSsmcontactsRotationRecurrenceList
 ```
@@ -1522,7 +1522,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsSsmcontactsRotation.DataAwsSsmcontactsRotationRecurrenceMonthlySettingsHandOffTimeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsssmcontactsrotation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsssmcontactsrotation"
 
 dataawsssmcontactsrotation.NewDataAwsSsmcontactsRotationRecurrenceMonthlySettingsHandOffTimeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsSsmcontactsRotationRecurrenceMonthlySettingsHandOffTimeList
 ```
@@ -1671,7 +1671,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsSsmcontactsRotation.DataAwsSsmcontactsRotationRecurrenceMonthlySettingsHandOffTimeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsssmcontactsrotation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsssmcontactsrotation"
 
 dataawsssmcontactsrotation.NewDataAwsSsmcontactsRotationRecurrenceMonthlySettingsHandOffTimeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsSsmcontactsRotationRecurrenceMonthlySettingsHandOffTimeOutputReference
 ```
@@ -1960,7 +1960,7 @@ func InternalValue() DataAwsSsmcontactsRotationRecurrenceMonthlySettingsHandOffT
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsSsmcontactsRotation.DataAwsSsmcontactsRotationRecurrenceMonthlySettingsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsssmcontactsrotation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsssmcontactsrotation"
 
 dataawsssmcontactsrotation.NewDataAwsSsmcontactsRotationRecurrenceMonthlySettingsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsSsmcontactsRotationRecurrenceMonthlySettingsList
 ```
@@ -2109,7 +2109,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsSsmcontactsRotation.DataAwsSsmcontactsRotationRecurrenceMonthlySettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsssmcontactsrotation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsssmcontactsrotation"
 
 dataawsssmcontactsrotation.NewDataAwsSsmcontactsRotationRecurrenceMonthlySettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsSsmcontactsRotationRecurrenceMonthlySettingsOutputReference
 ```
@@ -2398,7 +2398,7 @@ func InternalValue() DataAwsSsmcontactsRotationRecurrenceMonthlySettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsSsmcontactsRotation.DataAwsSsmcontactsRotationRecurrenceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsssmcontactsrotation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsssmcontactsrotation"
 
 dataawsssmcontactsrotation.NewDataAwsSsmcontactsRotationRecurrenceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsSsmcontactsRotationRecurrenceOutputReference
 ```
@@ -2731,7 +2731,7 @@ func InternalValue() DataAwsSsmcontactsRotationRecurrence
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsSsmcontactsRotation.DataAwsSsmcontactsRotationRecurrenceShiftCoveragesCoverageTimesEndList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsssmcontactsrotation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsssmcontactsrotation"
 
 dataawsssmcontactsrotation.NewDataAwsSsmcontactsRotationRecurrenceShiftCoveragesCoverageTimesEndList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsSsmcontactsRotationRecurrenceShiftCoveragesCoverageTimesEndList
 ```
@@ -2880,7 +2880,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsSsmcontactsRotation.DataAwsSsmcontactsRotationRecurrenceShiftCoveragesCoverageTimesEndOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsssmcontactsrotation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsssmcontactsrotation"
 
 dataawsssmcontactsrotation.NewDataAwsSsmcontactsRotationRecurrenceShiftCoveragesCoverageTimesEndOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsSsmcontactsRotationRecurrenceShiftCoveragesCoverageTimesEndOutputReference
 ```
@@ -3169,7 +3169,7 @@ func InternalValue() DataAwsSsmcontactsRotationRecurrenceShiftCoveragesCoverageT
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsSsmcontactsRotation.DataAwsSsmcontactsRotationRecurrenceShiftCoveragesCoverageTimesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsssmcontactsrotation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsssmcontactsrotation"
 
 dataawsssmcontactsrotation.NewDataAwsSsmcontactsRotationRecurrenceShiftCoveragesCoverageTimesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsSsmcontactsRotationRecurrenceShiftCoveragesCoverageTimesList
 ```
@@ -3318,7 +3318,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsSsmcontactsRotation.DataAwsSsmcontactsRotationRecurrenceShiftCoveragesCoverageTimesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsssmcontactsrotation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsssmcontactsrotation"
 
 dataawsssmcontactsrotation.NewDataAwsSsmcontactsRotationRecurrenceShiftCoveragesCoverageTimesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsSsmcontactsRotationRecurrenceShiftCoveragesCoverageTimesOutputReference
 ```
@@ -3607,7 +3607,7 @@ func InternalValue() DataAwsSsmcontactsRotationRecurrenceShiftCoveragesCoverageT
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsSsmcontactsRotation.DataAwsSsmcontactsRotationRecurrenceShiftCoveragesCoverageTimesStartList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsssmcontactsrotation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsssmcontactsrotation"
 
 dataawsssmcontactsrotation.NewDataAwsSsmcontactsRotationRecurrenceShiftCoveragesCoverageTimesStartList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsSsmcontactsRotationRecurrenceShiftCoveragesCoverageTimesStartList
 ```
@@ -3756,7 +3756,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsSsmcontactsRotation.DataAwsSsmcontactsRotationRecurrenceShiftCoveragesCoverageTimesStartOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsssmcontactsrotation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsssmcontactsrotation"
 
 dataawsssmcontactsrotation.NewDataAwsSsmcontactsRotationRecurrenceShiftCoveragesCoverageTimesStartOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsSsmcontactsRotationRecurrenceShiftCoveragesCoverageTimesStartOutputReference
 ```
@@ -4045,7 +4045,7 @@ func InternalValue() DataAwsSsmcontactsRotationRecurrenceShiftCoveragesCoverageT
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsSsmcontactsRotation.DataAwsSsmcontactsRotationRecurrenceShiftCoveragesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsssmcontactsrotation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsssmcontactsrotation"
 
 dataawsssmcontactsrotation.NewDataAwsSsmcontactsRotationRecurrenceShiftCoveragesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsSsmcontactsRotationRecurrenceShiftCoveragesList
 ```
@@ -4194,7 +4194,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsSsmcontactsRotation.DataAwsSsmcontactsRotationRecurrenceShiftCoveragesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsssmcontactsrotation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsssmcontactsrotation"
 
 dataawsssmcontactsrotation.NewDataAwsSsmcontactsRotationRecurrenceShiftCoveragesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsSsmcontactsRotationRecurrenceShiftCoveragesOutputReference
 ```
@@ -4483,7 +4483,7 @@ func InternalValue() DataAwsSsmcontactsRotationRecurrenceShiftCoverages
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsSsmcontactsRotation.DataAwsSsmcontactsRotationRecurrenceWeeklySettingsHandOffTimeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsssmcontactsrotation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsssmcontactsrotation"
 
 dataawsssmcontactsrotation.NewDataAwsSsmcontactsRotationRecurrenceWeeklySettingsHandOffTimeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsSsmcontactsRotationRecurrenceWeeklySettingsHandOffTimeList
 ```
@@ -4632,7 +4632,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsSsmcontactsRotation.DataAwsSsmcontactsRotationRecurrenceWeeklySettingsHandOffTimeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsssmcontactsrotation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsssmcontactsrotation"
 
 dataawsssmcontactsrotation.NewDataAwsSsmcontactsRotationRecurrenceWeeklySettingsHandOffTimeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsSsmcontactsRotationRecurrenceWeeklySettingsHandOffTimeOutputReference
 ```
@@ -4921,7 +4921,7 @@ func InternalValue() DataAwsSsmcontactsRotationRecurrenceWeeklySettingsHandOffTi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsSsmcontactsRotation.DataAwsSsmcontactsRotationRecurrenceWeeklySettingsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsssmcontactsrotation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsssmcontactsrotation"
 
 dataawsssmcontactsrotation.NewDataAwsSsmcontactsRotationRecurrenceWeeklySettingsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsSsmcontactsRotationRecurrenceWeeklySettingsList
 ```
@@ -5070,7 +5070,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsSsmcontactsRotation.DataAwsSsmcontactsRotationRecurrenceWeeklySettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsssmcontactsrotation"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsssmcontactsrotation"
 
 dataawsssmcontactsrotation.NewDataAwsSsmcontactsRotationRecurrenceWeeklySettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsSsmcontactsRotationRecurrenceWeeklySettingsOutputReference
 ```

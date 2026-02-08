@@ -4,7 +4,7 @@
 
 ### KinesisStream <a name="KinesisStream" id="@cdktn/provider-aws.kinesisStream.KinesisStream"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/kinesis_stream aws_kinesis_stream}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/kinesis_stream aws_kinesis_stream}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.kinesisStream.KinesisStream.Initializer"></a>
 
@@ -50,20 +50,20 @@ kinesisStream.KinesisStream(
 | <code><a href="#@cdktn/provider-aws.kinesisStream.KinesisStream.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.kinesisStream.KinesisStream.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.kinesisStream.KinesisStream.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.kinesisStream.KinesisStream.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/kinesis_stream#name KinesisStream#name}. |
-| <code><a href="#@cdktn/provider-aws.kinesisStream.KinesisStream.Initializer.parameter.arn">arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/kinesis_stream#arn KinesisStream#arn}. |
-| <code><a href="#@cdktn/provider-aws.kinesisStream.KinesisStream.Initializer.parameter.encryptionType">encryption_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/kinesis_stream#encryption_type KinesisStream#encryption_type}. |
-| <code><a href="#@cdktn/provider-aws.kinesisStream.KinesisStream.Initializer.parameter.enforceConsumerDeletion">enforce_consumer_deletion</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/kinesis_stream#enforce_consumer_deletion KinesisStream#enforce_consumer_deletion}. |
-| <code><a href="#@cdktn/provider-aws.kinesisStream.KinesisStream.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/kinesis_stream#id KinesisStream#id}. |
-| <code><a href="#@cdktn/provider-aws.kinesisStream.KinesisStream.Initializer.parameter.kmsKeyId">kms_key_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/kinesis_stream#kms_key_id KinesisStream#kms_key_id}. |
-| <code><a href="#@cdktn/provider-aws.kinesisStream.KinesisStream.Initializer.parameter.maxRecordSizeInKib">max_record_size_in_kib</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/kinesis_stream#max_record_size_in_kib KinesisStream#max_record_size_in_kib}. |
+| <code><a href="#@cdktn/provider-aws.kinesisStream.KinesisStream.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/kinesis_stream#name KinesisStream#name}. |
+| <code><a href="#@cdktn/provider-aws.kinesisStream.KinesisStream.Initializer.parameter.arn">arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/kinesis_stream#arn KinesisStream#arn}. |
+| <code><a href="#@cdktn/provider-aws.kinesisStream.KinesisStream.Initializer.parameter.encryptionType">encryption_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/kinesis_stream#encryption_type KinesisStream#encryption_type}. |
+| <code><a href="#@cdktn/provider-aws.kinesisStream.KinesisStream.Initializer.parameter.enforceConsumerDeletion">enforce_consumer_deletion</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/kinesis_stream#enforce_consumer_deletion KinesisStream#enforce_consumer_deletion}. |
+| <code><a href="#@cdktn/provider-aws.kinesisStream.KinesisStream.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/kinesis_stream#id KinesisStream#id}. |
+| <code><a href="#@cdktn/provider-aws.kinesisStream.KinesisStream.Initializer.parameter.kmsKeyId">kms_key_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/kinesis_stream#kms_key_id KinesisStream#kms_key_id}. |
+| <code><a href="#@cdktn/provider-aws.kinesisStream.KinesisStream.Initializer.parameter.maxRecordSizeInKib">max_record_size_in_kib</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/kinesis_stream#max_record_size_in_kib KinesisStream#max_record_size_in_kib}. |
 | <code><a href="#@cdktn/provider-aws.kinesisStream.KinesisStream.Initializer.parameter.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.kinesisStream.KinesisStream.Initializer.parameter.retentionPeriod">retention_period</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/kinesis_stream#retention_period KinesisStream#retention_period}. |
-| <code><a href="#@cdktn/provider-aws.kinesisStream.KinesisStream.Initializer.parameter.shardCount">shard_count</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/kinesis_stream#shard_count KinesisStream#shard_count}. |
-| <code><a href="#@cdktn/provider-aws.kinesisStream.KinesisStream.Initializer.parameter.shardLevelMetrics">shard_level_metrics</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/kinesis_stream#shard_level_metrics KinesisStream#shard_level_metrics}. |
+| <code><a href="#@cdktn/provider-aws.kinesisStream.KinesisStream.Initializer.parameter.retentionPeriod">retention_period</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/kinesis_stream#retention_period KinesisStream#retention_period}. |
+| <code><a href="#@cdktn/provider-aws.kinesisStream.KinesisStream.Initializer.parameter.shardCount">shard_count</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/kinesis_stream#shard_count KinesisStream#shard_count}. |
+| <code><a href="#@cdktn/provider-aws.kinesisStream.KinesisStream.Initializer.parameter.shardLevelMetrics">shard_level_metrics</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/kinesis_stream#shard_level_metrics KinesisStream#shard_level_metrics}. |
 | <code><a href="#@cdktn/provider-aws.kinesisStream.KinesisStream.Initializer.parameter.streamModeDetails">stream_mode_details</a></code> | <code><a href="#@cdktn/provider-aws.kinesisStream.KinesisStreamStreamModeDetails">KinesisStreamStreamModeDetails</a></code> | stream_mode_details block. |
-| <code><a href="#@cdktn/provider-aws.kinesisStream.KinesisStream.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/kinesis_stream#tags KinesisStream#tags}. |
-| <code><a href="#@cdktn/provider-aws.kinesisStream.KinesisStream.Initializer.parameter.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/kinesis_stream#tags_all KinesisStream#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.kinesisStream.KinesisStream.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/kinesis_stream#tags KinesisStream#tags}. |
+| <code><a href="#@cdktn/provider-aws.kinesisStream.KinesisStream.Initializer.parameter.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/kinesis_stream#tags_all KinesisStream#tags_all}. |
 | <code><a href="#@cdktn/provider-aws.kinesisStream.KinesisStream.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.kinesisStream.KinesisStreamTimeouts">KinesisStreamTimeouts</a></code> | timeouts block. |
 
 ---
@@ -132,7 +132,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/kinesis_stream#name KinesisStream#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/kinesis_stream#name KinesisStream#name}.
 
 ---
 
@@ -140,7 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/kinesis_stream#arn KinesisStream#arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/kinesis_stream#arn KinesisStream#arn}.
 
 ---
 
@@ -148,7 +148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/kinesis_stream#encryption_type KinesisStream#encryption_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/kinesis_stream#encryption_type KinesisStream#encryption_type}.
 
 ---
 
@@ -156,7 +156,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/kinesis_stream#enforce_consumer_deletion KinesisStream#enforce_consumer_deletion}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/kinesis_stream#enforce_consumer_deletion KinesisStream#enforce_consumer_deletion}.
 
 ---
 
@@ -164,7 +164,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/kinesis_stream#id KinesisStream#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/kinesis_stream#id KinesisStream#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -175,7 +175,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/kinesis_stream#kms_key_id KinesisStream#kms_key_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/kinesis_stream#kms_key_id KinesisStream#kms_key_id}.
 
 ---
 
@@ -183,7 +183,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/kinesis_stream#max_record_size_in_kib KinesisStream#max_record_size_in_kib}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/kinesis_stream#max_record_size_in_kib KinesisStream#max_record_size_in_kib}.
 
 ---
 
@@ -193,7 +193,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/kinesis_stream#region KinesisStream#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/kinesis_stream#region KinesisStream#region}
 
 ---
 
@@ -201,7 +201,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/kinesis_stream#retention_period KinesisStream#retention_period}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/kinesis_stream#retention_period KinesisStream#retention_period}.
 
 ---
 
@@ -209,7 +209,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/kinesis_stream#shard_count KinesisStream#shard_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/kinesis_stream#shard_count KinesisStream#shard_count}.
 
 ---
 
@@ -217,7 +217,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/kinesis_stream#shard_level_metrics KinesisStream#shard_level_metrics}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/kinesis_stream#shard_level_metrics KinesisStream#shard_level_metrics}.
 
 ---
 
@@ -227,7 +227,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 stream_mode_details block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/kinesis_stream#stream_mode_details KinesisStream#stream_mode_details}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/kinesis_stream#stream_mode_details KinesisStream#stream_mode_details}
 
 ---
 
@@ -235,7 +235,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/kinesis_stream#tags KinesisStream#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/kinesis_stream#tags KinesisStream#tags}.
 
 ---
 
@@ -243,7 +243,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/kinesis_stream#tags_all KinesisStream#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/kinesis_stream#tags_all KinesisStream#tags_all}.
 
 ---
 
@@ -253,7 +253,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/kinesis_stream#timeouts KinesisStream#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/kinesis_stream#timeouts KinesisStream#timeouts}
 
 ---
 
@@ -640,7 +640,7 @@ def put_stream_mode_details(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/kinesis_stream#stream_mode KinesisStream#stream_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/kinesis_stream#stream_mode KinesisStream#stream_mode}.
 
 ---
 
@@ -658,7 +658,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/kinesis_stream#create KinesisStream#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/kinesis_stream#create KinesisStream#create}.
 
 ---
 
@@ -666,7 +666,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/kinesis_stream#delete KinesisStream#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/kinesis_stream#delete KinesisStream#delete}.
 
 ---
 
@@ -674,7 +674,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/kinesis_stream#update KinesisStream#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/kinesis_stream#update KinesisStream#update}.
 
 ---
 
@@ -876,7 +876,7 @@ The construct id used in the generated config for the KinesisStream to import.
 
 The id of the existing KinesisStream that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/kinesis_stream#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/kinesis_stream#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1445,20 +1445,20 @@ kinesisStream.KinesisStreamConfig(
 | <code><a href="#@cdktn/provider-aws.kinesisStream.KinesisStreamConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.kinesisStream.KinesisStreamConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.kinesisStream.KinesisStreamConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.kinesisStream.KinesisStreamConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/kinesis_stream#name KinesisStream#name}. |
-| <code><a href="#@cdktn/provider-aws.kinesisStream.KinesisStreamConfig.property.arn">arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/kinesis_stream#arn KinesisStream#arn}. |
-| <code><a href="#@cdktn/provider-aws.kinesisStream.KinesisStreamConfig.property.encryptionType">encryption_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/kinesis_stream#encryption_type KinesisStream#encryption_type}. |
-| <code><a href="#@cdktn/provider-aws.kinesisStream.KinesisStreamConfig.property.enforceConsumerDeletion">enforce_consumer_deletion</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/kinesis_stream#enforce_consumer_deletion KinesisStream#enforce_consumer_deletion}. |
-| <code><a href="#@cdktn/provider-aws.kinesisStream.KinesisStreamConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/kinesis_stream#id KinesisStream#id}. |
-| <code><a href="#@cdktn/provider-aws.kinesisStream.KinesisStreamConfig.property.kmsKeyId">kms_key_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/kinesis_stream#kms_key_id KinesisStream#kms_key_id}. |
-| <code><a href="#@cdktn/provider-aws.kinesisStream.KinesisStreamConfig.property.maxRecordSizeInKib">max_record_size_in_kib</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/kinesis_stream#max_record_size_in_kib KinesisStream#max_record_size_in_kib}. |
+| <code><a href="#@cdktn/provider-aws.kinesisStream.KinesisStreamConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/kinesis_stream#name KinesisStream#name}. |
+| <code><a href="#@cdktn/provider-aws.kinesisStream.KinesisStreamConfig.property.arn">arn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/kinesis_stream#arn KinesisStream#arn}. |
+| <code><a href="#@cdktn/provider-aws.kinesisStream.KinesisStreamConfig.property.encryptionType">encryption_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/kinesis_stream#encryption_type KinesisStream#encryption_type}. |
+| <code><a href="#@cdktn/provider-aws.kinesisStream.KinesisStreamConfig.property.enforceConsumerDeletion">enforce_consumer_deletion</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/kinesis_stream#enforce_consumer_deletion KinesisStream#enforce_consumer_deletion}. |
+| <code><a href="#@cdktn/provider-aws.kinesisStream.KinesisStreamConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/kinesis_stream#id KinesisStream#id}. |
+| <code><a href="#@cdktn/provider-aws.kinesisStream.KinesisStreamConfig.property.kmsKeyId">kms_key_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/kinesis_stream#kms_key_id KinesisStream#kms_key_id}. |
+| <code><a href="#@cdktn/provider-aws.kinesisStream.KinesisStreamConfig.property.maxRecordSizeInKib">max_record_size_in_kib</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/kinesis_stream#max_record_size_in_kib KinesisStream#max_record_size_in_kib}. |
 | <code><a href="#@cdktn/provider-aws.kinesisStream.KinesisStreamConfig.property.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.kinesisStream.KinesisStreamConfig.property.retentionPeriod">retention_period</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/kinesis_stream#retention_period KinesisStream#retention_period}. |
-| <code><a href="#@cdktn/provider-aws.kinesisStream.KinesisStreamConfig.property.shardCount">shard_count</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/kinesis_stream#shard_count KinesisStream#shard_count}. |
-| <code><a href="#@cdktn/provider-aws.kinesisStream.KinesisStreamConfig.property.shardLevelMetrics">shard_level_metrics</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/kinesis_stream#shard_level_metrics KinesisStream#shard_level_metrics}. |
+| <code><a href="#@cdktn/provider-aws.kinesisStream.KinesisStreamConfig.property.retentionPeriod">retention_period</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/kinesis_stream#retention_period KinesisStream#retention_period}. |
+| <code><a href="#@cdktn/provider-aws.kinesisStream.KinesisStreamConfig.property.shardCount">shard_count</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/kinesis_stream#shard_count KinesisStream#shard_count}. |
+| <code><a href="#@cdktn/provider-aws.kinesisStream.KinesisStreamConfig.property.shardLevelMetrics">shard_level_metrics</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/kinesis_stream#shard_level_metrics KinesisStream#shard_level_metrics}. |
 | <code><a href="#@cdktn/provider-aws.kinesisStream.KinesisStreamConfig.property.streamModeDetails">stream_mode_details</a></code> | <code><a href="#@cdktn/provider-aws.kinesisStream.KinesisStreamStreamModeDetails">KinesisStreamStreamModeDetails</a></code> | stream_mode_details block. |
-| <code><a href="#@cdktn/provider-aws.kinesisStream.KinesisStreamConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/kinesis_stream#tags KinesisStream#tags}. |
-| <code><a href="#@cdktn/provider-aws.kinesisStream.KinesisStreamConfig.property.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/kinesis_stream#tags_all KinesisStream#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.kinesisStream.KinesisStreamConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/kinesis_stream#tags KinesisStream#tags}. |
+| <code><a href="#@cdktn/provider-aws.kinesisStream.KinesisStreamConfig.property.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/kinesis_stream#tags_all KinesisStream#tags_all}. |
 | <code><a href="#@cdktn/provider-aws.kinesisStream.KinesisStreamConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.kinesisStream.KinesisStreamTimeouts">KinesisStreamTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1541,7 +1541,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/kinesis_stream#name KinesisStream#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/kinesis_stream#name KinesisStream#name}.
 
 ---
 
@@ -1553,7 +1553,7 @@ arn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/kinesis_stream#arn KinesisStream#arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/kinesis_stream#arn KinesisStream#arn}.
 
 ---
 
@@ -1565,7 +1565,7 @@ encryption_type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/kinesis_stream#encryption_type KinesisStream#encryption_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/kinesis_stream#encryption_type KinesisStream#encryption_type}.
 
 ---
 
@@ -1577,7 +1577,7 @@ enforce_consumer_deletion: bool | IResolvable
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/kinesis_stream#enforce_consumer_deletion KinesisStream#enforce_consumer_deletion}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/kinesis_stream#enforce_consumer_deletion KinesisStream#enforce_consumer_deletion}.
 
 ---
 
@@ -1589,7 +1589,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/kinesis_stream#id KinesisStream#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/kinesis_stream#id KinesisStream#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1604,7 +1604,7 @@ kms_key_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/kinesis_stream#kms_key_id KinesisStream#kms_key_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/kinesis_stream#kms_key_id KinesisStream#kms_key_id}.
 
 ---
 
@@ -1616,7 +1616,7 @@ max_record_size_in_kib: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/kinesis_stream#max_record_size_in_kib KinesisStream#max_record_size_in_kib}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/kinesis_stream#max_record_size_in_kib KinesisStream#max_record_size_in_kib}.
 
 ---
 
@@ -1630,7 +1630,7 @@ region: str
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/kinesis_stream#region KinesisStream#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/kinesis_stream#region KinesisStream#region}
 
 ---
 
@@ -1642,7 +1642,7 @@ retention_period: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/kinesis_stream#retention_period KinesisStream#retention_period}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/kinesis_stream#retention_period KinesisStream#retention_period}.
 
 ---
 
@@ -1654,7 +1654,7 @@ shard_count: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/kinesis_stream#shard_count KinesisStream#shard_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/kinesis_stream#shard_count KinesisStream#shard_count}.
 
 ---
 
@@ -1666,7 +1666,7 @@ shard_level_metrics: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/kinesis_stream#shard_level_metrics KinesisStream#shard_level_metrics}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/kinesis_stream#shard_level_metrics KinesisStream#shard_level_metrics}.
 
 ---
 
@@ -1680,7 +1680,7 @@ stream_mode_details: KinesisStreamStreamModeDetails
 
 stream_mode_details block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/kinesis_stream#stream_mode_details KinesisStream#stream_mode_details}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/kinesis_stream#stream_mode_details KinesisStream#stream_mode_details}
 
 ---
 
@@ -1692,7 +1692,7 @@ tags: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/kinesis_stream#tags KinesisStream#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/kinesis_stream#tags KinesisStream#tags}.
 
 ---
 
@@ -1704,7 +1704,7 @@ tags_all: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/kinesis_stream#tags_all KinesisStream#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/kinesis_stream#tags_all KinesisStream#tags_all}.
 
 ---
 
@@ -1718,7 +1718,7 @@ timeouts: KinesisStreamTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/kinesis_stream#timeouts KinesisStream#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/kinesis_stream#timeouts KinesisStream#timeouts}
 
 ---
 
@@ -1738,7 +1738,7 @@ kinesisStream.KinesisStreamStreamModeDetails(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.kinesisStream.KinesisStreamStreamModeDetails.property.streamMode">stream_mode</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/kinesis_stream#stream_mode KinesisStream#stream_mode}. |
+| <code><a href="#@cdktn/provider-aws.kinesisStream.KinesisStreamStreamModeDetails.property.streamMode">stream_mode</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/kinesis_stream#stream_mode KinesisStream#stream_mode}. |
 
 ---
 
@@ -1750,7 +1750,7 @@ stream_mode: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/kinesis_stream#stream_mode KinesisStream#stream_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/kinesis_stream#stream_mode KinesisStream#stream_mode}.
 
 ---
 
@@ -1772,9 +1772,9 @@ kinesisStream.KinesisStreamTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.kinesisStream.KinesisStreamTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/kinesis_stream#create KinesisStream#create}. |
-| <code><a href="#@cdktn/provider-aws.kinesisStream.KinesisStreamTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/kinesis_stream#delete KinesisStream#delete}. |
-| <code><a href="#@cdktn/provider-aws.kinesisStream.KinesisStreamTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/kinesis_stream#update KinesisStream#update}. |
+| <code><a href="#@cdktn/provider-aws.kinesisStream.KinesisStreamTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/kinesis_stream#create KinesisStream#create}. |
+| <code><a href="#@cdktn/provider-aws.kinesisStream.KinesisStreamTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/kinesis_stream#delete KinesisStream#delete}. |
+| <code><a href="#@cdktn/provider-aws.kinesisStream.KinesisStreamTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/kinesis_stream#update KinesisStream#update}. |
 
 ---
 
@@ -1786,7 +1786,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/kinesis_stream#create KinesisStream#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/kinesis_stream#create KinesisStream#create}.
 
 ---
 
@@ -1798,7 +1798,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/kinesis_stream#delete KinesisStream#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/kinesis_stream#delete KinesisStream#delete}.
 
 ---
 
@@ -1810,7 +1810,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/kinesis_stream#update KinesisStream#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/kinesis_stream#update KinesisStream#update}.
 
 ---
 

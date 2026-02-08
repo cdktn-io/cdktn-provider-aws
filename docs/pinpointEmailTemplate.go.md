@@ -4,12 +4,12 @@
 
 ### PinpointEmailTemplate <a name="PinpointEmailTemplate" id="@cdktn/provider-aws.pinpointEmailTemplate.PinpointEmailTemplate"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/pinpoint_email_template aws_pinpoint_email_template}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/pinpoint_email_template aws_pinpoint_email_template}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.pinpointEmailTemplate.PinpointEmailTemplate.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/pinpointemailtemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/pinpointemailtemplate"
 
 pinpointemailtemplate.NewPinpointEmailTemplate(scope Construct, id *string, config PinpointEmailTemplateConfig) PinpointEmailTemplate
 ```
@@ -412,7 +412,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.pinpointEmailTemplate.PinpointEmailTemplate.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/pinpointemailtemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/pinpointemailtemplate"
 
 pinpointemailtemplate.PinpointEmailTemplate_IsConstruct(x interface{}) *bool
 ```
@@ -444,7 +444,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.pinpointEmailTemplate.PinpointEmailTemplate.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/pinpointemailtemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/pinpointemailtemplate"
 
 pinpointemailtemplate.PinpointEmailTemplate_IsTerraformElement(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ pinpointemailtemplate.PinpointEmailTemplate_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.pinpointEmailTemplate.PinpointEmailTemplate.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/pinpointemailtemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/pinpointemailtemplate"
 
 pinpointemailtemplate.PinpointEmailTemplate_IsTerraformResource(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ pinpointemailtemplate.PinpointEmailTemplate_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.pinpointEmailTemplate.PinpointEmailTemplate.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/pinpointemailtemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/pinpointemailtemplate"
 
 pinpointemailtemplate.PinpointEmailTemplate_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -501,7 +501,7 @@ The construct id used in the generated config for the PinpointEmailTemplate to i
 
 The id of the existing PinpointEmailTemplate that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/pinpoint_email_template#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/pinpoint_email_template#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -811,7 +811,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.pinpointEmailTemplate.PinpointEmailTemplateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/pinpointemailtemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/pinpointemailtemplate"
 
 &pinpointemailtemplate.PinpointEmailTemplateConfig {
 	Connection: interface{},
@@ -839,10 +839,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/pinpointemailtemplate"
 | <code><a href="#@cdktn/provider-aws.pinpointEmailTemplate.PinpointEmailTemplateConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.pinpointEmailTemplate.PinpointEmailTemplateConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.pinpointEmailTemplate.PinpointEmailTemplateConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.pinpointEmailTemplate.PinpointEmailTemplateConfig.property.templateName">TemplateName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/pinpoint_email_template#template_name PinpointEmailTemplate#template_name}. |
+| <code><a href="#@cdktn/provider-aws.pinpointEmailTemplate.PinpointEmailTemplateConfig.property.templateName">TemplateName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/pinpoint_email_template#template_name PinpointEmailTemplate#template_name}. |
 | <code><a href="#@cdktn/provider-aws.pinpointEmailTemplate.PinpointEmailTemplateConfig.property.emailTemplate">EmailTemplate</a></code> | <code>interface{}</code> | email_template block. |
 | <code><a href="#@cdktn/provider-aws.pinpointEmailTemplate.PinpointEmailTemplateConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.pinpointEmailTemplate.PinpointEmailTemplateConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/pinpoint_email_template#tags PinpointEmailTemplate#tags}. |
+| <code><a href="#@cdktn/provider-aws.pinpointEmailTemplate.PinpointEmailTemplateConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/pinpoint_email_template#tags PinpointEmailTemplate#tags}. |
 
 ---
 
@@ -924,7 +924,7 @@ TemplateName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/pinpoint_email_template#template_name PinpointEmailTemplate#template_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/pinpoint_email_template#template_name PinpointEmailTemplate#template_name}.
 
 ---
 
@@ -938,7 +938,7 @@ EmailTemplate interface{}
 
 email_template block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/pinpoint_email_template#email_template PinpointEmailTemplate#email_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/pinpoint_email_template#email_template PinpointEmailTemplate#email_template}
 
 ---
 
@@ -952,7 +952,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/pinpoint_email_template#region PinpointEmailTemplate#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/pinpoint_email_template#region PinpointEmailTemplate#region}
 
 ---
 
@@ -964,7 +964,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/pinpoint_email_template#tags PinpointEmailTemplate#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/pinpoint_email_template#tags PinpointEmailTemplate#tags}.
 
 ---
 
@@ -973,7 +973,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.pinpointEmailTemplate.PinpointEmailTemplateEmailTemplate.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/pinpointemailtemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/pinpointemailtemplate"
 
 &pinpointemailtemplate.PinpointEmailTemplateEmailTemplate {
 	DefaultSubstitutions: *string,
@@ -990,13 +990,13 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/pinpointemailtemplate"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.pinpointEmailTemplate.PinpointEmailTemplateEmailTemplate.property.defaultSubstitutions">DefaultSubstitutions</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/pinpoint_email_template#default_substitutions PinpointEmailTemplate#default_substitutions}. |
-| <code><a href="#@cdktn/provider-aws.pinpointEmailTemplate.PinpointEmailTemplateEmailTemplate.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/pinpoint_email_template#description PinpointEmailTemplate#description}. |
+| <code><a href="#@cdktn/provider-aws.pinpointEmailTemplate.PinpointEmailTemplateEmailTemplate.property.defaultSubstitutions">DefaultSubstitutions</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/pinpoint_email_template#default_substitutions PinpointEmailTemplate#default_substitutions}. |
+| <code><a href="#@cdktn/provider-aws.pinpointEmailTemplate.PinpointEmailTemplateEmailTemplate.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/pinpoint_email_template#description PinpointEmailTemplate#description}. |
 | <code><a href="#@cdktn/provider-aws.pinpointEmailTemplate.PinpointEmailTemplateEmailTemplate.property.header">Header</a></code> | <code>interface{}</code> | header block. |
-| <code><a href="#@cdktn/provider-aws.pinpointEmailTemplate.PinpointEmailTemplateEmailTemplate.property.htmlPart">HtmlPart</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/pinpoint_email_template#html_part PinpointEmailTemplate#html_part}. |
-| <code><a href="#@cdktn/provider-aws.pinpointEmailTemplate.PinpointEmailTemplateEmailTemplate.property.recommenderId">RecommenderId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/pinpoint_email_template#recommender_id PinpointEmailTemplate#recommender_id}. |
-| <code><a href="#@cdktn/provider-aws.pinpointEmailTemplate.PinpointEmailTemplateEmailTemplate.property.subject">Subject</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/pinpoint_email_template#subject PinpointEmailTemplate#subject}. |
-| <code><a href="#@cdktn/provider-aws.pinpointEmailTemplate.PinpointEmailTemplateEmailTemplate.property.textPart">TextPart</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/pinpoint_email_template#text_part PinpointEmailTemplate#text_part}. |
+| <code><a href="#@cdktn/provider-aws.pinpointEmailTemplate.PinpointEmailTemplateEmailTemplate.property.htmlPart">HtmlPart</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/pinpoint_email_template#html_part PinpointEmailTemplate#html_part}. |
+| <code><a href="#@cdktn/provider-aws.pinpointEmailTemplate.PinpointEmailTemplateEmailTemplate.property.recommenderId">RecommenderId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/pinpoint_email_template#recommender_id PinpointEmailTemplate#recommender_id}. |
+| <code><a href="#@cdktn/provider-aws.pinpointEmailTemplate.PinpointEmailTemplateEmailTemplate.property.subject">Subject</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/pinpoint_email_template#subject PinpointEmailTemplate#subject}. |
+| <code><a href="#@cdktn/provider-aws.pinpointEmailTemplate.PinpointEmailTemplateEmailTemplate.property.textPart">TextPart</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/pinpoint_email_template#text_part PinpointEmailTemplate#text_part}. |
 
 ---
 
@@ -1008,7 +1008,7 @@ DefaultSubstitutions *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/pinpoint_email_template#default_substitutions PinpointEmailTemplate#default_substitutions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/pinpoint_email_template#default_substitutions PinpointEmailTemplate#default_substitutions}.
 
 ---
 
@@ -1020,7 +1020,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/pinpoint_email_template#description PinpointEmailTemplate#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/pinpoint_email_template#description PinpointEmailTemplate#description}.
 
 ---
 
@@ -1034,7 +1034,7 @@ Header interface{}
 
 header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/pinpoint_email_template#header PinpointEmailTemplate#header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/pinpoint_email_template#header PinpointEmailTemplate#header}
 
 ---
 
@@ -1046,7 +1046,7 @@ HtmlPart *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/pinpoint_email_template#html_part PinpointEmailTemplate#html_part}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/pinpoint_email_template#html_part PinpointEmailTemplate#html_part}.
 
 ---
 
@@ -1058,7 +1058,7 @@ RecommenderId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/pinpoint_email_template#recommender_id PinpointEmailTemplate#recommender_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/pinpoint_email_template#recommender_id PinpointEmailTemplate#recommender_id}.
 
 ---
 
@@ -1070,7 +1070,7 @@ Subject *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/pinpoint_email_template#subject PinpointEmailTemplate#subject}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/pinpoint_email_template#subject PinpointEmailTemplate#subject}.
 
 ---
 
@@ -1082,7 +1082,7 @@ TextPart *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/pinpoint_email_template#text_part PinpointEmailTemplate#text_part}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/pinpoint_email_template#text_part PinpointEmailTemplate#text_part}.
 
 ---
 
@@ -1091,7 +1091,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.pinpointEmailTemplate.PinpointEmailTemplateEmailTemplateHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/pinpointemailtemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/pinpointemailtemplate"
 
 &pinpointemailtemplate.PinpointEmailTemplateEmailTemplateHeader {
 	Name: *string,
@@ -1103,8 +1103,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/pinpointemailtemplate"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.pinpointEmailTemplate.PinpointEmailTemplateEmailTemplateHeader.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/pinpoint_email_template#name PinpointEmailTemplate#name}. |
-| <code><a href="#@cdktn/provider-aws.pinpointEmailTemplate.PinpointEmailTemplateEmailTemplateHeader.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/pinpoint_email_template#value PinpointEmailTemplate#value}. |
+| <code><a href="#@cdktn/provider-aws.pinpointEmailTemplate.PinpointEmailTemplateEmailTemplateHeader.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/pinpoint_email_template#name PinpointEmailTemplate#name}. |
+| <code><a href="#@cdktn/provider-aws.pinpointEmailTemplate.PinpointEmailTemplateEmailTemplateHeader.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/pinpoint_email_template#value PinpointEmailTemplate#value}. |
 
 ---
 
@@ -1116,7 +1116,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/pinpoint_email_template#name PinpointEmailTemplate#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/pinpoint_email_template#name PinpointEmailTemplate#name}.
 
 ---
 
@@ -1128,7 +1128,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/pinpoint_email_template#value PinpointEmailTemplate#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/pinpoint_email_template#value PinpointEmailTemplate#value}.
 
 ---
 
@@ -1139,7 +1139,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.pinpointEmailTemplate.PinpointEmailTemplateEmailTemplateHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/pinpointemailtemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/pinpointemailtemplate"
 
 pinpointemailtemplate.NewPinpointEmailTemplateEmailTemplateHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PinpointEmailTemplateEmailTemplateHeaderList
 ```
@@ -1299,7 +1299,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.pinpointEmailTemplate.PinpointEmailTemplateEmailTemplateHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/pinpointemailtemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/pinpointemailtemplate"
 
 pinpointemailtemplate.NewPinpointEmailTemplateEmailTemplateHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PinpointEmailTemplateEmailTemplateHeaderOutputReference
 ```
@@ -1624,7 +1624,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.pinpointEmailTemplate.PinpointEmailTemplateEmailTemplateList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/pinpointemailtemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/pinpointemailtemplate"
 
 pinpointemailtemplate.NewPinpointEmailTemplateEmailTemplateList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PinpointEmailTemplateEmailTemplateList
 ```
@@ -1784,7 +1784,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.pinpointEmailTemplate.PinpointEmailTemplateEmailTemplateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/pinpointemailtemplate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/pinpointemailtemplate"
 
 pinpointemailtemplate.NewPinpointEmailTemplateEmailTemplateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PinpointEmailTemplateEmailTemplateOutputReference
 ```

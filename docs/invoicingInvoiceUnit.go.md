@@ -4,12 +4,12 @@
 
 ### InvoicingInvoiceUnit <a name="InvoicingInvoiceUnit" id="@cdktn/provider-aws.invoicingInvoiceUnit.InvoicingInvoiceUnit"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/invoicing_invoice_unit aws_invoicing_invoice_unit}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/invoicing_invoice_unit aws_invoicing_invoice_unit}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.invoicingInvoiceUnit.InvoicingInvoiceUnit.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/invoicinginvoiceunit"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/invoicinginvoiceunit"
 
 invoicinginvoiceunit.NewInvoicingInvoiceUnit(scope Construct, id *string, config InvoicingInvoiceUnitConfig) InvoicingInvoiceUnit
 ```
@@ -446,7 +446,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.invoicingInvoiceUnit.InvoicingInvoiceUnit.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/invoicinginvoiceunit"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/invoicinginvoiceunit"
 
 invoicinginvoiceunit.InvoicingInvoiceUnit_IsConstruct(x interface{}) *bool
 ```
@@ -478,7 +478,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.invoicingInvoiceUnit.InvoicingInvoiceUnit.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/invoicinginvoiceunit"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/invoicinginvoiceunit"
 
 invoicinginvoiceunit.InvoicingInvoiceUnit_IsTerraformElement(x interface{}) *bool
 ```
@@ -492,7 +492,7 @@ invoicinginvoiceunit.InvoicingInvoiceUnit_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.invoicingInvoiceUnit.InvoicingInvoiceUnit.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/invoicinginvoiceunit"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/invoicinginvoiceunit"
 
 invoicinginvoiceunit.InvoicingInvoiceUnit_IsTerraformResource(x interface{}) *bool
 ```
@@ -506,7 +506,7 @@ invoicinginvoiceunit.InvoicingInvoiceUnit_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.invoicingInvoiceUnit.InvoicingInvoiceUnit.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/invoicinginvoiceunit"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/invoicinginvoiceunit"
 
 invoicinginvoiceunit.InvoicingInvoiceUnit_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -535,7 +535,7 @@ The construct id used in the generated config for the InvoicingInvoiceUnit to im
 
 The id of the existing InvoicingInvoiceUnit that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/invoicing_invoice_unit#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/invoicing_invoice_unit#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -944,7 +944,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.invoicingInvoiceUnit.InvoicingInvoiceUnitConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/invoicinginvoiceunit"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/invoicinginvoiceunit"
 
 &invoicinginvoiceunit.InvoicingInvoiceUnitConfig {
 	Connection: interface{},
@@ -961,7 +961,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/invoicinginvoiceunit"
 	Rule: interface{},
 	Tags: *map[string]*string,
 	TaxInheritanceDisabled: interface{},
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.invoicingInvoiceUnit.InvoicingInvoiceUnitTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.invoicingInvoiceUnit.InvoicingInvoiceUnitTimeouts,
 }
 ```
 
@@ -976,13 +976,13 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/invoicinginvoiceunit"
 | <code><a href="#@cdktn/provider-aws.invoicingInvoiceUnit.InvoicingInvoiceUnitConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.invoicingInvoiceUnit.InvoicingInvoiceUnitConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.invoicingInvoiceUnit.InvoicingInvoiceUnitConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.invoicingInvoiceUnit.InvoicingInvoiceUnitConfig.property.invoiceReceiver">InvoiceReceiver</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/invoicing_invoice_unit#invoice_receiver InvoicingInvoiceUnit#invoice_receiver}. |
-| <code><a href="#@cdktn/provider-aws.invoicingInvoiceUnit.InvoicingInvoiceUnitConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/invoicing_invoice_unit#name InvoicingInvoiceUnit#name}. |
-| <code><a href="#@cdktn/provider-aws.invoicingInvoiceUnit.InvoicingInvoiceUnitConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/invoicing_invoice_unit#description InvoicingInvoiceUnit#description}. |
+| <code><a href="#@cdktn/provider-aws.invoicingInvoiceUnit.InvoicingInvoiceUnitConfig.property.invoiceReceiver">InvoiceReceiver</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/invoicing_invoice_unit#invoice_receiver InvoicingInvoiceUnit#invoice_receiver}. |
+| <code><a href="#@cdktn/provider-aws.invoicingInvoiceUnit.InvoicingInvoiceUnitConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/invoicing_invoice_unit#name InvoicingInvoiceUnit#name}. |
+| <code><a href="#@cdktn/provider-aws.invoicingInvoiceUnit.InvoicingInvoiceUnitConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/invoicing_invoice_unit#description InvoicingInvoiceUnit#description}. |
 | <code><a href="#@cdktn/provider-aws.invoicingInvoiceUnit.InvoicingInvoiceUnitConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktn/provider-aws.invoicingInvoiceUnit.InvoicingInvoiceUnitConfig.property.rule">Rule</a></code> | <code>interface{}</code> | rule block. |
-| <code><a href="#@cdktn/provider-aws.invoicingInvoiceUnit.InvoicingInvoiceUnitConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/invoicing_invoice_unit#tags InvoicingInvoiceUnit#tags}. |
-| <code><a href="#@cdktn/provider-aws.invoicingInvoiceUnit.InvoicingInvoiceUnitConfig.property.taxInheritanceDisabled">TaxInheritanceDisabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/invoicing_invoice_unit#tax_inheritance_disabled InvoicingInvoiceUnit#tax_inheritance_disabled}. |
+| <code><a href="#@cdktn/provider-aws.invoicingInvoiceUnit.InvoicingInvoiceUnitConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/invoicing_invoice_unit#tags InvoicingInvoiceUnit#tags}. |
+| <code><a href="#@cdktn/provider-aws.invoicingInvoiceUnit.InvoicingInvoiceUnitConfig.property.taxInheritanceDisabled">TaxInheritanceDisabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/invoicing_invoice_unit#tax_inheritance_disabled InvoicingInvoiceUnit#tax_inheritance_disabled}. |
 | <code><a href="#@cdktn/provider-aws.invoicingInvoiceUnit.InvoicingInvoiceUnitConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.invoicingInvoiceUnit.InvoicingInvoiceUnitTimeouts">InvoicingInvoiceUnitTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1065,7 +1065,7 @@ InvoiceReceiver *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/invoicing_invoice_unit#invoice_receiver InvoicingInvoiceUnit#invoice_receiver}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/invoicing_invoice_unit#invoice_receiver InvoicingInvoiceUnit#invoice_receiver}.
 
 ---
 
@@ -1077,7 +1077,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/invoicing_invoice_unit#name InvoicingInvoiceUnit#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/invoicing_invoice_unit#name InvoicingInvoiceUnit#name}.
 
 ---
 
@@ -1089,7 +1089,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/invoicing_invoice_unit#description InvoicingInvoiceUnit#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/invoicing_invoice_unit#description InvoicingInvoiceUnit#description}.
 
 ---
 
@@ -1103,7 +1103,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/invoicing_invoice_unit#region InvoicingInvoiceUnit#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/invoicing_invoice_unit#region InvoicingInvoiceUnit#region}
 
 ---
 
@@ -1117,7 +1117,7 @@ Rule interface{}
 
 rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/invoicing_invoice_unit#rule InvoicingInvoiceUnit#rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/invoicing_invoice_unit#rule InvoicingInvoiceUnit#rule}
 
 ---
 
@@ -1129,7 +1129,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/invoicing_invoice_unit#tags InvoicingInvoiceUnit#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/invoicing_invoice_unit#tags InvoicingInvoiceUnit#tags}.
 
 ---
 
@@ -1141,7 +1141,7 @@ TaxInheritanceDisabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/invoicing_invoice_unit#tax_inheritance_disabled InvoicingInvoiceUnit#tax_inheritance_disabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/invoicing_invoice_unit#tax_inheritance_disabled InvoicingInvoiceUnit#tax_inheritance_disabled}.
 
 ---
 
@@ -1155,7 +1155,7 @@ Timeouts InvoicingInvoiceUnitTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/invoicing_invoice_unit#timeouts InvoicingInvoiceUnit#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/invoicing_invoice_unit#timeouts InvoicingInvoiceUnit#timeouts}
 
 ---
 
@@ -1164,7 +1164,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.invoicingInvoiceUnit.InvoicingInvoiceUnitRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/invoicinginvoiceunit"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/invoicinginvoiceunit"
 
 &invoicinginvoiceunit.InvoicingInvoiceUnitRule {
 	LinkedAccounts: *[]*string,
@@ -1175,7 +1175,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/invoicinginvoiceunit"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.invoicingInvoiceUnit.InvoicingInvoiceUnitRule.property.linkedAccounts">LinkedAccounts</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/invoicing_invoice_unit#linked_accounts InvoicingInvoiceUnit#linked_accounts}. |
+| <code><a href="#@cdktn/provider-aws.invoicingInvoiceUnit.InvoicingInvoiceUnitRule.property.linkedAccounts">LinkedAccounts</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/invoicing_invoice_unit#linked_accounts InvoicingInvoiceUnit#linked_accounts}. |
 
 ---
 
@@ -1187,7 +1187,7 @@ LinkedAccounts *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/invoicing_invoice_unit#linked_accounts InvoicingInvoiceUnit#linked_accounts}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/invoicing_invoice_unit#linked_accounts InvoicingInvoiceUnit#linked_accounts}.
 
 ---
 
@@ -1196,7 +1196,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.invoicingInvoiceUnit.InvoicingInvoiceUnitTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/invoicinginvoiceunit"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/invoicinginvoiceunit"
 
 &invoicinginvoiceunit.InvoicingInvoiceUnitTimeouts {
 	Create: *string,
@@ -1225,7 +1225,7 @@ Create *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/invoicing_invoice_unit#create InvoicingInvoiceUnit#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/invoicing_invoice_unit#create InvoicingInvoiceUnit#create}
 
 ---
 
@@ -1239,7 +1239,7 @@ Delete *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/invoicing_invoice_unit#delete InvoicingInvoiceUnit#delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/invoicing_invoice_unit#delete InvoicingInvoiceUnit#delete}
 
 ---
 
@@ -1253,7 +1253,7 @@ Update *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/invoicing_invoice_unit#update InvoicingInvoiceUnit#update}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/invoicing_invoice_unit#update InvoicingInvoiceUnit#update}
 
 ---
 
@@ -1264,7 +1264,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.invoicingInvoiceUnit.InvoicingInvoiceUnitRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/invoicinginvoiceunit"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/invoicinginvoiceunit"
 
 invoicinginvoiceunit.NewInvoicingInvoiceUnitRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) InvoicingInvoiceUnitRuleList
 ```
@@ -1424,7 +1424,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.invoicingInvoiceUnit.InvoicingInvoiceUnitRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/invoicinginvoiceunit"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/invoicinginvoiceunit"
 
 invoicinginvoiceunit.NewInvoicingInvoiceUnitRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) InvoicingInvoiceUnitRuleOutputReference
 ```
@@ -1713,7 +1713,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.invoicingInvoiceUnit.InvoicingInvoiceUnitTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/invoicinginvoiceunit"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/invoicinginvoiceunit"
 
 invoicinginvoiceunit.NewInvoicingInvoiceUnitTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) InvoicingInvoiceUnitTimeoutsOutputReference
 ```

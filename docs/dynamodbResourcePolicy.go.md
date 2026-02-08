@@ -4,12 +4,12 @@
 
 ### DynamodbResourcePolicy <a name="DynamodbResourcePolicy" id="@cdktn/provider-aws.dynamodbResourcePolicy.DynamodbResourcePolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_resource_policy aws_dynamodb_resource_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_resource_policy aws_dynamodb_resource_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dynamodbResourcePolicy.DynamodbResourcePolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dynamodbresourcepolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dynamodbresourcepolicy"
 
 dynamodbresourcepolicy.NewDynamodbResourcePolicy(scope Construct, id *string, config DynamodbResourcePolicyConfig) DynamodbResourcePolicy
 ```
@@ -392,7 +392,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dynamodbResourcePolicy.DynamodbResourcePolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dynamodbresourcepolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dynamodbresourcepolicy"
 
 dynamodbresourcepolicy.DynamodbResourcePolicy_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dynamodbResourcePolicy.DynamodbResourcePolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dynamodbresourcepolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dynamodbresourcepolicy"
 
 dynamodbresourcepolicy.DynamodbResourcePolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ dynamodbresourcepolicy.DynamodbResourcePolicy_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.dynamodbResourcePolicy.DynamodbResourcePolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dynamodbresourcepolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dynamodbresourcepolicy"
 
 dynamodbresourcepolicy.DynamodbResourcePolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ dynamodbresourcepolicy.DynamodbResourcePolicy_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dynamodbResourcePolicy.DynamodbResourcePolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dynamodbresourcepolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dynamodbresourcepolicy"
 
 dynamodbresourcepolicy.DynamodbResourcePolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -481,7 +481,7 @@ The construct id used in the generated config for the DynamodbResourcePolicy to 
 
 The id of the existing DynamodbResourcePolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_resource_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_resource_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -791,7 +791,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dynamodbResourcePolicy.DynamodbResourcePolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dynamodbresourcepolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dynamodbresourcepolicy"
 
 &dynamodbresourcepolicy.DynamodbResourcePolicyConfig {
 	Connection: interface{},
@@ -819,9 +819,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dynamodbresourcepolicy
 | <code><a href="#@cdktn/provider-aws.dynamodbResourcePolicy.DynamodbResourcePolicyConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dynamodbResourcePolicy.DynamodbResourcePolicyConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dynamodbResourcePolicy.DynamodbResourcePolicyConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dynamodbResourcePolicy.DynamodbResourcePolicyConfig.property.policy">Policy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_resource_policy#policy DynamodbResourcePolicy#policy}. |
-| <code><a href="#@cdktn/provider-aws.dynamodbResourcePolicy.DynamodbResourcePolicyConfig.property.resourceArn">ResourceArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_resource_policy#resource_arn DynamodbResourcePolicy#resource_arn}. |
-| <code><a href="#@cdktn/provider-aws.dynamodbResourcePolicy.DynamodbResourcePolicyConfig.property.confirmRemoveSelfResourceAccess">ConfirmRemoveSelfResourceAccess</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_resource_policy#confirm_remove_self_resource_access DynamodbResourcePolicy#confirm_remove_self_resource_access}. |
+| <code><a href="#@cdktn/provider-aws.dynamodbResourcePolicy.DynamodbResourcePolicyConfig.property.policy">Policy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_resource_policy#policy DynamodbResourcePolicy#policy}. |
+| <code><a href="#@cdktn/provider-aws.dynamodbResourcePolicy.DynamodbResourcePolicyConfig.property.resourceArn">ResourceArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_resource_policy#resource_arn DynamodbResourcePolicy#resource_arn}. |
+| <code><a href="#@cdktn/provider-aws.dynamodbResourcePolicy.DynamodbResourcePolicyConfig.property.confirmRemoveSelfResourceAccess">ConfirmRemoveSelfResourceAccess</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_resource_policy#confirm_remove_self_resource_access DynamodbResourcePolicy#confirm_remove_self_resource_access}. |
 | <code><a href="#@cdktn/provider-aws.dynamodbResourcePolicy.DynamodbResourcePolicyConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -904,7 +904,7 @@ Policy *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_resource_policy#policy DynamodbResourcePolicy#policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_resource_policy#policy DynamodbResourcePolicy#policy}.
 
 ---
 
@@ -916,7 +916,7 @@ ResourceArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_resource_policy#resource_arn DynamodbResourcePolicy#resource_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_resource_policy#resource_arn DynamodbResourcePolicy#resource_arn}.
 
 ---
 
@@ -928,7 +928,7 @@ ConfirmRemoveSelfResourceAccess interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_resource_policy#confirm_remove_self_resource_access DynamodbResourcePolicy#confirm_remove_self_resource_access}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_resource_policy#confirm_remove_self_resource_access DynamodbResourcePolicy#confirm_remove_self_resource_access}.
 
 ---
 
@@ -942,7 +942,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dynamodb_resource_policy#region DynamodbResourcePolicy#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dynamodb_resource_policy#region DynamodbResourcePolicy#region}
 
 ---
 

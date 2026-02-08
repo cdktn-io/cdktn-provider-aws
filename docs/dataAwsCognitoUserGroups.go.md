@@ -4,12 +4,12 @@
 
 ### DataAwsCognitoUserGroups <a name="DataAwsCognitoUserGroups" id="@cdktn/provider-aws.dataAwsCognitoUserGroups.DataAwsCognitoUserGroups"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/cognito_user_groups aws_cognito_user_groups}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/cognito_user_groups aws_cognito_user_groups}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsCognitoUserGroups.DataAwsCognitoUserGroups.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawscognitousergroups"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawscognitousergroups"
 
 dataawscognitousergroups.NewDataAwsCognitoUserGroups(scope Construct, id *string, config DataAwsCognitoUserGroupsConfig) DataAwsCognitoUserGroups
 ```
@@ -283,7 +283,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsCognitoUserGroups.DataAwsCognitoUserGroups.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawscognitousergroups"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawscognitousergroups"
 
 dataawscognitousergroups.DataAwsCognitoUserGroups_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsCognitoUserGroups.DataAwsCognitoUserGroups.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawscognitousergroups"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawscognitousergroups"
 
 dataawscognitousergroups.DataAwsCognitoUserGroups_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ dataawscognitousergroups.DataAwsCognitoUserGroups_IsTerraformElement(x interface
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsCognitoUserGroups.DataAwsCognitoUserGroups.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawscognitousergroups"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawscognitousergroups"
 
 dataawscognitousergroups.DataAwsCognitoUserGroups_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ dataawscognitousergroups.DataAwsCognitoUserGroups_IsTerraformDataSource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsCognitoUserGroups.DataAwsCognitoUserGroups.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawscognitousergroups"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawscognitousergroups"
 
 dataawscognitousergroups.DataAwsCognitoUserGroups_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -372,7 +372,7 @@ The construct id used in the generated config for the DataAwsCognitoUserGroups t
 
 The id of the existing DataAwsCognitoUserGroups that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/cognito_user_groups#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/cognito_user_groups#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -616,7 +616,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsCognitoUserGroups.DataAwsCognitoUserGroupsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawscognitousergroups"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawscognitousergroups"
 
 &dataawscognitousergroups.DataAwsCognitoUserGroupsConfig {
 	Connection: interface{},
@@ -642,7 +642,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawscognitousergrou
 | <code><a href="#@cdktn/provider-aws.dataAwsCognitoUserGroups.DataAwsCognitoUserGroupsConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsCognitoUserGroups.DataAwsCognitoUserGroupsConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsCognitoUserGroups.DataAwsCognitoUserGroupsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsCognitoUserGroups.DataAwsCognitoUserGroupsConfig.property.userPoolId">UserPoolId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/cognito_user_groups#user_pool_id DataAwsCognitoUserGroups#user_pool_id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsCognitoUserGroups.DataAwsCognitoUserGroupsConfig.property.userPoolId">UserPoolId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/cognito_user_groups#user_pool_id DataAwsCognitoUserGroups#user_pool_id}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsCognitoUserGroups.DataAwsCognitoUserGroupsConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -725,7 +725,7 @@ UserPoolId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/cognito_user_groups#user_pool_id DataAwsCognitoUserGroups#user_pool_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/cognito_user_groups#user_pool_id DataAwsCognitoUserGroups#user_pool_id}.
 
 ---
 
@@ -739,7 +739,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/cognito_user_groups#region DataAwsCognitoUserGroups#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/cognito_user_groups#region DataAwsCognitoUserGroups#region}
 
 ---
 
@@ -748,7 +748,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsCognitoUserGroups.DataAwsCognitoUserGroupsGroups.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawscognitousergroups"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawscognitousergroups"
 
 &dataawscognitousergroups.DataAwsCognitoUserGroupsGroups {
 
@@ -763,7 +763,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawscognitousergrou
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsCognitoUserGroups.DataAwsCognitoUserGroupsGroupsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawscognitousergroups"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawscognitousergroups"
 
 dataawscognitousergroups.NewDataAwsCognitoUserGroupsGroupsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsCognitoUserGroupsGroupsList
 ```
@@ -912,7 +912,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsCognitoUserGroups.DataAwsCognitoUserGroupsGroupsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawscognitousergroups"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawscognitousergroups"
 
 dataawscognitousergroups.NewDataAwsCognitoUserGroupsGroupsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsCognitoUserGroupsGroupsOutputReference
 ```

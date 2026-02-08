@@ -4,12 +4,12 @@
 
 ### OrganizationsTag <a name="OrganizationsTag" id="@cdktn/provider-aws.organizationsTag.OrganizationsTag"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/organizations_tag aws_organizations_tag}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/organizations_tag aws_organizations_tag}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.organizationsTag.OrganizationsTag.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/organizationstag"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/organizationstag"
 
 organizationstag.NewOrganizationsTag(scope Construct, id *string, config OrganizationsTagConfig) OrganizationsTag
 ```
@@ -385,7 +385,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.organizationsTag.OrganizationsTag.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/organizationstag"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/organizationstag"
 
 organizationstag.OrganizationsTag_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.organizationsTag.OrganizationsTag.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/organizationstag"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/organizationstag"
 
 organizationstag.OrganizationsTag_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ organizationstag.OrganizationsTag_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.organizationsTag.OrganizationsTag.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/organizationstag"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/organizationstag"
 
 organizationstag.OrganizationsTag_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ organizationstag.OrganizationsTag_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.organizationsTag.OrganizationsTag.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/organizationstag"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/organizationstag"
 
 organizationstag.OrganizationsTag_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -474,7 +474,7 @@ The construct id used in the generated config for the OrganizationsTag to import
 
 The id of the existing OrganizationsTag that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/organizations_tag#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/organizations_tag#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -762,7 +762,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.organizationsTag.OrganizationsTagConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/organizationstag"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/organizationstag"
 
 &organizationstag.OrganizationsTagConfig {
 	Connection: interface{},
@@ -790,10 +790,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/organizationstag"
 | <code><a href="#@cdktn/provider-aws.organizationsTag.OrganizationsTagConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.organizationsTag.OrganizationsTagConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.organizationsTag.OrganizationsTagConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.organizationsTag.OrganizationsTagConfig.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/organizations_tag#key OrganizationsTag#key}. |
-| <code><a href="#@cdktn/provider-aws.organizationsTag.OrganizationsTagConfig.property.resourceId">ResourceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/organizations_tag#resource_id OrganizationsTag#resource_id}. |
-| <code><a href="#@cdktn/provider-aws.organizationsTag.OrganizationsTagConfig.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/organizations_tag#value OrganizationsTag#value}. |
-| <code><a href="#@cdktn/provider-aws.organizationsTag.OrganizationsTagConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/organizations_tag#id OrganizationsTag#id}. |
+| <code><a href="#@cdktn/provider-aws.organizationsTag.OrganizationsTagConfig.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/organizations_tag#key OrganizationsTag#key}. |
+| <code><a href="#@cdktn/provider-aws.organizationsTag.OrganizationsTagConfig.property.resourceId">ResourceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/organizations_tag#resource_id OrganizationsTag#resource_id}. |
+| <code><a href="#@cdktn/provider-aws.organizationsTag.OrganizationsTagConfig.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/organizations_tag#value OrganizationsTag#value}. |
+| <code><a href="#@cdktn/provider-aws.organizationsTag.OrganizationsTagConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/organizations_tag#id OrganizationsTag#id}. |
 
 ---
 
@@ -875,7 +875,7 @@ Key *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/organizations_tag#key OrganizationsTag#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/organizations_tag#key OrganizationsTag#key}.
 
 ---
 
@@ -887,7 +887,7 @@ ResourceId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/organizations_tag#resource_id OrganizationsTag#resource_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/organizations_tag#resource_id OrganizationsTag#resource_id}.
 
 ---
 
@@ -899,7 +899,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/organizations_tag#value OrganizationsTag#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/organizations_tag#value OrganizationsTag#value}.
 
 ---
 
@@ -911,7 +911,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/organizations_tag#id OrganizationsTag#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/organizations_tag#id OrganizationsTag#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

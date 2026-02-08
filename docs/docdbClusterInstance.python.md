@@ -4,7 +4,7 @@
 
 ### DocdbClusterInstance <a name="DocdbClusterInstance" id="@cdktn/provider-aws.docdbClusterInstance.DocdbClusterInstance"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/docdb_cluster_instance aws_docdb_cluster_instance}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/docdb_cluster_instance aws_docdb_cluster_instance}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.docdbClusterInstance.DocdbClusterInstance.Initializer"></a>
 
@@ -27,6 +27,7 @@ docdbClusterInstance.DocdbClusterInstance(
   auto_minor_version_upgrade: bool | IResolvable = None,
   availability_zone: str = None,
   ca_cert_identifier: str = None,
+  certificate_rotation_restart: str = None,
   copy_tags_to_snapshot: bool | IResolvable = None,
   enable_performance_insights: bool | IResolvable = None,
   engine: str = None,
@@ -54,24 +55,25 @@ docdbClusterInstance.DocdbClusterInstance(
 | <code><a href="#@cdktn/provider-aws.docdbClusterInstance.DocdbClusterInstance.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.docdbClusterInstance.DocdbClusterInstance.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.docdbClusterInstance.DocdbClusterInstance.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.docdbClusterInstance.DocdbClusterInstance.Initializer.parameter.clusterIdentifier">cluster_identifier</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/docdb_cluster_instance#cluster_identifier DocdbClusterInstance#cluster_identifier}. |
-| <code><a href="#@cdktn/provider-aws.docdbClusterInstance.DocdbClusterInstance.Initializer.parameter.instanceClass">instance_class</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/docdb_cluster_instance#instance_class DocdbClusterInstance#instance_class}. |
-| <code><a href="#@cdktn/provider-aws.docdbClusterInstance.DocdbClusterInstance.Initializer.parameter.applyImmediately">apply_immediately</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/docdb_cluster_instance#apply_immediately DocdbClusterInstance#apply_immediately}. |
-| <code><a href="#@cdktn/provider-aws.docdbClusterInstance.DocdbClusterInstance.Initializer.parameter.autoMinorVersionUpgrade">auto_minor_version_upgrade</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/docdb_cluster_instance#auto_minor_version_upgrade DocdbClusterInstance#auto_minor_version_upgrade}. |
-| <code><a href="#@cdktn/provider-aws.docdbClusterInstance.DocdbClusterInstance.Initializer.parameter.availabilityZone">availability_zone</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/docdb_cluster_instance#availability_zone DocdbClusterInstance#availability_zone}. |
-| <code><a href="#@cdktn/provider-aws.docdbClusterInstance.DocdbClusterInstance.Initializer.parameter.caCertIdentifier">ca_cert_identifier</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/docdb_cluster_instance#ca_cert_identifier DocdbClusterInstance#ca_cert_identifier}. |
-| <code><a href="#@cdktn/provider-aws.docdbClusterInstance.DocdbClusterInstance.Initializer.parameter.copyTagsToSnapshot">copy_tags_to_snapshot</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/docdb_cluster_instance#copy_tags_to_snapshot DocdbClusterInstance#copy_tags_to_snapshot}. |
-| <code><a href="#@cdktn/provider-aws.docdbClusterInstance.DocdbClusterInstance.Initializer.parameter.enablePerformanceInsights">enable_performance_insights</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/docdb_cluster_instance#enable_performance_insights DocdbClusterInstance#enable_performance_insights}. |
-| <code><a href="#@cdktn/provider-aws.docdbClusterInstance.DocdbClusterInstance.Initializer.parameter.engine">engine</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/docdb_cluster_instance#engine DocdbClusterInstance#engine}. |
-| <code><a href="#@cdktn/provider-aws.docdbClusterInstance.DocdbClusterInstance.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/docdb_cluster_instance#id DocdbClusterInstance#id}. |
-| <code><a href="#@cdktn/provider-aws.docdbClusterInstance.DocdbClusterInstance.Initializer.parameter.identifier">identifier</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/docdb_cluster_instance#identifier DocdbClusterInstance#identifier}. |
-| <code><a href="#@cdktn/provider-aws.docdbClusterInstance.DocdbClusterInstance.Initializer.parameter.identifierPrefix">identifier_prefix</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/docdb_cluster_instance#identifier_prefix DocdbClusterInstance#identifier_prefix}. |
-| <code><a href="#@cdktn/provider-aws.docdbClusterInstance.DocdbClusterInstance.Initializer.parameter.performanceInsightsKmsKeyId">performance_insights_kms_key_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/docdb_cluster_instance#performance_insights_kms_key_id DocdbClusterInstance#performance_insights_kms_key_id}. |
-| <code><a href="#@cdktn/provider-aws.docdbClusterInstance.DocdbClusterInstance.Initializer.parameter.preferredMaintenanceWindow">preferred_maintenance_window</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/docdb_cluster_instance#preferred_maintenance_window DocdbClusterInstance#preferred_maintenance_window}. |
-| <code><a href="#@cdktn/provider-aws.docdbClusterInstance.DocdbClusterInstance.Initializer.parameter.promotionTier">promotion_tier</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/docdb_cluster_instance#promotion_tier DocdbClusterInstance#promotion_tier}. |
+| <code><a href="#@cdktn/provider-aws.docdbClusterInstance.DocdbClusterInstance.Initializer.parameter.clusterIdentifier">cluster_identifier</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/docdb_cluster_instance#cluster_identifier DocdbClusterInstance#cluster_identifier}. |
+| <code><a href="#@cdktn/provider-aws.docdbClusterInstance.DocdbClusterInstance.Initializer.parameter.instanceClass">instance_class</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/docdb_cluster_instance#instance_class DocdbClusterInstance#instance_class}. |
+| <code><a href="#@cdktn/provider-aws.docdbClusterInstance.DocdbClusterInstance.Initializer.parameter.applyImmediately">apply_immediately</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/docdb_cluster_instance#apply_immediately DocdbClusterInstance#apply_immediately}. |
+| <code><a href="#@cdktn/provider-aws.docdbClusterInstance.DocdbClusterInstance.Initializer.parameter.autoMinorVersionUpgrade">auto_minor_version_upgrade</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/docdb_cluster_instance#auto_minor_version_upgrade DocdbClusterInstance#auto_minor_version_upgrade}. |
+| <code><a href="#@cdktn/provider-aws.docdbClusterInstance.DocdbClusterInstance.Initializer.parameter.availabilityZone">availability_zone</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/docdb_cluster_instance#availability_zone DocdbClusterInstance#availability_zone}. |
+| <code><a href="#@cdktn/provider-aws.docdbClusterInstance.DocdbClusterInstance.Initializer.parameter.caCertIdentifier">ca_cert_identifier</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/docdb_cluster_instance#ca_cert_identifier DocdbClusterInstance#ca_cert_identifier}. |
+| <code><a href="#@cdktn/provider-aws.docdbClusterInstance.DocdbClusterInstance.Initializer.parameter.certificateRotationRestart">certificate_rotation_restart</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/docdb_cluster_instance#certificate_rotation_restart DocdbClusterInstance#certificate_rotation_restart}. |
+| <code><a href="#@cdktn/provider-aws.docdbClusterInstance.DocdbClusterInstance.Initializer.parameter.copyTagsToSnapshot">copy_tags_to_snapshot</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/docdb_cluster_instance#copy_tags_to_snapshot DocdbClusterInstance#copy_tags_to_snapshot}. |
+| <code><a href="#@cdktn/provider-aws.docdbClusterInstance.DocdbClusterInstance.Initializer.parameter.enablePerformanceInsights">enable_performance_insights</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/docdb_cluster_instance#enable_performance_insights DocdbClusterInstance#enable_performance_insights}. |
+| <code><a href="#@cdktn/provider-aws.docdbClusterInstance.DocdbClusterInstance.Initializer.parameter.engine">engine</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/docdb_cluster_instance#engine DocdbClusterInstance#engine}. |
+| <code><a href="#@cdktn/provider-aws.docdbClusterInstance.DocdbClusterInstance.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/docdb_cluster_instance#id DocdbClusterInstance#id}. |
+| <code><a href="#@cdktn/provider-aws.docdbClusterInstance.DocdbClusterInstance.Initializer.parameter.identifier">identifier</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/docdb_cluster_instance#identifier DocdbClusterInstance#identifier}. |
+| <code><a href="#@cdktn/provider-aws.docdbClusterInstance.DocdbClusterInstance.Initializer.parameter.identifierPrefix">identifier_prefix</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/docdb_cluster_instance#identifier_prefix DocdbClusterInstance#identifier_prefix}. |
+| <code><a href="#@cdktn/provider-aws.docdbClusterInstance.DocdbClusterInstance.Initializer.parameter.performanceInsightsKmsKeyId">performance_insights_kms_key_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/docdb_cluster_instance#performance_insights_kms_key_id DocdbClusterInstance#performance_insights_kms_key_id}. |
+| <code><a href="#@cdktn/provider-aws.docdbClusterInstance.DocdbClusterInstance.Initializer.parameter.preferredMaintenanceWindow">preferred_maintenance_window</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/docdb_cluster_instance#preferred_maintenance_window DocdbClusterInstance#preferred_maintenance_window}. |
+| <code><a href="#@cdktn/provider-aws.docdbClusterInstance.DocdbClusterInstance.Initializer.parameter.promotionTier">promotion_tier</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/docdb_cluster_instance#promotion_tier DocdbClusterInstance#promotion_tier}. |
 | <code><a href="#@cdktn/provider-aws.docdbClusterInstance.DocdbClusterInstance.Initializer.parameter.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.docdbClusterInstance.DocdbClusterInstance.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/docdb_cluster_instance#tags DocdbClusterInstance#tags}. |
-| <code><a href="#@cdktn/provider-aws.docdbClusterInstance.DocdbClusterInstance.Initializer.parameter.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/docdb_cluster_instance#tags_all DocdbClusterInstance#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.docdbClusterInstance.DocdbClusterInstance.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/docdb_cluster_instance#tags DocdbClusterInstance#tags}. |
+| <code><a href="#@cdktn/provider-aws.docdbClusterInstance.DocdbClusterInstance.Initializer.parameter.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/docdb_cluster_instance#tags_all DocdbClusterInstance#tags_all}. |
 | <code><a href="#@cdktn/provider-aws.docdbClusterInstance.DocdbClusterInstance.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.docdbClusterInstance.DocdbClusterInstanceTimeouts">DocdbClusterInstanceTimeouts</a></code> | timeouts block. |
 
 ---
@@ -140,7 +142,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/docdb_cluster_instance#cluster_identifier DocdbClusterInstance#cluster_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/docdb_cluster_instance#cluster_identifier DocdbClusterInstance#cluster_identifier}.
 
 ---
 
@@ -148,7 +150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/docdb_cluster_instance#instance_class DocdbClusterInstance#instance_class}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/docdb_cluster_instance#instance_class DocdbClusterInstance#instance_class}.
 
 ---
 
@@ -156,7 +158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/docdb_cluster_instance#apply_immediately DocdbClusterInstance#apply_immediately}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/docdb_cluster_instance#apply_immediately DocdbClusterInstance#apply_immediately}.
 
 ---
 
@@ -164,7 +166,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/docdb_cluster_instance#auto_minor_version_upgrade DocdbClusterInstance#auto_minor_version_upgrade}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/docdb_cluster_instance#auto_minor_version_upgrade DocdbClusterInstance#auto_minor_version_upgrade}.
 
 ---
 
@@ -172,7 +174,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/docdb_cluster_instance#availability_zone DocdbClusterInstance#availability_zone}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/docdb_cluster_instance#availability_zone DocdbClusterInstance#availability_zone}.
 
 ---
 
@@ -180,7 +182,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/docdb_cluster_instance#ca_cert_identifier DocdbClusterInstance#ca_cert_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/docdb_cluster_instance#ca_cert_identifier DocdbClusterInstance#ca_cert_identifier}.
+
+---
+
+##### `certificate_rotation_restart`<sup>Optional</sup> <a name="certificate_rotation_restart" id="@cdktn/provider-aws.docdbClusterInstance.DocdbClusterInstance.Initializer.parameter.certificateRotationRestart"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/docdb_cluster_instance#certificate_rotation_restart DocdbClusterInstance#certificate_rotation_restart}.
 
 ---
 
@@ -188,7 +198,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/docdb_cluster_instance#copy_tags_to_snapshot DocdbClusterInstance#copy_tags_to_snapshot}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/docdb_cluster_instance#copy_tags_to_snapshot DocdbClusterInstance#copy_tags_to_snapshot}.
 
 ---
 
@@ -196,7 +206,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/docdb_cluster_instance#enable_performance_insights DocdbClusterInstance#enable_performance_insights}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/docdb_cluster_instance#enable_performance_insights DocdbClusterInstance#enable_performance_insights}.
 
 ---
 
@@ -204,7 +214,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/docdb_cluster_instance#engine DocdbClusterInstance#engine}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/docdb_cluster_instance#engine DocdbClusterInstance#engine}.
 
 ---
 
@@ -212,7 +222,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/docdb_cluster_instance#id DocdbClusterInstance#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/docdb_cluster_instance#id DocdbClusterInstance#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -223,7 +233,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/docdb_cluster_instance#identifier DocdbClusterInstance#identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/docdb_cluster_instance#identifier DocdbClusterInstance#identifier}.
 
 ---
 
@@ -231,7 +241,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/docdb_cluster_instance#identifier_prefix DocdbClusterInstance#identifier_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/docdb_cluster_instance#identifier_prefix DocdbClusterInstance#identifier_prefix}.
 
 ---
 
@@ -239,7 +249,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/docdb_cluster_instance#performance_insights_kms_key_id DocdbClusterInstance#performance_insights_kms_key_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/docdb_cluster_instance#performance_insights_kms_key_id DocdbClusterInstance#performance_insights_kms_key_id}.
 
 ---
 
@@ -247,7 +257,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/docdb_cluster_instance#preferred_maintenance_window DocdbClusterInstance#preferred_maintenance_window}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/docdb_cluster_instance#preferred_maintenance_window DocdbClusterInstance#preferred_maintenance_window}.
 
 ---
 
@@ -255,7 +265,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/docdb_cluster_instance#promotion_tier DocdbClusterInstance#promotion_tier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/docdb_cluster_instance#promotion_tier DocdbClusterInstance#promotion_tier}.
 
 ---
 
@@ -265,7 +275,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/docdb_cluster_instance#region DocdbClusterInstance#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/docdb_cluster_instance#region DocdbClusterInstance#region}
 
 ---
 
@@ -273,7 +283,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/docdb_cluster_instance#tags DocdbClusterInstance#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/docdb_cluster_instance#tags DocdbClusterInstance#tags}.
 
 ---
 
@@ -281,7 +291,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/docdb_cluster_instance#tags_all DocdbClusterInstance#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/docdb_cluster_instance#tags_all DocdbClusterInstance#tags_all}.
 
 ---
 
@@ -291,7 +301,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/docdb_cluster_instance#timeouts DocdbClusterInstance#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/docdb_cluster_instance#timeouts DocdbClusterInstance#timeouts}
 
 ---
 
@@ -327,6 +337,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-aws.docdbClusterInstance.DocdbClusterInstance.resetAutoMinorVersionUpgrade">reset_auto_minor_version_upgrade</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.docdbClusterInstance.DocdbClusterInstance.resetAvailabilityZone">reset_availability_zone</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.docdbClusterInstance.DocdbClusterInstance.resetCaCertIdentifier">reset_ca_cert_identifier</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.docdbClusterInstance.DocdbClusterInstance.resetCertificateRotationRestart">reset_certificate_rotation_restart</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.docdbClusterInstance.DocdbClusterInstance.resetCopyTagsToSnapshot">reset_copy_tags_to_snapshot</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.docdbClusterInstance.DocdbClusterInstance.resetEnablePerformanceInsights">reset_enable_performance_insights</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.docdbClusterInstance.DocdbClusterInstance.resetEngine">reset_engine</a></code> | *No description.* |
@@ -682,7 +693,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/docdb_cluster_instance#create DocdbClusterInstance#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/docdb_cluster_instance#create DocdbClusterInstance#create}.
 
 ---
 
@@ -690,7 +701,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/docdb_cluster_instance#delete DocdbClusterInstance#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/docdb_cluster_instance#delete DocdbClusterInstance#delete}.
 
 ---
 
@@ -698,7 +709,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/docdb_cluster_instance#update DocdbClusterInstance#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/docdb_cluster_instance#update DocdbClusterInstance#update}.
 
 ---
 
@@ -724,6 +735,12 @@ def reset_availability_zone() -> None
 
 ```python
 def reset_ca_cert_identifier() -> None
+```
+
+##### `reset_certificate_rotation_restart` <a name="reset_certificate_rotation_restart" id="@cdktn/provider-aws.docdbClusterInstance.DocdbClusterInstance.resetCertificateRotationRestart"></a>
+
+```python
+def reset_certificate_rotation_restart() -> None
 ```
 
 ##### `reset_copy_tags_to_snapshot` <a name="reset_copy_tags_to_snapshot" id="@cdktn/provider-aws.docdbClusterInstance.DocdbClusterInstance.resetCopyTagsToSnapshot"></a>
@@ -918,7 +935,7 @@ The construct id used in the generated config for the DocdbClusterInstance to im
 
 The id of the existing DocdbClusterInstance that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/docdb_cluster_instance#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/docdb_cluster_instance#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -964,6 +981,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 | <code><a href="#@cdktn/provider-aws.docdbClusterInstance.DocdbClusterInstance.property.autoMinorVersionUpgradeInput">auto_minor_version_upgrade_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.docdbClusterInstance.DocdbClusterInstance.property.availabilityZoneInput">availability_zone_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.docdbClusterInstance.DocdbClusterInstance.property.caCertIdentifierInput">ca_cert_identifier_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.docdbClusterInstance.DocdbClusterInstance.property.certificateRotationRestartInput">certificate_rotation_restart_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.docdbClusterInstance.DocdbClusterInstance.property.clusterIdentifierInput">cluster_identifier_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.docdbClusterInstance.DocdbClusterInstance.property.copyTagsToSnapshotInput">copy_tags_to_snapshot_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.docdbClusterInstance.DocdbClusterInstance.property.enablePerformanceInsightsInput">enable_performance_insights_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
@@ -983,6 +1001,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 | <code><a href="#@cdktn/provider-aws.docdbClusterInstance.DocdbClusterInstance.property.autoMinorVersionUpgrade">auto_minor_version_upgrade</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.docdbClusterInstance.DocdbClusterInstance.property.availabilityZone">availability_zone</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.docdbClusterInstance.DocdbClusterInstance.property.caCertIdentifier">ca_cert_identifier</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.docdbClusterInstance.DocdbClusterInstance.property.certificateRotationRestart">certificate_rotation_restart</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.docdbClusterInstance.DocdbClusterInstance.property.clusterIdentifier">cluster_identifier</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.docdbClusterInstance.DocdbClusterInstance.property.copyTagsToSnapshot">copy_tags_to_snapshot</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.docdbClusterInstance.DocdbClusterInstance.property.enablePerformanceInsights">enable_performance_insights</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
@@ -1302,6 +1321,16 @@ ca_cert_identifier_input: str
 
 ---
 
+##### `certificate_rotation_restart_input`<sup>Optional</sup> <a name="certificate_rotation_restart_input" id="@cdktn/provider-aws.docdbClusterInstance.DocdbClusterInstance.property.certificateRotationRestartInput"></a>
+
+```python
+certificate_rotation_restart_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `cluster_identifier_input`<sup>Optional</sup> <a name="cluster_identifier_input" id="@cdktn/provider-aws.docdbClusterInstance.DocdbClusterInstance.property.clusterIdentifierInput"></a>
 
 ```python
@@ -1492,6 +1521,16 @@ ca_cert_identifier: str
 
 ---
 
+##### `certificate_rotation_restart`<sup>Required</sup> <a name="certificate_rotation_restart" id="@cdktn/provider-aws.docdbClusterInstance.DocdbClusterInstance.property.certificateRotationRestart"></a>
+
+```python
+certificate_rotation_restart: str
+```
+
+- *Type:* str
+
+---
+
 ##### `cluster_identifier`<sup>Required</sup> <a name="cluster_identifier" id="@cdktn/provider-aws.docdbClusterInstance.DocdbClusterInstance.property.clusterIdentifier"></a>
 
 ```python
@@ -1673,6 +1712,7 @@ docdbClusterInstance.DocdbClusterInstanceConfig(
   auto_minor_version_upgrade: bool | IResolvable = None,
   availability_zone: str = None,
   ca_cert_identifier: str = None,
+  certificate_rotation_restart: str = None,
   copy_tags_to_snapshot: bool | IResolvable = None,
   enable_performance_insights: bool | IResolvable = None,
   engine: str = None,
@@ -1700,24 +1740,25 @@ docdbClusterInstance.DocdbClusterInstanceConfig(
 | <code><a href="#@cdktn/provider-aws.docdbClusterInstance.DocdbClusterInstanceConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.docdbClusterInstance.DocdbClusterInstanceConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.docdbClusterInstance.DocdbClusterInstanceConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.docdbClusterInstance.DocdbClusterInstanceConfig.property.clusterIdentifier">cluster_identifier</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/docdb_cluster_instance#cluster_identifier DocdbClusterInstance#cluster_identifier}. |
-| <code><a href="#@cdktn/provider-aws.docdbClusterInstance.DocdbClusterInstanceConfig.property.instanceClass">instance_class</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/docdb_cluster_instance#instance_class DocdbClusterInstance#instance_class}. |
-| <code><a href="#@cdktn/provider-aws.docdbClusterInstance.DocdbClusterInstanceConfig.property.applyImmediately">apply_immediately</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/docdb_cluster_instance#apply_immediately DocdbClusterInstance#apply_immediately}. |
-| <code><a href="#@cdktn/provider-aws.docdbClusterInstance.DocdbClusterInstanceConfig.property.autoMinorVersionUpgrade">auto_minor_version_upgrade</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/docdb_cluster_instance#auto_minor_version_upgrade DocdbClusterInstance#auto_minor_version_upgrade}. |
-| <code><a href="#@cdktn/provider-aws.docdbClusterInstance.DocdbClusterInstanceConfig.property.availabilityZone">availability_zone</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/docdb_cluster_instance#availability_zone DocdbClusterInstance#availability_zone}. |
-| <code><a href="#@cdktn/provider-aws.docdbClusterInstance.DocdbClusterInstanceConfig.property.caCertIdentifier">ca_cert_identifier</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/docdb_cluster_instance#ca_cert_identifier DocdbClusterInstance#ca_cert_identifier}. |
-| <code><a href="#@cdktn/provider-aws.docdbClusterInstance.DocdbClusterInstanceConfig.property.copyTagsToSnapshot">copy_tags_to_snapshot</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/docdb_cluster_instance#copy_tags_to_snapshot DocdbClusterInstance#copy_tags_to_snapshot}. |
-| <code><a href="#@cdktn/provider-aws.docdbClusterInstance.DocdbClusterInstanceConfig.property.enablePerformanceInsights">enable_performance_insights</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/docdb_cluster_instance#enable_performance_insights DocdbClusterInstance#enable_performance_insights}. |
-| <code><a href="#@cdktn/provider-aws.docdbClusterInstance.DocdbClusterInstanceConfig.property.engine">engine</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/docdb_cluster_instance#engine DocdbClusterInstance#engine}. |
-| <code><a href="#@cdktn/provider-aws.docdbClusterInstance.DocdbClusterInstanceConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/docdb_cluster_instance#id DocdbClusterInstance#id}. |
-| <code><a href="#@cdktn/provider-aws.docdbClusterInstance.DocdbClusterInstanceConfig.property.identifier">identifier</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/docdb_cluster_instance#identifier DocdbClusterInstance#identifier}. |
-| <code><a href="#@cdktn/provider-aws.docdbClusterInstance.DocdbClusterInstanceConfig.property.identifierPrefix">identifier_prefix</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/docdb_cluster_instance#identifier_prefix DocdbClusterInstance#identifier_prefix}. |
-| <code><a href="#@cdktn/provider-aws.docdbClusterInstance.DocdbClusterInstanceConfig.property.performanceInsightsKmsKeyId">performance_insights_kms_key_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/docdb_cluster_instance#performance_insights_kms_key_id DocdbClusterInstance#performance_insights_kms_key_id}. |
-| <code><a href="#@cdktn/provider-aws.docdbClusterInstance.DocdbClusterInstanceConfig.property.preferredMaintenanceWindow">preferred_maintenance_window</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/docdb_cluster_instance#preferred_maintenance_window DocdbClusterInstance#preferred_maintenance_window}. |
-| <code><a href="#@cdktn/provider-aws.docdbClusterInstance.DocdbClusterInstanceConfig.property.promotionTier">promotion_tier</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/docdb_cluster_instance#promotion_tier DocdbClusterInstance#promotion_tier}. |
+| <code><a href="#@cdktn/provider-aws.docdbClusterInstance.DocdbClusterInstanceConfig.property.clusterIdentifier">cluster_identifier</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/docdb_cluster_instance#cluster_identifier DocdbClusterInstance#cluster_identifier}. |
+| <code><a href="#@cdktn/provider-aws.docdbClusterInstance.DocdbClusterInstanceConfig.property.instanceClass">instance_class</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/docdb_cluster_instance#instance_class DocdbClusterInstance#instance_class}. |
+| <code><a href="#@cdktn/provider-aws.docdbClusterInstance.DocdbClusterInstanceConfig.property.applyImmediately">apply_immediately</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/docdb_cluster_instance#apply_immediately DocdbClusterInstance#apply_immediately}. |
+| <code><a href="#@cdktn/provider-aws.docdbClusterInstance.DocdbClusterInstanceConfig.property.autoMinorVersionUpgrade">auto_minor_version_upgrade</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/docdb_cluster_instance#auto_minor_version_upgrade DocdbClusterInstance#auto_minor_version_upgrade}. |
+| <code><a href="#@cdktn/provider-aws.docdbClusterInstance.DocdbClusterInstanceConfig.property.availabilityZone">availability_zone</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/docdb_cluster_instance#availability_zone DocdbClusterInstance#availability_zone}. |
+| <code><a href="#@cdktn/provider-aws.docdbClusterInstance.DocdbClusterInstanceConfig.property.caCertIdentifier">ca_cert_identifier</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/docdb_cluster_instance#ca_cert_identifier DocdbClusterInstance#ca_cert_identifier}. |
+| <code><a href="#@cdktn/provider-aws.docdbClusterInstance.DocdbClusterInstanceConfig.property.certificateRotationRestart">certificate_rotation_restart</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/docdb_cluster_instance#certificate_rotation_restart DocdbClusterInstance#certificate_rotation_restart}. |
+| <code><a href="#@cdktn/provider-aws.docdbClusterInstance.DocdbClusterInstanceConfig.property.copyTagsToSnapshot">copy_tags_to_snapshot</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/docdb_cluster_instance#copy_tags_to_snapshot DocdbClusterInstance#copy_tags_to_snapshot}. |
+| <code><a href="#@cdktn/provider-aws.docdbClusterInstance.DocdbClusterInstanceConfig.property.enablePerformanceInsights">enable_performance_insights</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/docdb_cluster_instance#enable_performance_insights DocdbClusterInstance#enable_performance_insights}. |
+| <code><a href="#@cdktn/provider-aws.docdbClusterInstance.DocdbClusterInstanceConfig.property.engine">engine</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/docdb_cluster_instance#engine DocdbClusterInstance#engine}. |
+| <code><a href="#@cdktn/provider-aws.docdbClusterInstance.DocdbClusterInstanceConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/docdb_cluster_instance#id DocdbClusterInstance#id}. |
+| <code><a href="#@cdktn/provider-aws.docdbClusterInstance.DocdbClusterInstanceConfig.property.identifier">identifier</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/docdb_cluster_instance#identifier DocdbClusterInstance#identifier}. |
+| <code><a href="#@cdktn/provider-aws.docdbClusterInstance.DocdbClusterInstanceConfig.property.identifierPrefix">identifier_prefix</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/docdb_cluster_instance#identifier_prefix DocdbClusterInstance#identifier_prefix}. |
+| <code><a href="#@cdktn/provider-aws.docdbClusterInstance.DocdbClusterInstanceConfig.property.performanceInsightsKmsKeyId">performance_insights_kms_key_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/docdb_cluster_instance#performance_insights_kms_key_id DocdbClusterInstance#performance_insights_kms_key_id}. |
+| <code><a href="#@cdktn/provider-aws.docdbClusterInstance.DocdbClusterInstanceConfig.property.preferredMaintenanceWindow">preferred_maintenance_window</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/docdb_cluster_instance#preferred_maintenance_window DocdbClusterInstance#preferred_maintenance_window}. |
+| <code><a href="#@cdktn/provider-aws.docdbClusterInstance.DocdbClusterInstanceConfig.property.promotionTier">promotion_tier</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/docdb_cluster_instance#promotion_tier DocdbClusterInstance#promotion_tier}. |
 | <code><a href="#@cdktn/provider-aws.docdbClusterInstance.DocdbClusterInstanceConfig.property.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.docdbClusterInstance.DocdbClusterInstanceConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/docdb_cluster_instance#tags DocdbClusterInstance#tags}. |
-| <code><a href="#@cdktn/provider-aws.docdbClusterInstance.DocdbClusterInstanceConfig.property.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/docdb_cluster_instance#tags_all DocdbClusterInstance#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.docdbClusterInstance.DocdbClusterInstanceConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/docdb_cluster_instance#tags DocdbClusterInstance#tags}. |
+| <code><a href="#@cdktn/provider-aws.docdbClusterInstance.DocdbClusterInstanceConfig.property.tagsAll">tags_all</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/docdb_cluster_instance#tags_all DocdbClusterInstance#tags_all}. |
 | <code><a href="#@cdktn/provider-aws.docdbClusterInstance.DocdbClusterInstanceConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.docdbClusterInstance.DocdbClusterInstanceTimeouts">DocdbClusterInstanceTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1800,7 +1841,7 @@ cluster_identifier: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/docdb_cluster_instance#cluster_identifier DocdbClusterInstance#cluster_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/docdb_cluster_instance#cluster_identifier DocdbClusterInstance#cluster_identifier}.
 
 ---
 
@@ -1812,7 +1853,7 @@ instance_class: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/docdb_cluster_instance#instance_class DocdbClusterInstance#instance_class}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/docdb_cluster_instance#instance_class DocdbClusterInstance#instance_class}.
 
 ---
 
@@ -1824,7 +1865,7 @@ apply_immediately: bool | IResolvable
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/docdb_cluster_instance#apply_immediately DocdbClusterInstance#apply_immediately}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/docdb_cluster_instance#apply_immediately DocdbClusterInstance#apply_immediately}.
 
 ---
 
@@ -1836,7 +1877,7 @@ auto_minor_version_upgrade: bool | IResolvable
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/docdb_cluster_instance#auto_minor_version_upgrade DocdbClusterInstance#auto_minor_version_upgrade}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/docdb_cluster_instance#auto_minor_version_upgrade DocdbClusterInstance#auto_minor_version_upgrade}.
 
 ---
 
@@ -1848,7 +1889,7 @@ availability_zone: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/docdb_cluster_instance#availability_zone DocdbClusterInstance#availability_zone}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/docdb_cluster_instance#availability_zone DocdbClusterInstance#availability_zone}.
 
 ---
 
@@ -1860,7 +1901,19 @@ ca_cert_identifier: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/docdb_cluster_instance#ca_cert_identifier DocdbClusterInstance#ca_cert_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/docdb_cluster_instance#ca_cert_identifier DocdbClusterInstance#ca_cert_identifier}.
+
+---
+
+##### `certificate_rotation_restart`<sup>Optional</sup> <a name="certificate_rotation_restart" id="@cdktn/provider-aws.docdbClusterInstance.DocdbClusterInstanceConfig.property.certificateRotationRestart"></a>
+
+```python
+certificate_rotation_restart: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/docdb_cluster_instance#certificate_rotation_restart DocdbClusterInstance#certificate_rotation_restart}.
 
 ---
 
@@ -1872,7 +1925,7 @@ copy_tags_to_snapshot: bool | IResolvable
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/docdb_cluster_instance#copy_tags_to_snapshot DocdbClusterInstance#copy_tags_to_snapshot}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/docdb_cluster_instance#copy_tags_to_snapshot DocdbClusterInstance#copy_tags_to_snapshot}.
 
 ---
 
@@ -1884,7 +1937,7 @@ enable_performance_insights: bool | IResolvable
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/docdb_cluster_instance#enable_performance_insights DocdbClusterInstance#enable_performance_insights}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/docdb_cluster_instance#enable_performance_insights DocdbClusterInstance#enable_performance_insights}.
 
 ---
 
@@ -1896,7 +1949,7 @@ engine: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/docdb_cluster_instance#engine DocdbClusterInstance#engine}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/docdb_cluster_instance#engine DocdbClusterInstance#engine}.
 
 ---
 
@@ -1908,7 +1961,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/docdb_cluster_instance#id DocdbClusterInstance#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/docdb_cluster_instance#id DocdbClusterInstance#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1923,7 +1976,7 @@ identifier: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/docdb_cluster_instance#identifier DocdbClusterInstance#identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/docdb_cluster_instance#identifier DocdbClusterInstance#identifier}.
 
 ---
 
@@ -1935,7 +1988,7 @@ identifier_prefix: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/docdb_cluster_instance#identifier_prefix DocdbClusterInstance#identifier_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/docdb_cluster_instance#identifier_prefix DocdbClusterInstance#identifier_prefix}.
 
 ---
 
@@ -1947,7 +2000,7 @@ performance_insights_kms_key_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/docdb_cluster_instance#performance_insights_kms_key_id DocdbClusterInstance#performance_insights_kms_key_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/docdb_cluster_instance#performance_insights_kms_key_id DocdbClusterInstance#performance_insights_kms_key_id}.
 
 ---
 
@@ -1959,7 +2012,7 @@ preferred_maintenance_window: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/docdb_cluster_instance#preferred_maintenance_window DocdbClusterInstance#preferred_maintenance_window}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/docdb_cluster_instance#preferred_maintenance_window DocdbClusterInstance#preferred_maintenance_window}.
 
 ---
 
@@ -1971,7 +2024,7 @@ promotion_tier: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/docdb_cluster_instance#promotion_tier DocdbClusterInstance#promotion_tier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/docdb_cluster_instance#promotion_tier DocdbClusterInstance#promotion_tier}.
 
 ---
 
@@ -1985,7 +2038,7 @@ region: str
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/docdb_cluster_instance#region DocdbClusterInstance#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/docdb_cluster_instance#region DocdbClusterInstance#region}
 
 ---
 
@@ -1997,7 +2050,7 @@ tags: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/docdb_cluster_instance#tags DocdbClusterInstance#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/docdb_cluster_instance#tags DocdbClusterInstance#tags}.
 
 ---
 
@@ -2009,7 +2062,7 @@ tags_all: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/docdb_cluster_instance#tags_all DocdbClusterInstance#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/docdb_cluster_instance#tags_all DocdbClusterInstance#tags_all}.
 
 ---
 
@@ -2023,7 +2076,7 @@ timeouts: DocdbClusterInstanceTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/docdb_cluster_instance#timeouts DocdbClusterInstance#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/docdb_cluster_instance#timeouts DocdbClusterInstance#timeouts}
 
 ---
 
@@ -2045,9 +2098,9 @@ docdbClusterInstance.DocdbClusterInstanceTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.docdbClusterInstance.DocdbClusterInstanceTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/docdb_cluster_instance#create DocdbClusterInstance#create}. |
-| <code><a href="#@cdktn/provider-aws.docdbClusterInstance.DocdbClusterInstanceTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/docdb_cluster_instance#delete DocdbClusterInstance#delete}. |
-| <code><a href="#@cdktn/provider-aws.docdbClusterInstance.DocdbClusterInstanceTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/docdb_cluster_instance#update DocdbClusterInstance#update}. |
+| <code><a href="#@cdktn/provider-aws.docdbClusterInstance.DocdbClusterInstanceTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/docdb_cluster_instance#create DocdbClusterInstance#create}. |
+| <code><a href="#@cdktn/provider-aws.docdbClusterInstance.DocdbClusterInstanceTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/docdb_cluster_instance#delete DocdbClusterInstance#delete}. |
+| <code><a href="#@cdktn/provider-aws.docdbClusterInstance.DocdbClusterInstanceTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/docdb_cluster_instance#update DocdbClusterInstance#update}. |
 
 ---
 
@@ -2059,7 +2112,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/docdb_cluster_instance#create DocdbClusterInstance#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/docdb_cluster_instance#create DocdbClusterInstance#create}.
 
 ---
 
@@ -2071,7 +2124,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/docdb_cluster_instance#delete DocdbClusterInstance#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/docdb_cluster_instance#delete DocdbClusterInstance#delete}.
 
 ---
 
@@ -2083,7 +2136,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/docdb_cluster_instance#update DocdbClusterInstance#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/docdb_cluster_instance#update DocdbClusterInstance#update}.
 
 ---
 

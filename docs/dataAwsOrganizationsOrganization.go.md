@@ -4,12 +4,12 @@
 
 ### DataAwsOrganizationsOrganization <a name="DataAwsOrganizationsOrganization" id="@cdktn/provider-aws.dataAwsOrganizationsOrganization.DataAwsOrganizationsOrganization"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/organizations_organization aws_organizations_organization}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/organizations_organization aws_organizations_organization}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsOrganizationsOrganization.DataAwsOrganizationsOrganization.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsorganizationsorganization"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsorganizationsorganization"
 
 dataawsorganizationsorganization.NewDataAwsOrganizationsOrganization(scope Construct, id *string, config DataAwsOrganizationsOrganizationConfig) DataAwsOrganizationsOrganization
 ```
@@ -68,6 +68,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-aws.dataAwsOrganizationsOrganization.DataAwsOrganizationsOrganization.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsOrganizationsOrganization.DataAwsOrganizationsOrganization.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsOrganizationsOrganization.DataAwsOrganizationsOrganization.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsOrganizationsOrganization.DataAwsOrganizationsOrganization.resetReturnOrganizationOnly">ResetReturnOrganizationOnly</a></code> | *No description.* |
 
 ---
 
@@ -269,6 +270,12 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 func ResetId()
 ```
 
+##### `ResetReturnOrganizationOnly` <a name="ResetReturnOrganizationOnly" id="@cdktn/provider-aws.dataAwsOrganizationsOrganization.DataAwsOrganizationsOrganization.resetReturnOrganizationOnly"></a>
+
+```go
+func ResetReturnOrganizationOnly()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -283,7 +290,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsOrganizationsOrganization.DataAwsOrganizationsOrganization.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsorganizationsorganization"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsorganizationsorganization"
 
 dataawsorganizationsorganization.DataAwsOrganizationsOrganization_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsOrganizationsOrganization.DataAwsOrganizationsOrganization.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsorganizationsorganization"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsorganizationsorganization"
 
 dataawsorganizationsorganization.DataAwsOrganizationsOrganization_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +336,7 @@ dataawsorganizationsorganization.DataAwsOrganizationsOrganization_IsTerraformEle
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsOrganizationsOrganization.DataAwsOrganizationsOrganization.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsorganizationsorganization"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsorganizationsorganization"
 
 dataawsorganizationsorganization.DataAwsOrganizationsOrganization_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +350,7 @@ dataawsorganizationsorganization.DataAwsOrganizationsOrganization_IsTerraformDat
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsOrganizationsOrganization.DataAwsOrganizationsOrganization.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsorganizationsorganization"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsorganizationsorganization"
 
 dataawsorganizationsorganization.DataAwsOrganizationsOrganization_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -372,7 +379,7 @@ The construct id used in the generated config for the DataAwsOrganizationsOrgani
 
 The id of the existing DataAwsOrganizationsOrganization that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/organizations_organization#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/organizations_organization#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -412,7 +419,9 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0
 | <code><a href="#@cdktn/provider-aws.dataAwsOrganizationsOrganization.DataAwsOrganizationsOrganization.property.nonMasterAccounts">NonMasterAccounts</a></code> | <code><a href="#@cdktn/provider-aws.dataAwsOrganizationsOrganization.DataAwsOrganizationsOrganizationNonMasterAccountsList">DataAwsOrganizationsOrganizationNonMasterAccountsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsOrganizationsOrganization.DataAwsOrganizationsOrganization.property.roots">Roots</a></code> | <code><a href="#@cdktn/provider-aws.dataAwsOrganizationsOrganization.DataAwsOrganizationsOrganizationRootsList">DataAwsOrganizationsOrganizationRootsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsOrganizationsOrganization.DataAwsOrganizationsOrganization.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsOrganizationsOrganization.DataAwsOrganizationsOrganization.property.returnOrganizationOnlyInput">ReturnOrganizationOnlyInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsOrganizationsOrganization.DataAwsOrganizationsOrganization.property.id">Id</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.dataAwsOrganizationsOrganization.DataAwsOrganizationsOrganization.property.returnOrganizationOnly">ReturnOrganizationOnly</a></code> | <code>interface{}</code> | *No description.* |
 
 ---
 
@@ -658,6 +667,16 @@ func IdInput() *string
 
 ---
 
+##### `ReturnOrganizationOnlyInput`<sup>Optional</sup> <a name="ReturnOrganizationOnlyInput" id="@cdktn/provider-aws.dataAwsOrganizationsOrganization.DataAwsOrganizationsOrganization.property.returnOrganizationOnlyInput"></a>
+
+```go
+func ReturnOrganizationOnlyInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
 ##### `Id`<sup>Required</sup> <a name="Id" id="@cdktn/provider-aws.dataAwsOrganizationsOrganization.DataAwsOrganizationsOrganization.property.id"></a>
 
 ```go
@@ -665,6 +684,16 @@ func Id() *string
 ```
 
 - *Type:* *string
+
+---
+
+##### `ReturnOrganizationOnly`<sup>Required</sup> <a name="ReturnOrganizationOnly" id="@cdktn/provider-aws.dataAwsOrganizationsOrganization.DataAwsOrganizationsOrganization.property.returnOrganizationOnly"></a>
+
+```go
+func ReturnOrganizationOnly() interface{}
+```
+
+- *Type:* interface{}
 
 ---
 
@@ -693,7 +722,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsOrganizationsOrganization.DataAwsOrganizationsOrganizationAccounts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsorganizationsorganization"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsorganizationsorganization"
 
 &dataawsorganizationsorganization.DataAwsOrganizationsOrganizationAccounts {
 
@@ -706,7 +735,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsorganizationsor
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsOrganizationsOrganization.DataAwsOrganizationsOrganizationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsorganizationsorganization"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsorganizationsorganization"
 
 &dataawsorganizationsorganization.DataAwsOrganizationsOrganizationConfig {
 	Connection: interface{},
@@ -717,6 +746,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsorganizationsor
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	Id: *string,
+	ReturnOrganizationOnly: interface{},
 }
 ```
 
@@ -731,7 +761,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsorganizationsor
 | <code><a href="#@cdktn/provider-aws.dataAwsOrganizationsOrganization.DataAwsOrganizationsOrganizationConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsOrganizationsOrganization.DataAwsOrganizationsOrganizationConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsOrganizationsOrganization.DataAwsOrganizationsOrganizationConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsOrganizationsOrganization.DataAwsOrganizationsOrganizationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/organizations_organization#id DataAwsOrganizationsOrganization#id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsOrganizationsOrganization.DataAwsOrganizationsOrganizationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/organizations_organization#id DataAwsOrganizationsOrganization#id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsOrganizationsOrganization.DataAwsOrganizationsOrganizationConfig.property.returnOrganizationOnly">ReturnOrganizationOnly</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/organizations_organization#return_organization_only DataAwsOrganizationsOrganization#return_organization_only}. |
 
 ---
 
@@ -813,10 +844,22 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/organizations_organization#id DataAwsOrganizationsOrganization#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/organizations_organization#id DataAwsOrganizationsOrganization#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `ReturnOrganizationOnly`<sup>Optional</sup> <a name="ReturnOrganizationOnly" id="@cdktn/provider-aws.dataAwsOrganizationsOrganization.DataAwsOrganizationsOrganizationConfig.property.returnOrganizationOnly"></a>
+
+```go
+ReturnOrganizationOnly interface{}
+```
+
+- *Type:* interface{}
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/organizations_organization#return_organization_only DataAwsOrganizationsOrganization#return_organization_only}.
 
 ---
 
@@ -825,7 +868,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsOrganizationsOrganization.DataAwsOrganizationsOrganizationNonMasterAccounts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsorganizationsorganization"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsorganizationsorganization"
 
 &dataawsorganizationsorganization.DataAwsOrganizationsOrganizationNonMasterAccounts {
 
@@ -838,7 +881,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsorganizationsor
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsOrganizationsOrganization.DataAwsOrganizationsOrganizationRoots.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsorganizationsorganization"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsorganizationsorganization"
 
 &dataawsorganizationsorganization.DataAwsOrganizationsOrganizationRoots {
 
@@ -851,7 +894,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsorganizationsor
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsOrganizationsOrganization.DataAwsOrganizationsOrganizationRootsPolicyTypes.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsorganizationsorganization"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsorganizationsorganization"
 
 &dataawsorganizationsorganization.DataAwsOrganizationsOrganizationRootsPolicyTypes {
 
@@ -866,7 +909,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsorganizationsor
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsOrganizationsOrganization.DataAwsOrganizationsOrganizationAccountsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsorganizationsorganization"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsorganizationsorganization"
 
 dataawsorganizationsorganization.NewDataAwsOrganizationsOrganizationAccountsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsOrganizationsOrganizationAccountsList
 ```
@@ -1015,7 +1058,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsOrganizationsOrganization.DataAwsOrganizationsOrganizationAccountsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsorganizationsorganization"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsorganizationsorganization"
 
 dataawsorganizationsorganization.NewDataAwsOrganizationsOrganizationAccountsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsOrganizationsOrganizationAccountsOutputReference
 ```
@@ -1370,7 +1413,7 @@ func InternalValue() DataAwsOrganizationsOrganizationAccounts
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsOrganizationsOrganization.DataAwsOrganizationsOrganizationNonMasterAccountsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsorganizationsorganization"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsorganizationsorganization"
 
 dataawsorganizationsorganization.NewDataAwsOrganizationsOrganizationNonMasterAccountsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsOrganizationsOrganizationNonMasterAccountsList
 ```
@@ -1519,7 +1562,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsOrganizationsOrganization.DataAwsOrganizationsOrganizationNonMasterAccountsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsorganizationsorganization"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsorganizationsorganization"
 
 dataawsorganizationsorganization.NewDataAwsOrganizationsOrganizationNonMasterAccountsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsOrganizationsOrganizationNonMasterAccountsOutputReference
 ```
@@ -1874,7 +1917,7 @@ func InternalValue() DataAwsOrganizationsOrganizationNonMasterAccounts
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsOrganizationsOrganization.DataAwsOrganizationsOrganizationRootsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsorganizationsorganization"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsorganizationsorganization"
 
 dataawsorganizationsorganization.NewDataAwsOrganizationsOrganizationRootsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsOrganizationsOrganizationRootsList
 ```
@@ -2023,7 +2066,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsOrganizationsOrganization.DataAwsOrganizationsOrganizationRootsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsorganizationsorganization"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsorganizationsorganization"
 
 dataawsorganizationsorganization.NewDataAwsOrganizationsOrganizationRootsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsOrganizationsOrganizationRootsOutputReference
 ```
@@ -2334,7 +2377,7 @@ func InternalValue() DataAwsOrganizationsOrganizationRoots
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsOrganizationsOrganization.DataAwsOrganizationsOrganizationRootsPolicyTypesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsorganizationsorganization"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsorganizationsorganization"
 
 dataawsorganizationsorganization.NewDataAwsOrganizationsOrganizationRootsPolicyTypesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsOrganizationsOrganizationRootsPolicyTypesList
 ```
@@ -2483,7 +2526,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsOrganizationsOrganization.DataAwsOrganizationsOrganizationRootsPolicyTypesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsorganizationsorganization"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsorganizationsorganization"
 
 dataawsorganizationsorganization.NewDataAwsOrganizationsOrganizationRootsPolicyTypesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsOrganizationsOrganizationRootsPolicyTypesOutputReference
 ```

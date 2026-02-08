@@ -4,12 +4,12 @@
 
 ### SignerSigningJob <a name="SignerSigningJob" id="@cdktn/provider-aws.signerSigningJob.SignerSigningJob"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/signer_signing_job aws_signer_signing_job}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/signer_signing_job aws_signer_signing_job}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.signerSigningJob.SignerSigningJob.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/signersigningjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/signersigningjob"
 
 signersigningjob.NewSignerSigningJob(scope Construct, id *string, config SignerSigningJobConfig) SignerSigningJob
 ```
@@ -425,7 +425,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.signerSigningJob.SignerSigningJob.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/signersigningjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/signersigningjob"
 
 signersigningjob.SignerSigningJob_IsConstruct(x interface{}) *bool
 ```
@@ -457,7 +457,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.signerSigningJob.SignerSigningJob.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/signersigningjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/signersigningjob"
 
 signersigningjob.SignerSigningJob_IsTerraformElement(x interface{}) *bool
 ```
@@ -471,7 +471,7 @@ signersigningjob.SignerSigningJob_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.signerSigningJob.SignerSigningJob.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/signersigningjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/signersigningjob"
 
 signersigningjob.SignerSigningJob_IsTerraformResource(x interface{}) *bool
 ```
@@ -485,7 +485,7 @@ signersigningjob.SignerSigningJob_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.signerSigningJob.SignerSigningJob.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/signersigningjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/signersigningjob"
 
 signersigningjob.SignerSigningJob_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -514,7 +514,7 @@ The construct id used in the generated config for the SignerSigningJob to import
 
 The id of the existing SignerSigningJob that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/signer_signing_job#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/signer_signing_job#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1000,7 +1000,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.signerSigningJob.SignerSigningJobConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/signersigningjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/signersigningjob"
 
 &signersigningjob.SignerSigningJobConfig {
 	Connection: interface{},
@@ -1010,9 +1010,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/signersigningjob"
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	Destination: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.signerSigningJob.SignerSigningJobDestination,
+	Destination: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.signerSigningJob.SignerSigningJobDestination,
 	ProfileName: *string,
-	Source: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.signerSigningJob.SignerSigningJobSource,
+	Source: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.signerSigningJob.SignerSigningJobSource,
 	Id: *string,
 	IgnoreSigningJobFailure: interface{},
 	Region: *string,
@@ -1031,10 +1031,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/signersigningjob"
 | <code><a href="#@cdktn/provider-aws.signerSigningJob.SignerSigningJobConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.signerSigningJob.SignerSigningJobConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.signerSigningJob.SignerSigningJobConfig.property.destination">Destination</a></code> | <code><a href="#@cdktn/provider-aws.signerSigningJob.SignerSigningJobDestination">SignerSigningJobDestination</a></code> | destination block. |
-| <code><a href="#@cdktn/provider-aws.signerSigningJob.SignerSigningJobConfig.property.profileName">ProfileName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/signer_signing_job#profile_name SignerSigningJob#profile_name}. |
+| <code><a href="#@cdktn/provider-aws.signerSigningJob.SignerSigningJobConfig.property.profileName">ProfileName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/signer_signing_job#profile_name SignerSigningJob#profile_name}. |
 | <code><a href="#@cdktn/provider-aws.signerSigningJob.SignerSigningJobConfig.property.source">Source</a></code> | <code><a href="#@cdktn/provider-aws.signerSigningJob.SignerSigningJobSource">SignerSigningJobSource</a></code> | source block. |
-| <code><a href="#@cdktn/provider-aws.signerSigningJob.SignerSigningJobConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/signer_signing_job#id SignerSigningJob#id}. |
-| <code><a href="#@cdktn/provider-aws.signerSigningJob.SignerSigningJobConfig.property.ignoreSigningJobFailure">IgnoreSigningJobFailure</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/signer_signing_job#ignore_signing_job_failure SignerSigningJob#ignore_signing_job_failure}. |
+| <code><a href="#@cdktn/provider-aws.signerSigningJob.SignerSigningJobConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/signer_signing_job#id SignerSigningJob#id}. |
+| <code><a href="#@cdktn/provider-aws.signerSigningJob.SignerSigningJobConfig.property.ignoreSigningJobFailure">IgnoreSigningJobFailure</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/signer_signing_job#ignore_signing_job_failure SignerSigningJob#ignore_signing_job_failure}. |
 | <code><a href="#@cdktn/provider-aws.signerSigningJob.SignerSigningJobConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -1119,7 +1119,7 @@ Destination SignerSigningJobDestination
 
 destination block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/signer_signing_job#destination SignerSigningJob#destination}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/signer_signing_job#destination SignerSigningJob#destination}
 
 ---
 
@@ -1131,7 +1131,7 @@ ProfileName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/signer_signing_job#profile_name SignerSigningJob#profile_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/signer_signing_job#profile_name SignerSigningJob#profile_name}.
 
 ---
 
@@ -1145,7 +1145,7 @@ Source SignerSigningJobSource
 
 source block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/signer_signing_job#source SignerSigningJob#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/signer_signing_job#source SignerSigningJob#source}
 
 ---
 
@@ -1157,7 +1157,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/signer_signing_job#id SignerSigningJob#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/signer_signing_job#id SignerSigningJob#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1172,7 +1172,7 @@ IgnoreSigningJobFailure interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/signer_signing_job#ignore_signing_job_failure SignerSigningJob#ignore_signing_job_failure}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/signer_signing_job#ignore_signing_job_failure SignerSigningJob#ignore_signing_job_failure}.
 
 ---
 
@@ -1186,7 +1186,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/signer_signing_job#region SignerSigningJob#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/signer_signing_job#region SignerSigningJob#region}
 
 ---
 
@@ -1195,10 +1195,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.signerSigningJob.SignerSigningJobDestination.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/signersigningjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/signersigningjob"
 
 &signersigningjob.SignerSigningJobDestination {
-	S3: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.signerSigningJob.SignerSigningJobDestinationS3,
+	S3: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.signerSigningJob.SignerSigningJobDestinationS3,
 }
 ```
 
@@ -1220,7 +1220,7 @@ S3 SignerSigningJobDestinationS3
 
 s3 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/signer_signing_job#s3 SignerSigningJob#s3}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/signer_signing_job#s3 SignerSigningJob#s3}
 
 ---
 
@@ -1229,7 +1229,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.signerSigningJob.SignerSigningJobDestinationS3.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/signersigningjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/signersigningjob"
 
 &signersigningjob.SignerSigningJobDestinationS3 {
 	Bucket: *string,
@@ -1241,8 +1241,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/signersigningjob"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.signerSigningJob.SignerSigningJobDestinationS3.property.bucket">Bucket</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/signer_signing_job#bucket SignerSigningJob#bucket}. |
-| <code><a href="#@cdktn/provider-aws.signerSigningJob.SignerSigningJobDestinationS3.property.prefix">Prefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/signer_signing_job#prefix SignerSigningJob#prefix}. |
+| <code><a href="#@cdktn/provider-aws.signerSigningJob.SignerSigningJobDestinationS3.property.bucket">Bucket</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/signer_signing_job#bucket SignerSigningJob#bucket}. |
+| <code><a href="#@cdktn/provider-aws.signerSigningJob.SignerSigningJobDestinationS3.property.prefix">Prefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/signer_signing_job#prefix SignerSigningJob#prefix}. |
 
 ---
 
@@ -1254,7 +1254,7 @@ Bucket *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/signer_signing_job#bucket SignerSigningJob#bucket}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/signer_signing_job#bucket SignerSigningJob#bucket}.
 
 ---
 
@@ -1266,7 +1266,7 @@ Prefix *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/signer_signing_job#prefix SignerSigningJob#prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/signer_signing_job#prefix SignerSigningJob#prefix}.
 
 ---
 
@@ -1275,7 +1275,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.signerSigningJob.SignerSigningJobRevocationRecord.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/signersigningjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/signersigningjob"
 
 &signersigningjob.SignerSigningJobRevocationRecord {
 
@@ -1288,7 +1288,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/signersigningjob"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.signerSigningJob.SignerSigningJobSignedObject.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/signersigningjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/signersigningjob"
 
 &signersigningjob.SignerSigningJobSignedObject {
 
@@ -1301,7 +1301,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/signersigningjob"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.signerSigningJob.SignerSigningJobSignedObjectS3.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/signersigningjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/signersigningjob"
 
 &signersigningjob.SignerSigningJobSignedObjectS3 {
 
@@ -1314,10 +1314,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/signersigningjob"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.signerSigningJob.SignerSigningJobSource.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/signersigningjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/signersigningjob"
 
 &signersigningjob.SignerSigningJobSource {
-	S3: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.signerSigningJob.SignerSigningJobSourceS3,
+	S3: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.signerSigningJob.SignerSigningJobSourceS3,
 }
 ```
 
@@ -1339,7 +1339,7 @@ S3 SignerSigningJobSourceS3
 
 s3 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/signer_signing_job#s3 SignerSigningJob#s3}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/signer_signing_job#s3 SignerSigningJob#s3}
 
 ---
 
@@ -1348,7 +1348,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.signerSigningJob.SignerSigningJobSourceS3.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/signersigningjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/signersigningjob"
 
 &signersigningjob.SignerSigningJobSourceS3 {
 	Bucket: *string,
@@ -1361,9 +1361,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/signersigningjob"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.signerSigningJob.SignerSigningJobSourceS3.property.bucket">Bucket</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/signer_signing_job#bucket SignerSigningJob#bucket}. |
-| <code><a href="#@cdktn/provider-aws.signerSigningJob.SignerSigningJobSourceS3.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/signer_signing_job#key SignerSigningJob#key}. |
-| <code><a href="#@cdktn/provider-aws.signerSigningJob.SignerSigningJobSourceS3.property.version">Version</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/signer_signing_job#version SignerSigningJob#version}. |
+| <code><a href="#@cdktn/provider-aws.signerSigningJob.SignerSigningJobSourceS3.property.bucket">Bucket</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/signer_signing_job#bucket SignerSigningJob#bucket}. |
+| <code><a href="#@cdktn/provider-aws.signerSigningJob.SignerSigningJobSourceS3.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/signer_signing_job#key SignerSigningJob#key}. |
+| <code><a href="#@cdktn/provider-aws.signerSigningJob.SignerSigningJobSourceS3.property.version">Version</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/signer_signing_job#version SignerSigningJob#version}. |
 
 ---
 
@@ -1375,7 +1375,7 @@ Bucket *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/signer_signing_job#bucket SignerSigningJob#bucket}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/signer_signing_job#bucket SignerSigningJob#bucket}.
 
 ---
 
@@ -1387,7 +1387,7 @@ Key *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/signer_signing_job#key SignerSigningJob#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/signer_signing_job#key SignerSigningJob#key}.
 
 ---
 
@@ -1399,7 +1399,7 @@ Version *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/signer_signing_job#version SignerSigningJob#version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/signer_signing_job#version SignerSigningJob#version}.
 
 ---
 
@@ -1410,7 +1410,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.signerSigningJob.SignerSigningJobDestinationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/signersigningjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/signersigningjob"
 
 signersigningjob.NewSignerSigningJobDestinationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SignerSigningJobDestinationOutputReference
 ```
@@ -1694,7 +1694,7 @@ func InternalValue() SignerSigningJobDestination
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.signerSigningJob.SignerSigningJobDestinationS3OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/signersigningjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/signersigningjob"
 
 signersigningjob.NewSignerSigningJobDestinationS3OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SignerSigningJobDestinationS3OutputReference
 ```
@@ -1994,7 +1994,7 @@ func InternalValue() SignerSigningJobDestinationS3
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.signerSigningJob.SignerSigningJobRevocationRecordList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/signersigningjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/signersigningjob"
 
 signersigningjob.NewSignerSigningJobRevocationRecordList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SignerSigningJobRevocationRecordList
 ```
@@ -2143,7 +2143,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.signerSigningJob.SignerSigningJobRevocationRecordOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/signersigningjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/signersigningjob"
 
 signersigningjob.NewSignerSigningJobRevocationRecordOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SignerSigningJobRevocationRecordOutputReference
 ```
@@ -2443,7 +2443,7 @@ func InternalValue() SignerSigningJobRevocationRecord
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.signerSigningJob.SignerSigningJobSignedObjectList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/signersigningjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/signersigningjob"
 
 signersigningjob.NewSignerSigningJobSignedObjectList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SignerSigningJobSignedObjectList
 ```
@@ -2592,7 +2592,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.signerSigningJob.SignerSigningJobSignedObjectOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/signersigningjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/signersigningjob"
 
 signersigningjob.NewSignerSigningJobSignedObjectOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SignerSigningJobSignedObjectOutputReference
 ```
@@ -2870,7 +2870,7 @@ func InternalValue() SignerSigningJobSignedObject
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.signerSigningJob.SignerSigningJobSignedObjectS3List.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/signersigningjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/signersigningjob"
 
 signersigningjob.NewSignerSigningJobSignedObjectS3List(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SignerSigningJobSignedObjectS3List
 ```
@@ -3019,7 +3019,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.signerSigningJob.SignerSigningJobSignedObjectS3OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/signersigningjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/signersigningjob"
 
 signersigningjob.NewSignerSigningJobSignedObjectS3OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SignerSigningJobSignedObjectS3OutputReference
 ```
@@ -3308,7 +3308,7 @@ func InternalValue() SignerSigningJobSignedObjectS3
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.signerSigningJob.SignerSigningJobSourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/signersigningjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/signersigningjob"
 
 signersigningjob.NewSignerSigningJobSourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SignerSigningJobSourceOutputReference
 ```
@@ -3592,7 +3592,7 @@ func InternalValue() SignerSigningJobSource
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.signerSigningJob.SignerSigningJobSourceS3OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/signersigningjob"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/signersigningjob"
 
 signersigningjob.NewSignerSigningJobSourceS3OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SignerSigningJobSourceS3OutputReference
 ```

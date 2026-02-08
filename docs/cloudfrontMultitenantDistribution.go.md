@@ -4,12 +4,12 @@
 
 ### CloudfrontMultitenantDistribution <a name="CloudfrontMultitenantDistribution" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistribution"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution aws_cloudfront_multitenant_distribution}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution aws_cloudfront_multitenant_distribution}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistribution.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudfrontmultitenantdistribution"
 
 cloudfrontmultitenantdistribution.NewCloudfrontMultitenantDistribution(scope Construct, id *string, config CloudfrontMultitenantDistributionConfig) CloudfrontMultitenantDistribution
 ```
@@ -606,7 +606,7 @@ func ResetWebAclId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistribution.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudfrontmultitenantdistribution"
 
 cloudfrontmultitenantdistribution.CloudfrontMultitenantDistribution_IsConstruct(x interface{}) *bool
 ```
@@ -638,7 +638,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistribution.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudfrontmultitenantdistribution"
 
 cloudfrontmultitenantdistribution.CloudfrontMultitenantDistribution_IsTerraformElement(x interface{}) *bool
 ```
@@ -652,7 +652,7 @@ cloudfrontmultitenantdistribution.CloudfrontMultitenantDistribution_IsTerraformE
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistribution.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudfrontmultitenantdistribution"
 
 cloudfrontmultitenantdistribution.CloudfrontMultitenantDistribution_IsTerraformResource(x interface{}) *bool
 ```
@@ -666,7 +666,7 @@ cloudfrontmultitenantdistribution.CloudfrontMultitenantDistribution_IsTerraformR
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistribution.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudfrontmultitenantdistribution"
 
 cloudfrontmultitenantdistribution.CloudfrontMultitenantDistribution_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -695,7 +695,7 @@ The construct id used in the generated config for the CloudfrontMultitenantDistr
 
 The id of the existing CloudfrontMultitenantDistribution that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1357,7 +1357,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionActiveTrustedKeyGroups.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudfrontmultitenantdistribution"
 
 &cloudfrontmultitenantdistribution.CloudfrontMultitenantDistributionActiveTrustedKeyGroups {
 	Items: interface{},
@@ -1382,7 +1382,7 @@ Items interface{}
 
 items block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#items CloudfrontMultitenantDistribution#items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#items CloudfrontMultitenantDistribution#items}
 
 ---
 
@@ -1391,7 +1391,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionActiveTrustedKeyGroupsItems.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudfrontmultitenantdistribution"
 
 &cloudfrontmultitenantdistribution.CloudfrontMultitenantDistributionActiveTrustedKeyGroupsItems {
 
@@ -1404,7 +1404,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontmultitenantd
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehavior.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudfrontmultitenantdistribution"
 
 &cloudfrontmultitenantdistribution.CloudfrontMultitenantDistributionCacheBehavior {
 	PathPattern: *string,
@@ -1427,18 +1427,18 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontmultitenantd
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehavior.property.pathPattern">PathPattern</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#path_pattern CloudfrontMultitenantDistribution#path_pattern}. |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehavior.property.targetOriginId">TargetOriginId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#target_origin_id CloudfrontMultitenantDistribution#target_origin_id}. |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehavior.property.viewerProtocolPolicy">ViewerProtocolPolicy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#viewer_protocol_policy CloudfrontMultitenantDistribution#viewer_protocol_policy}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehavior.property.pathPattern">PathPattern</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#path_pattern CloudfrontMultitenantDistribution#path_pattern}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehavior.property.targetOriginId">TargetOriginId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#target_origin_id CloudfrontMultitenantDistribution#target_origin_id}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehavior.property.viewerProtocolPolicy">ViewerProtocolPolicy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#viewer_protocol_policy CloudfrontMultitenantDistribution#viewer_protocol_policy}. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehavior.property.allowedMethods">AllowedMethods</a></code> | <code>interface{}</code> | allowed_methods block. |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehavior.property.cachePolicyId">CachePolicyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#cache_policy_id CloudfrontMultitenantDistribution#cache_policy_id}. |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehavior.property.compress">Compress</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#compress CloudfrontMultitenantDistribution#compress}. |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehavior.property.fieldLevelEncryptionId">FieldLevelEncryptionId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#field_level_encryption_id CloudfrontMultitenantDistribution#field_level_encryption_id}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehavior.property.cachePolicyId">CachePolicyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#cache_policy_id CloudfrontMultitenantDistribution#cache_policy_id}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehavior.property.compress">Compress</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#compress CloudfrontMultitenantDistribution#compress}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehavior.property.fieldLevelEncryptionId">FieldLevelEncryptionId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#field_level_encryption_id CloudfrontMultitenantDistribution#field_level_encryption_id}. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehavior.property.functionAssociation">FunctionAssociation</a></code> | <code>interface{}</code> | function_association block. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehavior.property.lambdaFunctionAssociation">LambdaFunctionAssociation</a></code> | <code>interface{}</code> | lambda_function_association block. |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehavior.property.originRequestPolicyId">OriginRequestPolicyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#origin_request_policy_id CloudfrontMultitenantDistribution#origin_request_policy_id}. |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehavior.property.realtimeLogConfigArn">RealtimeLogConfigArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#realtime_log_config_arn CloudfrontMultitenantDistribution#realtime_log_config_arn}. |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehavior.property.responseHeadersPolicyId">ResponseHeadersPolicyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#response_headers_policy_id CloudfrontMultitenantDistribution#response_headers_policy_id}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehavior.property.originRequestPolicyId">OriginRequestPolicyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#origin_request_policy_id CloudfrontMultitenantDistribution#origin_request_policy_id}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehavior.property.realtimeLogConfigArn">RealtimeLogConfigArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#realtime_log_config_arn CloudfrontMultitenantDistribution#realtime_log_config_arn}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehavior.property.responseHeadersPolicyId">ResponseHeadersPolicyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#response_headers_policy_id CloudfrontMultitenantDistribution#response_headers_policy_id}. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehavior.property.trustedKeyGroups">TrustedKeyGroups</a></code> | <code>interface{}</code> | trusted_key_groups block. |
 
 ---
@@ -1451,7 +1451,7 @@ PathPattern *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#path_pattern CloudfrontMultitenantDistribution#path_pattern}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#path_pattern CloudfrontMultitenantDistribution#path_pattern}.
 
 ---
 
@@ -1463,7 +1463,7 @@ TargetOriginId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#target_origin_id CloudfrontMultitenantDistribution#target_origin_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#target_origin_id CloudfrontMultitenantDistribution#target_origin_id}.
 
 ---
 
@@ -1475,7 +1475,7 @@ ViewerProtocolPolicy *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#viewer_protocol_policy CloudfrontMultitenantDistribution#viewer_protocol_policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#viewer_protocol_policy CloudfrontMultitenantDistribution#viewer_protocol_policy}.
 
 ---
 
@@ -1489,7 +1489,7 @@ AllowedMethods interface{}
 
 allowed_methods block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#allowed_methods CloudfrontMultitenantDistribution#allowed_methods}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#allowed_methods CloudfrontMultitenantDistribution#allowed_methods}
 
 ---
 
@@ -1501,7 +1501,7 @@ CachePolicyId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#cache_policy_id CloudfrontMultitenantDistribution#cache_policy_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#cache_policy_id CloudfrontMultitenantDistribution#cache_policy_id}.
 
 ---
 
@@ -1513,7 +1513,7 @@ Compress interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#compress CloudfrontMultitenantDistribution#compress}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#compress CloudfrontMultitenantDistribution#compress}.
 
 ---
 
@@ -1525,7 +1525,7 @@ FieldLevelEncryptionId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#field_level_encryption_id CloudfrontMultitenantDistribution#field_level_encryption_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#field_level_encryption_id CloudfrontMultitenantDistribution#field_level_encryption_id}.
 
 ---
 
@@ -1539,7 +1539,7 @@ FunctionAssociation interface{}
 
 function_association block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#function_association CloudfrontMultitenantDistribution#function_association}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#function_association CloudfrontMultitenantDistribution#function_association}
 
 ---
 
@@ -1553,7 +1553,7 @@ LambdaFunctionAssociation interface{}
 
 lambda_function_association block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#lambda_function_association CloudfrontMultitenantDistribution#lambda_function_association}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#lambda_function_association CloudfrontMultitenantDistribution#lambda_function_association}
 
 ---
 
@@ -1565,7 +1565,7 @@ OriginRequestPolicyId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#origin_request_policy_id CloudfrontMultitenantDistribution#origin_request_policy_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#origin_request_policy_id CloudfrontMultitenantDistribution#origin_request_policy_id}.
 
 ---
 
@@ -1577,7 +1577,7 @@ RealtimeLogConfigArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#realtime_log_config_arn CloudfrontMultitenantDistribution#realtime_log_config_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#realtime_log_config_arn CloudfrontMultitenantDistribution#realtime_log_config_arn}.
 
 ---
 
@@ -1589,7 +1589,7 @@ ResponseHeadersPolicyId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#response_headers_policy_id CloudfrontMultitenantDistribution#response_headers_policy_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#response_headers_policy_id CloudfrontMultitenantDistribution#response_headers_policy_id}.
 
 ---
 
@@ -1603,7 +1603,7 @@ TrustedKeyGroups interface{}
 
 trusted_key_groups block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#trusted_key_groups CloudfrontMultitenantDistribution#trusted_key_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#trusted_key_groups CloudfrontMultitenantDistribution#trusted_key_groups}
 
 ---
 
@@ -1612,7 +1612,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorAllowedMethods.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudfrontmultitenantdistribution"
 
 &cloudfrontmultitenantdistribution.CloudfrontMultitenantDistributionCacheBehaviorAllowedMethods {
 	CachedMethods: *[]*string,
@@ -1624,8 +1624,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontmultitenantd
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorAllowedMethods.property.cachedMethods">CachedMethods</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#cached_methods CloudfrontMultitenantDistribution#cached_methods}. |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorAllowedMethods.property.items">Items</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#items CloudfrontMultitenantDistribution#items}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorAllowedMethods.property.cachedMethods">CachedMethods</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#cached_methods CloudfrontMultitenantDistribution#cached_methods}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorAllowedMethods.property.items">Items</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#items CloudfrontMultitenantDistribution#items}. |
 
 ---
 
@@ -1637,7 +1637,7 @@ CachedMethods *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#cached_methods CloudfrontMultitenantDistribution#cached_methods}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#cached_methods CloudfrontMultitenantDistribution#cached_methods}.
 
 ---
 
@@ -1649,7 +1649,7 @@ Items *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#items CloudfrontMultitenantDistribution#items}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#items CloudfrontMultitenantDistribution#items}.
 
 ---
 
@@ -1658,7 +1658,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorFunctionAssociation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudfrontmultitenantdistribution"
 
 &cloudfrontmultitenantdistribution.CloudfrontMultitenantDistributionCacheBehaviorFunctionAssociation {
 	EventType: *string,
@@ -1670,8 +1670,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontmultitenantd
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorFunctionAssociation.property.eventType">EventType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#event_type CloudfrontMultitenantDistribution#event_type}. |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorFunctionAssociation.property.functionArn">FunctionArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#function_arn CloudfrontMultitenantDistribution#function_arn}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorFunctionAssociation.property.eventType">EventType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#event_type CloudfrontMultitenantDistribution#event_type}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorFunctionAssociation.property.functionArn">FunctionArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#function_arn CloudfrontMultitenantDistribution#function_arn}. |
 
 ---
 
@@ -1683,7 +1683,7 @@ EventType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#event_type CloudfrontMultitenantDistribution#event_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#event_type CloudfrontMultitenantDistribution#event_type}.
 
 ---
 
@@ -1695,7 +1695,7 @@ FunctionArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#function_arn CloudfrontMultitenantDistribution#function_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#function_arn CloudfrontMultitenantDistribution#function_arn}.
 
 ---
 
@@ -1704,7 +1704,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorLambdaFunctionAssociation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudfrontmultitenantdistribution"
 
 &cloudfrontmultitenantdistribution.CloudfrontMultitenantDistributionCacheBehaviorLambdaFunctionAssociation {
 	EventType: *string,
@@ -1717,9 +1717,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontmultitenantd
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorLambdaFunctionAssociation.property.eventType">EventType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#event_type CloudfrontMultitenantDistribution#event_type}. |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorLambdaFunctionAssociation.property.lambdaFunctionArn">LambdaFunctionArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#lambda_function_arn CloudfrontMultitenantDistribution#lambda_function_arn}. |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorLambdaFunctionAssociation.property.includeBody">IncludeBody</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#include_body CloudfrontMultitenantDistribution#include_body}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorLambdaFunctionAssociation.property.eventType">EventType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#event_type CloudfrontMultitenantDistribution#event_type}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorLambdaFunctionAssociation.property.lambdaFunctionArn">LambdaFunctionArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#lambda_function_arn CloudfrontMultitenantDistribution#lambda_function_arn}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorLambdaFunctionAssociation.property.includeBody">IncludeBody</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#include_body CloudfrontMultitenantDistribution#include_body}. |
 
 ---
 
@@ -1731,7 +1731,7 @@ EventType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#event_type CloudfrontMultitenantDistribution#event_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#event_type CloudfrontMultitenantDistribution#event_type}.
 
 ---
 
@@ -1743,7 +1743,7 @@ LambdaFunctionArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#lambda_function_arn CloudfrontMultitenantDistribution#lambda_function_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#lambda_function_arn CloudfrontMultitenantDistribution#lambda_function_arn}.
 
 ---
 
@@ -1755,7 +1755,7 @@ IncludeBody interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#include_body CloudfrontMultitenantDistribution#include_body}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#include_body CloudfrontMultitenantDistribution#include_body}.
 
 ---
 
@@ -1764,7 +1764,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorTrustedKeyGroups.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudfrontmultitenantdistribution"
 
 &cloudfrontmultitenantdistribution.CloudfrontMultitenantDistributionCacheBehaviorTrustedKeyGroups {
 	Enabled: interface{},
@@ -1776,8 +1776,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontmultitenantd
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorTrustedKeyGroups.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#enabled CloudfrontMultitenantDistribution#enabled}. |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorTrustedKeyGroups.property.items">Items</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#items CloudfrontMultitenantDistribution#items}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorTrustedKeyGroups.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#enabled CloudfrontMultitenantDistribution#enabled}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorTrustedKeyGroups.property.items">Items</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#items CloudfrontMultitenantDistribution#items}. |
 
 ---
 
@@ -1789,7 +1789,7 @@ Enabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#enabled CloudfrontMultitenantDistribution#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#enabled CloudfrontMultitenantDistribution#enabled}.
 
 ---
 
@@ -1801,7 +1801,7 @@ Items *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#items CloudfrontMultitenantDistribution#items}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#items CloudfrontMultitenantDistribution#items}.
 
 ---
 
@@ -1810,7 +1810,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudfrontmultitenantdistribution"
 
 &cloudfrontmultitenantdistribution.CloudfrontMultitenantDistributionConfig {
 	Connection: interface{},
@@ -1833,7 +1833,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontmultitenantd
 	Restrictions: interface{},
 	Tags: *map[string]*string,
 	TenantConfig: interface{},
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTimeouts,
 	ViewerCertificate: interface{},
 	WebAclId: *string,
 }
@@ -1850,22 +1850,22 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontmultitenantd
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionConfig.property.comment">Comment</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#comment CloudfrontMultitenantDistribution#comment}. |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#enabled CloudfrontMultitenantDistribution#enabled}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionConfig.property.comment">Comment</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#comment CloudfrontMultitenantDistribution#comment}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#enabled CloudfrontMultitenantDistribution#enabled}. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionConfig.property.activeTrustedKeyGroups">ActiveTrustedKeyGroups</a></code> | <code>interface{}</code> | active_trusted_key_groups block. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionConfig.property.cacheBehavior">CacheBehavior</a></code> | <code>interface{}</code> | cache_behavior block. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionConfig.property.customErrorResponse">CustomErrorResponse</a></code> | <code>interface{}</code> | custom_error_response block. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionConfig.property.defaultCacheBehavior">DefaultCacheBehavior</a></code> | <code>interface{}</code> | default_cache_behavior block. |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionConfig.property.defaultRootObject">DefaultRootObject</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#default_root_object CloudfrontMultitenantDistribution#default_root_object}. |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionConfig.property.httpVersion">HttpVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#http_version CloudfrontMultitenantDistribution#http_version}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionConfig.property.defaultRootObject">DefaultRootObject</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#default_root_object CloudfrontMultitenantDistribution#default_root_object}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionConfig.property.httpVersion">HttpVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#http_version CloudfrontMultitenantDistribution#http_version}. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionConfig.property.origin">Origin</a></code> | <code>interface{}</code> | origin block. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionConfig.property.originGroup">OriginGroup</a></code> | <code>interface{}</code> | origin_group block. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionConfig.property.restrictions">Restrictions</a></code> | <code>interface{}</code> | restrictions block. |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#tags CloudfrontMultitenantDistribution#tags}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#tags CloudfrontMultitenantDistribution#tags}. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionConfig.property.tenantConfig">TenantConfig</a></code> | <code>interface{}</code> | tenant_config block. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTimeouts">CloudfrontMultitenantDistributionTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionConfig.property.viewerCertificate">ViewerCertificate</a></code> | <code>interface{}</code> | viewer_certificate block. |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionConfig.property.webAclId">WebAclId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#web_acl_id CloudfrontMultitenantDistribution#web_acl_id}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionConfig.property.webAclId">WebAclId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#web_acl_id CloudfrontMultitenantDistribution#web_acl_id}. |
 
 ---
 
@@ -1947,7 +1947,7 @@ Comment *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#comment CloudfrontMultitenantDistribution#comment}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#comment CloudfrontMultitenantDistribution#comment}.
 
 ---
 
@@ -1959,7 +1959,7 @@ Enabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#enabled CloudfrontMultitenantDistribution#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#enabled CloudfrontMultitenantDistribution#enabled}.
 
 ---
 
@@ -1973,7 +1973,7 @@ ActiveTrustedKeyGroups interface{}
 
 active_trusted_key_groups block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#active_trusted_key_groups CloudfrontMultitenantDistribution#active_trusted_key_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#active_trusted_key_groups CloudfrontMultitenantDistribution#active_trusted_key_groups}
 
 ---
 
@@ -1987,7 +1987,7 @@ CacheBehavior interface{}
 
 cache_behavior block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#cache_behavior CloudfrontMultitenantDistribution#cache_behavior}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#cache_behavior CloudfrontMultitenantDistribution#cache_behavior}
 
 ---
 
@@ -2001,7 +2001,7 @@ CustomErrorResponse interface{}
 
 custom_error_response block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#custom_error_response CloudfrontMultitenantDistribution#custom_error_response}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#custom_error_response CloudfrontMultitenantDistribution#custom_error_response}
 
 ---
 
@@ -2015,7 +2015,7 @@ DefaultCacheBehavior interface{}
 
 default_cache_behavior block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#default_cache_behavior CloudfrontMultitenantDistribution#default_cache_behavior}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#default_cache_behavior CloudfrontMultitenantDistribution#default_cache_behavior}
 
 ---
 
@@ -2027,7 +2027,7 @@ DefaultRootObject *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#default_root_object CloudfrontMultitenantDistribution#default_root_object}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#default_root_object CloudfrontMultitenantDistribution#default_root_object}.
 
 ---
 
@@ -2039,7 +2039,7 @@ HttpVersion *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#http_version CloudfrontMultitenantDistribution#http_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#http_version CloudfrontMultitenantDistribution#http_version}.
 
 ---
 
@@ -2053,7 +2053,7 @@ Origin interface{}
 
 origin block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#origin CloudfrontMultitenantDistribution#origin}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#origin CloudfrontMultitenantDistribution#origin}
 
 ---
 
@@ -2067,7 +2067,7 @@ OriginGroup interface{}
 
 origin_group block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#origin_group CloudfrontMultitenantDistribution#origin_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#origin_group CloudfrontMultitenantDistribution#origin_group}
 
 ---
 
@@ -2081,7 +2081,7 @@ Restrictions interface{}
 
 restrictions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#restrictions CloudfrontMultitenantDistribution#restrictions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#restrictions CloudfrontMultitenantDistribution#restrictions}
 
 ---
 
@@ -2093,7 +2093,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#tags CloudfrontMultitenantDistribution#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#tags CloudfrontMultitenantDistribution#tags}.
 
 ---
 
@@ -2107,7 +2107,7 @@ TenantConfig interface{}
 
 tenant_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#tenant_config CloudfrontMultitenantDistribution#tenant_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#tenant_config CloudfrontMultitenantDistribution#tenant_config}
 
 ---
 
@@ -2121,7 +2121,7 @@ Timeouts CloudfrontMultitenantDistributionTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#timeouts CloudfrontMultitenantDistribution#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#timeouts CloudfrontMultitenantDistribution#timeouts}
 
 ---
 
@@ -2135,7 +2135,7 @@ ViewerCertificate interface{}
 
 viewer_certificate block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#viewer_certificate CloudfrontMultitenantDistribution#viewer_certificate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#viewer_certificate CloudfrontMultitenantDistribution#viewer_certificate}
 
 ---
 
@@ -2147,7 +2147,7 @@ WebAclId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#web_acl_id CloudfrontMultitenantDistribution#web_acl_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#web_acl_id CloudfrontMultitenantDistribution#web_acl_id}.
 
 ---
 
@@ -2156,7 +2156,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCustomErrorResponse.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudfrontmultitenantdistribution"
 
 &cloudfrontmultitenantdistribution.CloudfrontMultitenantDistributionCustomErrorResponse {
 	ErrorCode: *f64,
@@ -2170,10 +2170,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontmultitenantd
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCustomErrorResponse.property.errorCode">ErrorCode</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#error_code CloudfrontMultitenantDistribution#error_code}. |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCustomErrorResponse.property.errorCachingMinTtl">ErrorCachingMinTtl</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#error_caching_min_ttl CloudfrontMultitenantDistribution#error_caching_min_ttl}. |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCustomErrorResponse.property.responseCode">ResponseCode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#response_code CloudfrontMultitenantDistribution#response_code}. |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCustomErrorResponse.property.responsePagePath">ResponsePagePath</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#response_page_path CloudfrontMultitenantDistribution#response_page_path}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCustomErrorResponse.property.errorCode">ErrorCode</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#error_code CloudfrontMultitenantDistribution#error_code}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCustomErrorResponse.property.errorCachingMinTtl">ErrorCachingMinTtl</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#error_caching_min_ttl CloudfrontMultitenantDistribution#error_caching_min_ttl}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCustomErrorResponse.property.responseCode">ResponseCode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#response_code CloudfrontMultitenantDistribution#response_code}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCustomErrorResponse.property.responsePagePath">ResponsePagePath</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#response_page_path CloudfrontMultitenantDistribution#response_page_path}. |
 
 ---
 
@@ -2185,7 +2185,7 @@ ErrorCode *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#error_code CloudfrontMultitenantDistribution#error_code}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#error_code CloudfrontMultitenantDistribution#error_code}.
 
 ---
 
@@ -2197,7 +2197,7 @@ ErrorCachingMinTtl *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#error_caching_min_ttl CloudfrontMultitenantDistribution#error_caching_min_ttl}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#error_caching_min_ttl CloudfrontMultitenantDistribution#error_caching_min_ttl}.
 
 ---
 
@@ -2209,7 +2209,7 @@ ResponseCode *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#response_code CloudfrontMultitenantDistribution#response_code}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#response_code CloudfrontMultitenantDistribution#response_code}.
 
 ---
 
@@ -2221,7 +2221,7 @@ ResponsePagePath *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#response_page_path CloudfrontMultitenantDistribution#response_page_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#response_page_path CloudfrontMultitenantDistribution#response_page_path}.
 
 ---
 
@@ -2230,7 +2230,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehavior.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudfrontmultitenantdistribution"
 
 &cloudfrontmultitenantdistribution.CloudfrontMultitenantDistributionDefaultCacheBehavior {
 	TargetOriginId: *string,
@@ -2252,17 +2252,17 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontmultitenantd
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehavior.property.targetOriginId">TargetOriginId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#target_origin_id CloudfrontMultitenantDistribution#target_origin_id}. |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehavior.property.viewerProtocolPolicy">ViewerProtocolPolicy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#viewer_protocol_policy CloudfrontMultitenantDistribution#viewer_protocol_policy}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehavior.property.targetOriginId">TargetOriginId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#target_origin_id CloudfrontMultitenantDistribution#target_origin_id}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehavior.property.viewerProtocolPolicy">ViewerProtocolPolicy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#viewer_protocol_policy CloudfrontMultitenantDistribution#viewer_protocol_policy}. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehavior.property.allowedMethods">AllowedMethods</a></code> | <code>interface{}</code> | allowed_methods block. |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehavior.property.cachePolicyId">CachePolicyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#cache_policy_id CloudfrontMultitenantDistribution#cache_policy_id}. |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehavior.property.compress">Compress</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#compress CloudfrontMultitenantDistribution#compress}. |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehavior.property.fieldLevelEncryptionId">FieldLevelEncryptionId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#field_level_encryption_id CloudfrontMultitenantDistribution#field_level_encryption_id}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehavior.property.cachePolicyId">CachePolicyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#cache_policy_id CloudfrontMultitenantDistribution#cache_policy_id}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehavior.property.compress">Compress</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#compress CloudfrontMultitenantDistribution#compress}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehavior.property.fieldLevelEncryptionId">FieldLevelEncryptionId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#field_level_encryption_id CloudfrontMultitenantDistribution#field_level_encryption_id}. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehavior.property.functionAssociation">FunctionAssociation</a></code> | <code>interface{}</code> | function_association block. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehavior.property.lambdaFunctionAssociation">LambdaFunctionAssociation</a></code> | <code>interface{}</code> | lambda_function_association block. |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehavior.property.originRequestPolicyId">OriginRequestPolicyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#origin_request_policy_id CloudfrontMultitenantDistribution#origin_request_policy_id}. |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehavior.property.realtimeLogConfigArn">RealtimeLogConfigArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#realtime_log_config_arn CloudfrontMultitenantDistribution#realtime_log_config_arn}. |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehavior.property.responseHeadersPolicyId">ResponseHeadersPolicyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#response_headers_policy_id CloudfrontMultitenantDistribution#response_headers_policy_id}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehavior.property.originRequestPolicyId">OriginRequestPolicyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#origin_request_policy_id CloudfrontMultitenantDistribution#origin_request_policy_id}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehavior.property.realtimeLogConfigArn">RealtimeLogConfigArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#realtime_log_config_arn CloudfrontMultitenantDistribution#realtime_log_config_arn}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehavior.property.responseHeadersPolicyId">ResponseHeadersPolicyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#response_headers_policy_id CloudfrontMultitenantDistribution#response_headers_policy_id}. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehavior.property.trustedKeyGroups">TrustedKeyGroups</a></code> | <code>interface{}</code> | trusted_key_groups block. |
 
 ---
@@ -2275,7 +2275,7 @@ TargetOriginId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#target_origin_id CloudfrontMultitenantDistribution#target_origin_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#target_origin_id CloudfrontMultitenantDistribution#target_origin_id}.
 
 ---
 
@@ -2287,7 +2287,7 @@ ViewerProtocolPolicy *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#viewer_protocol_policy CloudfrontMultitenantDistribution#viewer_protocol_policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#viewer_protocol_policy CloudfrontMultitenantDistribution#viewer_protocol_policy}.
 
 ---
 
@@ -2301,7 +2301,7 @@ AllowedMethods interface{}
 
 allowed_methods block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#allowed_methods CloudfrontMultitenantDistribution#allowed_methods}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#allowed_methods CloudfrontMultitenantDistribution#allowed_methods}
 
 ---
 
@@ -2313,7 +2313,7 @@ CachePolicyId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#cache_policy_id CloudfrontMultitenantDistribution#cache_policy_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#cache_policy_id CloudfrontMultitenantDistribution#cache_policy_id}.
 
 ---
 
@@ -2325,7 +2325,7 @@ Compress interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#compress CloudfrontMultitenantDistribution#compress}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#compress CloudfrontMultitenantDistribution#compress}.
 
 ---
 
@@ -2337,7 +2337,7 @@ FieldLevelEncryptionId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#field_level_encryption_id CloudfrontMultitenantDistribution#field_level_encryption_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#field_level_encryption_id CloudfrontMultitenantDistribution#field_level_encryption_id}.
 
 ---
 
@@ -2351,7 +2351,7 @@ FunctionAssociation interface{}
 
 function_association block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#function_association CloudfrontMultitenantDistribution#function_association}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#function_association CloudfrontMultitenantDistribution#function_association}
 
 ---
 
@@ -2365,7 +2365,7 @@ LambdaFunctionAssociation interface{}
 
 lambda_function_association block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#lambda_function_association CloudfrontMultitenantDistribution#lambda_function_association}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#lambda_function_association CloudfrontMultitenantDistribution#lambda_function_association}
 
 ---
 
@@ -2377,7 +2377,7 @@ OriginRequestPolicyId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#origin_request_policy_id CloudfrontMultitenantDistribution#origin_request_policy_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#origin_request_policy_id CloudfrontMultitenantDistribution#origin_request_policy_id}.
 
 ---
 
@@ -2389,7 +2389,7 @@ RealtimeLogConfigArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#realtime_log_config_arn CloudfrontMultitenantDistribution#realtime_log_config_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#realtime_log_config_arn CloudfrontMultitenantDistribution#realtime_log_config_arn}.
 
 ---
 
@@ -2401,7 +2401,7 @@ ResponseHeadersPolicyId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#response_headers_policy_id CloudfrontMultitenantDistribution#response_headers_policy_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#response_headers_policy_id CloudfrontMultitenantDistribution#response_headers_policy_id}.
 
 ---
 
@@ -2415,7 +2415,7 @@ TrustedKeyGroups interface{}
 
 trusted_key_groups block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#trusted_key_groups CloudfrontMultitenantDistribution#trusted_key_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#trusted_key_groups CloudfrontMultitenantDistribution#trusted_key_groups}
 
 ---
 
@@ -2424,7 +2424,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorAllowedMethods.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudfrontmultitenantdistribution"
 
 &cloudfrontmultitenantdistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorAllowedMethods {
 	CachedMethods: *[]*string,
@@ -2436,8 +2436,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontmultitenantd
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorAllowedMethods.property.cachedMethods">CachedMethods</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#cached_methods CloudfrontMultitenantDistribution#cached_methods}. |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorAllowedMethods.property.items">Items</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#items CloudfrontMultitenantDistribution#items}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorAllowedMethods.property.cachedMethods">CachedMethods</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#cached_methods CloudfrontMultitenantDistribution#cached_methods}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorAllowedMethods.property.items">Items</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#items CloudfrontMultitenantDistribution#items}. |
 
 ---
 
@@ -2449,7 +2449,7 @@ CachedMethods *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#cached_methods CloudfrontMultitenantDistribution#cached_methods}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#cached_methods CloudfrontMultitenantDistribution#cached_methods}.
 
 ---
 
@@ -2461,7 +2461,7 @@ Items *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#items CloudfrontMultitenantDistribution#items}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#items CloudfrontMultitenantDistribution#items}.
 
 ---
 
@@ -2470,7 +2470,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorFunctionAssociation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudfrontmultitenantdistribution"
 
 &cloudfrontmultitenantdistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorFunctionAssociation {
 	EventType: *string,
@@ -2482,8 +2482,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontmultitenantd
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorFunctionAssociation.property.eventType">EventType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#event_type CloudfrontMultitenantDistribution#event_type}. |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorFunctionAssociation.property.functionArn">FunctionArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#function_arn CloudfrontMultitenantDistribution#function_arn}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorFunctionAssociation.property.eventType">EventType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#event_type CloudfrontMultitenantDistribution#event_type}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorFunctionAssociation.property.functionArn">FunctionArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#function_arn CloudfrontMultitenantDistribution#function_arn}. |
 
 ---
 
@@ -2495,7 +2495,7 @@ EventType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#event_type CloudfrontMultitenantDistribution#event_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#event_type CloudfrontMultitenantDistribution#event_type}.
 
 ---
 
@@ -2507,7 +2507,7 @@ FunctionArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#function_arn CloudfrontMultitenantDistribution#function_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#function_arn CloudfrontMultitenantDistribution#function_arn}.
 
 ---
 
@@ -2516,7 +2516,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorLambdaFunctionAssociation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudfrontmultitenantdistribution"
 
 &cloudfrontmultitenantdistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorLambdaFunctionAssociation {
 	EventType: *string,
@@ -2529,9 +2529,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontmultitenantd
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorLambdaFunctionAssociation.property.eventType">EventType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#event_type CloudfrontMultitenantDistribution#event_type}. |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorLambdaFunctionAssociation.property.lambdaFunctionArn">LambdaFunctionArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#lambda_function_arn CloudfrontMultitenantDistribution#lambda_function_arn}. |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorLambdaFunctionAssociation.property.includeBody">IncludeBody</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#include_body CloudfrontMultitenantDistribution#include_body}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorLambdaFunctionAssociation.property.eventType">EventType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#event_type CloudfrontMultitenantDistribution#event_type}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorLambdaFunctionAssociation.property.lambdaFunctionArn">LambdaFunctionArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#lambda_function_arn CloudfrontMultitenantDistribution#lambda_function_arn}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorLambdaFunctionAssociation.property.includeBody">IncludeBody</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#include_body CloudfrontMultitenantDistribution#include_body}. |
 
 ---
 
@@ -2543,7 +2543,7 @@ EventType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#event_type CloudfrontMultitenantDistribution#event_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#event_type CloudfrontMultitenantDistribution#event_type}.
 
 ---
 
@@ -2555,7 +2555,7 @@ LambdaFunctionArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#lambda_function_arn CloudfrontMultitenantDistribution#lambda_function_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#lambda_function_arn CloudfrontMultitenantDistribution#lambda_function_arn}.
 
 ---
 
@@ -2567,7 +2567,7 @@ IncludeBody interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#include_body CloudfrontMultitenantDistribution#include_body}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#include_body CloudfrontMultitenantDistribution#include_body}.
 
 ---
 
@@ -2576,7 +2576,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorTrustedKeyGroups.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudfrontmultitenantdistribution"
 
 &cloudfrontmultitenantdistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorTrustedKeyGroups {
 	Enabled: interface{},
@@ -2588,8 +2588,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontmultitenantd
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorTrustedKeyGroups.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#enabled CloudfrontMultitenantDistribution#enabled}. |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorTrustedKeyGroups.property.items">Items</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#items CloudfrontMultitenantDistribution#items}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorTrustedKeyGroups.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#enabled CloudfrontMultitenantDistribution#enabled}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorTrustedKeyGroups.property.items">Items</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#items CloudfrontMultitenantDistribution#items}. |
 
 ---
 
@@ -2601,7 +2601,7 @@ Enabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#enabled CloudfrontMultitenantDistribution#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#enabled CloudfrontMultitenantDistribution#enabled}.
 
 ---
 
@@ -2613,7 +2613,7 @@ Items *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#items CloudfrontMultitenantDistribution#items}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#items CloudfrontMultitenantDistribution#items}.
 
 ---
 
@@ -2622,7 +2622,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOrigin.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudfrontmultitenantdistribution"
 
 &cloudfrontmultitenantdistribution.CloudfrontMultitenantDistributionOrigin {
 	DomainName: *string,
@@ -2643,16 +2643,16 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontmultitenantd
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOrigin.property.domainName">DomainName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#domain_name CloudfrontMultitenantDistribution#domain_name}. |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOrigin.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#id CloudfrontMultitenantDistribution#id}. |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOrigin.property.connectionAttempts">ConnectionAttempts</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#connection_attempts CloudfrontMultitenantDistribution#connection_attempts}. |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOrigin.property.connectionTimeout">ConnectionTimeout</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#connection_timeout CloudfrontMultitenantDistribution#connection_timeout}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOrigin.property.domainName">DomainName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#domain_name CloudfrontMultitenantDistribution#domain_name}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOrigin.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#id CloudfrontMultitenantDistribution#id}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOrigin.property.connectionAttempts">ConnectionAttempts</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#connection_attempts CloudfrontMultitenantDistribution#connection_attempts}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOrigin.property.connectionTimeout">ConnectionTimeout</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#connection_timeout CloudfrontMultitenantDistribution#connection_timeout}. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOrigin.property.customHeader">CustomHeader</a></code> | <code>interface{}</code> | custom_header block. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOrigin.property.customOriginConfig">CustomOriginConfig</a></code> | <code>interface{}</code> | custom_origin_config block. |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOrigin.property.originAccessControlId">OriginAccessControlId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#origin_access_control_id CloudfrontMultitenantDistribution#origin_access_control_id}. |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOrigin.property.originPath">OriginPath</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#origin_path CloudfrontMultitenantDistribution#origin_path}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOrigin.property.originAccessControlId">OriginAccessControlId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#origin_access_control_id CloudfrontMultitenantDistribution#origin_access_control_id}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOrigin.property.originPath">OriginPath</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#origin_path CloudfrontMultitenantDistribution#origin_path}. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOrigin.property.originShield">OriginShield</a></code> | <code>interface{}</code> | origin_shield block. |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOrigin.property.responseCompletionTimeout">ResponseCompletionTimeout</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#response_completion_timeout CloudfrontMultitenantDistribution#response_completion_timeout}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOrigin.property.responseCompletionTimeout">ResponseCompletionTimeout</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#response_completion_timeout CloudfrontMultitenantDistribution#response_completion_timeout}. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOrigin.property.vpcOriginConfig">VpcOriginConfig</a></code> | <code>interface{}</code> | vpc_origin_config block. |
 
 ---
@@ -2665,7 +2665,7 @@ DomainName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#domain_name CloudfrontMultitenantDistribution#domain_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#domain_name CloudfrontMultitenantDistribution#domain_name}.
 
 ---
 
@@ -2677,7 +2677,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#id CloudfrontMultitenantDistribution#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#id CloudfrontMultitenantDistribution#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2692,7 +2692,7 @@ ConnectionAttempts *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#connection_attempts CloudfrontMultitenantDistribution#connection_attempts}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#connection_attempts CloudfrontMultitenantDistribution#connection_attempts}.
 
 ---
 
@@ -2704,7 +2704,7 @@ ConnectionTimeout *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#connection_timeout CloudfrontMultitenantDistribution#connection_timeout}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#connection_timeout CloudfrontMultitenantDistribution#connection_timeout}.
 
 ---
 
@@ -2718,7 +2718,7 @@ CustomHeader interface{}
 
 custom_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#custom_header CloudfrontMultitenantDistribution#custom_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#custom_header CloudfrontMultitenantDistribution#custom_header}
 
 ---
 
@@ -2732,7 +2732,7 @@ CustomOriginConfig interface{}
 
 custom_origin_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#custom_origin_config CloudfrontMultitenantDistribution#custom_origin_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#custom_origin_config CloudfrontMultitenantDistribution#custom_origin_config}
 
 ---
 
@@ -2744,7 +2744,7 @@ OriginAccessControlId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#origin_access_control_id CloudfrontMultitenantDistribution#origin_access_control_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#origin_access_control_id CloudfrontMultitenantDistribution#origin_access_control_id}.
 
 ---
 
@@ -2756,7 +2756,7 @@ OriginPath *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#origin_path CloudfrontMultitenantDistribution#origin_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#origin_path CloudfrontMultitenantDistribution#origin_path}.
 
 ---
 
@@ -2770,7 +2770,7 @@ OriginShield interface{}
 
 origin_shield block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#origin_shield CloudfrontMultitenantDistribution#origin_shield}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#origin_shield CloudfrontMultitenantDistribution#origin_shield}
 
 ---
 
@@ -2782,7 +2782,7 @@ ResponseCompletionTimeout *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#response_completion_timeout CloudfrontMultitenantDistribution#response_completion_timeout}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#response_completion_timeout CloudfrontMultitenantDistribution#response_completion_timeout}.
 
 ---
 
@@ -2796,7 +2796,7 @@ VpcOriginConfig interface{}
 
 vpc_origin_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#vpc_origin_config CloudfrontMultitenantDistribution#vpc_origin_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#vpc_origin_config CloudfrontMultitenantDistribution#vpc_origin_config}
 
 ---
 
@@ -2805,7 +2805,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginCustomHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudfrontmultitenantdistribution"
 
 &cloudfrontmultitenantdistribution.CloudfrontMultitenantDistributionOriginCustomHeader {
 	HeaderName: *string,
@@ -2817,8 +2817,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontmultitenantd
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginCustomHeader.property.headerName">HeaderName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#header_name CloudfrontMultitenantDistribution#header_name}. |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginCustomHeader.property.headerValue">HeaderValue</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#header_value CloudfrontMultitenantDistribution#header_value}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginCustomHeader.property.headerName">HeaderName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#header_name CloudfrontMultitenantDistribution#header_name}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginCustomHeader.property.headerValue">HeaderValue</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#header_value CloudfrontMultitenantDistribution#header_value}. |
 
 ---
 
@@ -2830,7 +2830,7 @@ HeaderName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#header_name CloudfrontMultitenantDistribution#header_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#header_name CloudfrontMultitenantDistribution#header_name}.
 
 ---
 
@@ -2842,7 +2842,7 @@ HeaderValue *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#header_value CloudfrontMultitenantDistribution#header_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#header_value CloudfrontMultitenantDistribution#header_value}.
 
 ---
 
@@ -2851,7 +2851,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginCustomOriginConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudfrontmultitenantdistribution"
 
 &cloudfrontmultitenantdistribution.CloudfrontMultitenantDistributionOriginCustomOriginConfig {
 	HttpPort: *f64,
@@ -2868,13 +2868,13 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontmultitenantd
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginCustomOriginConfig.property.httpPort">HttpPort</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#http_port CloudfrontMultitenantDistribution#http_port}. |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginCustomOriginConfig.property.httpsPort">HttpsPort</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#https_port CloudfrontMultitenantDistribution#https_port}. |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginCustomOriginConfig.property.originProtocolPolicy">OriginProtocolPolicy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#origin_protocol_policy CloudfrontMultitenantDistribution#origin_protocol_policy}. |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginCustomOriginConfig.property.originSslProtocols">OriginSslProtocols</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#origin_ssl_protocols CloudfrontMultitenantDistribution#origin_ssl_protocols}. |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginCustomOriginConfig.property.ipAddressType">IpAddressType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#ip_address_type CloudfrontMultitenantDistribution#ip_address_type}. |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginCustomOriginConfig.property.originKeepaliveTimeout">OriginKeepaliveTimeout</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#origin_keepalive_timeout CloudfrontMultitenantDistribution#origin_keepalive_timeout}. |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginCustomOriginConfig.property.originReadTimeout">OriginReadTimeout</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#origin_read_timeout CloudfrontMultitenantDistribution#origin_read_timeout}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginCustomOriginConfig.property.httpPort">HttpPort</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#http_port CloudfrontMultitenantDistribution#http_port}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginCustomOriginConfig.property.httpsPort">HttpsPort</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#https_port CloudfrontMultitenantDistribution#https_port}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginCustomOriginConfig.property.originProtocolPolicy">OriginProtocolPolicy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#origin_protocol_policy CloudfrontMultitenantDistribution#origin_protocol_policy}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginCustomOriginConfig.property.originSslProtocols">OriginSslProtocols</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#origin_ssl_protocols CloudfrontMultitenantDistribution#origin_ssl_protocols}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginCustomOriginConfig.property.ipAddressType">IpAddressType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#ip_address_type CloudfrontMultitenantDistribution#ip_address_type}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginCustomOriginConfig.property.originKeepaliveTimeout">OriginKeepaliveTimeout</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#origin_keepalive_timeout CloudfrontMultitenantDistribution#origin_keepalive_timeout}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginCustomOriginConfig.property.originReadTimeout">OriginReadTimeout</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#origin_read_timeout CloudfrontMultitenantDistribution#origin_read_timeout}. |
 
 ---
 
@@ -2886,7 +2886,7 @@ HttpPort *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#http_port CloudfrontMultitenantDistribution#http_port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#http_port CloudfrontMultitenantDistribution#http_port}.
 
 ---
 
@@ -2898,7 +2898,7 @@ HttpsPort *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#https_port CloudfrontMultitenantDistribution#https_port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#https_port CloudfrontMultitenantDistribution#https_port}.
 
 ---
 
@@ -2910,7 +2910,7 @@ OriginProtocolPolicy *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#origin_protocol_policy CloudfrontMultitenantDistribution#origin_protocol_policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#origin_protocol_policy CloudfrontMultitenantDistribution#origin_protocol_policy}.
 
 ---
 
@@ -2922,7 +2922,7 @@ OriginSslProtocols *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#origin_ssl_protocols CloudfrontMultitenantDistribution#origin_ssl_protocols}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#origin_ssl_protocols CloudfrontMultitenantDistribution#origin_ssl_protocols}.
 
 ---
 
@@ -2934,7 +2934,7 @@ IpAddressType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#ip_address_type CloudfrontMultitenantDistribution#ip_address_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#ip_address_type CloudfrontMultitenantDistribution#ip_address_type}.
 
 ---
 
@@ -2946,7 +2946,7 @@ OriginKeepaliveTimeout *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#origin_keepalive_timeout CloudfrontMultitenantDistribution#origin_keepalive_timeout}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#origin_keepalive_timeout CloudfrontMultitenantDistribution#origin_keepalive_timeout}.
 
 ---
 
@@ -2958,7 +2958,7 @@ OriginReadTimeout *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#origin_read_timeout CloudfrontMultitenantDistribution#origin_read_timeout}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#origin_read_timeout CloudfrontMultitenantDistribution#origin_read_timeout}.
 
 ---
 
@@ -2967,10 +2967,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudfrontmultitenantdistribution"
 
 &cloudfrontmultitenantdistribution.CloudfrontMultitenantDistributionOriginGroup {
-	OriginId: *string,
+	Id: *string,
 	FailoverCriteria: interface{},
 	Member: interface{},
 }
@@ -2980,21 +2980,24 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontmultitenantd
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroup.property.originId">OriginId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#origin_id CloudfrontMultitenantDistribution#origin_id}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroup.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#id CloudfrontMultitenantDistribution#id}. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroup.property.failoverCriteria">FailoverCriteria</a></code> | <code>interface{}</code> | failover_criteria block. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroup.property.member">Member</a></code> | <code>interface{}</code> | member block. |
 
 ---
 
-##### `OriginId`<sup>Required</sup> <a name="OriginId" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroup.property.originId"></a>
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroup.property.id"></a>
 
 ```go
-OriginId *string
+Id *string
 ```
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#origin_id CloudfrontMultitenantDistribution#origin_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#id CloudfrontMultitenantDistribution#id}.
+
+Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
@@ -3008,7 +3011,7 @@ FailoverCriteria interface{}
 
 failover_criteria block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#failover_criteria CloudfrontMultitenantDistribution#failover_criteria}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#failover_criteria CloudfrontMultitenantDistribution#failover_criteria}
 
 ---
 
@@ -3022,7 +3025,7 @@ Member interface{}
 
 member block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#member CloudfrontMultitenantDistribution#member}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#member CloudfrontMultitenantDistribution#member}
 
 ---
 
@@ -3031,7 +3034,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupFailoverCriteria.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudfrontmultitenantdistribution"
 
 &cloudfrontmultitenantdistribution.CloudfrontMultitenantDistributionOriginGroupFailoverCriteria {
 	StatusCodes: *[]*f64,
@@ -3042,7 +3045,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontmultitenantd
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupFailoverCriteria.property.statusCodes">StatusCodes</a></code> | <code>*[]*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#status_codes CloudfrontMultitenantDistribution#status_codes}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupFailoverCriteria.property.statusCodes">StatusCodes</a></code> | <code>*[]*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#status_codes CloudfrontMultitenantDistribution#status_codes}. |
 
 ---
 
@@ -3054,7 +3057,7 @@ StatusCodes *[]*f64
 
 - *Type:* *[]*f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#status_codes CloudfrontMultitenantDistribution#status_codes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#status_codes CloudfrontMultitenantDistribution#status_codes}.
 
 ---
 
@@ -3063,7 +3066,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupMember.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudfrontmultitenantdistribution"
 
 &cloudfrontmultitenantdistribution.CloudfrontMultitenantDistributionOriginGroupMember {
 	OriginId: *string,
@@ -3074,7 +3077,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontmultitenantd
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupMember.property.originId">OriginId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#origin_id CloudfrontMultitenantDistribution#origin_id}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupMember.property.originId">OriginId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#origin_id CloudfrontMultitenantDistribution#origin_id}. |
 
 ---
 
@@ -3086,7 +3089,7 @@ OriginId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#origin_id CloudfrontMultitenantDistribution#origin_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#origin_id CloudfrontMultitenantDistribution#origin_id}.
 
 ---
 
@@ -3095,7 +3098,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginOriginShield.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudfrontmultitenantdistribution"
 
 &cloudfrontmultitenantdistribution.CloudfrontMultitenantDistributionOriginOriginShield {
 	Enabled: interface{},
@@ -3107,8 +3110,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontmultitenantd
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginOriginShield.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#enabled CloudfrontMultitenantDistribution#enabled}. |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginOriginShield.property.originShieldRegion">OriginShieldRegion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#origin_shield_region CloudfrontMultitenantDistribution#origin_shield_region}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginOriginShield.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#enabled CloudfrontMultitenantDistribution#enabled}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginOriginShield.property.originShieldRegion">OriginShieldRegion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#origin_shield_region CloudfrontMultitenantDistribution#origin_shield_region}. |
 
 ---
 
@@ -3120,7 +3123,7 @@ Enabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#enabled CloudfrontMultitenantDistribution#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#enabled CloudfrontMultitenantDistribution#enabled}.
 
 ---
 
@@ -3132,7 +3135,7 @@ OriginShieldRegion *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#origin_shield_region CloudfrontMultitenantDistribution#origin_shield_region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#origin_shield_region CloudfrontMultitenantDistribution#origin_shield_region}.
 
 ---
 
@@ -3141,7 +3144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginVpcOriginConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudfrontmultitenantdistribution"
 
 &cloudfrontmultitenantdistribution.CloudfrontMultitenantDistributionOriginVpcOriginConfig {
 	VpcOriginId: *string,
@@ -3154,9 +3157,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontmultitenantd
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginVpcOriginConfig.property.vpcOriginId">VpcOriginId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#vpc_origin_id CloudfrontMultitenantDistribution#vpc_origin_id}. |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginVpcOriginConfig.property.originKeepaliveTimeout">OriginKeepaliveTimeout</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#origin_keepalive_timeout CloudfrontMultitenantDistribution#origin_keepalive_timeout}. |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginVpcOriginConfig.property.originReadTimeout">OriginReadTimeout</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#origin_read_timeout CloudfrontMultitenantDistribution#origin_read_timeout}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginVpcOriginConfig.property.vpcOriginId">VpcOriginId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#vpc_origin_id CloudfrontMultitenantDistribution#vpc_origin_id}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginVpcOriginConfig.property.originKeepaliveTimeout">OriginKeepaliveTimeout</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#origin_keepalive_timeout CloudfrontMultitenantDistribution#origin_keepalive_timeout}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginVpcOriginConfig.property.originReadTimeout">OriginReadTimeout</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#origin_read_timeout CloudfrontMultitenantDistribution#origin_read_timeout}. |
 
 ---
 
@@ -3168,7 +3171,7 @@ VpcOriginId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#vpc_origin_id CloudfrontMultitenantDistribution#vpc_origin_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#vpc_origin_id CloudfrontMultitenantDistribution#vpc_origin_id}.
 
 ---
 
@@ -3180,7 +3183,7 @@ OriginKeepaliveTimeout *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#origin_keepalive_timeout CloudfrontMultitenantDistribution#origin_keepalive_timeout}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#origin_keepalive_timeout CloudfrontMultitenantDistribution#origin_keepalive_timeout}.
 
 ---
 
@@ -3192,7 +3195,7 @@ OriginReadTimeout *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#origin_read_timeout CloudfrontMultitenantDistribution#origin_read_timeout}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#origin_read_timeout CloudfrontMultitenantDistribution#origin_read_timeout}.
 
 ---
 
@@ -3201,7 +3204,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionRestrictions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudfrontmultitenantdistribution"
 
 &cloudfrontmultitenantdistribution.CloudfrontMultitenantDistributionRestrictions {
 	GeoRestriction: interface{},
@@ -3226,7 +3229,7 @@ GeoRestriction interface{}
 
 geo_restriction block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#geo_restriction CloudfrontMultitenantDistribution#geo_restriction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#geo_restriction CloudfrontMultitenantDistribution#geo_restriction}
 
 ---
 
@@ -3235,7 +3238,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionRestrictionsGeoRestriction.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudfrontmultitenantdistribution"
 
 &cloudfrontmultitenantdistribution.CloudfrontMultitenantDistributionRestrictionsGeoRestriction {
 	RestrictionType: *string,
@@ -3247,8 +3250,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontmultitenantd
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionRestrictionsGeoRestriction.property.restrictionType">RestrictionType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#restriction_type CloudfrontMultitenantDistribution#restriction_type}. |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionRestrictionsGeoRestriction.property.items">Items</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#items CloudfrontMultitenantDistribution#items}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionRestrictionsGeoRestriction.property.restrictionType">RestrictionType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#restriction_type CloudfrontMultitenantDistribution#restriction_type}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionRestrictionsGeoRestriction.property.items">Items</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#items CloudfrontMultitenantDistribution#items}. |
 
 ---
 
@@ -3260,7 +3263,7 @@ RestrictionType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#restriction_type CloudfrontMultitenantDistribution#restriction_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#restriction_type CloudfrontMultitenantDistribution#restriction_type}.
 
 ---
 
@@ -3272,7 +3275,7 @@ Items *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#items CloudfrontMultitenantDistribution#items}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#items CloudfrontMultitenantDistribution#items}.
 
 ---
 
@@ -3281,7 +3284,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudfrontmultitenantdistribution"
 
 &cloudfrontmultitenantdistribution.CloudfrontMultitenantDistributionTenantConfig {
 	ParameterDefinition: interface{},
@@ -3306,7 +3309,7 @@ ParameterDefinition interface{}
 
 parameter_definition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#parameter_definition CloudfrontMultitenantDistribution#parameter_definition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#parameter_definition CloudfrontMultitenantDistribution#parameter_definition}
 
 ---
 
@@ -3315,7 +3318,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudfrontmultitenantdistribution"
 
 &cloudfrontmultitenantdistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinition {
 	Name: *string,
@@ -3327,7 +3330,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontmultitenantd
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinition.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#name CloudfrontMultitenantDistribution#name}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinition.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#name CloudfrontMultitenantDistribution#name}. |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinition.property.definition">Definition</a></code> | <code>interface{}</code> | definition block. |
 
 ---
@@ -3340,7 +3343,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#name CloudfrontMultitenantDistribution#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#name CloudfrontMultitenantDistribution#name}.
 
 ---
 
@@ -3354,7 +3357,7 @@ Definition interface{}
 
 definition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#definition CloudfrontMultitenantDistribution#definition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#definition CloudfrontMultitenantDistribution#definition}
 
 ---
 
@@ -3363,7 +3366,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudfrontmultitenantdistribution"
 
 &cloudfrontmultitenantdistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinition {
 	StringSchema: interface{},
@@ -3388,7 +3391,7 @@ StringSchema interface{}
 
 string_schema block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#string_schema CloudfrontMultitenantDistribution#string_schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#string_schema CloudfrontMultitenantDistribution#string_schema}
 
 ---
 
@@ -3397,7 +3400,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinitionStringSchema.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudfrontmultitenantdistribution"
 
 &cloudfrontmultitenantdistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinitionStringSchema {
 	Required: interface{},
@@ -3410,9 +3413,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontmultitenantd
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinitionStringSchema.property.required">Required</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#required CloudfrontMultitenantDistribution#required}. |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinitionStringSchema.property.comment">Comment</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#comment CloudfrontMultitenantDistribution#comment}. |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinitionStringSchema.property.defaultValue">DefaultValue</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#default_value CloudfrontMultitenantDistribution#default_value}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinitionStringSchema.property.required">Required</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#required CloudfrontMultitenantDistribution#required}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinitionStringSchema.property.comment">Comment</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#comment CloudfrontMultitenantDistribution#comment}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinitionStringSchema.property.defaultValue">DefaultValue</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#default_value CloudfrontMultitenantDistribution#default_value}. |
 
 ---
 
@@ -3424,7 +3427,7 @@ Required interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#required CloudfrontMultitenantDistribution#required}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#required CloudfrontMultitenantDistribution#required}.
 
 ---
 
@@ -3436,7 +3439,7 @@ Comment *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#comment CloudfrontMultitenantDistribution#comment}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#comment CloudfrontMultitenantDistribution#comment}.
 
 ---
 
@@ -3448,7 +3451,7 @@ DefaultValue *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#default_value CloudfrontMultitenantDistribution#default_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#default_value CloudfrontMultitenantDistribution#default_value}.
 
 ---
 
@@ -3457,7 +3460,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudfrontmultitenantdistribution"
 
 &cloudfrontmultitenantdistribution.CloudfrontMultitenantDistributionTimeouts {
 	Create: *string,
@@ -3486,7 +3489,7 @@ Create *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#create CloudfrontMultitenantDistribution#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#create CloudfrontMultitenantDistribution#create}
 
 ---
 
@@ -3500,7 +3503,7 @@ Delete *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#delete CloudfrontMultitenantDistribution#delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#delete CloudfrontMultitenantDistribution#delete}
 
 ---
 
@@ -3514,7 +3517,7 @@ Update *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#update CloudfrontMultitenantDistribution#update}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#update CloudfrontMultitenantDistribution#update}
 
 ---
 
@@ -3523,7 +3526,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionViewerCertificate.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudfrontmultitenantdistribution"
 
 &cloudfrontmultitenantdistribution.CloudfrontMultitenantDistributionViewerCertificate {
 	AcmCertificateArn: *string,
@@ -3537,10 +3540,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontmultitenantd
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionViewerCertificate.property.acmCertificateArn">AcmCertificateArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#acm_certificate_arn CloudfrontMultitenantDistribution#acm_certificate_arn}. |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionViewerCertificate.property.cloudfrontDefaultCertificate">CloudfrontDefaultCertificate</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#cloudfront_default_certificate CloudfrontMultitenantDistribution#cloudfront_default_certificate}. |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionViewerCertificate.property.minimumProtocolVersion">MinimumProtocolVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#minimum_protocol_version CloudfrontMultitenantDistribution#minimum_protocol_version}. |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionViewerCertificate.property.sslSupportMethod">SslSupportMethod</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#ssl_support_method CloudfrontMultitenantDistribution#ssl_support_method}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionViewerCertificate.property.acmCertificateArn">AcmCertificateArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#acm_certificate_arn CloudfrontMultitenantDistribution#acm_certificate_arn}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionViewerCertificate.property.cloudfrontDefaultCertificate">CloudfrontDefaultCertificate</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#cloudfront_default_certificate CloudfrontMultitenantDistribution#cloudfront_default_certificate}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionViewerCertificate.property.minimumProtocolVersion">MinimumProtocolVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#minimum_protocol_version CloudfrontMultitenantDistribution#minimum_protocol_version}. |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionViewerCertificate.property.sslSupportMethod">SslSupportMethod</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#ssl_support_method CloudfrontMultitenantDistribution#ssl_support_method}. |
 
 ---
 
@@ -3552,7 +3555,7 @@ AcmCertificateArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#acm_certificate_arn CloudfrontMultitenantDistribution#acm_certificate_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#acm_certificate_arn CloudfrontMultitenantDistribution#acm_certificate_arn}.
 
 ---
 
@@ -3564,7 +3567,7 @@ CloudfrontDefaultCertificate interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#cloudfront_default_certificate CloudfrontMultitenantDistribution#cloudfront_default_certificate}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#cloudfront_default_certificate CloudfrontMultitenantDistribution#cloudfront_default_certificate}.
 
 ---
 
@@ -3576,7 +3579,7 @@ MinimumProtocolVersion *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#minimum_protocol_version CloudfrontMultitenantDistribution#minimum_protocol_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#minimum_protocol_version CloudfrontMultitenantDistribution#minimum_protocol_version}.
 
 ---
 
@@ -3588,7 +3591,7 @@ SslSupportMethod *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/cloudfront_multitenant_distribution#ssl_support_method CloudfrontMultitenantDistribution#ssl_support_method}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/cloudfront_multitenant_distribution#ssl_support_method CloudfrontMultitenantDistribution#ssl_support_method}.
 
 ---
 
@@ -3599,7 +3602,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionActiveTrustedKeyGroupsItemsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudfrontmultitenantdistribution"
 
 cloudfrontmultitenantdistribution.NewCloudfrontMultitenantDistributionActiveTrustedKeyGroupsItemsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudfrontMultitenantDistributionActiveTrustedKeyGroupsItemsList
 ```
@@ -3759,7 +3762,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionActiveTrustedKeyGroupsItemsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudfrontmultitenantdistribution"
 
 cloudfrontmultitenantdistribution.NewCloudfrontMultitenantDistributionActiveTrustedKeyGroupsItemsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudfrontMultitenantDistributionActiveTrustedKeyGroupsItemsOutputReference
 ```
@@ -4048,7 +4051,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionActiveTrustedKeyGroupsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudfrontmultitenantdistribution"
 
 cloudfrontmultitenantdistribution.NewCloudfrontMultitenantDistributionActiveTrustedKeyGroupsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudfrontMultitenantDistributionActiveTrustedKeyGroupsList
 ```
@@ -4208,7 +4211,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionActiveTrustedKeyGroupsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudfrontmultitenantdistribution"
 
 cloudfrontmultitenantdistribution.NewCloudfrontMultitenantDistributionActiveTrustedKeyGroupsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudfrontMultitenantDistributionActiveTrustedKeyGroupsOutputReference
 ```
@@ -4528,7 +4531,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorAllowedMethodsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudfrontmultitenantdistribution"
 
 cloudfrontmultitenantdistribution.NewCloudfrontMultitenantDistributionCacheBehaviorAllowedMethodsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudfrontMultitenantDistributionCacheBehaviorAllowedMethodsList
 ```
@@ -4688,7 +4691,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorAllowedMethodsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudfrontmultitenantdistribution"
 
 cloudfrontmultitenantdistribution.NewCloudfrontMultitenantDistributionCacheBehaviorAllowedMethodsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudfrontMultitenantDistributionCacheBehaviorAllowedMethodsOutputReference
 ```
@@ -4999,7 +5002,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorFunctionAssociationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudfrontmultitenantdistribution"
 
 cloudfrontmultitenantdistribution.NewCloudfrontMultitenantDistributionCacheBehaviorFunctionAssociationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudfrontMultitenantDistributionCacheBehaviorFunctionAssociationList
 ```
@@ -5159,7 +5162,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorFunctionAssociationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudfrontmultitenantdistribution"
 
 cloudfrontmultitenantdistribution.NewCloudfrontMultitenantDistributionCacheBehaviorFunctionAssociationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudfrontMultitenantDistributionCacheBehaviorFunctionAssociationOutputReference
 ```
@@ -5470,7 +5473,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorLambdaFunctionAssociationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudfrontmultitenantdistribution"
 
 cloudfrontmultitenantdistribution.NewCloudfrontMultitenantDistributionCacheBehaviorLambdaFunctionAssociationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudfrontMultitenantDistributionCacheBehaviorLambdaFunctionAssociationList
 ```
@@ -5630,7 +5633,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorLambdaFunctionAssociationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudfrontmultitenantdistribution"
 
 cloudfrontmultitenantdistribution.NewCloudfrontMultitenantDistributionCacheBehaviorLambdaFunctionAssociationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudfrontMultitenantDistributionCacheBehaviorLambdaFunctionAssociationOutputReference
 ```
@@ -5970,7 +5973,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudfrontmultitenantdistribution"
 
 cloudfrontmultitenantdistribution.NewCloudfrontMultitenantDistributionCacheBehaviorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudfrontMultitenantDistributionCacheBehaviorList
 ```
@@ -6130,7 +6133,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudfrontmultitenantdistribution"
 
 cloudfrontmultitenantdistribution.NewCloudfrontMultitenantDistributionCacheBehaviorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudfrontMultitenantDistributionCacheBehaviorOutputReference
 ```
@@ -6805,7 +6808,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorTrustedKeyGroupsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudfrontmultitenantdistribution"
 
 cloudfrontmultitenantdistribution.NewCloudfrontMultitenantDistributionCacheBehaviorTrustedKeyGroupsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudfrontMultitenantDistributionCacheBehaviorTrustedKeyGroupsList
 ```
@@ -6965,7 +6968,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCacheBehaviorTrustedKeyGroupsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudfrontmultitenantdistribution"
 
 cloudfrontmultitenantdistribution.NewCloudfrontMultitenantDistributionCacheBehaviorTrustedKeyGroupsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudfrontMultitenantDistributionCacheBehaviorTrustedKeyGroupsOutputReference
 ```
@@ -7290,7 +7293,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCustomErrorResponseList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudfrontmultitenantdistribution"
 
 cloudfrontmultitenantdistribution.NewCloudfrontMultitenantDistributionCustomErrorResponseList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudfrontMultitenantDistributionCustomErrorResponseList
 ```
@@ -7450,7 +7453,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionCustomErrorResponseOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudfrontmultitenantdistribution"
 
 cloudfrontmultitenantdistribution.NewCloudfrontMultitenantDistributionCustomErrorResponseOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudfrontMultitenantDistributionCustomErrorResponseOutputReference
 ```
@@ -7826,7 +7829,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorAllowedMethodsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudfrontmultitenantdistribution"
 
 cloudfrontmultitenantdistribution.NewCloudfrontMultitenantDistributionDefaultCacheBehaviorAllowedMethodsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudfrontMultitenantDistributionDefaultCacheBehaviorAllowedMethodsList
 ```
@@ -7986,7 +7989,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorAllowedMethodsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudfrontmultitenantdistribution"
 
 cloudfrontmultitenantdistribution.NewCloudfrontMultitenantDistributionDefaultCacheBehaviorAllowedMethodsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudfrontMultitenantDistributionDefaultCacheBehaviorAllowedMethodsOutputReference
 ```
@@ -8297,7 +8300,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorFunctionAssociationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudfrontmultitenantdistribution"
 
 cloudfrontmultitenantdistribution.NewCloudfrontMultitenantDistributionDefaultCacheBehaviorFunctionAssociationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudfrontMultitenantDistributionDefaultCacheBehaviorFunctionAssociationList
 ```
@@ -8457,7 +8460,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorFunctionAssociationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudfrontmultitenantdistribution"
 
 cloudfrontmultitenantdistribution.NewCloudfrontMultitenantDistributionDefaultCacheBehaviorFunctionAssociationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudfrontMultitenantDistributionDefaultCacheBehaviorFunctionAssociationOutputReference
 ```
@@ -8768,7 +8771,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorLambdaFunctionAssociationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudfrontmultitenantdistribution"
 
 cloudfrontmultitenantdistribution.NewCloudfrontMultitenantDistributionDefaultCacheBehaviorLambdaFunctionAssociationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudfrontMultitenantDistributionDefaultCacheBehaviorLambdaFunctionAssociationList
 ```
@@ -8928,7 +8931,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorLambdaFunctionAssociationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudfrontmultitenantdistribution"
 
 cloudfrontmultitenantdistribution.NewCloudfrontMultitenantDistributionDefaultCacheBehaviorLambdaFunctionAssociationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudfrontMultitenantDistributionDefaultCacheBehaviorLambdaFunctionAssociationOutputReference
 ```
@@ -9268,7 +9271,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudfrontmultitenantdistribution"
 
 cloudfrontmultitenantdistribution.NewCloudfrontMultitenantDistributionDefaultCacheBehaviorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudfrontMultitenantDistributionDefaultCacheBehaviorList
 ```
@@ -9428,7 +9431,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudfrontmultitenantdistribution"
 
 cloudfrontmultitenantdistribution.NewCloudfrontMultitenantDistributionDefaultCacheBehaviorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudfrontMultitenantDistributionDefaultCacheBehaviorOutputReference
 ```
@@ -10081,7 +10084,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorTrustedKeyGroupsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudfrontmultitenantdistribution"
 
 cloudfrontmultitenantdistribution.NewCloudfrontMultitenantDistributionDefaultCacheBehaviorTrustedKeyGroupsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudfrontMultitenantDistributionDefaultCacheBehaviorTrustedKeyGroupsList
 ```
@@ -10241,7 +10244,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionDefaultCacheBehaviorTrustedKeyGroupsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudfrontmultitenantdistribution"
 
 cloudfrontmultitenantdistribution.NewCloudfrontMultitenantDistributionDefaultCacheBehaviorTrustedKeyGroupsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudfrontMultitenantDistributionDefaultCacheBehaviorTrustedKeyGroupsOutputReference
 ```
@@ -10566,7 +10569,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginCustomHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudfrontmultitenantdistribution"
 
 cloudfrontmultitenantdistribution.NewCloudfrontMultitenantDistributionOriginCustomHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudfrontMultitenantDistributionOriginCustomHeaderList
 ```
@@ -10726,7 +10729,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginCustomHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudfrontmultitenantdistribution"
 
 cloudfrontmultitenantdistribution.NewCloudfrontMultitenantDistributionOriginCustomHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudfrontMultitenantDistributionOriginCustomHeaderOutputReference
 ```
@@ -11037,7 +11040,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginCustomOriginConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudfrontmultitenantdistribution"
 
 cloudfrontmultitenantdistribution.NewCloudfrontMultitenantDistributionOriginCustomOriginConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudfrontMultitenantDistributionOriginCustomOriginConfigList
 ```
@@ -11197,7 +11200,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginCustomOriginConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudfrontmultitenantdistribution"
 
 cloudfrontmultitenantdistribution.NewCloudfrontMultitenantDistributionOriginCustomOriginConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudfrontMultitenantDistributionOriginCustomOriginConfigOutputReference
 ```
@@ -11639,7 +11642,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupFailoverCriteriaList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudfrontmultitenantdistribution"
 
 cloudfrontmultitenantdistribution.NewCloudfrontMultitenantDistributionOriginGroupFailoverCriteriaList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudfrontMultitenantDistributionOriginGroupFailoverCriteriaList
 ```
@@ -11799,7 +11802,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupFailoverCriteriaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudfrontmultitenantdistribution"
 
 cloudfrontmultitenantdistribution.NewCloudfrontMultitenantDistributionOriginGroupFailoverCriteriaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudfrontMultitenantDistributionOriginGroupFailoverCriteriaOutputReference
 ```
@@ -12088,7 +12091,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudfrontmultitenantdistribution"
 
 cloudfrontmultitenantdistribution.NewCloudfrontMultitenantDistributionOriginGroupList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudfrontMultitenantDistributionOriginGroupList
 ```
@@ -12248,7 +12251,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupMemberList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudfrontmultitenantdistribution"
 
 cloudfrontmultitenantdistribution.NewCloudfrontMultitenantDistributionOriginGroupMemberList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudfrontMultitenantDistributionOriginGroupMemberList
 ```
@@ -12408,7 +12411,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupMemberOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudfrontmultitenantdistribution"
 
 cloudfrontmultitenantdistribution.NewCloudfrontMultitenantDistributionOriginGroupMemberOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudfrontMultitenantDistributionOriginGroupMemberOutputReference
 ```
@@ -12697,7 +12700,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudfrontmultitenantdistribution"
 
 cloudfrontmultitenantdistribution.NewCloudfrontMultitenantDistributionOriginGroupOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudfrontMultitenantDistributionOriginGroupOutputReference
 ```
@@ -12963,9 +12966,9 @@ func ResetMember()
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupOutputReference.property.failoverCriteria">FailoverCriteria</a></code> | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupFailoverCriteriaList">CloudfrontMultitenantDistributionOriginGroupFailoverCriteriaList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupOutputReference.property.member">Member</a></code> | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupMemberList">CloudfrontMultitenantDistributionOriginGroupMemberList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupOutputReference.property.failoverCriteriaInput">FailoverCriteriaInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupOutputReference.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupOutputReference.property.memberInput">MemberInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupOutputReference.property.originIdInput">OriginIdInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupOutputReference.property.originId">OriginId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupOutputReference.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
 
 ---
@@ -13024,6 +13027,16 @@ func FailoverCriteriaInput() interface{}
 
 ---
 
+##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupOutputReference.property.idInput"></a>
+
+```go
+func IdInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `MemberInput`<sup>Optional</sup> <a name="MemberInput" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupOutputReference.property.memberInput"></a>
 
 ```go
@@ -13034,20 +13047,10 @@ func MemberInput() interface{}
 
 ---
 
-##### `OriginIdInput`<sup>Optional</sup> <a name="OriginIdInput" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupOutputReference.property.originIdInput"></a>
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupOutputReference.property.id"></a>
 
 ```go
-func OriginIdInput() *string
-```
-
-- *Type:* *string
-
----
-
-##### `OriginId`<sup>Required</sup> <a name="OriginId" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginGroupOutputReference.property.originId"></a>
-
-```go
-func OriginId() *string
+func Id() *string
 ```
 
 - *Type:* *string
@@ -13070,7 +13073,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudfrontmultitenantdistribution"
 
 cloudfrontmultitenantdistribution.NewCloudfrontMultitenantDistributionOriginList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudfrontMultitenantDistributionOriginList
 ```
@@ -13230,7 +13233,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginOriginShieldList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudfrontmultitenantdistribution"
 
 cloudfrontmultitenantdistribution.NewCloudfrontMultitenantDistributionOriginOriginShieldList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudfrontMultitenantDistributionOriginOriginShieldList
 ```
@@ -13390,7 +13393,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginOriginShieldOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudfrontmultitenantdistribution"
 
 cloudfrontmultitenantdistribution.NewCloudfrontMultitenantDistributionOriginOriginShieldOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudfrontMultitenantDistributionOriginOriginShieldOutputReference
 ```
@@ -13708,7 +13711,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudfrontmultitenantdistribution"
 
 cloudfrontmultitenantdistribution.NewCloudfrontMultitenantDistributionOriginOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudfrontMultitenantDistributionOriginOutputReference
 ```
@@ -14332,7 +14335,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginVpcOriginConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudfrontmultitenantdistribution"
 
 cloudfrontmultitenantdistribution.NewCloudfrontMultitenantDistributionOriginVpcOriginConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudfrontMultitenantDistributionOriginVpcOriginConfigList
 ```
@@ -14492,7 +14495,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionOriginVpcOriginConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudfrontmultitenantdistribution"
 
 cloudfrontmultitenantdistribution.NewCloudfrontMultitenantDistributionOriginVpcOriginConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudfrontMultitenantDistributionOriginVpcOriginConfigOutputReference
 ```
@@ -14839,7 +14842,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionRestrictionsGeoRestrictionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudfrontmultitenantdistribution"
 
 cloudfrontmultitenantdistribution.NewCloudfrontMultitenantDistributionRestrictionsGeoRestrictionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudfrontMultitenantDistributionRestrictionsGeoRestrictionList
 ```
@@ -14999,7 +15002,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionRestrictionsGeoRestrictionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudfrontmultitenantdistribution"
 
 cloudfrontmultitenantdistribution.NewCloudfrontMultitenantDistributionRestrictionsGeoRestrictionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudfrontMultitenantDistributionRestrictionsGeoRestrictionOutputReference
 ```
@@ -15317,7 +15320,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionRestrictionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudfrontmultitenantdistribution"
 
 cloudfrontmultitenantdistribution.NewCloudfrontMultitenantDistributionRestrictionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudfrontMultitenantDistributionRestrictionsList
 ```
@@ -15477,7 +15480,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionRestrictionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudfrontmultitenantdistribution"
 
 cloudfrontmultitenantdistribution.NewCloudfrontMultitenantDistributionRestrictionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudfrontMultitenantDistributionRestrictionsOutputReference
 ```
@@ -15786,7 +15789,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudfrontmultitenantdistribution"
 
 cloudfrontmultitenantdistribution.NewCloudfrontMultitenantDistributionTenantConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudfrontMultitenantDistributionTenantConfigList
 ```
@@ -15946,7 +15949,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudfrontmultitenantdistribution"
 
 cloudfrontmultitenantdistribution.NewCloudfrontMultitenantDistributionTenantConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudfrontMultitenantDistributionTenantConfigOutputReference
 ```
@@ -16255,7 +16258,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinitionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudfrontmultitenantdistribution"
 
 cloudfrontmultitenantdistribution.NewCloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinitionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinitionList
 ```
@@ -16415,7 +16418,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinitionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudfrontmultitenantdistribution"
 
 cloudfrontmultitenantdistribution.NewCloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinitionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinitionOutputReference
 ```
@@ -16724,7 +16727,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinitionStringSchemaList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudfrontmultitenantdistribution"
 
 cloudfrontmultitenantdistribution.NewCloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinitionStringSchemaList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinitionStringSchemaList
 ```
@@ -16884,7 +16887,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinitionStringSchemaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudfrontmultitenantdistribution"
 
 cloudfrontmultitenantdistribution.NewCloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinitionStringSchemaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudfrontMultitenantDistributionTenantConfigParameterDefinitionDefinitionStringSchemaOutputReference
 ```
@@ -17231,7 +17234,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudfrontmultitenantdistribution"
 
 cloudfrontmultitenantdistribution.NewCloudfrontMultitenantDistributionTenantConfigParameterDefinitionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudfrontMultitenantDistributionTenantConfigParameterDefinitionList
 ```
@@ -17391,7 +17394,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTenantConfigParameterDefinitionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudfrontmultitenantdistribution"
 
 cloudfrontmultitenantdistribution.NewCloudfrontMultitenantDistributionTenantConfigParameterDefinitionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudfrontMultitenantDistributionTenantConfigParameterDefinitionOutputReference
 ```
@@ -17722,7 +17725,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudfrontmultitenantdistribution"
 
 cloudfrontmultitenantdistribution.NewCloudfrontMultitenantDistributionTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudfrontMultitenantDistributionTimeoutsOutputReference
 ```
@@ -18058,7 +18061,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionViewerCertificateList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudfrontmultitenantdistribution"
 
 cloudfrontmultitenantdistribution.NewCloudfrontMultitenantDistributionViewerCertificateList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudfrontMultitenantDistributionViewerCertificateList
 ```
@@ -18218,7 +18221,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.cloudfrontMultitenantDistribution.CloudfrontMultitenantDistributionViewerCertificateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/cloudfrontmultitenantdistribution"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/cloudfrontmultitenantdistribution"
 
 cloudfrontmultitenantdistribution.NewCloudfrontMultitenantDistributionViewerCertificateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudfrontMultitenantDistributionViewerCertificateOutputReference
 ```

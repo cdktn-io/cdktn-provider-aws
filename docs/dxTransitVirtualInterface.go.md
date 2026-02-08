@@ -4,12 +4,12 @@
 
 ### DxTransitVirtualInterface <a name="DxTransitVirtualInterface" id="@cdktn/provider-aws.dxTransitVirtualInterface.DxTransitVirtualInterface"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dx_transit_virtual_interface aws_dx_transit_virtual_interface}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dx_transit_virtual_interface aws_dx_transit_virtual_interface}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dxTransitVirtualInterface.DxTransitVirtualInterface.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dxtransitvirtualinterface"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dxtransitvirtualinterface"
 
 dxtransitvirtualinterface.NewDxTransitVirtualInterface(scope Construct, id *string, config DxTransitVirtualInterfaceConfig) DxTransitVirtualInterface
 ```
@@ -461,7 +461,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dxTransitVirtualInterface.DxTransitVirtualInterface.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dxtransitvirtualinterface"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dxtransitvirtualinterface"
 
 dxtransitvirtualinterface.DxTransitVirtualInterface_IsConstruct(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dxTransitVirtualInterface.DxTransitVirtualInterface.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dxtransitvirtualinterface"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dxtransitvirtualinterface"
 
 dxtransitvirtualinterface.DxTransitVirtualInterface_IsTerraformElement(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ dxtransitvirtualinterface.DxTransitVirtualInterface_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.dxTransitVirtualInterface.DxTransitVirtualInterface.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dxtransitvirtualinterface"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dxtransitvirtualinterface"
 
 dxtransitvirtualinterface.DxTransitVirtualInterface_IsTerraformResource(x interface{}) *bool
 ```
@@ -521,7 +521,7 @@ dxtransitvirtualinterface.DxTransitVirtualInterface_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dxTransitVirtualInterface.DxTransitVirtualInterface.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dxtransitvirtualinterface"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dxtransitvirtualinterface"
 
 dxtransitvirtualinterface.DxTransitVirtualInterface_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -550,7 +550,7 @@ The construct id used in the generated config for the DxTransitVirtualInterface 
 
 The id of the existing DxTransitVirtualInterface that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dx_transit_virtual_interface#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dx_transit_virtual_interface#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1146,7 +1146,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dxTransitVirtualInterface.DxTransitVirtualInterfaceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dxtransitvirtualinterface"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dxtransitvirtualinterface"
 
 &dxtransitvirtualinterface.DxTransitVirtualInterfaceConfig {
 	Connection: interface{},
@@ -1171,7 +1171,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dxtransitvirtualinterf
 	SitelinkEnabled: interface{},
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.dxTransitVirtualInterface.DxTransitVirtualInterfaceTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.dxTransitVirtualInterface.DxTransitVirtualInterfaceTimeouts,
 }
 ```
 
@@ -1186,21 +1186,21 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dxtransitvirtualinterf
 | <code><a href="#@cdktn/provider-aws.dxTransitVirtualInterface.DxTransitVirtualInterfaceConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dxTransitVirtualInterface.DxTransitVirtualInterfaceConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dxTransitVirtualInterface.DxTransitVirtualInterfaceConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dxTransitVirtualInterface.DxTransitVirtualInterfaceConfig.property.addressFamily">AddressFamily</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dx_transit_virtual_interface#address_family DxTransitVirtualInterface#address_family}. |
-| <code><a href="#@cdktn/provider-aws.dxTransitVirtualInterface.DxTransitVirtualInterfaceConfig.property.bgpAsn">BgpAsn</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dx_transit_virtual_interface#bgp_asn DxTransitVirtualInterface#bgp_asn}. |
-| <code><a href="#@cdktn/provider-aws.dxTransitVirtualInterface.DxTransitVirtualInterfaceConfig.property.connectionId">ConnectionId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dx_transit_virtual_interface#connection_id DxTransitVirtualInterface#connection_id}. |
-| <code><a href="#@cdktn/provider-aws.dxTransitVirtualInterface.DxTransitVirtualInterfaceConfig.property.dxGatewayId">DxGatewayId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dx_transit_virtual_interface#dx_gateway_id DxTransitVirtualInterface#dx_gateway_id}. |
-| <code><a href="#@cdktn/provider-aws.dxTransitVirtualInterface.DxTransitVirtualInterfaceConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dx_transit_virtual_interface#name DxTransitVirtualInterface#name}. |
-| <code><a href="#@cdktn/provider-aws.dxTransitVirtualInterface.DxTransitVirtualInterfaceConfig.property.vlan">Vlan</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dx_transit_virtual_interface#vlan DxTransitVirtualInterface#vlan}. |
-| <code><a href="#@cdktn/provider-aws.dxTransitVirtualInterface.DxTransitVirtualInterfaceConfig.property.amazonAddress">AmazonAddress</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dx_transit_virtual_interface#amazon_address DxTransitVirtualInterface#amazon_address}. |
-| <code><a href="#@cdktn/provider-aws.dxTransitVirtualInterface.DxTransitVirtualInterfaceConfig.property.bgpAuthKey">BgpAuthKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dx_transit_virtual_interface#bgp_auth_key DxTransitVirtualInterface#bgp_auth_key}. |
-| <code><a href="#@cdktn/provider-aws.dxTransitVirtualInterface.DxTransitVirtualInterfaceConfig.property.customerAddress">CustomerAddress</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dx_transit_virtual_interface#customer_address DxTransitVirtualInterface#customer_address}. |
-| <code><a href="#@cdktn/provider-aws.dxTransitVirtualInterface.DxTransitVirtualInterfaceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dx_transit_virtual_interface#id DxTransitVirtualInterface#id}. |
-| <code><a href="#@cdktn/provider-aws.dxTransitVirtualInterface.DxTransitVirtualInterfaceConfig.property.mtu">Mtu</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dx_transit_virtual_interface#mtu DxTransitVirtualInterface#mtu}. |
+| <code><a href="#@cdktn/provider-aws.dxTransitVirtualInterface.DxTransitVirtualInterfaceConfig.property.addressFamily">AddressFamily</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dx_transit_virtual_interface#address_family DxTransitVirtualInterface#address_family}. |
+| <code><a href="#@cdktn/provider-aws.dxTransitVirtualInterface.DxTransitVirtualInterfaceConfig.property.bgpAsn">BgpAsn</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dx_transit_virtual_interface#bgp_asn DxTransitVirtualInterface#bgp_asn}. |
+| <code><a href="#@cdktn/provider-aws.dxTransitVirtualInterface.DxTransitVirtualInterfaceConfig.property.connectionId">ConnectionId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dx_transit_virtual_interface#connection_id DxTransitVirtualInterface#connection_id}. |
+| <code><a href="#@cdktn/provider-aws.dxTransitVirtualInterface.DxTransitVirtualInterfaceConfig.property.dxGatewayId">DxGatewayId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dx_transit_virtual_interface#dx_gateway_id DxTransitVirtualInterface#dx_gateway_id}. |
+| <code><a href="#@cdktn/provider-aws.dxTransitVirtualInterface.DxTransitVirtualInterfaceConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dx_transit_virtual_interface#name DxTransitVirtualInterface#name}. |
+| <code><a href="#@cdktn/provider-aws.dxTransitVirtualInterface.DxTransitVirtualInterfaceConfig.property.vlan">Vlan</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dx_transit_virtual_interface#vlan DxTransitVirtualInterface#vlan}. |
+| <code><a href="#@cdktn/provider-aws.dxTransitVirtualInterface.DxTransitVirtualInterfaceConfig.property.amazonAddress">AmazonAddress</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dx_transit_virtual_interface#amazon_address DxTransitVirtualInterface#amazon_address}. |
+| <code><a href="#@cdktn/provider-aws.dxTransitVirtualInterface.DxTransitVirtualInterfaceConfig.property.bgpAuthKey">BgpAuthKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dx_transit_virtual_interface#bgp_auth_key DxTransitVirtualInterface#bgp_auth_key}. |
+| <code><a href="#@cdktn/provider-aws.dxTransitVirtualInterface.DxTransitVirtualInterfaceConfig.property.customerAddress">CustomerAddress</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dx_transit_virtual_interface#customer_address DxTransitVirtualInterface#customer_address}. |
+| <code><a href="#@cdktn/provider-aws.dxTransitVirtualInterface.DxTransitVirtualInterfaceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dx_transit_virtual_interface#id DxTransitVirtualInterface#id}. |
+| <code><a href="#@cdktn/provider-aws.dxTransitVirtualInterface.DxTransitVirtualInterfaceConfig.property.mtu">Mtu</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dx_transit_virtual_interface#mtu DxTransitVirtualInterface#mtu}. |
 | <code><a href="#@cdktn/provider-aws.dxTransitVirtualInterface.DxTransitVirtualInterfaceConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.dxTransitVirtualInterface.DxTransitVirtualInterfaceConfig.property.sitelinkEnabled">SitelinkEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dx_transit_virtual_interface#sitelink_enabled DxTransitVirtualInterface#sitelink_enabled}. |
-| <code><a href="#@cdktn/provider-aws.dxTransitVirtualInterface.DxTransitVirtualInterfaceConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dx_transit_virtual_interface#tags DxTransitVirtualInterface#tags}. |
-| <code><a href="#@cdktn/provider-aws.dxTransitVirtualInterface.DxTransitVirtualInterfaceConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dx_transit_virtual_interface#tags_all DxTransitVirtualInterface#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.dxTransitVirtualInterface.DxTransitVirtualInterfaceConfig.property.sitelinkEnabled">SitelinkEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dx_transit_virtual_interface#sitelink_enabled DxTransitVirtualInterface#sitelink_enabled}. |
+| <code><a href="#@cdktn/provider-aws.dxTransitVirtualInterface.DxTransitVirtualInterfaceConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dx_transit_virtual_interface#tags DxTransitVirtualInterface#tags}. |
+| <code><a href="#@cdktn/provider-aws.dxTransitVirtualInterface.DxTransitVirtualInterfaceConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dx_transit_virtual_interface#tags_all DxTransitVirtualInterface#tags_all}. |
 | <code><a href="#@cdktn/provider-aws.dxTransitVirtualInterface.DxTransitVirtualInterfaceConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.dxTransitVirtualInterface.DxTransitVirtualInterfaceTimeouts">DxTransitVirtualInterfaceTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1283,7 +1283,7 @@ AddressFamily *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dx_transit_virtual_interface#address_family DxTransitVirtualInterface#address_family}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dx_transit_virtual_interface#address_family DxTransitVirtualInterface#address_family}.
 
 ---
 
@@ -1295,7 +1295,7 @@ BgpAsn *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dx_transit_virtual_interface#bgp_asn DxTransitVirtualInterface#bgp_asn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dx_transit_virtual_interface#bgp_asn DxTransitVirtualInterface#bgp_asn}.
 
 ---
 
@@ -1307,7 +1307,7 @@ ConnectionId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dx_transit_virtual_interface#connection_id DxTransitVirtualInterface#connection_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dx_transit_virtual_interface#connection_id DxTransitVirtualInterface#connection_id}.
 
 ---
 
@@ -1319,7 +1319,7 @@ DxGatewayId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dx_transit_virtual_interface#dx_gateway_id DxTransitVirtualInterface#dx_gateway_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dx_transit_virtual_interface#dx_gateway_id DxTransitVirtualInterface#dx_gateway_id}.
 
 ---
 
@@ -1331,7 +1331,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dx_transit_virtual_interface#name DxTransitVirtualInterface#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dx_transit_virtual_interface#name DxTransitVirtualInterface#name}.
 
 ---
 
@@ -1343,7 +1343,7 @@ Vlan *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dx_transit_virtual_interface#vlan DxTransitVirtualInterface#vlan}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dx_transit_virtual_interface#vlan DxTransitVirtualInterface#vlan}.
 
 ---
 
@@ -1355,7 +1355,7 @@ AmazonAddress *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dx_transit_virtual_interface#amazon_address DxTransitVirtualInterface#amazon_address}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dx_transit_virtual_interface#amazon_address DxTransitVirtualInterface#amazon_address}.
 
 ---
 
@@ -1367,7 +1367,7 @@ BgpAuthKey *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dx_transit_virtual_interface#bgp_auth_key DxTransitVirtualInterface#bgp_auth_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dx_transit_virtual_interface#bgp_auth_key DxTransitVirtualInterface#bgp_auth_key}.
 
 ---
 
@@ -1379,7 +1379,7 @@ CustomerAddress *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dx_transit_virtual_interface#customer_address DxTransitVirtualInterface#customer_address}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dx_transit_virtual_interface#customer_address DxTransitVirtualInterface#customer_address}.
 
 ---
 
@@ -1391,7 +1391,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dx_transit_virtual_interface#id DxTransitVirtualInterface#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dx_transit_virtual_interface#id DxTransitVirtualInterface#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1406,7 +1406,7 @@ Mtu *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dx_transit_virtual_interface#mtu DxTransitVirtualInterface#mtu}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dx_transit_virtual_interface#mtu DxTransitVirtualInterface#mtu}.
 
 ---
 
@@ -1420,7 +1420,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dx_transit_virtual_interface#region DxTransitVirtualInterface#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dx_transit_virtual_interface#region DxTransitVirtualInterface#region}
 
 ---
 
@@ -1432,7 +1432,7 @@ SitelinkEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dx_transit_virtual_interface#sitelink_enabled DxTransitVirtualInterface#sitelink_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dx_transit_virtual_interface#sitelink_enabled DxTransitVirtualInterface#sitelink_enabled}.
 
 ---
 
@@ -1444,7 +1444,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dx_transit_virtual_interface#tags DxTransitVirtualInterface#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dx_transit_virtual_interface#tags DxTransitVirtualInterface#tags}.
 
 ---
 
@@ -1456,7 +1456,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dx_transit_virtual_interface#tags_all DxTransitVirtualInterface#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dx_transit_virtual_interface#tags_all DxTransitVirtualInterface#tags_all}.
 
 ---
 
@@ -1470,7 +1470,7 @@ Timeouts DxTransitVirtualInterfaceTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dx_transit_virtual_interface#timeouts DxTransitVirtualInterface#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dx_transit_virtual_interface#timeouts DxTransitVirtualInterface#timeouts}
 
 ---
 
@@ -1479,7 +1479,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dxTransitVirtualInterface.DxTransitVirtualInterfaceTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dxtransitvirtualinterface"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dxtransitvirtualinterface"
 
 &dxtransitvirtualinterface.DxTransitVirtualInterfaceTimeouts {
 	Create: *string,
@@ -1492,9 +1492,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dxtransitvirtualinterf
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.dxTransitVirtualInterface.DxTransitVirtualInterfaceTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dx_transit_virtual_interface#create DxTransitVirtualInterface#create}. |
-| <code><a href="#@cdktn/provider-aws.dxTransitVirtualInterface.DxTransitVirtualInterfaceTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dx_transit_virtual_interface#delete DxTransitVirtualInterface#delete}. |
-| <code><a href="#@cdktn/provider-aws.dxTransitVirtualInterface.DxTransitVirtualInterfaceTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dx_transit_virtual_interface#update DxTransitVirtualInterface#update}. |
+| <code><a href="#@cdktn/provider-aws.dxTransitVirtualInterface.DxTransitVirtualInterfaceTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dx_transit_virtual_interface#create DxTransitVirtualInterface#create}. |
+| <code><a href="#@cdktn/provider-aws.dxTransitVirtualInterface.DxTransitVirtualInterfaceTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dx_transit_virtual_interface#delete DxTransitVirtualInterface#delete}. |
+| <code><a href="#@cdktn/provider-aws.dxTransitVirtualInterface.DxTransitVirtualInterfaceTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dx_transit_virtual_interface#update DxTransitVirtualInterface#update}. |
 
 ---
 
@@ -1506,7 +1506,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dx_transit_virtual_interface#create DxTransitVirtualInterface#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dx_transit_virtual_interface#create DxTransitVirtualInterface#create}.
 
 ---
 
@@ -1518,7 +1518,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dx_transit_virtual_interface#delete DxTransitVirtualInterface#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dx_transit_virtual_interface#delete DxTransitVirtualInterface#delete}.
 
 ---
 
@@ -1530,7 +1530,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dx_transit_virtual_interface#update DxTransitVirtualInterface#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dx_transit_virtual_interface#update DxTransitVirtualInterface#update}.
 
 ---
 
@@ -1541,7 +1541,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dxTransitVirtualInterface.DxTransitVirtualInterfaceTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dxtransitvirtualinterface"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dxtransitvirtualinterface"
 
 dxtransitvirtualinterface.NewDxTransitVirtualInterfaceTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DxTransitVirtualInterfaceTimeoutsOutputReference
 ```

@@ -4,12 +4,12 @@
 
 ### DatasyncLocationNfs <a name="DatasyncLocationNfs" id="@cdktn/provider-aws.datasyncLocationNfs.DatasyncLocationNfs"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/datasync_location_nfs aws_datasync_location_nfs}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/datasync_location_nfs aws_datasync_location_nfs}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.datasyncLocationNfs.DatasyncLocationNfs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/datasynclocationnfs"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/datasynclocationnfs"
 
 datasynclocationnfs.NewDatasyncLocationNfs(scope Construct, id *string, config DatasyncLocationNfsConfig) DatasyncLocationNfs
 ```
@@ -439,7 +439,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.datasyncLocationNfs.DatasyncLocationNfs.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/datasynclocationnfs"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/datasynclocationnfs"
 
 datasynclocationnfs.DatasyncLocationNfs_IsConstruct(x interface{}) *bool
 ```
@@ -471,7 +471,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.datasyncLocationNfs.DatasyncLocationNfs.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/datasynclocationnfs"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/datasynclocationnfs"
 
 datasynclocationnfs.DatasyncLocationNfs_IsTerraformElement(x interface{}) *bool
 ```
@@ -485,7 +485,7 @@ datasynclocationnfs.DatasyncLocationNfs_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.datasyncLocationNfs.DatasyncLocationNfs.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/datasynclocationnfs"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/datasynclocationnfs"
 
 datasynclocationnfs.DatasyncLocationNfs_IsTerraformResource(x interface{}) *bool
 ```
@@ -499,7 +499,7 @@ datasynclocationnfs.DatasyncLocationNfs_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.datasyncLocationNfs.DatasyncLocationNfs.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/datasynclocationnfs"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/datasynclocationnfs"
 
 datasynclocationnfs.DatasyncLocationNfs_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -528,7 +528,7 @@ The construct id used in the generated config for the DatasyncLocationNfs to imp
 
 The id of the existing DatasyncLocationNfs that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/datasync_location_nfs#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/datasync_location_nfs#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -926,7 +926,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.datasyncLocationNfs.DatasyncLocationNfsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/datasynclocationnfs"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/datasynclocationnfs"
 
 &datasynclocationnfs.DatasyncLocationNfsConfig {
 	Connection: interface{},
@@ -936,11 +936,11 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/datasynclocationnfs"
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	OnPremConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.datasyncLocationNfs.DatasyncLocationNfsOnPremConfig,
+	OnPremConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.datasyncLocationNfs.DatasyncLocationNfsOnPremConfig,
 	ServerHostname: *string,
 	Subdirectory: *string,
 	Id: *string,
-	MountOptions: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.datasyncLocationNfs.DatasyncLocationNfsMountOptions,
+	MountOptions: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.datasyncLocationNfs.DatasyncLocationNfsMountOptions,
 	Region: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
@@ -959,13 +959,13 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/datasynclocationnfs"
 | <code><a href="#@cdktn/provider-aws.datasyncLocationNfs.DatasyncLocationNfsConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.datasyncLocationNfs.DatasyncLocationNfsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.datasyncLocationNfs.DatasyncLocationNfsConfig.property.onPremConfig">OnPremConfig</a></code> | <code><a href="#@cdktn/provider-aws.datasyncLocationNfs.DatasyncLocationNfsOnPremConfig">DatasyncLocationNfsOnPremConfig</a></code> | on_prem_config block. |
-| <code><a href="#@cdktn/provider-aws.datasyncLocationNfs.DatasyncLocationNfsConfig.property.serverHostname">ServerHostname</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/datasync_location_nfs#server_hostname DatasyncLocationNfs#server_hostname}. |
-| <code><a href="#@cdktn/provider-aws.datasyncLocationNfs.DatasyncLocationNfsConfig.property.subdirectory">Subdirectory</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/datasync_location_nfs#subdirectory DatasyncLocationNfs#subdirectory}. |
-| <code><a href="#@cdktn/provider-aws.datasyncLocationNfs.DatasyncLocationNfsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/datasync_location_nfs#id DatasyncLocationNfs#id}. |
+| <code><a href="#@cdktn/provider-aws.datasyncLocationNfs.DatasyncLocationNfsConfig.property.serverHostname">ServerHostname</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/datasync_location_nfs#server_hostname DatasyncLocationNfs#server_hostname}. |
+| <code><a href="#@cdktn/provider-aws.datasyncLocationNfs.DatasyncLocationNfsConfig.property.subdirectory">Subdirectory</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/datasync_location_nfs#subdirectory DatasyncLocationNfs#subdirectory}. |
+| <code><a href="#@cdktn/provider-aws.datasyncLocationNfs.DatasyncLocationNfsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/datasync_location_nfs#id DatasyncLocationNfs#id}. |
 | <code><a href="#@cdktn/provider-aws.datasyncLocationNfs.DatasyncLocationNfsConfig.property.mountOptions">MountOptions</a></code> | <code><a href="#@cdktn/provider-aws.datasyncLocationNfs.DatasyncLocationNfsMountOptions">DatasyncLocationNfsMountOptions</a></code> | mount_options block. |
 | <code><a href="#@cdktn/provider-aws.datasyncLocationNfs.DatasyncLocationNfsConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.datasyncLocationNfs.DatasyncLocationNfsConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/datasync_location_nfs#tags DatasyncLocationNfs#tags}. |
-| <code><a href="#@cdktn/provider-aws.datasyncLocationNfs.DatasyncLocationNfsConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/datasync_location_nfs#tags_all DatasyncLocationNfs#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.datasyncLocationNfs.DatasyncLocationNfsConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/datasync_location_nfs#tags DatasyncLocationNfs#tags}. |
+| <code><a href="#@cdktn/provider-aws.datasyncLocationNfs.DatasyncLocationNfsConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/datasync_location_nfs#tags_all DatasyncLocationNfs#tags_all}. |
 
 ---
 
@@ -1049,7 +1049,7 @@ OnPremConfig DatasyncLocationNfsOnPremConfig
 
 on_prem_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/datasync_location_nfs#on_prem_config DatasyncLocationNfs#on_prem_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/datasync_location_nfs#on_prem_config DatasyncLocationNfs#on_prem_config}
 
 ---
 
@@ -1061,7 +1061,7 @@ ServerHostname *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/datasync_location_nfs#server_hostname DatasyncLocationNfs#server_hostname}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/datasync_location_nfs#server_hostname DatasyncLocationNfs#server_hostname}.
 
 ---
 
@@ -1073,7 +1073,7 @@ Subdirectory *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/datasync_location_nfs#subdirectory DatasyncLocationNfs#subdirectory}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/datasync_location_nfs#subdirectory DatasyncLocationNfs#subdirectory}.
 
 ---
 
@@ -1085,7 +1085,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/datasync_location_nfs#id DatasyncLocationNfs#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/datasync_location_nfs#id DatasyncLocationNfs#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1102,7 +1102,7 @@ MountOptions DatasyncLocationNfsMountOptions
 
 mount_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/datasync_location_nfs#mount_options DatasyncLocationNfs#mount_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/datasync_location_nfs#mount_options DatasyncLocationNfs#mount_options}
 
 ---
 
@@ -1116,7 +1116,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/datasync_location_nfs#region DatasyncLocationNfs#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/datasync_location_nfs#region DatasyncLocationNfs#region}
 
 ---
 
@@ -1128,7 +1128,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/datasync_location_nfs#tags DatasyncLocationNfs#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/datasync_location_nfs#tags DatasyncLocationNfs#tags}.
 
 ---
 
@@ -1140,7 +1140,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/datasync_location_nfs#tags_all DatasyncLocationNfs#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/datasync_location_nfs#tags_all DatasyncLocationNfs#tags_all}.
 
 ---
 
@@ -1149,7 +1149,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.datasyncLocationNfs.DatasyncLocationNfsMountOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/datasynclocationnfs"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/datasynclocationnfs"
 
 &datasynclocationnfs.DatasyncLocationNfsMountOptions {
 	Version: *string,
@@ -1160,7 +1160,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/datasynclocationnfs"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.datasyncLocationNfs.DatasyncLocationNfsMountOptions.property.version">Version</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/datasync_location_nfs#version DatasyncLocationNfs#version}. |
+| <code><a href="#@cdktn/provider-aws.datasyncLocationNfs.DatasyncLocationNfsMountOptions.property.version">Version</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/datasync_location_nfs#version DatasyncLocationNfs#version}. |
 
 ---
 
@@ -1172,7 +1172,7 @@ Version *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/datasync_location_nfs#version DatasyncLocationNfs#version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/datasync_location_nfs#version DatasyncLocationNfs#version}.
 
 ---
 
@@ -1181,7 +1181,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.datasyncLocationNfs.DatasyncLocationNfsOnPremConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/datasynclocationnfs"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/datasynclocationnfs"
 
 &datasynclocationnfs.DatasyncLocationNfsOnPremConfig {
 	AgentArns: *[]*string,
@@ -1192,7 +1192,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/datasynclocationnfs"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.datasyncLocationNfs.DatasyncLocationNfsOnPremConfig.property.agentArns">AgentArns</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/datasync_location_nfs#agent_arns DatasyncLocationNfs#agent_arns}. |
+| <code><a href="#@cdktn/provider-aws.datasyncLocationNfs.DatasyncLocationNfsOnPremConfig.property.agentArns">AgentArns</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/datasync_location_nfs#agent_arns DatasyncLocationNfs#agent_arns}. |
 
 ---
 
@@ -1204,7 +1204,7 @@ AgentArns *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/datasync_location_nfs#agent_arns DatasyncLocationNfs#agent_arns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/datasync_location_nfs#agent_arns DatasyncLocationNfs#agent_arns}.
 
 ---
 
@@ -1215,7 +1215,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.datasyncLocationNfs.DatasyncLocationNfsMountOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/datasynclocationnfs"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/datasynclocationnfs"
 
 datasynclocationnfs.NewDatasyncLocationNfsMountOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DatasyncLocationNfsMountOptionsOutputReference
 ```
@@ -1493,7 +1493,7 @@ func InternalValue() DatasyncLocationNfsMountOptions
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.datasyncLocationNfs.DatasyncLocationNfsOnPremConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/datasynclocationnfs"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/datasynclocationnfs"
 
 datasynclocationnfs.NewDatasyncLocationNfsOnPremConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DatasyncLocationNfsOnPremConfigOutputReference
 ```

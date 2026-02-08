@@ -4,12 +4,12 @@
 
 ### DataAwsVerifiedpermissionsPolicyStore <a name="DataAwsVerifiedpermissionsPolicyStore" id="@cdktn/provider-aws.dataAwsVerifiedpermissionsPolicyStore.DataAwsVerifiedpermissionsPolicyStore"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/verifiedpermissions_policy_store aws_verifiedpermissions_policy_store}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/verifiedpermissions_policy_store aws_verifiedpermissions_policy_store}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsVerifiedpermissionsPolicyStore.DataAwsVerifiedpermissionsPolicyStore.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsverifiedpermissionspolicystore"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsverifiedpermissionspolicystore"
 
 dataawsverifiedpermissionspolicystore.NewDataAwsVerifiedpermissionsPolicyStore(scope Construct, id *string, config DataAwsVerifiedpermissionsPolicyStoreConfig) DataAwsVerifiedpermissionsPolicyStore
 ```
@@ -283,7 +283,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsVerifiedpermissionsPolicyStore.DataAwsVerifiedpermissionsPolicyStore.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsverifiedpermissionspolicystore"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsverifiedpermissionspolicystore"
 
 dataawsverifiedpermissionspolicystore.DataAwsVerifiedpermissionsPolicyStore_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsVerifiedpermissionsPolicyStore.DataAwsVerifiedpermissionsPolicyStore.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsverifiedpermissionspolicystore"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsverifiedpermissionspolicystore"
 
 dataawsverifiedpermissionspolicystore.DataAwsVerifiedpermissionsPolicyStore_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ dataawsverifiedpermissionspolicystore.DataAwsVerifiedpermissionsPolicyStore_IsTe
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsVerifiedpermissionsPolicyStore.DataAwsVerifiedpermissionsPolicyStore.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsverifiedpermissionspolicystore"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsverifiedpermissionspolicystore"
 
 dataawsverifiedpermissionspolicystore.DataAwsVerifiedpermissionsPolicyStore_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ dataawsverifiedpermissionspolicystore.DataAwsVerifiedpermissionsPolicyStore_IsTe
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsVerifiedpermissionsPolicyStore.DataAwsVerifiedpermissionsPolicyStore.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsverifiedpermissionspolicystore"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsverifiedpermissionspolicystore"
 
 dataawsverifiedpermissionspolicystore.DataAwsVerifiedpermissionsPolicyStore_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -372,7 +372,7 @@ The construct id used in the generated config for the DataAwsVerifiedpermissions
 
 The id of the existing DataAwsVerifiedpermissionsPolicyStore that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/verifiedpermissions_policy_store#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/verifiedpermissions_policy_store#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -671,7 +671,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsVerifiedpermissionsPolicyStore.DataAwsVerifiedpermissionsPolicyStoreConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsverifiedpermissionspolicystore"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsverifiedpermissionspolicystore"
 
 &dataawsverifiedpermissionspolicystore.DataAwsVerifiedpermissionsPolicyStoreConfig {
 	Connection: interface{},
@@ -697,7 +697,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsverifiedpermiss
 | <code><a href="#@cdktn/provider-aws.dataAwsVerifiedpermissionsPolicyStore.DataAwsVerifiedpermissionsPolicyStoreConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsVerifiedpermissionsPolicyStore.DataAwsVerifiedpermissionsPolicyStoreConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsVerifiedpermissionsPolicyStore.DataAwsVerifiedpermissionsPolicyStoreConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsVerifiedpermissionsPolicyStore.DataAwsVerifiedpermissionsPolicyStoreConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/verifiedpermissions_policy_store#id DataAwsVerifiedpermissionsPolicyStore#id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsVerifiedpermissionsPolicyStore.DataAwsVerifiedpermissionsPolicyStoreConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/verifiedpermissions_policy_store#id DataAwsVerifiedpermissionsPolicyStore#id}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsVerifiedpermissionsPolicyStore.DataAwsVerifiedpermissionsPolicyStoreConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -780,7 +780,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/verifiedpermissions_policy_store#id DataAwsVerifiedpermissionsPolicyStore#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/verifiedpermissions_policy_store#id DataAwsVerifiedpermissionsPolicyStore#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -797,7 +797,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/verifiedpermissions_policy_store#region DataAwsVerifiedpermissionsPolicyStore#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/verifiedpermissions_policy_store#region DataAwsVerifiedpermissionsPolicyStore#region}
 
 ---
 
@@ -806,7 +806,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsVerifiedpermissionsPolicyStore.DataAwsVerifiedpermissionsPolicyStoreValidationSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsverifiedpermissionspolicystore"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsverifiedpermissionspolicystore"
 
 &dataawsverifiedpermissionspolicystore.DataAwsVerifiedpermissionsPolicyStoreValidationSettings {
 
@@ -821,7 +821,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsverifiedpermiss
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsVerifiedpermissionsPolicyStore.DataAwsVerifiedpermissionsPolicyStoreValidationSettingsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsverifiedpermissionspolicystore"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsverifiedpermissionspolicystore"
 
 dataawsverifiedpermissionspolicystore.NewDataAwsVerifiedpermissionsPolicyStoreValidationSettingsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsVerifiedpermissionsPolicyStoreValidationSettingsList
 ```
@@ -970,7 +970,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsVerifiedpermissionsPolicyStore.DataAwsVerifiedpermissionsPolicyStoreValidationSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsverifiedpermissionspolicystore"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsverifiedpermissionspolicystore"
 
 dataawsverifiedpermissionspolicystore.NewDataAwsVerifiedpermissionsPolicyStoreValidationSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsVerifiedpermissionsPolicyStoreValidationSettingsOutputReference
 ```

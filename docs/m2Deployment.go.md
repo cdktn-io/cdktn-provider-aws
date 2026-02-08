@@ -4,12 +4,12 @@
 
 ### M2Deployment <a name="M2Deployment" id="@cdktn/provider-aws.m2Deployment.M2Deployment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/m2_deployment aws_m2_deployment}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/m2_deployment aws_m2_deployment}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.m2Deployment.M2Deployment.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/m2deployment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/m2deployment"
 
 m2deployment.NewM2Deployment(scope Construct, id *string, config M2DeploymentConfig) M2Deployment
 ```
@@ -412,7 +412,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.m2Deployment.M2Deployment.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/m2deployment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/m2deployment"
 
 m2deployment.M2Deployment_IsConstruct(x interface{}) *bool
 ```
@@ -444,7 +444,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.m2Deployment.M2Deployment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/m2deployment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/m2deployment"
 
 m2deployment.M2Deployment_IsTerraformElement(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ m2deployment.M2Deployment_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.m2Deployment.M2Deployment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/m2deployment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/m2deployment"
 
 m2deployment.M2Deployment_IsTerraformResource(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ m2deployment.M2Deployment_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.m2Deployment.M2Deployment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/m2deployment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/m2deployment"
 
 m2deployment.M2Deployment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -501,7 +501,7 @@ The construct id used in the generated config for the M2Deployment to import.
 
 The id of the existing M2Deployment that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/m2_deployment#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/m2_deployment#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -877,7 +877,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.m2Deployment.M2DeploymentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/m2deployment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/m2deployment"
 
 &m2deployment.M2DeploymentConfig {
 	Connection: interface{},
@@ -893,7 +893,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/m2deployment"
 	Start: interface{},
 	ForceStop: interface{},
 	Region: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.m2Deployment.M2DeploymentTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.m2Deployment.M2DeploymentTimeouts,
 }
 ```
 
@@ -908,11 +908,11 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/m2deployment"
 | <code><a href="#@cdktn/provider-aws.m2Deployment.M2DeploymentConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.m2Deployment.M2DeploymentConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.m2Deployment.M2DeploymentConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.m2Deployment.M2DeploymentConfig.property.applicationId">ApplicationId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/m2_deployment#application_id M2Deployment#application_id}. |
-| <code><a href="#@cdktn/provider-aws.m2Deployment.M2DeploymentConfig.property.applicationVersion">ApplicationVersion</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/m2_deployment#application_version M2Deployment#application_version}. |
-| <code><a href="#@cdktn/provider-aws.m2Deployment.M2DeploymentConfig.property.environmentId">EnvironmentId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/m2_deployment#environment_id M2Deployment#environment_id}. |
-| <code><a href="#@cdktn/provider-aws.m2Deployment.M2DeploymentConfig.property.start">Start</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/m2_deployment#start M2Deployment#start}. |
-| <code><a href="#@cdktn/provider-aws.m2Deployment.M2DeploymentConfig.property.forceStop">ForceStop</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/m2_deployment#force_stop M2Deployment#force_stop}. |
+| <code><a href="#@cdktn/provider-aws.m2Deployment.M2DeploymentConfig.property.applicationId">ApplicationId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/m2_deployment#application_id M2Deployment#application_id}. |
+| <code><a href="#@cdktn/provider-aws.m2Deployment.M2DeploymentConfig.property.applicationVersion">ApplicationVersion</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/m2_deployment#application_version M2Deployment#application_version}. |
+| <code><a href="#@cdktn/provider-aws.m2Deployment.M2DeploymentConfig.property.environmentId">EnvironmentId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/m2_deployment#environment_id M2Deployment#environment_id}. |
+| <code><a href="#@cdktn/provider-aws.m2Deployment.M2DeploymentConfig.property.start">Start</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/m2_deployment#start M2Deployment#start}. |
+| <code><a href="#@cdktn/provider-aws.m2Deployment.M2DeploymentConfig.property.forceStop">ForceStop</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/m2_deployment#force_stop M2Deployment#force_stop}. |
 | <code><a href="#@cdktn/provider-aws.m2Deployment.M2DeploymentConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktn/provider-aws.m2Deployment.M2DeploymentConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.m2Deployment.M2DeploymentTimeouts">M2DeploymentTimeouts</a></code> | timeouts block. |
 
@@ -996,7 +996,7 @@ ApplicationId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/m2_deployment#application_id M2Deployment#application_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/m2_deployment#application_id M2Deployment#application_id}.
 
 ---
 
@@ -1008,7 +1008,7 @@ ApplicationVersion *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/m2_deployment#application_version M2Deployment#application_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/m2_deployment#application_version M2Deployment#application_version}.
 
 ---
 
@@ -1020,7 +1020,7 @@ EnvironmentId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/m2_deployment#environment_id M2Deployment#environment_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/m2_deployment#environment_id M2Deployment#environment_id}.
 
 ---
 
@@ -1032,7 +1032,7 @@ Start interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/m2_deployment#start M2Deployment#start}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/m2_deployment#start M2Deployment#start}.
 
 ---
 
@@ -1044,7 +1044,7 @@ ForceStop interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/m2_deployment#force_stop M2Deployment#force_stop}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/m2_deployment#force_stop M2Deployment#force_stop}.
 
 ---
 
@@ -1058,7 +1058,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/m2_deployment#region M2Deployment#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/m2_deployment#region M2Deployment#region}
 
 ---
 
@@ -1072,7 +1072,7 @@ Timeouts M2DeploymentTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/m2_deployment#timeouts M2Deployment#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/m2_deployment#timeouts M2Deployment#timeouts}
 
 ---
 
@@ -1081,7 +1081,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.m2Deployment.M2DeploymentTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/m2deployment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/m2deployment"
 
 &m2deployment.M2DeploymentTimeouts {
 	Create: *string,
@@ -1110,7 +1110,7 @@ Create *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/m2_deployment#create M2Deployment#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/m2_deployment#create M2Deployment#create}
 
 ---
 
@@ -1124,7 +1124,7 @@ Delete *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/m2_deployment#delete M2Deployment#delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/m2_deployment#delete M2Deployment#delete}
 
 ---
 
@@ -1138,7 +1138,7 @@ Update *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/m2_deployment#update M2Deployment#update}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/m2_deployment#update M2Deployment#update}
 
 ---
 
@@ -1149,7 +1149,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.m2Deployment.M2DeploymentTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/m2deployment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/m2deployment"
 
 m2deployment.NewM2DeploymentTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) M2DeploymentTimeoutsOutputReference
 ```

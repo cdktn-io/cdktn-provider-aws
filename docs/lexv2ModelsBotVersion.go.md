@@ -4,12 +4,12 @@
 
 ### Lexv2ModelsBotVersion <a name="Lexv2ModelsBotVersion" id="@cdktn/provider-aws.lexv2ModelsBotVersion.Lexv2ModelsBotVersion"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lexv2models_bot_version aws_lexv2models_bot_version}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lexv2models_bot_version aws_lexv2models_bot_version}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lexv2ModelsBotVersion.Lexv2ModelsBotVersion.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lexv2modelsbotversion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/lexv2modelsbotversion"
 
 lexv2modelsbotversion.NewLexv2ModelsBotVersion(scope Construct, id *string, config Lexv2ModelsBotVersionConfig) Lexv2ModelsBotVersion
 ```
@@ -432,7 +432,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.lexv2ModelsBotVersion.Lexv2ModelsBotVersion.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lexv2modelsbotversion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/lexv2modelsbotversion"
 
 lexv2modelsbotversion.Lexv2ModelsBotVersion_IsConstruct(x interface{}) *bool
 ```
@@ -464,7 +464,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.lexv2ModelsBotVersion.Lexv2ModelsBotVersion.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lexv2modelsbotversion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/lexv2modelsbotversion"
 
 lexv2modelsbotversion.Lexv2ModelsBotVersion_IsTerraformElement(x interface{}) *bool
 ```
@@ -478,7 +478,7 @@ lexv2modelsbotversion.Lexv2ModelsBotVersion_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.lexv2ModelsBotVersion.Lexv2ModelsBotVersion.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lexv2modelsbotversion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/lexv2modelsbotversion"
 
 lexv2modelsbotversion.Lexv2ModelsBotVersion_IsTerraformResource(x interface{}) *bool
 ```
@@ -492,7 +492,7 @@ lexv2modelsbotversion.Lexv2ModelsBotVersion_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.lexv2ModelsBotVersion.Lexv2ModelsBotVersion.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lexv2modelsbotversion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/lexv2modelsbotversion"
 
 lexv2modelsbotversion.Lexv2ModelsBotVersion_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -521,7 +521,7 @@ The construct id used in the generated config for the Lexv2ModelsBotVersion to i
 
 The id of the existing Lexv2ModelsBotVersion that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lexv2models_bot_version#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lexv2models_bot_version#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -864,7 +864,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.lexv2ModelsBotVersion.Lexv2ModelsBotVersionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lexv2modelsbotversion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/lexv2modelsbotversion"
 
 &lexv2modelsbotversion.Lexv2ModelsBotVersionConfig {
 	Connection: interface{},
@@ -879,7 +879,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lexv2modelsbotversion"
 	BotVersion: *string,
 	Description: *string,
 	Region: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.lexv2ModelsBotVersion.Lexv2ModelsBotVersionTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.lexv2ModelsBotVersion.Lexv2ModelsBotVersionTimeouts,
 }
 ```
 
@@ -894,10 +894,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lexv2modelsbotversion"
 | <code><a href="#@cdktn/provider-aws.lexv2ModelsBotVersion.Lexv2ModelsBotVersionConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.lexv2ModelsBotVersion.Lexv2ModelsBotVersionConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.lexv2ModelsBotVersion.Lexv2ModelsBotVersionConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsBotVersion.Lexv2ModelsBotVersionConfig.property.botId">BotId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lexv2models_bot_version#bot_id Lexv2ModelsBotVersion#bot_id}. |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsBotVersion.Lexv2ModelsBotVersionConfig.property.localeSpecification">LocaleSpecification</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lexv2models_bot_version#locale_specification Lexv2ModelsBotVersion#locale_specification}. |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsBotVersion.Lexv2ModelsBotVersionConfig.property.botVersion">BotVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lexv2models_bot_version#bot_version Lexv2ModelsBotVersion#bot_version}. |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsBotVersion.Lexv2ModelsBotVersionConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lexv2models_bot_version#description Lexv2ModelsBotVersion#description}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsBotVersion.Lexv2ModelsBotVersionConfig.property.botId">BotId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lexv2models_bot_version#bot_id Lexv2ModelsBotVersion#bot_id}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsBotVersion.Lexv2ModelsBotVersionConfig.property.localeSpecification">LocaleSpecification</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lexv2models_bot_version#locale_specification Lexv2ModelsBotVersion#locale_specification}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsBotVersion.Lexv2ModelsBotVersionConfig.property.botVersion">BotVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lexv2models_bot_version#bot_version Lexv2ModelsBotVersion#bot_version}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsBotVersion.Lexv2ModelsBotVersionConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lexv2models_bot_version#description Lexv2ModelsBotVersion#description}. |
 | <code><a href="#@cdktn/provider-aws.lexv2ModelsBotVersion.Lexv2ModelsBotVersionConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktn/provider-aws.lexv2ModelsBotVersion.Lexv2ModelsBotVersionConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.lexv2ModelsBotVersion.Lexv2ModelsBotVersionTimeouts">Lexv2ModelsBotVersionTimeouts</a></code> | timeouts block. |
 
@@ -981,7 +981,7 @@ BotId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lexv2models_bot_version#bot_id Lexv2ModelsBotVersion#bot_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lexv2models_bot_version#bot_id Lexv2ModelsBotVersion#bot_id}.
 
 ---
 
@@ -993,7 +993,7 @@ LocaleSpecification interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lexv2models_bot_version#locale_specification Lexv2ModelsBotVersion#locale_specification}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lexv2models_bot_version#locale_specification Lexv2ModelsBotVersion#locale_specification}.
 
 ---
 
@@ -1005,7 +1005,7 @@ BotVersion *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lexv2models_bot_version#bot_version Lexv2ModelsBotVersion#bot_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lexv2models_bot_version#bot_version Lexv2ModelsBotVersion#bot_version}.
 
 ---
 
@@ -1017,7 +1017,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lexv2models_bot_version#description Lexv2ModelsBotVersion#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lexv2models_bot_version#description Lexv2ModelsBotVersion#description}.
 
 ---
 
@@ -1031,7 +1031,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lexv2models_bot_version#region Lexv2ModelsBotVersion#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lexv2models_bot_version#region Lexv2ModelsBotVersion#region}
 
 ---
 
@@ -1045,7 +1045,7 @@ Timeouts Lexv2ModelsBotVersionTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lexv2models_bot_version#timeouts Lexv2ModelsBotVersion#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lexv2models_bot_version#timeouts Lexv2ModelsBotVersion#timeouts}
 
 ---
 
@@ -1054,7 +1054,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.lexv2ModelsBotVersion.Lexv2ModelsBotVersionLocaleSpecification.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lexv2modelsbotversion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/lexv2modelsbotversion"
 
 &lexv2modelsbotversion.Lexv2ModelsBotVersionLocaleSpecification {
 	SourceBotVersion: *string,
@@ -1065,7 +1065,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lexv2modelsbotversion"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.lexv2ModelsBotVersion.Lexv2ModelsBotVersionLocaleSpecification.property.sourceBotVersion">SourceBotVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lexv2models_bot_version#source_bot_version Lexv2ModelsBotVersion#source_bot_version}. |
+| <code><a href="#@cdktn/provider-aws.lexv2ModelsBotVersion.Lexv2ModelsBotVersionLocaleSpecification.property.sourceBotVersion">SourceBotVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lexv2models_bot_version#source_bot_version Lexv2ModelsBotVersion#source_bot_version}. |
 
 ---
 
@@ -1077,7 +1077,7 @@ SourceBotVersion *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lexv2models_bot_version#source_bot_version Lexv2ModelsBotVersion#source_bot_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lexv2models_bot_version#source_bot_version Lexv2ModelsBotVersion#source_bot_version}.
 
 ---
 
@@ -1086,7 +1086,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.lexv2ModelsBotVersion.Lexv2ModelsBotVersionTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lexv2modelsbotversion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/lexv2modelsbotversion"
 
 &lexv2modelsbotversion.Lexv2ModelsBotVersionTimeouts {
 	Create: *string,
@@ -1113,7 +1113,7 @@ Create *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lexv2models_bot_version#create Lexv2ModelsBotVersion#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lexv2models_bot_version#create Lexv2ModelsBotVersion#create}
 
 ---
 
@@ -1127,7 +1127,7 @@ Delete *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/lexv2models_bot_version#delete Lexv2ModelsBotVersion#delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/lexv2models_bot_version#delete Lexv2ModelsBotVersion#delete}
 
 ---
 
@@ -1138,7 +1138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lexv2ModelsBotVersion.Lexv2ModelsBotVersionLocaleSpecificationMap.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lexv2modelsbotversion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/lexv2modelsbotversion"
 
 lexv2modelsbotversion.NewLexv2ModelsBotVersionLocaleSpecificationMap(terraformResource IInterpolatingParent, terraformAttribute *string) Lexv2ModelsBotVersionLocaleSpecificationMap
 ```
@@ -1285,7 +1285,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lexv2ModelsBotVersion.Lexv2ModelsBotVersionLocaleSpecificationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lexv2modelsbotversion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/lexv2modelsbotversion"
 
 lexv2modelsbotversion.NewLexv2ModelsBotVersionLocaleSpecificationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectKey *string) Lexv2ModelsBotVersionLocaleSpecificationOutputReference
 ```
@@ -1565,7 +1565,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.lexv2ModelsBotVersion.Lexv2ModelsBotVersionTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/lexv2modelsbotversion"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/lexv2modelsbotversion"
 
 lexv2modelsbotversion.NewLexv2ModelsBotVersionTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Lexv2ModelsBotVersionTimeoutsOutputReference
 ```

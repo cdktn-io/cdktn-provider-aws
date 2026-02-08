@@ -4,12 +4,12 @@
 
 ### Pinpointsmsvoicev2ConfigurationSet <a name="Pinpointsmsvoicev2ConfigurationSet" id="@cdktn/provider-aws.pinpointsmsvoicev2ConfigurationSet.Pinpointsmsvoicev2ConfigurationSet"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/pinpointsmsvoicev2_configuration_set aws_pinpointsmsvoicev2_configuration_set}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/pinpointsmsvoicev2_configuration_set aws_pinpointsmsvoicev2_configuration_set}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.pinpointsmsvoicev2ConfigurationSet.Pinpointsmsvoicev2ConfigurationSet.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/pinpointsmsvoicev2configurationset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/pinpointsmsvoicev2configurationset"
 
 pinpointsmsvoicev2configurationset.NewPinpointsmsvoicev2ConfigurationSet(scope Construct, id *string, config Pinpointsmsvoicev2ConfigurationSetConfig) Pinpointsmsvoicev2ConfigurationSet
 ```
@@ -406,7 +406,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.pinpointsmsvoicev2ConfigurationSet.Pinpointsmsvoicev2ConfigurationSet.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/pinpointsmsvoicev2configurationset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/pinpointsmsvoicev2configurationset"
 
 pinpointsmsvoicev2configurationset.Pinpointsmsvoicev2ConfigurationSet_IsConstruct(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.pinpointsmsvoicev2ConfigurationSet.Pinpointsmsvoicev2ConfigurationSet.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/pinpointsmsvoicev2configurationset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/pinpointsmsvoicev2configurationset"
 
 pinpointsmsvoicev2configurationset.Pinpointsmsvoicev2ConfigurationSet_IsTerraformElement(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ pinpointsmsvoicev2configurationset.Pinpointsmsvoicev2ConfigurationSet_IsTerrafor
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.pinpointsmsvoicev2ConfigurationSet.Pinpointsmsvoicev2ConfigurationSet.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/pinpointsmsvoicev2configurationset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/pinpointsmsvoicev2configurationset"
 
 pinpointsmsvoicev2configurationset.Pinpointsmsvoicev2ConfigurationSet_IsTerraformResource(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ pinpointsmsvoicev2configurationset.Pinpointsmsvoicev2ConfigurationSet_IsTerrafor
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.pinpointsmsvoicev2ConfigurationSet.Pinpointsmsvoicev2ConfigurationSet.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/pinpointsmsvoicev2configurationset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/pinpointsmsvoicev2configurationset"
 
 pinpointsmsvoicev2configurationset.Pinpointsmsvoicev2ConfigurationSet_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -495,7 +495,7 @@ The construct id used in the generated config for the Pinpointsmsvoicev2Configur
 
 The id of the existing Pinpointsmsvoicev2ConfigurationSet that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/pinpointsmsvoicev2_configuration_set#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/pinpointsmsvoicev2_configuration_set#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -838,7 +838,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.pinpointsmsvoicev2ConfigurationSet.Pinpointsmsvoicev2ConfigurationSetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/pinpointsmsvoicev2configurationset"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/pinpointsmsvoicev2configurationset"
 
 &pinpointsmsvoicev2configurationset.Pinpointsmsvoicev2ConfigurationSetConfig {
 	Connection: interface{},
@@ -867,11 +867,11 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/pinpointsmsvoicev2conf
 | <code><a href="#@cdktn/provider-aws.pinpointsmsvoicev2ConfigurationSet.Pinpointsmsvoicev2ConfigurationSetConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.pinpointsmsvoicev2ConfigurationSet.Pinpointsmsvoicev2ConfigurationSetConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.pinpointsmsvoicev2ConfigurationSet.Pinpointsmsvoicev2ConfigurationSetConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.pinpointsmsvoicev2ConfigurationSet.Pinpointsmsvoicev2ConfigurationSetConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/pinpointsmsvoicev2_configuration_set#name Pinpointsmsvoicev2ConfigurationSet#name}. |
-| <code><a href="#@cdktn/provider-aws.pinpointsmsvoicev2ConfigurationSet.Pinpointsmsvoicev2ConfigurationSetConfig.property.defaultMessageType">DefaultMessageType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/pinpointsmsvoicev2_configuration_set#default_message_type Pinpointsmsvoicev2ConfigurationSet#default_message_type}. |
-| <code><a href="#@cdktn/provider-aws.pinpointsmsvoicev2ConfigurationSet.Pinpointsmsvoicev2ConfigurationSetConfig.property.defaultSenderId">DefaultSenderId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/pinpointsmsvoicev2_configuration_set#default_sender_id Pinpointsmsvoicev2ConfigurationSet#default_sender_id}. |
+| <code><a href="#@cdktn/provider-aws.pinpointsmsvoicev2ConfigurationSet.Pinpointsmsvoicev2ConfigurationSetConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/pinpointsmsvoicev2_configuration_set#name Pinpointsmsvoicev2ConfigurationSet#name}. |
+| <code><a href="#@cdktn/provider-aws.pinpointsmsvoicev2ConfigurationSet.Pinpointsmsvoicev2ConfigurationSetConfig.property.defaultMessageType">DefaultMessageType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/pinpointsmsvoicev2_configuration_set#default_message_type Pinpointsmsvoicev2ConfigurationSet#default_message_type}. |
+| <code><a href="#@cdktn/provider-aws.pinpointsmsvoicev2ConfigurationSet.Pinpointsmsvoicev2ConfigurationSetConfig.property.defaultSenderId">DefaultSenderId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/pinpointsmsvoicev2_configuration_set#default_sender_id Pinpointsmsvoicev2ConfigurationSet#default_sender_id}. |
 | <code><a href="#@cdktn/provider-aws.pinpointsmsvoicev2ConfigurationSet.Pinpointsmsvoicev2ConfigurationSetConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.pinpointsmsvoicev2ConfigurationSet.Pinpointsmsvoicev2ConfigurationSetConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/pinpointsmsvoicev2_configuration_set#tags Pinpointsmsvoicev2ConfigurationSet#tags}. |
+| <code><a href="#@cdktn/provider-aws.pinpointsmsvoicev2ConfigurationSet.Pinpointsmsvoicev2ConfigurationSetConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/pinpointsmsvoicev2_configuration_set#tags Pinpointsmsvoicev2ConfigurationSet#tags}. |
 
 ---
 
@@ -953,7 +953,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/pinpointsmsvoicev2_configuration_set#name Pinpointsmsvoicev2ConfigurationSet#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/pinpointsmsvoicev2_configuration_set#name Pinpointsmsvoicev2ConfigurationSet#name}.
 
 ---
 
@@ -965,7 +965,7 @@ DefaultMessageType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/pinpointsmsvoicev2_configuration_set#default_message_type Pinpointsmsvoicev2ConfigurationSet#default_message_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/pinpointsmsvoicev2_configuration_set#default_message_type Pinpointsmsvoicev2ConfigurationSet#default_message_type}.
 
 ---
 
@@ -977,7 +977,7 @@ DefaultSenderId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/pinpointsmsvoicev2_configuration_set#default_sender_id Pinpointsmsvoicev2ConfigurationSet#default_sender_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/pinpointsmsvoicev2_configuration_set#default_sender_id Pinpointsmsvoicev2ConfigurationSet#default_sender_id}.
 
 ---
 
@@ -991,7 +991,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/pinpointsmsvoicev2_configuration_set#region Pinpointsmsvoicev2ConfigurationSet#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/pinpointsmsvoicev2_configuration_set#region Pinpointsmsvoicev2ConfigurationSet#region}
 
 ---
 
@@ -1003,7 +1003,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/pinpointsmsvoicev2_configuration_set#tags Pinpointsmsvoicev2ConfigurationSet#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/pinpointsmsvoicev2_configuration_set#tags Pinpointsmsvoicev2ConfigurationSet#tags}.
 
 ---
 

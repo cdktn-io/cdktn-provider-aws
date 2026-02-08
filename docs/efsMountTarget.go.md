@@ -4,12 +4,12 @@
 
 ### EfsMountTarget <a name="EfsMountTarget" id="@cdktn/provider-aws.efsMountTarget.EfsMountTarget"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/efs_mount_target aws_efs_mount_target}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/efs_mount_target aws_efs_mount_target}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.efsMountTarget.EfsMountTarget.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/efsmounttarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/efsmounttarget"
 
 efsmounttarget.NewEfsMountTarget(scope Construct, id *string, config EfsMountTargetConfig) EfsMountTarget
 ```
@@ -440,7 +440,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.efsMountTarget.EfsMountTarget.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/efsmounttarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/efsmounttarget"
 
 efsmounttarget.EfsMountTarget_IsConstruct(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.efsMountTarget.EfsMountTarget.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/efsmounttarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/efsmounttarget"
 
 efsmounttarget.EfsMountTarget_IsTerraformElement(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ efsmounttarget.EfsMountTarget_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.efsMountTarget.EfsMountTarget.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/efsmounttarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/efsmounttarget"
 
 efsmounttarget.EfsMountTarget_IsTerraformResource(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ efsmounttarget.EfsMountTarget_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.efsMountTarget.EfsMountTarget.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/efsmounttarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/efsmounttarget"
 
 efsmounttarget.EfsMountTarget_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -529,7 +529,7 @@ The construct id used in the generated config for the EfsMountTarget to import.
 
 The id of the existing EfsMountTarget that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/efs_mount_target#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/efs_mount_target#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1004,7 +1004,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.efsMountTarget.EfsMountTargetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/efsmounttarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/efsmounttarget"
 
 &efsmounttarget.EfsMountTargetConfig {
 	Connection: interface{},
@@ -1022,7 +1022,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/efsmounttarget"
 	Ipv6Address: *string,
 	Region: *string,
 	SecurityGroups: *[]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.efsMountTarget.EfsMountTargetTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.efsMountTarget.EfsMountTargetTimeouts,
 }
 ```
 
@@ -1037,14 +1037,14 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/efsmounttarget"
 | <code><a href="#@cdktn/provider-aws.efsMountTarget.EfsMountTargetConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.efsMountTarget.EfsMountTargetConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.efsMountTarget.EfsMountTargetConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.efsMountTarget.EfsMountTargetConfig.property.fileSystemId">FileSystemId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/efs_mount_target#file_system_id EfsMountTarget#file_system_id}. |
-| <code><a href="#@cdktn/provider-aws.efsMountTarget.EfsMountTargetConfig.property.subnetId">SubnetId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/efs_mount_target#subnet_id EfsMountTarget#subnet_id}. |
-| <code><a href="#@cdktn/provider-aws.efsMountTarget.EfsMountTargetConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/efs_mount_target#id EfsMountTarget#id}. |
-| <code><a href="#@cdktn/provider-aws.efsMountTarget.EfsMountTargetConfig.property.ipAddress">IpAddress</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/efs_mount_target#ip_address EfsMountTarget#ip_address}. |
-| <code><a href="#@cdktn/provider-aws.efsMountTarget.EfsMountTargetConfig.property.ipAddressType">IpAddressType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/efs_mount_target#ip_address_type EfsMountTarget#ip_address_type}. |
-| <code><a href="#@cdktn/provider-aws.efsMountTarget.EfsMountTargetConfig.property.ipv6Address">Ipv6Address</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/efs_mount_target#ipv6_address EfsMountTarget#ipv6_address}. |
+| <code><a href="#@cdktn/provider-aws.efsMountTarget.EfsMountTargetConfig.property.fileSystemId">FileSystemId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/efs_mount_target#file_system_id EfsMountTarget#file_system_id}. |
+| <code><a href="#@cdktn/provider-aws.efsMountTarget.EfsMountTargetConfig.property.subnetId">SubnetId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/efs_mount_target#subnet_id EfsMountTarget#subnet_id}. |
+| <code><a href="#@cdktn/provider-aws.efsMountTarget.EfsMountTargetConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/efs_mount_target#id EfsMountTarget#id}. |
+| <code><a href="#@cdktn/provider-aws.efsMountTarget.EfsMountTargetConfig.property.ipAddress">IpAddress</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/efs_mount_target#ip_address EfsMountTarget#ip_address}. |
+| <code><a href="#@cdktn/provider-aws.efsMountTarget.EfsMountTargetConfig.property.ipAddressType">IpAddressType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/efs_mount_target#ip_address_type EfsMountTarget#ip_address_type}. |
+| <code><a href="#@cdktn/provider-aws.efsMountTarget.EfsMountTargetConfig.property.ipv6Address">Ipv6Address</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/efs_mount_target#ipv6_address EfsMountTarget#ipv6_address}. |
 | <code><a href="#@cdktn/provider-aws.efsMountTarget.EfsMountTargetConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.efsMountTarget.EfsMountTargetConfig.property.securityGroups">SecurityGroups</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/efs_mount_target#security_groups EfsMountTarget#security_groups}. |
+| <code><a href="#@cdktn/provider-aws.efsMountTarget.EfsMountTargetConfig.property.securityGroups">SecurityGroups</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/efs_mount_target#security_groups EfsMountTarget#security_groups}. |
 | <code><a href="#@cdktn/provider-aws.efsMountTarget.EfsMountTargetConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.efsMountTarget.EfsMountTargetTimeouts">EfsMountTargetTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1127,7 +1127,7 @@ FileSystemId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/efs_mount_target#file_system_id EfsMountTarget#file_system_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/efs_mount_target#file_system_id EfsMountTarget#file_system_id}.
 
 ---
 
@@ -1139,7 +1139,7 @@ SubnetId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/efs_mount_target#subnet_id EfsMountTarget#subnet_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/efs_mount_target#subnet_id EfsMountTarget#subnet_id}.
 
 ---
 
@@ -1151,7 +1151,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/efs_mount_target#id EfsMountTarget#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/efs_mount_target#id EfsMountTarget#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1166,7 +1166,7 @@ IpAddress *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/efs_mount_target#ip_address EfsMountTarget#ip_address}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/efs_mount_target#ip_address EfsMountTarget#ip_address}.
 
 ---
 
@@ -1178,7 +1178,7 @@ IpAddressType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/efs_mount_target#ip_address_type EfsMountTarget#ip_address_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/efs_mount_target#ip_address_type EfsMountTarget#ip_address_type}.
 
 ---
 
@@ -1190,7 +1190,7 @@ Ipv6Address *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/efs_mount_target#ipv6_address EfsMountTarget#ipv6_address}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/efs_mount_target#ipv6_address EfsMountTarget#ipv6_address}.
 
 ---
 
@@ -1204,7 +1204,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/efs_mount_target#region EfsMountTarget#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/efs_mount_target#region EfsMountTarget#region}
 
 ---
 
@@ -1216,7 +1216,7 @@ SecurityGroups *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/efs_mount_target#security_groups EfsMountTarget#security_groups}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/efs_mount_target#security_groups EfsMountTarget#security_groups}.
 
 ---
 
@@ -1230,7 +1230,7 @@ Timeouts EfsMountTargetTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/efs_mount_target#timeouts EfsMountTarget#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/efs_mount_target#timeouts EfsMountTarget#timeouts}
 
 ---
 
@@ -1239,7 +1239,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.efsMountTarget.EfsMountTargetTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/efsmounttarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/efsmounttarget"
 
 &efsmounttarget.EfsMountTargetTimeouts {
 	Create: *string,
@@ -1251,8 +1251,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/efsmounttarget"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.efsMountTarget.EfsMountTargetTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/efs_mount_target#create EfsMountTarget#create}. |
-| <code><a href="#@cdktn/provider-aws.efsMountTarget.EfsMountTargetTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/efs_mount_target#delete EfsMountTarget#delete}. |
+| <code><a href="#@cdktn/provider-aws.efsMountTarget.EfsMountTargetTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/efs_mount_target#create EfsMountTarget#create}. |
+| <code><a href="#@cdktn/provider-aws.efsMountTarget.EfsMountTargetTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/efs_mount_target#delete EfsMountTarget#delete}. |
 
 ---
 
@@ -1264,7 +1264,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/efs_mount_target#create EfsMountTarget#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/efs_mount_target#create EfsMountTarget#create}.
 
 ---
 
@@ -1276,7 +1276,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/efs_mount_target#delete EfsMountTarget#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/efs_mount_target#delete EfsMountTarget#delete}.
 
 ---
 
@@ -1287,7 +1287,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.efsMountTarget.EfsMountTargetTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/efsmounttarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/efsmounttarget"
 
 efsmounttarget.NewEfsMountTargetTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EfsMountTargetTimeoutsOutputReference
 ```

@@ -4,12 +4,12 @@
 
 ### CodebuildSourceCredential <a name="CodebuildSourceCredential" id="@cdktn/provider-aws.codebuildSourceCredential.CodebuildSourceCredential"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/codebuild_source_credential aws_codebuild_source_credential}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/codebuild_source_credential aws_codebuild_source_credential}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.codebuildSourceCredential.CodebuildSourceCredential.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/codebuildsourcecredential"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/codebuildsourcecredential"
 
 codebuildsourcecredential.NewCodebuildSourceCredential(scope Construct, id *string, config CodebuildSourceCredentialConfig) CodebuildSourceCredential
 ```
@@ -399,7 +399,7 @@ func ResetUserName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.codebuildSourceCredential.CodebuildSourceCredential.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/codebuildsourcecredential"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/codebuildsourcecredential"
 
 codebuildsourcecredential.CodebuildSourceCredential_IsConstruct(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.codebuildSourceCredential.CodebuildSourceCredential.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/codebuildsourcecredential"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/codebuildsourcecredential"
 
 codebuildsourcecredential.CodebuildSourceCredential_IsTerraformElement(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ codebuildsourcecredential.CodebuildSourceCredential_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.codebuildSourceCredential.CodebuildSourceCredential.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/codebuildsourcecredential"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/codebuildsourcecredential"
 
 codebuildsourcecredential.CodebuildSourceCredential_IsTerraformResource(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ codebuildsourcecredential.CodebuildSourceCredential_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.codebuildSourceCredential.CodebuildSourceCredential.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/codebuildsourcecredential"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/codebuildsourcecredential"
 
 codebuildsourcecredential.CodebuildSourceCredential_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -488,7 +488,7 @@ The construct id used in the generated config for the CodebuildSourceCredential 
 
 The id of the existing CodebuildSourceCredential that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/codebuild_source_credential#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/codebuild_source_credential#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -831,7 +831,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.codebuildSourceCredential.CodebuildSourceCredentialConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/codebuildsourcecredential"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/codebuildsourcecredential"
 
 &codebuildsourcecredential.CodebuildSourceCredentialConfig {
 	Connection: interface{},
@@ -861,12 +861,12 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/codebuildsourcecredent
 | <code><a href="#@cdktn/provider-aws.codebuildSourceCredential.CodebuildSourceCredentialConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.codebuildSourceCredential.CodebuildSourceCredentialConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.codebuildSourceCredential.CodebuildSourceCredentialConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.codebuildSourceCredential.CodebuildSourceCredentialConfig.property.authType">AuthType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/codebuild_source_credential#auth_type CodebuildSourceCredential#auth_type}. |
-| <code><a href="#@cdktn/provider-aws.codebuildSourceCredential.CodebuildSourceCredentialConfig.property.serverType">ServerType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/codebuild_source_credential#server_type CodebuildSourceCredential#server_type}. |
-| <code><a href="#@cdktn/provider-aws.codebuildSourceCredential.CodebuildSourceCredentialConfig.property.token">Token</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/codebuild_source_credential#token CodebuildSourceCredential#token}. |
-| <code><a href="#@cdktn/provider-aws.codebuildSourceCredential.CodebuildSourceCredentialConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/codebuild_source_credential#id CodebuildSourceCredential#id}. |
+| <code><a href="#@cdktn/provider-aws.codebuildSourceCredential.CodebuildSourceCredentialConfig.property.authType">AuthType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/codebuild_source_credential#auth_type CodebuildSourceCredential#auth_type}. |
+| <code><a href="#@cdktn/provider-aws.codebuildSourceCredential.CodebuildSourceCredentialConfig.property.serverType">ServerType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/codebuild_source_credential#server_type CodebuildSourceCredential#server_type}. |
+| <code><a href="#@cdktn/provider-aws.codebuildSourceCredential.CodebuildSourceCredentialConfig.property.token">Token</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/codebuild_source_credential#token CodebuildSourceCredential#token}. |
+| <code><a href="#@cdktn/provider-aws.codebuildSourceCredential.CodebuildSourceCredentialConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/codebuild_source_credential#id CodebuildSourceCredential#id}. |
 | <code><a href="#@cdktn/provider-aws.codebuildSourceCredential.CodebuildSourceCredentialConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.codebuildSourceCredential.CodebuildSourceCredentialConfig.property.userName">UserName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/codebuild_source_credential#user_name CodebuildSourceCredential#user_name}. |
+| <code><a href="#@cdktn/provider-aws.codebuildSourceCredential.CodebuildSourceCredentialConfig.property.userName">UserName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/codebuild_source_credential#user_name CodebuildSourceCredential#user_name}. |
 
 ---
 
@@ -948,7 +948,7 @@ AuthType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/codebuild_source_credential#auth_type CodebuildSourceCredential#auth_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/codebuild_source_credential#auth_type CodebuildSourceCredential#auth_type}.
 
 ---
 
@@ -960,7 +960,7 @@ ServerType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/codebuild_source_credential#server_type CodebuildSourceCredential#server_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/codebuild_source_credential#server_type CodebuildSourceCredential#server_type}.
 
 ---
 
@@ -972,7 +972,7 @@ Token *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/codebuild_source_credential#token CodebuildSourceCredential#token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/codebuild_source_credential#token CodebuildSourceCredential#token}.
 
 ---
 
@@ -984,7 +984,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/codebuild_source_credential#id CodebuildSourceCredential#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/codebuild_source_credential#id CodebuildSourceCredential#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1001,7 +1001,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/codebuild_source_credential#region CodebuildSourceCredential#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/codebuild_source_credential#region CodebuildSourceCredential#region}
 
 ---
 
@@ -1013,7 +1013,7 @@ UserName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/codebuild_source_credential#user_name CodebuildSourceCredential#user_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/codebuild_source_credential#user_name CodebuildSourceCredential#user_name}.
 
 ---
 

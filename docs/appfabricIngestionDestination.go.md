@@ -4,12 +4,12 @@
 
 ### AppfabricIngestionDestination <a name="AppfabricIngestionDestination" id="@cdktn/provider-aws.appfabricIngestionDestination.AppfabricIngestionDestination"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/appfabric_ingestion_destination aws_appfabric_ingestion_destination}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/appfabric_ingestion_destination aws_appfabric_ingestion_destination}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appfabricIngestionDestination.AppfabricIngestionDestination.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/appfabricingestiondestination"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/appfabricingestiondestination"
 
 appfabricingestiondestination.NewAppfabricIngestionDestination(scope Construct, id *string, config AppfabricIngestionDestinationConfig) AppfabricIngestionDestination
 ```
@@ -452,7 +452,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.appfabricIngestionDestination.AppfabricIngestionDestination.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/appfabricingestiondestination"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/appfabricingestiondestination"
 
 appfabricingestiondestination.AppfabricIngestionDestination_IsConstruct(x interface{}) *bool
 ```
@@ -484,7 +484,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.appfabricIngestionDestination.AppfabricIngestionDestination.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/appfabricingestiondestination"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/appfabricingestiondestination"
 
 appfabricingestiondestination.AppfabricIngestionDestination_IsTerraformElement(x interface{}) *bool
 ```
@@ -498,7 +498,7 @@ appfabricingestiondestination.AppfabricIngestionDestination_IsTerraformElement(x
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.appfabricIngestionDestination.AppfabricIngestionDestination.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/appfabricingestiondestination"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/appfabricingestiondestination"
 
 appfabricingestiondestination.AppfabricIngestionDestination_IsTerraformResource(x interface{}) *bool
 ```
@@ -512,7 +512,7 @@ appfabricingestiondestination.AppfabricIngestionDestination_IsTerraformResource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.appfabricIngestionDestination.AppfabricIngestionDestination.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/appfabricingestiondestination"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/appfabricingestiondestination"
 
 appfabricingestiondestination.AppfabricIngestionDestination_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -541,7 +541,7 @@ The construct id used in the generated config for the AppfabricIngestionDestinat
 
 The id of the existing AppfabricIngestionDestination that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/appfabric_ingestion_destination#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/appfabric_ingestion_destination#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -928,7 +928,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appfabricIngestionDestination.AppfabricIngestionDestinationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/appfabricingestiondestination"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/appfabricingestiondestination"
 
 &appfabricingestiondestination.AppfabricIngestionDestinationConfig {
 	Connection: interface{},
@@ -944,7 +944,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/appfabricingestiondest
 	ProcessingConfiguration: interface{},
 	Region: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.appfabricIngestionDestination.AppfabricIngestionDestinationTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.appfabricIngestionDestination.AppfabricIngestionDestinationTimeouts,
 }
 ```
 
@@ -959,12 +959,12 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/appfabricingestiondest
 | <code><a href="#@cdktn/provider-aws.appfabricIngestionDestination.AppfabricIngestionDestinationConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.appfabricIngestionDestination.AppfabricIngestionDestinationConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.appfabricIngestionDestination.AppfabricIngestionDestinationConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.appfabricIngestionDestination.AppfabricIngestionDestinationConfig.property.appBundleArn">AppBundleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/appfabric_ingestion_destination#app_bundle_arn AppfabricIngestionDestination#app_bundle_arn}. |
-| <code><a href="#@cdktn/provider-aws.appfabricIngestionDestination.AppfabricIngestionDestinationConfig.property.ingestionArn">IngestionArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/appfabric_ingestion_destination#ingestion_arn AppfabricIngestionDestination#ingestion_arn}. |
+| <code><a href="#@cdktn/provider-aws.appfabricIngestionDestination.AppfabricIngestionDestinationConfig.property.appBundleArn">AppBundleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/appfabric_ingestion_destination#app_bundle_arn AppfabricIngestionDestination#app_bundle_arn}. |
+| <code><a href="#@cdktn/provider-aws.appfabricIngestionDestination.AppfabricIngestionDestinationConfig.property.ingestionArn">IngestionArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/appfabric_ingestion_destination#ingestion_arn AppfabricIngestionDestination#ingestion_arn}. |
 | <code><a href="#@cdktn/provider-aws.appfabricIngestionDestination.AppfabricIngestionDestinationConfig.property.destinationConfiguration">DestinationConfiguration</a></code> | <code>interface{}</code> | destination_configuration block. |
 | <code><a href="#@cdktn/provider-aws.appfabricIngestionDestination.AppfabricIngestionDestinationConfig.property.processingConfiguration">ProcessingConfiguration</a></code> | <code>interface{}</code> | processing_configuration block. |
 | <code><a href="#@cdktn/provider-aws.appfabricIngestionDestination.AppfabricIngestionDestinationConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.appfabricIngestionDestination.AppfabricIngestionDestinationConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/appfabric_ingestion_destination#tags AppfabricIngestionDestination#tags}. |
+| <code><a href="#@cdktn/provider-aws.appfabricIngestionDestination.AppfabricIngestionDestinationConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/appfabric_ingestion_destination#tags AppfabricIngestionDestination#tags}. |
 | <code><a href="#@cdktn/provider-aws.appfabricIngestionDestination.AppfabricIngestionDestinationConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.appfabricIngestionDestination.AppfabricIngestionDestinationTimeouts">AppfabricIngestionDestinationTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1047,7 +1047,7 @@ AppBundleArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/appfabric_ingestion_destination#app_bundle_arn AppfabricIngestionDestination#app_bundle_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/appfabric_ingestion_destination#app_bundle_arn AppfabricIngestionDestination#app_bundle_arn}.
 
 ---
 
@@ -1059,7 +1059,7 @@ IngestionArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/appfabric_ingestion_destination#ingestion_arn AppfabricIngestionDestination#ingestion_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/appfabric_ingestion_destination#ingestion_arn AppfabricIngestionDestination#ingestion_arn}.
 
 ---
 
@@ -1073,7 +1073,7 @@ DestinationConfiguration interface{}
 
 destination_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/appfabric_ingestion_destination#destination_configuration AppfabricIngestionDestination#destination_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/appfabric_ingestion_destination#destination_configuration AppfabricIngestionDestination#destination_configuration}
 
 ---
 
@@ -1087,7 +1087,7 @@ ProcessingConfiguration interface{}
 
 processing_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/appfabric_ingestion_destination#processing_configuration AppfabricIngestionDestination#processing_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/appfabric_ingestion_destination#processing_configuration AppfabricIngestionDestination#processing_configuration}
 
 ---
 
@@ -1101,7 +1101,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/appfabric_ingestion_destination#region AppfabricIngestionDestination#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/appfabric_ingestion_destination#region AppfabricIngestionDestination#region}
 
 ---
 
@@ -1113,7 +1113,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/appfabric_ingestion_destination#tags AppfabricIngestionDestination#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/appfabric_ingestion_destination#tags AppfabricIngestionDestination#tags}.
 
 ---
 
@@ -1127,7 +1127,7 @@ Timeouts AppfabricIngestionDestinationTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/appfabric_ingestion_destination#timeouts AppfabricIngestionDestination#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/appfabric_ingestion_destination#timeouts AppfabricIngestionDestination#timeouts}
 
 ---
 
@@ -1136,7 +1136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appfabricIngestionDestination.AppfabricIngestionDestinationDestinationConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/appfabricingestiondestination"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/appfabricingestiondestination"
 
 &appfabricingestiondestination.AppfabricIngestionDestinationDestinationConfiguration {
 	AuditLog: interface{},
@@ -1161,7 +1161,7 @@ AuditLog interface{}
 
 audit_log block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/appfabric_ingestion_destination#audit_log AppfabricIngestionDestination#audit_log}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/appfabric_ingestion_destination#audit_log AppfabricIngestionDestination#audit_log}
 
 ---
 
@@ -1170,7 +1170,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appfabricIngestionDestination.AppfabricIngestionDestinationDestinationConfigurationAuditLog.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/appfabricingestiondestination"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/appfabricingestiondestination"
 
 &appfabricingestiondestination.AppfabricIngestionDestinationDestinationConfigurationAuditLog {
 	Destination: interface{},
@@ -1195,7 +1195,7 @@ Destination interface{}
 
 destination block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/appfabric_ingestion_destination#destination AppfabricIngestionDestination#destination}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/appfabric_ingestion_destination#destination AppfabricIngestionDestination#destination}
 
 ---
 
@@ -1204,7 +1204,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appfabricIngestionDestination.AppfabricIngestionDestinationDestinationConfigurationAuditLogDestination.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/appfabricingestiondestination"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/appfabricingestiondestination"
 
 &appfabricingestiondestination.AppfabricIngestionDestinationDestinationConfigurationAuditLogDestination {
 	FirehoseStream: interface{},
@@ -1231,7 +1231,7 @@ FirehoseStream interface{}
 
 firehose_stream block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/appfabric_ingestion_destination#firehose_stream AppfabricIngestionDestination#firehose_stream}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/appfabric_ingestion_destination#firehose_stream AppfabricIngestionDestination#firehose_stream}
 
 ---
 
@@ -1245,7 +1245,7 @@ S3Bucket interface{}
 
 s3_bucket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/appfabric_ingestion_destination#s3_bucket AppfabricIngestionDestination#s3_bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/appfabric_ingestion_destination#s3_bucket AppfabricIngestionDestination#s3_bucket}
 
 ---
 
@@ -1254,7 +1254,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appfabricIngestionDestination.AppfabricIngestionDestinationDestinationConfigurationAuditLogDestinationFirehoseStream.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/appfabricingestiondestination"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/appfabricingestiondestination"
 
 &appfabricingestiondestination.AppfabricIngestionDestinationDestinationConfigurationAuditLogDestinationFirehoseStream {
 	StreamName: *string,
@@ -1265,7 +1265,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/appfabricingestiondest
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.appfabricIngestionDestination.AppfabricIngestionDestinationDestinationConfigurationAuditLogDestinationFirehoseStream.property.streamName">StreamName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/appfabric_ingestion_destination#stream_name AppfabricIngestionDestination#stream_name}. |
+| <code><a href="#@cdktn/provider-aws.appfabricIngestionDestination.AppfabricIngestionDestinationDestinationConfigurationAuditLogDestinationFirehoseStream.property.streamName">StreamName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/appfabric_ingestion_destination#stream_name AppfabricIngestionDestination#stream_name}. |
 
 ---
 
@@ -1277,7 +1277,7 @@ StreamName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/appfabric_ingestion_destination#stream_name AppfabricIngestionDestination#stream_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/appfabric_ingestion_destination#stream_name AppfabricIngestionDestination#stream_name}.
 
 ---
 
@@ -1286,7 +1286,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appfabricIngestionDestination.AppfabricIngestionDestinationDestinationConfigurationAuditLogDestinationS3Bucket.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/appfabricingestiondestination"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/appfabricingestiondestination"
 
 &appfabricingestiondestination.AppfabricIngestionDestinationDestinationConfigurationAuditLogDestinationS3Bucket {
 	BucketName: *string,
@@ -1298,8 +1298,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/appfabricingestiondest
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.appfabricIngestionDestination.AppfabricIngestionDestinationDestinationConfigurationAuditLogDestinationS3Bucket.property.bucketName">BucketName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/appfabric_ingestion_destination#bucket_name AppfabricIngestionDestination#bucket_name}. |
-| <code><a href="#@cdktn/provider-aws.appfabricIngestionDestination.AppfabricIngestionDestinationDestinationConfigurationAuditLogDestinationS3Bucket.property.prefix">Prefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/appfabric_ingestion_destination#prefix AppfabricIngestionDestination#prefix}. |
+| <code><a href="#@cdktn/provider-aws.appfabricIngestionDestination.AppfabricIngestionDestinationDestinationConfigurationAuditLogDestinationS3Bucket.property.bucketName">BucketName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/appfabric_ingestion_destination#bucket_name AppfabricIngestionDestination#bucket_name}. |
+| <code><a href="#@cdktn/provider-aws.appfabricIngestionDestination.AppfabricIngestionDestinationDestinationConfigurationAuditLogDestinationS3Bucket.property.prefix">Prefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/appfabric_ingestion_destination#prefix AppfabricIngestionDestination#prefix}. |
 
 ---
 
@@ -1311,7 +1311,7 @@ BucketName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/appfabric_ingestion_destination#bucket_name AppfabricIngestionDestination#bucket_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/appfabric_ingestion_destination#bucket_name AppfabricIngestionDestination#bucket_name}.
 
 ---
 
@@ -1323,7 +1323,7 @@ Prefix *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/appfabric_ingestion_destination#prefix AppfabricIngestionDestination#prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/appfabric_ingestion_destination#prefix AppfabricIngestionDestination#prefix}.
 
 ---
 
@@ -1332,7 +1332,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appfabricIngestionDestination.AppfabricIngestionDestinationProcessingConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/appfabricingestiondestination"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/appfabricingestiondestination"
 
 &appfabricingestiondestination.AppfabricIngestionDestinationProcessingConfiguration {
 	AuditLog: interface{},
@@ -1357,7 +1357,7 @@ AuditLog interface{}
 
 audit_log block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/appfabric_ingestion_destination#audit_log AppfabricIngestionDestination#audit_log}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/appfabric_ingestion_destination#audit_log AppfabricIngestionDestination#audit_log}
 
 ---
 
@@ -1366,7 +1366,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appfabricIngestionDestination.AppfabricIngestionDestinationProcessingConfigurationAuditLog.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/appfabricingestiondestination"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/appfabricingestiondestination"
 
 &appfabricingestiondestination.AppfabricIngestionDestinationProcessingConfigurationAuditLog {
 	Format: *string,
@@ -1378,8 +1378,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/appfabricingestiondest
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.appfabricIngestionDestination.AppfabricIngestionDestinationProcessingConfigurationAuditLog.property.format">Format</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/appfabric_ingestion_destination#format AppfabricIngestionDestination#format}. |
-| <code><a href="#@cdktn/provider-aws.appfabricIngestionDestination.AppfabricIngestionDestinationProcessingConfigurationAuditLog.property.schema">Schema</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/appfabric_ingestion_destination#schema AppfabricIngestionDestination#schema}. |
+| <code><a href="#@cdktn/provider-aws.appfabricIngestionDestination.AppfabricIngestionDestinationProcessingConfigurationAuditLog.property.format">Format</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/appfabric_ingestion_destination#format AppfabricIngestionDestination#format}. |
+| <code><a href="#@cdktn/provider-aws.appfabricIngestionDestination.AppfabricIngestionDestinationProcessingConfigurationAuditLog.property.schema">Schema</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/appfabric_ingestion_destination#schema AppfabricIngestionDestination#schema}. |
 
 ---
 
@@ -1391,7 +1391,7 @@ Format *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/appfabric_ingestion_destination#format AppfabricIngestionDestination#format}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/appfabric_ingestion_destination#format AppfabricIngestionDestination#format}.
 
 ---
 
@@ -1403,7 +1403,7 @@ Schema *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/appfabric_ingestion_destination#schema AppfabricIngestionDestination#schema}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/appfabric_ingestion_destination#schema AppfabricIngestionDestination#schema}.
 
 ---
 
@@ -1412,7 +1412,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appfabricIngestionDestination.AppfabricIngestionDestinationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/appfabricingestiondestination"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/appfabricingestiondestination"
 
 &appfabricingestiondestination.AppfabricIngestionDestinationTimeouts {
 	Create: *string,
@@ -1441,7 +1441,7 @@ Create *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/appfabric_ingestion_destination#create AppfabricIngestionDestination#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/appfabric_ingestion_destination#create AppfabricIngestionDestination#create}
 
 ---
 
@@ -1455,7 +1455,7 @@ Delete *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/appfabric_ingestion_destination#delete AppfabricIngestionDestination#delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/appfabric_ingestion_destination#delete AppfabricIngestionDestination#delete}
 
 ---
 
@@ -1469,7 +1469,7 @@ Update *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/appfabric_ingestion_destination#update AppfabricIngestionDestination#update}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/appfabric_ingestion_destination#update AppfabricIngestionDestination#update}
 
 ---
 
@@ -1480,7 +1480,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appfabricIngestionDestination.AppfabricIngestionDestinationDestinationConfigurationAuditLogDestinationFirehoseStreamList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/appfabricingestiondestination"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/appfabricingestiondestination"
 
 appfabricingestiondestination.NewAppfabricIngestionDestinationDestinationConfigurationAuditLogDestinationFirehoseStreamList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppfabricIngestionDestinationDestinationConfigurationAuditLogDestinationFirehoseStreamList
 ```
@@ -1640,7 +1640,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appfabricIngestionDestination.AppfabricIngestionDestinationDestinationConfigurationAuditLogDestinationFirehoseStreamOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/appfabricingestiondestination"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/appfabricingestiondestination"
 
 appfabricingestiondestination.NewAppfabricIngestionDestinationDestinationConfigurationAuditLogDestinationFirehoseStreamOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppfabricIngestionDestinationDestinationConfigurationAuditLogDestinationFirehoseStreamOutputReference
 ```
@@ -1929,7 +1929,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appfabricIngestionDestination.AppfabricIngestionDestinationDestinationConfigurationAuditLogDestinationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/appfabricingestiondestination"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/appfabricingestiondestination"
 
 appfabricingestiondestination.NewAppfabricIngestionDestinationDestinationConfigurationAuditLogDestinationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppfabricIngestionDestinationDestinationConfigurationAuditLogDestinationList
 ```
@@ -2089,7 +2089,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appfabricIngestionDestination.AppfabricIngestionDestinationDestinationConfigurationAuditLogDestinationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/appfabricingestiondestination"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/appfabricingestiondestination"
 
 appfabricingestiondestination.NewAppfabricIngestionDestinationDestinationConfigurationAuditLogDestinationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppfabricIngestionDestinationDestinationConfigurationAuditLogDestinationOutputReference
 ```
@@ -2440,7 +2440,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appfabricIngestionDestination.AppfabricIngestionDestinationDestinationConfigurationAuditLogDestinationS3BucketList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/appfabricingestiondestination"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/appfabricingestiondestination"
 
 appfabricingestiondestination.NewAppfabricIngestionDestinationDestinationConfigurationAuditLogDestinationS3BucketList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppfabricIngestionDestinationDestinationConfigurationAuditLogDestinationS3BucketList
 ```
@@ -2600,7 +2600,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appfabricIngestionDestination.AppfabricIngestionDestinationDestinationConfigurationAuditLogDestinationS3BucketOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/appfabricingestiondestination"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/appfabricingestiondestination"
 
 appfabricingestiondestination.NewAppfabricIngestionDestinationDestinationConfigurationAuditLogDestinationS3BucketOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppfabricIngestionDestinationDestinationConfigurationAuditLogDestinationS3BucketOutputReference
 ```
@@ -2918,7 +2918,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appfabricIngestionDestination.AppfabricIngestionDestinationDestinationConfigurationAuditLogList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/appfabricingestiondestination"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/appfabricingestiondestination"
 
 appfabricingestiondestination.NewAppfabricIngestionDestinationDestinationConfigurationAuditLogList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppfabricIngestionDestinationDestinationConfigurationAuditLogList
 ```
@@ -3078,7 +3078,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appfabricIngestionDestination.AppfabricIngestionDestinationDestinationConfigurationAuditLogOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/appfabricingestiondestination"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/appfabricingestiondestination"
 
 appfabricingestiondestination.NewAppfabricIngestionDestinationDestinationConfigurationAuditLogOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppfabricIngestionDestinationDestinationConfigurationAuditLogOutputReference
 ```
@@ -3387,7 +3387,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appfabricIngestionDestination.AppfabricIngestionDestinationDestinationConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/appfabricingestiondestination"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/appfabricingestiondestination"
 
 appfabricingestiondestination.NewAppfabricIngestionDestinationDestinationConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppfabricIngestionDestinationDestinationConfigurationList
 ```
@@ -3547,7 +3547,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appfabricIngestionDestination.AppfabricIngestionDestinationDestinationConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/appfabricingestiondestination"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/appfabricingestiondestination"
 
 appfabricingestiondestination.NewAppfabricIngestionDestinationDestinationConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppfabricIngestionDestinationDestinationConfigurationOutputReference
 ```
@@ -3856,7 +3856,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appfabricIngestionDestination.AppfabricIngestionDestinationProcessingConfigurationAuditLogList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/appfabricingestiondestination"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/appfabricingestiondestination"
 
 appfabricingestiondestination.NewAppfabricIngestionDestinationProcessingConfigurationAuditLogList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppfabricIngestionDestinationProcessingConfigurationAuditLogList
 ```
@@ -4016,7 +4016,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appfabricIngestionDestination.AppfabricIngestionDestinationProcessingConfigurationAuditLogOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/appfabricingestiondestination"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/appfabricingestiondestination"
 
 appfabricingestiondestination.NewAppfabricIngestionDestinationProcessingConfigurationAuditLogOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppfabricIngestionDestinationProcessingConfigurationAuditLogOutputReference
 ```
@@ -4327,7 +4327,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appfabricIngestionDestination.AppfabricIngestionDestinationProcessingConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/appfabricingestiondestination"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/appfabricingestiondestination"
 
 appfabricingestiondestination.NewAppfabricIngestionDestinationProcessingConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppfabricIngestionDestinationProcessingConfigurationList
 ```
@@ -4487,7 +4487,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appfabricIngestionDestination.AppfabricIngestionDestinationProcessingConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/appfabricingestiondestination"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/appfabricingestiondestination"
 
 appfabricingestiondestination.NewAppfabricIngestionDestinationProcessingConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppfabricIngestionDestinationProcessingConfigurationOutputReference
 ```
@@ -4796,7 +4796,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appfabricIngestionDestination.AppfabricIngestionDestinationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/appfabricingestiondestination"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/appfabricingestiondestination"
 
 appfabricingestiondestination.NewAppfabricIngestionDestinationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppfabricIngestionDestinationTimeoutsOutputReference
 ```

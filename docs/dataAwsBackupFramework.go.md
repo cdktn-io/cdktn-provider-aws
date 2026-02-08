@@ -4,12 +4,12 @@
 
 ### DataAwsBackupFramework <a name="DataAwsBackupFramework" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/backup_framework aws_backup_framework}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/backup_framework aws_backup_framework}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsbackupframework"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsbackupframework"
 
 dataawsbackupframework.NewDataAwsBackupFramework(scope Construct, id *string, config DataAwsBackupFrameworkConfig) DataAwsBackupFramework
 ```
@@ -297,7 +297,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsbackupframework"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsbackupframework"
 
 dataawsbackupframework.DataAwsBackupFramework_IsConstruct(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsbackupframework"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsbackupframework"
 
 dataawsbackupframework.DataAwsBackupFramework_IsTerraformElement(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ dataawsbackupframework.DataAwsBackupFramework_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsbackupframework"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsbackupframework"
 
 dataawsbackupframework.DataAwsBackupFramework_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ dataawsbackupframework.DataAwsBackupFramework_IsTerraformDataSource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFramework.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsbackupframework"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsbackupframework"
 
 dataawsbackupframework.DataAwsBackupFramework_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -386,7 +386,7 @@ The construct id used in the generated config for the DataAwsBackupFramework to 
 
 The id of the existing DataAwsBackupFramework that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/backup_framework#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/backup_framework#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -718,7 +718,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsbackupframework"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsbackupframework"
 
 &dataawsbackupframework.DataAwsBackupFrameworkConfig {
 	Connection: interface{},
@@ -746,10 +746,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsbackupframework
 | <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/backup_framework#name DataAwsBackupFramework#name}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/backup_framework#id DataAwsBackupFramework#id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/backup_framework#name DataAwsBackupFramework#name}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/backup_framework#id DataAwsBackupFramework#id}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/backup_framework#tags DataAwsBackupFramework#tags}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/backup_framework#tags DataAwsBackupFramework#tags}. |
 
 ---
 
@@ -831,7 +831,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/backup_framework#name DataAwsBackupFramework#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/backup_framework#name DataAwsBackupFramework#name}.
 
 ---
 
@@ -843,7 +843,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/backup_framework#id DataAwsBackupFramework#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/backup_framework#id DataAwsBackupFramework#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -860,7 +860,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/backup_framework#region DataAwsBackupFramework#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/backup_framework#region DataAwsBackupFramework#region}
 
 ---
 
@@ -872,7 +872,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/backup_framework#tags DataAwsBackupFramework#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/backup_framework#tags DataAwsBackupFramework#tags}.
 
 ---
 
@@ -881,7 +881,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControl.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsbackupframework"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsbackupframework"
 
 &dataawsbackupframework.DataAwsBackupFrameworkControl {
 
@@ -894,7 +894,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsbackupframework
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsbackupframework"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsbackupframework"
 
 &dataawsbackupframework.DataAwsBackupFrameworkControlInputParameter {
 
@@ -907,7 +907,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsbackupframework
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScope.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsbackupframework"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsbackupframework"
 
 &dataawsbackupframework.DataAwsBackupFrameworkControlScope {
 
@@ -922,7 +922,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsbackupframework
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsbackupframework"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsbackupframework"
 
 dataawsbackupframework.NewDataAwsBackupFrameworkControlInputParameterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsBackupFrameworkControlInputParameterList
 ```
@@ -1071,7 +1071,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlInputParameterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsbackupframework"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsbackupframework"
 
 dataawsbackupframework.NewDataAwsBackupFrameworkControlInputParameterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsBackupFrameworkControlInputParameterOutputReference
 ```
@@ -1360,7 +1360,7 @@ func InternalValue() DataAwsBackupFrameworkControlInputParameter
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsbackupframework"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsbackupframework"
 
 dataawsbackupframework.NewDataAwsBackupFrameworkControlList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsBackupFrameworkControlList
 ```
@@ -1509,7 +1509,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsbackupframework"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsbackupframework"
 
 dataawsbackupframework.NewDataAwsBackupFrameworkControlOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsBackupFrameworkControlOutputReference
 ```
@@ -1809,7 +1809,7 @@ func InternalValue() DataAwsBackupFrameworkControl
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsbackupframework"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsbackupframework"
 
 dataawsbackupframework.NewDataAwsBackupFrameworkControlScopeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsBackupFrameworkControlScopeList
 ```
@@ -1958,7 +1958,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsBackupFramework.DataAwsBackupFrameworkControlScopeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsbackupframework"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsbackupframework"
 
 dataawsbackupframework.NewDataAwsBackupFrameworkControlScopeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsBackupFrameworkControlScopeOutputReference
 ```

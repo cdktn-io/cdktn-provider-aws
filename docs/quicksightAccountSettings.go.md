@@ -4,12 +4,12 @@
 
 ### QuicksightAccountSettings <a name="QuicksightAccountSettings" id="@cdktn/provider-aws.quicksightAccountSettings.QuicksightAccountSettings"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_account_settings aws_quicksight_account_settings}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_account_settings aws_quicksight_account_settings}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.quicksightAccountSettings.QuicksightAccountSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/quicksightaccountsettings"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/quicksightaccountsettings"
 
 quicksightaccountsettings.NewQuicksightAccountSettings(scope Construct, id *string, config QuicksightAccountSettingsConfig) QuicksightAccountSettings
 ```
@@ -426,7 +426,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.quicksightAccountSettings.QuicksightAccountSettings.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/quicksightaccountsettings"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/quicksightaccountsettings"
 
 quicksightaccountsettings.QuicksightAccountSettings_IsConstruct(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.quicksightAccountSettings.QuicksightAccountSettings.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/quicksightaccountsettings"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/quicksightaccountsettings"
 
 quicksightaccountsettings.QuicksightAccountSettings_IsTerraformElement(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ quicksightaccountsettings.QuicksightAccountSettings_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.quicksightAccountSettings.QuicksightAccountSettings.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/quicksightaccountsettings"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/quicksightaccountsettings"
 
 quicksightaccountsettings.QuicksightAccountSettings_IsTerraformResource(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ quicksightaccountsettings.QuicksightAccountSettings_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.quicksightAccountSettings.QuicksightAccountSettings.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/quicksightaccountsettings"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/quicksightaccountsettings"
 
 quicksightaccountsettings.QuicksightAccountSettings_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -515,7 +515,7 @@ The construct id used in the generated config for the QuicksightAccountSettings 
 
 The id of the existing QuicksightAccountSettings that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_account_settings#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_account_settings#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -825,7 +825,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.quicksightAccountSettings.QuicksightAccountSettingsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/quicksightaccountsettings"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/quicksightaccountsettings"
 
 &quicksightaccountsettings.QuicksightAccountSettingsConfig {
 	Connection: interface{},
@@ -839,7 +839,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/quicksightaccountsetti
 	DefaultNamespace: *string,
 	Region: *string,
 	TerminationProtectionEnabled: interface{},
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.quicksightAccountSettings.QuicksightAccountSettingsTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.quicksightAccountSettings.QuicksightAccountSettingsTimeouts,
 }
 ```
 
@@ -854,10 +854,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/quicksightaccountsetti
 | <code><a href="#@cdktn/provider-aws.quicksightAccountSettings.QuicksightAccountSettingsConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.quicksightAccountSettings.QuicksightAccountSettingsConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.quicksightAccountSettings.QuicksightAccountSettingsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.quicksightAccountSettings.QuicksightAccountSettingsConfig.property.awsAccountId">AwsAccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_account_settings#aws_account_id QuicksightAccountSettings#aws_account_id}. |
-| <code><a href="#@cdktn/provider-aws.quicksightAccountSettings.QuicksightAccountSettingsConfig.property.defaultNamespace">DefaultNamespace</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_account_settings#default_namespace QuicksightAccountSettings#default_namespace}. |
+| <code><a href="#@cdktn/provider-aws.quicksightAccountSettings.QuicksightAccountSettingsConfig.property.awsAccountId">AwsAccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_account_settings#aws_account_id QuicksightAccountSettings#aws_account_id}. |
+| <code><a href="#@cdktn/provider-aws.quicksightAccountSettings.QuicksightAccountSettingsConfig.property.defaultNamespace">DefaultNamespace</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_account_settings#default_namespace QuicksightAccountSettings#default_namespace}. |
 | <code><a href="#@cdktn/provider-aws.quicksightAccountSettings.QuicksightAccountSettingsConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.quicksightAccountSettings.QuicksightAccountSettingsConfig.property.terminationProtectionEnabled">TerminationProtectionEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_account_settings#termination_protection_enabled QuicksightAccountSettings#termination_protection_enabled}. |
+| <code><a href="#@cdktn/provider-aws.quicksightAccountSettings.QuicksightAccountSettingsConfig.property.terminationProtectionEnabled">TerminationProtectionEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_account_settings#termination_protection_enabled QuicksightAccountSettings#termination_protection_enabled}. |
 | <code><a href="#@cdktn/provider-aws.quicksightAccountSettings.QuicksightAccountSettingsConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.quicksightAccountSettings.QuicksightAccountSettingsTimeouts">QuicksightAccountSettingsTimeouts</a></code> | timeouts block. |
 
 ---
@@ -940,7 +940,7 @@ AwsAccountId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_account_settings#aws_account_id QuicksightAccountSettings#aws_account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_account_settings#aws_account_id QuicksightAccountSettings#aws_account_id}.
 
 ---
 
@@ -952,7 +952,7 @@ DefaultNamespace *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_account_settings#default_namespace QuicksightAccountSettings#default_namespace}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_account_settings#default_namespace QuicksightAccountSettings#default_namespace}.
 
 ---
 
@@ -966,7 +966,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_account_settings#region QuicksightAccountSettings#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_account_settings#region QuicksightAccountSettings#region}
 
 ---
 
@@ -978,7 +978,7 @@ TerminationProtectionEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_account_settings#termination_protection_enabled QuicksightAccountSettings#termination_protection_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_account_settings#termination_protection_enabled QuicksightAccountSettings#termination_protection_enabled}.
 
 ---
 
@@ -992,7 +992,7 @@ Timeouts QuicksightAccountSettingsTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_account_settings#timeouts QuicksightAccountSettings#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_account_settings#timeouts QuicksightAccountSettings#timeouts}
 
 ---
 
@@ -1001,7 +1001,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.quicksightAccountSettings.QuicksightAccountSettingsTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/quicksightaccountsettings"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/quicksightaccountsettings"
 
 &quicksightaccountsettings.QuicksightAccountSettingsTimeouts {
 	Create: *string,
@@ -1028,7 +1028,7 @@ Create *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_account_settings#create QuicksightAccountSettings#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_account_settings#create QuicksightAccountSettings#create}
 
 ---
 
@@ -1042,7 +1042,7 @@ Update *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_account_settings#update QuicksightAccountSettings#update}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_account_settings#update QuicksightAccountSettings#update}
 
 ---
 
@@ -1053,7 +1053,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.quicksightAccountSettings.QuicksightAccountSettingsTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/quicksightaccountsettings"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/quicksightaccountsettings"
 
 quicksightaccountsettings.NewQuicksightAccountSettingsTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QuicksightAccountSettingsTimeoutsOutputReference
 ```

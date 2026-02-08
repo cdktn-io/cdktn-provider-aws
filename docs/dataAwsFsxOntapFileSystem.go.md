@@ -4,12 +4,12 @@
 
 ### DataAwsFsxOntapFileSystem <a name="DataAwsFsxOntapFileSystem" id="@cdktn/provider-aws.dataAwsFsxOntapFileSystem.DataAwsFsxOntapFileSystem"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/fsx_ontap_file_system aws_fsx_ontap_file_system}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/fsx_ontap_file_system aws_fsx_ontap_file_system}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsFsxOntapFileSystem.DataAwsFsxOntapFileSystem.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsfsxontapfilesystem"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsfsxontapfilesystem"
 
 dataawsfsxontapfilesystem.NewDataAwsFsxOntapFileSystem(scope Construct, id *string, config DataAwsFsxOntapFileSystemConfig) DataAwsFsxOntapFileSystem
 ```
@@ -290,7 +290,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsFsxOntapFileSystem.DataAwsFsxOntapFileSystem.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsfsxontapfilesystem"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsfsxontapfilesystem"
 
 dataawsfsxontapfilesystem.DataAwsFsxOntapFileSystem_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsFsxOntapFileSystem.DataAwsFsxOntapFileSystem.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsfsxontapfilesystem"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsfsxontapfilesystem"
 
 dataawsfsxontapfilesystem.DataAwsFsxOntapFileSystem_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ dataawsfsxontapfilesystem.DataAwsFsxOntapFileSystem_IsTerraformElement(x interfa
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsFsxOntapFileSystem.DataAwsFsxOntapFileSystem.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsfsxontapfilesystem"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsfsxontapfilesystem"
 
 dataawsfsxontapfilesystem.DataAwsFsxOntapFileSystem_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ dataawsfsxontapfilesystem.DataAwsFsxOntapFileSystem_IsTerraformDataSource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsFsxOntapFileSystem.DataAwsFsxOntapFileSystem.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsfsxontapfilesystem"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsfsxontapfilesystem"
 
 dataawsfsxontapfilesystem.DataAwsFsxOntapFileSystem_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -379,7 +379,7 @@ The construct id used in the generated config for the DataAwsFsxOntapFileSystem 
 
 The id of the existing DataAwsFsxOntapFileSystem that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/fsx_ontap_file_system#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/fsx_ontap_file_system#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -854,7 +854,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsFsxOntapFileSystem.DataAwsFsxOntapFileSystemConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsfsxontapfilesystem"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsfsxontapfilesystem"
 
 &dataawsfsxontapfilesystem.DataAwsFsxOntapFileSystemConfig {
 	Connection: interface{},
@@ -881,9 +881,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsfsxontapfilesys
 | <code><a href="#@cdktn/provider-aws.dataAwsFsxOntapFileSystem.DataAwsFsxOntapFileSystemConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsFsxOntapFileSystem.DataAwsFsxOntapFileSystemConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsFsxOntapFileSystem.DataAwsFsxOntapFileSystemConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsFsxOntapFileSystem.DataAwsFsxOntapFileSystemConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/fsx_ontap_file_system#id DataAwsFsxOntapFileSystem#id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsFsxOntapFileSystem.DataAwsFsxOntapFileSystemConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/fsx_ontap_file_system#id DataAwsFsxOntapFileSystem#id}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsFsxOntapFileSystem.DataAwsFsxOntapFileSystemConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.dataAwsFsxOntapFileSystem.DataAwsFsxOntapFileSystemConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/fsx_ontap_file_system#tags DataAwsFsxOntapFileSystem#tags}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsFsxOntapFileSystem.DataAwsFsxOntapFileSystemConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/fsx_ontap_file_system#tags DataAwsFsxOntapFileSystem#tags}. |
 
 ---
 
@@ -965,7 +965,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/fsx_ontap_file_system#id DataAwsFsxOntapFileSystem#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/fsx_ontap_file_system#id DataAwsFsxOntapFileSystem#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -982,7 +982,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/fsx_ontap_file_system#region DataAwsFsxOntapFileSystem#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/fsx_ontap_file_system#region DataAwsFsxOntapFileSystem#region}
 
 ---
 
@@ -994,7 +994,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/fsx_ontap_file_system#tags DataAwsFsxOntapFileSystem#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/fsx_ontap_file_system#tags DataAwsFsxOntapFileSystem#tags}.
 
 ---
 
@@ -1003,7 +1003,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsFsxOntapFileSystem.DataAwsFsxOntapFileSystemDiskIopsConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsfsxontapfilesystem"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsfsxontapfilesystem"
 
 &dataawsfsxontapfilesystem.DataAwsFsxOntapFileSystemDiskIopsConfiguration {
 
@@ -1016,7 +1016,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsfsxontapfilesys
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsFsxOntapFileSystem.DataAwsFsxOntapFileSystemEndpoints.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsfsxontapfilesystem"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsfsxontapfilesystem"
 
 &dataawsfsxontapfilesystem.DataAwsFsxOntapFileSystemEndpoints {
 
@@ -1029,7 +1029,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsfsxontapfilesys
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsFsxOntapFileSystem.DataAwsFsxOntapFileSystemEndpointsIntercluster.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsfsxontapfilesystem"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsfsxontapfilesystem"
 
 &dataawsfsxontapfilesystem.DataAwsFsxOntapFileSystemEndpointsIntercluster {
 
@@ -1042,7 +1042,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsfsxontapfilesys
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsFsxOntapFileSystem.DataAwsFsxOntapFileSystemEndpointsManagement.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsfsxontapfilesystem"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsfsxontapfilesystem"
 
 &dataawsfsxontapfilesystem.DataAwsFsxOntapFileSystemEndpointsManagement {
 
@@ -1057,7 +1057,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsfsxontapfilesys
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsFsxOntapFileSystem.DataAwsFsxOntapFileSystemDiskIopsConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsfsxontapfilesystem"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsfsxontapfilesystem"
 
 dataawsfsxontapfilesystem.NewDataAwsFsxOntapFileSystemDiskIopsConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsFsxOntapFileSystemDiskIopsConfigurationList
 ```
@@ -1206,7 +1206,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsFsxOntapFileSystem.DataAwsFsxOntapFileSystemDiskIopsConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsfsxontapfilesystem"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsfsxontapfilesystem"
 
 dataawsfsxontapfilesystem.NewDataAwsFsxOntapFileSystemDiskIopsConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsFsxOntapFileSystemDiskIopsConfigurationOutputReference
 ```
@@ -1495,7 +1495,7 @@ func InternalValue() DataAwsFsxOntapFileSystemDiskIopsConfiguration
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsFsxOntapFileSystem.DataAwsFsxOntapFileSystemEndpointsInterclusterList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsfsxontapfilesystem"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsfsxontapfilesystem"
 
 dataawsfsxontapfilesystem.NewDataAwsFsxOntapFileSystemEndpointsInterclusterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsFsxOntapFileSystemEndpointsInterclusterList
 ```
@@ -1644,7 +1644,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsFsxOntapFileSystem.DataAwsFsxOntapFileSystemEndpointsInterclusterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsfsxontapfilesystem"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsfsxontapfilesystem"
 
 dataawsfsxontapfilesystem.NewDataAwsFsxOntapFileSystemEndpointsInterclusterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsFsxOntapFileSystemEndpointsInterclusterOutputReference
 ```
@@ -1933,7 +1933,7 @@ func InternalValue() DataAwsFsxOntapFileSystemEndpointsIntercluster
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsFsxOntapFileSystem.DataAwsFsxOntapFileSystemEndpointsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsfsxontapfilesystem"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsfsxontapfilesystem"
 
 dataawsfsxontapfilesystem.NewDataAwsFsxOntapFileSystemEndpointsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsFsxOntapFileSystemEndpointsList
 ```
@@ -2082,7 +2082,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsFsxOntapFileSystem.DataAwsFsxOntapFileSystemEndpointsManagementList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsfsxontapfilesystem"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsfsxontapfilesystem"
 
 dataawsfsxontapfilesystem.NewDataAwsFsxOntapFileSystemEndpointsManagementList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsFsxOntapFileSystemEndpointsManagementList
 ```
@@ -2231,7 +2231,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsFsxOntapFileSystem.DataAwsFsxOntapFileSystemEndpointsManagementOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsfsxontapfilesystem"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsfsxontapfilesystem"
 
 dataawsfsxontapfilesystem.NewDataAwsFsxOntapFileSystemEndpointsManagementOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsFsxOntapFileSystemEndpointsManagementOutputReference
 ```
@@ -2520,7 +2520,7 @@ func InternalValue() DataAwsFsxOntapFileSystemEndpointsManagement
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsFsxOntapFileSystem.DataAwsFsxOntapFileSystemEndpointsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsfsxontapfilesystem"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsfsxontapfilesystem"
 
 dataawsfsxontapfilesystem.NewDataAwsFsxOntapFileSystemEndpointsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsFsxOntapFileSystemEndpointsOutputReference
 ```

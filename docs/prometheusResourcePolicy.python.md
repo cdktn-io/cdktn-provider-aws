@@ -4,7 +4,7 @@
 
 ### PrometheusResourcePolicy <a name="PrometheusResourcePolicy" id="@cdktn/provider-aws.prometheusResourcePolicy.PrometheusResourcePolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/prometheus_resource_policy aws_prometheus_resource_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/prometheus_resource_policy aws_prometheus_resource_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.prometheusResourcePolicy.PrometheusResourcePolicy.Initializer"></a>
 
@@ -40,10 +40,10 @@ prometheusResourcePolicy.PrometheusResourcePolicy(
 | <code><a href="#@cdktn/provider-aws.prometheusResourcePolicy.PrometheusResourcePolicy.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.prometheusResourcePolicy.PrometheusResourcePolicy.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.prometheusResourcePolicy.PrometheusResourcePolicy.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.prometheusResourcePolicy.PrometheusResourcePolicy.Initializer.parameter.policyDocument">policy_document</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/prometheus_resource_policy#policy_document PrometheusResourcePolicy#policy_document}. |
-| <code><a href="#@cdktn/provider-aws.prometheusResourcePolicy.PrometheusResourcePolicy.Initializer.parameter.workspaceId">workspace_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/prometheus_resource_policy#workspace_id PrometheusResourcePolicy#workspace_id}. |
+| <code><a href="#@cdktn/provider-aws.prometheusResourcePolicy.PrometheusResourcePolicy.Initializer.parameter.policyDocument">policy_document</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/prometheus_resource_policy#policy_document PrometheusResourcePolicy#policy_document}. |
+| <code><a href="#@cdktn/provider-aws.prometheusResourcePolicy.PrometheusResourcePolicy.Initializer.parameter.workspaceId">workspace_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/prometheus_resource_policy#workspace_id PrometheusResourcePolicy#workspace_id}. |
 | <code><a href="#@cdktn/provider-aws.prometheusResourcePolicy.PrometheusResourcePolicy.Initializer.parameter.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.prometheusResourcePolicy.PrometheusResourcePolicy.Initializer.parameter.revisionId">revision_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/prometheus_resource_policy#revision_id PrometheusResourcePolicy#revision_id}. |
+| <code><a href="#@cdktn/provider-aws.prometheusResourcePolicy.PrometheusResourcePolicy.Initializer.parameter.revisionId">revision_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/prometheus_resource_policy#revision_id PrometheusResourcePolicy#revision_id}. |
 | <code><a href="#@cdktn/provider-aws.prometheusResourcePolicy.PrometheusResourcePolicy.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.prometheusResourcePolicy.PrometheusResourcePolicyTimeouts">PrometheusResourcePolicyTimeouts</a></code> | timeouts block. |
 
 ---
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/prometheus_resource_policy#policy_document PrometheusResourcePolicy#policy_document}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/prometheus_resource_policy#policy_document PrometheusResourcePolicy#policy_document}.
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/prometheus_resource_policy#workspace_id PrometheusResourcePolicy#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/prometheus_resource_policy#workspace_id PrometheusResourcePolicy#workspace_id}.
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/prometheus_resource_policy#region PrometheusResourcePolicy#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/prometheus_resource_policy#region PrometheusResourcePolicy#region}
 
 ---
 
@@ -138,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/prometheus_resource_policy#revision_id PrometheusResourcePolicy#revision_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/prometheus_resource_policy#revision_id PrometheusResourcePolicy#revision_id}.
 
 ---
 
@@ -148,7 +148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/prometheus_resource_policy#timeouts PrometheusResourcePolicy#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/prometheus_resource_policy#timeouts PrometheusResourcePolicy#timeouts}
 
 ---
 
@@ -527,7 +527,7 @@ def put_timeouts(
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/prometheus_resource_policy#create PrometheusResourcePolicy#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/prometheus_resource_policy#create PrometheusResourcePolicy#create}
 
 ---
 
@@ -537,7 +537,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/prometheus_resource_policy#delete PrometheusResourcePolicy#delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/prometheus_resource_policy#delete PrometheusResourcePolicy#delete}
 
 ---
 
@@ -547,7 +547,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/prometheus_resource_policy#update PrometheusResourcePolicy#update}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/prometheus_resource_policy#update PrometheusResourcePolicy#update}
 
 ---
 
@@ -683,7 +683,7 @@ The construct id used in the generated config for the PrometheusResourcePolicy t
 
 The id of the existing PrometheusResourcePolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/prometheus_resource_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/prometheus_resource_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1022,10 +1022,10 @@ prometheusResourcePolicy.PrometheusResourcePolicyConfig(
 | <code><a href="#@cdktn/provider-aws.prometheusResourcePolicy.PrometheusResourcePolicyConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.prometheusResourcePolicy.PrometheusResourcePolicyConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.prometheusResourcePolicy.PrometheusResourcePolicyConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.prometheusResourcePolicy.PrometheusResourcePolicyConfig.property.policyDocument">policy_document</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/prometheus_resource_policy#policy_document PrometheusResourcePolicy#policy_document}. |
-| <code><a href="#@cdktn/provider-aws.prometheusResourcePolicy.PrometheusResourcePolicyConfig.property.workspaceId">workspace_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/prometheus_resource_policy#workspace_id PrometheusResourcePolicy#workspace_id}. |
+| <code><a href="#@cdktn/provider-aws.prometheusResourcePolicy.PrometheusResourcePolicyConfig.property.policyDocument">policy_document</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/prometheus_resource_policy#policy_document PrometheusResourcePolicy#policy_document}. |
+| <code><a href="#@cdktn/provider-aws.prometheusResourcePolicy.PrometheusResourcePolicyConfig.property.workspaceId">workspace_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/prometheus_resource_policy#workspace_id PrometheusResourcePolicy#workspace_id}. |
 | <code><a href="#@cdktn/provider-aws.prometheusResourcePolicy.PrometheusResourcePolicyConfig.property.region">region</a></code> | <code>str</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.prometheusResourcePolicy.PrometheusResourcePolicyConfig.property.revisionId">revision_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/prometheus_resource_policy#revision_id PrometheusResourcePolicy#revision_id}. |
+| <code><a href="#@cdktn/provider-aws.prometheusResourcePolicy.PrometheusResourcePolicyConfig.property.revisionId">revision_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/prometheus_resource_policy#revision_id PrometheusResourcePolicy#revision_id}. |
 | <code><a href="#@cdktn/provider-aws.prometheusResourcePolicy.PrometheusResourcePolicyConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.prometheusResourcePolicy.PrometheusResourcePolicyTimeouts">PrometheusResourcePolicyTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1108,7 +1108,7 @@ policy_document: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/prometheus_resource_policy#policy_document PrometheusResourcePolicy#policy_document}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/prometheus_resource_policy#policy_document PrometheusResourcePolicy#policy_document}.
 
 ---
 
@@ -1120,7 +1120,7 @@ workspace_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/prometheus_resource_policy#workspace_id PrometheusResourcePolicy#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/prometheus_resource_policy#workspace_id PrometheusResourcePolicy#workspace_id}.
 
 ---
 
@@ -1134,7 +1134,7 @@ region: str
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/prometheus_resource_policy#region PrometheusResourcePolicy#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/prometheus_resource_policy#region PrometheusResourcePolicy#region}
 
 ---
 
@@ -1146,7 +1146,7 @@ revision_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/prometheus_resource_policy#revision_id PrometheusResourcePolicy#revision_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/prometheus_resource_policy#revision_id PrometheusResourcePolicy#revision_id}.
 
 ---
 
@@ -1160,7 +1160,7 @@ timeouts: PrometheusResourcePolicyTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/prometheus_resource_policy#timeouts PrometheusResourcePolicy#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/prometheus_resource_policy#timeouts PrometheusResourcePolicy#timeouts}
 
 ---
 
@@ -1198,7 +1198,7 @@ create: str
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/prometheus_resource_policy#create PrometheusResourcePolicy#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/prometheus_resource_policy#create PrometheusResourcePolicy#create}
 
 ---
 
@@ -1212,7 +1212,7 @@ delete: str
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/prometheus_resource_policy#delete PrometheusResourcePolicy#delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/prometheus_resource_policy#delete PrometheusResourcePolicy#delete}
 
 ---
 
@@ -1226,7 +1226,7 @@ update: str
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/prometheus_resource_policy#update PrometheusResourcePolicy#update}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/prometheus_resource_policy#update PrometheusResourcePolicy#update}
 
 ---
 

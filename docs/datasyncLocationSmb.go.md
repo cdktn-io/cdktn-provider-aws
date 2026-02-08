@@ -4,12 +4,12 @@
 
 ### DatasyncLocationSmb <a name="DatasyncLocationSmb" id="@cdktn/provider-aws.datasyncLocationSmb.DatasyncLocationSmb"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/datasync_location_smb aws_datasync_location_smb}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/datasync_location_smb aws_datasync_location_smb}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.datasyncLocationSmb.DatasyncLocationSmb.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/datasynclocationsmb"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/datasynclocationsmb"
 
 datasynclocationsmb.NewDatasyncLocationSmb(scope Construct, id *string, config DatasyncLocationSmbConfig) DatasyncLocationSmb
 ```
@@ -433,7 +433,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.datasyncLocationSmb.DatasyncLocationSmb.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/datasynclocationsmb"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/datasynclocationsmb"
 
 datasynclocationsmb.DatasyncLocationSmb_IsConstruct(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.datasyncLocationSmb.DatasyncLocationSmb.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/datasynclocationsmb"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/datasynclocationsmb"
 
 datasynclocationsmb.DatasyncLocationSmb_IsTerraformElement(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ datasynclocationsmb.DatasyncLocationSmb_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.datasyncLocationSmb.DatasyncLocationSmb.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/datasynclocationsmb"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/datasynclocationsmb"
 
 datasynclocationsmb.DatasyncLocationSmb_IsTerraformResource(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ datasynclocationsmb.DatasyncLocationSmb_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.datasyncLocationSmb.DatasyncLocationSmb.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/datasynclocationsmb"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/datasynclocationsmb"
 
 datasynclocationsmb.DatasyncLocationSmb_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -522,7 +522,7 @@ The construct id used in the generated config for the DatasyncLocationSmb to imp
 
 The id of the existing DatasyncLocationSmb that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/datasync_location_smb#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/datasync_location_smb#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -986,7 +986,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.datasyncLocationSmb.DatasyncLocationSmbConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/datasynclocationsmb"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/datasynclocationsmb"
 
 &datasynclocationsmb.DatasyncLocationSmbConfig {
 	Connection: interface{},
@@ -1003,7 +1003,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/datasynclocationsmb"
 	User: *string,
 	Domain: *string,
 	Id: *string,
-	MountOptions: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.datasyncLocationSmb.DatasyncLocationSmbMountOptions,
+	MountOptions: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.datasyncLocationSmb.DatasyncLocationSmbMountOptions,
 	Region: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
@@ -1021,17 +1021,17 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/datasynclocationsmb"
 | <code><a href="#@cdktn/provider-aws.datasyncLocationSmb.DatasyncLocationSmbConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.datasyncLocationSmb.DatasyncLocationSmbConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.datasyncLocationSmb.DatasyncLocationSmbConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.datasyncLocationSmb.DatasyncLocationSmbConfig.property.agentArns">AgentArns</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/datasync_location_smb#agent_arns DatasyncLocationSmb#agent_arns}. |
-| <code><a href="#@cdktn/provider-aws.datasyncLocationSmb.DatasyncLocationSmbConfig.property.password">Password</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/datasync_location_smb#password DatasyncLocationSmb#password}. |
-| <code><a href="#@cdktn/provider-aws.datasyncLocationSmb.DatasyncLocationSmbConfig.property.serverHostname">ServerHostname</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/datasync_location_smb#server_hostname DatasyncLocationSmb#server_hostname}. |
-| <code><a href="#@cdktn/provider-aws.datasyncLocationSmb.DatasyncLocationSmbConfig.property.subdirectory">Subdirectory</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/datasync_location_smb#subdirectory DatasyncLocationSmb#subdirectory}. |
-| <code><a href="#@cdktn/provider-aws.datasyncLocationSmb.DatasyncLocationSmbConfig.property.user">User</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/datasync_location_smb#user DatasyncLocationSmb#user}. |
-| <code><a href="#@cdktn/provider-aws.datasyncLocationSmb.DatasyncLocationSmbConfig.property.domain">Domain</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/datasync_location_smb#domain DatasyncLocationSmb#domain}. |
-| <code><a href="#@cdktn/provider-aws.datasyncLocationSmb.DatasyncLocationSmbConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/datasync_location_smb#id DatasyncLocationSmb#id}. |
+| <code><a href="#@cdktn/provider-aws.datasyncLocationSmb.DatasyncLocationSmbConfig.property.agentArns">AgentArns</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/datasync_location_smb#agent_arns DatasyncLocationSmb#agent_arns}. |
+| <code><a href="#@cdktn/provider-aws.datasyncLocationSmb.DatasyncLocationSmbConfig.property.password">Password</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/datasync_location_smb#password DatasyncLocationSmb#password}. |
+| <code><a href="#@cdktn/provider-aws.datasyncLocationSmb.DatasyncLocationSmbConfig.property.serverHostname">ServerHostname</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/datasync_location_smb#server_hostname DatasyncLocationSmb#server_hostname}. |
+| <code><a href="#@cdktn/provider-aws.datasyncLocationSmb.DatasyncLocationSmbConfig.property.subdirectory">Subdirectory</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/datasync_location_smb#subdirectory DatasyncLocationSmb#subdirectory}. |
+| <code><a href="#@cdktn/provider-aws.datasyncLocationSmb.DatasyncLocationSmbConfig.property.user">User</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/datasync_location_smb#user DatasyncLocationSmb#user}. |
+| <code><a href="#@cdktn/provider-aws.datasyncLocationSmb.DatasyncLocationSmbConfig.property.domain">Domain</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/datasync_location_smb#domain DatasyncLocationSmb#domain}. |
+| <code><a href="#@cdktn/provider-aws.datasyncLocationSmb.DatasyncLocationSmbConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/datasync_location_smb#id DatasyncLocationSmb#id}. |
 | <code><a href="#@cdktn/provider-aws.datasyncLocationSmb.DatasyncLocationSmbConfig.property.mountOptions">MountOptions</a></code> | <code><a href="#@cdktn/provider-aws.datasyncLocationSmb.DatasyncLocationSmbMountOptions">DatasyncLocationSmbMountOptions</a></code> | mount_options block. |
 | <code><a href="#@cdktn/provider-aws.datasyncLocationSmb.DatasyncLocationSmbConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.datasyncLocationSmb.DatasyncLocationSmbConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/datasync_location_smb#tags DatasyncLocationSmb#tags}. |
-| <code><a href="#@cdktn/provider-aws.datasyncLocationSmb.DatasyncLocationSmbConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/datasync_location_smb#tags_all DatasyncLocationSmb#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.datasyncLocationSmb.DatasyncLocationSmbConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/datasync_location_smb#tags DatasyncLocationSmb#tags}. |
+| <code><a href="#@cdktn/provider-aws.datasyncLocationSmb.DatasyncLocationSmbConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/datasync_location_smb#tags_all DatasyncLocationSmb#tags_all}. |
 
 ---
 
@@ -1113,7 +1113,7 @@ AgentArns *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/datasync_location_smb#agent_arns DatasyncLocationSmb#agent_arns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/datasync_location_smb#agent_arns DatasyncLocationSmb#agent_arns}.
 
 ---
 
@@ -1125,7 +1125,7 @@ Password *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/datasync_location_smb#password DatasyncLocationSmb#password}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/datasync_location_smb#password DatasyncLocationSmb#password}.
 
 ---
 
@@ -1137,7 +1137,7 @@ ServerHostname *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/datasync_location_smb#server_hostname DatasyncLocationSmb#server_hostname}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/datasync_location_smb#server_hostname DatasyncLocationSmb#server_hostname}.
 
 ---
 
@@ -1149,7 +1149,7 @@ Subdirectory *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/datasync_location_smb#subdirectory DatasyncLocationSmb#subdirectory}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/datasync_location_smb#subdirectory DatasyncLocationSmb#subdirectory}.
 
 ---
 
@@ -1161,7 +1161,7 @@ User *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/datasync_location_smb#user DatasyncLocationSmb#user}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/datasync_location_smb#user DatasyncLocationSmb#user}.
 
 ---
 
@@ -1173,7 +1173,7 @@ Domain *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/datasync_location_smb#domain DatasyncLocationSmb#domain}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/datasync_location_smb#domain DatasyncLocationSmb#domain}.
 
 ---
 
@@ -1185,7 +1185,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/datasync_location_smb#id DatasyncLocationSmb#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/datasync_location_smb#id DatasyncLocationSmb#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1202,7 +1202,7 @@ MountOptions DatasyncLocationSmbMountOptions
 
 mount_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/datasync_location_smb#mount_options DatasyncLocationSmb#mount_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/datasync_location_smb#mount_options DatasyncLocationSmb#mount_options}
 
 ---
 
@@ -1216,7 +1216,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/datasync_location_smb#region DatasyncLocationSmb#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/datasync_location_smb#region DatasyncLocationSmb#region}
 
 ---
 
@@ -1228,7 +1228,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/datasync_location_smb#tags DatasyncLocationSmb#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/datasync_location_smb#tags DatasyncLocationSmb#tags}.
 
 ---
 
@@ -1240,7 +1240,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/datasync_location_smb#tags_all DatasyncLocationSmb#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/datasync_location_smb#tags_all DatasyncLocationSmb#tags_all}.
 
 ---
 
@@ -1249,7 +1249,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.datasyncLocationSmb.DatasyncLocationSmbMountOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/datasynclocationsmb"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/datasynclocationsmb"
 
 &datasynclocationsmb.DatasyncLocationSmbMountOptions {
 	Version: *string,
@@ -1260,7 +1260,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/datasynclocationsmb"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.datasyncLocationSmb.DatasyncLocationSmbMountOptions.property.version">Version</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/datasync_location_smb#version DatasyncLocationSmb#version}. |
+| <code><a href="#@cdktn/provider-aws.datasyncLocationSmb.DatasyncLocationSmbMountOptions.property.version">Version</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/datasync_location_smb#version DatasyncLocationSmb#version}. |
 
 ---
 
@@ -1272,7 +1272,7 @@ Version *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/datasync_location_smb#version DatasyncLocationSmb#version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/datasync_location_smb#version DatasyncLocationSmb#version}.
 
 ---
 
@@ -1283,7 +1283,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.datasyncLocationSmb.DatasyncLocationSmbMountOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/datasynclocationsmb"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/datasynclocationsmb"
 
 datasynclocationsmb.NewDatasyncLocationSmbMountOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DatasyncLocationSmbMountOptionsOutputReference
 ```

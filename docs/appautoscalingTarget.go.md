@@ -4,12 +4,12 @@
 
 ### AppautoscalingTarget <a name="AppautoscalingTarget" id="@cdktn/provider-aws.appautoscalingTarget.AppautoscalingTarget"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/appautoscaling_target aws_appautoscaling_target}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/appautoscaling_target aws_appautoscaling_target}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appautoscalingTarget.AppautoscalingTarget.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/appautoscalingtarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/appautoscalingtarget"
 
 appautoscalingtarget.NewAppautoscalingTarget(scope Construct, id *string, config AppautoscalingTargetConfig) AppautoscalingTarget
 ```
@@ -433,7 +433,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.appautoscalingTarget.AppautoscalingTarget.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/appautoscalingtarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/appautoscalingtarget"
 
 appautoscalingtarget.AppautoscalingTarget_IsConstruct(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.appautoscalingTarget.AppautoscalingTarget.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/appautoscalingtarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/appautoscalingtarget"
 
 appautoscalingtarget.AppautoscalingTarget_IsTerraformElement(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ appautoscalingtarget.AppautoscalingTarget_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.appautoscalingTarget.AppautoscalingTarget.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/appautoscalingtarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/appautoscalingtarget"
 
 appautoscalingtarget.AppautoscalingTarget_IsTerraformResource(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ appautoscalingtarget.AppautoscalingTarget_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.appautoscalingTarget.AppautoscalingTarget.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/appautoscalingtarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/appautoscalingtarget"
 
 appautoscalingtarget.AppautoscalingTarget_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -522,7 +522,7 @@ The construct id used in the generated config for the AppautoscalingTarget to im
 
 The id of the existing AppautoscalingTarget that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/appautoscaling_target#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/appautoscaling_target#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -975,7 +975,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appautoscalingTarget.AppautoscalingTargetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/appautoscalingtarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/appautoscalingtarget"
 
 &appautoscalingtarget.AppautoscalingTargetConfig {
 	Connection: interface{},
@@ -993,7 +993,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/appautoscalingtarget"
 	Id: *string,
 	Region: *string,
 	RoleArn: *string,
-	SuspendedState: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.appautoscalingTarget.AppautoscalingTargetSuspendedState,
+	SuspendedState: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.appautoscalingTarget.AppautoscalingTargetSuspendedState,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
 }
@@ -1010,17 +1010,17 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/appautoscalingtarget"
 | <code><a href="#@cdktn/provider-aws.appautoscalingTarget.AppautoscalingTargetConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.appautoscalingTarget.AppautoscalingTargetConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.appautoscalingTarget.AppautoscalingTargetConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.appautoscalingTarget.AppautoscalingTargetConfig.property.maxCapacity">MaxCapacity</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/appautoscaling_target#max_capacity AppautoscalingTarget#max_capacity}. |
-| <code><a href="#@cdktn/provider-aws.appautoscalingTarget.AppautoscalingTargetConfig.property.minCapacity">MinCapacity</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/appautoscaling_target#min_capacity AppautoscalingTarget#min_capacity}. |
-| <code><a href="#@cdktn/provider-aws.appautoscalingTarget.AppautoscalingTargetConfig.property.resourceId">ResourceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/appautoscaling_target#resource_id AppautoscalingTarget#resource_id}. |
-| <code><a href="#@cdktn/provider-aws.appautoscalingTarget.AppautoscalingTargetConfig.property.scalableDimension">ScalableDimension</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/appautoscaling_target#scalable_dimension AppautoscalingTarget#scalable_dimension}. |
-| <code><a href="#@cdktn/provider-aws.appautoscalingTarget.AppautoscalingTargetConfig.property.serviceNamespace">ServiceNamespace</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/appautoscaling_target#service_namespace AppautoscalingTarget#service_namespace}. |
-| <code><a href="#@cdktn/provider-aws.appautoscalingTarget.AppautoscalingTargetConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/appautoscaling_target#id AppautoscalingTarget#id}. |
+| <code><a href="#@cdktn/provider-aws.appautoscalingTarget.AppautoscalingTargetConfig.property.maxCapacity">MaxCapacity</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/appautoscaling_target#max_capacity AppautoscalingTarget#max_capacity}. |
+| <code><a href="#@cdktn/provider-aws.appautoscalingTarget.AppautoscalingTargetConfig.property.minCapacity">MinCapacity</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/appautoscaling_target#min_capacity AppautoscalingTarget#min_capacity}. |
+| <code><a href="#@cdktn/provider-aws.appautoscalingTarget.AppautoscalingTargetConfig.property.resourceId">ResourceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/appautoscaling_target#resource_id AppautoscalingTarget#resource_id}. |
+| <code><a href="#@cdktn/provider-aws.appautoscalingTarget.AppautoscalingTargetConfig.property.scalableDimension">ScalableDimension</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/appautoscaling_target#scalable_dimension AppautoscalingTarget#scalable_dimension}. |
+| <code><a href="#@cdktn/provider-aws.appautoscalingTarget.AppautoscalingTargetConfig.property.serviceNamespace">ServiceNamespace</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/appautoscaling_target#service_namespace AppautoscalingTarget#service_namespace}. |
+| <code><a href="#@cdktn/provider-aws.appautoscalingTarget.AppautoscalingTargetConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/appautoscaling_target#id AppautoscalingTarget#id}. |
 | <code><a href="#@cdktn/provider-aws.appautoscalingTarget.AppautoscalingTargetConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.appautoscalingTarget.AppautoscalingTargetConfig.property.roleArn">RoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/appautoscaling_target#role_arn AppautoscalingTarget#role_arn}. |
+| <code><a href="#@cdktn/provider-aws.appautoscalingTarget.AppautoscalingTargetConfig.property.roleArn">RoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/appautoscaling_target#role_arn AppautoscalingTarget#role_arn}. |
 | <code><a href="#@cdktn/provider-aws.appautoscalingTarget.AppautoscalingTargetConfig.property.suspendedState">SuspendedState</a></code> | <code><a href="#@cdktn/provider-aws.appautoscalingTarget.AppautoscalingTargetSuspendedState">AppautoscalingTargetSuspendedState</a></code> | suspended_state block. |
-| <code><a href="#@cdktn/provider-aws.appautoscalingTarget.AppautoscalingTargetConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/appautoscaling_target#tags AppautoscalingTarget#tags}. |
-| <code><a href="#@cdktn/provider-aws.appautoscalingTarget.AppautoscalingTargetConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/appautoscaling_target#tags_all AppautoscalingTarget#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.appautoscalingTarget.AppautoscalingTargetConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/appautoscaling_target#tags AppautoscalingTarget#tags}. |
+| <code><a href="#@cdktn/provider-aws.appautoscalingTarget.AppautoscalingTargetConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/appautoscaling_target#tags_all AppautoscalingTarget#tags_all}. |
 
 ---
 
@@ -1102,7 +1102,7 @@ MaxCapacity *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/appautoscaling_target#max_capacity AppautoscalingTarget#max_capacity}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/appautoscaling_target#max_capacity AppautoscalingTarget#max_capacity}.
 
 ---
 
@@ -1114,7 +1114,7 @@ MinCapacity *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/appautoscaling_target#min_capacity AppautoscalingTarget#min_capacity}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/appautoscaling_target#min_capacity AppautoscalingTarget#min_capacity}.
 
 ---
 
@@ -1126,7 +1126,7 @@ ResourceId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/appautoscaling_target#resource_id AppautoscalingTarget#resource_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/appautoscaling_target#resource_id AppautoscalingTarget#resource_id}.
 
 ---
 
@@ -1138,7 +1138,7 @@ ScalableDimension *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/appautoscaling_target#scalable_dimension AppautoscalingTarget#scalable_dimension}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/appautoscaling_target#scalable_dimension AppautoscalingTarget#scalable_dimension}.
 
 ---
 
@@ -1150,7 +1150,7 @@ ServiceNamespace *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/appautoscaling_target#service_namespace AppautoscalingTarget#service_namespace}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/appautoscaling_target#service_namespace AppautoscalingTarget#service_namespace}.
 
 ---
 
@@ -1162,7 +1162,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/appautoscaling_target#id AppautoscalingTarget#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/appautoscaling_target#id AppautoscalingTarget#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1179,7 +1179,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/appautoscaling_target#region AppautoscalingTarget#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/appautoscaling_target#region AppautoscalingTarget#region}
 
 ---
 
@@ -1191,7 +1191,7 @@ RoleArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/appautoscaling_target#role_arn AppautoscalingTarget#role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/appautoscaling_target#role_arn AppautoscalingTarget#role_arn}.
 
 ---
 
@@ -1205,7 +1205,7 @@ SuspendedState AppautoscalingTargetSuspendedState
 
 suspended_state block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/appautoscaling_target#suspended_state AppautoscalingTarget#suspended_state}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/appautoscaling_target#suspended_state AppautoscalingTarget#suspended_state}
 
 ---
 
@@ -1217,7 +1217,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/appautoscaling_target#tags AppautoscalingTarget#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/appautoscaling_target#tags AppautoscalingTarget#tags}.
 
 ---
 
@@ -1229,7 +1229,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/appautoscaling_target#tags_all AppautoscalingTarget#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/appautoscaling_target#tags_all AppautoscalingTarget#tags_all}.
 
 ---
 
@@ -1238,7 +1238,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.appautoscalingTarget.AppautoscalingTargetSuspendedState.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/appautoscalingtarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/appautoscalingtarget"
 
 &appautoscalingtarget.AppautoscalingTargetSuspendedState {
 	DynamicScalingInSuspended: interface{},
@@ -1251,9 +1251,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/appautoscalingtarget"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.appautoscalingTarget.AppautoscalingTargetSuspendedState.property.dynamicScalingInSuspended">DynamicScalingInSuspended</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/appautoscaling_target#dynamic_scaling_in_suspended AppautoscalingTarget#dynamic_scaling_in_suspended}. |
-| <code><a href="#@cdktn/provider-aws.appautoscalingTarget.AppautoscalingTargetSuspendedState.property.dynamicScalingOutSuspended">DynamicScalingOutSuspended</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/appautoscaling_target#dynamic_scaling_out_suspended AppautoscalingTarget#dynamic_scaling_out_suspended}. |
-| <code><a href="#@cdktn/provider-aws.appautoscalingTarget.AppautoscalingTargetSuspendedState.property.scheduledScalingSuspended">ScheduledScalingSuspended</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/appautoscaling_target#scheduled_scaling_suspended AppautoscalingTarget#scheduled_scaling_suspended}. |
+| <code><a href="#@cdktn/provider-aws.appautoscalingTarget.AppautoscalingTargetSuspendedState.property.dynamicScalingInSuspended">DynamicScalingInSuspended</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/appautoscaling_target#dynamic_scaling_in_suspended AppautoscalingTarget#dynamic_scaling_in_suspended}. |
+| <code><a href="#@cdktn/provider-aws.appautoscalingTarget.AppautoscalingTargetSuspendedState.property.dynamicScalingOutSuspended">DynamicScalingOutSuspended</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/appautoscaling_target#dynamic_scaling_out_suspended AppautoscalingTarget#dynamic_scaling_out_suspended}. |
+| <code><a href="#@cdktn/provider-aws.appautoscalingTarget.AppautoscalingTargetSuspendedState.property.scheduledScalingSuspended">ScheduledScalingSuspended</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/appautoscaling_target#scheduled_scaling_suspended AppautoscalingTarget#scheduled_scaling_suspended}. |
 
 ---
 
@@ -1265,7 +1265,7 @@ DynamicScalingInSuspended interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/appautoscaling_target#dynamic_scaling_in_suspended AppautoscalingTarget#dynamic_scaling_in_suspended}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/appautoscaling_target#dynamic_scaling_in_suspended AppautoscalingTarget#dynamic_scaling_in_suspended}.
 
 ---
 
@@ -1277,7 +1277,7 @@ DynamicScalingOutSuspended interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/appautoscaling_target#dynamic_scaling_out_suspended AppautoscalingTarget#dynamic_scaling_out_suspended}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/appautoscaling_target#dynamic_scaling_out_suspended AppautoscalingTarget#dynamic_scaling_out_suspended}.
 
 ---
 
@@ -1289,7 +1289,7 @@ ScheduledScalingSuspended interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/appautoscaling_target#scheduled_scaling_suspended AppautoscalingTarget#scheduled_scaling_suspended}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/appautoscaling_target#scheduled_scaling_suspended AppautoscalingTarget#scheduled_scaling_suspended}.
 
 ---
 
@@ -1300,7 +1300,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.appautoscalingTarget.AppautoscalingTargetSuspendedStateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/appautoscalingtarget"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/appautoscalingtarget"
 
 appautoscalingtarget.NewAppautoscalingTargetSuspendedStateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppautoscalingTargetSuspendedStateOutputReference
 ```

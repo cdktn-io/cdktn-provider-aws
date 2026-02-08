@@ -4,12 +4,12 @@
 
 ### DataAwsCustomerGateway <a name="DataAwsCustomerGateway" id="@cdktn/provider-aws.dataAwsCustomerGateway.DataAwsCustomerGateway"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/customer_gateway aws_customer_gateway}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/customer_gateway aws_customer_gateway}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsCustomerGateway.DataAwsCustomerGateway.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawscustomergateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawscustomergateway"
 
 dataawscustomergateway.NewDataAwsCustomerGateway(scope Construct, id *string, config DataAwsCustomerGatewayConfig) DataAwsCustomerGateway
 ```
@@ -337,7 +337,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsCustomerGateway.DataAwsCustomerGateway.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawscustomergateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawscustomergateway"
 
 dataawscustomergateway.DataAwsCustomerGateway_IsConstruct(x interface{}) *bool
 ```
@@ -369,7 +369,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsCustomerGateway.DataAwsCustomerGateway.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawscustomergateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawscustomergateway"
 
 dataawscustomergateway.DataAwsCustomerGateway_IsTerraformElement(x interface{}) *bool
 ```
@@ -383,7 +383,7 @@ dataawscustomergateway.DataAwsCustomerGateway_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsCustomerGateway.DataAwsCustomerGateway.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawscustomergateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawscustomergateway"
 
 dataawscustomergateway.DataAwsCustomerGateway_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -397,7 +397,7 @@ dataawscustomergateway.DataAwsCustomerGateway_IsTerraformDataSource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsCustomerGateway.DataAwsCustomerGateway.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawscustomergateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawscustomergateway"
 
 dataawscustomergateway.DataAwsCustomerGateway_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -426,7 +426,7 @@ The construct id used in the generated config for the DataAwsCustomerGateway to 
 
 The id of the existing DataAwsCustomerGateway that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/customer_gateway#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/customer_gateway#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -791,7 +791,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsCustomerGateway.DataAwsCustomerGatewayConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawscustomergateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawscustomergateway"
 
 &dataawscustomergateway.DataAwsCustomerGatewayConfig {
 	Connection: interface{},
@@ -805,7 +805,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawscustomergateway
 	Id: *string,
 	Region: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.dataAwsCustomerGateway.DataAwsCustomerGatewayTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.dataAwsCustomerGateway.DataAwsCustomerGatewayTimeouts,
 }
 ```
 
@@ -821,9 +821,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawscustomergateway
 | <code><a href="#@cdktn/provider-aws.dataAwsCustomerGateway.DataAwsCustomerGatewayConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsCustomerGateway.DataAwsCustomerGatewayConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsCustomerGateway.DataAwsCustomerGatewayConfig.property.filter">Filter</a></code> | <code>interface{}</code> | filter block. |
-| <code><a href="#@cdktn/provider-aws.dataAwsCustomerGateway.DataAwsCustomerGatewayConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/customer_gateway#id DataAwsCustomerGateway#id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsCustomerGateway.DataAwsCustomerGatewayConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/customer_gateway#id DataAwsCustomerGateway#id}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsCustomerGateway.DataAwsCustomerGatewayConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.dataAwsCustomerGateway.DataAwsCustomerGatewayConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/customer_gateway#tags DataAwsCustomerGateway#tags}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsCustomerGateway.DataAwsCustomerGatewayConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/customer_gateway#tags DataAwsCustomerGateway#tags}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsCustomerGateway.DataAwsCustomerGatewayConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.dataAwsCustomerGateway.DataAwsCustomerGatewayTimeouts">DataAwsCustomerGatewayTimeouts</a></code> | timeouts block. |
 
 ---
@@ -908,7 +908,7 @@ Filter interface{}
 
 filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/customer_gateway#filter DataAwsCustomerGateway#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/customer_gateway#filter DataAwsCustomerGateway#filter}
 
 ---
 
@@ -920,7 +920,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/customer_gateway#id DataAwsCustomerGateway#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/customer_gateway#id DataAwsCustomerGateway#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -937,7 +937,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/customer_gateway#region DataAwsCustomerGateway#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/customer_gateway#region DataAwsCustomerGateway#region}
 
 ---
 
@@ -949,7 +949,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/customer_gateway#tags DataAwsCustomerGateway#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/customer_gateway#tags DataAwsCustomerGateway#tags}.
 
 ---
 
@@ -963,7 +963,7 @@ Timeouts DataAwsCustomerGatewayTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/customer_gateway#timeouts DataAwsCustomerGateway#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/customer_gateway#timeouts DataAwsCustomerGateway#timeouts}
 
 ---
 
@@ -972,7 +972,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsCustomerGateway.DataAwsCustomerGatewayFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawscustomergateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawscustomergateway"
 
 &dataawscustomergateway.DataAwsCustomerGatewayFilter {
 	Name: *string,
@@ -984,8 +984,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawscustomergateway
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.dataAwsCustomerGateway.DataAwsCustomerGatewayFilter.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/customer_gateway#name DataAwsCustomerGateway#name}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsCustomerGateway.DataAwsCustomerGatewayFilter.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/customer_gateway#values DataAwsCustomerGateway#values}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsCustomerGateway.DataAwsCustomerGatewayFilter.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/customer_gateway#name DataAwsCustomerGateway#name}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsCustomerGateway.DataAwsCustomerGatewayFilter.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/customer_gateway#values DataAwsCustomerGateway#values}. |
 
 ---
 
@@ -997,7 +997,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/customer_gateway#name DataAwsCustomerGateway#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/customer_gateway#name DataAwsCustomerGateway#name}.
 
 ---
 
@@ -1009,7 +1009,7 @@ Values *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/customer_gateway#values DataAwsCustomerGateway#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/customer_gateway#values DataAwsCustomerGateway#values}.
 
 ---
 
@@ -1018,7 +1018,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsCustomerGateway.DataAwsCustomerGatewayTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawscustomergateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawscustomergateway"
 
 &dataawscustomergateway.DataAwsCustomerGatewayTimeouts {
 	Read: *string,
@@ -1029,7 +1029,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawscustomergateway
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.dataAwsCustomerGateway.DataAwsCustomerGatewayTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/customer_gateway#read DataAwsCustomerGateway#read}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsCustomerGateway.DataAwsCustomerGatewayTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/customer_gateway#read DataAwsCustomerGateway#read}. |
 
 ---
 
@@ -1041,7 +1041,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/customer_gateway#read DataAwsCustomerGateway#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/customer_gateway#read DataAwsCustomerGateway#read}.
 
 ---
 
@@ -1052,7 +1052,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsCustomerGateway.DataAwsCustomerGatewayFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawscustomergateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawscustomergateway"
 
 dataawscustomergateway.NewDataAwsCustomerGatewayFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsCustomerGatewayFilterList
 ```
@@ -1212,7 +1212,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsCustomerGateway.DataAwsCustomerGatewayFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawscustomergateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawscustomergateway"
 
 dataawscustomergateway.NewDataAwsCustomerGatewayFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsCustomerGatewayFilterOutputReference
 ```
@@ -1523,7 +1523,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsCustomerGateway.DataAwsCustomerGatewayTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawscustomergateway"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawscustomergateway"
 
 dataawscustomergateway.NewDataAwsCustomerGatewayTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAwsCustomerGatewayTimeoutsOutputReference
 ```

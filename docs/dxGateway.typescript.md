@@ -4,7 +4,7 @@
 
 ### DxGateway <a name="DxGateway" id="@cdktn/provider-aws.dxGateway.DxGateway"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dx_gateway aws_dx_gateway}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dx_gateway aws_dx_gateway}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dxGateway.DxGateway.Initializer"></a>
 
@@ -508,7 +508,7 @@ The construct id used in the generated config for the DxGateway to import.
 
 The id of the existing DxGateway that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dx_gateway#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dx_gateway#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -878,11 +878,11 @@ const dxGatewayConfig: dxGateway.DxGatewayConfig = { ... }
 | <code><a href="#@cdktn/provider-aws.dxGateway.DxGatewayConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dxGateway.DxGatewayConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dxGateway.DxGatewayConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dxGateway.DxGatewayConfig.property.amazonSideAsn">amazonSideAsn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dx_gateway#amazon_side_asn DxGateway#amazon_side_asn}. |
-| <code><a href="#@cdktn/provider-aws.dxGateway.DxGatewayConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dx_gateway#name DxGateway#name}. |
-| <code><a href="#@cdktn/provider-aws.dxGateway.DxGatewayConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dx_gateway#id DxGateway#id}. |
-| <code><a href="#@cdktn/provider-aws.dxGateway.DxGatewayConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dx_gateway#tags DxGateway#tags}. |
-| <code><a href="#@cdktn/provider-aws.dxGateway.DxGatewayConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dx_gateway#tags_all DxGateway#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.dxGateway.DxGatewayConfig.property.amazonSideAsn">amazonSideAsn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dx_gateway#amazon_side_asn DxGateway#amazon_side_asn}. |
+| <code><a href="#@cdktn/provider-aws.dxGateway.DxGatewayConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dx_gateway#name DxGateway#name}. |
+| <code><a href="#@cdktn/provider-aws.dxGateway.DxGatewayConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dx_gateway#id DxGateway#id}. |
+| <code><a href="#@cdktn/provider-aws.dxGateway.DxGatewayConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dx_gateway#tags DxGateway#tags}. |
+| <code><a href="#@cdktn/provider-aws.dxGateway.DxGatewayConfig.property.tagsAll">tagsAll</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dx_gateway#tags_all DxGateway#tags_all}. |
 | <code><a href="#@cdktn/provider-aws.dxGateway.DxGatewayConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-aws.dxGateway.DxGatewayTimeouts">DxGatewayTimeouts</a></code> | timeouts block. |
 
 ---
@@ -965,7 +965,7 @@ public readonly amazonSideAsn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dx_gateway#amazon_side_asn DxGateway#amazon_side_asn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dx_gateway#amazon_side_asn DxGateway#amazon_side_asn}.
 
 ---
 
@@ -977,7 +977,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dx_gateway#name DxGateway#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dx_gateway#name DxGateway#name}.
 
 ---
 
@@ -989,7 +989,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dx_gateway#id DxGateway#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dx_gateway#id DxGateway#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1004,7 +1004,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dx_gateway#tags DxGateway#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dx_gateway#tags DxGateway#tags}.
 
 ---
 
@@ -1016,7 +1016,7 @@ public readonly tagsAll: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dx_gateway#tags_all DxGateway#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dx_gateway#tags_all DxGateway#tags_all}.
 
 ---
 
@@ -1030,7 +1030,7 @@ public readonly timeouts: DxGatewayTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dx_gateway#timeouts DxGateway#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dx_gateway#timeouts DxGateway#timeouts}
 
 ---
 
@@ -1048,8 +1048,8 @@ const dxGatewayTimeouts: dxGateway.DxGatewayTimeouts = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.dxGateway.DxGatewayTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dx_gateway#create DxGateway#create}. |
-| <code><a href="#@cdktn/provider-aws.dxGateway.DxGatewayTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dx_gateway#delete DxGateway#delete}. |
+| <code><a href="#@cdktn/provider-aws.dxGateway.DxGatewayTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dx_gateway#create DxGateway#create}. |
+| <code><a href="#@cdktn/provider-aws.dxGateway.DxGatewayTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dx_gateway#delete DxGateway#delete}. |
 
 ---
 
@@ -1061,7 +1061,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dx_gateway#create DxGateway#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dx_gateway#create DxGateway#create}.
 
 ---
 
@@ -1073,7 +1073,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/dx_gateway#delete DxGateway#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/dx_gateway#delete DxGateway#delete}.
 
 ---
 

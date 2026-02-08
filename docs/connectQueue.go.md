@@ -4,12 +4,12 @@
 
 ### ConnectQueue <a name="ConnectQueue" id="@cdktn/provider-aws.connectQueue.ConnectQueue"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/connect_queue aws_connect_queue}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/connect_queue aws_connect_queue}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.connectQueue.ConnectQueue.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/connectqueue"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/connectqueue"
 
 connectqueue.NewConnectQueue(scope Construct, id *string, config ConnectQueueConfig) ConnectQueue
 ```
@@ -454,7 +454,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.connectQueue.ConnectQueue.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/connectqueue"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/connectqueue"
 
 connectqueue.ConnectQueue_IsConstruct(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.connectQueue.ConnectQueue.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/connectqueue"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/connectqueue"
 
 connectqueue.ConnectQueue_IsTerraformElement(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ connectqueue.ConnectQueue_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.connectQueue.ConnectQueue.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/connectqueue"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/connectqueue"
 
 connectqueue.ConnectQueue_IsTerraformResource(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ connectqueue.ConnectQueue_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.connectQueue.ConnectQueue.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/connectqueue"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/connectqueue"
 
 connectqueue.ConnectQueue_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -543,7 +543,7 @@ The construct id used in the generated config for the ConnectQueue to import.
 
 The id of the existing ConnectQueue that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/connect_queue#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/connect_queue#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1029,7 +1029,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.connectQueue.ConnectQueueConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/connectqueue"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/connectqueue"
 
 &connectqueue.ConnectQueueConfig {
 	Connection: interface{},
@@ -1045,7 +1045,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/connectqueue"
 	Description: *string,
 	Id: *string,
 	MaxContacts: *f64,
-	OutboundCallerConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.connectQueue.ConnectQueueOutboundCallerConfig,
+	OutboundCallerConfig: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.connectQueue.ConnectQueueOutboundCallerConfig,
 	QuickConnectIds: *[]*string,
 	Region: *string,
 	Status: *string,
@@ -1065,18 +1065,18 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/connectqueue"
 | <code><a href="#@cdktn/provider-aws.connectQueue.ConnectQueueConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.connectQueue.ConnectQueueConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.connectQueue.ConnectQueueConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.connectQueue.ConnectQueueConfig.property.hoursOfOperationId">HoursOfOperationId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/connect_queue#hours_of_operation_id ConnectQueue#hours_of_operation_id}. |
-| <code><a href="#@cdktn/provider-aws.connectQueue.ConnectQueueConfig.property.instanceId">InstanceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/connect_queue#instance_id ConnectQueue#instance_id}. |
-| <code><a href="#@cdktn/provider-aws.connectQueue.ConnectQueueConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/connect_queue#name ConnectQueue#name}. |
-| <code><a href="#@cdktn/provider-aws.connectQueue.ConnectQueueConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/connect_queue#description ConnectQueue#description}. |
-| <code><a href="#@cdktn/provider-aws.connectQueue.ConnectQueueConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/connect_queue#id ConnectQueue#id}. |
-| <code><a href="#@cdktn/provider-aws.connectQueue.ConnectQueueConfig.property.maxContacts">MaxContacts</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/connect_queue#max_contacts ConnectQueue#max_contacts}. |
+| <code><a href="#@cdktn/provider-aws.connectQueue.ConnectQueueConfig.property.hoursOfOperationId">HoursOfOperationId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/connect_queue#hours_of_operation_id ConnectQueue#hours_of_operation_id}. |
+| <code><a href="#@cdktn/provider-aws.connectQueue.ConnectQueueConfig.property.instanceId">InstanceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/connect_queue#instance_id ConnectQueue#instance_id}. |
+| <code><a href="#@cdktn/provider-aws.connectQueue.ConnectQueueConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/connect_queue#name ConnectQueue#name}. |
+| <code><a href="#@cdktn/provider-aws.connectQueue.ConnectQueueConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/connect_queue#description ConnectQueue#description}. |
+| <code><a href="#@cdktn/provider-aws.connectQueue.ConnectQueueConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/connect_queue#id ConnectQueue#id}. |
+| <code><a href="#@cdktn/provider-aws.connectQueue.ConnectQueueConfig.property.maxContacts">MaxContacts</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/connect_queue#max_contacts ConnectQueue#max_contacts}. |
 | <code><a href="#@cdktn/provider-aws.connectQueue.ConnectQueueConfig.property.outboundCallerConfig">OutboundCallerConfig</a></code> | <code><a href="#@cdktn/provider-aws.connectQueue.ConnectQueueOutboundCallerConfig">ConnectQueueOutboundCallerConfig</a></code> | outbound_caller_config block. |
-| <code><a href="#@cdktn/provider-aws.connectQueue.ConnectQueueConfig.property.quickConnectIds">QuickConnectIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/connect_queue#quick_connect_ids ConnectQueue#quick_connect_ids}. |
+| <code><a href="#@cdktn/provider-aws.connectQueue.ConnectQueueConfig.property.quickConnectIds">QuickConnectIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/connect_queue#quick_connect_ids ConnectQueue#quick_connect_ids}. |
 | <code><a href="#@cdktn/provider-aws.connectQueue.ConnectQueueConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.connectQueue.ConnectQueueConfig.property.status">Status</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/connect_queue#status ConnectQueue#status}. |
-| <code><a href="#@cdktn/provider-aws.connectQueue.ConnectQueueConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/connect_queue#tags ConnectQueue#tags}. |
-| <code><a href="#@cdktn/provider-aws.connectQueue.ConnectQueueConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/connect_queue#tags_all ConnectQueue#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.connectQueue.ConnectQueueConfig.property.status">Status</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/connect_queue#status ConnectQueue#status}. |
+| <code><a href="#@cdktn/provider-aws.connectQueue.ConnectQueueConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/connect_queue#tags ConnectQueue#tags}. |
+| <code><a href="#@cdktn/provider-aws.connectQueue.ConnectQueueConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/connect_queue#tags_all ConnectQueue#tags_all}. |
 
 ---
 
@@ -1158,7 +1158,7 @@ HoursOfOperationId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/connect_queue#hours_of_operation_id ConnectQueue#hours_of_operation_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/connect_queue#hours_of_operation_id ConnectQueue#hours_of_operation_id}.
 
 ---
 
@@ -1170,7 +1170,7 @@ InstanceId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/connect_queue#instance_id ConnectQueue#instance_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/connect_queue#instance_id ConnectQueue#instance_id}.
 
 ---
 
@@ -1182,7 +1182,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/connect_queue#name ConnectQueue#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/connect_queue#name ConnectQueue#name}.
 
 ---
 
@@ -1194,7 +1194,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/connect_queue#description ConnectQueue#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/connect_queue#description ConnectQueue#description}.
 
 ---
 
@@ -1206,7 +1206,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/connect_queue#id ConnectQueue#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/connect_queue#id ConnectQueue#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1221,7 +1221,7 @@ MaxContacts *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/connect_queue#max_contacts ConnectQueue#max_contacts}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/connect_queue#max_contacts ConnectQueue#max_contacts}.
 
 ---
 
@@ -1235,7 +1235,7 @@ OutboundCallerConfig ConnectQueueOutboundCallerConfig
 
 outbound_caller_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/connect_queue#outbound_caller_config ConnectQueue#outbound_caller_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/connect_queue#outbound_caller_config ConnectQueue#outbound_caller_config}
 
 ---
 
@@ -1247,7 +1247,7 @@ QuickConnectIds *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/connect_queue#quick_connect_ids ConnectQueue#quick_connect_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/connect_queue#quick_connect_ids ConnectQueue#quick_connect_ids}.
 
 ---
 
@@ -1261,7 +1261,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/connect_queue#region ConnectQueue#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/connect_queue#region ConnectQueue#region}
 
 ---
 
@@ -1273,7 +1273,7 @@ Status *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/connect_queue#status ConnectQueue#status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/connect_queue#status ConnectQueue#status}.
 
 ---
 
@@ -1285,7 +1285,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/connect_queue#tags ConnectQueue#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/connect_queue#tags ConnectQueue#tags}.
 
 ---
 
@@ -1297,7 +1297,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/connect_queue#tags_all ConnectQueue#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/connect_queue#tags_all ConnectQueue#tags_all}.
 
 ---
 
@@ -1306,7 +1306,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.connectQueue.ConnectQueueOutboundCallerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/connectqueue"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/connectqueue"
 
 &connectqueue.ConnectQueueOutboundCallerConfig {
 	OutboundCallerIdName: *string,
@@ -1319,9 +1319,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/connectqueue"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.connectQueue.ConnectQueueOutboundCallerConfig.property.outboundCallerIdName">OutboundCallerIdName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/connect_queue#outbound_caller_id_name ConnectQueue#outbound_caller_id_name}. |
-| <code><a href="#@cdktn/provider-aws.connectQueue.ConnectQueueOutboundCallerConfig.property.outboundCallerIdNumberId">OutboundCallerIdNumberId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/connect_queue#outbound_caller_id_number_id ConnectQueue#outbound_caller_id_number_id}. |
-| <code><a href="#@cdktn/provider-aws.connectQueue.ConnectQueueOutboundCallerConfig.property.outboundFlowId">OutboundFlowId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/connect_queue#outbound_flow_id ConnectQueue#outbound_flow_id}. |
+| <code><a href="#@cdktn/provider-aws.connectQueue.ConnectQueueOutboundCallerConfig.property.outboundCallerIdName">OutboundCallerIdName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/connect_queue#outbound_caller_id_name ConnectQueue#outbound_caller_id_name}. |
+| <code><a href="#@cdktn/provider-aws.connectQueue.ConnectQueueOutboundCallerConfig.property.outboundCallerIdNumberId">OutboundCallerIdNumberId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/connect_queue#outbound_caller_id_number_id ConnectQueue#outbound_caller_id_number_id}. |
+| <code><a href="#@cdktn/provider-aws.connectQueue.ConnectQueueOutboundCallerConfig.property.outboundFlowId">OutboundFlowId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/connect_queue#outbound_flow_id ConnectQueue#outbound_flow_id}. |
 
 ---
 
@@ -1333,7 +1333,7 @@ OutboundCallerIdName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/connect_queue#outbound_caller_id_name ConnectQueue#outbound_caller_id_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/connect_queue#outbound_caller_id_name ConnectQueue#outbound_caller_id_name}.
 
 ---
 
@@ -1345,7 +1345,7 @@ OutboundCallerIdNumberId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/connect_queue#outbound_caller_id_number_id ConnectQueue#outbound_caller_id_number_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/connect_queue#outbound_caller_id_number_id ConnectQueue#outbound_caller_id_number_id}.
 
 ---
 
@@ -1357,7 +1357,7 @@ OutboundFlowId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/connect_queue#outbound_flow_id ConnectQueue#outbound_flow_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/connect_queue#outbound_flow_id ConnectQueue#outbound_flow_id}.
 
 ---
 
@@ -1368,7 +1368,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.connectQueue.ConnectQueueOutboundCallerConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/connectqueue"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/connectqueue"
 
 connectqueue.NewConnectQueueOutboundCallerConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ConnectQueueOutboundCallerConfigOutputReference
 ```

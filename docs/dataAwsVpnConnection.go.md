@@ -4,12 +4,12 @@
 
 ### DataAwsVpnConnection <a name="DataAwsVpnConnection" id="@cdktn/provider-aws.dataAwsVpnConnection.DataAwsVpnConnection"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/vpn_connection aws_vpn_connection}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/vpn_connection aws_vpn_connection}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsVpnConnection.DataAwsVpnConnection.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsvpnconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsvpnconnection"
 
 dataawsvpnconnection.NewDataAwsVpnConnection(scope Construct, id *string, config DataAwsVpnConnectionConfig) DataAwsVpnConnection
 ```
@@ -310,7 +310,7 @@ func ResetVpnConnectionId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsVpnConnection.DataAwsVpnConnection.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsvpnconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsvpnconnection"
 
 dataawsvpnconnection.DataAwsVpnConnection_IsConstruct(x interface{}) *bool
 ```
@@ -342,7 +342,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsVpnConnection.DataAwsVpnConnection.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsvpnconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsvpnconnection"
 
 dataawsvpnconnection.DataAwsVpnConnection_IsTerraformElement(x interface{}) *bool
 ```
@@ -356,7 +356,7 @@ dataawsvpnconnection.DataAwsVpnConnection_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsVpnConnection.DataAwsVpnConnection.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsvpnconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsvpnconnection"
 
 dataawsvpnconnection.DataAwsVpnConnection_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -370,7 +370,7 @@ dataawsvpnconnection.DataAwsVpnConnection_IsTerraformDataSource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsVpnConnection.DataAwsVpnConnection.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsvpnconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsvpnconnection"
 
 dataawsvpnconnection.DataAwsVpnConnection_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -399,7 +399,7 @@ The construct id used in the generated config for the DataAwsVpnConnection to im
 
 The id of the existing DataAwsVpnConnection that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/vpn_connection#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/vpn_connection#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -808,7 +808,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsVpnConnection.DataAwsVpnConnectionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsvpnconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsvpnconnection"
 
 &dataawsvpnconnection.DataAwsVpnConnectionConfig {
 	Connection: interface{},
@@ -837,7 +837,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsvpnconnection"
 | <code><a href="#@cdktn/provider-aws.dataAwsVpnConnection.DataAwsVpnConnectionConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsVpnConnection.DataAwsVpnConnectionConfig.property.filter">Filter</a></code> | <code>interface{}</code> | filter block. |
 | <code><a href="#@cdktn/provider-aws.dataAwsVpnConnection.DataAwsVpnConnectionConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.dataAwsVpnConnection.DataAwsVpnConnectionConfig.property.vpnConnectionId">VpnConnectionId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/vpn_connection#vpn_connection_id DataAwsVpnConnection#vpn_connection_id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpnConnection.DataAwsVpnConnectionConfig.property.vpnConnectionId">VpnConnectionId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/vpn_connection#vpn_connection_id DataAwsVpnConnection#vpn_connection_id}. |
 
 ---
 
@@ -921,7 +921,7 @@ Filter interface{}
 
 filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/vpn_connection#filter DataAwsVpnConnection#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/vpn_connection#filter DataAwsVpnConnection#filter}
 
 ---
 
@@ -935,7 +935,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/vpn_connection#region DataAwsVpnConnection#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/vpn_connection#region DataAwsVpnConnection#region}
 
 ---
 
@@ -947,7 +947,7 @@ VpnConnectionId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/vpn_connection#vpn_connection_id DataAwsVpnConnection#vpn_connection_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/vpn_connection#vpn_connection_id DataAwsVpnConnection#vpn_connection_id}.
 
 ---
 
@@ -956,7 +956,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsVpnConnection.DataAwsVpnConnectionFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsvpnconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsvpnconnection"
 
 &dataawsvpnconnection.DataAwsVpnConnectionFilter {
 	Name: *string,
@@ -968,8 +968,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsvpnconnection"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.dataAwsVpnConnection.DataAwsVpnConnectionFilter.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/vpn_connection#name DataAwsVpnConnection#name}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsVpnConnection.DataAwsVpnConnectionFilter.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/vpn_connection#values DataAwsVpnConnection#values}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpnConnection.DataAwsVpnConnectionFilter.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/vpn_connection#name DataAwsVpnConnection#name}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsVpnConnection.DataAwsVpnConnectionFilter.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/vpn_connection#values DataAwsVpnConnection#values}. |
 
 ---
 
@@ -981,7 +981,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/vpn_connection#name DataAwsVpnConnection#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/vpn_connection#name DataAwsVpnConnection#name}.
 
 ---
 
@@ -993,7 +993,7 @@ Values *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/vpn_connection#values DataAwsVpnConnection#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/vpn_connection#values DataAwsVpnConnection#values}.
 
 ---
 
@@ -1002,7 +1002,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsVpnConnection.DataAwsVpnConnectionRoutes.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsvpnconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsvpnconnection"
 
 &dataawsvpnconnection.DataAwsVpnConnectionRoutes {
 
@@ -1015,7 +1015,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsvpnconnection"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsVpnConnection.DataAwsVpnConnectionVgwTelemetries.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsvpnconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsvpnconnection"
 
 &dataawsvpnconnection.DataAwsVpnConnectionVgwTelemetries {
 
@@ -1030,7 +1030,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsvpnconnection"
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsVpnConnection.DataAwsVpnConnectionFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsvpnconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsvpnconnection"
 
 dataawsvpnconnection.NewDataAwsVpnConnectionFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsVpnConnectionFilterList
 ```
@@ -1190,7 +1190,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsVpnConnection.DataAwsVpnConnectionFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsvpnconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsvpnconnection"
 
 dataawsvpnconnection.NewDataAwsVpnConnectionFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsVpnConnectionFilterOutputReference
 ```
@@ -1501,7 +1501,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsVpnConnection.DataAwsVpnConnectionRoutesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsvpnconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsvpnconnection"
 
 dataawsvpnconnection.NewDataAwsVpnConnectionRoutesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsVpnConnectionRoutesList
 ```
@@ -1650,7 +1650,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsVpnConnection.DataAwsVpnConnectionRoutesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsvpnconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsvpnconnection"
 
 dataawsvpnconnection.NewDataAwsVpnConnectionRoutesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsVpnConnectionRoutesOutputReference
 ```
@@ -1950,7 +1950,7 @@ func InternalValue() DataAwsVpnConnectionRoutes
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsVpnConnection.DataAwsVpnConnectionVgwTelemetriesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsvpnconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsvpnconnection"
 
 dataawsvpnconnection.NewDataAwsVpnConnectionVgwTelemetriesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsVpnConnectionVgwTelemetriesList
 ```
@@ -2099,7 +2099,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsVpnConnection.DataAwsVpnConnectionVgwTelemetriesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsvpnconnection"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsvpnconnection"
 
 dataawsvpnconnection.NewDataAwsVpnConnectionVgwTelemetriesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsVpnConnectionVgwTelemetriesOutputReference
 ```

@@ -4,12 +4,12 @@
 
 ### ApprunnerVpcConnector <a name="ApprunnerVpcConnector" id="@cdktn/provider-aws.apprunnerVpcConnector.ApprunnerVpcConnector"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/apprunner_vpc_connector aws_apprunner_vpc_connector}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/apprunner_vpc_connector aws_apprunner_vpc_connector}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.apprunnerVpcConnector.ApprunnerVpcConnector.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/apprunnervpcconnector"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/apprunnervpcconnector"
 
 apprunnervpcconnector.NewApprunnerVpcConnector(scope Construct, id *string, config ApprunnerVpcConnectorConfig) ApprunnerVpcConnector
 ```
@@ -406,7 +406,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.apprunnerVpcConnector.ApprunnerVpcConnector.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/apprunnervpcconnector"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/apprunnervpcconnector"
 
 apprunnervpcconnector.ApprunnerVpcConnector_IsConstruct(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.apprunnerVpcConnector.ApprunnerVpcConnector.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/apprunnervpcconnector"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/apprunnervpcconnector"
 
 apprunnervpcconnector.ApprunnerVpcConnector_IsTerraformElement(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ apprunnervpcconnector.ApprunnerVpcConnector_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.apprunnerVpcConnector.ApprunnerVpcConnector.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/apprunnervpcconnector"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/apprunnervpcconnector"
 
 apprunnervpcconnector.ApprunnerVpcConnector_IsTerraformResource(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ apprunnervpcconnector.ApprunnerVpcConnector_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.apprunnerVpcConnector.ApprunnerVpcConnector.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/apprunnervpcconnector"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/apprunnervpcconnector"
 
 apprunnervpcconnector.ApprunnerVpcConnector_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -495,7 +495,7 @@ The construct id used in the generated config for the ApprunnerVpcConnector to i
 
 The id of the existing ApprunnerVpcConnector that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/apprunner_vpc_connector#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/apprunner_vpc_connector#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -882,7 +882,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.apprunnerVpcConnector.ApprunnerVpcConnectorConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/apprunnervpcconnector"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/apprunnervpcconnector"
 
 &apprunnervpcconnector.ApprunnerVpcConnectorConfig {
 	Connection: interface{},
@@ -913,13 +913,13 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/apprunnervpcconnector"
 | <code><a href="#@cdktn/provider-aws.apprunnerVpcConnector.ApprunnerVpcConnectorConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.apprunnerVpcConnector.ApprunnerVpcConnectorConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.apprunnerVpcConnector.ApprunnerVpcConnectorConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.apprunnerVpcConnector.ApprunnerVpcConnectorConfig.property.securityGroups">SecurityGroups</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/apprunner_vpc_connector#security_groups ApprunnerVpcConnector#security_groups}. |
-| <code><a href="#@cdktn/provider-aws.apprunnerVpcConnector.ApprunnerVpcConnectorConfig.property.subnets">Subnets</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/apprunner_vpc_connector#subnets ApprunnerVpcConnector#subnets}. |
-| <code><a href="#@cdktn/provider-aws.apprunnerVpcConnector.ApprunnerVpcConnectorConfig.property.vpcConnectorName">VpcConnectorName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/apprunner_vpc_connector#vpc_connector_name ApprunnerVpcConnector#vpc_connector_name}. |
-| <code><a href="#@cdktn/provider-aws.apprunnerVpcConnector.ApprunnerVpcConnectorConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/apprunner_vpc_connector#id ApprunnerVpcConnector#id}. |
+| <code><a href="#@cdktn/provider-aws.apprunnerVpcConnector.ApprunnerVpcConnectorConfig.property.securityGroups">SecurityGroups</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/apprunner_vpc_connector#security_groups ApprunnerVpcConnector#security_groups}. |
+| <code><a href="#@cdktn/provider-aws.apprunnerVpcConnector.ApprunnerVpcConnectorConfig.property.subnets">Subnets</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/apprunner_vpc_connector#subnets ApprunnerVpcConnector#subnets}. |
+| <code><a href="#@cdktn/provider-aws.apprunnerVpcConnector.ApprunnerVpcConnectorConfig.property.vpcConnectorName">VpcConnectorName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/apprunner_vpc_connector#vpc_connector_name ApprunnerVpcConnector#vpc_connector_name}. |
+| <code><a href="#@cdktn/provider-aws.apprunnerVpcConnector.ApprunnerVpcConnectorConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/apprunner_vpc_connector#id ApprunnerVpcConnector#id}. |
 | <code><a href="#@cdktn/provider-aws.apprunnerVpcConnector.ApprunnerVpcConnectorConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.apprunnerVpcConnector.ApprunnerVpcConnectorConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/apprunner_vpc_connector#tags ApprunnerVpcConnector#tags}. |
-| <code><a href="#@cdktn/provider-aws.apprunnerVpcConnector.ApprunnerVpcConnectorConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/apprunner_vpc_connector#tags_all ApprunnerVpcConnector#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.apprunnerVpcConnector.ApprunnerVpcConnectorConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/apprunner_vpc_connector#tags ApprunnerVpcConnector#tags}. |
+| <code><a href="#@cdktn/provider-aws.apprunnerVpcConnector.ApprunnerVpcConnectorConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/apprunner_vpc_connector#tags_all ApprunnerVpcConnector#tags_all}. |
 
 ---
 
@@ -1001,7 +1001,7 @@ SecurityGroups *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/apprunner_vpc_connector#security_groups ApprunnerVpcConnector#security_groups}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/apprunner_vpc_connector#security_groups ApprunnerVpcConnector#security_groups}.
 
 ---
 
@@ -1013,7 +1013,7 @@ Subnets *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/apprunner_vpc_connector#subnets ApprunnerVpcConnector#subnets}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/apprunner_vpc_connector#subnets ApprunnerVpcConnector#subnets}.
 
 ---
 
@@ -1025,7 +1025,7 @@ VpcConnectorName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/apprunner_vpc_connector#vpc_connector_name ApprunnerVpcConnector#vpc_connector_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/apprunner_vpc_connector#vpc_connector_name ApprunnerVpcConnector#vpc_connector_name}.
 
 ---
 
@@ -1037,7 +1037,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/apprunner_vpc_connector#id ApprunnerVpcConnector#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/apprunner_vpc_connector#id ApprunnerVpcConnector#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1054,7 +1054,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/apprunner_vpc_connector#region ApprunnerVpcConnector#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/apprunner_vpc_connector#region ApprunnerVpcConnector#region}
 
 ---
 
@@ -1066,7 +1066,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/apprunner_vpc_connector#tags ApprunnerVpcConnector#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/apprunner_vpc_connector#tags ApprunnerVpcConnector#tags}.
 
 ---
 
@@ -1078,7 +1078,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/apprunner_vpc_connector#tags_all ApprunnerVpcConnector#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/apprunner_vpc_connector#tags_all ApprunnerVpcConnector#tags_all}.
 
 ---
 

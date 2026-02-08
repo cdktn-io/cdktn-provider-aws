@@ -4,12 +4,12 @@
 
 ### DataAwsOutpostsOutposts <a name="DataAwsOutpostsOutposts" id="@cdktn/provider-aws.dataAwsOutpostsOutposts.DataAwsOutpostsOutposts"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/outposts_outposts aws_outposts_outposts}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/outposts_outposts aws_outposts_outposts}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsOutpostsOutposts.DataAwsOutpostsOutposts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsoutpostsoutposts"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsoutpostsoutposts"
 
 dataawsoutpostsoutposts.NewDataAwsOutpostsOutposts(scope Construct, id *string, config DataAwsOutpostsOutpostsConfig) DataAwsOutpostsOutposts
 ```
@@ -318,7 +318,7 @@ func ResetSiteId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsOutpostsOutposts.DataAwsOutpostsOutposts.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsoutpostsoutposts"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsoutpostsoutposts"
 
 dataawsoutpostsoutposts.DataAwsOutpostsOutposts_IsConstruct(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsOutpostsOutposts.DataAwsOutpostsOutposts.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsoutpostsoutposts"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsoutpostsoutposts"
 
 dataawsoutpostsoutposts.DataAwsOutpostsOutposts_IsTerraformElement(x interface{}) *bool
 ```
@@ -364,7 +364,7 @@ dataawsoutpostsoutposts.DataAwsOutpostsOutposts_IsTerraformElement(x interface{}
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsOutpostsOutposts.DataAwsOutpostsOutposts.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsoutpostsoutposts"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsoutpostsoutposts"
 
 dataawsoutpostsoutposts.DataAwsOutpostsOutposts_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -378,7 +378,7 @@ dataawsoutpostsoutposts.DataAwsOutpostsOutposts_IsTerraformDataSource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsOutpostsOutposts.DataAwsOutpostsOutposts.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsoutpostsoutposts"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsoutpostsoutposts"
 
 dataawsoutpostsoutposts.DataAwsOutpostsOutposts_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -407,7 +407,7 @@ The construct id used in the generated config for the DataAwsOutpostsOutposts to
 
 The id of the existing DataAwsOutpostsOutposts that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/outposts_outposts#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/outposts_outposts#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -739,7 +739,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsOutpostsOutposts.DataAwsOutpostsOutpostsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsoutpostsoutposts"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsoutpostsoutposts"
 
 &dataawsoutpostsoutposts.DataAwsOutpostsOutpostsConfig {
 	Connection: interface{},
@@ -769,12 +769,12 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsoutpostsoutpost
 | <code><a href="#@cdktn/provider-aws.dataAwsOutpostsOutposts.DataAwsOutpostsOutpostsConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsOutpostsOutposts.DataAwsOutpostsOutpostsConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsOutpostsOutposts.DataAwsOutpostsOutpostsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsOutpostsOutposts.DataAwsOutpostsOutpostsConfig.property.availabilityZone">AvailabilityZone</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/outposts_outposts#availability_zone DataAwsOutpostsOutposts#availability_zone}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsOutpostsOutposts.DataAwsOutpostsOutpostsConfig.property.availabilityZoneId">AvailabilityZoneId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/outposts_outposts#availability_zone_id DataAwsOutpostsOutposts#availability_zone_id}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsOutpostsOutposts.DataAwsOutpostsOutpostsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/outposts_outposts#id DataAwsOutpostsOutposts#id}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsOutpostsOutposts.DataAwsOutpostsOutpostsConfig.property.ownerId">OwnerId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/outposts_outposts#owner_id DataAwsOutpostsOutposts#owner_id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsOutpostsOutposts.DataAwsOutpostsOutpostsConfig.property.availabilityZone">AvailabilityZone</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/outposts_outposts#availability_zone DataAwsOutpostsOutposts#availability_zone}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsOutpostsOutposts.DataAwsOutpostsOutpostsConfig.property.availabilityZoneId">AvailabilityZoneId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/outposts_outposts#availability_zone_id DataAwsOutpostsOutposts#availability_zone_id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsOutpostsOutposts.DataAwsOutpostsOutpostsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/outposts_outposts#id DataAwsOutpostsOutposts#id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsOutpostsOutposts.DataAwsOutpostsOutpostsConfig.property.ownerId">OwnerId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/outposts_outposts#owner_id DataAwsOutpostsOutposts#owner_id}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsOutpostsOutposts.DataAwsOutpostsOutpostsConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.dataAwsOutpostsOutposts.DataAwsOutpostsOutpostsConfig.property.siteId">SiteId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/outposts_outposts#site_id DataAwsOutpostsOutposts#site_id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsOutpostsOutposts.DataAwsOutpostsOutpostsConfig.property.siteId">SiteId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/outposts_outposts#site_id DataAwsOutpostsOutposts#site_id}. |
 
 ---
 
@@ -856,7 +856,7 @@ AvailabilityZone *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/outposts_outposts#availability_zone DataAwsOutpostsOutposts#availability_zone}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/outposts_outposts#availability_zone DataAwsOutpostsOutposts#availability_zone}.
 
 ---
 
@@ -868,7 +868,7 @@ AvailabilityZoneId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/outposts_outposts#availability_zone_id DataAwsOutpostsOutposts#availability_zone_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/outposts_outposts#availability_zone_id DataAwsOutpostsOutposts#availability_zone_id}.
 
 ---
 
@@ -880,7 +880,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/outposts_outposts#id DataAwsOutpostsOutposts#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/outposts_outposts#id DataAwsOutpostsOutposts#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -895,7 +895,7 @@ OwnerId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/outposts_outposts#owner_id DataAwsOutpostsOutposts#owner_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/outposts_outposts#owner_id DataAwsOutpostsOutposts#owner_id}.
 
 ---
 
@@ -909,7 +909,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/outposts_outposts#region DataAwsOutpostsOutposts#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/outposts_outposts#region DataAwsOutpostsOutposts#region}
 
 ---
 
@@ -921,7 +921,7 @@ SiteId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/outposts_outposts#site_id DataAwsOutpostsOutposts#site_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/outposts_outposts#site_id DataAwsOutpostsOutposts#site_id}.
 
 ---
 

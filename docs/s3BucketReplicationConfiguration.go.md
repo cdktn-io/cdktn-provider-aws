@@ -4,12 +4,12 @@
 
 ### S3BucketReplicationConfigurationA <a name="S3BucketReplicationConfigurationA" id="@cdktn/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationA"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_bucket_replication_configuration aws_s3_bucket_replication_configuration}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3_bucket_replication_configuration aws_s3_bucket_replication_configuration}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationA.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3bucketreplicationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/s3bucketreplicationconfiguration"
 
 s3bucketreplicationconfiguration.NewS3BucketReplicationConfigurationA(scope Construct, id *string, config S3BucketReplicationConfigurationAConfig) S3BucketReplicationConfigurationA
 ```
@@ -412,7 +412,7 @@ func ResetToken()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationA.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3bucketreplicationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/s3bucketreplicationconfiguration"
 
 s3bucketreplicationconfiguration.S3BucketReplicationConfigurationA_IsConstruct(x interface{}) *bool
 ```
@@ -444,7 +444,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationA.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3bucketreplicationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/s3bucketreplicationconfiguration"
 
 s3bucketreplicationconfiguration.S3BucketReplicationConfigurationA_IsTerraformElement(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ s3bucketreplicationconfiguration.S3BucketReplicationConfigurationA_IsTerraformEl
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationA.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3bucketreplicationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/s3bucketreplicationconfiguration"
 
 s3bucketreplicationconfiguration.S3BucketReplicationConfigurationA_IsTerraformResource(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ s3bucketreplicationconfiguration.S3BucketReplicationConfigurationA_IsTerraformRe
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationA.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3bucketreplicationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/s3bucketreplicationconfiguration"
 
 s3bucketreplicationconfiguration.S3BucketReplicationConfigurationA_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -501,7 +501,7 @@ The construct id used in the generated config for the S3BucketReplicationConfigu
 
 The id of the existing S3BucketReplicationConfigurationA that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_bucket_replication_configuration#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3_bucket_replication_configuration#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -833,7 +833,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationAConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3bucketreplicationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/s3bucketreplicationconfiguration"
 
 &s3bucketreplicationconfiguration.S3BucketReplicationConfigurationAConfig {
 	Connection: interface{},
@@ -863,12 +863,12 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3bucketreplicationcon
 | <code><a href="#@cdktn/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationAConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationAConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationAConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationAConfig.property.bucket">Bucket</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_bucket_replication_configuration#bucket S3BucketReplicationConfigurationA#bucket}. |
-| <code><a href="#@cdktn/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationAConfig.property.role">Role</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_bucket_replication_configuration#role S3BucketReplicationConfigurationA#role}. |
+| <code><a href="#@cdktn/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationAConfig.property.bucket">Bucket</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3_bucket_replication_configuration#bucket S3BucketReplicationConfigurationA#bucket}. |
+| <code><a href="#@cdktn/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationAConfig.property.role">Role</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3_bucket_replication_configuration#role S3BucketReplicationConfigurationA#role}. |
 | <code><a href="#@cdktn/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationAConfig.property.rule">Rule</a></code> | <code>interface{}</code> | rule block. |
-| <code><a href="#@cdktn/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationAConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_bucket_replication_configuration#id S3BucketReplicationConfigurationA#id}. |
+| <code><a href="#@cdktn/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationAConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3_bucket_replication_configuration#id S3BucketReplicationConfigurationA#id}. |
 | <code><a href="#@cdktn/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationAConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationAConfig.property.token">Token</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_bucket_replication_configuration#token S3BucketReplicationConfigurationA#token}. |
+| <code><a href="#@cdktn/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationAConfig.property.token">Token</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3_bucket_replication_configuration#token S3BucketReplicationConfigurationA#token}. |
 
 ---
 
@@ -950,7 +950,7 @@ Bucket *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_bucket_replication_configuration#bucket S3BucketReplicationConfigurationA#bucket}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3_bucket_replication_configuration#bucket S3BucketReplicationConfigurationA#bucket}.
 
 ---
 
@@ -962,7 +962,7 @@ Role *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_bucket_replication_configuration#role S3BucketReplicationConfigurationA#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3_bucket_replication_configuration#role S3BucketReplicationConfigurationA#role}.
 
 ---
 
@@ -976,7 +976,7 @@ Rule interface{}
 
 rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_bucket_replication_configuration#rule S3BucketReplicationConfigurationA#rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3_bucket_replication_configuration#rule S3BucketReplicationConfigurationA#rule}
 
 ---
 
@@ -988,7 +988,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_bucket_replication_configuration#id S3BucketReplicationConfigurationA#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3_bucket_replication_configuration#id S3BucketReplicationConfigurationA#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1005,7 +1005,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_bucket_replication_configuration#region S3BucketReplicationConfigurationA#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3_bucket_replication_configuration#region S3BucketReplicationConfigurationA#region}
 
 ---
 
@@ -1017,7 +1017,7 @@ Token *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_bucket_replication_configuration#token S3BucketReplicationConfigurationA#token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3_bucket_replication_configuration#token S3BucketReplicationConfigurationA#token}.
 
 ---
 
@@ -1026,18 +1026,18 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3bucketreplicationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/s3bucketreplicationconfiguration"
 
 &s3bucketreplicationconfiguration.S3BucketReplicationConfigurationRule {
-	Destination: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleDestination,
+	Destination: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleDestination,
 	Status: *string,
-	DeleteMarkerReplication: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleDeleteMarkerReplication,
-	ExistingObjectReplication: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleExistingObjectReplication,
-	Filter: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleFilter,
+	DeleteMarkerReplication: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleDeleteMarkerReplication,
+	ExistingObjectReplication: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleExistingObjectReplication,
+	Filter: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleFilter,
 	Id: *string,
 	Prefix: *string,
 	Priority: *f64,
-	SourceSelectionCriteria: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleSourceSelectionCriteria,
+	SourceSelectionCriteria: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleSourceSelectionCriteria,
 }
 ```
 
@@ -1046,13 +1046,13 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3bucketreplicationcon
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRule.property.destination">Destination</a></code> | <code><a href="#@cdktn/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleDestination">S3BucketReplicationConfigurationRuleDestination</a></code> | destination block. |
-| <code><a href="#@cdktn/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRule.property.status">Status</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_bucket_replication_configuration#status S3BucketReplicationConfigurationA#status}. |
+| <code><a href="#@cdktn/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRule.property.status">Status</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3_bucket_replication_configuration#status S3BucketReplicationConfigurationA#status}. |
 | <code><a href="#@cdktn/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRule.property.deleteMarkerReplication">DeleteMarkerReplication</a></code> | <code><a href="#@cdktn/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleDeleteMarkerReplication">S3BucketReplicationConfigurationRuleDeleteMarkerReplication</a></code> | delete_marker_replication block. |
 | <code><a href="#@cdktn/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRule.property.existingObjectReplication">ExistingObjectReplication</a></code> | <code><a href="#@cdktn/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleExistingObjectReplication">S3BucketReplicationConfigurationRuleExistingObjectReplication</a></code> | existing_object_replication block. |
 | <code><a href="#@cdktn/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRule.property.filter">Filter</a></code> | <code><a href="#@cdktn/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleFilter">S3BucketReplicationConfigurationRuleFilter</a></code> | filter block. |
-| <code><a href="#@cdktn/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRule.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_bucket_replication_configuration#id S3BucketReplicationConfigurationA#id}. |
-| <code><a href="#@cdktn/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRule.property.prefix">Prefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_bucket_replication_configuration#prefix S3BucketReplicationConfigurationA#prefix}. |
-| <code><a href="#@cdktn/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRule.property.priority">Priority</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_bucket_replication_configuration#priority S3BucketReplicationConfigurationA#priority}. |
+| <code><a href="#@cdktn/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRule.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3_bucket_replication_configuration#id S3BucketReplicationConfigurationA#id}. |
+| <code><a href="#@cdktn/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRule.property.prefix">Prefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3_bucket_replication_configuration#prefix S3BucketReplicationConfigurationA#prefix}. |
+| <code><a href="#@cdktn/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRule.property.priority">Priority</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3_bucket_replication_configuration#priority S3BucketReplicationConfigurationA#priority}. |
 | <code><a href="#@cdktn/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRule.property.sourceSelectionCriteria">SourceSelectionCriteria</a></code> | <code><a href="#@cdktn/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleSourceSelectionCriteria">S3BucketReplicationConfigurationRuleSourceSelectionCriteria</a></code> | source_selection_criteria block. |
 
 ---
@@ -1067,7 +1067,7 @@ Destination S3BucketReplicationConfigurationRuleDestination
 
 destination block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_bucket_replication_configuration#destination S3BucketReplicationConfigurationA#destination}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3_bucket_replication_configuration#destination S3BucketReplicationConfigurationA#destination}
 
 ---
 
@@ -1079,7 +1079,7 @@ Status *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_bucket_replication_configuration#status S3BucketReplicationConfigurationA#status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3_bucket_replication_configuration#status S3BucketReplicationConfigurationA#status}.
 
 ---
 
@@ -1093,7 +1093,7 @@ DeleteMarkerReplication S3BucketReplicationConfigurationRuleDeleteMarkerReplicat
 
 delete_marker_replication block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_bucket_replication_configuration#delete_marker_replication S3BucketReplicationConfigurationA#delete_marker_replication}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3_bucket_replication_configuration#delete_marker_replication S3BucketReplicationConfigurationA#delete_marker_replication}
 
 ---
 
@@ -1107,7 +1107,7 @@ ExistingObjectReplication S3BucketReplicationConfigurationRuleExistingObjectRepl
 
 existing_object_replication block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_bucket_replication_configuration#existing_object_replication S3BucketReplicationConfigurationA#existing_object_replication}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3_bucket_replication_configuration#existing_object_replication S3BucketReplicationConfigurationA#existing_object_replication}
 
 ---
 
@@ -1121,7 +1121,7 @@ Filter S3BucketReplicationConfigurationRuleFilter
 
 filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_bucket_replication_configuration#filter S3BucketReplicationConfigurationA#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3_bucket_replication_configuration#filter S3BucketReplicationConfigurationA#filter}
 
 ---
 
@@ -1133,7 +1133,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_bucket_replication_configuration#id S3BucketReplicationConfigurationA#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3_bucket_replication_configuration#id S3BucketReplicationConfigurationA#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1148,7 +1148,7 @@ Prefix *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_bucket_replication_configuration#prefix S3BucketReplicationConfigurationA#prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3_bucket_replication_configuration#prefix S3BucketReplicationConfigurationA#prefix}.
 
 ---
 
@@ -1160,7 +1160,7 @@ Priority *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_bucket_replication_configuration#priority S3BucketReplicationConfigurationA#priority}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3_bucket_replication_configuration#priority S3BucketReplicationConfigurationA#priority}.
 
 ---
 
@@ -1174,7 +1174,7 @@ SourceSelectionCriteria S3BucketReplicationConfigurationRuleSourceSelectionCrite
 
 source_selection_criteria block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_bucket_replication_configuration#source_selection_criteria S3BucketReplicationConfigurationA#source_selection_criteria}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3_bucket_replication_configuration#source_selection_criteria S3BucketReplicationConfigurationA#source_selection_criteria}
 
 ---
 
@@ -1183,7 +1183,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleDeleteMarkerReplication.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3bucketreplicationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/s3bucketreplicationconfiguration"
 
 &s3bucketreplicationconfiguration.S3BucketReplicationConfigurationRuleDeleteMarkerReplication {
 	Status: *string,
@@ -1194,7 +1194,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3bucketreplicationcon
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleDeleteMarkerReplication.property.status">Status</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_bucket_replication_configuration#status S3BucketReplicationConfigurationA#status}. |
+| <code><a href="#@cdktn/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleDeleteMarkerReplication.property.status">Status</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3_bucket_replication_configuration#status S3BucketReplicationConfigurationA#status}. |
 
 ---
 
@@ -1206,7 +1206,7 @@ Status *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_bucket_replication_configuration#status S3BucketReplicationConfigurationA#status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3_bucket_replication_configuration#status S3BucketReplicationConfigurationA#status}.
 
 ---
 
@@ -1215,15 +1215,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleDestination.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3bucketreplicationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/s3bucketreplicationconfiguration"
 
 &s3bucketreplicationconfiguration.S3BucketReplicationConfigurationRuleDestination {
 	Bucket: *string,
-	AccessControlTranslation: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleDestinationAccessControlTranslation,
+	AccessControlTranslation: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleDestinationAccessControlTranslation,
 	Account: *string,
-	EncryptionConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleDestinationEncryptionConfiguration,
-	Metrics: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleDestinationMetrics,
-	ReplicationTime: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleDestinationReplicationTime,
+	EncryptionConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleDestinationEncryptionConfiguration,
+	Metrics: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleDestinationMetrics,
+	ReplicationTime: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleDestinationReplicationTime,
 	StorageClass: *string,
 }
 ```
@@ -1232,13 +1232,13 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3bucketreplicationcon
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleDestination.property.bucket">Bucket</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_bucket_replication_configuration#bucket S3BucketReplicationConfigurationA#bucket}. |
+| <code><a href="#@cdktn/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleDestination.property.bucket">Bucket</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3_bucket_replication_configuration#bucket S3BucketReplicationConfigurationA#bucket}. |
 | <code><a href="#@cdktn/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleDestination.property.accessControlTranslation">AccessControlTranslation</a></code> | <code><a href="#@cdktn/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleDestinationAccessControlTranslation">S3BucketReplicationConfigurationRuleDestinationAccessControlTranslation</a></code> | access_control_translation block. |
-| <code><a href="#@cdktn/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleDestination.property.account">Account</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_bucket_replication_configuration#account S3BucketReplicationConfigurationA#account}. |
+| <code><a href="#@cdktn/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleDestination.property.account">Account</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3_bucket_replication_configuration#account S3BucketReplicationConfigurationA#account}. |
 | <code><a href="#@cdktn/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleDestination.property.encryptionConfiguration">EncryptionConfiguration</a></code> | <code><a href="#@cdktn/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleDestinationEncryptionConfiguration">S3BucketReplicationConfigurationRuleDestinationEncryptionConfiguration</a></code> | encryption_configuration block. |
 | <code><a href="#@cdktn/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleDestination.property.metrics">Metrics</a></code> | <code><a href="#@cdktn/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleDestinationMetrics">S3BucketReplicationConfigurationRuleDestinationMetrics</a></code> | metrics block. |
 | <code><a href="#@cdktn/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleDestination.property.replicationTime">ReplicationTime</a></code> | <code><a href="#@cdktn/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleDestinationReplicationTime">S3BucketReplicationConfigurationRuleDestinationReplicationTime</a></code> | replication_time block. |
-| <code><a href="#@cdktn/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleDestination.property.storageClass">StorageClass</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_bucket_replication_configuration#storage_class S3BucketReplicationConfigurationA#storage_class}. |
+| <code><a href="#@cdktn/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleDestination.property.storageClass">StorageClass</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3_bucket_replication_configuration#storage_class S3BucketReplicationConfigurationA#storage_class}. |
 
 ---
 
@@ -1250,7 +1250,7 @@ Bucket *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_bucket_replication_configuration#bucket S3BucketReplicationConfigurationA#bucket}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3_bucket_replication_configuration#bucket S3BucketReplicationConfigurationA#bucket}.
 
 ---
 
@@ -1264,7 +1264,7 @@ AccessControlTranslation S3BucketReplicationConfigurationRuleDestinationAccessCo
 
 access_control_translation block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_bucket_replication_configuration#access_control_translation S3BucketReplicationConfigurationA#access_control_translation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3_bucket_replication_configuration#access_control_translation S3BucketReplicationConfigurationA#access_control_translation}
 
 ---
 
@@ -1276,7 +1276,7 @@ Account *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_bucket_replication_configuration#account S3BucketReplicationConfigurationA#account}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3_bucket_replication_configuration#account S3BucketReplicationConfigurationA#account}.
 
 ---
 
@@ -1290,7 +1290,7 @@ EncryptionConfiguration S3BucketReplicationConfigurationRuleDestinationEncryptio
 
 encryption_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_bucket_replication_configuration#encryption_configuration S3BucketReplicationConfigurationA#encryption_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3_bucket_replication_configuration#encryption_configuration S3BucketReplicationConfigurationA#encryption_configuration}
 
 ---
 
@@ -1304,7 +1304,7 @@ Metrics S3BucketReplicationConfigurationRuleDestinationMetrics
 
 metrics block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_bucket_replication_configuration#metrics S3BucketReplicationConfigurationA#metrics}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3_bucket_replication_configuration#metrics S3BucketReplicationConfigurationA#metrics}
 
 ---
 
@@ -1318,7 +1318,7 @@ ReplicationTime S3BucketReplicationConfigurationRuleDestinationReplicationTime
 
 replication_time block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_bucket_replication_configuration#replication_time S3BucketReplicationConfigurationA#replication_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3_bucket_replication_configuration#replication_time S3BucketReplicationConfigurationA#replication_time}
 
 ---
 
@@ -1330,7 +1330,7 @@ StorageClass *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_bucket_replication_configuration#storage_class S3BucketReplicationConfigurationA#storage_class}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3_bucket_replication_configuration#storage_class S3BucketReplicationConfigurationA#storage_class}.
 
 ---
 
@@ -1339,7 +1339,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleDestinationAccessControlTranslation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3bucketreplicationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/s3bucketreplicationconfiguration"
 
 &s3bucketreplicationconfiguration.S3BucketReplicationConfigurationRuleDestinationAccessControlTranslation {
 	Owner: *string,
@@ -1350,7 +1350,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3bucketreplicationcon
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleDestinationAccessControlTranslation.property.owner">Owner</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_bucket_replication_configuration#owner S3BucketReplicationConfigurationA#owner}. |
+| <code><a href="#@cdktn/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleDestinationAccessControlTranslation.property.owner">Owner</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3_bucket_replication_configuration#owner S3BucketReplicationConfigurationA#owner}. |
 
 ---
 
@@ -1362,7 +1362,7 @@ Owner *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_bucket_replication_configuration#owner S3BucketReplicationConfigurationA#owner}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3_bucket_replication_configuration#owner S3BucketReplicationConfigurationA#owner}.
 
 ---
 
@@ -1371,7 +1371,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleDestinationEncryptionConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3bucketreplicationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/s3bucketreplicationconfiguration"
 
 &s3bucketreplicationconfiguration.S3BucketReplicationConfigurationRuleDestinationEncryptionConfiguration {
 	ReplicaKmsKeyId: *string,
@@ -1382,7 +1382,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3bucketreplicationcon
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleDestinationEncryptionConfiguration.property.replicaKmsKeyId">ReplicaKmsKeyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_bucket_replication_configuration#replica_kms_key_id S3BucketReplicationConfigurationA#replica_kms_key_id}. |
+| <code><a href="#@cdktn/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleDestinationEncryptionConfiguration.property.replicaKmsKeyId">ReplicaKmsKeyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3_bucket_replication_configuration#replica_kms_key_id S3BucketReplicationConfigurationA#replica_kms_key_id}. |
 
 ---
 
@@ -1394,7 +1394,7 @@ ReplicaKmsKeyId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_bucket_replication_configuration#replica_kms_key_id S3BucketReplicationConfigurationA#replica_kms_key_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3_bucket_replication_configuration#replica_kms_key_id S3BucketReplicationConfigurationA#replica_kms_key_id}.
 
 ---
 
@@ -1403,11 +1403,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleDestinationMetrics.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3bucketreplicationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/s3bucketreplicationconfiguration"
 
 &s3bucketreplicationconfiguration.S3BucketReplicationConfigurationRuleDestinationMetrics {
 	Status: *string,
-	EventThreshold: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleDestinationMetricsEventThreshold,
+	EventThreshold: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleDestinationMetricsEventThreshold,
 }
 ```
 
@@ -1415,7 +1415,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3bucketreplicationcon
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleDestinationMetrics.property.status">Status</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_bucket_replication_configuration#status S3BucketReplicationConfigurationA#status}. |
+| <code><a href="#@cdktn/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleDestinationMetrics.property.status">Status</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3_bucket_replication_configuration#status S3BucketReplicationConfigurationA#status}. |
 | <code><a href="#@cdktn/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleDestinationMetrics.property.eventThreshold">EventThreshold</a></code> | <code><a href="#@cdktn/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleDestinationMetricsEventThreshold">S3BucketReplicationConfigurationRuleDestinationMetricsEventThreshold</a></code> | event_threshold block. |
 
 ---
@@ -1428,7 +1428,7 @@ Status *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_bucket_replication_configuration#status S3BucketReplicationConfigurationA#status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3_bucket_replication_configuration#status S3BucketReplicationConfigurationA#status}.
 
 ---
 
@@ -1442,7 +1442,7 @@ EventThreshold S3BucketReplicationConfigurationRuleDestinationMetricsEventThresh
 
 event_threshold block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_bucket_replication_configuration#event_threshold S3BucketReplicationConfigurationA#event_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3_bucket_replication_configuration#event_threshold S3BucketReplicationConfigurationA#event_threshold}
 
 ---
 
@@ -1451,7 +1451,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleDestinationMetricsEventThreshold.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3bucketreplicationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/s3bucketreplicationconfiguration"
 
 &s3bucketreplicationconfiguration.S3BucketReplicationConfigurationRuleDestinationMetricsEventThreshold {
 	Minutes: *f64,
@@ -1462,7 +1462,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3bucketreplicationcon
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleDestinationMetricsEventThreshold.property.minutes">Minutes</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_bucket_replication_configuration#minutes S3BucketReplicationConfigurationA#minutes}. |
+| <code><a href="#@cdktn/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleDestinationMetricsEventThreshold.property.minutes">Minutes</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3_bucket_replication_configuration#minutes S3BucketReplicationConfigurationA#minutes}. |
 
 ---
 
@@ -1474,7 +1474,7 @@ Minutes *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_bucket_replication_configuration#minutes S3BucketReplicationConfigurationA#minutes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3_bucket_replication_configuration#minutes S3BucketReplicationConfigurationA#minutes}.
 
 ---
 
@@ -1483,11 +1483,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleDestinationReplicationTime.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3bucketreplicationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/s3bucketreplicationconfiguration"
 
 &s3bucketreplicationconfiguration.S3BucketReplicationConfigurationRuleDestinationReplicationTime {
 	Status: *string,
-	Time: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleDestinationReplicationTimeTime,
+	Time: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleDestinationReplicationTimeTime,
 }
 ```
 
@@ -1495,7 +1495,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3bucketreplicationcon
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleDestinationReplicationTime.property.status">Status</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_bucket_replication_configuration#status S3BucketReplicationConfigurationA#status}. |
+| <code><a href="#@cdktn/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleDestinationReplicationTime.property.status">Status</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3_bucket_replication_configuration#status S3BucketReplicationConfigurationA#status}. |
 | <code><a href="#@cdktn/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleDestinationReplicationTime.property.time">Time</a></code> | <code><a href="#@cdktn/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleDestinationReplicationTimeTime">S3BucketReplicationConfigurationRuleDestinationReplicationTimeTime</a></code> | time block. |
 
 ---
@@ -1508,7 +1508,7 @@ Status *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_bucket_replication_configuration#status S3BucketReplicationConfigurationA#status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3_bucket_replication_configuration#status S3BucketReplicationConfigurationA#status}.
 
 ---
 
@@ -1522,7 +1522,7 @@ Time S3BucketReplicationConfigurationRuleDestinationReplicationTimeTime
 
 time block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_bucket_replication_configuration#time S3BucketReplicationConfigurationA#time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3_bucket_replication_configuration#time S3BucketReplicationConfigurationA#time}
 
 ---
 
@@ -1531,7 +1531,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleDestinationReplicationTimeTime.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3bucketreplicationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/s3bucketreplicationconfiguration"
 
 &s3bucketreplicationconfiguration.S3BucketReplicationConfigurationRuleDestinationReplicationTimeTime {
 	Minutes: *f64,
@@ -1542,7 +1542,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3bucketreplicationcon
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleDestinationReplicationTimeTime.property.minutes">Minutes</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_bucket_replication_configuration#minutes S3BucketReplicationConfigurationA#minutes}. |
+| <code><a href="#@cdktn/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleDestinationReplicationTimeTime.property.minutes">Minutes</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3_bucket_replication_configuration#minutes S3BucketReplicationConfigurationA#minutes}. |
 
 ---
 
@@ -1554,7 +1554,7 @@ Minutes *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_bucket_replication_configuration#minutes S3BucketReplicationConfigurationA#minutes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3_bucket_replication_configuration#minutes S3BucketReplicationConfigurationA#minutes}.
 
 ---
 
@@ -1563,7 +1563,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleExistingObjectReplication.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3bucketreplicationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/s3bucketreplicationconfiguration"
 
 &s3bucketreplicationconfiguration.S3BucketReplicationConfigurationRuleExistingObjectReplication {
 	Status: *string,
@@ -1574,7 +1574,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3bucketreplicationcon
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleExistingObjectReplication.property.status">Status</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_bucket_replication_configuration#status S3BucketReplicationConfigurationA#status}. |
+| <code><a href="#@cdktn/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleExistingObjectReplication.property.status">Status</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3_bucket_replication_configuration#status S3BucketReplicationConfigurationA#status}. |
 
 ---
 
@@ -1586,7 +1586,7 @@ Status *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_bucket_replication_configuration#status S3BucketReplicationConfigurationA#status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3_bucket_replication_configuration#status S3BucketReplicationConfigurationA#status}.
 
 ---
 
@@ -1595,12 +1595,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3bucketreplicationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/s3bucketreplicationconfiguration"
 
 &s3bucketreplicationconfiguration.S3BucketReplicationConfigurationRuleFilter {
-	And: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleFilterAnd,
+	And: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleFilterAnd,
 	Prefix: *string,
-	Tag: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleFilterTag,
+	Tag: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleFilterTag,
 }
 ```
 
@@ -1609,7 +1609,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3bucketreplicationcon
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleFilter.property.and">And</a></code> | <code><a href="#@cdktn/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleFilterAnd">S3BucketReplicationConfigurationRuleFilterAnd</a></code> | and block. |
-| <code><a href="#@cdktn/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleFilter.property.prefix">Prefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_bucket_replication_configuration#prefix S3BucketReplicationConfigurationA#prefix}. |
+| <code><a href="#@cdktn/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleFilter.property.prefix">Prefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3_bucket_replication_configuration#prefix S3BucketReplicationConfigurationA#prefix}. |
 | <code><a href="#@cdktn/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleFilter.property.tag">Tag</a></code> | <code><a href="#@cdktn/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleFilterTag">S3BucketReplicationConfigurationRuleFilterTag</a></code> | tag block. |
 
 ---
@@ -1624,7 +1624,7 @@ And S3BucketReplicationConfigurationRuleFilterAnd
 
 and block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_bucket_replication_configuration#and S3BucketReplicationConfigurationA#and}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3_bucket_replication_configuration#and S3BucketReplicationConfigurationA#and}
 
 ---
 
@@ -1636,7 +1636,7 @@ Prefix *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_bucket_replication_configuration#prefix S3BucketReplicationConfigurationA#prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3_bucket_replication_configuration#prefix S3BucketReplicationConfigurationA#prefix}.
 
 ---
 
@@ -1650,7 +1650,7 @@ Tag S3BucketReplicationConfigurationRuleFilterTag
 
 tag block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_bucket_replication_configuration#tag S3BucketReplicationConfigurationA#tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3_bucket_replication_configuration#tag S3BucketReplicationConfigurationA#tag}
 
 ---
 
@@ -1659,7 +1659,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleFilterAnd.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3bucketreplicationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/s3bucketreplicationconfiguration"
 
 &s3bucketreplicationconfiguration.S3BucketReplicationConfigurationRuleFilterAnd {
 	Prefix: *string,
@@ -1671,8 +1671,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3bucketreplicationcon
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleFilterAnd.property.prefix">Prefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_bucket_replication_configuration#prefix S3BucketReplicationConfigurationA#prefix}. |
-| <code><a href="#@cdktn/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleFilterAnd.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_bucket_replication_configuration#tags S3BucketReplicationConfigurationA#tags}. |
+| <code><a href="#@cdktn/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleFilterAnd.property.prefix">Prefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3_bucket_replication_configuration#prefix S3BucketReplicationConfigurationA#prefix}. |
+| <code><a href="#@cdktn/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleFilterAnd.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3_bucket_replication_configuration#tags S3BucketReplicationConfigurationA#tags}. |
 
 ---
 
@@ -1684,7 +1684,7 @@ Prefix *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_bucket_replication_configuration#prefix S3BucketReplicationConfigurationA#prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3_bucket_replication_configuration#prefix S3BucketReplicationConfigurationA#prefix}.
 
 ---
 
@@ -1696,7 +1696,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_bucket_replication_configuration#tags S3BucketReplicationConfigurationA#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3_bucket_replication_configuration#tags S3BucketReplicationConfigurationA#tags}.
 
 ---
 
@@ -1705,7 +1705,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleFilterTag.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3bucketreplicationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/s3bucketreplicationconfiguration"
 
 &s3bucketreplicationconfiguration.S3BucketReplicationConfigurationRuleFilterTag {
 	Key: *string,
@@ -1717,8 +1717,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3bucketreplicationcon
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleFilterTag.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_bucket_replication_configuration#key S3BucketReplicationConfigurationA#key}. |
-| <code><a href="#@cdktn/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleFilterTag.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_bucket_replication_configuration#value S3BucketReplicationConfigurationA#value}. |
+| <code><a href="#@cdktn/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleFilterTag.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3_bucket_replication_configuration#key S3BucketReplicationConfigurationA#key}. |
+| <code><a href="#@cdktn/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleFilterTag.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3_bucket_replication_configuration#value S3BucketReplicationConfigurationA#value}. |
 
 ---
 
@@ -1730,7 +1730,7 @@ Key *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_bucket_replication_configuration#key S3BucketReplicationConfigurationA#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3_bucket_replication_configuration#key S3BucketReplicationConfigurationA#key}.
 
 ---
 
@@ -1742,7 +1742,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_bucket_replication_configuration#value S3BucketReplicationConfigurationA#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3_bucket_replication_configuration#value S3BucketReplicationConfigurationA#value}.
 
 ---
 
@@ -1751,11 +1751,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleSourceSelectionCriteria.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3bucketreplicationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/s3bucketreplicationconfiguration"
 
 &s3bucketreplicationconfiguration.S3BucketReplicationConfigurationRuleSourceSelectionCriteria {
-	ReplicaModifications: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleSourceSelectionCriteriaReplicaModifications,
-	SseKmsEncryptedObjects: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleSourceSelectionCriteriaSseKmsEncryptedObjects,
+	ReplicaModifications: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleSourceSelectionCriteriaReplicaModifications,
+	SseKmsEncryptedObjects: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleSourceSelectionCriteriaSseKmsEncryptedObjects,
 }
 ```
 
@@ -1778,7 +1778,7 @@ ReplicaModifications S3BucketReplicationConfigurationRuleSourceSelectionCriteria
 
 replica_modifications block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_bucket_replication_configuration#replica_modifications S3BucketReplicationConfigurationA#replica_modifications}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3_bucket_replication_configuration#replica_modifications S3BucketReplicationConfigurationA#replica_modifications}
 
 ---
 
@@ -1792,7 +1792,7 @@ SseKmsEncryptedObjects S3BucketReplicationConfigurationRuleSourceSelectionCriter
 
 sse_kms_encrypted_objects block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_bucket_replication_configuration#sse_kms_encrypted_objects S3BucketReplicationConfigurationA#sse_kms_encrypted_objects}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3_bucket_replication_configuration#sse_kms_encrypted_objects S3BucketReplicationConfigurationA#sse_kms_encrypted_objects}
 
 ---
 
@@ -1801,7 +1801,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleSourceSelectionCriteriaReplicaModifications.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3bucketreplicationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/s3bucketreplicationconfiguration"
 
 &s3bucketreplicationconfiguration.S3BucketReplicationConfigurationRuleSourceSelectionCriteriaReplicaModifications {
 	Status: *string,
@@ -1812,7 +1812,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3bucketreplicationcon
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleSourceSelectionCriteriaReplicaModifications.property.status">Status</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_bucket_replication_configuration#status S3BucketReplicationConfigurationA#status}. |
+| <code><a href="#@cdktn/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleSourceSelectionCriteriaReplicaModifications.property.status">Status</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3_bucket_replication_configuration#status S3BucketReplicationConfigurationA#status}. |
 
 ---
 
@@ -1824,7 +1824,7 @@ Status *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_bucket_replication_configuration#status S3BucketReplicationConfigurationA#status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3_bucket_replication_configuration#status S3BucketReplicationConfigurationA#status}.
 
 ---
 
@@ -1833,7 +1833,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleSourceSelectionCriteriaSseKmsEncryptedObjects.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3bucketreplicationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/s3bucketreplicationconfiguration"
 
 &s3bucketreplicationconfiguration.S3BucketReplicationConfigurationRuleSourceSelectionCriteriaSseKmsEncryptedObjects {
 	Status: *string,
@@ -1844,7 +1844,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3bucketreplicationcon
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleSourceSelectionCriteriaSseKmsEncryptedObjects.property.status">Status</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_bucket_replication_configuration#status S3BucketReplicationConfigurationA#status}. |
+| <code><a href="#@cdktn/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleSourceSelectionCriteriaSseKmsEncryptedObjects.property.status">Status</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3_bucket_replication_configuration#status S3BucketReplicationConfigurationA#status}. |
 
 ---
 
@@ -1856,7 +1856,7 @@ Status *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3_bucket_replication_configuration#status S3BucketReplicationConfigurationA#status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3_bucket_replication_configuration#status S3BucketReplicationConfigurationA#status}.
 
 ---
 
@@ -1867,7 +1867,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleDeleteMarkerReplicationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3bucketreplicationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/s3bucketreplicationconfiguration"
 
 s3bucketreplicationconfiguration.NewS3BucketReplicationConfigurationRuleDeleteMarkerReplicationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3BucketReplicationConfigurationRuleDeleteMarkerReplicationOutputReference
 ```
@@ -2138,7 +2138,7 @@ func InternalValue() S3BucketReplicationConfigurationRuleDeleteMarkerReplication
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleDestinationAccessControlTranslationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3bucketreplicationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/s3bucketreplicationconfiguration"
 
 s3bucketreplicationconfiguration.NewS3BucketReplicationConfigurationRuleDestinationAccessControlTranslationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3BucketReplicationConfigurationRuleDestinationAccessControlTranslationOutputReference
 ```
@@ -2409,7 +2409,7 @@ func InternalValue() S3BucketReplicationConfigurationRuleDestinationAccessContro
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleDestinationEncryptionConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3bucketreplicationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/s3bucketreplicationconfiguration"
 
 s3bucketreplicationconfiguration.NewS3BucketReplicationConfigurationRuleDestinationEncryptionConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3BucketReplicationConfigurationRuleDestinationEncryptionConfigurationOutputReference
 ```
@@ -2680,7 +2680,7 @@ func InternalValue() S3BucketReplicationConfigurationRuleDestinationEncryptionCo
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleDestinationMetricsEventThresholdOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3bucketreplicationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/s3bucketreplicationconfiguration"
 
 s3bucketreplicationconfiguration.NewS3BucketReplicationConfigurationRuleDestinationMetricsEventThresholdOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3BucketReplicationConfigurationRuleDestinationMetricsEventThresholdOutputReference
 ```
@@ -2951,7 +2951,7 @@ func InternalValue() S3BucketReplicationConfigurationRuleDestinationMetricsEvent
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleDestinationMetricsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3bucketreplicationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/s3bucketreplicationconfiguration"
 
 s3bucketreplicationconfiguration.NewS3BucketReplicationConfigurationRuleDestinationMetricsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3BucketReplicationConfigurationRuleDestinationMetricsOutputReference
 ```
@@ -3264,7 +3264,7 @@ func InternalValue() S3BucketReplicationConfigurationRuleDestinationMetrics
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleDestinationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3bucketreplicationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/s3bucketreplicationconfiguration"
 
 s3bucketreplicationconfiguration.NewS3BucketReplicationConfigurationRuleDestinationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3BucketReplicationConfigurationRuleDestinationOutputReference
 ```
@@ -3761,7 +3761,7 @@ func InternalValue() S3BucketReplicationConfigurationRuleDestination
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleDestinationReplicationTimeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3bucketreplicationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/s3bucketreplicationconfiguration"
 
 s3bucketreplicationconfiguration.NewS3BucketReplicationConfigurationRuleDestinationReplicationTimeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3BucketReplicationConfigurationRuleDestinationReplicationTimeOutputReference
 ```
@@ -4067,7 +4067,7 @@ func InternalValue() S3BucketReplicationConfigurationRuleDestinationReplicationT
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleDestinationReplicationTimeTimeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3bucketreplicationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/s3bucketreplicationconfiguration"
 
 s3bucketreplicationconfiguration.NewS3BucketReplicationConfigurationRuleDestinationReplicationTimeTimeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3BucketReplicationConfigurationRuleDestinationReplicationTimeTimeOutputReference
 ```
@@ -4338,7 +4338,7 @@ func InternalValue() S3BucketReplicationConfigurationRuleDestinationReplicationT
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleExistingObjectReplicationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3bucketreplicationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/s3bucketreplicationconfiguration"
 
 s3bucketreplicationconfiguration.NewS3BucketReplicationConfigurationRuleExistingObjectReplicationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3BucketReplicationConfigurationRuleExistingObjectReplicationOutputReference
 ```
@@ -4609,7 +4609,7 @@ func InternalValue() S3BucketReplicationConfigurationRuleExistingObjectReplicati
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleFilterAndOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3bucketreplicationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/s3bucketreplicationconfiguration"
 
 s3bucketreplicationconfiguration.NewS3BucketReplicationConfigurationRuleFilterAndOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3BucketReplicationConfigurationRuleFilterAndOutputReference
 ```
@@ -4916,7 +4916,7 @@ func InternalValue() S3BucketReplicationConfigurationRuleFilterAnd
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3bucketreplicationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/s3bucketreplicationconfiguration"
 
 s3bucketreplicationconfiguration.NewS3BucketReplicationConfigurationRuleFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3BucketReplicationConfigurationRuleFilterOutputReference
 ```
@@ -5278,7 +5278,7 @@ func InternalValue() S3BucketReplicationConfigurationRuleFilter
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleFilterTagOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3bucketreplicationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/s3bucketreplicationconfiguration"
 
 s3bucketreplicationconfiguration.NewS3BucketReplicationConfigurationRuleFilterTagOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3BucketReplicationConfigurationRuleFilterTagOutputReference
 ```
@@ -5571,7 +5571,7 @@ func InternalValue() S3BucketReplicationConfigurationRuleFilterTag
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3bucketreplicationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/s3bucketreplicationconfiguration"
 
 s3bucketreplicationconfiguration.NewS3BucketReplicationConfigurationRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) S3BucketReplicationConfigurationRuleList
 ```
@@ -5731,7 +5731,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3bucketreplicationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/s3bucketreplicationconfiguration"
 
 s3bucketreplicationconfiguration.NewS3BucketReplicationConfigurationRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) S3BucketReplicationConfigurationRuleOutputReference
 ```
@@ -6310,7 +6310,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleSourceSelectionCriteriaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3bucketreplicationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/s3bucketreplicationconfiguration"
 
 s3bucketreplicationconfiguration.NewS3BucketReplicationConfigurationRuleSourceSelectionCriteriaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3BucketReplicationConfigurationRuleSourceSelectionCriteriaOutputReference
 ```
@@ -6643,7 +6643,7 @@ func InternalValue() S3BucketReplicationConfigurationRuleSourceSelectionCriteria
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleSourceSelectionCriteriaReplicaModificationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3bucketreplicationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/s3bucketreplicationconfiguration"
 
 s3bucketreplicationconfiguration.NewS3BucketReplicationConfigurationRuleSourceSelectionCriteriaReplicaModificationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3BucketReplicationConfigurationRuleSourceSelectionCriteriaReplicaModificationsOutputReference
 ```
@@ -6914,7 +6914,7 @@ func InternalValue() S3BucketReplicationConfigurationRuleSourceSelectionCriteria
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleSourceSelectionCriteriaSseKmsEncryptedObjectsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3bucketreplicationconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/s3bucketreplicationconfiguration"
 
 s3bucketreplicationconfiguration.NewS3BucketReplicationConfigurationRuleSourceSelectionCriteriaSseKmsEncryptedObjectsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3BucketReplicationConfigurationRuleSourceSelectionCriteriaSseKmsEncryptedObjectsOutputReference
 ```

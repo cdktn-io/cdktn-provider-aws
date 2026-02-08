@@ -4,12 +4,12 @@
 
 ### Route53ResolverFirewallRuleGroup <a name="Route53ResolverFirewallRuleGroup" id="@cdktn/provider-aws.route53ResolverFirewallRuleGroup.Route53ResolverFirewallRuleGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/route53_resolver_firewall_rule_group aws_route53_resolver_firewall_rule_group}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/route53_resolver_firewall_rule_group aws_route53_resolver_firewall_rule_group}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.route53ResolverFirewallRuleGroup.Route53ResolverFirewallRuleGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/route53resolverfirewallrulegroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/route53resolverfirewallrulegroup"
 
 route53resolverfirewallrulegroup.NewRoute53ResolverFirewallRuleGroup(scope Construct, id *string, config Route53ResolverFirewallRuleGroupConfig) Route53ResolverFirewallRuleGroup
 ```
@@ -406,7 +406,7 @@ func ResetTagsAll()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.route53ResolverFirewallRuleGroup.Route53ResolverFirewallRuleGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/route53resolverfirewallrulegroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/route53resolverfirewallrulegroup"
 
 route53resolverfirewallrulegroup.Route53ResolverFirewallRuleGroup_IsConstruct(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.route53ResolverFirewallRuleGroup.Route53ResolverFirewallRuleGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/route53resolverfirewallrulegroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/route53resolverfirewallrulegroup"
 
 route53resolverfirewallrulegroup.Route53ResolverFirewallRuleGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ route53resolverfirewallrulegroup.Route53ResolverFirewallRuleGroup_IsTerraformEle
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.route53ResolverFirewallRuleGroup.Route53ResolverFirewallRuleGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/route53resolverfirewallrulegroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/route53resolverfirewallrulegroup"
 
 route53resolverfirewallrulegroup.Route53ResolverFirewallRuleGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ route53resolverfirewallrulegroup.Route53ResolverFirewallRuleGroup_IsTerraformRes
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.route53ResolverFirewallRuleGroup.Route53ResolverFirewallRuleGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/route53resolverfirewallrulegroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/route53resolverfirewallrulegroup"
 
 route53resolverfirewallrulegroup.Route53ResolverFirewallRuleGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -495,7 +495,7 @@ The construct id used in the generated config for the Route53ResolverFirewallRul
 
 The id of the existing Route53ResolverFirewallRuleGroup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/route53_resolver_firewall_rule_group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/route53_resolver_firewall_rule_group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -838,7 +838,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.route53ResolverFirewallRuleGroup.Route53ResolverFirewallRuleGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/route53resolverfirewallrulegroup"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/route53resolverfirewallrulegroup"
 
 &route53resolverfirewallrulegroup.Route53ResolverFirewallRuleGroupConfig {
 	Connection: interface{},
@@ -867,11 +867,11 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/route53resolverfirewal
 | <code><a href="#@cdktn/provider-aws.route53ResolverFirewallRuleGroup.Route53ResolverFirewallRuleGroupConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.route53ResolverFirewallRuleGroup.Route53ResolverFirewallRuleGroupConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.route53ResolverFirewallRuleGroup.Route53ResolverFirewallRuleGroupConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.route53ResolverFirewallRuleGroup.Route53ResolverFirewallRuleGroupConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/route53_resolver_firewall_rule_group#name Route53ResolverFirewallRuleGroup#name}. |
-| <code><a href="#@cdktn/provider-aws.route53ResolverFirewallRuleGroup.Route53ResolverFirewallRuleGroupConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/route53_resolver_firewall_rule_group#id Route53ResolverFirewallRuleGroup#id}. |
+| <code><a href="#@cdktn/provider-aws.route53ResolverFirewallRuleGroup.Route53ResolverFirewallRuleGroupConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/route53_resolver_firewall_rule_group#name Route53ResolverFirewallRuleGroup#name}. |
+| <code><a href="#@cdktn/provider-aws.route53ResolverFirewallRuleGroup.Route53ResolverFirewallRuleGroupConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/route53_resolver_firewall_rule_group#id Route53ResolverFirewallRuleGroup#id}. |
 | <code><a href="#@cdktn/provider-aws.route53ResolverFirewallRuleGroup.Route53ResolverFirewallRuleGroupConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.route53ResolverFirewallRuleGroup.Route53ResolverFirewallRuleGroupConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/route53_resolver_firewall_rule_group#tags Route53ResolverFirewallRuleGroup#tags}. |
-| <code><a href="#@cdktn/provider-aws.route53ResolverFirewallRuleGroup.Route53ResolverFirewallRuleGroupConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/route53_resolver_firewall_rule_group#tags_all Route53ResolverFirewallRuleGroup#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.route53ResolverFirewallRuleGroup.Route53ResolverFirewallRuleGroupConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/route53_resolver_firewall_rule_group#tags Route53ResolverFirewallRuleGroup#tags}. |
+| <code><a href="#@cdktn/provider-aws.route53ResolverFirewallRuleGroup.Route53ResolverFirewallRuleGroupConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/route53_resolver_firewall_rule_group#tags_all Route53ResolverFirewallRuleGroup#tags_all}. |
 
 ---
 
@@ -953,7 +953,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/route53_resolver_firewall_rule_group#name Route53ResolverFirewallRuleGroup#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/route53_resolver_firewall_rule_group#name Route53ResolverFirewallRuleGroup#name}.
 
 ---
 
@@ -965,7 +965,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/route53_resolver_firewall_rule_group#id Route53ResolverFirewallRuleGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/route53_resolver_firewall_rule_group#id Route53ResolverFirewallRuleGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -982,7 +982,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/route53_resolver_firewall_rule_group#region Route53ResolverFirewallRuleGroup#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/route53_resolver_firewall_rule_group#region Route53ResolverFirewallRuleGroup#region}
 
 ---
 
@@ -994,7 +994,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/route53_resolver_firewall_rule_group#tags Route53ResolverFirewallRuleGroup#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/route53_resolver_firewall_rule_group#tags Route53ResolverFirewallRuleGroup#tags}.
 
 ---
 
@@ -1006,7 +1006,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/route53_resolver_firewall_rule_group#tags_all Route53ResolverFirewallRuleGroup#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/route53_resolver_firewall_rule_group#tags_all Route53ResolverFirewallRuleGroup#tags_all}.
 
 ---
 

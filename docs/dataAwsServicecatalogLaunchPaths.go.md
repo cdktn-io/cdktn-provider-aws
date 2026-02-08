@@ -4,12 +4,12 @@
 
 ### DataAwsServicecatalogLaunchPaths <a name="DataAwsServicecatalogLaunchPaths" id="@cdktn/provider-aws.dataAwsServicecatalogLaunchPaths.DataAwsServicecatalogLaunchPaths"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/servicecatalog_launch_paths aws_servicecatalog_launch_paths}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/servicecatalog_launch_paths aws_servicecatalog_launch_paths}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsServicecatalogLaunchPaths.DataAwsServicecatalogLaunchPaths.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsservicecataloglaunchpaths"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsservicecataloglaunchpaths"
 
 dataawsservicecataloglaunchpaths.NewDataAwsServicecatalogLaunchPaths(scope Construct, id *string, config DataAwsServicecatalogLaunchPathsConfig) DataAwsServicecatalogLaunchPaths
 ```
@@ -317,7 +317,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsServicecatalogLaunchPaths.DataAwsServicecatalogLaunchPaths.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsservicecataloglaunchpaths"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsservicecataloglaunchpaths"
 
 dataawsservicecataloglaunchpaths.DataAwsServicecatalogLaunchPaths_IsConstruct(x interface{}) *bool
 ```
@@ -349,7 +349,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsServicecatalogLaunchPaths.DataAwsServicecatalogLaunchPaths.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsservicecataloglaunchpaths"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsservicecataloglaunchpaths"
 
 dataawsservicecataloglaunchpaths.DataAwsServicecatalogLaunchPaths_IsTerraformElement(x interface{}) *bool
 ```
@@ -363,7 +363,7 @@ dataawsservicecataloglaunchpaths.DataAwsServicecatalogLaunchPaths_IsTerraformEle
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsServicecatalogLaunchPaths.DataAwsServicecatalogLaunchPaths.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsservicecataloglaunchpaths"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsservicecataloglaunchpaths"
 
 dataawsservicecataloglaunchpaths.DataAwsServicecatalogLaunchPaths_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -377,7 +377,7 @@ dataawsservicecataloglaunchpaths.DataAwsServicecatalogLaunchPaths_IsTerraformDat
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsServicecatalogLaunchPaths.DataAwsServicecatalogLaunchPaths.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsservicecataloglaunchpaths"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsservicecataloglaunchpaths"
 
 dataawsservicecataloglaunchpaths.DataAwsServicecatalogLaunchPaths_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -406,7 +406,7 @@ The construct id used in the generated config for the DataAwsServicecatalogLaunc
 
 The id of the existing DataAwsServicecatalogLaunchPaths that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/servicecatalog_launch_paths#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/servicecatalog_launch_paths#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -705,7 +705,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsServicecatalogLaunchPaths.DataAwsServicecatalogLaunchPathsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsservicecataloglaunchpaths"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsservicecataloglaunchpaths"
 
 &dataawsservicecataloglaunchpaths.DataAwsServicecatalogLaunchPathsConfig {
 	Connection: interface{},
@@ -719,7 +719,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsservicecatalogl
 	AcceptLanguage: *string,
 	Id: *string,
 	Region: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.dataAwsServicecatalogLaunchPaths.DataAwsServicecatalogLaunchPathsTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.dataAwsServicecatalogLaunchPaths.DataAwsServicecatalogLaunchPathsTimeouts,
 }
 ```
 
@@ -734,9 +734,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsservicecatalogl
 | <code><a href="#@cdktn/provider-aws.dataAwsServicecatalogLaunchPaths.DataAwsServicecatalogLaunchPathsConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsServicecatalogLaunchPaths.DataAwsServicecatalogLaunchPathsConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsServicecatalogLaunchPaths.DataAwsServicecatalogLaunchPathsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsServicecatalogLaunchPaths.DataAwsServicecatalogLaunchPathsConfig.property.productId">ProductId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/servicecatalog_launch_paths#product_id DataAwsServicecatalogLaunchPaths#product_id}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsServicecatalogLaunchPaths.DataAwsServicecatalogLaunchPathsConfig.property.acceptLanguage">AcceptLanguage</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/servicecatalog_launch_paths#accept_language DataAwsServicecatalogLaunchPaths#accept_language}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsServicecatalogLaunchPaths.DataAwsServicecatalogLaunchPathsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/servicecatalog_launch_paths#id DataAwsServicecatalogLaunchPaths#id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsServicecatalogLaunchPaths.DataAwsServicecatalogLaunchPathsConfig.property.productId">ProductId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/servicecatalog_launch_paths#product_id DataAwsServicecatalogLaunchPaths#product_id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsServicecatalogLaunchPaths.DataAwsServicecatalogLaunchPathsConfig.property.acceptLanguage">AcceptLanguage</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/servicecatalog_launch_paths#accept_language DataAwsServicecatalogLaunchPaths#accept_language}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsServicecatalogLaunchPaths.DataAwsServicecatalogLaunchPathsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/servicecatalog_launch_paths#id DataAwsServicecatalogLaunchPaths#id}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsServicecatalogLaunchPaths.DataAwsServicecatalogLaunchPathsConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktn/provider-aws.dataAwsServicecatalogLaunchPaths.DataAwsServicecatalogLaunchPathsConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.dataAwsServicecatalogLaunchPaths.DataAwsServicecatalogLaunchPathsTimeouts">DataAwsServicecatalogLaunchPathsTimeouts</a></code> | timeouts block. |
 
@@ -820,7 +820,7 @@ ProductId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/servicecatalog_launch_paths#product_id DataAwsServicecatalogLaunchPaths#product_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/servicecatalog_launch_paths#product_id DataAwsServicecatalogLaunchPaths#product_id}.
 
 ---
 
@@ -832,7 +832,7 @@ AcceptLanguage *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/servicecatalog_launch_paths#accept_language DataAwsServicecatalogLaunchPaths#accept_language}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/servicecatalog_launch_paths#accept_language DataAwsServicecatalogLaunchPaths#accept_language}.
 
 ---
 
@@ -844,7 +844,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/servicecatalog_launch_paths#id DataAwsServicecatalogLaunchPaths#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/servicecatalog_launch_paths#id DataAwsServicecatalogLaunchPaths#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -861,7 +861,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/servicecatalog_launch_paths#region DataAwsServicecatalogLaunchPaths#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/servicecatalog_launch_paths#region DataAwsServicecatalogLaunchPaths#region}
 
 ---
 
@@ -875,7 +875,7 @@ Timeouts DataAwsServicecatalogLaunchPathsTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/servicecatalog_launch_paths#timeouts DataAwsServicecatalogLaunchPaths#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/servicecatalog_launch_paths#timeouts DataAwsServicecatalogLaunchPaths#timeouts}
 
 ---
 
@@ -884,7 +884,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsServicecatalogLaunchPaths.DataAwsServicecatalogLaunchPathsSummaries.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsservicecataloglaunchpaths"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsservicecataloglaunchpaths"
 
 &dataawsservicecataloglaunchpaths.DataAwsServicecatalogLaunchPathsSummaries {
 
@@ -897,7 +897,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsservicecatalogl
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsServicecatalogLaunchPaths.DataAwsServicecatalogLaunchPathsSummariesConstraintSummaries.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsservicecataloglaunchpaths"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsservicecataloglaunchpaths"
 
 &dataawsservicecataloglaunchpaths.DataAwsServicecatalogLaunchPathsSummariesConstraintSummaries {
 
@@ -910,7 +910,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsservicecatalogl
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsServicecatalogLaunchPaths.DataAwsServicecatalogLaunchPathsTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsservicecataloglaunchpaths"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsservicecataloglaunchpaths"
 
 &dataawsservicecataloglaunchpaths.DataAwsServicecatalogLaunchPathsTimeouts {
 	Read: *string,
@@ -921,7 +921,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsservicecatalogl
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.dataAwsServicecatalogLaunchPaths.DataAwsServicecatalogLaunchPathsTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/servicecatalog_launch_paths#read DataAwsServicecatalogLaunchPaths#read}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsServicecatalogLaunchPaths.DataAwsServicecatalogLaunchPathsTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/servicecatalog_launch_paths#read DataAwsServicecatalogLaunchPaths#read}. |
 
 ---
 
@@ -933,7 +933,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/servicecatalog_launch_paths#read DataAwsServicecatalogLaunchPaths#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/servicecatalog_launch_paths#read DataAwsServicecatalogLaunchPaths#read}.
 
 ---
 
@@ -944,7 +944,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsServicecatalogLaunchPaths.DataAwsServicecatalogLaunchPathsSummariesConstraintSummariesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsservicecataloglaunchpaths"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsservicecataloglaunchpaths"
 
 dataawsservicecataloglaunchpaths.NewDataAwsServicecatalogLaunchPathsSummariesConstraintSummariesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsServicecatalogLaunchPathsSummariesConstraintSummariesList
 ```
@@ -1093,7 +1093,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsServicecatalogLaunchPaths.DataAwsServicecatalogLaunchPathsSummariesConstraintSummariesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsservicecataloglaunchpaths"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsservicecataloglaunchpaths"
 
 dataawsservicecataloglaunchpaths.NewDataAwsServicecatalogLaunchPathsSummariesConstraintSummariesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsServicecatalogLaunchPathsSummariesConstraintSummariesOutputReference
 ```
@@ -1382,7 +1382,7 @@ func InternalValue() DataAwsServicecatalogLaunchPathsSummariesConstraintSummarie
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsServicecatalogLaunchPaths.DataAwsServicecatalogLaunchPathsSummariesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsservicecataloglaunchpaths"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsservicecataloglaunchpaths"
 
 dataawsservicecataloglaunchpaths.NewDataAwsServicecatalogLaunchPathsSummariesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsServicecatalogLaunchPathsSummariesList
 ```
@@ -1531,7 +1531,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsServicecatalogLaunchPaths.DataAwsServicecatalogLaunchPathsSummariesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsservicecataloglaunchpaths"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsservicecataloglaunchpaths"
 
 dataawsservicecataloglaunchpaths.NewDataAwsServicecatalogLaunchPathsSummariesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsServicecatalogLaunchPathsSummariesOutputReference
 ```
@@ -1842,7 +1842,7 @@ func InternalValue() DataAwsServicecatalogLaunchPathsSummaries
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsServicecatalogLaunchPaths.DataAwsServicecatalogLaunchPathsTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsservicecataloglaunchpaths"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsservicecataloglaunchpaths"
 
 dataawsservicecataloglaunchpaths.NewDataAwsServicecatalogLaunchPathsTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAwsServicecatalogLaunchPathsTimeoutsOutputReference
 ```

@@ -4,12 +4,12 @@
 
 ### QuicksightKeyRegistration <a name="QuicksightKeyRegistration" id="@cdktn/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistration"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_key_registration aws_quicksight_key_registration}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_key_registration aws_quicksight_key_registration}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/quicksightkeyregistration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/quicksightkeyregistration"
 
 quicksightkeyregistration.NewQuicksightKeyRegistration(scope Construct, id *string, config QuicksightKeyRegistrationConfig) QuicksightKeyRegistration
 ```
@@ -412,7 +412,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistration.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/quicksightkeyregistration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/quicksightkeyregistration"
 
 quicksightkeyregistration.QuicksightKeyRegistration_IsConstruct(x interface{}) *bool
 ```
@@ -444,7 +444,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/quicksightkeyregistration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/quicksightkeyregistration"
 
 quicksightkeyregistration.QuicksightKeyRegistration_IsTerraformElement(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ quicksightkeyregistration.QuicksightKeyRegistration_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistration.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/quicksightkeyregistration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/quicksightkeyregistration"
 
 quicksightkeyregistration.QuicksightKeyRegistration_IsTerraformResource(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ quicksightkeyregistration.QuicksightKeyRegistration_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistration.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/quicksightkeyregistration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/quicksightkeyregistration"
 
 quicksightkeyregistration.QuicksightKeyRegistration_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -501,7 +501,7 @@ The construct id used in the generated config for the QuicksightKeyRegistration 
 
 The id of the existing QuicksightKeyRegistration that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_key_registration#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_key_registration#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -767,7 +767,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistrationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/quicksightkeyregistration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/quicksightkeyregistration"
 
 &quicksightkeyregistration.QuicksightKeyRegistrationConfig {
 	Connection: interface{},
@@ -794,7 +794,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/quicksightkeyregistrat
 | <code><a href="#@cdktn/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistrationConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistrationConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistrationConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistrationConfig.property.awsAccountId">AwsAccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_key_registration#aws_account_id QuicksightKeyRegistration#aws_account_id}. |
+| <code><a href="#@cdktn/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistrationConfig.property.awsAccountId">AwsAccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_key_registration#aws_account_id QuicksightKeyRegistration#aws_account_id}. |
 | <code><a href="#@cdktn/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistrationConfig.property.keyRegistration">KeyRegistration</a></code> | <code>interface{}</code> | key_registration block. |
 | <code><a href="#@cdktn/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistrationConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
@@ -878,7 +878,7 @@ AwsAccountId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_key_registration#aws_account_id QuicksightKeyRegistration#aws_account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_key_registration#aws_account_id QuicksightKeyRegistration#aws_account_id}.
 
 ---
 
@@ -892,7 +892,7 @@ KeyRegistration interface{}
 
 key_registration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_key_registration#key_registration QuicksightKeyRegistration#key_registration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_key_registration#key_registration QuicksightKeyRegistration#key_registration}
 
 ---
 
@@ -906,7 +906,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_key_registration#region QuicksightKeyRegistration#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_key_registration#region QuicksightKeyRegistration#region}
 
 ---
 
@@ -915,7 +915,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistrationKeyRegistration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/quicksightkeyregistration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/quicksightkeyregistration"
 
 &quicksightkeyregistration.QuicksightKeyRegistrationKeyRegistration {
 	KeyArn: *string,
@@ -927,8 +927,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/quicksightkeyregistrat
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistrationKeyRegistration.property.keyArn">KeyArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_key_registration#key_arn QuicksightKeyRegistration#key_arn}. |
-| <code><a href="#@cdktn/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistrationKeyRegistration.property.defaultKey">DefaultKey</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_key_registration#default_key QuicksightKeyRegistration#default_key}. |
+| <code><a href="#@cdktn/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistrationKeyRegistration.property.keyArn">KeyArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_key_registration#key_arn QuicksightKeyRegistration#key_arn}. |
+| <code><a href="#@cdktn/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistrationKeyRegistration.property.defaultKey">DefaultKey</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_key_registration#default_key QuicksightKeyRegistration#default_key}. |
 
 ---
 
@@ -940,7 +940,7 @@ KeyArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_key_registration#key_arn QuicksightKeyRegistration#key_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_key_registration#key_arn QuicksightKeyRegistration#key_arn}.
 
 ---
 
@@ -952,7 +952,7 @@ DefaultKey interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_key_registration#default_key QuicksightKeyRegistration#default_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_key_registration#default_key QuicksightKeyRegistration#default_key}.
 
 ---
 
@@ -963,7 +963,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistrationKeyRegistrationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/quicksightkeyregistration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/quicksightkeyregistration"
 
 quicksightkeyregistration.NewQuicksightKeyRegistrationKeyRegistrationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) QuicksightKeyRegistrationKeyRegistrationList
 ```
@@ -1123,7 +1123,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.quicksightKeyRegistration.QuicksightKeyRegistrationKeyRegistrationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/quicksightkeyregistration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/quicksightkeyregistration"
 
 quicksightkeyregistration.NewQuicksightKeyRegistrationKeyRegistrationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) QuicksightKeyRegistrationKeyRegistrationOutputReference
 ```

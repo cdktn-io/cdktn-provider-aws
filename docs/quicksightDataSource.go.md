@@ -4,12 +4,12 @@
 
 ### QuicksightDataSource <a name="QuicksightDataSource" id="@cdktn/provider-aws.quicksightDataSource.QuicksightDataSource"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source aws_quicksight_data_source}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source aws_quicksight_data_source}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.quicksightDataSource.QuicksightDataSource.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/quicksightdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/quicksightdatasource"
 
 quicksightdatasource.NewQuicksightDataSource(scope Construct, id *string, config QuicksightDataSourceConfig) QuicksightDataSource
 ```
@@ -506,7 +506,7 @@ func ResetVpcConnectionProperties()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.quicksightDataSource.QuicksightDataSource.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/quicksightdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/quicksightdatasource"
 
 quicksightdatasource.QuicksightDataSource_IsConstruct(x interface{}) *bool
 ```
@@ -538,7 +538,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.quicksightDataSource.QuicksightDataSource.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/quicksightdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/quicksightdatasource"
 
 quicksightdatasource.QuicksightDataSource_IsTerraformElement(x interface{}) *bool
 ```
@@ -552,7 +552,7 @@ quicksightdatasource.QuicksightDataSource_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.quicksightDataSource.QuicksightDataSource.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/quicksightdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/quicksightdatasource"
 
 quicksightdatasource.QuicksightDataSource_IsTerraformResource(x interface{}) *bool
 ```
@@ -566,7 +566,7 @@ quicksightdatasource.QuicksightDataSource_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.quicksightDataSource.QuicksightDataSource.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/quicksightdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/quicksightdatasource"
 
 quicksightdatasource.QuicksightDataSource_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -595,7 +595,7 @@ The construct id used in the generated config for the QuicksightDataSource to im
 
 The id of the existing QuicksightDataSource that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1092,7 +1092,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/quicksightdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/quicksightdatasource"
 
 &quicksightdatasource.QuicksightDataSourceConfig {
 	Connection: interface{},
@@ -1104,17 +1104,17 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/quicksightdatasource"
 	Provisioners: *[]interface{},
 	DataSourceId: *string,
 	Name: *string,
-	Parameters: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.quicksightDataSource.QuicksightDataSourceParameters,
+	Parameters: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.quicksightDataSource.QuicksightDataSourceParameters,
 	Type: *string,
 	AwsAccountId: *string,
-	Credentials: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.quicksightDataSource.QuicksightDataSourceCredentials,
+	Credentials: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.quicksightDataSource.QuicksightDataSourceCredentials,
 	Id: *string,
 	Permission: interface{},
 	Region: *string,
-	SslProperties: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.quicksightDataSource.QuicksightDataSourceSslProperties,
+	SslProperties: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.quicksightDataSource.QuicksightDataSourceSslProperties,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	VpcConnectionProperties: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.quicksightDataSource.QuicksightDataSourceVpcConnectionProperties,
+	VpcConnectionProperties: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.quicksightDataSource.QuicksightDataSourceVpcConnectionProperties,
 }
 ```
 
@@ -1129,18 +1129,18 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/quicksightdatasource"
 | <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceConfig.property.dataSourceId">DataSourceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#data_source_id QuicksightDataSource#data_source_id}. |
-| <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#name QuicksightDataSource#name}. |
+| <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceConfig.property.dataSourceId">DataSourceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#data_source_id QuicksightDataSource#data_source_id}. |
+| <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#name QuicksightDataSource#name}. |
 | <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceConfig.property.parameters">Parameters</a></code> | <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParameters">QuicksightDataSourceParameters</a></code> | parameters block. |
-| <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceConfig.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#type QuicksightDataSource#type}. |
-| <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceConfig.property.awsAccountId">AwsAccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#aws_account_id QuicksightDataSource#aws_account_id}. |
+| <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceConfig.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#type QuicksightDataSource#type}. |
+| <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceConfig.property.awsAccountId">AwsAccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#aws_account_id QuicksightDataSource#aws_account_id}. |
 | <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceConfig.property.credentials">Credentials</a></code> | <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceCredentials">QuicksightDataSourceCredentials</a></code> | credentials block. |
-| <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#id QuicksightDataSource#id}. |
+| <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#id QuicksightDataSource#id}. |
 | <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceConfig.property.permission">Permission</a></code> | <code>interface{}</code> | permission block. |
 | <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceConfig.property.sslProperties">SslProperties</a></code> | <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceSslProperties">QuicksightDataSourceSslProperties</a></code> | ssl_properties block. |
-| <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#tags QuicksightDataSource#tags}. |
-| <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#tags_all QuicksightDataSource#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#tags QuicksightDataSource#tags}. |
+| <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#tags_all QuicksightDataSource#tags_all}. |
 | <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceConfig.property.vpcConnectionProperties">VpcConnectionProperties</a></code> | <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceVpcConnectionProperties">QuicksightDataSourceVpcConnectionProperties</a></code> | vpc_connection_properties block. |
 
 ---
@@ -1223,7 +1223,7 @@ DataSourceId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#data_source_id QuicksightDataSource#data_source_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#data_source_id QuicksightDataSource#data_source_id}.
 
 ---
 
@@ -1235,7 +1235,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#name QuicksightDataSource#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#name QuicksightDataSource#name}.
 
 ---
 
@@ -1249,7 +1249,7 @@ Parameters QuicksightDataSourceParameters
 
 parameters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#parameters QuicksightDataSource#parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#parameters QuicksightDataSource#parameters}
 
 ---
 
@@ -1261,7 +1261,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#type QuicksightDataSource#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#type QuicksightDataSource#type}.
 
 ---
 
@@ -1273,7 +1273,7 @@ AwsAccountId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#aws_account_id QuicksightDataSource#aws_account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#aws_account_id QuicksightDataSource#aws_account_id}.
 
 ---
 
@@ -1287,7 +1287,7 @@ Credentials QuicksightDataSourceCredentials
 
 credentials block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#credentials QuicksightDataSource#credentials}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#credentials QuicksightDataSource#credentials}
 
 ---
 
@@ -1299,7 +1299,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#id QuicksightDataSource#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#id QuicksightDataSource#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1316,7 +1316,7 @@ Permission interface{}
 
 permission block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#permission QuicksightDataSource#permission}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#permission QuicksightDataSource#permission}
 
 ---
 
@@ -1330,7 +1330,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#region QuicksightDataSource#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#region QuicksightDataSource#region}
 
 ---
 
@@ -1344,7 +1344,7 @@ SslProperties QuicksightDataSourceSslProperties
 
 ssl_properties block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#ssl_properties QuicksightDataSource#ssl_properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#ssl_properties QuicksightDataSource#ssl_properties}
 
 ---
 
@@ -1356,7 +1356,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#tags QuicksightDataSource#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#tags QuicksightDataSource#tags}.
 
 ---
 
@@ -1368,7 +1368,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#tags_all QuicksightDataSource#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#tags_all QuicksightDataSource#tags_all}.
 
 ---
 
@@ -1382,7 +1382,7 @@ VpcConnectionProperties QuicksightDataSourceVpcConnectionProperties
 
 vpc_connection_properties block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#vpc_connection_properties QuicksightDataSource#vpc_connection_properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#vpc_connection_properties QuicksightDataSource#vpc_connection_properties}
 
 ---
 
@@ -1391,11 +1391,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceCredentials.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/quicksightdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/quicksightdatasource"
 
 &quicksightdatasource.QuicksightDataSourceCredentials {
 	CopySourceArn: *string,
-	CredentialPair: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.quicksightDataSource.QuicksightDataSourceCredentialsCredentialPair,
+	CredentialPair: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.quicksightDataSource.QuicksightDataSourceCredentialsCredentialPair,
 	SecretArn: *string,
 }
 ```
@@ -1404,9 +1404,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/quicksightdatasource"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceCredentials.property.copySourceArn">CopySourceArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#copy_source_arn QuicksightDataSource#copy_source_arn}. |
+| <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceCredentials.property.copySourceArn">CopySourceArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#copy_source_arn QuicksightDataSource#copy_source_arn}. |
 | <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceCredentials.property.credentialPair">CredentialPair</a></code> | <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceCredentialsCredentialPair">QuicksightDataSourceCredentialsCredentialPair</a></code> | credential_pair block. |
-| <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceCredentials.property.secretArn">SecretArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#secret_arn QuicksightDataSource#secret_arn}. |
+| <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceCredentials.property.secretArn">SecretArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#secret_arn QuicksightDataSource#secret_arn}. |
 
 ---
 
@@ -1418,7 +1418,7 @@ CopySourceArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#copy_source_arn QuicksightDataSource#copy_source_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#copy_source_arn QuicksightDataSource#copy_source_arn}.
 
 ---
 
@@ -1432,7 +1432,7 @@ CredentialPair QuicksightDataSourceCredentialsCredentialPair
 
 credential_pair block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#credential_pair QuicksightDataSource#credential_pair}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#credential_pair QuicksightDataSource#credential_pair}
 
 ---
 
@@ -1444,7 +1444,7 @@ SecretArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#secret_arn QuicksightDataSource#secret_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#secret_arn QuicksightDataSource#secret_arn}.
 
 ---
 
@@ -1453,7 +1453,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceCredentialsCredentialPair.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/quicksightdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/quicksightdatasource"
 
 &quicksightdatasource.QuicksightDataSourceCredentialsCredentialPair {
 	Password: *string,
@@ -1465,8 +1465,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/quicksightdatasource"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceCredentialsCredentialPair.property.password">Password</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#password QuicksightDataSource#password}. |
-| <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceCredentialsCredentialPair.property.username">Username</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#username QuicksightDataSource#username}. |
+| <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceCredentialsCredentialPair.property.password">Password</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#password QuicksightDataSource#password}. |
+| <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceCredentialsCredentialPair.property.username">Username</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#username QuicksightDataSource#username}. |
 
 ---
 
@@ -1478,7 +1478,7 @@ Password *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#password QuicksightDataSource#password}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#password QuicksightDataSource#password}.
 
 ---
 
@@ -1490,7 +1490,7 @@ Username *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#username QuicksightDataSource#username}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#username QuicksightDataSource#username}.
 
 ---
 
@@ -1499,30 +1499,30 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/quicksightdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/quicksightdatasource"
 
 &quicksightdatasource.QuicksightDataSourceParameters {
-	AmazonElasticsearch: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.quicksightDataSource.QuicksightDataSourceParametersAmazonElasticsearch,
-	Athena: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.quicksightDataSource.QuicksightDataSourceParametersAthena,
-	Aurora: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.quicksightDataSource.QuicksightDataSourceParametersAurora,
-	AuroraPostgresql: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.quicksightDataSource.QuicksightDataSourceParametersAuroraPostgresql,
-	AwsIotAnalytics: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.quicksightDataSource.QuicksightDataSourceParametersAwsIotAnalytics,
-	Databricks: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.quicksightDataSource.QuicksightDataSourceParametersDatabricks,
-	Jira: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.quicksightDataSource.QuicksightDataSourceParametersJira,
-	MariaDb: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.quicksightDataSource.QuicksightDataSourceParametersMariaDb,
-	Mysql: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.quicksightDataSource.QuicksightDataSourceParametersMysql,
-	Oracle: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.quicksightDataSource.QuicksightDataSourceParametersOracle,
-	Postgresql: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.quicksightDataSource.QuicksightDataSourceParametersPostgresql,
-	Presto: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.quicksightDataSource.QuicksightDataSourceParametersPresto,
-	Rds: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.quicksightDataSource.QuicksightDataSourceParametersRds,
-	Redshift: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.quicksightDataSource.QuicksightDataSourceParametersRedshift,
-	S3: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.quicksightDataSource.QuicksightDataSourceParametersS3,
-	ServiceNow: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.quicksightDataSource.QuicksightDataSourceParametersServiceNow,
-	Snowflake: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.quicksightDataSource.QuicksightDataSourceParametersSnowflake,
-	Spark: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.quicksightDataSource.QuicksightDataSourceParametersSpark,
-	SqlServer: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.quicksightDataSource.QuicksightDataSourceParametersSqlServer,
-	Teradata: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.quicksightDataSource.QuicksightDataSourceParametersTeradata,
-	Twitter: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.quicksightDataSource.QuicksightDataSourceParametersTwitter,
+	AmazonElasticsearch: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.quicksightDataSource.QuicksightDataSourceParametersAmazonElasticsearch,
+	Athena: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.quicksightDataSource.QuicksightDataSourceParametersAthena,
+	Aurora: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.quicksightDataSource.QuicksightDataSourceParametersAurora,
+	AuroraPostgresql: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.quicksightDataSource.QuicksightDataSourceParametersAuroraPostgresql,
+	AwsIotAnalytics: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.quicksightDataSource.QuicksightDataSourceParametersAwsIotAnalytics,
+	Databricks: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.quicksightDataSource.QuicksightDataSourceParametersDatabricks,
+	Jira: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.quicksightDataSource.QuicksightDataSourceParametersJira,
+	MariaDb: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.quicksightDataSource.QuicksightDataSourceParametersMariaDb,
+	Mysql: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.quicksightDataSource.QuicksightDataSourceParametersMysql,
+	Oracle: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.quicksightDataSource.QuicksightDataSourceParametersOracle,
+	Postgresql: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.quicksightDataSource.QuicksightDataSourceParametersPostgresql,
+	Presto: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.quicksightDataSource.QuicksightDataSourceParametersPresto,
+	Rds: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.quicksightDataSource.QuicksightDataSourceParametersRds,
+	Redshift: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.quicksightDataSource.QuicksightDataSourceParametersRedshift,
+	S3: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.quicksightDataSource.QuicksightDataSourceParametersS3,
+	ServiceNow: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.quicksightDataSource.QuicksightDataSourceParametersServiceNow,
+	Snowflake: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.quicksightDataSource.QuicksightDataSourceParametersSnowflake,
+	Spark: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.quicksightDataSource.QuicksightDataSourceParametersSpark,
+	SqlServer: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.quicksightDataSource.QuicksightDataSourceParametersSqlServer,
+	Teradata: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.quicksightDataSource.QuicksightDataSourceParametersTeradata,
+	Twitter: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.quicksightDataSource.QuicksightDataSourceParametersTwitter,
 }
 ```
 
@@ -1564,7 +1564,7 @@ AmazonElasticsearch QuicksightDataSourceParametersAmazonElasticsearch
 
 amazon_elasticsearch block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#amazon_elasticsearch QuicksightDataSource#amazon_elasticsearch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#amazon_elasticsearch QuicksightDataSource#amazon_elasticsearch}
 
 ---
 
@@ -1578,7 +1578,7 @@ Athena QuicksightDataSourceParametersAthena
 
 athena block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#athena QuicksightDataSource#athena}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#athena QuicksightDataSource#athena}
 
 ---
 
@@ -1592,7 +1592,7 @@ Aurora QuicksightDataSourceParametersAurora
 
 aurora block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#aurora QuicksightDataSource#aurora}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#aurora QuicksightDataSource#aurora}
 
 ---
 
@@ -1606,7 +1606,7 @@ AuroraPostgresql QuicksightDataSourceParametersAuroraPostgresql
 
 aurora_postgresql block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#aurora_postgresql QuicksightDataSource#aurora_postgresql}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#aurora_postgresql QuicksightDataSource#aurora_postgresql}
 
 ---
 
@@ -1620,7 +1620,7 @@ AwsIotAnalytics QuicksightDataSourceParametersAwsIotAnalytics
 
 aws_iot_analytics block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#aws_iot_analytics QuicksightDataSource#aws_iot_analytics}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#aws_iot_analytics QuicksightDataSource#aws_iot_analytics}
 
 ---
 
@@ -1634,7 +1634,7 @@ Databricks QuicksightDataSourceParametersDatabricks
 
 databricks block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#databricks QuicksightDataSource#databricks}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#databricks QuicksightDataSource#databricks}
 
 ---
 
@@ -1648,7 +1648,7 @@ Jira QuicksightDataSourceParametersJira
 
 jira block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#jira QuicksightDataSource#jira}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#jira QuicksightDataSource#jira}
 
 ---
 
@@ -1662,7 +1662,7 @@ MariaDb QuicksightDataSourceParametersMariaDb
 
 maria_db block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#maria_db QuicksightDataSource#maria_db}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#maria_db QuicksightDataSource#maria_db}
 
 ---
 
@@ -1676,7 +1676,7 @@ Mysql QuicksightDataSourceParametersMysql
 
 mysql block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#mysql QuicksightDataSource#mysql}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#mysql QuicksightDataSource#mysql}
 
 ---
 
@@ -1690,7 +1690,7 @@ Oracle QuicksightDataSourceParametersOracle
 
 oracle block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#oracle QuicksightDataSource#oracle}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#oracle QuicksightDataSource#oracle}
 
 ---
 
@@ -1704,7 +1704,7 @@ Postgresql QuicksightDataSourceParametersPostgresql
 
 postgresql block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#postgresql QuicksightDataSource#postgresql}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#postgresql QuicksightDataSource#postgresql}
 
 ---
 
@@ -1718,7 +1718,7 @@ Presto QuicksightDataSourceParametersPresto
 
 presto block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#presto QuicksightDataSource#presto}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#presto QuicksightDataSource#presto}
 
 ---
 
@@ -1732,7 +1732,7 @@ Rds QuicksightDataSourceParametersRds
 
 rds block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#rds QuicksightDataSource#rds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#rds QuicksightDataSource#rds}
 
 ---
 
@@ -1746,7 +1746,7 @@ Redshift QuicksightDataSourceParametersRedshift
 
 redshift block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#redshift QuicksightDataSource#redshift}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#redshift QuicksightDataSource#redshift}
 
 ---
 
@@ -1760,7 +1760,7 @@ S3 QuicksightDataSourceParametersS3
 
 s3 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#s3 QuicksightDataSource#s3}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#s3 QuicksightDataSource#s3}
 
 ---
 
@@ -1774,7 +1774,7 @@ ServiceNow QuicksightDataSourceParametersServiceNow
 
 service_now block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#service_now QuicksightDataSource#service_now}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#service_now QuicksightDataSource#service_now}
 
 ---
 
@@ -1788,7 +1788,7 @@ Snowflake QuicksightDataSourceParametersSnowflake
 
 snowflake block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#snowflake QuicksightDataSource#snowflake}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#snowflake QuicksightDataSource#snowflake}
 
 ---
 
@@ -1802,7 +1802,7 @@ Spark QuicksightDataSourceParametersSpark
 
 spark block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#spark QuicksightDataSource#spark}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#spark QuicksightDataSource#spark}
 
 ---
 
@@ -1816,7 +1816,7 @@ SqlServer QuicksightDataSourceParametersSqlServer
 
 sql_server block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#sql_server QuicksightDataSource#sql_server}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#sql_server QuicksightDataSource#sql_server}
 
 ---
 
@@ -1830,7 +1830,7 @@ Teradata QuicksightDataSourceParametersTeradata
 
 teradata block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#teradata QuicksightDataSource#teradata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#teradata QuicksightDataSource#teradata}
 
 ---
 
@@ -1844,7 +1844,7 @@ Twitter QuicksightDataSourceParametersTwitter
 
 twitter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#twitter QuicksightDataSource#twitter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#twitter QuicksightDataSource#twitter}
 
 ---
 
@@ -1853,7 +1853,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersAmazonElasticsearch.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/quicksightdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/quicksightdatasource"
 
 &quicksightdatasource.QuicksightDataSourceParametersAmazonElasticsearch {
 	Domain: *string,
@@ -1864,7 +1864,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/quicksightdatasource"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersAmazonElasticsearch.property.domain">Domain</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#domain QuicksightDataSource#domain}. |
+| <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersAmazonElasticsearch.property.domain">Domain</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#domain QuicksightDataSource#domain}. |
 
 ---
 
@@ -1876,7 +1876,7 @@ Domain *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#domain QuicksightDataSource#domain}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#domain QuicksightDataSource#domain}.
 
 ---
 
@@ -1885,7 +1885,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersAthena.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/quicksightdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/quicksightdatasource"
 
 &quicksightdatasource.QuicksightDataSourceParametersAthena {
 	WorkGroup: *string,
@@ -1896,7 +1896,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/quicksightdatasource"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersAthena.property.workGroup">WorkGroup</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#work_group QuicksightDataSource#work_group}. |
+| <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersAthena.property.workGroup">WorkGroup</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#work_group QuicksightDataSource#work_group}. |
 
 ---
 
@@ -1908,7 +1908,7 @@ WorkGroup *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#work_group QuicksightDataSource#work_group}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#work_group QuicksightDataSource#work_group}.
 
 ---
 
@@ -1917,7 +1917,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersAurora.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/quicksightdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/quicksightdatasource"
 
 &quicksightdatasource.QuicksightDataSourceParametersAurora {
 	Database: *string,
@@ -1930,9 +1930,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/quicksightdatasource"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersAurora.property.database">Database</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#database QuicksightDataSource#database}. |
-| <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersAurora.property.host">Host</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#host QuicksightDataSource#host}. |
-| <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersAurora.property.port">Port</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#port QuicksightDataSource#port}. |
+| <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersAurora.property.database">Database</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#database QuicksightDataSource#database}. |
+| <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersAurora.property.host">Host</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#host QuicksightDataSource#host}. |
+| <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersAurora.property.port">Port</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#port QuicksightDataSource#port}. |
 
 ---
 
@@ -1944,7 +1944,7 @@ Database *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#database QuicksightDataSource#database}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#database QuicksightDataSource#database}.
 
 ---
 
@@ -1956,7 +1956,7 @@ Host *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#host QuicksightDataSource#host}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#host QuicksightDataSource#host}.
 
 ---
 
@@ -1968,7 +1968,7 @@ Port *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#port QuicksightDataSource#port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#port QuicksightDataSource#port}.
 
 ---
 
@@ -1977,7 +1977,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersAuroraPostgresql.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/quicksightdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/quicksightdatasource"
 
 &quicksightdatasource.QuicksightDataSourceParametersAuroraPostgresql {
 	Database: *string,
@@ -1990,9 +1990,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/quicksightdatasource"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersAuroraPostgresql.property.database">Database</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#database QuicksightDataSource#database}. |
-| <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersAuroraPostgresql.property.host">Host</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#host QuicksightDataSource#host}. |
-| <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersAuroraPostgresql.property.port">Port</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#port QuicksightDataSource#port}. |
+| <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersAuroraPostgresql.property.database">Database</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#database QuicksightDataSource#database}. |
+| <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersAuroraPostgresql.property.host">Host</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#host QuicksightDataSource#host}. |
+| <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersAuroraPostgresql.property.port">Port</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#port QuicksightDataSource#port}. |
 
 ---
 
@@ -2004,7 +2004,7 @@ Database *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#database QuicksightDataSource#database}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#database QuicksightDataSource#database}.
 
 ---
 
@@ -2016,7 +2016,7 @@ Host *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#host QuicksightDataSource#host}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#host QuicksightDataSource#host}.
 
 ---
 
@@ -2028,7 +2028,7 @@ Port *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#port QuicksightDataSource#port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#port QuicksightDataSource#port}.
 
 ---
 
@@ -2037,7 +2037,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersAwsIotAnalytics.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/quicksightdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/quicksightdatasource"
 
 &quicksightdatasource.QuicksightDataSourceParametersAwsIotAnalytics {
 	DataSetName: *string,
@@ -2048,7 +2048,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/quicksightdatasource"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersAwsIotAnalytics.property.dataSetName">DataSetName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#data_set_name QuicksightDataSource#data_set_name}. |
+| <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersAwsIotAnalytics.property.dataSetName">DataSetName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#data_set_name QuicksightDataSource#data_set_name}. |
 
 ---
 
@@ -2060,7 +2060,7 @@ DataSetName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#data_set_name QuicksightDataSource#data_set_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#data_set_name QuicksightDataSource#data_set_name}.
 
 ---
 
@@ -2069,7 +2069,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersDatabricks.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/quicksightdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/quicksightdatasource"
 
 &quicksightdatasource.QuicksightDataSourceParametersDatabricks {
 	Host: *string,
@@ -2082,9 +2082,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/quicksightdatasource"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersDatabricks.property.host">Host</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#host QuicksightDataSource#host}. |
-| <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersDatabricks.property.port">Port</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#port QuicksightDataSource#port}. |
-| <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersDatabricks.property.sqlEndpointPath">SqlEndpointPath</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#sql_endpoint_path QuicksightDataSource#sql_endpoint_path}. |
+| <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersDatabricks.property.host">Host</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#host QuicksightDataSource#host}. |
+| <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersDatabricks.property.port">Port</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#port QuicksightDataSource#port}. |
+| <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersDatabricks.property.sqlEndpointPath">SqlEndpointPath</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#sql_endpoint_path QuicksightDataSource#sql_endpoint_path}. |
 
 ---
 
@@ -2096,7 +2096,7 @@ Host *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#host QuicksightDataSource#host}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#host QuicksightDataSource#host}.
 
 ---
 
@@ -2108,7 +2108,7 @@ Port *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#port QuicksightDataSource#port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#port QuicksightDataSource#port}.
 
 ---
 
@@ -2120,7 +2120,7 @@ SqlEndpointPath *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#sql_endpoint_path QuicksightDataSource#sql_endpoint_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#sql_endpoint_path QuicksightDataSource#sql_endpoint_path}.
 
 ---
 
@@ -2129,7 +2129,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersJira.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/quicksightdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/quicksightdatasource"
 
 &quicksightdatasource.QuicksightDataSourceParametersJira {
 	SiteBaseUrl: *string,
@@ -2140,7 +2140,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/quicksightdatasource"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersJira.property.siteBaseUrl">SiteBaseUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#site_base_url QuicksightDataSource#site_base_url}. |
+| <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersJira.property.siteBaseUrl">SiteBaseUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#site_base_url QuicksightDataSource#site_base_url}. |
 
 ---
 
@@ -2152,7 +2152,7 @@ SiteBaseUrl *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#site_base_url QuicksightDataSource#site_base_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#site_base_url QuicksightDataSource#site_base_url}.
 
 ---
 
@@ -2161,7 +2161,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersMariaDb.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/quicksightdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/quicksightdatasource"
 
 &quicksightdatasource.QuicksightDataSourceParametersMariaDb {
 	Database: *string,
@@ -2174,9 +2174,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/quicksightdatasource"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersMariaDb.property.database">Database</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#database QuicksightDataSource#database}. |
-| <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersMariaDb.property.host">Host</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#host QuicksightDataSource#host}. |
-| <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersMariaDb.property.port">Port</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#port QuicksightDataSource#port}. |
+| <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersMariaDb.property.database">Database</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#database QuicksightDataSource#database}. |
+| <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersMariaDb.property.host">Host</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#host QuicksightDataSource#host}. |
+| <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersMariaDb.property.port">Port</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#port QuicksightDataSource#port}. |
 
 ---
 
@@ -2188,7 +2188,7 @@ Database *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#database QuicksightDataSource#database}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#database QuicksightDataSource#database}.
 
 ---
 
@@ -2200,7 +2200,7 @@ Host *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#host QuicksightDataSource#host}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#host QuicksightDataSource#host}.
 
 ---
 
@@ -2212,7 +2212,7 @@ Port *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#port QuicksightDataSource#port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#port QuicksightDataSource#port}.
 
 ---
 
@@ -2221,7 +2221,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersMysql.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/quicksightdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/quicksightdatasource"
 
 &quicksightdatasource.QuicksightDataSourceParametersMysql {
 	Database: *string,
@@ -2234,9 +2234,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/quicksightdatasource"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersMysql.property.database">Database</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#database QuicksightDataSource#database}. |
-| <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersMysql.property.host">Host</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#host QuicksightDataSource#host}. |
-| <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersMysql.property.port">Port</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#port QuicksightDataSource#port}. |
+| <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersMysql.property.database">Database</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#database QuicksightDataSource#database}. |
+| <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersMysql.property.host">Host</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#host QuicksightDataSource#host}. |
+| <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersMysql.property.port">Port</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#port QuicksightDataSource#port}. |
 
 ---
 
@@ -2248,7 +2248,7 @@ Database *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#database QuicksightDataSource#database}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#database QuicksightDataSource#database}.
 
 ---
 
@@ -2260,7 +2260,7 @@ Host *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#host QuicksightDataSource#host}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#host QuicksightDataSource#host}.
 
 ---
 
@@ -2272,7 +2272,7 @@ Port *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#port QuicksightDataSource#port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#port QuicksightDataSource#port}.
 
 ---
 
@@ -2281,7 +2281,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersOracle.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/quicksightdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/quicksightdatasource"
 
 &quicksightdatasource.QuicksightDataSourceParametersOracle {
 	Database: *string,
@@ -2294,9 +2294,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/quicksightdatasource"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersOracle.property.database">Database</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#database QuicksightDataSource#database}. |
-| <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersOracle.property.host">Host</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#host QuicksightDataSource#host}. |
-| <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersOracle.property.port">Port</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#port QuicksightDataSource#port}. |
+| <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersOracle.property.database">Database</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#database QuicksightDataSource#database}. |
+| <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersOracle.property.host">Host</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#host QuicksightDataSource#host}. |
+| <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersOracle.property.port">Port</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#port QuicksightDataSource#port}. |
 
 ---
 
@@ -2308,7 +2308,7 @@ Database *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#database QuicksightDataSource#database}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#database QuicksightDataSource#database}.
 
 ---
 
@@ -2320,7 +2320,7 @@ Host *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#host QuicksightDataSource#host}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#host QuicksightDataSource#host}.
 
 ---
 
@@ -2332,7 +2332,7 @@ Port *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#port QuicksightDataSource#port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#port QuicksightDataSource#port}.
 
 ---
 
@@ -2341,7 +2341,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersPostgresql.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/quicksightdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/quicksightdatasource"
 
 &quicksightdatasource.QuicksightDataSourceParametersPostgresql {
 	Database: *string,
@@ -2354,9 +2354,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/quicksightdatasource"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersPostgresql.property.database">Database</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#database QuicksightDataSource#database}. |
-| <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersPostgresql.property.host">Host</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#host QuicksightDataSource#host}. |
-| <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersPostgresql.property.port">Port</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#port QuicksightDataSource#port}. |
+| <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersPostgresql.property.database">Database</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#database QuicksightDataSource#database}. |
+| <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersPostgresql.property.host">Host</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#host QuicksightDataSource#host}. |
+| <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersPostgresql.property.port">Port</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#port QuicksightDataSource#port}. |
 
 ---
 
@@ -2368,7 +2368,7 @@ Database *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#database QuicksightDataSource#database}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#database QuicksightDataSource#database}.
 
 ---
 
@@ -2380,7 +2380,7 @@ Host *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#host QuicksightDataSource#host}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#host QuicksightDataSource#host}.
 
 ---
 
@@ -2392,7 +2392,7 @@ Port *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#port QuicksightDataSource#port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#port QuicksightDataSource#port}.
 
 ---
 
@@ -2401,7 +2401,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersPresto.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/quicksightdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/quicksightdatasource"
 
 &quicksightdatasource.QuicksightDataSourceParametersPresto {
 	Catalog: *string,
@@ -2414,9 +2414,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/quicksightdatasource"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersPresto.property.catalog">Catalog</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#catalog QuicksightDataSource#catalog}. |
-| <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersPresto.property.host">Host</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#host QuicksightDataSource#host}. |
-| <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersPresto.property.port">Port</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#port QuicksightDataSource#port}. |
+| <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersPresto.property.catalog">Catalog</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#catalog QuicksightDataSource#catalog}. |
+| <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersPresto.property.host">Host</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#host QuicksightDataSource#host}. |
+| <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersPresto.property.port">Port</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#port QuicksightDataSource#port}. |
 
 ---
 
@@ -2428,7 +2428,7 @@ Catalog *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#catalog QuicksightDataSource#catalog}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#catalog QuicksightDataSource#catalog}.
 
 ---
 
@@ -2440,7 +2440,7 @@ Host *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#host QuicksightDataSource#host}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#host QuicksightDataSource#host}.
 
 ---
 
@@ -2452,7 +2452,7 @@ Port *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#port QuicksightDataSource#port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#port QuicksightDataSource#port}.
 
 ---
 
@@ -2461,7 +2461,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersRds.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/quicksightdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/quicksightdatasource"
 
 &quicksightdatasource.QuicksightDataSourceParametersRds {
 	Database: *string,
@@ -2473,8 +2473,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/quicksightdatasource"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersRds.property.database">Database</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#database QuicksightDataSource#database}. |
-| <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersRds.property.instanceId">InstanceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#instance_id QuicksightDataSource#instance_id}. |
+| <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersRds.property.database">Database</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#database QuicksightDataSource#database}. |
+| <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersRds.property.instanceId">InstanceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#instance_id QuicksightDataSource#instance_id}. |
 
 ---
 
@@ -2486,7 +2486,7 @@ Database *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#database QuicksightDataSource#database}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#database QuicksightDataSource#database}.
 
 ---
 
@@ -2498,7 +2498,7 @@ InstanceId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#instance_id QuicksightDataSource#instance_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#instance_id QuicksightDataSource#instance_id}.
 
 ---
 
@@ -2507,7 +2507,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersRedshift.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/quicksightdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/quicksightdatasource"
 
 &quicksightdatasource.QuicksightDataSourceParametersRedshift {
 	Database: *string,
@@ -2521,10 +2521,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/quicksightdatasource"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersRedshift.property.database">Database</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#database QuicksightDataSource#database}. |
-| <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersRedshift.property.clusterId">ClusterId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#cluster_id QuicksightDataSource#cluster_id}. |
-| <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersRedshift.property.host">Host</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#host QuicksightDataSource#host}. |
-| <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersRedshift.property.port">Port</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#port QuicksightDataSource#port}. |
+| <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersRedshift.property.database">Database</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#database QuicksightDataSource#database}. |
+| <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersRedshift.property.clusterId">ClusterId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#cluster_id QuicksightDataSource#cluster_id}. |
+| <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersRedshift.property.host">Host</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#host QuicksightDataSource#host}. |
+| <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersRedshift.property.port">Port</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#port QuicksightDataSource#port}. |
 
 ---
 
@@ -2536,7 +2536,7 @@ Database *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#database QuicksightDataSource#database}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#database QuicksightDataSource#database}.
 
 ---
 
@@ -2548,7 +2548,7 @@ ClusterId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#cluster_id QuicksightDataSource#cluster_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#cluster_id QuicksightDataSource#cluster_id}.
 
 ---
 
@@ -2560,7 +2560,7 @@ Host *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#host QuicksightDataSource#host}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#host QuicksightDataSource#host}.
 
 ---
 
@@ -2572,7 +2572,7 @@ Port *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#port QuicksightDataSource#port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#port QuicksightDataSource#port}.
 
 ---
 
@@ -2581,10 +2581,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersS3.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/quicksightdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/quicksightdatasource"
 
 &quicksightdatasource.QuicksightDataSourceParametersS3 {
-	ManifestFileLocation: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.quicksightDataSource.QuicksightDataSourceParametersS3ManifestFileLocation,
+	ManifestFileLocation: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.quicksightDataSource.QuicksightDataSourceParametersS3ManifestFileLocation,
 	RoleArn: *string,
 }
 ```
@@ -2594,7 +2594,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/quicksightdatasource"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersS3.property.manifestFileLocation">ManifestFileLocation</a></code> | <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersS3ManifestFileLocation">QuicksightDataSourceParametersS3ManifestFileLocation</a></code> | manifest_file_location block. |
-| <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersS3.property.roleArn">RoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#role_arn QuicksightDataSource#role_arn}. |
+| <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersS3.property.roleArn">RoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#role_arn QuicksightDataSource#role_arn}. |
 
 ---
 
@@ -2608,7 +2608,7 @@ ManifestFileLocation QuicksightDataSourceParametersS3ManifestFileLocation
 
 manifest_file_location block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#manifest_file_location QuicksightDataSource#manifest_file_location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#manifest_file_location QuicksightDataSource#manifest_file_location}
 
 ---
 
@@ -2620,7 +2620,7 @@ RoleArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#role_arn QuicksightDataSource#role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#role_arn QuicksightDataSource#role_arn}.
 
 ---
 
@@ -2629,7 +2629,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersS3ManifestFileLocation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/quicksightdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/quicksightdatasource"
 
 &quicksightdatasource.QuicksightDataSourceParametersS3ManifestFileLocation {
 	Bucket: *string,
@@ -2641,8 +2641,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/quicksightdatasource"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersS3ManifestFileLocation.property.bucket">Bucket</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#bucket QuicksightDataSource#bucket}. |
-| <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersS3ManifestFileLocation.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#key QuicksightDataSource#key}. |
+| <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersS3ManifestFileLocation.property.bucket">Bucket</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#bucket QuicksightDataSource#bucket}. |
+| <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersS3ManifestFileLocation.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#key QuicksightDataSource#key}. |
 
 ---
 
@@ -2654,7 +2654,7 @@ Bucket *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#bucket QuicksightDataSource#bucket}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#bucket QuicksightDataSource#bucket}.
 
 ---
 
@@ -2666,7 +2666,7 @@ Key *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#key QuicksightDataSource#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#key QuicksightDataSource#key}.
 
 ---
 
@@ -2675,7 +2675,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersServiceNow.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/quicksightdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/quicksightdatasource"
 
 &quicksightdatasource.QuicksightDataSourceParametersServiceNow {
 	SiteBaseUrl: *string,
@@ -2686,7 +2686,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/quicksightdatasource"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersServiceNow.property.siteBaseUrl">SiteBaseUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#site_base_url QuicksightDataSource#site_base_url}. |
+| <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersServiceNow.property.siteBaseUrl">SiteBaseUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#site_base_url QuicksightDataSource#site_base_url}. |
 
 ---
 
@@ -2698,7 +2698,7 @@ SiteBaseUrl *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#site_base_url QuicksightDataSource#site_base_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#site_base_url QuicksightDataSource#site_base_url}.
 
 ---
 
@@ -2707,7 +2707,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersSnowflake.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/quicksightdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/quicksightdatasource"
 
 &quicksightdatasource.QuicksightDataSourceParametersSnowflake {
 	Database: *string,
@@ -2720,9 +2720,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/quicksightdatasource"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersSnowflake.property.database">Database</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#database QuicksightDataSource#database}. |
-| <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersSnowflake.property.host">Host</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#host QuicksightDataSource#host}. |
-| <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersSnowflake.property.warehouse">Warehouse</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#warehouse QuicksightDataSource#warehouse}. |
+| <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersSnowflake.property.database">Database</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#database QuicksightDataSource#database}. |
+| <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersSnowflake.property.host">Host</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#host QuicksightDataSource#host}. |
+| <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersSnowflake.property.warehouse">Warehouse</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#warehouse QuicksightDataSource#warehouse}. |
 
 ---
 
@@ -2734,7 +2734,7 @@ Database *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#database QuicksightDataSource#database}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#database QuicksightDataSource#database}.
 
 ---
 
@@ -2746,7 +2746,7 @@ Host *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#host QuicksightDataSource#host}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#host QuicksightDataSource#host}.
 
 ---
 
@@ -2758,7 +2758,7 @@ Warehouse *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#warehouse QuicksightDataSource#warehouse}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#warehouse QuicksightDataSource#warehouse}.
 
 ---
 
@@ -2767,7 +2767,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersSpark.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/quicksightdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/quicksightdatasource"
 
 &quicksightdatasource.QuicksightDataSourceParametersSpark {
 	Host: *string,
@@ -2779,8 +2779,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/quicksightdatasource"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersSpark.property.host">Host</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#host QuicksightDataSource#host}. |
-| <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersSpark.property.port">Port</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#port QuicksightDataSource#port}. |
+| <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersSpark.property.host">Host</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#host QuicksightDataSource#host}. |
+| <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersSpark.property.port">Port</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#port QuicksightDataSource#port}. |
 
 ---
 
@@ -2792,7 +2792,7 @@ Host *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#host QuicksightDataSource#host}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#host QuicksightDataSource#host}.
 
 ---
 
@@ -2804,7 +2804,7 @@ Port *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#port QuicksightDataSource#port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#port QuicksightDataSource#port}.
 
 ---
 
@@ -2813,7 +2813,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersSqlServer.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/quicksightdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/quicksightdatasource"
 
 &quicksightdatasource.QuicksightDataSourceParametersSqlServer {
 	Database: *string,
@@ -2826,9 +2826,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/quicksightdatasource"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersSqlServer.property.database">Database</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#database QuicksightDataSource#database}. |
-| <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersSqlServer.property.host">Host</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#host QuicksightDataSource#host}. |
-| <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersSqlServer.property.port">Port</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#port QuicksightDataSource#port}. |
+| <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersSqlServer.property.database">Database</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#database QuicksightDataSource#database}. |
+| <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersSqlServer.property.host">Host</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#host QuicksightDataSource#host}. |
+| <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersSqlServer.property.port">Port</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#port QuicksightDataSource#port}. |
 
 ---
 
@@ -2840,7 +2840,7 @@ Database *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#database QuicksightDataSource#database}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#database QuicksightDataSource#database}.
 
 ---
 
@@ -2852,7 +2852,7 @@ Host *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#host QuicksightDataSource#host}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#host QuicksightDataSource#host}.
 
 ---
 
@@ -2864,7 +2864,7 @@ Port *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#port QuicksightDataSource#port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#port QuicksightDataSource#port}.
 
 ---
 
@@ -2873,7 +2873,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersTeradata.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/quicksightdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/quicksightdatasource"
 
 &quicksightdatasource.QuicksightDataSourceParametersTeradata {
 	Database: *string,
@@ -2886,9 +2886,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/quicksightdatasource"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersTeradata.property.database">Database</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#database QuicksightDataSource#database}. |
-| <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersTeradata.property.host">Host</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#host QuicksightDataSource#host}. |
-| <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersTeradata.property.port">Port</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#port QuicksightDataSource#port}. |
+| <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersTeradata.property.database">Database</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#database QuicksightDataSource#database}. |
+| <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersTeradata.property.host">Host</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#host QuicksightDataSource#host}. |
+| <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersTeradata.property.port">Port</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#port QuicksightDataSource#port}. |
 
 ---
 
@@ -2900,7 +2900,7 @@ Database *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#database QuicksightDataSource#database}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#database QuicksightDataSource#database}.
 
 ---
 
@@ -2912,7 +2912,7 @@ Host *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#host QuicksightDataSource#host}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#host QuicksightDataSource#host}.
 
 ---
 
@@ -2924,7 +2924,7 @@ Port *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#port QuicksightDataSource#port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#port QuicksightDataSource#port}.
 
 ---
 
@@ -2933,7 +2933,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersTwitter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/quicksightdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/quicksightdatasource"
 
 &quicksightdatasource.QuicksightDataSourceParametersTwitter {
 	MaxRows: *f64,
@@ -2945,8 +2945,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/quicksightdatasource"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersTwitter.property.maxRows">MaxRows</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#max_rows QuicksightDataSource#max_rows}. |
-| <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersTwitter.property.query">Query</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#query QuicksightDataSource#query}. |
+| <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersTwitter.property.maxRows">MaxRows</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#max_rows QuicksightDataSource#max_rows}. |
+| <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersTwitter.property.query">Query</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#query QuicksightDataSource#query}. |
 
 ---
 
@@ -2958,7 +2958,7 @@ MaxRows *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#max_rows QuicksightDataSource#max_rows}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#max_rows QuicksightDataSource#max_rows}.
 
 ---
 
@@ -2970,7 +2970,7 @@ Query *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#query QuicksightDataSource#query}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#query QuicksightDataSource#query}.
 
 ---
 
@@ -2979,7 +2979,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourcePermission.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/quicksightdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/quicksightdatasource"
 
 &quicksightdatasource.QuicksightDataSourcePermission {
 	Actions: *[]*string,
@@ -2991,8 +2991,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/quicksightdatasource"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourcePermission.property.actions">Actions</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#actions QuicksightDataSource#actions}. |
-| <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourcePermission.property.principal">Principal</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#principal QuicksightDataSource#principal}. |
+| <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourcePermission.property.actions">Actions</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#actions QuicksightDataSource#actions}. |
+| <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourcePermission.property.principal">Principal</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#principal QuicksightDataSource#principal}. |
 
 ---
 
@@ -3004,7 +3004,7 @@ Actions *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#actions QuicksightDataSource#actions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#actions QuicksightDataSource#actions}.
 
 ---
 
@@ -3016,7 +3016,7 @@ Principal *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#principal QuicksightDataSource#principal}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#principal QuicksightDataSource#principal}.
 
 ---
 
@@ -3025,7 +3025,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceSslProperties.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/quicksightdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/quicksightdatasource"
 
 &quicksightdatasource.QuicksightDataSourceSslProperties {
 	DisableSsl: interface{},
@@ -3036,7 +3036,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/quicksightdatasource"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceSslProperties.property.disableSsl">DisableSsl</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#disable_ssl QuicksightDataSource#disable_ssl}. |
+| <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceSslProperties.property.disableSsl">DisableSsl</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#disable_ssl QuicksightDataSource#disable_ssl}. |
 
 ---
 
@@ -3048,7 +3048,7 @@ DisableSsl interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#disable_ssl QuicksightDataSource#disable_ssl}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#disable_ssl QuicksightDataSource#disable_ssl}.
 
 ---
 
@@ -3057,7 +3057,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceVpcConnectionProperties.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/quicksightdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/quicksightdatasource"
 
 &quicksightdatasource.QuicksightDataSourceVpcConnectionProperties {
 	VpcConnectionArn: *string,
@@ -3068,7 +3068,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/quicksightdatasource"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceVpcConnectionProperties.property.vpcConnectionArn">VpcConnectionArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#vpc_connection_arn QuicksightDataSource#vpc_connection_arn}. |
+| <code><a href="#@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceVpcConnectionProperties.property.vpcConnectionArn">VpcConnectionArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#vpc_connection_arn QuicksightDataSource#vpc_connection_arn}. |
 
 ---
 
@@ -3080,7 +3080,7 @@ VpcConnectionArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_data_source#vpc_connection_arn QuicksightDataSource#vpc_connection_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_data_source#vpc_connection_arn QuicksightDataSource#vpc_connection_arn}.
 
 ---
 
@@ -3091,7 +3091,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceCredentialsCredentialPairOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/quicksightdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/quicksightdatasource"
 
 quicksightdatasource.NewQuicksightDataSourceCredentialsCredentialPairOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QuicksightDataSourceCredentialsCredentialPairOutputReference
 ```
@@ -3384,7 +3384,7 @@ func InternalValue() QuicksightDataSourceCredentialsCredentialPair
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceCredentialsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/quicksightdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/quicksightdatasource"
 
 quicksightdatasource.NewQuicksightDataSourceCredentialsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QuicksightDataSourceCredentialsOutputReference
 ```
@@ -3733,7 +3733,7 @@ func InternalValue() QuicksightDataSourceCredentials
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersAmazonElasticsearchOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/quicksightdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/quicksightdatasource"
 
 quicksightdatasource.NewQuicksightDataSourceParametersAmazonElasticsearchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QuicksightDataSourceParametersAmazonElasticsearchOutputReference
 ```
@@ -4004,7 +4004,7 @@ func InternalValue() QuicksightDataSourceParametersAmazonElasticsearch
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersAthenaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/quicksightdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/quicksightdatasource"
 
 quicksightdatasource.NewQuicksightDataSourceParametersAthenaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QuicksightDataSourceParametersAthenaOutputReference
 ```
@@ -4282,7 +4282,7 @@ func InternalValue() QuicksightDataSourceParametersAthena
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersAuroraOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/quicksightdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/quicksightdatasource"
 
 quicksightdatasource.NewQuicksightDataSourceParametersAuroraOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QuicksightDataSourceParametersAuroraOutputReference
 ```
@@ -4597,7 +4597,7 @@ func InternalValue() QuicksightDataSourceParametersAurora
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersAuroraPostgresqlOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/quicksightdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/quicksightdatasource"
 
 quicksightdatasource.NewQuicksightDataSourceParametersAuroraPostgresqlOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QuicksightDataSourceParametersAuroraPostgresqlOutputReference
 ```
@@ -4912,7 +4912,7 @@ func InternalValue() QuicksightDataSourceParametersAuroraPostgresql
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersAwsIotAnalyticsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/quicksightdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/quicksightdatasource"
 
 quicksightdatasource.NewQuicksightDataSourceParametersAwsIotAnalyticsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QuicksightDataSourceParametersAwsIotAnalyticsOutputReference
 ```
@@ -5183,7 +5183,7 @@ func InternalValue() QuicksightDataSourceParametersAwsIotAnalytics
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersDatabricksOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/quicksightdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/quicksightdatasource"
 
 quicksightdatasource.NewQuicksightDataSourceParametersDatabricksOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QuicksightDataSourceParametersDatabricksOutputReference
 ```
@@ -5498,7 +5498,7 @@ func InternalValue() QuicksightDataSourceParametersDatabricks
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersJiraOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/quicksightdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/quicksightdatasource"
 
 quicksightdatasource.NewQuicksightDataSourceParametersJiraOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QuicksightDataSourceParametersJiraOutputReference
 ```
@@ -5769,7 +5769,7 @@ func InternalValue() QuicksightDataSourceParametersJira
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersMariaDbOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/quicksightdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/quicksightdatasource"
 
 quicksightdatasource.NewQuicksightDataSourceParametersMariaDbOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QuicksightDataSourceParametersMariaDbOutputReference
 ```
@@ -6084,7 +6084,7 @@ func InternalValue() QuicksightDataSourceParametersMariaDb
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersMysqlOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/quicksightdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/quicksightdatasource"
 
 quicksightdatasource.NewQuicksightDataSourceParametersMysqlOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QuicksightDataSourceParametersMysqlOutputReference
 ```
@@ -6399,7 +6399,7 @@ func InternalValue() QuicksightDataSourceParametersMysql
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersOracleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/quicksightdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/quicksightdatasource"
 
 quicksightdatasource.NewQuicksightDataSourceParametersOracleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QuicksightDataSourceParametersOracleOutputReference
 ```
@@ -6714,7 +6714,7 @@ func InternalValue() QuicksightDataSourceParametersOracle
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/quicksightdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/quicksightdatasource"
 
 quicksightdatasource.NewQuicksightDataSourceParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QuicksightDataSourceParametersOutputReference
 ```
@@ -7845,7 +7845,7 @@ func InternalValue() QuicksightDataSourceParameters
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersPostgresqlOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/quicksightdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/quicksightdatasource"
 
 quicksightdatasource.NewQuicksightDataSourceParametersPostgresqlOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QuicksightDataSourceParametersPostgresqlOutputReference
 ```
@@ -8160,7 +8160,7 @@ func InternalValue() QuicksightDataSourceParametersPostgresql
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersPrestoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/quicksightdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/quicksightdatasource"
 
 quicksightdatasource.NewQuicksightDataSourceParametersPrestoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QuicksightDataSourceParametersPrestoOutputReference
 ```
@@ -8475,7 +8475,7 @@ func InternalValue() QuicksightDataSourceParametersPresto
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersRdsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/quicksightdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/quicksightdatasource"
 
 quicksightdatasource.NewQuicksightDataSourceParametersRdsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QuicksightDataSourceParametersRdsOutputReference
 ```
@@ -8768,7 +8768,7 @@ func InternalValue() QuicksightDataSourceParametersRds
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersRedshiftOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/quicksightdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/quicksightdatasource"
 
 quicksightdatasource.NewQuicksightDataSourceParametersRedshiftOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QuicksightDataSourceParametersRedshiftOutputReference
 ```
@@ -9126,7 +9126,7 @@ func InternalValue() QuicksightDataSourceParametersRedshift
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersS3ManifestFileLocationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/quicksightdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/quicksightdatasource"
 
 quicksightdatasource.NewQuicksightDataSourceParametersS3ManifestFileLocationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QuicksightDataSourceParametersS3ManifestFileLocationOutputReference
 ```
@@ -9419,7 +9419,7 @@ func InternalValue() QuicksightDataSourceParametersS3ManifestFileLocation
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersS3OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/quicksightdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/quicksightdatasource"
 
 quicksightdatasource.NewQuicksightDataSourceParametersS3OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QuicksightDataSourceParametersS3OutputReference
 ```
@@ -9732,7 +9732,7 @@ func InternalValue() QuicksightDataSourceParametersS3
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersServiceNowOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/quicksightdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/quicksightdatasource"
 
 quicksightdatasource.NewQuicksightDataSourceParametersServiceNowOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QuicksightDataSourceParametersServiceNowOutputReference
 ```
@@ -10003,7 +10003,7 @@ func InternalValue() QuicksightDataSourceParametersServiceNow
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersSnowflakeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/quicksightdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/quicksightdatasource"
 
 quicksightdatasource.NewQuicksightDataSourceParametersSnowflakeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QuicksightDataSourceParametersSnowflakeOutputReference
 ```
@@ -10318,7 +10318,7 @@ func InternalValue() QuicksightDataSourceParametersSnowflake
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersSparkOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/quicksightdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/quicksightdatasource"
 
 quicksightdatasource.NewQuicksightDataSourceParametersSparkOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QuicksightDataSourceParametersSparkOutputReference
 ```
@@ -10611,7 +10611,7 @@ func InternalValue() QuicksightDataSourceParametersSpark
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersSqlServerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/quicksightdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/quicksightdatasource"
 
 quicksightdatasource.NewQuicksightDataSourceParametersSqlServerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QuicksightDataSourceParametersSqlServerOutputReference
 ```
@@ -10926,7 +10926,7 @@ func InternalValue() QuicksightDataSourceParametersSqlServer
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersTeradataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/quicksightdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/quicksightdatasource"
 
 quicksightdatasource.NewQuicksightDataSourceParametersTeradataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QuicksightDataSourceParametersTeradataOutputReference
 ```
@@ -11241,7 +11241,7 @@ func InternalValue() QuicksightDataSourceParametersTeradata
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersTwitterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/quicksightdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/quicksightdatasource"
 
 quicksightdatasource.NewQuicksightDataSourceParametersTwitterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QuicksightDataSourceParametersTwitterOutputReference
 ```
@@ -11534,7 +11534,7 @@ func InternalValue() QuicksightDataSourceParametersTwitter
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourcePermissionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/quicksightdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/quicksightdatasource"
 
 quicksightdatasource.NewQuicksightDataSourcePermissionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) QuicksightDataSourcePermissionList
 ```
@@ -11694,7 +11694,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourcePermissionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/quicksightdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/quicksightdatasource"
 
 quicksightdatasource.NewQuicksightDataSourcePermissionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) QuicksightDataSourcePermissionOutputReference
 ```
@@ -12005,7 +12005,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceSslPropertiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/quicksightdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/quicksightdatasource"
 
 quicksightdatasource.NewQuicksightDataSourceSslPropertiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QuicksightDataSourceSslPropertiesOutputReference
 ```
@@ -12276,7 +12276,7 @@ func InternalValue() QuicksightDataSourceSslProperties
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceVpcConnectionPropertiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/quicksightdatasource"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/quicksightdatasource"
 
 quicksightdatasource.NewQuicksightDataSourceVpcConnectionPropertiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QuicksightDataSourceVpcConnectionPropertiesOutputReference
 ```

@@ -4,12 +4,12 @@
 
 ### Wafv2WebAclLoggingConfiguration <a name="Wafv2WebAclLoggingConfiguration" id="@cdktn/provider-aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfiguration"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/wafv2_web_acl_logging_configuration aws_wafv2_web_acl_logging_configuration}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/wafv2_web_acl_logging_configuration aws_wafv2_web_acl_logging_configuration}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/wafv2webaclloggingconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/wafv2webaclloggingconfiguration"
 
 wafv2webaclloggingconfiguration.NewWafv2WebAclLoggingConfiguration(scope Construct, id *string, config Wafv2WebAclLoggingConfigurationConfig) Wafv2WebAclLoggingConfiguration
 ```
@@ -432,7 +432,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfiguration.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/wafv2webaclloggingconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/wafv2webaclloggingconfiguration"
 
 wafv2webaclloggingconfiguration.Wafv2WebAclLoggingConfiguration_IsConstruct(x interface{}) *bool
 ```
@@ -464,7 +464,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfiguration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/wafv2webaclloggingconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/wafv2webaclloggingconfiguration"
 
 wafv2webaclloggingconfiguration.Wafv2WebAclLoggingConfiguration_IsTerraformElement(x interface{}) *bool
 ```
@@ -478,7 +478,7 @@ wafv2webaclloggingconfiguration.Wafv2WebAclLoggingConfiguration_IsTerraformEleme
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfiguration.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/wafv2webaclloggingconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/wafv2webaclloggingconfiguration"
 
 wafv2webaclloggingconfiguration.Wafv2WebAclLoggingConfiguration_IsTerraformResource(x interface{}) *bool
 ```
@@ -492,7 +492,7 @@ wafv2webaclloggingconfiguration.Wafv2WebAclLoggingConfiguration_IsTerraformResou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfiguration.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/wafv2webaclloggingconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/wafv2webaclloggingconfiguration"
 
 wafv2webaclloggingconfiguration.Wafv2WebAclLoggingConfiguration_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -521,7 +521,7 @@ The construct id used in the generated config for the Wafv2WebAclLoggingConfigur
 
 The id of the existing Wafv2WebAclLoggingConfiguration that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/wafv2_web_acl_logging_configuration#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/wafv2_web_acl_logging_configuration#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -853,7 +853,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/wafv2webaclloggingconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/wafv2webaclloggingconfiguration"
 
 &wafv2webaclloggingconfiguration.Wafv2WebAclLoggingConfigurationConfig {
 	Connection: interface{},
@@ -866,7 +866,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/wafv2webaclloggingconf
 	LogDestinationConfigs: *[]*string,
 	ResourceArn: *string,
 	Id: *string,
-	LoggingFilter: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationLoggingFilter,
+	LoggingFilter: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationLoggingFilter,
 	RedactedFields: interface{},
 	Region: *string,
 }
@@ -885,7 +885,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/wafv2webaclloggingconf
 | <code><a href="#@cdktn/provider-aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationConfig.property.logDestinationConfigs">LogDestinationConfigs</a></code> | <code>*[]*string</code> | AWS Kinesis Firehose Delivery Stream ARNs. |
 | <code><a href="#@cdktn/provider-aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationConfig.property.resourceArn">ResourceArn</a></code> | <code>*string</code> | AWS WebACL ARN. |
-| <code><a href="#@cdktn/provider-aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/wafv2_web_acl_logging_configuration#id Wafv2WebAclLoggingConfiguration#id}. |
+| <code><a href="#@cdktn/provider-aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/wafv2_web_acl_logging_configuration#id Wafv2WebAclLoggingConfiguration#id}. |
 | <code><a href="#@cdktn/provider-aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationConfig.property.loggingFilter">LoggingFilter</a></code> | <code><a href="#@cdktn/provider-aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationLoggingFilter">Wafv2WebAclLoggingConfigurationLoggingFilter</a></code> | logging_filter block. |
 | <code><a href="#@cdktn/provider-aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationConfig.property.redactedFields">RedactedFields</a></code> | <code>interface{}</code> | redacted_fields block. |
 | <code><a href="#@cdktn/provider-aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
@@ -972,7 +972,7 @@ LogDestinationConfigs *[]*string
 
 AWS Kinesis Firehose Delivery Stream ARNs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/wafv2_web_acl_logging_configuration#log_destination_configs Wafv2WebAclLoggingConfiguration#log_destination_configs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/wafv2_web_acl_logging_configuration#log_destination_configs Wafv2WebAclLoggingConfiguration#log_destination_configs}
 
 ---
 
@@ -986,7 +986,7 @@ ResourceArn *string
 
 AWS WebACL ARN.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/wafv2_web_acl_logging_configuration#resource_arn Wafv2WebAclLoggingConfiguration#resource_arn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/wafv2_web_acl_logging_configuration#resource_arn Wafv2WebAclLoggingConfiguration#resource_arn}
 
 ---
 
@@ -998,7 +998,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/wafv2_web_acl_logging_configuration#id Wafv2WebAclLoggingConfiguration#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/wafv2_web_acl_logging_configuration#id Wafv2WebAclLoggingConfiguration#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1015,7 +1015,7 @@ LoggingFilter Wafv2WebAclLoggingConfigurationLoggingFilter
 
 logging_filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/wafv2_web_acl_logging_configuration#logging_filter Wafv2WebAclLoggingConfiguration#logging_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/wafv2_web_acl_logging_configuration#logging_filter Wafv2WebAclLoggingConfiguration#logging_filter}
 
 ---
 
@@ -1029,7 +1029,7 @@ RedactedFields interface{}
 
 redacted_fields block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/wafv2_web_acl_logging_configuration#redacted_fields Wafv2WebAclLoggingConfiguration#redacted_fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/wafv2_web_acl_logging_configuration#redacted_fields Wafv2WebAclLoggingConfiguration#redacted_fields}
 
 ---
 
@@ -1043,7 +1043,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/wafv2_web_acl_logging_configuration#region Wafv2WebAclLoggingConfiguration#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/wafv2_web_acl_logging_configuration#region Wafv2WebAclLoggingConfiguration#region}
 
 ---
 
@@ -1052,7 +1052,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationLoggingFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/wafv2webaclloggingconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/wafv2webaclloggingconfiguration"
 
 &wafv2webaclloggingconfiguration.Wafv2WebAclLoggingConfigurationLoggingFilter {
 	DefaultBehavior: *string,
@@ -1064,7 +1064,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/wafv2webaclloggingconf
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationLoggingFilter.property.defaultBehavior">DefaultBehavior</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/wafv2_web_acl_logging_configuration#default_behavior Wafv2WebAclLoggingConfiguration#default_behavior}. |
+| <code><a href="#@cdktn/provider-aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationLoggingFilter.property.defaultBehavior">DefaultBehavior</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/wafv2_web_acl_logging_configuration#default_behavior Wafv2WebAclLoggingConfiguration#default_behavior}. |
 | <code><a href="#@cdktn/provider-aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationLoggingFilter.property.filter">Filter</a></code> | <code>interface{}</code> | filter block. |
 
 ---
@@ -1077,7 +1077,7 @@ DefaultBehavior *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/wafv2_web_acl_logging_configuration#default_behavior Wafv2WebAclLoggingConfiguration#default_behavior}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/wafv2_web_acl_logging_configuration#default_behavior Wafv2WebAclLoggingConfiguration#default_behavior}.
 
 ---
 
@@ -1091,7 +1091,7 @@ Filter interface{}
 
 filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/wafv2_web_acl_logging_configuration#filter Wafv2WebAclLoggingConfiguration#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/wafv2_web_acl_logging_configuration#filter Wafv2WebAclLoggingConfiguration#filter}
 
 ---
 
@@ -1100,7 +1100,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationLoggingFilterFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/wafv2webaclloggingconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/wafv2webaclloggingconfiguration"
 
 &wafv2webaclloggingconfiguration.Wafv2WebAclLoggingConfigurationLoggingFilterFilter {
 	Behavior: *string,
@@ -1113,9 +1113,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/wafv2webaclloggingconf
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationLoggingFilterFilter.property.behavior">Behavior</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/wafv2_web_acl_logging_configuration#behavior Wafv2WebAclLoggingConfiguration#behavior}. |
+| <code><a href="#@cdktn/provider-aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationLoggingFilterFilter.property.behavior">Behavior</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/wafv2_web_acl_logging_configuration#behavior Wafv2WebAclLoggingConfiguration#behavior}. |
 | <code><a href="#@cdktn/provider-aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationLoggingFilterFilter.property.condition">Condition</a></code> | <code>interface{}</code> | condition block. |
-| <code><a href="#@cdktn/provider-aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationLoggingFilterFilter.property.requirement">Requirement</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/wafv2_web_acl_logging_configuration#requirement Wafv2WebAclLoggingConfiguration#requirement}. |
+| <code><a href="#@cdktn/provider-aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationLoggingFilterFilter.property.requirement">Requirement</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/wafv2_web_acl_logging_configuration#requirement Wafv2WebAclLoggingConfiguration#requirement}. |
 
 ---
 
@@ -1127,7 +1127,7 @@ Behavior *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/wafv2_web_acl_logging_configuration#behavior Wafv2WebAclLoggingConfiguration#behavior}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/wafv2_web_acl_logging_configuration#behavior Wafv2WebAclLoggingConfiguration#behavior}.
 
 ---
 
@@ -1141,7 +1141,7 @@ Condition interface{}
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/wafv2_web_acl_logging_configuration#condition Wafv2WebAclLoggingConfiguration#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/wafv2_web_acl_logging_configuration#condition Wafv2WebAclLoggingConfiguration#condition}
 
 ---
 
@@ -1153,7 +1153,7 @@ Requirement *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/wafv2_web_acl_logging_configuration#requirement Wafv2WebAclLoggingConfiguration#requirement}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/wafv2_web_acl_logging_configuration#requirement Wafv2WebAclLoggingConfiguration#requirement}.
 
 ---
 
@@ -1162,11 +1162,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationLoggingFilterFilterCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/wafv2webaclloggingconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/wafv2webaclloggingconfiguration"
 
 &wafv2webaclloggingconfiguration.Wafv2WebAclLoggingConfigurationLoggingFilterFilterCondition {
-	ActionCondition: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionActionCondition,
-	LabelNameCondition: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionLabelNameCondition,
+	ActionCondition: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionActionCondition,
+	LabelNameCondition: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionLabelNameCondition,
 }
 ```
 
@@ -1189,7 +1189,7 @@ ActionCondition Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionActio
 
 action_condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/wafv2_web_acl_logging_configuration#action_condition Wafv2WebAclLoggingConfiguration#action_condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/wafv2_web_acl_logging_configuration#action_condition Wafv2WebAclLoggingConfiguration#action_condition}
 
 ---
 
@@ -1203,7 +1203,7 @@ LabelNameCondition Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionLa
 
 label_name_condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/wafv2_web_acl_logging_configuration#label_name_condition Wafv2WebAclLoggingConfiguration#label_name_condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/wafv2_web_acl_logging_configuration#label_name_condition Wafv2WebAclLoggingConfiguration#label_name_condition}
 
 ---
 
@@ -1212,7 +1212,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionActionCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/wafv2webaclloggingconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/wafv2webaclloggingconfiguration"
 
 &wafv2webaclloggingconfiguration.Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionActionCondition {
 	Action: *string,
@@ -1223,7 +1223,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/wafv2webaclloggingconf
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionActionCondition.property.action">Action</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/wafv2_web_acl_logging_configuration#action Wafv2WebAclLoggingConfiguration#action}. |
+| <code><a href="#@cdktn/provider-aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionActionCondition.property.action">Action</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/wafv2_web_acl_logging_configuration#action Wafv2WebAclLoggingConfiguration#action}. |
 
 ---
 
@@ -1235,7 +1235,7 @@ Action *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/wafv2_web_acl_logging_configuration#action Wafv2WebAclLoggingConfiguration#action}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/wafv2_web_acl_logging_configuration#action Wafv2WebAclLoggingConfiguration#action}.
 
 ---
 
@@ -1244,7 +1244,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionLabelNameCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/wafv2webaclloggingconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/wafv2webaclloggingconfiguration"
 
 &wafv2webaclloggingconfiguration.Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionLabelNameCondition {
 	LabelName: *string,
@@ -1255,7 +1255,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/wafv2webaclloggingconf
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionLabelNameCondition.property.labelName">LabelName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/wafv2_web_acl_logging_configuration#label_name Wafv2WebAclLoggingConfiguration#label_name}. |
+| <code><a href="#@cdktn/provider-aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionLabelNameCondition.property.labelName">LabelName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/wafv2_web_acl_logging_configuration#label_name Wafv2WebAclLoggingConfiguration#label_name}. |
 
 ---
 
@@ -1267,7 +1267,7 @@ LabelName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/wafv2_web_acl_logging_configuration#label_name Wafv2WebAclLoggingConfiguration#label_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/wafv2_web_acl_logging_configuration#label_name Wafv2WebAclLoggingConfiguration#label_name}.
 
 ---
 
@@ -1276,13 +1276,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationRedactedFields.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/wafv2webaclloggingconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/wafv2webaclloggingconfiguration"
 
 &wafv2webaclloggingconfiguration.Wafv2WebAclLoggingConfigurationRedactedFields {
-	Method: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationRedactedFieldsMethod,
-	QueryString: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationRedactedFieldsQueryString,
-	SingleHeader: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationRedactedFieldsSingleHeader,
-	UriPath: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationRedactedFieldsUriPath,
+	Method: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationRedactedFieldsMethod,
+	QueryString: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationRedactedFieldsQueryString,
+	SingleHeader: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationRedactedFieldsSingleHeader,
+	UriPath: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationRedactedFieldsUriPath,
 }
 ```
 
@@ -1307,7 +1307,7 @@ Method Wafv2WebAclLoggingConfigurationRedactedFieldsMethod
 
 method block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/wafv2_web_acl_logging_configuration#method Wafv2WebAclLoggingConfiguration#method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/wafv2_web_acl_logging_configuration#method Wafv2WebAclLoggingConfiguration#method}
 
 ---
 
@@ -1321,7 +1321,7 @@ QueryString Wafv2WebAclLoggingConfigurationRedactedFieldsQueryString
 
 query_string block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/wafv2_web_acl_logging_configuration#query_string Wafv2WebAclLoggingConfiguration#query_string}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/wafv2_web_acl_logging_configuration#query_string Wafv2WebAclLoggingConfiguration#query_string}
 
 ---
 
@@ -1335,7 +1335,7 @@ SingleHeader Wafv2WebAclLoggingConfigurationRedactedFieldsSingleHeader
 
 single_header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/wafv2_web_acl_logging_configuration#single_header Wafv2WebAclLoggingConfiguration#single_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/wafv2_web_acl_logging_configuration#single_header Wafv2WebAclLoggingConfiguration#single_header}
 
 ---
 
@@ -1349,7 +1349,7 @@ UriPath Wafv2WebAclLoggingConfigurationRedactedFieldsUriPath
 
 uri_path block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/wafv2_web_acl_logging_configuration#uri_path Wafv2WebAclLoggingConfiguration#uri_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/wafv2_web_acl_logging_configuration#uri_path Wafv2WebAclLoggingConfiguration#uri_path}
 
 ---
 
@@ -1358,7 +1358,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationRedactedFieldsMethod.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/wafv2webaclloggingconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/wafv2webaclloggingconfiguration"
 
 &wafv2webaclloggingconfiguration.Wafv2WebAclLoggingConfigurationRedactedFieldsMethod {
 
@@ -1371,7 +1371,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/wafv2webaclloggingconf
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationRedactedFieldsQueryString.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/wafv2webaclloggingconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/wafv2webaclloggingconfiguration"
 
 &wafv2webaclloggingconfiguration.Wafv2WebAclLoggingConfigurationRedactedFieldsQueryString {
 
@@ -1384,7 +1384,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/wafv2webaclloggingconf
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationRedactedFieldsSingleHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/wafv2webaclloggingconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/wafv2webaclloggingconfiguration"
 
 &wafv2webaclloggingconfiguration.Wafv2WebAclLoggingConfigurationRedactedFieldsSingleHeader {
 	Name: *string,
@@ -1395,7 +1395,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/wafv2webaclloggingconf
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationRedactedFieldsSingleHeader.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/wafv2_web_acl_logging_configuration#name Wafv2WebAclLoggingConfiguration#name}. |
+| <code><a href="#@cdktn/provider-aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationRedactedFieldsSingleHeader.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/wafv2_web_acl_logging_configuration#name Wafv2WebAclLoggingConfiguration#name}. |
 
 ---
 
@@ -1407,7 +1407,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/wafv2_web_acl_logging_configuration#name Wafv2WebAclLoggingConfiguration#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/wafv2_web_acl_logging_configuration#name Wafv2WebAclLoggingConfiguration#name}.
 
 ---
 
@@ -1416,7 +1416,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationRedactedFieldsUriPath.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/wafv2webaclloggingconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/wafv2webaclloggingconfiguration"
 
 &wafv2webaclloggingconfiguration.Wafv2WebAclLoggingConfigurationRedactedFieldsUriPath {
 
@@ -1431,7 +1431,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/wafv2webaclloggingconf
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionActionConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/wafv2webaclloggingconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/wafv2webaclloggingconfiguration"
 
 wafv2webaclloggingconfiguration.NewWafv2WebAclLoggingConfigurationLoggingFilterFilterConditionActionConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionActionConditionOutputReference
 ```
@@ -1702,7 +1702,7 @@ func InternalValue() Wafv2WebAclLoggingConfigurationLoggingFilterFilterCondition
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionLabelNameConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/wafv2webaclloggingconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/wafv2webaclloggingconfiguration"
 
 wafv2webaclloggingconfiguration.NewWafv2WebAclLoggingConfigurationLoggingFilterFilterConditionLabelNameConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionLabelNameConditionOutputReference
 ```
@@ -1973,7 +1973,7 @@ func InternalValue() Wafv2WebAclLoggingConfigurationLoggingFilterFilterCondition
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/wafv2webaclloggingconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/wafv2webaclloggingconfiguration"
 
 wafv2webaclloggingconfiguration.NewWafv2WebAclLoggingConfigurationLoggingFilterFilterConditionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionList
 ```
@@ -2133,7 +2133,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/wafv2webaclloggingconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/wafv2webaclloggingconfiguration"
 
 wafv2webaclloggingconfiguration.NewWafv2WebAclLoggingConfigurationLoggingFilterFilterConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionOutputReference
 ```
@@ -2484,7 +2484,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationLoggingFilterFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/wafv2webaclloggingconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/wafv2webaclloggingconfiguration"
 
 wafv2webaclloggingconfiguration.NewWafv2WebAclLoggingConfigurationLoggingFilterFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclLoggingConfigurationLoggingFilterFilterList
 ```
@@ -2644,7 +2644,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationLoggingFilterFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/wafv2webaclloggingconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/wafv2webaclloggingconfiguration"
 
 wafv2webaclloggingconfiguration.NewWafv2WebAclLoggingConfigurationLoggingFilterFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclLoggingConfigurationLoggingFilterFilterOutputReference
 ```
@@ -2990,7 +2990,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationLoggingFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/wafv2webaclloggingconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/wafv2webaclloggingconfiguration"
 
 wafv2webaclloggingconfiguration.NewWafv2WebAclLoggingConfigurationLoggingFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Wafv2WebAclLoggingConfigurationLoggingFilterOutputReference
 ```
@@ -3296,7 +3296,7 @@ func InternalValue() Wafv2WebAclLoggingConfigurationLoggingFilter
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationRedactedFieldsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/wafv2webaclloggingconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/wafv2webaclloggingconfiguration"
 
 wafv2webaclloggingconfiguration.NewWafv2WebAclLoggingConfigurationRedactedFieldsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Wafv2WebAclLoggingConfigurationRedactedFieldsList
 ```
@@ -3456,7 +3456,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationRedactedFieldsMethodOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/wafv2webaclloggingconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/wafv2webaclloggingconfiguration"
 
 wafv2webaclloggingconfiguration.NewWafv2WebAclLoggingConfigurationRedactedFieldsMethodOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Wafv2WebAclLoggingConfigurationRedactedFieldsMethodOutputReference
 ```
@@ -3705,7 +3705,7 @@ func InternalValue() Wafv2WebAclLoggingConfigurationRedactedFieldsMethod
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationRedactedFieldsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/wafv2webaclloggingconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/wafv2webaclloggingconfiguration"
 
 wafv2webaclloggingconfiguration.NewWafv2WebAclLoggingConfigurationRedactedFieldsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Wafv2WebAclLoggingConfigurationRedactedFieldsOutputReference
 ```
@@ -4140,7 +4140,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationRedactedFieldsQueryStringOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/wafv2webaclloggingconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/wafv2webaclloggingconfiguration"
 
 wafv2webaclloggingconfiguration.NewWafv2WebAclLoggingConfigurationRedactedFieldsQueryStringOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Wafv2WebAclLoggingConfigurationRedactedFieldsQueryStringOutputReference
 ```
@@ -4389,7 +4389,7 @@ func InternalValue() Wafv2WebAclLoggingConfigurationRedactedFieldsQueryString
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationRedactedFieldsSingleHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/wafv2webaclloggingconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/wafv2webaclloggingconfiguration"
 
 wafv2webaclloggingconfiguration.NewWafv2WebAclLoggingConfigurationRedactedFieldsSingleHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Wafv2WebAclLoggingConfigurationRedactedFieldsSingleHeaderOutputReference
 ```
@@ -4660,7 +4660,7 @@ func InternalValue() Wafv2WebAclLoggingConfigurationRedactedFieldsSingleHeader
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationRedactedFieldsUriPathOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/wafv2webaclloggingconfiguration"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/wafv2webaclloggingconfiguration"
 
 wafv2webaclloggingconfiguration.NewWafv2WebAclLoggingConfigurationRedactedFieldsUriPathOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Wafv2WebAclLoggingConfigurationRedactedFieldsUriPathOutputReference
 ```

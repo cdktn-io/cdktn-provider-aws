@@ -4,12 +4,12 @@
 
 ### DataAwsNetworkfirewallResourcePolicy <a name="DataAwsNetworkfirewallResourcePolicy" id="@cdktn/provider-aws.dataAwsNetworkfirewallResourcePolicy.DataAwsNetworkfirewallResourcePolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/networkfirewall_resource_policy aws_networkfirewall_resource_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/networkfirewall_resource_policy aws_networkfirewall_resource_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsNetworkfirewallResourcePolicy.DataAwsNetworkfirewallResourcePolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsnetworkfirewallresourcepolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsnetworkfirewallresourcepolicy"
 
 dataawsnetworkfirewallresourcepolicy.NewDataAwsNetworkfirewallResourcePolicy(scope Construct, id *string, config DataAwsNetworkfirewallResourcePolicyConfig) DataAwsNetworkfirewallResourcePolicy
 ```
@@ -290,7 +290,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsNetworkfirewallResourcePolicy.DataAwsNetworkfirewallResourcePolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsnetworkfirewallresourcepolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsnetworkfirewallresourcepolicy"
 
 dataawsnetworkfirewallresourcepolicy.DataAwsNetworkfirewallResourcePolicy_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsNetworkfirewallResourcePolicy.DataAwsNetworkfirewallResourcePolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsnetworkfirewallresourcepolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsnetworkfirewallresourcepolicy"
 
 dataawsnetworkfirewallresourcepolicy.DataAwsNetworkfirewallResourcePolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ dataawsnetworkfirewallresourcepolicy.DataAwsNetworkfirewallResourcePolicy_IsTerr
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsNetworkfirewallResourcePolicy.DataAwsNetworkfirewallResourcePolicy.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsnetworkfirewallresourcepolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsnetworkfirewallresourcepolicy"
 
 dataawsnetworkfirewallresourcepolicy.DataAwsNetworkfirewallResourcePolicy_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ dataawsnetworkfirewallresourcepolicy.DataAwsNetworkfirewallResourcePolicy_IsTerr
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsNetworkfirewallResourcePolicy.DataAwsNetworkfirewallResourcePolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsnetworkfirewallresourcepolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsnetworkfirewallresourcepolicy"
 
 dataawsnetworkfirewallresourcepolicy.DataAwsNetworkfirewallResourcePolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -379,7 +379,7 @@ The construct id used in the generated config for the DataAwsNetworkfirewallReso
 
 The id of the existing DataAwsNetworkfirewallResourcePolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/networkfirewall_resource_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/networkfirewall_resource_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -634,7 +634,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsNetworkfirewallResourcePolicy.DataAwsNetworkfirewallResourcePolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsnetworkfirewallresourcepolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsnetworkfirewallresourcepolicy"
 
 &dataawsnetworkfirewallresourcepolicy.DataAwsNetworkfirewallResourcePolicyConfig {
 	Connection: interface{},
@@ -661,8 +661,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsnetworkfirewall
 | <code><a href="#@cdktn/provider-aws.dataAwsNetworkfirewallResourcePolicy.DataAwsNetworkfirewallResourcePolicyConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsNetworkfirewallResourcePolicy.DataAwsNetworkfirewallResourcePolicyConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsNetworkfirewallResourcePolicy.DataAwsNetworkfirewallResourcePolicyConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsNetworkfirewallResourcePolicy.DataAwsNetworkfirewallResourcePolicyConfig.property.resourceArn">ResourceArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/networkfirewall_resource_policy#resource_arn DataAwsNetworkfirewallResourcePolicy#resource_arn}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsNetworkfirewallResourcePolicy.DataAwsNetworkfirewallResourcePolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/networkfirewall_resource_policy#id DataAwsNetworkfirewallResourcePolicy#id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsNetworkfirewallResourcePolicy.DataAwsNetworkfirewallResourcePolicyConfig.property.resourceArn">ResourceArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/networkfirewall_resource_policy#resource_arn DataAwsNetworkfirewallResourcePolicy#resource_arn}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsNetworkfirewallResourcePolicy.DataAwsNetworkfirewallResourcePolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/networkfirewall_resource_policy#id DataAwsNetworkfirewallResourcePolicy#id}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsNetworkfirewallResourcePolicy.DataAwsNetworkfirewallResourcePolicyConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -745,7 +745,7 @@ ResourceArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/networkfirewall_resource_policy#resource_arn DataAwsNetworkfirewallResourcePolicy#resource_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/networkfirewall_resource_policy#resource_arn DataAwsNetworkfirewallResourcePolicy#resource_arn}.
 
 ---
 
@@ -757,7 +757,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/networkfirewall_resource_policy#id DataAwsNetworkfirewallResourcePolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/networkfirewall_resource_policy#id DataAwsNetworkfirewallResourcePolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -774,7 +774,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/networkfirewall_resource_policy#region DataAwsNetworkfirewallResourcePolicy#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/networkfirewall_resource_policy#region DataAwsNetworkfirewallResourcePolicy#region}
 
 ---
 
