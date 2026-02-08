@@ -4,12 +4,12 @@
 
 ### RbinRule <a name="RbinRule" id="@cdktn/provider-aws.rbinRule.RbinRule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/rbin_rule aws_rbin_rule}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/rbin_rule aws_rbin_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.rbinRule.RbinRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/rbinrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/rbinrule"
 
 rbinrule.NewRbinRule(scope Construct, id *string, config RbinRuleConfig) RbinRule
 ```
@@ -499,7 +499,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.rbinRule.RbinRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/rbinrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/rbinrule"
 
 rbinrule.RbinRule_IsConstruct(x interface{}) *bool
 ```
@@ -531,7 +531,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.rbinRule.RbinRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/rbinrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/rbinrule"
 
 rbinrule.RbinRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -545,7 +545,7 @@ rbinrule.RbinRule_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.rbinRule.RbinRule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/rbinrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/rbinrule"
 
 rbinrule.RbinRule_IsTerraformResource(x interface{}) *bool
 ```
@@ -559,7 +559,7 @@ rbinrule.RbinRule_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.rbinRule.RbinRule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/rbinrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/rbinrule"
 
 rbinrule.RbinRule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -588,7 +588,7 @@ The construct id used in the generated config for the RbinRule to import.
 
 The id of the existing RbinRule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/rbin_rule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/rbin_rule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1063,7 +1063,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.rbinRule.RbinRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/rbinrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/rbinrule"
 
 &rbinrule.RbinRuleConfig {
 	Connection: interface{},
@@ -1074,15 +1074,15 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/rbinrule"
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	ResourceType: *string,
-	RetentionPeriod: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.rbinRule.RbinRuleRetentionPeriod,
+	RetentionPeriod: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.rbinRule.RbinRuleRetentionPeriod,
 	Description: *string,
 	ExcludeResourceTags: interface{},
-	LockConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.rbinRule.RbinRuleLockConfiguration,
+	LockConfiguration: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.rbinRule.RbinRuleLockConfiguration,
 	Region: *string,
 	ResourceTags: interface{},
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.rbinRule.RbinRuleTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.rbinRule.RbinRuleTimeouts,
 }
 ```
 
@@ -1097,15 +1097,15 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/rbinrule"
 | <code><a href="#@cdktn/provider-aws.rbinRule.RbinRuleConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.rbinRule.RbinRuleConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.rbinRule.RbinRuleConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.rbinRule.RbinRuleConfig.property.resourceType">ResourceType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/rbin_rule#resource_type RbinRule#resource_type}. |
+| <code><a href="#@cdktn/provider-aws.rbinRule.RbinRuleConfig.property.resourceType">ResourceType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/rbin_rule#resource_type RbinRule#resource_type}. |
 | <code><a href="#@cdktn/provider-aws.rbinRule.RbinRuleConfig.property.retentionPeriod">RetentionPeriod</a></code> | <code><a href="#@cdktn/provider-aws.rbinRule.RbinRuleRetentionPeriod">RbinRuleRetentionPeriod</a></code> | retention_period block. |
-| <code><a href="#@cdktn/provider-aws.rbinRule.RbinRuleConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/rbin_rule#description RbinRule#description}. |
+| <code><a href="#@cdktn/provider-aws.rbinRule.RbinRuleConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/rbin_rule#description RbinRule#description}. |
 | <code><a href="#@cdktn/provider-aws.rbinRule.RbinRuleConfig.property.excludeResourceTags">ExcludeResourceTags</a></code> | <code>interface{}</code> | exclude_resource_tags block. |
 | <code><a href="#@cdktn/provider-aws.rbinRule.RbinRuleConfig.property.lockConfiguration">LockConfiguration</a></code> | <code><a href="#@cdktn/provider-aws.rbinRule.RbinRuleLockConfiguration">RbinRuleLockConfiguration</a></code> | lock_configuration block. |
 | <code><a href="#@cdktn/provider-aws.rbinRule.RbinRuleConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktn/provider-aws.rbinRule.RbinRuleConfig.property.resourceTags">ResourceTags</a></code> | <code>interface{}</code> | resource_tags block. |
-| <code><a href="#@cdktn/provider-aws.rbinRule.RbinRuleConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/rbin_rule#tags RbinRule#tags}. |
-| <code><a href="#@cdktn/provider-aws.rbinRule.RbinRuleConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/rbin_rule#tags_all RbinRule#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.rbinRule.RbinRuleConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/rbin_rule#tags RbinRule#tags}. |
+| <code><a href="#@cdktn/provider-aws.rbinRule.RbinRuleConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/rbin_rule#tags_all RbinRule#tags_all}. |
 | <code><a href="#@cdktn/provider-aws.rbinRule.RbinRuleConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.rbinRule.RbinRuleTimeouts">RbinRuleTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1188,7 +1188,7 @@ ResourceType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/rbin_rule#resource_type RbinRule#resource_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/rbin_rule#resource_type RbinRule#resource_type}.
 
 ---
 
@@ -1202,7 +1202,7 @@ RetentionPeriod RbinRuleRetentionPeriod
 
 retention_period block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/rbin_rule#retention_period RbinRule#retention_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/rbin_rule#retention_period RbinRule#retention_period}
 
 ---
 
@@ -1214,7 +1214,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/rbin_rule#description RbinRule#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/rbin_rule#description RbinRule#description}.
 
 ---
 
@@ -1228,7 +1228,7 @@ ExcludeResourceTags interface{}
 
 exclude_resource_tags block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/rbin_rule#exclude_resource_tags RbinRule#exclude_resource_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/rbin_rule#exclude_resource_tags RbinRule#exclude_resource_tags}
 
 ---
 
@@ -1242,7 +1242,7 @@ LockConfiguration RbinRuleLockConfiguration
 
 lock_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/rbin_rule#lock_configuration RbinRule#lock_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/rbin_rule#lock_configuration RbinRule#lock_configuration}
 
 ---
 
@@ -1256,7 +1256,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/rbin_rule#region RbinRule#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/rbin_rule#region RbinRule#region}
 
 ---
 
@@ -1270,7 +1270,7 @@ ResourceTags interface{}
 
 resource_tags block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/rbin_rule#resource_tags RbinRule#resource_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/rbin_rule#resource_tags RbinRule#resource_tags}
 
 ---
 
@@ -1282,7 +1282,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/rbin_rule#tags RbinRule#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/rbin_rule#tags RbinRule#tags}.
 
 ---
 
@@ -1294,7 +1294,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/rbin_rule#tags_all RbinRule#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/rbin_rule#tags_all RbinRule#tags_all}.
 
 ---
 
@@ -1308,7 +1308,7 @@ Timeouts RbinRuleTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/rbin_rule#timeouts RbinRule#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/rbin_rule#timeouts RbinRule#timeouts}
 
 ---
 
@@ -1317,7 +1317,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.rbinRule.RbinRuleExcludeResourceTags.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/rbinrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/rbinrule"
 
 &rbinrule.RbinRuleExcludeResourceTags {
 	ResourceTagKey: *string,
@@ -1329,8 +1329,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/rbinrule"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.rbinRule.RbinRuleExcludeResourceTags.property.resourceTagKey">ResourceTagKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/rbin_rule#resource_tag_key RbinRule#resource_tag_key}. |
-| <code><a href="#@cdktn/provider-aws.rbinRule.RbinRuleExcludeResourceTags.property.resourceTagValue">ResourceTagValue</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/rbin_rule#resource_tag_value RbinRule#resource_tag_value}. |
+| <code><a href="#@cdktn/provider-aws.rbinRule.RbinRuleExcludeResourceTags.property.resourceTagKey">ResourceTagKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/rbin_rule#resource_tag_key RbinRule#resource_tag_key}. |
+| <code><a href="#@cdktn/provider-aws.rbinRule.RbinRuleExcludeResourceTags.property.resourceTagValue">ResourceTagValue</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/rbin_rule#resource_tag_value RbinRule#resource_tag_value}. |
 
 ---
 
@@ -1342,7 +1342,7 @@ ResourceTagKey *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/rbin_rule#resource_tag_key RbinRule#resource_tag_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/rbin_rule#resource_tag_key RbinRule#resource_tag_key}.
 
 ---
 
@@ -1354,7 +1354,7 @@ ResourceTagValue *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/rbin_rule#resource_tag_value RbinRule#resource_tag_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/rbin_rule#resource_tag_value RbinRule#resource_tag_value}.
 
 ---
 
@@ -1363,10 +1363,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.rbinRule.RbinRuleLockConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/rbinrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/rbinrule"
 
 &rbinrule.RbinRuleLockConfiguration {
-	UnlockDelay: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.rbinRule.RbinRuleLockConfigurationUnlockDelay,
+	UnlockDelay: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.rbinRule.RbinRuleLockConfigurationUnlockDelay,
 }
 ```
 
@@ -1388,7 +1388,7 @@ UnlockDelay RbinRuleLockConfigurationUnlockDelay
 
 unlock_delay block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/rbin_rule#unlock_delay RbinRule#unlock_delay}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/rbin_rule#unlock_delay RbinRule#unlock_delay}
 
 ---
 
@@ -1397,7 +1397,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.rbinRule.RbinRuleLockConfigurationUnlockDelay.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/rbinrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/rbinrule"
 
 &rbinrule.RbinRuleLockConfigurationUnlockDelay {
 	UnlockDelayUnit: *string,
@@ -1409,8 +1409,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/rbinrule"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.rbinRule.RbinRuleLockConfigurationUnlockDelay.property.unlockDelayUnit">UnlockDelayUnit</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/rbin_rule#unlock_delay_unit RbinRule#unlock_delay_unit}. |
-| <code><a href="#@cdktn/provider-aws.rbinRule.RbinRuleLockConfigurationUnlockDelay.property.unlockDelayValue">UnlockDelayValue</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/rbin_rule#unlock_delay_value RbinRule#unlock_delay_value}. |
+| <code><a href="#@cdktn/provider-aws.rbinRule.RbinRuleLockConfigurationUnlockDelay.property.unlockDelayUnit">UnlockDelayUnit</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/rbin_rule#unlock_delay_unit RbinRule#unlock_delay_unit}. |
+| <code><a href="#@cdktn/provider-aws.rbinRule.RbinRuleLockConfigurationUnlockDelay.property.unlockDelayValue">UnlockDelayValue</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/rbin_rule#unlock_delay_value RbinRule#unlock_delay_value}. |
 
 ---
 
@@ -1422,7 +1422,7 @@ UnlockDelayUnit *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/rbin_rule#unlock_delay_unit RbinRule#unlock_delay_unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/rbin_rule#unlock_delay_unit RbinRule#unlock_delay_unit}.
 
 ---
 
@@ -1434,7 +1434,7 @@ UnlockDelayValue *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/rbin_rule#unlock_delay_value RbinRule#unlock_delay_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/rbin_rule#unlock_delay_value RbinRule#unlock_delay_value}.
 
 ---
 
@@ -1443,7 +1443,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.rbinRule.RbinRuleResourceTags.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/rbinrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/rbinrule"
 
 &rbinrule.RbinRuleResourceTags {
 	ResourceTagKey: *string,
@@ -1455,8 +1455,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/rbinrule"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.rbinRule.RbinRuleResourceTags.property.resourceTagKey">ResourceTagKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/rbin_rule#resource_tag_key RbinRule#resource_tag_key}. |
-| <code><a href="#@cdktn/provider-aws.rbinRule.RbinRuleResourceTags.property.resourceTagValue">ResourceTagValue</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/rbin_rule#resource_tag_value RbinRule#resource_tag_value}. |
+| <code><a href="#@cdktn/provider-aws.rbinRule.RbinRuleResourceTags.property.resourceTagKey">ResourceTagKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/rbin_rule#resource_tag_key RbinRule#resource_tag_key}. |
+| <code><a href="#@cdktn/provider-aws.rbinRule.RbinRuleResourceTags.property.resourceTagValue">ResourceTagValue</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/rbin_rule#resource_tag_value RbinRule#resource_tag_value}. |
 
 ---
 
@@ -1468,7 +1468,7 @@ ResourceTagKey *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/rbin_rule#resource_tag_key RbinRule#resource_tag_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/rbin_rule#resource_tag_key RbinRule#resource_tag_key}.
 
 ---
 
@@ -1480,7 +1480,7 @@ ResourceTagValue *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/rbin_rule#resource_tag_value RbinRule#resource_tag_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/rbin_rule#resource_tag_value RbinRule#resource_tag_value}.
 
 ---
 
@@ -1489,7 +1489,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.rbinRule.RbinRuleRetentionPeriod.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/rbinrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/rbinrule"
 
 &rbinrule.RbinRuleRetentionPeriod {
 	RetentionPeriodUnit: *string,
@@ -1501,8 +1501,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/rbinrule"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.rbinRule.RbinRuleRetentionPeriod.property.retentionPeriodUnit">RetentionPeriodUnit</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/rbin_rule#retention_period_unit RbinRule#retention_period_unit}. |
-| <code><a href="#@cdktn/provider-aws.rbinRule.RbinRuleRetentionPeriod.property.retentionPeriodValue">RetentionPeriodValue</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/rbin_rule#retention_period_value RbinRule#retention_period_value}. |
+| <code><a href="#@cdktn/provider-aws.rbinRule.RbinRuleRetentionPeriod.property.retentionPeriodUnit">RetentionPeriodUnit</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/rbin_rule#retention_period_unit RbinRule#retention_period_unit}. |
+| <code><a href="#@cdktn/provider-aws.rbinRule.RbinRuleRetentionPeriod.property.retentionPeriodValue">RetentionPeriodValue</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/rbin_rule#retention_period_value RbinRule#retention_period_value}. |
 
 ---
 
@@ -1514,7 +1514,7 @@ RetentionPeriodUnit *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/rbin_rule#retention_period_unit RbinRule#retention_period_unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/rbin_rule#retention_period_unit RbinRule#retention_period_unit}.
 
 ---
 
@@ -1526,7 +1526,7 @@ RetentionPeriodValue *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/rbin_rule#retention_period_value RbinRule#retention_period_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/rbin_rule#retention_period_value RbinRule#retention_period_value}.
 
 ---
 
@@ -1535,7 +1535,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.rbinRule.RbinRuleTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/rbinrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/rbinrule"
 
 &rbinrule.RbinRuleTimeouts {
 	Create: *string,
@@ -1548,9 +1548,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/rbinrule"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.rbinRule.RbinRuleTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/rbin_rule#create RbinRule#create}. |
-| <code><a href="#@cdktn/provider-aws.rbinRule.RbinRuleTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/rbin_rule#delete RbinRule#delete}. |
-| <code><a href="#@cdktn/provider-aws.rbinRule.RbinRuleTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/rbin_rule#update RbinRule#update}. |
+| <code><a href="#@cdktn/provider-aws.rbinRule.RbinRuleTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/rbin_rule#create RbinRule#create}. |
+| <code><a href="#@cdktn/provider-aws.rbinRule.RbinRuleTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/rbin_rule#delete RbinRule#delete}. |
+| <code><a href="#@cdktn/provider-aws.rbinRule.RbinRuleTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/rbin_rule#update RbinRule#update}. |
 
 ---
 
@@ -1562,7 +1562,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/rbin_rule#create RbinRule#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/rbin_rule#create RbinRule#create}.
 
 ---
 
@@ -1574,7 +1574,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/rbin_rule#delete RbinRule#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/rbin_rule#delete RbinRule#delete}.
 
 ---
 
@@ -1586,7 +1586,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/rbin_rule#update RbinRule#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/rbin_rule#update RbinRule#update}.
 
 ---
 
@@ -1597,7 +1597,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.rbinRule.RbinRuleExcludeResourceTagsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/rbinrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/rbinrule"
 
 rbinrule.NewRbinRuleExcludeResourceTagsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) RbinRuleExcludeResourceTagsList
 ```
@@ -1757,7 +1757,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.rbinRule.RbinRuleExcludeResourceTagsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/rbinrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/rbinrule"
 
 rbinrule.NewRbinRuleExcludeResourceTagsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) RbinRuleExcludeResourceTagsOutputReference
 ```
@@ -2075,7 +2075,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.rbinRule.RbinRuleLockConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/rbinrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/rbinrule"
 
 rbinrule.NewRbinRuleLockConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RbinRuleLockConfigurationOutputReference
 ```
@@ -2359,7 +2359,7 @@ func InternalValue() RbinRuleLockConfiguration
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.rbinRule.RbinRuleLockConfigurationUnlockDelayOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/rbinrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/rbinrule"
 
 rbinrule.NewRbinRuleLockConfigurationUnlockDelayOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RbinRuleLockConfigurationUnlockDelayOutputReference
 ```
@@ -2652,7 +2652,7 @@ func InternalValue() RbinRuleLockConfigurationUnlockDelay
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.rbinRule.RbinRuleResourceTagsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/rbinrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/rbinrule"
 
 rbinrule.NewRbinRuleResourceTagsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) RbinRuleResourceTagsList
 ```
@@ -2812,7 +2812,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.rbinRule.RbinRuleResourceTagsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/rbinrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/rbinrule"
 
 rbinrule.NewRbinRuleResourceTagsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) RbinRuleResourceTagsOutputReference
 ```
@@ -3130,7 +3130,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.rbinRule.RbinRuleRetentionPeriodOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/rbinrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/rbinrule"
 
 rbinrule.NewRbinRuleRetentionPeriodOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RbinRuleRetentionPeriodOutputReference
 ```
@@ -3423,7 +3423,7 @@ func InternalValue() RbinRuleRetentionPeriod
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.rbinRule.RbinRuleTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/rbinrule"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/rbinrule"
 
 rbinrule.NewRbinRuleTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RbinRuleTimeoutsOutputReference
 ```

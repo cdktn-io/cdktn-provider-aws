@@ -4,12 +4,12 @@
 
 ### RdsInstanceState <a name="RdsInstanceState" id="@cdktn/provider-aws.rdsInstanceState.RdsInstanceState"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/rds_instance_state aws_rds_instance_state}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/rds_instance_state aws_rds_instance_state}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.rdsInstanceState.RdsInstanceState.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/rdsinstancestate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/rdsinstancestate"
 
 rdsinstancestate.NewRdsInstanceState(scope Construct, id *string, config RdsInstanceStateConfig) RdsInstanceState
 ```
@@ -405,7 +405,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.rdsInstanceState.RdsInstanceState.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/rdsinstancestate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/rdsinstancestate"
 
 rdsinstancestate.RdsInstanceState_IsConstruct(x interface{}) *bool
 ```
@@ -437,7 +437,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.rdsInstanceState.RdsInstanceState.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/rdsinstancestate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/rdsinstancestate"
 
 rdsinstancestate.RdsInstanceState_IsTerraformElement(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ rdsinstancestate.RdsInstanceState_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.rdsInstanceState.RdsInstanceState.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/rdsinstancestate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/rdsinstancestate"
 
 rdsinstancestate.RdsInstanceState_IsTerraformResource(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ rdsinstancestate.RdsInstanceState_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.rdsInstanceState.RdsInstanceState.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/rdsinstancestate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/rdsinstancestate"
 
 rdsinstancestate.RdsInstanceState_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -494,7 +494,7 @@ The construct id used in the generated config for the RdsInstanceState to import
 
 The id of the existing RdsInstanceState that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/rds_instance_state#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/rds_instance_state#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -782,7 +782,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.rdsInstanceState.RdsInstanceStateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/rdsinstancestate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/rdsinstancestate"
 
 &rdsinstancestate.RdsInstanceStateConfig {
 	Connection: interface{},
@@ -795,7 +795,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/rdsinstancestate"
 	Identifier: *string,
 	State: *string,
 	Region: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.rdsInstanceState.RdsInstanceStateTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.rdsInstanceState.RdsInstanceStateTimeouts,
 }
 ```
 
@@ -810,8 +810,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/rdsinstancestate"
 | <code><a href="#@cdktn/provider-aws.rdsInstanceState.RdsInstanceStateConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.rdsInstanceState.RdsInstanceStateConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.rdsInstanceState.RdsInstanceStateConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.rdsInstanceState.RdsInstanceStateConfig.property.identifier">Identifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/rds_instance_state#identifier RdsInstanceState#identifier}. |
-| <code><a href="#@cdktn/provider-aws.rdsInstanceState.RdsInstanceStateConfig.property.state">State</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/rds_instance_state#state RdsInstanceState#state}. |
+| <code><a href="#@cdktn/provider-aws.rdsInstanceState.RdsInstanceStateConfig.property.identifier">Identifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/rds_instance_state#identifier RdsInstanceState#identifier}. |
+| <code><a href="#@cdktn/provider-aws.rdsInstanceState.RdsInstanceStateConfig.property.state">State</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/rds_instance_state#state RdsInstanceState#state}. |
 | <code><a href="#@cdktn/provider-aws.rdsInstanceState.RdsInstanceStateConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktn/provider-aws.rdsInstanceState.RdsInstanceStateConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.rdsInstanceState.RdsInstanceStateTimeouts">RdsInstanceStateTimeouts</a></code> | timeouts block. |
 
@@ -895,7 +895,7 @@ Identifier *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/rds_instance_state#identifier RdsInstanceState#identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/rds_instance_state#identifier RdsInstanceState#identifier}.
 
 ---
 
@@ -907,7 +907,7 @@ State *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/rds_instance_state#state RdsInstanceState#state}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/rds_instance_state#state RdsInstanceState#state}.
 
 ---
 
@@ -921,7 +921,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/rds_instance_state#region RdsInstanceState#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/rds_instance_state#region RdsInstanceState#region}
 
 ---
 
@@ -935,7 +935,7 @@ Timeouts RdsInstanceStateTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/rds_instance_state#timeouts RdsInstanceState#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/rds_instance_state#timeouts RdsInstanceState#timeouts}
 
 ---
 
@@ -944,7 +944,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.rdsInstanceState.RdsInstanceStateTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/rdsinstancestate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/rdsinstancestate"
 
 &rdsinstancestate.RdsInstanceStateTimeouts {
 	Create: *string,
@@ -971,7 +971,7 @@ Create *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/rds_instance_state#create RdsInstanceState#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/rds_instance_state#create RdsInstanceState#create}
 
 ---
 
@@ -985,7 +985,7 @@ Update *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/rds_instance_state#update RdsInstanceState#update}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/rds_instance_state#update RdsInstanceState#update}
 
 ---
 
@@ -996,7 +996,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.rdsInstanceState.RdsInstanceStateTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/rdsinstancestate"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/rdsinstancestate"
 
 rdsinstancestate.NewRdsInstanceStateTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RdsInstanceStateTimeoutsOutputReference
 ```

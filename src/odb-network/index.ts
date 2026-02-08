@@ -1,9 +1,9 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/odb_network
+// https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/odb_network
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,13 +15,13 @@ export interface OdbNetworkConfig extends cdktf.TerraformMetaArguments {
   /**
   * The name of the Availability Zone (AZ) where the odb network is located. Changing this will force terraform to create new resource
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/odb_network#availability_zone OdbNetwork#availability_zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/odb_network#availability_zone OdbNetwork#availability_zone}
   */
   readonly availabilityZone?: string;
   /**
   * The AZ ID of the AZ where the ODB network is located. Changing this will force terraform to create new resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/odb_network#availability_zone_id OdbNetwork#availability_zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/odb_network#availability_zone_id OdbNetwork#availability_zone_id}
   */
   readonly availabilityZoneId: string;
   /**
@@ -36,7 +36,7 @@ export interface OdbNetworkConfig extends cdktf.TerraformMetaArguments {
   * 	   - 224.0.0.0 - 239.255.255.255
   * 	   - 240.0.0.0 - 255.255.255.255
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/odb_network#backup_subnet_cidr OdbNetwork#backup_subnet_cidr}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/odb_network#backup_subnet_cidr OdbNetwork#backup_subnet_cidr}
   */
   readonly backupSubnetCidr: string;
   /**
@@ -51,67 +51,181 @@ export interface OdbNetworkConfig extends cdktf.TerraformMetaArguments {
   *    	- 224.0.0.0 - 239.255.255.255
   *    	- 240.0.0.0 - 255.255.255.255
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/odb_network#client_subnet_cidr OdbNetwork#client_subnet_cidr}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/odb_network#client_subnet_cidr OdbNetwork#client_subnet_cidr}
   */
   readonly clientSubnetCidr: string;
   /**
   * The name of the custom domain that the network is located. custom_domain_name and default_dns_prefix both can't be given.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/odb_network#custom_domain_name OdbNetwork#custom_domain_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/odb_network#custom_domain_name OdbNetwork#custom_domain_name}
   */
   readonly customDomainName?: string;
   /**
   * The default DNS prefix for the network resource. Changing this will force terraform to create new resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/odb_network#default_dns_prefix OdbNetwork#default_dns_prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/odb_network#default_dns_prefix OdbNetwork#default_dns_prefix}
   */
   readonly defaultDnsPrefix?: string;
   /**
   * If set to true deletes associated OCI resources. Default false.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/odb_network#delete_associated_resources OdbNetwork#delete_associated_resources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/odb_network#delete_associated_resources OdbNetwork#delete_associated_resources}
   */
   readonly deleteAssociatedResources?: boolean | cdktf.IResolvable;
   /**
   * The user-friendly name for the odb network. Changing this will force terraform to create a new resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/odb_network#display_name OdbNetwork#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/odb_network#display_name OdbNetwork#display_name}
   */
   readonly displayName: string;
   /**
+  * Specifies the configuration for Amazon KMS access from the ODB network.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/odb_network#kms_access OdbNetwork#kms_access}
+  */
+  readonly kmsAccess?: string;
+  /**
+  * Specifies the endpoint policy for Amazon KMS access from the ODB network.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/odb_network#kms_policy_document OdbNetwork#kms_policy_document}
+  */
+  readonly kmsPolicyDocument?: string;
+  /**
   * Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/odb_network#region OdbNetwork#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/odb_network#region OdbNetwork#region}
   */
   readonly region?: string;
   /**
   * Specifies the configuration for Amazon S3 access from the ODB network.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/odb_network#s3_access OdbNetwork#s3_access}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/odb_network#s3_access OdbNetwork#s3_access}
   */
   readonly s3Access: string;
   /**
   * Specifies the endpoint policy for Amazon S3 access from the ODB network.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/odb_network#s3_policy_document OdbNetwork#s3_policy_document}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/odb_network#s3_policy_document OdbNetwork#s3_policy_document}
   */
   readonly s3PolicyDocument?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/odb_network#tags OdbNetwork#tags}
+  * Specifies the configuration for Amazon STS access from the ODB network.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/odb_network#sts_access OdbNetwork#sts_access}
+  */
+  readonly stsAccess?: string;
+  /**
+  * Specifies the endpoint policy for Amazon STS access from the ODB network.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/odb_network#sts_policy_document OdbNetwork#sts_policy_document}
+  */
+  readonly stsPolicyDocument?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/odb_network#tags OdbNetwork#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
   * Specifies the configuration for Zero-ETL access from the ODB network.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/odb_network#zero_etl_access OdbNetwork#zero_etl_access}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/odb_network#zero_etl_access OdbNetwork#zero_etl_access}
   */
   readonly zeroEtlAccess: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/odb_network#timeouts OdbNetwork#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/odb_network#timeouts OdbNetwork#timeouts}
   */
   readonly timeouts?: OdbNetworkTimeouts;
+}
+export interface OdbNetworkManagedServicesKmsAccess {
+}
+
+export function odbNetworkManagedServicesKmsAccessToTerraform(struct?: OdbNetworkManagedServicesKmsAccess): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function odbNetworkManagedServicesKmsAccessToHclTerraform(struct?: OdbNetworkManagedServicesKmsAccess): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class OdbNetworkManagedServicesKmsAccessOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): OdbNetworkManagedServicesKmsAccess | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: OdbNetworkManagedServicesKmsAccess | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // domain_name - computed: true, optional: false, required: false
+  public get domainName() {
+    return this.getStringAttribute('domain_name');
+  }
+
+  // ipv4_addresses - computed: true, optional: false, required: false
+  public get ipv4Addresses() {
+    return cdktf.Fn.tolist(this.getListAttribute('ipv4_addresses'));
+  }
+
+  // kms_policy_document - computed: true, optional: false, required: false
+  public get kmsPolicyDocument() {
+    return this.getStringAttribute('kms_policy_document');
+  }
+
+  // status - computed: true, optional: false, required: false
+  public get status() {
+    return this.getStringAttribute('status');
+  }
+}
+
+export class OdbNetworkManagedServicesKmsAccessList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): OdbNetworkManagedServicesKmsAccessOutputReference {
+    return new OdbNetworkManagedServicesKmsAccessOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
 }
 export interface OdbNetworkManagedServicesManagedS3BackupAccess {
 }
@@ -363,6 +477,96 @@ export class OdbNetworkManagedServicesServiceNetworkEndpointList extends cdktf.C
     return new OdbNetworkManagedServicesServiceNetworkEndpointOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface OdbNetworkManagedServicesStsAccess {
+}
+
+export function odbNetworkManagedServicesStsAccessToTerraform(struct?: OdbNetworkManagedServicesStsAccess): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function odbNetworkManagedServicesStsAccessToHclTerraform(struct?: OdbNetworkManagedServicesStsAccess): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class OdbNetworkManagedServicesStsAccessOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): OdbNetworkManagedServicesStsAccess | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: OdbNetworkManagedServicesStsAccess | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // domain_name - computed: true, optional: false, required: false
+  public get domainName() {
+    return this.getStringAttribute('domain_name');
+  }
+
+  // ipv4_addresses - computed: true, optional: false, required: false
+  public get ipv4Addresses() {
+    return cdktf.Fn.tolist(this.getListAttribute('ipv4_addresses'));
+  }
+
+  // status - computed: true, optional: false, required: false
+  public get status() {
+    return this.getStringAttribute('status');
+  }
+
+  // sts_policy_document - computed: true, optional: false, required: false
+  public get stsPolicyDocument() {
+    return this.getStringAttribute('sts_policy_document');
+  }
+}
+
+export class OdbNetworkManagedServicesStsAccessList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): OdbNetworkManagedServicesStsAccessOutputReference {
+    return new OdbNetworkManagedServicesStsAccessOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface OdbNetworkManagedServicesZeroEtlAccess {
 }
 
@@ -494,6 +698,12 @@ export class OdbNetworkManagedServicesOutputReference extends cdktf.ComplexObjec
     }
   }
 
+  // kms_access - computed: true, optional: false, required: false
+  private _kmsAccess = new OdbNetworkManagedServicesKmsAccessList(this, "kms_access", false);
+  public get kmsAccess() {
+    return this._kmsAccess;
+  }
+
   // managed_s3_backup_access - computed: true, optional: false, required: false
   private _managedS3BackupAccess = new OdbNetworkManagedServicesManagedS3BackupAccessList(this, "managed_s3_backup_access", false);
   public get managedS3BackupAccess() {
@@ -525,6 +735,12 @@ export class OdbNetworkManagedServicesOutputReference extends cdktf.ComplexObjec
   private _serviceNetworkEndpoint = new OdbNetworkManagedServicesServiceNetworkEndpointList(this, "service_network_endpoint", false);
   public get serviceNetworkEndpoint() {
     return this._serviceNetworkEndpoint;
+  }
+
+  // sts_access - computed: true, optional: false, required: false
+  private _stsAccess = new OdbNetworkManagedServicesStsAccessList(this, "sts_access", false);
+  public get stsAccess() {
+    return this._stsAccess;
   }
 
   // zero_etl_access - computed: true, optional: false, required: false
@@ -636,19 +852,19 @@ export interface OdbNetworkTimeouts {
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/odb_network#create OdbNetwork#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/odb_network#create OdbNetwork#create}
   */
   readonly create?: string;
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/odb_network#delete OdbNetwork#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/odb_network#delete OdbNetwork#delete}
   */
   readonly delete?: string;
   /**
   * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/odb_network#update OdbNetwork#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/odb_network#update OdbNetwork#update}
   */
   readonly update?: string;
 }
@@ -800,7 +1016,7 @@ export class OdbNetworkTimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/odb_network aws_odb_network}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/odb_network aws_odb_network}
 */
 export class OdbNetwork extends cdktf.TerraformResource {
 
@@ -816,7 +1032,7 @@ export class OdbNetwork extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a OdbNetwork resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the OdbNetwork to import
-  * @param importFromId The id of the existing OdbNetwork that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/odb_network#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing OdbNetwork that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/odb_network#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the OdbNetwork to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -828,7 +1044,7 @@ export class OdbNetwork extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/odb_network aws_odb_network} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/odb_network aws_odb_network} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -839,7 +1055,7 @@ export class OdbNetwork extends cdktf.TerraformResource {
       terraformResourceType: 'aws_odb_network',
       terraformGeneratorMetadata: {
         providerName: 'aws',
-        providerVersion: '6.28.0',
+        providerVersion: '6.31.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
@@ -858,9 +1074,13 @@ export class OdbNetwork extends cdktf.TerraformResource {
     this._defaultDnsPrefix = config.defaultDnsPrefix;
     this._deleteAssociatedResources = config.deleteAssociatedResources;
     this._displayName = config.displayName;
+    this._kmsAccess = config.kmsAccess;
+    this._kmsPolicyDocument = config.kmsPolicyDocument;
     this._region = config.region;
     this._s3Access = config.s3Access;
     this._s3PolicyDocument = config.s3PolicyDocument;
+    this._stsAccess = config.stsAccess;
+    this._stsPolicyDocument = config.stsPolicyDocument;
     this._tags = config.tags;
     this._zeroEtlAccess = config.zeroEtlAccess;
     this._timeouts.internalValue = config.timeouts;
@@ -1001,6 +1221,38 @@ export class OdbNetwork extends cdktf.TerraformResource {
     return this.getStringAttribute('id');
   }
 
+  // kms_access - computed: true, optional: true, required: false
+  private _kmsAccess?: string; 
+  public get kmsAccess() {
+    return this.getStringAttribute('kms_access');
+  }
+  public set kmsAccess(value: string) {
+    this._kmsAccess = value;
+  }
+  public resetKmsAccess() {
+    this._kmsAccess = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get kmsAccessInput() {
+    return this._kmsAccess;
+  }
+
+  // kms_policy_document - computed: false, optional: true, required: false
+  private _kmsPolicyDocument?: string; 
+  public get kmsPolicyDocument() {
+    return this.getStringAttribute('kms_policy_document');
+  }
+  public set kmsPolicyDocument(value: string) {
+    this._kmsPolicyDocument = value;
+  }
+  public resetKmsPolicyDocument() {
+    this._kmsPolicyDocument = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get kmsPolicyDocumentInput() {
+    return this._kmsPolicyDocument;
+  }
+
   // managed_services - computed: true, optional: false, required: false
   private _managedServices = new OdbNetworkManagedServicesList(this, "managed_services", false);
   public get managedServices() {
@@ -1103,6 +1355,38 @@ export class OdbNetwork extends cdktf.TerraformResource {
     return this.getStringAttribute('status_reason');
   }
 
+  // sts_access - computed: true, optional: true, required: false
+  private _stsAccess?: string; 
+  public get stsAccess() {
+    return this.getStringAttribute('sts_access');
+  }
+  public set stsAccess(value: string) {
+    this._stsAccess = value;
+  }
+  public resetStsAccess() {
+    this._stsAccess = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get stsAccessInput() {
+    return this._stsAccess;
+  }
+
+  // sts_policy_document - computed: false, optional: true, required: false
+  private _stsPolicyDocument?: string; 
+  public get stsPolicyDocument() {
+    return this.getStringAttribute('sts_policy_document');
+  }
+  public set stsPolicyDocument(value: string) {
+    this._stsPolicyDocument = value;
+  }
+  public resetStsPolicyDocument() {
+    this._stsPolicyDocument = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get stsPolicyDocumentInput() {
+    return this._stsPolicyDocument;
+  }
+
   // tags - computed: false, optional: true, required: false
   private _tags?: { [key: string]: string }; 
   public get tags() {
@@ -1168,9 +1452,13 @@ export class OdbNetwork extends cdktf.TerraformResource {
       default_dns_prefix: cdktf.stringToTerraform(this._defaultDnsPrefix),
       delete_associated_resources: cdktf.booleanToTerraform(this._deleteAssociatedResources),
       display_name: cdktf.stringToTerraform(this._displayName),
+      kms_access: cdktf.stringToTerraform(this._kmsAccess),
+      kms_policy_document: cdktf.stringToTerraform(this._kmsPolicyDocument),
       region: cdktf.stringToTerraform(this._region),
       s3_access: cdktf.stringToTerraform(this._s3Access),
       s3_policy_document: cdktf.stringToTerraform(this._s3PolicyDocument),
+      sts_access: cdktf.stringToTerraform(this._stsAccess),
+      sts_policy_document: cdktf.stringToTerraform(this._stsPolicyDocument),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       zero_etl_access: cdktf.stringToTerraform(this._zeroEtlAccess),
       timeouts: odbNetworkTimeoutsToTerraform(this._timeouts.internalValue),
@@ -1227,6 +1515,18 @@ export class OdbNetwork extends cdktf.TerraformResource {
         type: "simple",
         storageClassType: "string",
       },
+      kms_access: {
+        value: cdktf.stringToHclTerraform(this._kmsAccess),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      kms_policy_document: {
+        value: cdktf.stringToHclTerraform(this._kmsPolicyDocument),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
       region: {
         value: cdktf.stringToHclTerraform(this._region),
         isBlock: false,
@@ -1241,6 +1541,18 @@ export class OdbNetwork extends cdktf.TerraformResource {
       },
       s3_policy_document: {
         value: cdktf.stringToHclTerraform(this._s3PolicyDocument),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      sts_access: {
+        value: cdktf.stringToHclTerraform(this._stsAccess),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      sts_policy_document: {
+        value: cdktf.stringToHclTerraform(this._stsPolicyDocument),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

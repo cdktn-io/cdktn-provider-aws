@@ -4,12 +4,12 @@
 
 ### Macie2FindingsFilter <a name="Macie2FindingsFilter" id="@cdktn/provider-aws.macie2FindingsFilter.Macie2FindingsFilter"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/macie2_findings_filter aws_macie2_findings_filter}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/macie2_findings_filter aws_macie2_findings_filter}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.macie2FindingsFilter.Macie2FindingsFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/macie2findingsfilter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/macie2findingsfilter"
 
 macie2findingsfilter.NewMacie2FindingsFilter(scope Construct, id *string, config Macie2FindingsFilterConfig) Macie2FindingsFilter
 ```
@@ -467,7 +467,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.macie2FindingsFilter.Macie2FindingsFilter.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/macie2findingsfilter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/macie2findingsfilter"
 
 macie2findingsfilter.Macie2FindingsFilter_IsConstruct(x interface{}) *bool
 ```
@@ -499,7 +499,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.macie2FindingsFilter.Macie2FindingsFilter.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/macie2findingsfilter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/macie2findingsfilter"
 
 macie2findingsfilter.Macie2FindingsFilter_IsTerraformElement(x interface{}) *bool
 ```
@@ -513,7 +513,7 @@ macie2findingsfilter.Macie2FindingsFilter_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.macie2FindingsFilter.Macie2FindingsFilter.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/macie2findingsfilter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/macie2findingsfilter"
 
 macie2findingsfilter.Macie2FindingsFilter_IsTerraformResource(x interface{}) *bool
 ```
@@ -527,7 +527,7 @@ macie2findingsfilter.Macie2FindingsFilter_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.macie2FindingsFilter.Macie2FindingsFilter.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/macie2findingsfilter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/macie2findingsfilter"
 
 macie2findingsfilter.Macie2FindingsFilter_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -556,7 +556,7 @@ The construct id used in the generated config for the Macie2FindingsFilter to im
 
 The id of the existing Macie2FindingsFilter that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/macie2_findings_filter#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/macie2_findings_filter#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1009,7 +1009,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.macie2FindingsFilter.Macie2FindingsFilterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/macie2findingsfilter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/macie2findingsfilter"
 
 &macie2findingsfilter.Macie2FindingsFilterConfig {
 	Connection: interface{},
@@ -1020,7 +1020,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/macie2findingsfilter"
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	Action: *string,
-	FindingCriteria: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.macie2FindingsFilter.Macie2FindingsFilterFindingCriteria,
+	FindingCriteria: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.macie2FindingsFilter.Macie2FindingsFilterFindingCriteria,
 	Description: *string,
 	Id: *string,
 	Name: *string,
@@ -1029,7 +1029,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/macie2findingsfilter"
 	Region: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.macie2FindingsFilter.Macie2FindingsFilterTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.macie2FindingsFilter.Macie2FindingsFilterTimeouts,
 }
 ```
 
@@ -1044,16 +1044,16 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/macie2findingsfilter"
 | <code><a href="#@cdktn/provider-aws.macie2FindingsFilter.Macie2FindingsFilterConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.macie2FindingsFilter.Macie2FindingsFilterConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.macie2FindingsFilter.Macie2FindingsFilterConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.macie2FindingsFilter.Macie2FindingsFilterConfig.property.action">Action</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/macie2_findings_filter#action Macie2FindingsFilter#action}. |
+| <code><a href="#@cdktn/provider-aws.macie2FindingsFilter.Macie2FindingsFilterConfig.property.action">Action</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/macie2_findings_filter#action Macie2FindingsFilter#action}. |
 | <code><a href="#@cdktn/provider-aws.macie2FindingsFilter.Macie2FindingsFilterConfig.property.findingCriteria">FindingCriteria</a></code> | <code><a href="#@cdktn/provider-aws.macie2FindingsFilter.Macie2FindingsFilterFindingCriteria">Macie2FindingsFilterFindingCriteria</a></code> | finding_criteria block. |
-| <code><a href="#@cdktn/provider-aws.macie2FindingsFilter.Macie2FindingsFilterConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/macie2_findings_filter#description Macie2FindingsFilter#description}. |
-| <code><a href="#@cdktn/provider-aws.macie2FindingsFilter.Macie2FindingsFilterConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/macie2_findings_filter#id Macie2FindingsFilter#id}. |
-| <code><a href="#@cdktn/provider-aws.macie2FindingsFilter.Macie2FindingsFilterConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/macie2_findings_filter#name Macie2FindingsFilter#name}. |
-| <code><a href="#@cdktn/provider-aws.macie2FindingsFilter.Macie2FindingsFilterConfig.property.namePrefix">NamePrefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/macie2_findings_filter#name_prefix Macie2FindingsFilter#name_prefix}. |
-| <code><a href="#@cdktn/provider-aws.macie2FindingsFilter.Macie2FindingsFilterConfig.property.position">Position</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/macie2_findings_filter#position Macie2FindingsFilter#position}. |
+| <code><a href="#@cdktn/provider-aws.macie2FindingsFilter.Macie2FindingsFilterConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/macie2_findings_filter#description Macie2FindingsFilter#description}. |
+| <code><a href="#@cdktn/provider-aws.macie2FindingsFilter.Macie2FindingsFilterConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/macie2_findings_filter#id Macie2FindingsFilter#id}. |
+| <code><a href="#@cdktn/provider-aws.macie2FindingsFilter.Macie2FindingsFilterConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/macie2_findings_filter#name Macie2FindingsFilter#name}. |
+| <code><a href="#@cdktn/provider-aws.macie2FindingsFilter.Macie2FindingsFilterConfig.property.namePrefix">NamePrefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/macie2_findings_filter#name_prefix Macie2FindingsFilter#name_prefix}. |
+| <code><a href="#@cdktn/provider-aws.macie2FindingsFilter.Macie2FindingsFilterConfig.property.position">Position</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/macie2_findings_filter#position Macie2FindingsFilter#position}. |
 | <code><a href="#@cdktn/provider-aws.macie2FindingsFilter.Macie2FindingsFilterConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.macie2FindingsFilter.Macie2FindingsFilterConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/macie2_findings_filter#tags Macie2FindingsFilter#tags}. |
-| <code><a href="#@cdktn/provider-aws.macie2FindingsFilter.Macie2FindingsFilterConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/macie2_findings_filter#tags_all Macie2FindingsFilter#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.macie2FindingsFilter.Macie2FindingsFilterConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/macie2_findings_filter#tags Macie2FindingsFilter#tags}. |
+| <code><a href="#@cdktn/provider-aws.macie2FindingsFilter.Macie2FindingsFilterConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/macie2_findings_filter#tags_all Macie2FindingsFilter#tags_all}. |
 | <code><a href="#@cdktn/provider-aws.macie2FindingsFilter.Macie2FindingsFilterConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.macie2FindingsFilter.Macie2FindingsFilterTimeouts">Macie2FindingsFilterTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1136,7 +1136,7 @@ Action *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/macie2_findings_filter#action Macie2FindingsFilter#action}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/macie2_findings_filter#action Macie2FindingsFilter#action}.
 
 ---
 
@@ -1150,7 +1150,7 @@ FindingCriteria Macie2FindingsFilterFindingCriteria
 
 finding_criteria block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/macie2_findings_filter#finding_criteria Macie2FindingsFilter#finding_criteria}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/macie2_findings_filter#finding_criteria Macie2FindingsFilter#finding_criteria}
 
 ---
 
@@ -1162,7 +1162,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/macie2_findings_filter#description Macie2FindingsFilter#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/macie2_findings_filter#description Macie2FindingsFilter#description}.
 
 ---
 
@@ -1174,7 +1174,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/macie2_findings_filter#id Macie2FindingsFilter#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/macie2_findings_filter#id Macie2FindingsFilter#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1189,7 +1189,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/macie2_findings_filter#name Macie2FindingsFilter#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/macie2_findings_filter#name Macie2FindingsFilter#name}.
 
 ---
 
@@ -1201,7 +1201,7 @@ NamePrefix *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/macie2_findings_filter#name_prefix Macie2FindingsFilter#name_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/macie2_findings_filter#name_prefix Macie2FindingsFilter#name_prefix}.
 
 ---
 
@@ -1213,7 +1213,7 @@ Position *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/macie2_findings_filter#position Macie2FindingsFilter#position}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/macie2_findings_filter#position Macie2FindingsFilter#position}.
 
 ---
 
@@ -1227,7 +1227,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/macie2_findings_filter#region Macie2FindingsFilter#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/macie2_findings_filter#region Macie2FindingsFilter#region}
 
 ---
 
@@ -1239,7 +1239,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/macie2_findings_filter#tags Macie2FindingsFilter#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/macie2_findings_filter#tags Macie2FindingsFilter#tags}.
 
 ---
 
@@ -1251,7 +1251,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/macie2_findings_filter#tags_all Macie2FindingsFilter#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/macie2_findings_filter#tags_all Macie2FindingsFilter#tags_all}.
 
 ---
 
@@ -1265,7 +1265,7 @@ Timeouts Macie2FindingsFilterTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/macie2_findings_filter#timeouts Macie2FindingsFilter#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/macie2_findings_filter#timeouts Macie2FindingsFilter#timeouts}
 
 ---
 
@@ -1274,7 +1274,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.macie2FindingsFilter.Macie2FindingsFilterFindingCriteria.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/macie2findingsfilter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/macie2findingsfilter"
 
 &macie2findingsfilter.Macie2FindingsFilterFindingCriteria {
 	Criterion: interface{},
@@ -1299,7 +1299,7 @@ Criterion interface{}
 
 criterion block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/macie2_findings_filter#criterion Macie2FindingsFilter#criterion}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/macie2_findings_filter#criterion Macie2FindingsFilter#criterion}
 
 ---
 
@@ -1308,7 +1308,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.macie2FindingsFilter.Macie2FindingsFilterFindingCriteriaCriterion.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/macie2findingsfilter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/macie2findingsfilter"
 
 &macie2findingsfilter.Macie2FindingsFilterFindingCriteriaCriterion {
 	Field: *string,
@@ -1326,14 +1326,14 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/macie2findingsfilter"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.macie2FindingsFilter.Macie2FindingsFilterFindingCriteriaCriterion.property.field">Field</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/macie2_findings_filter#field Macie2FindingsFilter#field}. |
-| <code><a href="#@cdktn/provider-aws.macie2FindingsFilter.Macie2FindingsFilterFindingCriteriaCriterion.property.eq">Eq</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/macie2_findings_filter#eq Macie2FindingsFilter#eq}. |
-| <code><a href="#@cdktn/provider-aws.macie2FindingsFilter.Macie2FindingsFilterFindingCriteriaCriterion.property.eqExactMatch">EqExactMatch</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/macie2_findings_filter#eq_exact_match Macie2FindingsFilter#eq_exact_match}. |
-| <code><a href="#@cdktn/provider-aws.macie2FindingsFilter.Macie2FindingsFilterFindingCriteriaCriterion.property.gt">Gt</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/macie2_findings_filter#gt Macie2FindingsFilter#gt}. |
-| <code><a href="#@cdktn/provider-aws.macie2FindingsFilter.Macie2FindingsFilterFindingCriteriaCriterion.property.gte">Gte</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/macie2_findings_filter#gte Macie2FindingsFilter#gte}. |
-| <code><a href="#@cdktn/provider-aws.macie2FindingsFilter.Macie2FindingsFilterFindingCriteriaCriterion.property.lt">Lt</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/macie2_findings_filter#lt Macie2FindingsFilter#lt}. |
-| <code><a href="#@cdktn/provider-aws.macie2FindingsFilter.Macie2FindingsFilterFindingCriteriaCriterion.property.lte">Lte</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/macie2_findings_filter#lte Macie2FindingsFilter#lte}. |
-| <code><a href="#@cdktn/provider-aws.macie2FindingsFilter.Macie2FindingsFilterFindingCriteriaCriterion.property.neq">Neq</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/macie2_findings_filter#neq Macie2FindingsFilter#neq}. |
+| <code><a href="#@cdktn/provider-aws.macie2FindingsFilter.Macie2FindingsFilterFindingCriteriaCriterion.property.field">Field</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/macie2_findings_filter#field Macie2FindingsFilter#field}. |
+| <code><a href="#@cdktn/provider-aws.macie2FindingsFilter.Macie2FindingsFilterFindingCriteriaCriterion.property.eq">Eq</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/macie2_findings_filter#eq Macie2FindingsFilter#eq}. |
+| <code><a href="#@cdktn/provider-aws.macie2FindingsFilter.Macie2FindingsFilterFindingCriteriaCriterion.property.eqExactMatch">EqExactMatch</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/macie2_findings_filter#eq_exact_match Macie2FindingsFilter#eq_exact_match}. |
+| <code><a href="#@cdktn/provider-aws.macie2FindingsFilter.Macie2FindingsFilterFindingCriteriaCriterion.property.gt">Gt</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/macie2_findings_filter#gt Macie2FindingsFilter#gt}. |
+| <code><a href="#@cdktn/provider-aws.macie2FindingsFilter.Macie2FindingsFilterFindingCriteriaCriterion.property.gte">Gte</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/macie2_findings_filter#gte Macie2FindingsFilter#gte}. |
+| <code><a href="#@cdktn/provider-aws.macie2FindingsFilter.Macie2FindingsFilterFindingCriteriaCriterion.property.lt">Lt</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/macie2_findings_filter#lt Macie2FindingsFilter#lt}. |
+| <code><a href="#@cdktn/provider-aws.macie2FindingsFilter.Macie2FindingsFilterFindingCriteriaCriterion.property.lte">Lte</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/macie2_findings_filter#lte Macie2FindingsFilter#lte}. |
+| <code><a href="#@cdktn/provider-aws.macie2FindingsFilter.Macie2FindingsFilterFindingCriteriaCriterion.property.neq">Neq</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/macie2_findings_filter#neq Macie2FindingsFilter#neq}. |
 
 ---
 
@@ -1345,7 +1345,7 @@ Field *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/macie2_findings_filter#field Macie2FindingsFilter#field}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/macie2_findings_filter#field Macie2FindingsFilter#field}.
 
 ---
 
@@ -1357,7 +1357,7 @@ Eq *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/macie2_findings_filter#eq Macie2FindingsFilter#eq}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/macie2_findings_filter#eq Macie2FindingsFilter#eq}.
 
 ---
 
@@ -1369,7 +1369,7 @@ EqExactMatch *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/macie2_findings_filter#eq_exact_match Macie2FindingsFilter#eq_exact_match}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/macie2_findings_filter#eq_exact_match Macie2FindingsFilter#eq_exact_match}.
 
 ---
 
@@ -1381,7 +1381,7 @@ Gt *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/macie2_findings_filter#gt Macie2FindingsFilter#gt}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/macie2_findings_filter#gt Macie2FindingsFilter#gt}.
 
 ---
 
@@ -1393,7 +1393,7 @@ Gte *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/macie2_findings_filter#gte Macie2FindingsFilter#gte}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/macie2_findings_filter#gte Macie2FindingsFilter#gte}.
 
 ---
 
@@ -1405,7 +1405,7 @@ Lt *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/macie2_findings_filter#lt Macie2FindingsFilter#lt}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/macie2_findings_filter#lt Macie2FindingsFilter#lt}.
 
 ---
 
@@ -1417,7 +1417,7 @@ Lte *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/macie2_findings_filter#lte Macie2FindingsFilter#lte}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/macie2_findings_filter#lte Macie2FindingsFilter#lte}.
 
 ---
 
@@ -1429,7 +1429,7 @@ Neq *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/macie2_findings_filter#neq Macie2FindingsFilter#neq}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/macie2_findings_filter#neq Macie2FindingsFilter#neq}.
 
 ---
 
@@ -1438,7 +1438,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.macie2FindingsFilter.Macie2FindingsFilterTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/macie2findingsfilter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/macie2findingsfilter"
 
 &macie2findingsfilter.Macie2FindingsFilterTimeouts {
 	Create: *string,
@@ -1449,7 +1449,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/macie2findingsfilter"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.macie2FindingsFilter.Macie2FindingsFilterTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/macie2_findings_filter#create Macie2FindingsFilter#create}. |
+| <code><a href="#@cdktn/provider-aws.macie2FindingsFilter.Macie2FindingsFilterTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/macie2_findings_filter#create Macie2FindingsFilter#create}. |
 
 ---
 
@@ -1461,7 +1461,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/macie2_findings_filter#create Macie2FindingsFilter#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/macie2_findings_filter#create Macie2FindingsFilter#create}.
 
 ---
 
@@ -1472,7 +1472,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.macie2FindingsFilter.Macie2FindingsFilterFindingCriteriaCriterionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/macie2findingsfilter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/macie2findingsfilter"
 
 macie2findingsfilter.NewMacie2FindingsFilterFindingCriteriaCriterionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Macie2FindingsFilterFindingCriteriaCriterionList
 ```
@@ -1632,7 +1632,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.macie2FindingsFilter.Macie2FindingsFilterFindingCriteriaCriterionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/macie2findingsfilter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/macie2findingsfilter"
 
 macie2findingsfilter.NewMacie2FindingsFilterFindingCriteriaCriterionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) Macie2FindingsFilterFindingCriteriaCriterionOutputReference
 ```
@@ -2124,7 +2124,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.macie2FindingsFilter.Macie2FindingsFilterFindingCriteriaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/macie2findingsfilter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/macie2findingsfilter"
 
 macie2findingsfilter.NewMacie2FindingsFilterFindingCriteriaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Macie2FindingsFilterFindingCriteriaOutputReference
 ```
@@ -2415,7 +2415,7 @@ func InternalValue() Macie2FindingsFilterFindingCriteria
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.macie2FindingsFilter.Macie2FindingsFilterTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/macie2findingsfilter"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/macie2findingsfilter"
 
 macie2findingsfilter.NewMacie2FindingsFilterTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Macie2FindingsFilterTimeoutsOutputReference
 ```

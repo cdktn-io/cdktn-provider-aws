@@ -4,12 +4,12 @@
 
 ### PinpointEventStream <a name="PinpointEventStream" id="@cdktn/provider-aws.pinpointEventStream.PinpointEventStream"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/pinpoint_event_stream aws_pinpoint_event_stream}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/pinpoint_event_stream aws_pinpoint_event_stream}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.pinpointEventStream.PinpointEventStream.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/pinpointeventstream"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/pinpointeventstream"
 
 pinpointeventstream.NewPinpointEventStream(scope Construct, id *string, config PinpointEventStreamConfig) PinpointEventStream
 ```
@@ -392,7 +392,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.pinpointEventStream.PinpointEventStream.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/pinpointeventstream"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/pinpointeventstream"
 
 pinpointeventstream.PinpointEventStream_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.pinpointEventStream.PinpointEventStream.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/pinpointeventstream"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/pinpointeventstream"
 
 pinpointeventstream.PinpointEventStream_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ pinpointeventstream.PinpointEventStream_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.pinpointEventStream.PinpointEventStream.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/pinpointeventstream"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/pinpointeventstream"
 
 pinpointeventstream.PinpointEventStream_IsTerraformResource(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ pinpointeventstream.PinpointEventStream_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.pinpointEventStream.PinpointEventStream.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/pinpointeventstream"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/pinpointeventstream"
 
 pinpointeventstream.PinpointEventStream_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -481,7 +481,7 @@ The construct id used in the generated config for the PinpointEventStream to imp
 
 The id of the existing PinpointEventStream that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/pinpoint_event_stream#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/pinpoint_event_stream#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -791,7 +791,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.pinpointEventStream.PinpointEventStreamConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/pinpointeventstream"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/pinpointeventstream"
 
 &pinpointeventstream.PinpointEventStreamConfig {
 	Connection: interface{},
@@ -820,10 +820,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/pinpointeventstream"
 | <code><a href="#@cdktn/provider-aws.pinpointEventStream.PinpointEventStreamConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.pinpointEventStream.PinpointEventStreamConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.pinpointEventStream.PinpointEventStreamConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.pinpointEventStream.PinpointEventStreamConfig.property.applicationId">ApplicationId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/pinpoint_event_stream#application_id PinpointEventStream#application_id}. |
-| <code><a href="#@cdktn/provider-aws.pinpointEventStream.PinpointEventStreamConfig.property.destinationStreamArn">DestinationStreamArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/pinpoint_event_stream#destination_stream_arn PinpointEventStream#destination_stream_arn}. |
-| <code><a href="#@cdktn/provider-aws.pinpointEventStream.PinpointEventStreamConfig.property.roleArn">RoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/pinpoint_event_stream#role_arn PinpointEventStream#role_arn}. |
-| <code><a href="#@cdktn/provider-aws.pinpointEventStream.PinpointEventStreamConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/pinpoint_event_stream#id PinpointEventStream#id}. |
+| <code><a href="#@cdktn/provider-aws.pinpointEventStream.PinpointEventStreamConfig.property.applicationId">ApplicationId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/pinpoint_event_stream#application_id PinpointEventStream#application_id}. |
+| <code><a href="#@cdktn/provider-aws.pinpointEventStream.PinpointEventStreamConfig.property.destinationStreamArn">DestinationStreamArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/pinpoint_event_stream#destination_stream_arn PinpointEventStream#destination_stream_arn}. |
+| <code><a href="#@cdktn/provider-aws.pinpointEventStream.PinpointEventStreamConfig.property.roleArn">RoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/pinpoint_event_stream#role_arn PinpointEventStream#role_arn}. |
+| <code><a href="#@cdktn/provider-aws.pinpointEventStream.PinpointEventStreamConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/pinpoint_event_stream#id PinpointEventStream#id}. |
 | <code><a href="#@cdktn/provider-aws.pinpointEventStream.PinpointEventStreamConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -906,7 +906,7 @@ ApplicationId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/pinpoint_event_stream#application_id PinpointEventStream#application_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/pinpoint_event_stream#application_id PinpointEventStream#application_id}.
 
 ---
 
@@ -918,7 +918,7 @@ DestinationStreamArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/pinpoint_event_stream#destination_stream_arn PinpointEventStream#destination_stream_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/pinpoint_event_stream#destination_stream_arn PinpointEventStream#destination_stream_arn}.
 
 ---
 
@@ -930,7 +930,7 @@ RoleArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/pinpoint_event_stream#role_arn PinpointEventStream#role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/pinpoint_event_stream#role_arn PinpointEventStream#role_arn}.
 
 ---
 
@@ -942,7 +942,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/pinpoint_event_stream#id PinpointEventStream#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/pinpoint_event_stream#id PinpointEventStream#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -959,7 +959,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/pinpoint_event_stream#region PinpointEventStream#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/pinpoint_event_stream#region PinpointEventStream#region}
 
 ---
 

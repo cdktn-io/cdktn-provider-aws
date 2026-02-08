@@ -4,12 +4,12 @@
 
 ### CodecatalystDevEnvironment <a name="CodecatalystDevEnvironment" id="@cdktn/provider-aws.codecatalystDevEnvironment.CodecatalystDevEnvironment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/codecatalyst_dev_environment aws_codecatalyst_dev_environment}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/codecatalyst_dev_environment aws_codecatalyst_dev_environment}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.codecatalystDevEnvironment.CodecatalystDevEnvironment.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/codecatalystdevenvironment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/codecatalystdevenvironment"
 
 codecatalystdevenvironment.NewCodecatalystDevEnvironment(scope Construct, id *string, config CodecatalystDevEnvironmentConfig) CodecatalystDevEnvironment
 ```
@@ -472,7 +472,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.codecatalystDevEnvironment.CodecatalystDevEnvironment.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/codecatalystdevenvironment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/codecatalystdevenvironment"
 
 codecatalystdevenvironment.CodecatalystDevEnvironment_IsConstruct(x interface{}) *bool
 ```
@@ -504,7 +504,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.codecatalystDevEnvironment.CodecatalystDevEnvironment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/codecatalystdevenvironment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/codecatalystdevenvironment"
 
 codecatalystdevenvironment.CodecatalystDevEnvironment_IsTerraformElement(x interface{}) *bool
 ```
@@ -518,7 +518,7 @@ codecatalystdevenvironment.CodecatalystDevEnvironment_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.codecatalystDevEnvironment.CodecatalystDevEnvironment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/codecatalystdevenvironment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/codecatalystdevenvironment"
 
 codecatalystdevenvironment.CodecatalystDevEnvironment_IsTerraformResource(x interface{}) *bool
 ```
@@ -532,7 +532,7 @@ codecatalystdevenvironment.CodecatalystDevEnvironment_IsTerraformResource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.codecatalystDevEnvironment.CodecatalystDevEnvironment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/codecatalystdevenvironment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/codecatalystdevenvironment"
 
 codecatalystdevenvironment.CodecatalystDevEnvironment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -561,7 +561,7 @@ The construct id used in the generated config for the CodecatalystDevEnvironment
 
 The id of the existing CodecatalystDevEnvironment that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/codecatalyst_dev_environment#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/codecatalyst_dev_environment#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1003,7 +1003,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.codecatalystDevEnvironment.CodecatalystDevEnvironmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/codecatalystdevenvironment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/codecatalystdevenvironment"
 
 &codecatalystdevenvironment.CodecatalystDevEnvironmentConfig {
 	Connection: interface{},
@@ -1013,9 +1013,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/codecatalystdevenviron
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	Ides: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.codecatalystDevEnvironment.CodecatalystDevEnvironmentIdes,
+	Ides: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.codecatalystDevEnvironment.CodecatalystDevEnvironmentIdes,
 	InstanceType: *string,
-	PersistentStorage: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.codecatalystDevEnvironment.CodecatalystDevEnvironmentPersistentStorage,
+	PersistentStorage: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.codecatalystDevEnvironment.CodecatalystDevEnvironmentPersistentStorage,
 	ProjectName: *string,
 	SpaceName: *string,
 	Alias: *string,
@@ -1023,7 +1023,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/codecatalystdevenviron
 	InactivityTimeoutMinutes: *f64,
 	Region: *string,
 	Repositories: interface{},
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.codecatalystDevEnvironment.CodecatalystDevEnvironmentTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.codecatalystDevEnvironment.CodecatalystDevEnvironmentTimeouts,
 }
 ```
 
@@ -1039,13 +1039,13 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/codecatalystdevenviron
 | <code><a href="#@cdktn/provider-aws.codecatalystDevEnvironment.CodecatalystDevEnvironmentConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.codecatalystDevEnvironment.CodecatalystDevEnvironmentConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.codecatalystDevEnvironment.CodecatalystDevEnvironmentConfig.property.ides">Ides</a></code> | <code><a href="#@cdktn/provider-aws.codecatalystDevEnvironment.CodecatalystDevEnvironmentIdes">CodecatalystDevEnvironmentIdes</a></code> | ides block. |
-| <code><a href="#@cdktn/provider-aws.codecatalystDevEnvironment.CodecatalystDevEnvironmentConfig.property.instanceType">InstanceType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/codecatalyst_dev_environment#instance_type CodecatalystDevEnvironment#instance_type}. |
+| <code><a href="#@cdktn/provider-aws.codecatalystDevEnvironment.CodecatalystDevEnvironmentConfig.property.instanceType">InstanceType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/codecatalyst_dev_environment#instance_type CodecatalystDevEnvironment#instance_type}. |
 | <code><a href="#@cdktn/provider-aws.codecatalystDevEnvironment.CodecatalystDevEnvironmentConfig.property.persistentStorage">PersistentStorage</a></code> | <code><a href="#@cdktn/provider-aws.codecatalystDevEnvironment.CodecatalystDevEnvironmentPersistentStorage">CodecatalystDevEnvironmentPersistentStorage</a></code> | persistent_storage block. |
-| <code><a href="#@cdktn/provider-aws.codecatalystDevEnvironment.CodecatalystDevEnvironmentConfig.property.projectName">ProjectName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/codecatalyst_dev_environment#project_name CodecatalystDevEnvironment#project_name}. |
-| <code><a href="#@cdktn/provider-aws.codecatalystDevEnvironment.CodecatalystDevEnvironmentConfig.property.spaceName">SpaceName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/codecatalyst_dev_environment#space_name CodecatalystDevEnvironment#space_name}. |
-| <code><a href="#@cdktn/provider-aws.codecatalystDevEnvironment.CodecatalystDevEnvironmentConfig.property.alias">Alias</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/codecatalyst_dev_environment#alias CodecatalystDevEnvironment#alias}. |
-| <code><a href="#@cdktn/provider-aws.codecatalystDevEnvironment.CodecatalystDevEnvironmentConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/codecatalyst_dev_environment#id CodecatalystDevEnvironment#id}. |
-| <code><a href="#@cdktn/provider-aws.codecatalystDevEnvironment.CodecatalystDevEnvironmentConfig.property.inactivityTimeoutMinutes">InactivityTimeoutMinutes</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/codecatalyst_dev_environment#inactivity_timeout_minutes CodecatalystDevEnvironment#inactivity_timeout_minutes}. |
+| <code><a href="#@cdktn/provider-aws.codecatalystDevEnvironment.CodecatalystDevEnvironmentConfig.property.projectName">ProjectName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/codecatalyst_dev_environment#project_name CodecatalystDevEnvironment#project_name}. |
+| <code><a href="#@cdktn/provider-aws.codecatalystDevEnvironment.CodecatalystDevEnvironmentConfig.property.spaceName">SpaceName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/codecatalyst_dev_environment#space_name CodecatalystDevEnvironment#space_name}. |
+| <code><a href="#@cdktn/provider-aws.codecatalystDevEnvironment.CodecatalystDevEnvironmentConfig.property.alias">Alias</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/codecatalyst_dev_environment#alias CodecatalystDevEnvironment#alias}. |
+| <code><a href="#@cdktn/provider-aws.codecatalystDevEnvironment.CodecatalystDevEnvironmentConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/codecatalyst_dev_environment#id CodecatalystDevEnvironment#id}. |
+| <code><a href="#@cdktn/provider-aws.codecatalystDevEnvironment.CodecatalystDevEnvironmentConfig.property.inactivityTimeoutMinutes">InactivityTimeoutMinutes</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/codecatalyst_dev_environment#inactivity_timeout_minutes CodecatalystDevEnvironment#inactivity_timeout_minutes}. |
 | <code><a href="#@cdktn/provider-aws.codecatalystDevEnvironment.CodecatalystDevEnvironmentConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktn/provider-aws.codecatalystDevEnvironment.CodecatalystDevEnvironmentConfig.property.repositories">Repositories</a></code> | <code>interface{}</code> | repositories block. |
 | <code><a href="#@cdktn/provider-aws.codecatalystDevEnvironment.CodecatalystDevEnvironmentConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.codecatalystDevEnvironment.CodecatalystDevEnvironmentTimeouts">CodecatalystDevEnvironmentTimeouts</a></code> | timeouts block. |
@@ -1132,7 +1132,7 @@ Ides CodecatalystDevEnvironmentIdes
 
 ides block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/codecatalyst_dev_environment#ides CodecatalystDevEnvironment#ides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/codecatalyst_dev_environment#ides CodecatalystDevEnvironment#ides}
 
 ---
 
@@ -1144,7 +1144,7 @@ InstanceType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/codecatalyst_dev_environment#instance_type CodecatalystDevEnvironment#instance_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/codecatalyst_dev_environment#instance_type CodecatalystDevEnvironment#instance_type}.
 
 ---
 
@@ -1158,7 +1158,7 @@ PersistentStorage CodecatalystDevEnvironmentPersistentStorage
 
 persistent_storage block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/codecatalyst_dev_environment#persistent_storage CodecatalystDevEnvironment#persistent_storage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/codecatalyst_dev_environment#persistent_storage CodecatalystDevEnvironment#persistent_storage}
 
 ---
 
@@ -1170,7 +1170,7 @@ ProjectName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/codecatalyst_dev_environment#project_name CodecatalystDevEnvironment#project_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/codecatalyst_dev_environment#project_name CodecatalystDevEnvironment#project_name}.
 
 ---
 
@@ -1182,7 +1182,7 @@ SpaceName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/codecatalyst_dev_environment#space_name CodecatalystDevEnvironment#space_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/codecatalyst_dev_environment#space_name CodecatalystDevEnvironment#space_name}.
 
 ---
 
@@ -1194,7 +1194,7 @@ Alias *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/codecatalyst_dev_environment#alias CodecatalystDevEnvironment#alias}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/codecatalyst_dev_environment#alias CodecatalystDevEnvironment#alias}.
 
 ---
 
@@ -1206,7 +1206,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/codecatalyst_dev_environment#id CodecatalystDevEnvironment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/codecatalyst_dev_environment#id CodecatalystDevEnvironment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1221,7 +1221,7 @@ InactivityTimeoutMinutes *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/codecatalyst_dev_environment#inactivity_timeout_minutes CodecatalystDevEnvironment#inactivity_timeout_minutes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/codecatalyst_dev_environment#inactivity_timeout_minutes CodecatalystDevEnvironment#inactivity_timeout_minutes}.
 
 ---
 
@@ -1235,7 +1235,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/codecatalyst_dev_environment#region CodecatalystDevEnvironment#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/codecatalyst_dev_environment#region CodecatalystDevEnvironment#region}
 
 ---
 
@@ -1249,7 +1249,7 @@ Repositories interface{}
 
 repositories block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/codecatalyst_dev_environment#repositories CodecatalystDevEnvironment#repositories}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/codecatalyst_dev_environment#repositories CodecatalystDevEnvironment#repositories}
 
 ---
 
@@ -1263,7 +1263,7 @@ Timeouts CodecatalystDevEnvironmentTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/codecatalyst_dev_environment#timeouts CodecatalystDevEnvironment#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/codecatalyst_dev_environment#timeouts CodecatalystDevEnvironment#timeouts}
 
 ---
 
@@ -1272,7 +1272,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.codecatalystDevEnvironment.CodecatalystDevEnvironmentIdes.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/codecatalystdevenvironment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/codecatalystdevenvironment"
 
 &codecatalystdevenvironment.CodecatalystDevEnvironmentIdes {
 	Name: *string,
@@ -1284,8 +1284,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/codecatalystdevenviron
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.codecatalystDevEnvironment.CodecatalystDevEnvironmentIdes.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/codecatalyst_dev_environment#name CodecatalystDevEnvironment#name}. |
-| <code><a href="#@cdktn/provider-aws.codecatalystDevEnvironment.CodecatalystDevEnvironmentIdes.property.runtime">Runtime</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/codecatalyst_dev_environment#runtime CodecatalystDevEnvironment#runtime}. |
+| <code><a href="#@cdktn/provider-aws.codecatalystDevEnvironment.CodecatalystDevEnvironmentIdes.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/codecatalyst_dev_environment#name CodecatalystDevEnvironment#name}. |
+| <code><a href="#@cdktn/provider-aws.codecatalystDevEnvironment.CodecatalystDevEnvironmentIdes.property.runtime">Runtime</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/codecatalyst_dev_environment#runtime CodecatalystDevEnvironment#runtime}. |
 
 ---
 
@@ -1297,7 +1297,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/codecatalyst_dev_environment#name CodecatalystDevEnvironment#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/codecatalyst_dev_environment#name CodecatalystDevEnvironment#name}.
 
 ---
 
@@ -1309,7 +1309,7 @@ Runtime *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/codecatalyst_dev_environment#runtime CodecatalystDevEnvironment#runtime}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/codecatalyst_dev_environment#runtime CodecatalystDevEnvironment#runtime}.
 
 ---
 
@@ -1318,7 +1318,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.codecatalystDevEnvironment.CodecatalystDevEnvironmentPersistentStorage.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/codecatalystdevenvironment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/codecatalystdevenvironment"
 
 &codecatalystdevenvironment.CodecatalystDevEnvironmentPersistentStorage {
 	Size: *f64,
@@ -1329,7 +1329,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/codecatalystdevenviron
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.codecatalystDevEnvironment.CodecatalystDevEnvironmentPersistentStorage.property.size">Size</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/codecatalyst_dev_environment#size CodecatalystDevEnvironment#size}. |
+| <code><a href="#@cdktn/provider-aws.codecatalystDevEnvironment.CodecatalystDevEnvironmentPersistentStorage.property.size">Size</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/codecatalyst_dev_environment#size CodecatalystDevEnvironment#size}. |
 
 ---
 
@@ -1341,7 +1341,7 @@ Size *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/codecatalyst_dev_environment#size CodecatalystDevEnvironment#size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/codecatalyst_dev_environment#size CodecatalystDevEnvironment#size}.
 
 ---
 
@@ -1350,7 +1350,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.codecatalystDevEnvironment.CodecatalystDevEnvironmentRepositories.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/codecatalystdevenvironment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/codecatalystdevenvironment"
 
 &codecatalystdevenvironment.CodecatalystDevEnvironmentRepositories {
 	RepositoryName: *string,
@@ -1362,8 +1362,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/codecatalystdevenviron
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.codecatalystDevEnvironment.CodecatalystDevEnvironmentRepositories.property.repositoryName">RepositoryName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/codecatalyst_dev_environment#repository_name CodecatalystDevEnvironment#repository_name}. |
-| <code><a href="#@cdktn/provider-aws.codecatalystDevEnvironment.CodecatalystDevEnvironmentRepositories.property.branchName">BranchName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/codecatalyst_dev_environment#branch_name CodecatalystDevEnvironment#branch_name}. |
+| <code><a href="#@cdktn/provider-aws.codecatalystDevEnvironment.CodecatalystDevEnvironmentRepositories.property.repositoryName">RepositoryName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/codecatalyst_dev_environment#repository_name CodecatalystDevEnvironment#repository_name}. |
+| <code><a href="#@cdktn/provider-aws.codecatalystDevEnvironment.CodecatalystDevEnvironmentRepositories.property.branchName">BranchName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/codecatalyst_dev_environment#branch_name CodecatalystDevEnvironment#branch_name}. |
 
 ---
 
@@ -1375,7 +1375,7 @@ RepositoryName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/codecatalyst_dev_environment#repository_name CodecatalystDevEnvironment#repository_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/codecatalyst_dev_environment#repository_name CodecatalystDevEnvironment#repository_name}.
 
 ---
 
@@ -1387,7 +1387,7 @@ BranchName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/codecatalyst_dev_environment#branch_name CodecatalystDevEnvironment#branch_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/codecatalyst_dev_environment#branch_name CodecatalystDevEnvironment#branch_name}.
 
 ---
 
@@ -1396,7 +1396,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.codecatalystDevEnvironment.CodecatalystDevEnvironmentTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/codecatalystdevenvironment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/codecatalystdevenvironment"
 
 &codecatalystdevenvironment.CodecatalystDevEnvironmentTimeouts {
 	Create: *string,
@@ -1409,9 +1409,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/codecatalystdevenviron
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.codecatalystDevEnvironment.CodecatalystDevEnvironmentTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/codecatalyst_dev_environment#create CodecatalystDevEnvironment#create}. |
-| <code><a href="#@cdktn/provider-aws.codecatalystDevEnvironment.CodecatalystDevEnvironmentTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/codecatalyst_dev_environment#delete CodecatalystDevEnvironment#delete}. |
-| <code><a href="#@cdktn/provider-aws.codecatalystDevEnvironment.CodecatalystDevEnvironmentTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/codecatalyst_dev_environment#update CodecatalystDevEnvironment#update}. |
+| <code><a href="#@cdktn/provider-aws.codecatalystDevEnvironment.CodecatalystDevEnvironmentTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/codecatalyst_dev_environment#create CodecatalystDevEnvironment#create}. |
+| <code><a href="#@cdktn/provider-aws.codecatalystDevEnvironment.CodecatalystDevEnvironmentTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/codecatalyst_dev_environment#delete CodecatalystDevEnvironment#delete}. |
+| <code><a href="#@cdktn/provider-aws.codecatalystDevEnvironment.CodecatalystDevEnvironmentTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/codecatalyst_dev_environment#update CodecatalystDevEnvironment#update}. |
 
 ---
 
@@ -1423,7 +1423,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/codecatalyst_dev_environment#create CodecatalystDevEnvironment#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/codecatalyst_dev_environment#create CodecatalystDevEnvironment#create}.
 
 ---
 
@@ -1435,7 +1435,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/codecatalyst_dev_environment#delete CodecatalystDevEnvironment#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/codecatalyst_dev_environment#delete CodecatalystDevEnvironment#delete}.
 
 ---
 
@@ -1447,7 +1447,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/codecatalyst_dev_environment#update CodecatalystDevEnvironment#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/codecatalyst_dev_environment#update CodecatalystDevEnvironment#update}.
 
 ---
 
@@ -1458,7 +1458,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.codecatalystDevEnvironment.CodecatalystDevEnvironmentIdesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/codecatalystdevenvironment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/codecatalystdevenvironment"
 
 codecatalystdevenvironment.NewCodecatalystDevEnvironmentIdesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CodecatalystDevEnvironmentIdesOutputReference
 ```
@@ -1765,7 +1765,7 @@ func InternalValue() CodecatalystDevEnvironmentIdes
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.codecatalystDevEnvironment.CodecatalystDevEnvironmentPersistentStorageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/codecatalystdevenvironment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/codecatalystdevenvironment"
 
 codecatalystdevenvironment.NewCodecatalystDevEnvironmentPersistentStorageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CodecatalystDevEnvironmentPersistentStorageOutputReference
 ```
@@ -2036,7 +2036,7 @@ func InternalValue() CodecatalystDevEnvironmentPersistentStorage
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.codecatalystDevEnvironment.CodecatalystDevEnvironmentRepositoriesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/codecatalystdevenvironment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/codecatalystdevenvironment"
 
 codecatalystdevenvironment.NewCodecatalystDevEnvironmentRepositoriesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CodecatalystDevEnvironmentRepositoriesList
 ```
@@ -2196,7 +2196,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.codecatalystDevEnvironment.CodecatalystDevEnvironmentRepositoriesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/codecatalystdevenvironment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/codecatalystdevenvironment"
 
 codecatalystdevenvironment.NewCodecatalystDevEnvironmentRepositoriesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CodecatalystDevEnvironmentRepositoriesOutputReference
 ```
@@ -2514,7 +2514,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.codecatalystDevEnvironment.CodecatalystDevEnvironmentTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/codecatalystdevenvironment"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/codecatalystdevenvironment"
 
 codecatalystdevenvironment.NewCodecatalystDevEnvironmentTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CodecatalystDevEnvironmentTimeoutsOutputReference
 ```

@@ -4,12 +4,12 @@
 
 ### EcsAccountSettingDefault <a name="EcsAccountSettingDefault" id="@cdktn/provider-aws.ecsAccountSettingDefault.EcsAccountSettingDefault"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ecs_account_setting_default aws_ecs_account_setting_default}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/ecs_account_setting_default aws_ecs_account_setting_default}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecsAccountSettingDefault.EcsAccountSettingDefault.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/ecsaccountsettingdefault"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/ecsaccountsettingdefault"
 
 ecsaccountsettingdefault.NewEcsAccountSettingDefault(scope Construct, id *string, config EcsAccountSettingDefaultConfig) EcsAccountSettingDefault
 ```
@@ -392,7 +392,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.ecsAccountSettingDefault.EcsAccountSettingDefault.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/ecsaccountsettingdefault"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/ecsaccountsettingdefault"
 
 ecsaccountsettingdefault.EcsAccountSettingDefault_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.ecsAccountSettingDefault.EcsAccountSettingDefault.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/ecsaccountsettingdefault"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/ecsaccountsettingdefault"
 
 ecsaccountsettingdefault.EcsAccountSettingDefault_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ ecsaccountsettingdefault.EcsAccountSettingDefault_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.ecsAccountSettingDefault.EcsAccountSettingDefault.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/ecsaccountsettingdefault"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/ecsaccountsettingdefault"
 
 ecsaccountsettingdefault.EcsAccountSettingDefault_IsTerraformResource(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ ecsaccountsettingdefault.EcsAccountSettingDefault_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.ecsAccountSettingDefault.EcsAccountSettingDefault.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/ecsaccountsettingdefault"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/ecsaccountsettingdefault"
 
 ecsaccountsettingdefault.EcsAccountSettingDefault_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -481,7 +481,7 @@ The construct id used in the generated config for the EcsAccountSettingDefault t
 
 The id of the existing EcsAccountSettingDefault that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ecs_account_setting_default#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/ecs_account_setting_default#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -780,7 +780,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ecsAccountSettingDefault.EcsAccountSettingDefaultConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/ecsaccountsettingdefault"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/ecsaccountsettingdefault"
 
 &ecsaccountsettingdefault.EcsAccountSettingDefaultConfig {
 	Connection: interface{},
@@ -808,9 +808,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/ecsaccountsettingdefau
 | <code><a href="#@cdktn/provider-aws.ecsAccountSettingDefault.EcsAccountSettingDefaultConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ecsAccountSettingDefault.EcsAccountSettingDefaultConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ecsAccountSettingDefault.EcsAccountSettingDefaultConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.ecsAccountSettingDefault.EcsAccountSettingDefaultConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ecs_account_setting_default#name EcsAccountSettingDefault#name}. |
-| <code><a href="#@cdktn/provider-aws.ecsAccountSettingDefault.EcsAccountSettingDefaultConfig.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ecs_account_setting_default#value EcsAccountSettingDefault#value}. |
-| <code><a href="#@cdktn/provider-aws.ecsAccountSettingDefault.EcsAccountSettingDefaultConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ecs_account_setting_default#id EcsAccountSettingDefault#id}. |
+| <code><a href="#@cdktn/provider-aws.ecsAccountSettingDefault.EcsAccountSettingDefaultConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/ecs_account_setting_default#name EcsAccountSettingDefault#name}. |
+| <code><a href="#@cdktn/provider-aws.ecsAccountSettingDefault.EcsAccountSettingDefaultConfig.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/ecs_account_setting_default#value EcsAccountSettingDefault#value}. |
+| <code><a href="#@cdktn/provider-aws.ecsAccountSettingDefault.EcsAccountSettingDefaultConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/ecs_account_setting_default#id EcsAccountSettingDefault#id}. |
 | <code><a href="#@cdktn/provider-aws.ecsAccountSettingDefault.EcsAccountSettingDefaultConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -893,7 +893,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ecs_account_setting_default#name EcsAccountSettingDefault#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/ecs_account_setting_default#name EcsAccountSettingDefault#name}.
 
 ---
 
@@ -905,7 +905,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ecs_account_setting_default#value EcsAccountSettingDefault#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/ecs_account_setting_default#value EcsAccountSettingDefault#value}.
 
 ---
 
@@ -917,7 +917,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ecs_account_setting_default#id EcsAccountSettingDefault#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/ecs_account_setting_default#id EcsAccountSettingDefault#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -934,7 +934,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ecs_account_setting_default#region EcsAccountSettingDefault#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/ecs_account_setting_default#region EcsAccountSettingDefault#region}
 
 ---
 

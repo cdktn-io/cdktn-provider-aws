@@ -4,12 +4,12 @@
 
 ### DataAwsControltowerControls <a name="DataAwsControltowerControls" id="@cdktn/provider-aws.dataAwsControltowerControls.DataAwsControltowerControls"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/controltower_controls aws_controltower_controls}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/controltower_controls aws_controltower_controls}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsControltowerControls.DataAwsControltowerControls.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawscontroltowercontrols"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawscontroltowercontrols"
 
 dataawscontroltowercontrols.NewDataAwsControltowerControls(scope Construct, id *string, config DataAwsControltowerControlsConfig) DataAwsControltowerControls
 ```
@@ -290,7 +290,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsControltowerControls.DataAwsControltowerControls.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawscontroltowercontrols"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawscontroltowercontrols"
 
 dataawscontroltowercontrols.DataAwsControltowerControls_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsControltowerControls.DataAwsControltowerControls.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawscontroltowercontrols"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawscontroltowercontrols"
 
 dataawscontroltowercontrols.DataAwsControltowerControls_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ dataawscontroltowercontrols.DataAwsControltowerControls_IsTerraformElement(x int
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsControltowerControls.DataAwsControltowerControls.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawscontroltowercontrols"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawscontroltowercontrols"
 
 dataawscontroltowercontrols.DataAwsControltowerControls_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ dataawscontroltowercontrols.DataAwsControltowerControls_IsTerraformDataSource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsControltowerControls.DataAwsControltowerControls.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawscontroltowercontrols"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawscontroltowercontrols"
 
 dataawscontroltowercontrols.DataAwsControltowerControls_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -379,7 +379,7 @@ The construct id used in the generated config for the DataAwsControltowerControl
 
 The id of the existing DataAwsControltowerControls that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/controltower_controls#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/controltower_controls#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -634,7 +634,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsControltowerControls.DataAwsControltowerControlsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawscontroltowercontrols"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawscontroltowercontrols"
 
 &dataawscontroltowercontrols.DataAwsControltowerControlsConfig {
 	Connection: interface{},
@@ -661,8 +661,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawscontroltowercon
 | <code><a href="#@cdktn/provider-aws.dataAwsControltowerControls.DataAwsControltowerControlsConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsControltowerControls.DataAwsControltowerControlsConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsControltowerControls.DataAwsControltowerControlsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsControltowerControls.DataAwsControltowerControlsConfig.property.targetIdentifier">TargetIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/controltower_controls#target_identifier DataAwsControltowerControls#target_identifier}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsControltowerControls.DataAwsControltowerControlsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/controltower_controls#id DataAwsControltowerControls#id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsControltowerControls.DataAwsControltowerControlsConfig.property.targetIdentifier">TargetIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/controltower_controls#target_identifier DataAwsControltowerControls#target_identifier}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsControltowerControls.DataAwsControltowerControlsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/controltower_controls#id DataAwsControltowerControls#id}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsControltowerControls.DataAwsControltowerControlsConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -745,7 +745,7 @@ TargetIdentifier *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/controltower_controls#target_identifier DataAwsControltowerControls#target_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/controltower_controls#target_identifier DataAwsControltowerControls#target_identifier}.
 
 ---
 
@@ -757,7 +757,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/controltower_controls#id DataAwsControltowerControls#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/controltower_controls#id DataAwsControltowerControls#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -774,7 +774,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/controltower_controls#region DataAwsControltowerControls#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/controltower_controls#region DataAwsControltowerControls#region}
 
 ---
 

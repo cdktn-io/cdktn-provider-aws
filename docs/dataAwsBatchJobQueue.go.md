@@ -4,12 +4,12 @@
 
 ### DataAwsBatchJobQueue <a name="DataAwsBatchJobQueue" id="@cdktn/provider-aws.dataAwsBatchJobQueue.DataAwsBatchJobQueue"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/batch_job_queue aws_batch_job_queue}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/batch_job_queue aws_batch_job_queue}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsBatchJobQueue.DataAwsBatchJobQueue.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsbatchjobqueue"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsbatchjobqueue"
 
 dataawsbatchjobqueue.NewDataAwsBatchJobQueue(scope Construct, id *string, config DataAwsBatchJobQueueConfig) DataAwsBatchJobQueue
 ```
@@ -297,7 +297,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsBatchJobQueue.DataAwsBatchJobQueue.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsbatchjobqueue"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsbatchjobqueue"
 
 dataawsbatchjobqueue.DataAwsBatchJobQueue_IsConstruct(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsBatchJobQueue.DataAwsBatchJobQueue.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsbatchjobqueue"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsbatchjobqueue"
 
 dataawsbatchjobqueue.DataAwsBatchJobQueue_IsTerraformElement(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ dataawsbatchjobqueue.DataAwsBatchJobQueue_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsBatchJobQueue.DataAwsBatchJobQueue.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsbatchjobqueue"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsbatchjobqueue"
 
 dataawsbatchjobqueue.DataAwsBatchJobQueue_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ dataawsbatchjobqueue.DataAwsBatchJobQueue_IsTerraformDataSource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsBatchJobQueue.DataAwsBatchJobQueue.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsbatchjobqueue"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsbatchjobqueue"
 
 dataawsbatchjobqueue.DataAwsBatchJobQueue_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -386,7 +386,7 @@ The construct id used in the generated config for the DataAwsBatchJobQueue to im
 
 The id of the existing DataAwsBatchJobQueue that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/batch_job_queue#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/batch_job_queue#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -740,7 +740,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsBatchJobQueue.DataAwsBatchJobQueueComputeEnvironmentOrder.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsbatchjobqueue"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsbatchjobqueue"
 
 &dataawsbatchjobqueue.DataAwsBatchJobQueueComputeEnvironmentOrder {
 
@@ -753,7 +753,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsbatchjobqueue"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsBatchJobQueue.DataAwsBatchJobQueueConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsbatchjobqueue"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsbatchjobqueue"
 
 &dataawsbatchjobqueue.DataAwsBatchJobQueueConfig {
 	Connection: interface{},
@@ -781,10 +781,10 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsbatchjobqueue"
 | <code><a href="#@cdktn/provider-aws.dataAwsBatchJobQueue.DataAwsBatchJobQueueConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsBatchJobQueue.DataAwsBatchJobQueueConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsBatchJobQueue.DataAwsBatchJobQueueConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsBatchJobQueue.DataAwsBatchJobQueueConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/batch_job_queue#name DataAwsBatchJobQueue#name}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsBatchJobQueue.DataAwsBatchJobQueueConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/batch_job_queue#id DataAwsBatchJobQueue#id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsBatchJobQueue.DataAwsBatchJobQueueConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/batch_job_queue#name DataAwsBatchJobQueue#name}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsBatchJobQueue.DataAwsBatchJobQueueConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/batch_job_queue#id DataAwsBatchJobQueue#id}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsBatchJobQueue.DataAwsBatchJobQueueConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.dataAwsBatchJobQueue.DataAwsBatchJobQueueConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/batch_job_queue#tags DataAwsBatchJobQueue#tags}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsBatchJobQueue.DataAwsBatchJobQueueConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/batch_job_queue#tags DataAwsBatchJobQueue#tags}. |
 
 ---
 
@@ -866,7 +866,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/batch_job_queue#name DataAwsBatchJobQueue#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/batch_job_queue#name DataAwsBatchJobQueue#name}.
 
 ---
 
@@ -878,7 +878,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/batch_job_queue#id DataAwsBatchJobQueue#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/batch_job_queue#id DataAwsBatchJobQueue#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -895,7 +895,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/batch_job_queue#region DataAwsBatchJobQueue#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/batch_job_queue#region DataAwsBatchJobQueue#region}
 
 ---
 
@@ -907,7 +907,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/batch_job_queue#tags DataAwsBatchJobQueue#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/batch_job_queue#tags DataAwsBatchJobQueue#tags}.
 
 ---
 
@@ -916,7 +916,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsBatchJobQueue.DataAwsBatchJobQueueJobStateTimeLimitAction.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsbatchjobqueue"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsbatchjobqueue"
 
 &dataawsbatchjobqueue.DataAwsBatchJobQueueJobStateTimeLimitAction {
 
@@ -931,7 +931,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsbatchjobqueue"
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsBatchJobQueue.DataAwsBatchJobQueueComputeEnvironmentOrderList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsbatchjobqueue"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsbatchjobqueue"
 
 dataawsbatchjobqueue.NewDataAwsBatchJobQueueComputeEnvironmentOrderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsBatchJobQueueComputeEnvironmentOrderList
 ```
@@ -1080,7 +1080,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsBatchJobQueue.DataAwsBatchJobQueueComputeEnvironmentOrderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsbatchjobqueue"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsbatchjobqueue"
 
 dataawsbatchjobqueue.NewDataAwsBatchJobQueueComputeEnvironmentOrderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsBatchJobQueueComputeEnvironmentOrderOutputReference
 ```
@@ -1369,7 +1369,7 @@ func InternalValue() DataAwsBatchJobQueueComputeEnvironmentOrder
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsBatchJobQueue.DataAwsBatchJobQueueJobStateTimeLimitActionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsbatchjobqueue"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsbatchjobqueue"
 
 dataawsbatchjobqueue.NewDataAwsBatchJobQueueJobStateTimeLimitActionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsBatchJobQueueJobStateTimeLimitActionList
 ```
@@ -1518,7 +1518,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsBatchJobQueue.DataAwsBatchJobQueueJobStateTimeLimitActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsbatchjobqueue"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsbatchjobqueue"
 
 dataawsbatchjobqueue.NewDataAwsBatchJobQueueJobStateTimeLimitActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsBatchJobQueueJobStateTimeLimitActionOutputReference
 ```

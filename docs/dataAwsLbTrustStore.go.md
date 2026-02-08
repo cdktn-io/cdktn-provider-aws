@@ -4,12 +4,12 @@
 
 ### DataAwsLbTrustStore <a name="DataAwsLbTrustStore" id="@cdktn/provider-aws.dataAwsLbTrustStore.DataAwsLbTrustStore"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/lb_trust_store aws_lb_trust_store}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/lb_trust_store aws_lb_trust_store}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLbTrustStore.DataAwsLbTrustStore.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawslbtruststore"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawslbtruststore"
 
 dataawslbtruststore.NewDataAwsLbTrustStore(scope Construct, id *string, config DataAwsLbTrustStoreConfig) DataAwsLbTrustStore
 ```
@@ -304,7 +304,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsLbTrustStore.DataAwsLbTrustStore.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawslbtruststore"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawslbtruststore"
 
 dataawslbtruststore.DataAwsLbTrustStore_IsConstruct(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsLbTrustStore.DataAwsLbTrustStore.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawslbtruststore"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawslbtruststore"
 
 dataawslbtruststore.DataAwsLbTrustStore_IsTerraformElement(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ dataawslbtruststore.DataAwsLbTrustStore_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsLbTrustStore.DataAwsLbTrustStore.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawslbtruststore"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawslbtruststore"
 
 dataawslbtruststore.DataAwsLbTrustStore_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -364,7 +364,7 @@ dataawslbtruststore.DataAwsLbTrustStore_IsTerraformDataSource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsLbTrustStore.DataAwsLbTrustStore.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawslbtruststore"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawslbtruststore"
 
 dataawslbtruststore.DataAwsLbTrustStore_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -393,7 +393,7 @@ The construct id used in the generated config for the DataAwsLbTrustStore to imp
 
 The id of the existing DataAwsLbTrustStore that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/lb_trust_store#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/lb_trust_store#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -659,7 +659,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsLbTrustStore.DataAwsLbTrustStoreConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawslbtruststore"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawslbtruststore"
 
 &dataawslbtruststore.DataAwsLbTrustStoreConfig {
 	Connection: interface{},
@@ -687,9 +687,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawslbtruststore"
 | <code><a href="#@cdktn/provider-aws.dataAwsLbTrustStore.DataAwsLbTrustStoreConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsLbTrustStore.DataAwsLbTrustStoreConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsLbTrustStore.DataAwsLbTrustStoreConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsLbTrustStore.DataAwsLbTrustStoreConfig.property.arn">Arn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/lb_trust_store#arn DataAwsLbTrustStore#arn}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsLbTrustStore.DataAwsLbTrustStoreConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/lb_trust_store#id DataAwsLbTrustStore#id}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsLbTrustStore.DataAwsLbTrustStoreConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/lb_trust_store#name DataAwsLbTrustStore#name}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsLbTrustStore.DataAwsLbTrustStoreConfig.property.arn">Arn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/lb_trust_store#arn DataAwsLbTrustStore#arn}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsLbTrustStore.DataAwsLbTrustStoreConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/lb_trust_store#id DataAwsLbTrustStore#id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsLbTrustStore.DataAwsLbTrustStoreConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/lb_trust_store#name DataAwsLbTrustStore#name}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsLbTrustStore.DataAwsLbTrustStoreConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -772,7 +772,7 @@ Arn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/lb_trust_store#arn DataAwsLbTrustStore#arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/lb_trust_store#arn DataAwsLbTrustStore#arn}.
 
 ---
 
@@ -784,7 +784,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/lb_trust_store#id DataAwsLbTrustStore#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/lb_trust_store#id DataAwsLbTrustStore#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -799,7 +799,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/lb_trust_store#name DataAwsLbTrustStore#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/lb_trust_store#name DataAwsLbTrustStore#name}.
 
 ---
 
@@ -813,7 +813,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/lb_trust_store#region DataAwsLbTrustStore#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/lb_trust_store#region DataAwsLbTrustStore#region}
 
 ---
 

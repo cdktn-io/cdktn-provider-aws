@@ -4,12 +4,12 @@
 
 ### OpensearchAuthorizeVpcEndpointAccess <a name="OpensearchAuthorizeVpcEndpointAccess" id="@cdktn/provider-aws.opensearchAuthorizeVpcEndpointAccess.OpensearchAuthorizeVpcEndpointAccess"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/opensearch_authorize_vpc_endpoint_access aws_opensearch_authorize_vpc_endpoint_access}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/opensearch_authorize_vpc_endpoint_access aws_opensearch_authorize_vpc_endpoint_access}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.opensearchAuthorizeVpcEndpointAccess.OpensearchAuthorizeVpcEndpointAccess.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/opensearchauthorizevpcendpointaccess"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/opensearchauthorizevpcendpointaccess"
 
 opensearchauthorizevpcendpointaccess.NewOpensearchAuthorizeVpcEndpointAccess(scope Construct, id *string, config OpensearchAuthorizeVpcEndpointAccessConfig) OpensearchAuthorizeVpcEndpointAccess
 ```
@@ -385,7 +385,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.opensearchAuthorizeVpcEndpointAccess.OpensearchAuthorizeVpcEndpointAccess.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/opensearchauthorizevpcendpointaccess"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/opensearchauthorizevpcendpointaccess"
 
 opensearchauthorizevpcendpointaccess.OpensearchAuthorizeVpcEndpointAccess_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.opensearchAuthorizeVpcEndpointAccess.OpensearchAuthorizeVpcEndpointAccess.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/opensearchauthorizevpcendpointaccess"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/opensearchauthorizevpcendpointaccess"
 
 opensearchauthorizevpcendpointaccess.OpensearchAuthorizeVpcEndpointAccess_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ opensearchauthorizevpcendpointaccess.OpensearchAuthorizeVpcEndpointAccess_IsTerr
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.opensearchAuthorizeVpcEndpointAccess.OpensearchAuthorizeVpcEndpointAccess.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/opensearchauthorizevpcendpointaccess"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/opensearchauthorizevpcendpointaccess"
 
 opensearchauthorizevpcendpointaccess.OpensearchAuthorizeVpcEndpointAccess_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ opensearchauthorizevpcendpointaccess.OpensearchAuthorizeVpcEndpointAccess_IsTerr
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.opensearchAuthorizeVpcEndpointAccess.OpensearchAuthorizeVpcEndpointAccess.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/opensearchauthorizevpcendpointaccess"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/opensearchauthorizevpcendpointaccess"
 
 opensearchauthorizevpcendpointaccess.OpensearchAuthorizeVpcEndpointAccess_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -474,7 +474,7 @@ The construct id used in the generated config for the OpensearchAuthorizeVpcEndp
 
 The id of the existing OpensearchAuthorizeVpcEndpointAccess that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/opensearch_authorize_vpc_endpoint_access#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/opensearch_authorize_vpc_endpoint_access#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -751,7 +751,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.opensearchAuthorizeVpcEndpointAccess.OpensearchAuthorizeVpcEndpointAccessAuthorizedPrincipal.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/opensearchauthorizevpcendpointaccess"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/opensearchauthorizevpcendpointaccess"
 
 &opensearchauthorizevpcendpointaccess.OpensearchAuthorizeVpcEndpointAccessAuthorizedPrincipal {
 
@@ -764,7 +764,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/opensearchauthorizevpc
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.opensearchAuthorizeVpcEndpointAccess.OpensearchAuthorizeVpcEndpointAccessConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/opensearchauthorizevpcendpointaccess"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/opensearchauthorizevpcendpointaccess"
 
 &opensearchauthorizevpcendpointaccess.OpensearchAuthorizeVpcEndpointAccessConfig {
 	Connection: interface{},
@@ -791,8 +791,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/opensearchauthorizevpc
 | <code><a href="#@cdktn/provider-aws.opensearchAuthorizeVpcEndpointAccess.OpensearchAuthorizeVpcEndpointAccessConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.opensearchAuthorizeVpcEndpointAccess.OpensearchAuthorizeVpcEndpointAccessConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.opensearchAuthorizeVpcEndpointAccess.OpensearchAuthorizeVpcEndpointAccessConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.opensearchAuthorizeVpcEndpointAccess.OpensearchAuthorizeVpcEndpointAccessConfig.property.account">Account</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/opensearch_authorize_vpc_endpoint_access#account OpensearchAuthorizeVpcEndpointAccess#account}. |
-| <code><a href="#@cdktn/provider-aws.opensearchAuthorizeVpcEndpointAccess.OpensearchAuthorizeVpcEndpointAccessConfig.property.domainName">DomainName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/opensearch_authorize_vpc_endpoint_access#domain_name OpensearchAuthorizeVpcEndpointAccess#domain_name}. |
+| <code><a href="#@cdktn/provider-aws.opensearchAuthorizeVpcEndpointAccess.OpensearchAuthorizeVpcEndpointAccessConfig.property.account">Account</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/opensearch_authorize_vpc_endpoint_access#account OpensearchAuthorizeVpcEndpointAccess#account}. |
+| <code><a href="#@cdktn/provider-aws.opensearchAuthorizeVpcEndpointAccess.OpensearchAuthorizeVpcEndpointAccessConfig.property.domainName">DomainName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/opensearch_authorize_vpc_endpoint_access#domain_name OpensearchAuthorizeVpcEndpointAccess#domain_name}. |
 | <code><a href="#@cdktn/provider-aws.opensearchAuthorizeVpcEndpointAccess.OpensearchAuthorizeVpcEndpointAccessConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -875,7 +875,7 @@ Account *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/opensearch_authorize_vpc_endpoint_access#account OpensearchAuthorizeVpcEndpointAccess#account}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/opensearch_authorize_vpc_endpoint_access#account OpensearchAuthorizeVpcEndpointAccess#account}.
 
 ---
 
@@ -887,7 +887,7 @@ DomainName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/opensearch_authorize_vpc_endpoint_access#domain_name OpensearchAuthorizeVpcEndpointAccess#domain_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/opensearch_authorize_vpc_endpoint_access#domain_name OpensearchAuthorizeVpcEndpointAccess#domain_name}.
 
 ---
 
@@ -901,7 +901,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/opensearch_authorize_vpc_endpoint_access#region OpensearchAuthorizeVpcEndpointAccess#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/opensearch_authorize_vpc_endpoint_access#region OpensearchAuthorizeVpcEndpointAccess#region}
 
 ---
 
@@ -912,7 +912,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.opensearchAuthorizeVpcEndpointAccess.OpensearchAuthorizeVpcEndpointAccessAuthorizedPrincipalList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/opensearchauthorizevpcendpointaccess"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/opensearchauthorizevpcendpointaccess"
 
 opensearchauthorizevpcendpointaccess.NewOpensearchAuthorizeVpcEndpointAccessAuthorizedPrincipalList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OpensearchAuthorizeVpcEndpointAccessAuthorizedPrincipalList
 ```
@@ -1061,7 +1061,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.opensearchAuthorizeVpcEndpointAccess.OpensearchAuthorizeVpcEndpointAccessAuthorizedPrincipalOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/opensearchauthorizevpcendpointaccess"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/opensearchauthorizevpcendpointaccess"
 
 opensearchauthorizevpcendpointaccess.NewOpensearchAuthorizeVpcEndpointAccessAuthorizedPrincipalOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OpensearchAuthorizeVpcEndpointAccessAuthorizedPrincipalOutputReference
 ```

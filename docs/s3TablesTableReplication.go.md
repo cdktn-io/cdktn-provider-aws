@@ -4,12 +4,12 @@
 
 ### S3TablesTableReplication <a name="S3TablesTableReplication" id="@cdktn/provider-aws.s3TablesTableReplication.S3TablesTableReplication"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3tables_table_replication aws_s3tables_table_replication}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3tables_table_replication aws_s3tables_table_replication}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3TablesTableReplication.S3TablesTableReplication.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3tablestablereplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/s3tablestablereplication"
 
 s3tablestablereplication.NewS3TablesTableReplication(scope Construct, id *string, config S3TablesTableReplicationConfig) S3TablesTableReplication
 ```
@@ -405,7 +405,7 @@ func ResetRule()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.s3TablesTableReplication.S3TablesTableReplication.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3tablestablereplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/s3tablestablereplication"
 
 s3tablestablereplication.S3TablesTableReplication_IsConstruct(x interface{}) *bool
 ```
@@ -437,7 +437,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.s3TablesTableReplication.S3TablesTableReplication.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3tablestablereplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/s3tablestablereplication"
 
 s3tablestablereplication.S3TablesTableReplication_IsTerraformElement(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ s3tablestablereplication.S3TablesTableReplication_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.s3TablesTableReplication.S3TablesTableReplication.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3tablestablereplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/s3tablestablereplication"
 
 s3tablestablereplication.S3TablesTableReplication_IsTerraformResource(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ s3tablestablereplication.S3TablesTableReplication_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.s3TablesTableReplication.S3TablesTableReplication.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3tablestablereplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/s3tablestablereplication"
 
 s3tablestablereplication.S3TablesTableReplication_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -494,7 +494,7 @@ The construct id used in the generated config for the S3TablesTableReplication t
 
 The id of the existing S3TablesTableReplication that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3tables_table_replication#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3tables_table_replication#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -793,7 +793,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3TablesTableReplication.S3TablesTableReplicationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3tablestablereplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/s3tablestablereplication"
 
 &s3tablestablereplication.S3TablesTableReplicationConfig {
 	Connection: interface{},
@@ -821,8 +821,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3tablestablereplicati
 | <code><a href="#@cdktn/provider-aws.s3TablesTableReplication.S3TablesTableReplicationConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.s3TablesTableReplication.S3TablesTableReplicationConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.s3TablesTableReplication.S3TablesTableReplicationConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.s3TablesTableReplication.S3TablesTableReplicationConfig.property.role">Role</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3tables_table_replication#role S3TablesTableReplication#role}. |
-| <code><a href="#@cdktn/provider-aws.s3TablesTableReplication.S3TablesTableReplicationConfig.property.tableArn">TableArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3tables_table_replication#table_arn S3TablesTableReplication#table_arn}. |
+| <code><a href="#@cdktn/provider-aws.s3TablesTableReplication.S3TablesTableReplicationConfig.property.role">Role</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3tables_table_replication#role S3TablesTableReplication#role}. |
+| <code><a href="#@cdktn/provider-aws.s3TablesTableReplication.S3TablesTableReplicationConfig.property.tableArn">TableArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3tables_table_replication#table_arn S3TablesTableReplication#table_arn}. |
 | <code><a href="#@cdktn/provider-aws.s3TablesTableReplication.S3TablesTableReplicationConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktn/provider-aws.s3TablesTableReplication.S3TablesTableReplicationConfig.property.rule">Rule</a></code> | <code>interface{}</code> | rule block. |
 
@@ -906,7 +906,7 @@ Role *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3tables_table_replication#role S3TablesTableReplication#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3tables_table_replication#role S3TablesTableReplication#role}.
 
 ---
 
@@ -918,7 +918,7 @@ TableArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3tables_table_replication#table_arn S3TablesTableReplication#table_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3tables_table_replication#table_arn S3TablesTableReplication#table_arn}.
 
 ---
 
@@ -932,7 +932,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3tables_table_replication#region S3TablesTableReplication#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3tables_table_replication#region S3TablesTableReplication#region}
 
 ---
 
@@ -946,7 +946,7 @@ Rule interface{}
 
 rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3tables_table_replication#rule S3TablesTableReplication#rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3tables_table_replication#rule S3TablesTableReplication#rule}
 
 ---
 
@@ -955,7 +955,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3TablesTableReplication.S3TablesTableReplicationRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3tablestablereplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/s3tablestablereplication"
 
 &s3tablestablereplication.S3TablesTableReplicationRule {
 	Destination: interface{},
@@ -980,7 +980,7 @@ Destination interface{}
 
 destination block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3tables_table_replication#destination S3TablesTableReplication#destination}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3tables_table_replication#destination S3TablesTableReplication#destination}
 
 ---
 
@@ -989,7 +989,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.s3TablesTableReplication.S3TablesTableReplicationRuleDestination.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3tablestablereplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/s3tablestablereplication"
 
 &s3tablestablereplication.S3TablesTableReplicationRuleDestination {
 	DestinationTableBucketArn: *string,
@@ -1000,7 +1000,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3tablestablereplicati
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.s3TablesTableReplication.S3TablesTableReplicationRuleDestination.property.destinationTableBucketArn">DestinationTableBucketArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3tables_table_replication#destination_table_bucket_arn S3TablesTableReplication#destination_table_bucket_arn}. |
+| <code><a href="#@cdktn/provider-aws.s3TablesTableReplication.S3TablesTableReplicationRuleDestination.property.destinationTableBucketArn">DestinationTableBucketArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3tables_table_replication#destination_table_bucket_arn S3TablesTableReplication#destination_table_bucket_arn}. |
 
 ---
 
@@ -1012,7 +1012,7 @@ DestinationTableBucketArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/s3tables_table_replication#destination_table_bucket_arn S3TablesTableReplication#destination_table_bucket_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/s3tables_table_replication#destination_table_bucket_arn S3TablesTableReplication#destination_table_bucket_arn}.
 
 ---
 
@@ -1023,7 +1023,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3TablesTableReplication.S3TablesTableReplicationRuleDestinationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3tablestablereplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/s3tablestablereplication"
 
 s3tablestablereplication.NewS3TablesTableReplicationRuleDestinationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) S3TablesTableReplicationRuleDestinationList
 ```
@@ -1183,7 +1183,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3TablesTableReplication.S3TablesTableReplicationRuleDestinationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3tablestablereplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/s3tablestablereplication"
 
 s3tablestablereplication.NewS3TablesTableReplicationRuleDestinationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) S3TablesTableReplicationRuleDestinationOutputReference
 ```
@@ -1472,7 +1472,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3TablesTableReplication.S3TablesTableReplicationRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3tablestablereplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/s3tablestablereplication"
 
 s3tablestablereplication.NewS3TablesTableReplicationRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) S3TablesTableReplicationRuleList
 ```
@@ -1632,7 +1632,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.s3TablesTableReplication.S3TablesTableReplicationRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/s3tablestablereplication"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/s3tablestablereplication"
 
 s3tablestablereplication.NewS3TablesTableReplicationRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) S3TablesTableReplicationRuleOutputReference
 ```

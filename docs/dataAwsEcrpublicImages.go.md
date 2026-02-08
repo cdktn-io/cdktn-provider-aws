@@ -4,12 +4,12 @@
 
 ### DataAwsEcrpublicImages <a name="DataAwsEcrpublicImages" id="@cdktn/provider-aws.dataAwsEcrpublicImages.DataAwsEcrpublicImages"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/ecrpublic_images aws_ecrpublic_images}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/ecrpublic_images aws_ecrpublic_images}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEcrpublicImages.DataAwsEcrpublicImages.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsecrpublicimages"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsecrpublicimages"
 
 dataawsecrpublicimages.NewDataAwsEcrpublicImages(scope Construct, id *string, config DataAwsEcrpublicImagesConfig) DataAwsEcrpublicImages
 ```
@@ -310,7 +310,7 @@ func ResetRegistryId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsEcrpublicImages.DataAwsEcrpublicImages.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsecrpublicimages"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsecrpublicimages"
 
 dataawsecrpublicimages.DataAwsEcrpublicImages_IsConstruct(x interface{}) *bool
 ```
@@ -342,7 +342,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsEcrpublicImages.DataAwsEcrpublicImages.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsecrpublicimages"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsecrpublicimages"
 
 dataawsecrpublicimages.DataAwsEcrpublicImages_IsTerraformElement(x interface{}) *bool
 ```
@@ -356,7 +356,7 @@ dataawsecrpublicimages.DataAwsEcrpublicImages_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsEcrpublicImages.DataAwsEcrpublicImages.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsecrpublicimages"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsecrpublicimages"
 
 dataawsecrpublicimages.DataAwsEcrpublicImages_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -370,7 +370,7 @@ dataawsecrpublicimages.DataAwsEcrpublicImages_IsTerraformDataSource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsEcrpublicImages.DataAwsEcrpublicImages.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsecrpublicimages"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsecrpublicimages"
 
 dataawsecrpublicimages.DataAwsEcrpublicImages_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -399,7 +399,7 @@ The construct id used in the generated config for the DataAwsEcrpublicImages to 
 
 The id of the existing DataAwsEcrpublicImages that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/ecrpublic_images#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/ecrpublic_images#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -676,7 +676,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEcrpublicImages.DataAwsEcrpublicImagesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsecrpublicimages"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsecrpublicimages"
 
 &dataawsecrpublicimages.DataAwsEcrpublicImagesConfig {
 	Connection: interface{},
@@ -791,7 +791,7 @@ RepositoryName *string
 
 Name of the public repository.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/ecrpublic_images#repository_name DataAwsEcrpublicImages#repository_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/ecrpublic_images#repository_name DataAwsEcrpublicImages#repository_name}
 
 ---
 
@@ -805,7 +805,7 @@ ImageIds interface{}
 
 image_ids block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/ecrpublic_images#image_ids DataAwsEcrpublicImages#image_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/ecrpublic_images#image_ids DataAwsEcrpublicImages#image_ids}
 
 ---
 
@@ -819,7 +819,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/ecrpublic_images#region DataAwsEcrpublicImages#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/ecrpublic_images#region DataAwsEcrpublicImages#region}
 
 ---
 
@@ -835,7 +835,7 @@ AWS account ID associated with the public registry that contains the repository.
 
 If not specified, the default public registry is assumed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/ecrpublic_images#registry_id DataAwsEcrpublicImages#registry_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/ecrpublic_images#registry_id DataAwsEcrpublicImages#registry_id}
 
 ---
 
@@ -844,7 +844,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEcrpublicImages.DataAwsEcrpublicImagesImageIds.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsecrpublicimages"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsecrpublicimages"
 
 &dataawsecrpublicimages.DataAwsEcrpublicImagesImageIds {
 	ImageDigest: *string,
@@ -871,7 +871,7 @@ ImageDigest *string
 
 Image digest.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/ecrpublic_images#image_digest DataAwsEcrpublicImages#image_digest}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/ecrpublic_images#image_digest DataAwsEcrpublicImages#image_digest}
 
 ---
 
@@ -885,7 +885,7 @@ ImageTag *string
 
 Image tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/ecrpublic_images#image_tag DataAwsEcrpublicImages#image_tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/ecrpublic_images#image_tag DataAwsEcrpublicImages#image_tag}
 
 ---
 
@@ -894,7 +894,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEcrpublicImages.DataAwsEcrpublicImagesImages.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsecrpublicimages"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsecrpublicimages"
 
 &dataawsecrpublicimages.DataAwsEcrpublicImagesImages {
 
@@ -909,7 +909,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsecrpublicimages
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEcrpublicImages.DataAwsEcrpublicImagesImageIdsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsecrpublicimages"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsecrpublicimages"
 
 dataawsecrpublicimages.NewDataAwsEcrpublicImagesImageIdsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEcrpublicImagesImageIdsList
 ```
@@ -1069,7 +1069,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEcrpublicImages.DataAwsEcrpublicImagesImageIdsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsecrpublicimages"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsecrpublicimages"
 
 dataawsecrpublicimages.NewDataAwsEcrpublicImagesImageIdsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEcrpublicImagesImageIdsOutputReference
 ```
@@ -1394,7 +1394,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEcrpublicImages.DataAwsEcrpublicImagesImagesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsecrpublicimages"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsecrpublicimages"
 
 dataawsecrpublicimages.NewDataAwsEcrpublicImagesImagesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEcrpublicImagesImagesList
 ```
@@ -1543,7 +1543,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEcrpublicImages.DataAwsEcrpublicImagesImagesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsecrpublicimages"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsecrpublicimages"
 
 dataawsecrpublicimages.NewDataAwsEcrpublicImagesImagesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEcrpublicImagesImagesOutputReference
 ```

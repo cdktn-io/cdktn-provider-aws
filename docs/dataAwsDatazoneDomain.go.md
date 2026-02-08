@@ -4,12 +4,12 @@
 
 ### DataAwsDatazoneDomain <a name="DataAwsDatazoneDomain" id="@cdktn/provider-aws.dataAwsDatazoneDomain.DataAwsDatazoneDomain"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/datazone_domain aws_datazone_domain}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/datazone_domain aws_datazone_domain}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsDatazoneDomain.DataAwsDatazoneDomain.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsdatazonedomain"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsdatazonedomain"
 
 dataawsdatazonedomain.NewDataAwsDatazoneDomain(scope Construct, id *string, config DataAwsDatazoneDomainConfig) DataAwsDatazoneDomain
 ```
@@ -297,7 +297,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsDatazoneDomain.DataAwsDatazoneDomain.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsdatazonedomain"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsdatazonedomain"
 
 dataawsdatazonedomain.DataAwsDatazoneDomain_IsConstruct(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsDatazoneDomain.DataAwsDatazoneDomain.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsdatazonedomain"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsdatazonedomain"
 
 dataawsdatazonedomain.DataAwsDatazoneDomain_IsTerraformElement(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ dataawsdatazonedomain.DataAwsDatazoneDomain_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsDatazoneDomain.DataAwsDatazoneDomain.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsdatazonedomain"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsdatazonedomain"
 
 dataawsdatazonedomain.DataAwsDatazoneDomain_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ dataawsdatazonedomain.DataAwsDatazoneDomain_IsTerraformDataSource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsDatazoneDomain.DataAwsDatazoneDomain.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsdatazonedomain"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsdatazonedomain"
 
 dataawsdatazonedomain.DataAwsDatazoneDomain_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -386,7 +386,7 @@ The construct id used in the generated config for the DataAwsDatazoneDomain to i
 
 The id of the existing DataAwsDatazoneDomain that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/datazone_domain#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/datazone_domain#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -729,7 +729,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsDatazoneDomain.DataAwsDatazoneDomainConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsdatazonedomain"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsdatazonedomain"
 
 &dataawsdatazonedomain.DataAwsDatazoneDomainConfig {
 	Connection: interface{},
@@ -756,8 +756,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsdatazonedomain"
 | <code><a href="#@cdktn/provider-aws.dataAwsDatazoneDomain.DataAwsDatazoneDomainConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsDatazoneDomain.DataAwsDatazoneDomainConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsDatazoneDomain.DataAwsDatazoneDomainConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsDatazoneDomain.DataAwsDatazoneDomainConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/datazone_domain#id DataAwsDatazoneDomain#id}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsDatazoneDomain.DataAwsDatazoneDomainConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/datazone_domain#name DataAwsDatazoneDomain#name}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsDatazoneDomain.DataAwsDatazoneDomainConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/datazone_domain#id DataAwsDatazoneDomain#id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsDatazoneDomain.DataAwsDatazoneDomainConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/datazone_domain#name DataAwsDatazoneDomain#name}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsDatazoneDomain.DataAwsDatazoneDomainConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -840,7 +840,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/datazone_domain#id DataAwsDatazoneDomain#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/datazone_domain#id DataAwsDatazoneDomain#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -855,7 +855,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/datazone_domain#name DataAwsDatazoneDomain#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/datazone_domain#name DataAwsDatazoneDomain#name}.
 
 ---
 
@@ -869,7 +869,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/datazone_domain#region DataAwsDatazoneDomain#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/datazone_domain#region DataAwsDatazoneDomain#region}
 
 ---
 

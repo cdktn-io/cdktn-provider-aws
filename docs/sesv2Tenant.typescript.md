@@ -4,7 +4,7 @@
 
 ### Sesv2Tenant <a name="Sesv2Tenant" id="@cdktn/provider-aws.sesv2Tenant.Sesv2Tenant"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sesv2_tenant aws_sesv2_tenant}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sesv2_tenant aws_sesv2_tenant}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.sesv2Tenant.Sesv2Tenant.Initializer"></a>
 
@@ -481,7 +481,7 @@ The construct id used in the generated config for the Sesv2Tenant to import.
 
 The id of the existing Sesv2Tenant that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sesv2_tenant#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sesv2_tenant#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -807,9 +807,9 @@ const sesv2TenantConfig: sesv2Tenant.Sesv2TenantConfig = { ... }
 | <code><a href="#@cdktn/provider-aws.sesv2Tenant.Sesv2TenantConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.sesv2Tenant.Sesv2TenantConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.sesv2Tenant.Sesv2TenantConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.sesv2Tenant.Sesv2TenantConfig.property.tenantName">tenantName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sesv2_tenant#tenant_name Sesv2Tenant#tenant_name}. |
+| <code><a href="#@cdktn/provider-aws.sesv2Tenant.Sesv2TenantConfig.property.tenantName">tenantName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sesv2_tenant#tenant_name Sesv2Tenant#tenant_name}. |
 | <code><a href="#@cdktn/provider-aws.sesv2Tenant.Sesv2TenantConfig.property.region">region</a></code> | <code>string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.sesv2Tenant.Sesv2TenantConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sesv2_tenant#tags Sesv2Tenant#tags}. |
+| <code><a href="#@cdktn/provider-aws.sesv2Tenant.Sesv2TenantConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sesv2_tenant#tags Sesv2Tenant#tags}. |
 
 ---
 
@@ -891,7 +891,7 @@ public readonly tenantName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sesv2_tenant#tenant_name Sesv2Tenant#tenant_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sesv2_tenant#tenant_name Sesv2Tenant#tenant_name}.
 
 ---
 
@@ -905,7 +905,7 @@ public readonly region: string;
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sesv2_tenant#region Sesv2Tenant#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sesv2_tenant#region Sesv2Tenant#region}
 
 ---
 
@@ -917,7 +917,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/sesv2_tenant#tags Sesv2Tenant#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/sesv2_tenant#tags Sesv2Tenant#tags}.
 
 ---
 

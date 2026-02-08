@@ -4,12 +4,12 @@
 
 ### QuicksightGroupMembership <a name="QuicksightGroupMembership" id="@cdktn/provider-aws.quicksightGroupMembership.QuicksightGroupMembership"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_group_membership aws_quicksight_group_membership}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_group_membership aws_quicksight_group_membership}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.quicksightGroupMembership.QuicksightGroupMembership.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/quicksightgroupmembership"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/quicksightgroupmembership"
 
 quicksightgroupmembership.NewQuicksightGroupMembership(scope Construct, id *string, config QuicksightGroupMembershipConfig) QuicksightGroupMembership
 ```
@@ -406,7 +406,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.quicksightGroupMembership.QuicksightGroupMembership.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/quicksightgroupmembership"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/quicksightgroupmembership"
 
 quicksightgroupmembership.QuicksightGroupMembership_IsConstruct(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.quicksightGroupMembership.QuicksightGroupMembership.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/quicksightgroupmembership"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/quicksightgroupmembership"
 
 quicksightgroupmembership.QuicksightGroupMembership_IsTerraformElement(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ quicksightgroupmembership.QuicksightGroupMembership_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.quicksightGroupMembership.QuicksightGroupMembership.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/quicksightgroupmembership"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/quicksightgroupmembership"
 
 quicksightgroupmembership.QuicksightGroupMembership_IsTerraformResource(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ quicksightgroupmembership.QuicksightGroupMembership_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.quicksightGroupMembership.QuicksightGroupMembership.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/quicksightgroupmembership"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/quicksightgroupmembership"
 
 quicksightgroupmembership.QuicksightGroupMembership_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -495,7 +495,7 @@ The construct id used in the generated config for the QuicksightGroupMembership 
 
 The id of the existing QuicksightGroupMembership that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_group_membership#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_group_membership#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -838,7 +838,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.quicksightGroupMembership.QuicksightGroupMembershipConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/quicksightgroupmembership"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/quicksightgroupmembership"
 
 &quicksightgroupmembership.QuicksightGroupMembershipConfig {
 	Connection: interface{},
@@ -868,11 +868,11 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/quicksightgroupmembers
 | <code><a href="#@cdktn/provider-aws.quicksightGroupMembership.QuicksightGroupMembershipConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.quicksightGroupMembership.QuicksightGroupMembershipConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.quicksightGroupMembership.QuicksightGroupMembershipConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.quicksightGroupMembership.QuicksightGroupMembershipConfig.property.groupName">GroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_group_membership#group_name QuicksightGroupMembership#group_name}. |
-| <code><a href="#@cdktn/provider-aws.quicksightGroupMembership.QuicksightGroupMembershipConfig.property.memberName">MemberName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_group_membership#member_name QuicksightGroupMembership#member_name}. |
-| <code><a href="#@cdktn/provider-aws.quicksightGroupMembership.QuicksightGroupMembershipConfig.property.awsAccountId">AwsAccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_group_membership#aws_account_id QuicksightGroupMembership#aws_account_id}. |
-| <code><a href="#@cdktn/provider-aws.quicksightGroupMembership.QuicksightGroupMembershipConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_group_membership#id QuicksightGroupMembership#id}. |
-| <code><a href="#@cdktn/provider-aws.quicksightGroupMembership.QuicksightGroupMembershipConfig.property.namespace">Namespace</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_group_membership#namespace QuicksightGroupMembership#namespace}. |
+| <code><a href="#@cdktn/provider-aws.quicksightGroupMembership.QuicksightGroupMembershipConfig.property.groupName">GroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_group_membership#group_name QuicksightGroupMembership#group_name}. |
+| <code><a href="#@cdktn/provider-aws.quicksightGroupMembership.QuicksightGroupMembershipConfig.property.memberName">MemberName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_group_membership#member_name QuicksightGroupMembership#member_name}. |
+| <code><a href="#@cdktn/provider-aws.quicksightGroupMembership.QuicksightGroupMembershipConfig.property.awsAccountId">AwsAccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_group_membership#aws_account_id QuicksightGroupMembership#aws_account_id}. |
+| <code><a href="#@cdktn/provider-aws.quicksightGroupMembership.QuicksightGroupMembershipConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_group_membership#id QuicksightGroupMembership#id}. |
+| <code><a href="#@cdktn/provider-aws.quicksightGroupMembership.QuicksightGroupMembershipConfig.property.namespace">Namespace</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_group_membership#namespace QuicksightGroupMembership#namespace}. |
 | <code><a href="#@cdktn/provider-aws.quicksightGroupMembership.QuicksightGroupMembershipConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -955,7 +955,7 @@ GroupName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_group_membership#group_name QuicksightGroupMembership#group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_group_membership#group_name QuicksightGroupMembership#group_name}.
 
 ---
 
@@ -967,7 +967,7 @@ MemberName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_group_membership#member_name QuicksightGroupMembership#member_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_group_membership#member_name QuicksightGroupMembership#member_name}.
 
 ---
 
@@ -979,7 +979,7 @@ AwsAccountId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_group_membership#aws_account_id QuicksightGroupMembership#aws_account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_group_membership#aws_account_id QuicksightGroupMembership#aws_account_id}.
 
 ---
 
@@ -991,7 +991,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_group_membership#id QuicksightGroupMembership#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_group_membership#id QuicksightGroupMembership#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1006,7 +1006,7 @@ Namespace *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_group_membership#namespace QuicksightGroupMembership#namespace}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_group_membership#namespace QuicksightGroupMembership#namespace}.
 
 ---
 
@@ -1020,7 +1020,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/quicksight_group_membership#region QuicksightGroupMembership#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/quicksight_group_membership#region QuicksightGroupMembership#region}
 
 ---
 

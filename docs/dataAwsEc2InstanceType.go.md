@@ -4,12 +4,12 @@
 
 ### DataAwsEc2InstanceType <a name="DataAwsEc2InstanceType" id="@cdktn/provider-aws.dataAwsEc2InstanceType.DataAwsEc2InstanceType"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/ec2_instance_type aws_ec2_instance_type}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/ec2_instance_type aws_ec2_instance_type}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEc2InstanceType.DataAwsEc2InstanceType.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsec2instancetype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsec2instancetype"
 
 dataawsec2instancetype.NewDataAwsEc2InstanceType(scope Construct, id *string, config DataAwsEc2InstanceTypeConfig) DataAwsEc2InstanceType
 ```
@@ -310,7 +310,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsEc2InstanceType.DataAwsEc2InstanceType.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsec2instancetype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsec2instancetype"
 
 dataawsec2instancetype.DataAwsEc2InstanceType_IsConstruct(x interface{}) *bool
 ```
@@ -342,7 +342,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsEc2InstanceType.DataAwsEc2InstanceType.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsec2instancetype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsec2instancetype"
 
 dataawsec2instancetype.DataAwsEc2InstanceType_IsTerraformElement(x interface{}) *bool
 ```
@@ -356,7 +356,7 @@ dataawsec2instancetype.DataAwsEc2InstanceType_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsEc2InstanceType.DataAwsEc2InstanceType.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsec2instancetype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsec2instancetype"
 
 dataawsec2instancetype.DataAwsEc2InstanceType_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -370,7 +370,7 @@ dataawsec2instancetype.DataAwsEc2InstanceType_IsTerraformDataSource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsEc2InstanceType.DataAwsEc2InstanceType.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsec2instancetype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsec2instancetype"
 
 dataawsec2instancetype.DataAwsEc2InstanceType_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -399,7 +399,7 @@ The construct id used in the generated config for the DataAwsEc2InstanceType to 
 
 The id of the existing DataAwsEc2InstanceType that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/ec2_instance_type#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/ec2_instance_type#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1347,7 +1347,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEc2InstanceType.DataAwsEc2InstanceTypeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsec2instancetype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsec2instancetype"
 
 &dataawsec2instancetype.DataAwsEc2InstanceTypeConfig {
 	Connection: interface{},
@@ -1360,7 +1360,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsec2instancetype
 	InstanceType: *string,
 	Id: *string,
 	Region: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.dataAwsEc2InstanceType.DataAwsEc2InstanceTypeTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.dataAwsEc2InstanceType.DataAwsEc2InstanceTypeTimeouts,
 }
 ```
 
@@ -1375,8 +1375,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsec2instancetype
 | <code><a href="#@cdktn/provider-aws.dataAwsEc2InstanceType.DataAwsEc2InstanceTypeConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsEc2InstanceType.DataAwsEc2InstanceTypeConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsEc2InstanceType.DataAwsEc2InstanceTypeConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.dataAwsEc2InstanceType.DataAwsEc2InstanceTypeConfig.property.instanceType">InstanceType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/ec2_instance_type#instance_type DataAwsEc2InstanceType#instance_type}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsEc2InstanceType.DataAwsEc2InstanceTypeConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/ec2_instance_type#id DataAwsEc2InstanceType#id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsEc2InstanceType.DataAwsEc2InstanceTypeConfig.property.instanceType">InstanceType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/ec2_instance_type#instance_type DataAwsEc2InstanceType#instance_type}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsEc2InstanceType.DataAwsEc2InstanceTypeConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/ec2_instance_type#id DataAwsEc2InstanceType#id}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsEc2InstanceType.DataAwsEc2InstanceTypeConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 | <code><a href="#@cdktn/provider-aws.dataAwsEc2InstanceType.DataAwsEc2InstanceTypeConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.dataAwsEc2InstanceType.DataAwsEc2InstanceTypeTimeouts">DataAwsEc2InstanceTypeTimeouts</a></code> | timeouts block. |
 
@@ -1460,7 +1460,7 @@ InstanceType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/ec2_instance_type#instance_type DataAwsEc2InstanceType#instance_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/ec2_instance_type#instance_type DataAwsEc2InstanceType#instance_type}.
 
 ---
 
@@ -1472,7 +1472,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/ec2_instance_type#id DataAwsEc2InstanceType#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/ec2_instance_type#id DataAwsEc2InstanceType#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1489,7 +1489,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/ec2_instance_type#region DataAwsEc2InstanceType#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/ec2_instance_type#region DataAwsEc2InstanceType#region}
 
 ---
 
@@ -1503,7 +1503,7 @@ Timeouts DataAwsEc2InstanceTypeTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/ec2_instance_type#timeouts DataAwsEc2InstanceType#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/ec2_instance_type#timeouts DataAwsEc2InstanceType#timeouts}
 
 ---
 
@@ -1512,7 +1512,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEc2InstanceType.DataAwsEc2InstanceTypeFpgas.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsec2instancetype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsec2instancetype"
 
 &dataawsec2instancetype.DataAwsEc2InstanceTypeFpgas {
 
@@ -1525,7 +1525,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsec2instancetype
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEc2InstanceType.DataAwsEc2InstanceTypeGpus.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsec2instancetype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsec2instancetype"
 
 &dataawsec2instancetype.DataAwsEc2InstanceTypeGpus {
 
@@ -1538,7 +1538,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsec2instancetype
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEc2InstanceType.DataAwsEc2InstanceTypeInferenceAccelerators.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsec2instancetype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsec2instancetype"
 
 &dataawsec2instancetype.DataAwsEc2InstanceTypeInferenceAccelerators {
 
@@ -1551,7 +1551,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsec2instancetype
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEc2InstanceType.DataAwsEc2InstanceTypeInstanceDisks.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsec2instancetype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsec2instancetype"
 
 &dataawsec2instancetype.DataAwsEc2InstanceTypeInstanceDisks {
 
@@ -1564,7 +1564,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsec2instancetype
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEc2InstanceType.DataAwsEc2InstanceTypeMediaAccelerators.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsec2instancetype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsec2instancetype"
 
 &dataawsec2instancetype.DataAwsEc2InstanceTypeMediaAccelerators {
 
@@ -1577,7 +1577,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsec2instancetype
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEc2InstanceType.DataAwsEc2InstanceTypeNetworkCards.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsec2instancetype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsec2instancetype"
 
 &dataawsec2instancetype.DataAwsEc2InstanceTypeNetworkCards {
 
@@ -1590,7 +1590,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsec2instancetype
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEc2InstanceType.DataAwsEc2InstanceTypeNeuronDevices.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsec2instancetype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsec2instancetype"
 
 &dataawsec2instancetype.DataAwsEc2InstanceTypeNeuronDevices {
 
@@ -1603,7 +1603,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsec2instancetype
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsEc2InstanceType.DataAwsEc2InstanceTypeTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsec2instancetype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsec2instancetype"
 
 &dataawsec2instancetype.DataAwsEc2InstanceTypeTimeouts {
 	Read: *string,
@@ -1614,7 +1614,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsec2instancetype
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.dataAwsEc2InstanceType.DataAwsEc2InstanceTypeTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/ec2_instance_type#read DataAwsEc2InstanceType#read}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsEc2InstanceType.DataAwsEc2InstanceTypeTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/ec2_instance_type#read DataAwsEc2InstanceType#read}. |
 
 ---
 
@@ -1626,7 +1626,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/ec2_instance_type#read DataAwsEc2InstanceType#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/ec2_instance_type#read DataAwsEc2InstanceType#read}.
 
 ---
 
@@ -1637,7 +1637,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEc2InstanceType.DataAwsEc2InstanceTypeFpgasList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsec2instancetype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsec2instancetype"
 
 dataawsec2instancetype.NewDataAwsEc2InstanceTypeFpgasList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2InstanceTypeFpgasList
 ```
@@ -1786,7 +1786,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEc2InstanceType.DataAwsEc2InstanceTypeFpgasOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsec2instancetype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsec2instancetype"
 
 dataawsec2instancetype.NewDataAwsEc2InstanceTypeFpgasOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEc2InstanceTypeFpgasOutputReference
 ```
@@ -2097,7 +2097,7 @@ func InternalValue() DataAwsEc2InstanceTypeFpgas
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEc2InstanceType.DataAwsEc2InstanceTypeGpusList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsec2instancetype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsec2instancetype"
 
 dataawsec2instancetype.NewDataAwsEc2InstanceTypeGpusList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2InstanceTypeGpusList
 ```
@@ -2246,7 +2246,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEc2InstanceType.DataAwsEc2InstanceTypeGpusOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsec2instancetype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsec2instancetype"
 
 dataawsec2instancetype.NewDataAwsEc2InstanceTypeGpusOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEc2InstanceTypeGpusOutputReference
 ```
@@ -2557,7 +2557,7 @@ func InternalValue() DataAwsEc2InstanceTypeGpus
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEc2InstanceType.DataAwsEc2InstanceTypeInferenceAcceleratorsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsec2instancetype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsec2instancetype"
 
 dataawsec2instancetype.NewDataAwsEc2InstanceTypeInferenceAcceleratorsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2InstanceTypeInferenceAcceleratorsList
 ```
@@ -2706,7 +2706,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEc2InstanceType.DataAwsEc2InstanceTypeInferenceAcceleratorsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsec2instancetype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsec2instancetype"
 
 dataawsec2instancetype.NewDataAwsEc2InstanceTypeInferenceAcceleratorsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEc2InstanceTypeInferenceAcceleratorsOutputReference
 ```
@@ -3017,7 +3017,7 @@ func InternalValue() DataAwsEc2InstanceTypeInferenceAccelerators
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEc2InstanceType.DataAwsEc2InstanceTypeInstanceDisksList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsec2instancetype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsec2instancetype"
 
 dataawsec2instancetype.NewDataAwsEc2InstanceTypeInstanceDisksList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2InstanceTypeInstanceDisksList
 ```
@@ -3166,7 +3166,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEc2InstanceType.DataAwsEc2InstanceTypeInstanceDisksOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsec2instancetype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsec2instancetype"
 
 dataawsec2instancetype.NewDataAwsEc2InstanceTypeInstanceDisksOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEc2InstanceTypeInstanceDisksOutputReference
 ```
@@ -3466,7 +3466,7 @@ func InternalValue() DataAwsEc2InstanceTypeInstanceDisks
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEc2InstanceType.DataAwsEc2InstanceTypeMediaAcceleratorsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsec2instancetype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsec2instancetype"
 
 dataawsec2instancetype.NewDataAwsEc2InstanceTypeMediaAcceleratorsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2InstanceTypeMediaAcceleratorsList
 ```
@@ -3615,7 +3615,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEc2InstanceType.DataAwsEc2InstanceTypeMediaAcceleratorsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsec2instancetype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsec2instancetype"
 
 dataawsec2instancetype.NewDataAwsEc2InstanceTypeMediaAcceleratorsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEc2InstanceTypeMediaAcceleratorsOutputReference
 ```
@@ -3926,7 +3926,7 @@ func InternalValue() DataAwsEc2InstanceTypeMediaAccelerators
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEc2InstanceType.DataAwsEc2InstanceTypeNetworkCardsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsec2instancetype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsec2instancetype"
 
 dataawsec2instancetype.NewDataAwsEc2InstanceTypeNetworkCardsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2InstanceTypeNetworkCardsList
 ```
@@ -4075,7 +4075,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEc2InstanceType.DataAwsEc2InstanceTypeNetworkCardsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsec2instancetype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsec2instancetype"
 
 dataawsec2instancetype.NewDataAwsEc2InstanceTypeNetworkCardsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEc2InstanceTypeNetworkCardsOutputReference
 ```
@@ -4397,7 +4397,7 @@ func InternalValue() DataAwsEc2InstanceTypeNetworkCards
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEc2InstanceType.DataAwsEc2InstanceTypeNeuronDevicesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsec2instancetype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsec2instancetype"
 
 dataawsec2instancetype.NewDataAwsEc2InstanceTypeNeuronDevicesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsEc2InstanceTypeNeuronDevicesList
 ```
@@ -4546,7 +4546,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEc2InstanceType.DataAwsEc2InstanceTypeNeuronDevicesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsec2instancetype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsec2instancetype"
 
 dataawsec2instancetype.NewDataAwsEc2InstanceTypeNeuronDevicesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsEc2InstanceTypeNeuronDevicesOutputReference
 ```
@@ -4868,7 +4868,7 @@ func InternalValue() DataAwsEc2InstanceTypeNeuronDevices
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsEc2InstanceType.DataAwsEc2InstanceTypeTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawsec2instancetype"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawsec2instancetype"
 
 dataawsec2instancetype.NewDataAwsEc2InstanceTypeTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAwsEc2InstanceTypeTimeoutsOutputReference
 ```

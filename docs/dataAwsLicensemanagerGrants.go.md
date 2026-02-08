@@ -4,12 +4,12 @@
 
 ### DataAwsLicensemanagerGrants <a name="DataAwsLicensemanagerGrants" id="@cdktn/provider-aws.dataAwsLicensemanagerGrants.DataAwsLicensemanagerGrants"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/licensemanager_grants aws_licensemanager_grants}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/licensemanager_grants aws_licensemanager_grants}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLicensemanagerGrants.DataAwsLicensemanagerGrants.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawslicensemanagergrants"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawslicensemanagergrants"
 
 dataawslicensemanagergrants.NewDataAwsLicensemanagerGrants(scope Construct, id *string, config DataAwsLicensemanagerGrantsConfig) DataAwsLicensemanagerGrants
 ```
@@ -310,7 +310,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.dataAwsLicensemanagerGrants.DataAwsLicensemanagerGrants.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawslicensemanagergrants"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawslicensemanagergrants"
 
 dataawslicensemanagergrants.DataAwsLicensemanagerGrants_IsConstruct(x interface{}) *bool
 ```
@@ -342,7 +342,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.dataAwsLicensemanagerGrants.DataAwsLicensemanagerGrants.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawslicensemanagergrants"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawslicensemanagergrants"
 
 dataawslicensemanagergrants.DataAwsLicensemanagerGrants_IsTerraformElement(x interface{}) *bool
 ```
@@ -356,7 +356,7 @@ dataawslicensemanagergrants.DataAwsLicensemanagerGrants_IsTerraformElement(x int
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-aws.dataAwsLicensemanagerGrants.DataAwsLicensemanagerGrants.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawslicensemanagergrants"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawslicensemanagergrants"
 
 dataawslicensemanagergrants.DataAwsLicensemanagerGrants_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -370,7 +370,7 @@ dataawslicensemanagergrants.DataAwsLicensemanagerGrants_IsTerraformDataSource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.dataAwsLicensemanagerGrants.DataAwsLicensemanagerGrants.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawslicensemanagergrants"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawslicensemanagergrants"
 
 dataawslicensemanagergrants.DataAwsLicensemanagerGrants_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -399,7 +399,7 @@ The construct id used in the generated config for the DataAwsLicensemanagerGrant
 
 The id of the existing DataAwsLicensemanagerGrants that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/licensemanager_grants#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/licensemanager_grants#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -654,7 +654,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsLicensemanagerGrants.DataAwsLicensemanagerGrantsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawslicensemanagergrants"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawslicensemanagergrants"
 
 &dataawslicensemanagergrants.DataAwsLicensemanagerGrantsConfig {
 	Connection: interface{},
@@ -682,7 +682,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawslicensemanagerg
 | <code><a href="#@cdktn/provider-aws.dataAwsLicensemanagerGrants.DataAwsLicensemanagerGrantsConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsLicensemanagerGrants.DataAwsLicensemanagerGrantsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.dataAwsLicensemanagerGrants.DataAwsLicensemanagerGrantsConfig.property.filter">Filter</a></code> | <code>interface{}</code> | filter block. |
-| <code><a href="#@cdktn/provider-aws.dataAwsLicensemanagerGrants.DataAwsLicensemanagerGrantsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/licensemanager_grants#id DataAwsLicensemanagerGrants#id}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsLicensemanagerGrants.DataAwsLicensemanagerGrantsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/licensemanager_grants#id DataAwsLicensemanagerGrants#id}. |
 | <code><a href="#@cdktn/provider-aws.dataAwsLicensemanagerGrants.DataAwsLicensemanagerGrantsConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -767,7 +767,7 @@ Filter interface{}
 
 filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/licensemanager_grants#filter DataAwsLicensemanagerGrants#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/licensemanager_grants#filter DataAwsLicensemanagerGrants#filter}
 
 ---
 
@@ -779,7 +779,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/licensemanager_grants#id DataAwsLicensemanagerGrants#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/licensemanager_grants#id DataAwsLicensemanagerGrants#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -796,7 +796,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/licensemanager_grants#region DataAwsLicensemanagerGrants#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/licensemanager_grants#region DataAwsLicensemanagerGrants#region}
 
 ---
 
@@ -805,7 +805,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.dataAwsLicensemanagerGrants.DataAwsLicensemanagerGrantsFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawslicensemanagergrants"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawslicensemanagergrants"
 
 &dataawslicensemanagergrants.DataAwsLicensemanagerGrantsFilter {
 	Name: *string,
@@ -817,8 +817,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawslicensemanagerg
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.dataAwsLicensemanagerGrants.DataAwsLicensemanagerGrantsFilter.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/licensemanager_grants#name DataAwsLicensemanagerGrants#name}. |
-| <code><a href="#@cdktn/provider-aws.dataAwsLicensemanagerGrants.DataAwsLicensemanagerGrantsFilter.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/licensemanager_grants#values DataAwsLicensemanagerGrants#values}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsLicensemanagerGrants.DataAwsLicensemanagerGrantsFilter.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/licensemanager_grants#name DataAwsLicensemanagerGrants#name}. |
+| <code><a href="#@cdktn/provider-aws.dataAwsLicensemanagerGrants.DataAwsLicensemanagerGrantsFilter.property.values">Values</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/licensemanager_grants#values DataAwsLicensemanagerGrants#values}. |
 
 ---
 
@@ -830,7 +830,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/licensemanager_grants#name DataAwsLicensemanagerGrants#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/licensemanager_grants#name DataAwsLicensemanagerGrants#name}.
 
 ---
 
@@ -842,7 +842,7 @@ Values *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/data-sources/licensemanager_grants#values DataAwsLicensemanagerGrants#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/data-sources/licensemanager_grants#values DataAwsLicensemanagerGrants#values}.
 
 ---
 
@@ -853,7 +853,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLicensemanagerGrants.DataAwsLicensemanagerGrantsFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawslicensemanagergrants"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawslicensemanagergrants"
 
 dataawslicensemanagergrants.NewDataAwsLicensemanagerGrantsFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsLicensemanagerGrantsFilterList
 ```
@@ -1013,7 +1013,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.dataAwsLicensemanagerGrants.DataAwsLicensemanagerGrantsFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/dataawslicensemanagergrants"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/dataawslicensemanagergrants"
 
 dataawslicensemanagergrants.NewDataAwsLicensemanagerGrantsFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAwsLicensemanagerGrantsFilterOutputReference
 ```

@@ -4,12 +4,12 @@
 
 ### EcrRepositoryPolicy <a name="EcrRepositoryPolicy" id="@cdktn/provider-aws.ecrRepositoryPolicy.EcrRepositoryPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ecr_repository_policy aws_ecr_repository_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/ecr_repository_policy aws_ecr_repository_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.ecrRepositoryPolicy.EcrRepositoryPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/ecrrepositorypolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/ecrrepositorypolicy"
 
 ecrrepositorypolicy.NewEcrRepositoryPolicy(scope Construct, id *string, config EcrRepositoryPolicyConfig) EcrRepositoryPolicy
 ```
@@ -392,7 +392,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.ecrRepositoryPolicy.EcrRepositoryPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/ecrrepositorypolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/ecrrepositorypolicy"
 
 ecrrepositorypolicy.EcrRepositoryPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.ecrRepositoryPolicy.EcrRepositoryPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/ecrrepositorypolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/ecrrepositorypolicy"
 
 ecrrepositorypolicy.EcrRepositoryPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ ecrrepositorypolicy.EcrRepositoryPolicy_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.ecrRepositoryPolicy.EcrRepositoryPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/ecrrepositorypolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/ecrrepositorypolicy"
 
 ecrrepositorypolicy.EcrRepositoryPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ ecrrepositorypolicy.EcrRepositoryPolicy_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.ecrRepositoryPolicy.EcrRepositoryPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/ecrrepositorypolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/ecrrepositorypolicy"
 
 ecrrepositorypolicy.EcrRepositoryPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -481,7 +481,7 @@ The construct id used in the generated config for the EcrRepositoryPolicy to imp
 
 The id of the existing EcrRepositoryPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ecr_repository_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/ecr_repository_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -780,7 +780,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.ecrRepositoryPolicy.EcrRepositoryPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/ecrrepositorypolicy"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/ecrrepositorypolicy"
 
 &ecrrepositorypolicy.EcrRepositoryPolicyConfig {
 	Connection: interface{},
@@ -808,9 +808,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/ecrrepositorypolicy"
 | <code><a href="#@cdktn/provider-aws.ecrRepositoryPolicy.EcrRepositoryPolicyConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ecrRepositoryPolicy.EcrRepositoryPolicyConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.ecrRepositoryPolicy.EcrRepositoryPolicyConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.ecrRepositoryPolicy.EcrRepositoryPolicyConfig.property.policy">Policy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ecr_repository_policy#policy EcrRepositoryPolicy#policy}. |
-| <code><a href="#@cdktn/provider-aws.ecrRepositoryPolicy.EcrRepositoryPolicyConfig.property.repository">Repository</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ecr_repository_policy#repository EcrRepositoryPolicy#repository}. |
-| <code><a href="#@cdktn/provider-aws.ecrRepositoryPolicy.EcrRepositoryPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ecr_repository_policy#id EcrRepositoryPolicy#id}. |
+| <code><a href="#@cdktn/provider-aws.ecrRepositoryPolicy.EcrRepositoryPolicyConfig.property.policy">Policy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/ecr_repository_policy#policy EcrRepositoryPolicy#policy}. |
+| <code><a href="#@cdktn/provider-aws.ecrRepositoryPolicy.EcrRepositoryPolicyConfig.property.repository">Repository</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/ecr_repository_policy#repository EcrRepositoryPolicy#repository}. |
+| <code><a href="#@cdktn/provider-aws.ecrRepositoryPolicy.EcrRepositoryPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/ecr_repository_policy#id EcrRepositoryPolicy#id}. |
 | <code><a href="#@cdktn/provider-aws.ecrRepositoryPolicy.EcrRepositoryPolicyConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
 
 ---
@@ -893,7 +893,7 @@ Policy *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ecr_repository_policy#policy EcrRepositoryPolicy#policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/ecr_repository_policy#policy EcrRepositoryPolicy#policy}.
 
 ---
 
@@ -905,7 +905,7 @@ Repository *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ecr_repository_policy#repository EcrRepositoryPolicy#repository}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/ecr_repository_policy#repository EcrRepositoryPolicy#repository}.
 
 ---
 
@@ -917,7 +917,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ecr_repository_policy#id EcrRepositoryPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/ecr_repository_policy#id EcrRepositoryPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -934,7 +934,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/ecr_repository_policy#region EcrRepositoryPolicy#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/ecr_repository_policy#region EcrRepositoryPolicy#region}
 
 ---
 

@@ -4,12 +4,12 @@
 
 ### RdsReservedInstance <a name="RdsReservedInstance" id="@cdktn/provider-aws.rdsReservedInstance.RdsReservedInstance"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/rds_reserved_instance aws_rds_reserved_instance}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/rds_reserved_instance aws_rds_reserved_instance}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.rdsReservedInstance.RdsReservedInstance.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/rdsreservedinstance"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/rdsreservedinstance"
 
 rdsreservedinstance.NewRdsReservedInstance(scope Construct, id *string, config RdsReservedInstanceConfig) RdsReservedInstance
 ```
@@ -440,7 +440,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.rdsReservedInstance.RdsReservedInstance.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/rdsreservedinstance"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/rdsreservedinstance"
 
 rdsreservedinstance.RdsReservedInstance_IsConstruct(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.rdsReservedInstance.RdsReservedInstance.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/rdsreservedinstance"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/rdsreservedinstance"
 
 rdsreservedinstance.RdsReservedInstance_IsTerraformElement(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ rdsreservedinstance.RdsReservedInstance_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.rdsReservedInstance.RdsReservedInstance.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/rdsreservedinstance"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/rdsreservedinstance"
 
 rdsreservedinstance.RdsReservedInstance_IsTerraformResource(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ rdsreservedinstance.RdsReservedInstance_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.rdsReservedInstance.RdsReservedInstance.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/rdsreservedinstance"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/rdsreservedinstance"
 
 rdsreservedinstance.RdsReservedInstance_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -529,7 +529,7 @@ The construct id used in the generated config for the RdsReservedInstance to imp
 
 The id of the existing RdsReservedInstance that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/rds_reserved_instance#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/rds_reserved_instance#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1048,7 +1048,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.rdsReservedInstance.RdsReservedInstanceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/rdsreservedinstance"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/rdsreservedinstance"
 
 &rdsreservedinstance.RdsReservedInstanceConfig {
 	Connection: interface{},
@@ -1065,7 +1065,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/rdsreservedinstance"
 	ReservationId: *string,
 	Tags: *map[string]*string,
 	TagsAll: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.rdsReservedInstance.RdsReservedInstanceTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.rdsReservedInstance.RdsReservedInstanceTimeouts,
 }
 ```
 
@@ -1080,13 +1080,13 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/rdsreservedinstance"
 | <code><a href="#@cdktn/provider-aws.rdsReservedInstance.RdsReservedInstanceConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.rdsReservedInstance.RdsReservedInstanceConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.rdsReservedInstance.RdsReservedInstanceConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.rdsReservedInstance.RdsReservedInstanceConfig.property.offeringId">OfferingId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/rds_reserved_instance#offering_id RdsReservedInstance#offering_id}. |
-| <code><a href="#@cdktn/provider-aws.rdsReservedInstance.RdsReservedInstanceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/rds_reserved_instance#id RdsReservedInstance#id}. |
-| <code><a href="#@cdktn/provider-aws.rdsReservedInstance.RdsReservedInstanceConfig.property.instanceCount">InstanceCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/rds_reserved_instance#instance_count RdsReservedInstance#instance_count}. |
+| <code><a href="#@cdktn/provider-aws.rdsReservedInstance.RdsReservedInstanceConfig.property.offeringId">OfferingId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/rds_reserved_instance#offering_id RdsReservedInstance#offering_id}. |
+| <code><a href="#@cdktn/provider-aws.rdsReservedInstance.RdsReservedInstanceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/rds_reserved_instance#id RdsReservedInstance#id}. |
+| <code><a href="#@cdktn/provider-aws.rdsReservedInstance.RdsReservedInstanceConfig.property.instanceCount">InstanceCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/rds_reserved_instance#instance_count RdsReservedInstance#instance_count}. |
 | <code><a href="#@cdktn/provider-aws.rdsReservedInstance.RdsReservedInstanceConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.rdsReservedInstance.RdsReservedInstanceConfig.property.reservationId">ReservationId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/rds_reserved_instance#reservation_id RdsReservedInstance#reservation_id}. |
-| <code><a href="#@cdktn/provider-aws.rdsReservedInstance.RdsReservedInstanceConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/rds_reserved_instance#tags RdsReservedInstance#tags}. |
-| <code><a href="#@cdktn/provider-aws.rdsReservedInstance.RdsReservedInstanceConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/rds_reserved_instance#tags_all RdsReservedInstance#tags_all}. |
+| <code><a href="#@cdktn/provider-aws.rdsReservedInstance.RdsReservedInstanceConfig.property.reservationId">ReservationId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/rds_reserved_instance#reservation_id RdsReservedInstance#reservation_id}. |
+| <code><a href="#@cdktn/provider-aws.rdsReservedInstance.RdsReservedInstanceConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/rds_reserved_instance#tags RdsReservedInstance#tags}. |
+| <code><a href="#@cdktn/provider-aws.rdsReservedInstance.RdsReservedInstanceConfig.property.tagsAll">TagsAll</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/rds_reserved_instance#tags_all RdsReservedInstance#tags_all}. |
 | <code><a href="#@cdktn/provider-aws.rdsReservedInstance.RdsReservedInstanceConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.rdsReservedInstance.RdsReservedInstanceTimeouts">RdsReservedInstanceTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1169,7 +1169,7 @@ OfferingId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/rds_reserved_instance#offering_id RdsReservedInstance#offering_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/rds_reserved_instance#offering_id RdsReservedInstance#offering_id}.
 
 ---
 
@@ -1181,7 +1181,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/rds_reserved_instance#id RdsReservedInstance#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/rds_reserved_instance#id RdsReservedInstance#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1196,7 +1196,7 @@ InstanceCount *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/rds_reserved_instance#instance_count RdsReservedInstance#instance_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/rds_reserved_instance#instance_count RdsReservedInstance#instance_count}.
 
 ---
 
@@ -1210,7 +1210,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/rds_reserved_instance#region RdsReservedInstance#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/rds_reserved_instance#region RdsReservedInstance#region}
 
 ---
 
@@ -1222,7 +1222,7 @@ ReservationId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/rds_reserved_instance#reservation_id RdsReservedInstance#reservation_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/rds_reserved_instance#reservation_id RdsReservedInstance#reservation_id}.
 
 ---
 
@@ -1234,7 +1234,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/rds_reserved_instance#tags RdsReservedInstance#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/rds_reserved_instance#tags RdsReservedInstance#tags}.
 
 ---
 
@@ -1246,7 +1246,7 @@ TagsAll *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/rds_reserved_instance#tags_all RdsReservedInstance#tags_all}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/rds_reserved_instance#tags_all RdsReservedInstance#tags_all}.
 
 ---
 
@@ -1260,7 +1260,7 @@ Timeouts RdsReservedInstanceTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/rds_reserved_instance#timeouts RdsReservedInstance#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/rds_reserved_instance#timeouts RdsReservedInstance#timeouts}
 
 ---
 
@@ -1269,7 +1269,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.rdsReservedInstance.RdsReservedInstanceRecurringCharges.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/rdsreservedinstance"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/rdsreservedinstance"
 
 &rdsreservedinstance.RdsReservedInstanceRecurringCharges {
 
@@ -1282,7 +1282,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/rdsreservedinstance"
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.rdsReservedInstance.RdsReservedInstanceTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/rdsreservedinstance"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/rdsreservedinstance"
 
 &rdsreservedinstance.RdsReservedInstanceTimeouts {
 	Create: *string,
@@ -1295,9 +1295,9 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/rdsreservedinstance"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.rdsReservedInstance.RdsReservedInstanceTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/rds_reserved_instance#create RdsReservedInstance#create}. |
-| <code><a href="#@cdktn/provider-aws.rdsReservedInstance.RdsReservedInstanceTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/rds_reserved_instance#delete RdsReservedInstance#delete}. |
-| <code><a href="#@cdktn/provider-aws.rdsReservedInstance.RdsReservedInstanceTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/rds_reserved_instance#update RdsReservedInstance#update}. |
+| <code><a href="#@cdktn/provider-aws.rdsReservedInstance.RdsReservedInstanceTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/rds_reserved_instance#create RdsReservedInstance#create}. |
+| <code><a href="#@cdktn/provider-aws.rdsReservedInstance.RdsReservedInstanceTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/rds_reserved_instance#delete RdsReservedInstance#delete}. |
+| <code><a href="#@cdktn/provider-aws.rdsReservedInstance.RdsReservedInstanceTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/rds_reserved_instance#update RdsReservedInstance#update}. |
 
 ---
 
@@ -1309,7 +1309,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/rds_reserved_instance#create RdsReservedInstance#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/rds_reserved_instance#create RdsReservedInstance#create}.
 
 ---
 
@@ -1321,7 +1321,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/rds_reserved_instance#delete RdsReservedInstance#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/rds_reserved_instance#delete RdsReservedInstance#delete}.
 
 ---
 
@@ -1333,7 +1333,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/rds_reserved_instance#update RdsReservedInstance#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/rds_reserved_instance#update RdsReservedInstance#update}.
 
 ---
 
@@ -1344,7 +1344,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.rdsReservedInstance.RdsReservedInstanceRecurringChargesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/rdsreservedinstance"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/rdsreservedinstance"
 
 rdsreservedinstance.NewRdsReservedInstanceRecurringChargesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) RdsReservedInstanceRecurringChargesList
 ```
@@ -1493,7 +1493,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.rdsReservedInstance.RdsReservedInstanceRecurringChargesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/rdsreservedinstance"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/rdsreservedinstance"
 
 rdsreservedinstance.NewRdsReservedInstanceRecurringChargesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) RdsReservedInstanceRecurringChargesOutputReference
 ```
@@ -1782,7 +1782,7 @@ func InternalValue() RdsReservedInstanceRecurringCharges
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.rdsReservedInstance.RdsReservedInstanceTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/rdsreservedinstance"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/rdsreservedinstance"
 
 rdsreservedinstance.NewRdsReservedInstanceTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RdsReservedInstanceTimeoutsOutputReference
 ```

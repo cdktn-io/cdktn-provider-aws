@@ -4,12 +4,12 @@
 
 ### ControltowerBaseline <a name="ControltowerBaseline" id="@cdktn/provider-aws.controltowerBaseline.ControltowerBaseline"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/controltower_baseline aws_controltower_baseline}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/controltower_baseline aws_controltower_baseline}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.controltowerBaseline.ControltowerBaseline.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/controltowerbaseline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/controltowerbaseline"
 
 controltowerbaseline.NewControltowerBaseline(scope Construct, id *string, config ControltowerBaselineConfig) ControltowerBaseline
 ```
@@ -432,7 +432,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-aws.controltowerBaseline.ControltowerBaseline.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/controltowerbaseline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/controltowerbaseline"
 
 controltowerbaseline.ControltowerBaseline_IsConstruct(x interface{}) *bool
 ```
@@ -464,7 +464,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-aws.controltowerBaseline.ControltowerBaseline.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/controltowerbaseline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/controltowerbaseline"
 
 controltowerbaseline.ControltowerBaseline_IsTerraformElement(x interface{}) *bool
 ```
@@ -478,7 +478,7 @@ controltowerbaseline.ControltowerBaseline_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-aws.controltowerBaseline.ControltowerBaseline.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/controltowerbaseline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/controltowerbaseline"
 
 controltowerbaseline.ControltowerBaseline_IsTerraformResource(x interface{}) *bool
 ```
@@ -492,7 +492,7 @@ controltowerbaseline.ControltowerBaseline_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-aws.controltowerBaseline.ControltowerBaseline.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/controltowerbaseline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/controltowerbaseline"
 
 controltowerbaseline.ControltowerBaseline_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -521,7 +521,7 @@ The construct id used in the generated config for the ControltowerBaseline to im
 
 The id of the existing ControltowerBaseline that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/controltower_baseline#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/controltower_baseline#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -908,7 +908,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.controltowerBaseline.ControltowerBaselineConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/controltowerbaseline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/controltowerbaseline"
 
 &controltowerbaseline.ControltowerBaselineConfig {
 	Connection: interface{},
@@ -924,7 +924,7 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/controltowerbaseline"
 	Parameters: interface{},
 	Region: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v21.controltowerBaseline.ControltowerBaselineTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-aws-go/aws/v22.controltowerBaseline.ControltowerBaselineTimeouts,
 }
 ```
 
@@ -939,12 +939,12 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/controltowerbaseline"
 | <code><a href="#@cdktn/provider-aws.controltowerBaseline.ControltowerBaselineConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.controltowerBaseline.ControltowerBaselineConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-aws.controltowerBaseline.ControltowerBaselineConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-aws.controltowerBaseline.ControltowerBaselineConfig.property.baselineIdentifier">BaselineIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/controltower_baseline#baseline_identifier ControltowerBaseline#baseline_identifier}. |
-| <code><a href="#@cdktn/provider-aws.controltowerBaseline.ControltowerBaselineConfig.property.baselineVersion">BaselineVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/controltower_baseline#baseline_version ControltowerBaseline#baseline_version}. |
-| <code><a href="#@cdktn/provider-aws.controltowerBaseline.ControltowerBaselineConfig.property.targetIdentifier">TargetIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/controltower_baseline#target_identifier ControltowerBaseline#target_identifier}. |
+| <code><a href="#@cdktn/provider-aws.controltowerBaseline.ControltowerBaselineConfig.property.baselineIdentifier">BaselineIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/controltower_baseline#baseline_identifier ControltowerBaseline#baseline_identifier}. |
+| <code><a href="#@cdktn/provider-aws.controltowerBaseline.ControltowerBaselineConfig.property.baselineVersion">BaselineVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/controltower_baseline#baseline_version ControltowerBaseline#baseline_version}. |
+| <code><a href="#@cdktn/provider-aws.controltowerBaseline.ControltowerBaselineConfig.property.targetIdentifier">TargetIdentifier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/controltower_baseline#target_identifier ControltowerBaseline#target_identifier}. |
 | <code><a href="#@cdktn/provider-aws.controltowerBaseline.ControltowerBaselineConfig.property.parameters">Parameters</a></code> | <code>interface{}</code> | parameters block. |
 | <code><a href="#@cdktn/provider-aws.controltowerBaseline.ControltowerBaselineConfig.property.region">Region</a></code> | <code>*string</code> | Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference). |
-| <code><a href="#@cdktn/provider-aws.controltowerBaseline.ControltowerBaselineConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/controltower_baseline#tags ControltowerBaseline#tags}. |
+| <code><a href="#@cdktn/provider-aws.controltowerBaseline.ControltowerBaselineConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/controltower_baseline#tags ControltowerBaseline#tags}. |
 | <code><a href="#@cdktn/provider-aws.controltowerBaseline.ControltowerBaselineConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-aws.controltowerBaseline.ControltowerBaselineTimeouts">ControltowerBaselineTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1027,7 +1027,7 @@ BaselineIdentifier *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/controltower_baseline#baseline_identifier ControltowerBaseline#baseline_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/controltower_baseline#baseline_identifier ControltowerBaseline#baseline_identifier}.
 
 ---
 
@@ -1039,7 +1039,7 @@ BaselineVersion *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/controltower_baseline#baseline_version ControltowerBaseline#baseline_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/controltower_baseline#baseline_version ControltowerBaseline#baseline_version}.
 
 ---
 
@@ -1051,7 +1051,7 @@ TargetIdentifier *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/controltower_baseline#target_identifier ControltowerBaseline#target_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/controltower_baseline#target_identifier ControltowerBaseline#target_identifier}.
 
 ---
 
@@ -1065,7 +1065,7 @@ Parameters interface{}
 
 parameters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/controltower_baseline#parameters ControltowerBaseline#parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/controltower_baseline#parameters ControltowerBaseline#parameters}
 
 ---
 
@@ -1079,7 +1079,7 @@ Region *string
 
 Region where this resource will be [managed](https://docs.aws.amazon.com/general/latest/gr/rande.html#regional-endpoints). Defaults to the Region set in the [provider configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#aws-configuration-reference).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/controltower_baseline#region ControltowerBaseline#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/controltower_baseline#region ControltowerBaseline#region}
 
 ---
 
@@ -1091,7 +1091,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/controltower_baseline#tags ControltowerBaseline#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/controltower_baseline#tags ControltowerBaseline#tags}.
 
 ---
 
@@ -1105,7 +1105,7 @@ Timeouts ControltowerBaselineTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/controltower_baseline#timeouts ControltowerBaseline#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/controltower_baseline#timeouts ControltowerBaseline#timeouts}
 
 ---
 
@@ -1114,7 +1114,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.controltowerBaseline.ControltowerBaselineParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/controltowerbaseline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/controltowerbaseline"
 
 &controltowerbaseline.ControltowerBaselineParameters {
 	Key: *string,
@@ -1126,8 +1126,8 @@ import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/controltowerbaseline"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-aws.controltowerBaseline.ControltowerBaselineParameters.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/controltower_baseline#key ControltowerBaseline#key}. |
-| <code><a href="#@cdktn/provider-aws.controltowerBaseline.ControltowerBaselineParameters.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/controltower_baseline#value ControltowerBaseline#value}. |
+| <code><a href="#@cdktn/provider-aws.controltowerBaseline.ControltowerBaselineParameters.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/controltower_baseline#key ControltowerBaseline#key}. |
+| <code><a href="#@cdktn/provider-aws.controltowerBaseline.ControltowerBaselineParameters.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/controltower_baseline#value ControltowerBaseline#value}. |
 
 ---
 
@@ -1139,7 +1139,7 @@ Key *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/controltower_baseline#key ControltowerBaseline#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/controltower_baseline#key ControltowerBaseline#key}.
 
 ---
 
@@ -1151,7 +1151,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/controltower_baseline#value ControltowerBaseline#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/controltower_baseline#value ControltowerBaseline#value}.
 
 ---
 
@@ -1160,7 +1160,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-aws.controltowerBaseline.ControltowerBaselineTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/controltowerbaseline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/controltowerbaseline"
 
 &controltowerbaseline.ControltowerBaselineTimeouts {
 	Create: *string,
@@ -1189,7 +1189,7 @@ Create *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/controltower_baseline#create ControltowerBaseline#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/controltower_baseline#create ControltowerBaseline#create}
 
 ---
 
@@ -1203,7 +1203,7 @@ Delete *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/controltower_baseline#delete ControltowerBaseline#delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/controltower_baseline#delete ControltowerBaseline#delete}
 
 ---
 
@@ -1217,7 +1217,7 @@ Update *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/controltower_baseline#update ControltowerBaseline#update}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/6.31.0/docs/resources/controltower_baseline#update ControltowerBaseline#update}
 
 ---
 
@@ -1228,7 +1228,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.controltowerBaseline.ControltowerBaselineParametersList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/controltowerbaseline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/controltowerbaseline"
 
 controltowerbaseline.NewControltowerBaselineParametersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ControltowerBaselineParametersList
 ```
@@ -1388,7 +1388,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.controltowerBaseline.ControltowerBaselineParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/controltowerbaseline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/controltowerbaseline"
 
 controltowerbaseline.NewControltowerBaselineParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ControltowerBaselineParametersOutputReference
 ```
@@ -1699,7 +1699,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-aws.controltowerBaseline.ControltowerBaselineTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v21/controltowerbaseline"
+import "github.com/cdktn-io/cdktn-provider-aws-go/aws/v22/controltowerbaseline"
 
 controltowerbaseline.NewControltowerBaselineTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ControltowerBaselineTimeoutsOutputReference
 ```
