@@ -32,5 +32,5 @@
 /README.md linguist-generated
 /scripts/check-for-upgrades.js linguist-generated
 /scripts/should-release.js linguist-generated
-/tsconfig.dev.json linguist-generated
+/tsconfig.dev.json linguist-generated linguist-language=JSON-with-Comments
 /yarn.lock linguist-generated
