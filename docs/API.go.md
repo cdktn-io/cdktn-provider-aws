@@ -1178,6 +1178,8 @@ The following submodules are available:
 - [ec2ManagedPrefixListEntry](./ec2ManagedPrefixListEntry.go.md)
 - [ec2NetworkInsightsAnalysis](./ec2NetworkInsightsAnalysis.go.md)
 - [ec2NetworkInsightsPath](./ec2NetworkInsightsPath.go.md)
+- [ec2SecondaryNetwork](./ec2SecondaryNetwork.go.md)
+- [ec2SecondarySubnet](./ec2SecondarySubnet.go.md)
 - [ec2SerialConsoleAccess](./ec2SerialConsoleAccess.go.md)
 - [ec2SubnetCidrReservation](./ec2SubnetCidrReservation.go.md)
 - [ec2Tag](./ec2Tag.go.md)

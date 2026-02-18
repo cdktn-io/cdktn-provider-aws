@@ -534,6 +534,8 @@ export * as ec2ManagedPrefixList from './ec2-managed-prefix-list';
 export * as ec2ManagedPrefixListEntry from './ec2-managed-prefix-list-entry';
 export * as ec2NetworkInsightsAnalysis from './ec2-network-insights-analysis';
 export * as ec2NetworkInsightsPath from './ec2-network-insights-path';
+export * as ec2SecondaryNetwork from './ec2-secondary-network';
+export * as ec2SecondarySubnet from './ec2-secondary-subnet';
 export * as ec2SerialConsoleAccess from './ec2-serial-console-access';
 export * as ec2SubnetCidrReservation from './ec2-subnet-cidr-reservation';
 export * as ec2Tag from './ec2-tag';

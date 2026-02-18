@@ -1178,6 +1178,8 @@ The following submodules are available:
 - [ec2ManagedPrefixListEntry](./ec2ManagedPrefixListEntry.python.md)
 - [ec2NetworkInsightsAnalysis](./ec2NetworkInsightsAnalysis.python.md)
 - [ec2NetworkInsightsPath](./ec2NetworkInsightsPath.python.md)
+- [ec2SecondaryNetwork](./ec2SecondaryNetwork.python.md)
+- [ec2SecondarySubnet](./ec2SecondarySubnet.python.md)
 - [ec2SerialConsoleAccess](./ec2SerialConsoleAccess.python.md)
 - [ec2SubnetCidrReservation](./ec2SubnetCidrReservation.python.md)
 - [ec2Tag](./ec2Tag.python.md)
